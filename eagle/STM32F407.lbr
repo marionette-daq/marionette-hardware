@@ -681,11 +681,11 @@
 <description>Special function supply pins</description>
 <pin name="NRST" x="-5.08" y="15.24" length="middle"/>
 <pin name="VSSA" x="-5.08" y="-25.4" length="middle"/>
-<pin name="VREF+" x="-5.08" y="-20.32" length="middle"/>
-<pin name="VDDA" x="-5.08" y="-15.24" length="middle"/>
+<pin name="VREF+" x="-5.08" y="-10.16" length="middle"/>
+<pin name="VDDA" x="-5.08" y="-5.08" length="middle"/>
 <pin name="BYPASS_REG" x="-5.08" y="5.08" length="middle"/>
-<pin name="VCAP1" x="-5.08" y="-5.08" length="middle"/>
-<pin name="VCAP2" x="-5.08" y="-10.16" length="middle"/>
+<pin name="VCAP1" x="-5.08" y="-15.24" length="middle"/>
+<pin name="VCAP2" x="-5.08" y="-20.32" length="middle"/>
 <pin name="BOOT0" x="-5.08" y="10.16" length="middle"/>
 <pin name="PDR_ON" x="-5.08" y="0" length="middle"/>
 <wire x1="2.54" y1="22.86" x2="0" y2="22.86" width="0.254" layer="94"/>
