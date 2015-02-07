@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -975,74 +975,6 @@ Type: &lt;b&gt;PJ-047A&lt;/b&gt;&lt;p&gt;</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="CBDU0530">
-<description>SMD Schottky Barrier Diode</description>
-<packages>
-<package name="SOD-523F">
-<description>&lt;b&gt;SOD-523F&lt;\b&gt; - 0603 molded plastic</description>
-<smd name="P$1" x="-0.85" y="0" dx="0.35" dy="0.7" layer="1"/>
-<smd name="P$2" x="0.85" y="0" dx="0.35" dy="0.7" layer="1"/>
-<wire x1="-1.2" y1="0.5" x2="0.2" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.2" y1="0.5" x2="0.3" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.3" y1="0.5" x2="0.4" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.5" y1="0.5" x2="1.2" y2="0.5" width="0.127" layer="21"/>
-<wire x1="1.2" y1="0.5" x2="1.2" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="1.2" y1="-0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-0.5" x2="-1.2" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-1.2" y1="-0.5" x2="-1.2" y2="0.5" width="0.127" layer="21"/>
-<text x="-2.3" y="0.9" size="1.016" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-2.3" y="-1.8" size="1.016" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="0.2" y1="0.5" x2="0.2" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-0.5" x2="0.3" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.4" y1="-0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.5" y1="-0.5" x2="0.5" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.5" y1="0.5" x2="0.4" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.4" y1="0.5" x2="0.4" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.4" y1="-0.5" x2="0.3" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.3" y1="-0.5" x2="0.3" y2="0.5" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SCHOTTKY-1">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CDBU0530">
-<description>&lt;b&gt;SMD Schottky Barrier Diode&lt;/b&gt; - Low foward voltage 
-&lt;br&gt;
-&lt;br&gt;
-Datasheet:&lt;br&gt;
-http://www.comchiptech.com/cms/UserFiles/CDBU0530-RevA791919.pdf</description>
-<gates>
-<gate name="G$1" symbol="SCHOTTKY-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOD-523F">
-<connects>
-<connect gate="G$1" pin="A" pad="P$1"/>
-<connect gate="G$1" pin="C" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="GROUND">
 <packages>
 </packages>
@@ -1614,34 +1546,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SUPPLY">
-<packages>
-</packages>
-<symbols>
-<symbol name="V">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="+3.3V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="+3.3V" symbol="V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="XCL068">
 <packages>
 <package name="56-BCPGA">
@@ -1768,6 +1672,104 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="3_3Vsupply">
+<packages>
+</packages>
+<symbols>
+<symbol name="+3.3V">
+<description>+3.3V supply symbol</description>
+<wire x1="0" y1="-2.54" x2="0" y2="1.016" width="0.254" layer="94"/>
+<circle x="0" y="2.54" radius="1.419903125" width="0.254" layer="94"/>
+<wire x1="0" y1="3.175" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="4.445" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+3.3V" x="0" y="-2.54" visible="off" length="point" direction="sup"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3.3V">
+<description>&lt;b&gt;3.3V power supply symbol</description>
+<gates>
+<gate name="+3.3V" symbol="+3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="CBDU0530">
+<description>SMD Schottky Barrier Diode</description>
+<packages>
+<package name="SOD-523F">
+<description>&lt;b&gt;SOD-523F&lt;\b&gt; - 0603 molded plastic</description>
+<smd name="P$1" x="-0.85" y="0" dx="0.35" dy="0.7" layer="1"/>
+<smd name="P$2" x="0.85" y="0" dx="0.35" dy="0.7" layer="1"/>
+<wire x1="-1.2" y1="0.5" x2="0.2" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0.5" x2="0.3" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.3" y1="0.5" x2="0.4" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.5" x2="1.2" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1.2" y1="0.5" x2="1.2" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.2" y1="-0.5" x2="-1.2" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-0.5" x2="-1.2" y2="0.5" width="0.127" layer="21"/>
+<text x="-2.3" y="0.9" size="1.016" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2.3" y="-1.8" size="1.016" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="0.2" y1="0.5" x2="0.2" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.2" y1="-0.5" x2="0.3" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-0.5" x2="0.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.5" x2="0.4" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.5" x2="0.4" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.5" x2="0.3" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.3" y1="-0.5" x2="0.3" y2="0.5" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHOTTKY-1">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CDBU0530" prefix="D">
+<description>&lt;b&gt;SMD Schottky Barrier Diode&lt;/b&gt; - Low foward voltage 
+&lt;br&gt;
+&lt;br&gt;
+Datasheet:&lt;br&gt;
+http://www.comchiptech.com/cms/UserFiles/CDBU0530-RevA791919.pdf</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-523F">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1780,8 +1782,6 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <parts>
 <part name="U$1" library="STM32F407" deviceset="STM32F407" device=""/>
 <part name="J1" library="PJ_047A" deviceset="JACK-PLUG" device=""/>
-<part name="U$4" library="CBDU0530" deviceset="CDBU0530" device=""/>
-<part name="U$5" library="CBDU0530" deviceset="CDBU0530" device=""/>
 <part name="GND1" library="GROUND" deviceset="GND" device=""/>
 <part name="C1" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="1uF, 10V"/>
 <part name="C2" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="1uF, 10V"/>
@@ -1807,7 +1807,6 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <part name="C20" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="100nF, 10V"/>
 <part name="C21" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="100nF, 10V"/>
 <part name="GND8" library="GROUND" deviceset="GND" device=""/>
-<part name="SUPPLY1" library="SUPPLY" deviceset="+3.3V" device=""/>
 <part name="C22" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="4.7uF, 10v"/>
 <part name="U$2" library="XCL068" deviceset="XCL206B" device=""/>
 <part name="U$3" library="NCP705" deviceset="NCP705" device=""/>
@@ -1816,6 +1815,10 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <part name="C24" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="100nF, 10V"/>
 <part name="C25" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="1uF, 10V"/>
 <part name="C26" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="100nF, 10V"/>
+<part name="U$6" library="3_3Vsupply" deviceset="+3.3V" device=""/>
+<part name="U$7" library="3_3Vsupply" deviceset="+3.3V" device=""/>
+<part name="D1" library="CBDU0530" deviceset="CDBU0530" device=""/>
+<part name="D2" library="CBDU0530" deviceset="CDBU0530" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1840,7 +1843,7 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <sheet>
 <description>Supply</description>
 <plain>
-<text x="167.64" y="20.32" size="1.778" layer="94">15x 100nF, 10V Capacitors</text>
+<text x="114.3" y="25.4" size="1.778" layer="94">15x 100nF, 10V</text>
 <wire x1="111.76" y1="30.48" x2="111.76" y2="-45.72" width="1.016" layer="94"/>
 <wire x1="111.76" y1="-45.72" x2="276.86" y2="-45.72" width="1.016" layer="94"/>
 <wire x1="276.86" y1="-45.72" x2="276.86" y2="30.48" width="1.016" layer="94"/>
@@ -1856,13 +1859,12 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <wire x1="2.54" y1="-25.4" x2="86.36" y2="-25.4" width="1.016" layer="94"/>
 <wire x1="86.36" y1="-25.4" x2="86.36" y2="30.48" width="1.016" layer="94"/>
 <wire x1="86.36" y1="30.48" x2="2.54" y2="30.48" width="1.016" layer="94"/>
+<text x="114.3" y="22.86" size="1.778" layer="94">1x 4.7uF 10V</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$10" x="193.04" y="-5.08"/>
 <instance part="U$1" gate="G$11" x="228.6" y="78.74"/>
 <instance part="J1" gate="G$1" x="-45.72" y="38.1"/>
-<instance part="U$4" gate="G$1" x="-17.78" y="55.88"/>
-<instance part="U$5" gate="G$1" x="-17.78" y="40.64"/>
 <instance part="GND1" gate="1" x="-35.56" y="27.94"/>
 <instance part="C1" gate="G$1" x="12.7" y="2.54"/>
 <instance part="C2" gate="G$1" x="66.04" y="2.54"/>
@@ -1922,7 +1924,6 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <attribute name="NAME" x="247.904" y="-4.699" size="1.778" layer="95"/>
 </instance>
 <instance part="GND8" gate="1" x="139.7" y="-15.24"/>
-<instance part="SUPPLY1" gate="+3.3V" x="119.38" y="10.16"/>
 <instance part="C22" gate="G$1" x="256.54" y="-5.08"/>
 <instance part="U$2" gate="G$1" x="43.18" y="81.28"/>
 <instance part="U$3" gate="G$1" x="43.18" y="2.54"/>
@@ -1939,6 +1940,10 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <instance part="C26" gate="G$1" x="162.56" y="53.34" smashed="yes">
 <attribute name="NAME" x="164.084" y="53.721" size="1.778" layer="95"/>
 </instance>
+<instance part="U$6" gate="+3.3V" x="66.04" y="15.24"/>
+<instance part="U$7" gate="+3.3V" x="170.18" y="76.2"/>
+<instance part="D1" gate="G$1" x="-17.78" y="40.64"/>
+<instance part="D2" gate="G$1" x="-17.78" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -1946,8 +1951,8 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
-<pinref part="U$5" gate="G$1" pin="A"/>
 <wire x1="-40.64" y1="40.64" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2200,10 +2205,44 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <junction x="139.7" y="2.54"/>
 <wire x1="139.7" y1="2.54" x2="119.38" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="2.54" x2="119.38" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="+3.3V" pin="+5V"/>
 <wire x1="246.38" y1="2.54" x2="256.54" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="2.54" x2="256.54" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="12.7" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="12.7" x2="66.04" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="OUT"/>
+<pinref part="U$6" gate="+3.3V" pin="+3.3V"/>
+<junction x="66.04" y="12.7"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$11" pin="VDDA"/>
+<wire x1="170.18" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="73.66" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
+<junction x="220.98" y="73.66"/>
+<pinref part="U$1" gate="G$11" pin="VREF+"/>
+<wire x1="220.98" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
+<junction x="220.98" y="68.58"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="58.42" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="58.42" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="68.58" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
+<junction x="193.04" y="58.42"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="55.88" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="55.88" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="73.66" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
+<junction x="170.18" y="63.5"/>
+<pinref part="U$7" gate="+3.3V" pin="+3.3V"/>
+<junction x="170.18" y="73.66"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -2215,22 +2254,10 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <wire x1="27.94" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="12.7" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="12.7" x2="66.04" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="OUT"/>
-<wire x1="66.04" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
-<junction x="66.04" y="12.7"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="C"/>
 <wire x1="-15.24" y1="55.88" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="40.64" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="C"/>
 <wire x1="-15.24" y1="40.64" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="55.88" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-5.08" y="55.88"/>
@@ -2258,6 +2285,8 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <wire x1="12.7" y1="12.7" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
 <junction x="12.7" y="12.7"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2289,33 +2318,6 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <wire x1="203.2" y1="55.88" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$11" pin="VCAP1"/>
 <wire x1="203.2" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U$1" gate="G$11" pin="VDDA"/>
-<wire x1="170.18" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="73.66" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
-<junction x="220.98" y="73.66"/>
-<pinref part="U$1" gate="G$11" pin="VREF+"/>
-<wire x1="220.98" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
-<junction x="220.98" y="68.58"/>
-<pinref part="C24" gate="G$1" pin="1"/>
-<pinref part="C23" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="58.42" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="58.42" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="68.58" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
-<junction x="193.04" y="58.42"/>
-<pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="55.88" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C26" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="55.88" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="73.66" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
-<junction x="170.18" y="63.5"/>
 </segment>
 </net>
 </nets>
