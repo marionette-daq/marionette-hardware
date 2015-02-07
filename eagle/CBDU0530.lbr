@@ -105,7 +105,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CDBU0530">
+<deviceset name="CDBU0530" prefix="D">
 <description>&lt;b&gt;SMD Schottky Barrier Diode&lt;/b&gt; - Low foward voltage 
 &lt;br&gt;
 &lt;br&gt;
