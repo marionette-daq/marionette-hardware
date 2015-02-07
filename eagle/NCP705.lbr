@@ -56,6 +56,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>5.0V - 3.3V LDO</description>
 <packages>
 <package name="WDFN6">
 <smd name="GND" x="0" y="0" dx="1.72" dy="1.12" layer="1"/>

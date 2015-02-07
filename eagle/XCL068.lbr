@@ -56,6 +56,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>5.0V - 3.3V SPS</description>
 <packages>
 <package name="56-BCPGA">
 <description>56-BCPGA</description>

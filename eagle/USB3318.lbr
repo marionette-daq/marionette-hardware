@@ -56,6 +56,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>UPLI USB phy interface</description>
 <packages>
 <package name="24QFN">
 <description>24-Pin QFN&lt;br&gt;

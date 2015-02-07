@@ -60,6 +60,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>2x10 0.1in pitch shrouded pin header</description>
 <packages>
 <package name="2X10">
 <description>2x10 Shrouded pin header</description>
