@@ -92,7 +92,7 @@
 <devicesets>
 <deviceset name="ABS07L">
 <description>&lt;b&gt; ABSO7L &lt;/b&gt;
-- 16MHz Crystal&lt;br&gt;
+- 32.768 kHz Crystal&lt;br&gt;
 Datasheet: http://www.abracon.com/Resonators/ABS07L.pdf &lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="CLK" x="0" y="0"/>
