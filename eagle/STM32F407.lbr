@@ -479,22 +479,22 @@
 <wire x1="0" y1="38.1" x2="0" y2="-43.18" width="0.254" layer="94"/>
 <wire x1="0" y1="-43.18" x2="2.54" y2="-43.18" width="0.254" layer="94"/>
 <text x="2.54" y="40.64" size="2.54" layer="96">&gt;VALUE</text>
-<text x="10.16" y="35.56" size="1.27" layer="95">&gt;PD0</text>
-<text x="10.16" y="30.48" size="1.27" layer="95">&gt;PD1</text>
-<text x="10.16" y="25.4" size="1.27" layer="95">&gt;PD2</text>
-<text x="10.16" y="20.32" size="1.27" layer="95">&gt;PD3</text>
-<text x="10.16" y="15.24" size="1.27" layer="95">&gt;PD4</text>
-<text x="10.16" y="10.16" size="1.27" layer="95">&gt;PD5</text>
-<text x="10.16" y="5.08" size="1.27" layer="95">&gt;PD6</text>
-<text x="10.16" y="0" size="1.27" layer="95">&gt;PD7</text>
-<text x="10.16" y="-5.08" size="1.27" layer="95">&gt;PD8</text>
-<text x="10.16" y="-10.16" size="1.27" layer="95">&gt;PD9</text>
-<text x="10.16" y="-15.24" size="1.27" layer="95">&gt;PD10</text>
-<text x="10.16" y="-20.32" size="1.27" layer="95">&gt;PD11</text>
-<text x="10.16" y="-25.4" size="1.27" layer="95">&gt;PD12</text>
-<text x="10.16" y="-30.48" size="1.27" layer="95">&gt;PD13</text>
-<text x="10.16" y="-35.56" size="1.27" layer="95">&gt;PD14</text>
-<text x="10.16" y="-40.64" size="1.27" layer="95">&gt;PD15</text>
+<text x="10.16" y="35.56" size="1.27" layer="95">&gt;PE0</text>
+<text x="10.16" y="30.48" size="1.27" layer="95">&gt;PE1</text>
+<text x="10.16" y="25.4" size="1.27" layer="95">&gt;PE2</text>
+<text x="10.16" y="20.32" size="1.27" layer="95">&gt;PE3</text>
+<text x="10.16" y="15.24" size="1.27" layer="95">&gt;PE4</text>
+<text x="10.16" y="10.16" size="1.27" layer="95">&gt;PE5</text>
+<text x="10.16" y="5.08" size="1.27" layer="95">&gt;PE6</text>
+<text x="10.16" y="0" size="1.27" layer="95">&gt;PE7</text>
+<text x="10.16" y="-5.08" size="1.27" layer="95">&gt;PE8</text>
+<text x="10.16" y="-10.16" size="1.27" layer="95">&gt;PE9</text>
+<text x="10.16" y="-15.24" size="1.27" layer="95">&gt;PE10</text>
+<text x="10.16" y="-20.32" size="1.27" layer="95">&gt;PE11</text>
+<text x="10.16" y="-25.4" size="1.27" layer="95">&gt;PE12</text>
+<text x="10.16" y="-30.48" size="1.27" layer="95">&gt;PE13</text>
+<text x="10.16" y="-35.56" size="1.27" layer="95">&gt;PE14</text>
+<text x="10.16" y="-40.64" size="1.27" layer="95">&gt;PE15</text>
 <text x="20.32" y="0" size="2.54" layer="97">&gt;NAME</text>
 </symbol>
 <symbol name="PORT_F">

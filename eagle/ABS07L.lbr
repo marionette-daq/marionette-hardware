@@ -60,7 +60,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>16 MHz Crystal</description>
+<description>32.768 kHz Crystal</description>
 <packages>
 <package name="2SMD">
 <smd name="P$1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
