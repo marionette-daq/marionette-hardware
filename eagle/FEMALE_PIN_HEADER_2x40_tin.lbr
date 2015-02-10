@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -102,6 +102,9 @@
 <wire x1="-26.92" y1="-11.37" x2="24.38" y2="-11.37" width="0.127" layer="21"/>
 <wire x1="-26.92" y1="-2.87" x2="-26.92" y2="-11.37" width="0.127" layer="21"/>
 <wire x1="24.38" y1="-2.87" x2="24.38" y2="-11.37" width="0.127" layer="21"/>
+<text x="-25.4" y="3.81" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-25.4" y="6.35" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-27.94" y="1.27" size="1.27" layer="21" font="vector" ratio="20">1</text>
 </package>
 </packages>
 <symbols>
@@ -150,7 +153,7 @@
 <pin name="P$38" x="43.18" y="2.54" length="middle" rot="R90"/>
 <pin name="P$39" x="45.72" y="2.54" length="middle" rot="R90"/>
 <pin name="P$40" x="48.26" y="2.54" length="middle" rot="R90"/>
-<text x="-50.8" y="17.78" size="2.54" layer="95" ratio="20">&gt;NAME</text>
+<text x="-50.8" y="-15.24" size="2.54" layer="95" ratio="20">&gt;NAME</text>
 <text x="-50.8" y="-10.16" size="2.54" layer="96" ratio="20">&gt;VALUE</text>
 </symbol>
 </symbols>
