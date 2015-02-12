@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4088,6 +4088,7 @@ http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</des
 <attribute name="PH0" value="OSC_IN"/>
 <attribute name="PH1" value="OSC_OUT"/>
 <attribute name="PH13" value="CAN1_TX"/>
+<attribute name="PH4" value="ULPI_NXT"/>
 <attribute name="PH7" value="I2C3_SCL"/>
 <attribute name="PH8" value="I2C3_SDA"/>
 <attribute name="PH9" value="I2C3_SMBA"/>
@@ -4225,6 +4226,7 @@ http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</des
 <attribute name="PH7" x="99.06" y="-63.5" size="2.54" layer="96" rot="MR0" display="off"/>
 <attribute name="PH8" x="99.06" y="-63.5" size="2.54" layer="96" rot="MR0" display="off"/>
 <attribute name="PH9" x="99.06" y="-63.5" size="2.54" layer="96" rot="MR0" display="off"/>
+<attribute name="PH4" x="99.06" y="-63.5" size="2.54" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="U$1" gate="G$9" x="99.06" y="-185.42" rot="MR0"/>
 <instance part="U1" gate="G$1" x="231.14" y="33.02"/>
@@ -4484,9 +4486,9 @@ http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</des
 </net>
 <net name="ULPI_STP" class="0">
 <segment>
-<wire x1="182.88" y1="55.88" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="54.61" x2="184.15" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="STP"/>
-<wire x1="185.42" y1="53.34" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="184.15" y1="53.34" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
 <label x="198.12" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -4498,17 +4500,28 @@ http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</des
 </net>
 <net name="ULPI_NXT" class="0">
 <segment>
-<wire x1="182.88" y1="50.8" x2="185.42" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="NXT"/>
-<wire x1="185.42" y1="48.26" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="48.26" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
 <label x="198.12" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$8" pin="PH4"/>
+<wire x1="104.14" y1="-48.26" x2="200.66" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="-48.26" x2="203.2" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-45.72" x2="203.2" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-5.08" x2="200.66" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="-2.54" x2="167.64" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-2.54" x2="165.1" y2="0" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="0" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="45.72" x2="167.64" y2="48.26" width="0.1524" layer="91"/>
+<label x="128.27" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ULPI_DIR" class="0">
 <segment>
-<wire x1="182.88" y1="48.26" x2="185.42" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="46.99" x2="184.15" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="DIR"/>
-<wire x1="185.42" y1="45.72" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="184.15" y1="45.72" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
 <label x="198.12" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -4522,9 +4535,9 @@ http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</des
 </net>
 <net name="ULPI_CK" class="0">
 <segment>
-<wire x1="182.88" y1="43.18" x2="185.42" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="41.91" x2="184.15" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="REFCLK"/>
-<wire x1="185.42" y1="40.64" x2="218.44" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="184.15" y1="40.64" x2="218.44" y2="40.64" width="0.1524" layer="91"/>
 <label x="198.12" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -4532,12 +4545,6 @@ http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</des
 <pinref part="U$1" gate="G$1" pin="PA5"/>
 <wire x1="-30.48" y1="101.6" x2="22.86" y2="101.6" width="0.1524" layer="91"/>
 <label x="-8.89" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="U$1" gate="G$8" pin="PH4"/>
-<wire x1="104.14" y1="-48.26" x2="252.73" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI2_NSS" class="0">
@@ -5464,7 +5471,7 @@ http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</des
 <pinref part="U3" gate="G$1" pin="CE/MODE"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="VCAP2" class="0">
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="55.88" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
@@ -5472,7 +5479,7 @@ http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</des
 <wire x1="210.82" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="VCAP1" class="0">
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="55.88" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
