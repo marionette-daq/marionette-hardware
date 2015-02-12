@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -703,7 +703,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="STM32F407">
+<deviceset name="STM32F407" prefix="U">
 <description>&lt;b&gt;ARM Cortex-M4 32b MCU+FPU &lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="PORT_A" x="-121.92" y="99.06"/>
@@ -1546,74 +1546,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="XCL068">
-<packages>
-<package name="56-BCPGA">
-<description>56-BCPGA</description>
-<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="51"/>
-<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="51"/>
-<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
-<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="51"/>
-<smd name="6" x="-0.55" y="0.938" dx="0.35" dy="0.375" layer="1"/>
-<smd name="5" x="0" y="0.938" dx="0.35" dy="0.375" layer="1"/>
-<smd name="4" x="0.55" y="0.938" dx="0.35" dy="0.375" layer="1"/>
-<smd name="1" x="-0.55" y="-0.938" dx="0.35" dy="0.375" layer="1"/>
-<smd name="2" x="0" y="-0.938" dx="0.35" dy="0.375" layer="1"/>
-<smd name="3" x="0.55" y="-0.938" dx="0.35" dy="0.375" layer="1"/>
-<smd name="8" x="1.28" y="0" dx="0.35" dy="2.1" layer="1"/>
-<smd name="7" x="-1.28" y="0" dx="0.35" dy="2.1" layer="1"/>
-<smd name="9" x="0" y="0" dx="1.5" dy="1.1" layer="1"/>
-<text x="1.71" y="-1.13" size="0.8" layer="25">&gt;NAME</text>
-<text x="1.73" y="0.18" size="0.8" layer="27">&gt;VALUE</text>
-<text x="-0.54" y="-1.56" size="0.4064" layer="21" font="vector" ratio="20" rot="R90">1</text>
-</package>
-</packages>
-<symbols>
-<symbol name="XCL206B">
-<text x="-5.08" y="15.24" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-5.08" y="12.7" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="VIN" x="-12.7" y="7.62" length="short"/>
-<pin name="VOUT" x="15.24" y="7.62" length="short" rot="R180"/>
-<pin name="VSS" x="0" y="-15.24" length="short" rot="R90"/>
-<pin name="L1" x="-12.7" y="-5.08" length="short"/>
-<pin name="LX" x="-12.7" y="-10.16" length="short"/>
-<pin name="CE/MODE" x="-12.7" y="5.08" length="short"/>
-<pin name="L2" x="15.24" y="-5.08" length="short" rot="R180"/>
-<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="XCL206B">
-<description>&lt;b&gt;Inductor Built in Step-Down 'micro DC/DC' Converter&lt;/b&gt;
-&lt;br&gt;
-&lt;br&gt;
-Datasheet:&lt;br&gt;
-http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</description>
-<gates>
-<gate name="G$1" symbol="XCL206B" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="56-BCPGA">
-<connects>
-<connect gate="G$1" pin="CE/MODE" pad="4"/>
-<connect gate="G$1" pin="L1" pad="7"/>
-<connect gate="G$1" pin="L2" pad="8"/>
-<connect gate="G$1" pin="LX" pad="1"/>
-<connect gate="G$1" pin="VIN" pad="6"/>
-<connect gate="G$1" pin="VOUT" pad="3"/>
-<connect gate="G$1" pin="VSS" pad="2 5 9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="NCP705">
 <packages>
 <package name="WDFN6">
@@ -1648,7 +1580,7 @@ http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</des
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="NCP705">
+<deviceset name="NCP705" prefix="U">
 <description>Ultra-Low Quiescent Current, Ultra-Low Noise, LDO Voltage Regulator&lt;br&gt;
 &lt;br&gt;
 Data sheet: &lt;br&gt;
@@ -4017,6 +3949,75 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="XCL206B">
+<description>5.0V - 3.3V SPS</description>
+<packages>
+<package name="56-BCPGA">
+<description>56-BCPGA</description>
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<smd name="6" x="-0.55" y="0.938" dx="0.35" dy="0.375" layer="1"/>
+<smd name="5" x="0" y="0.938" dx="0.35" dy="0.375" layer="1"/>
+<smd name="4" x="0.55" y="0.938" dx="0.35" dy="0.375" layer="1"/>
+<smd name="1" x="-0.55" y="-0.938" dx="0.35" dy="0.375" layer="1"/>
+<smd name="2" x="0" y="-0.938" dx="0.35" dy="0.375" layer="1"/>
+<smd name="3" x="0.55" y="-0.938" dx="0.35" dy="0.375" layer="1"/>
+<smd name="8" x="1.28" y="0" dx="0.35" dy="2.1" layer="1"/>
+<smd name="7" x="-1.28" y="0" dx="0.35" dy="2.1" layer="1"/>
+<smd name="9" x="0" y="0" dx="1.5" dy="1.1" layer="1"/>
+<text x="1.71" y="-1.13" size="0.8" layer="25">&gt;NAME</text>
+<text x="1.73" y="0.18" size="0.8" layer="27">&gt;VALUE</text>
+<text x="-0.54" y="-1.56" size="0.4064" layer="21" font="vector" ratio="20" rot="R90">1</text>
+</package>
+</packages>
+<symbols>
+<symbol name="XCL206B">
+<text x="-5.08" y="15.24" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="12.7" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="VIN" x="-12.7" y="7.62" length="short"/>
+<pin name="VOUT" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="VSS" x="0" y="-15.24" length="short" rot="R90"/>
+<pin name="L1" x="-12.7" y="-5.08" length="short"/>
+<pin name="LX" x="-12.7" y="-10.16" length="short"/>
+<pin name="CE/MODE" x="-12.7" y="5.08" length="short"/>
+<pin name="L2" x="15.24" y="-5.08" length="short" rot="R180"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="XCL206B" prefix="U">
+<description>&lt;b&gt;Inductor Built in Step-Down 'micro DC/DC' Converter&lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;
+Datasheet:&lt;br&gt;
+http://www.torex.co.jp/english/products/dcdc_converters/data/XCL205~207.pdf</description>
+<gates>
+<gate name="G$1" symbol="XCL206B" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="56-BCPGA">
+<connects>
+<connect gate="G$1" pin="CE/MODE" pad="4"/>
+<connect gate="G$1" pin="L1" pad="7"/>
+<connect gate="G$1" pin="L2" pad="8"/>
+<connect gate="G$1" pin="LX" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="6"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2 5 9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4095,7 +4096,6 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="C21" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="100nF, 10V"/>
 <part name="GND8" library="GROUND" deviceset="GND" device=""/>
 <part name="C22" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="4.7uF, 10v"/>
-<part name="U$2" library="XCL068" deviceset="XCL206B" device=""/>
 <part name="U$3" library="NCP705" deviceset="NCP705" device=""/>
 <part name="GND2" library="GROUND" deviceset="GND" device=""/>
 <part name="C23" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="1uF, 10V"/>
@@ -4121,6 +4121,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="U$4" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
 <part name="GND4" library="GROUND" deviceset="GND" device=""/>
 <part name="U$9" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
+<part name="U$2" library="XCL206B" deviceset="XCL206B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4898,7 +4899,6 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 </instance>
 <instance part="GND8" gate="1" x="139.7" y="-15.24"/>
 <instance part="C22" gate="G$1" x="256.54" y="-5.08"/>
-<instance part="U$2" gate="G$1" x="43.18" y="81.28"/>
 <instance part="U$3" gate="G$1" x="43.18" y="2.54"/>
 <instance part="GND2" gate="1" x="43.18" y="-17.78"/>
 <instance part="C23" gate="G$1" x="193.04" y="53.34" smashed="yes">
@@ -4919,6 +4919,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <instance part="U$6" gate="+3.3_VDDA" x="170.18" y="76.2"/>
 <instance part="U$7" gate="G$1" x="73.66" y="91.44"/>
 <instance part="U$8" gate="G$1" x="119.38" y="10.16"/>
+<instance part="U$2" gate="G$1" x="43.18" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -4944,7 +4945,6 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="43.18" y1="55.88" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="VSS"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="60.96" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="78.74" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
@@ -4953,6 +4953,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="78.74" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -5089,11 +5090,11 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="L1"/>
 <wire x1="30.48" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="76.2" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="LX"/>
 <wire x1="27.94" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="L1"/>
+<pinref part="U$2" gate="G$1" pin="LX"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -5108,8 +5109,6 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <wire x1="27.94" y1="88.9" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
 <junction x="27.94" y="88.9"/>
 <wire x1="27.94" y1="86.36" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="VIN"/>
-<pinref part="U$2" gate="G$1" pin="CE/MODE"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="88.9" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
@@ -5129,6 +5128,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <junction x="12.7" y="12.7"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="U$2" gate="G$1" pin="VIN"/>
+<pinref part="U$2" gate="G$1" pin="CE/MODE"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -5186,10 +5187,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 </net>
 <net name="+3.3VDD" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="L2"/>
 <wire x1="58.42" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="76.2" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="VOUT"/>
 <wire x1="60.96" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
 <junction x="60.96" y="88.9"/>
@@ -5198,6 +5197,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <wire x1="66.04" y1="88.9" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
 <junction x="66.04" y="88.9"/>
 <pinref part="U$7" gate="G$1" pin="+3.3VDD"/>
+<pinref part="U$2" gate="G$1" pin="VOUT"/>
+<pinref part="U$2" gate="G$1" pin="L2"/>
 </segment>
 <segment>
 <pinref part="C21" gate="G$1" pin="1"/>

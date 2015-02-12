@@ -90,7 +90,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="NCP705">
+<deviceset name="NCP705" prefix="U">
 <description>Ultra-Low Quiescent Current, Ultra-Low Noise, LDO Voltage Regulator&lt;br&gt;
 &lt;br&gt;
 Data sheet: &lt;br&gt;

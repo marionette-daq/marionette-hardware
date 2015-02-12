@@ -96,7 +96,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="XCL206B">
+<deviceset name="XCL206B" prefix="U">
 <description>&lt;b&gt;Inductor Built in Step-Down 'micro DC/DC' Converter&lt;/b&gt;
 &lt;br&gt;
 &lt;br&gt;
