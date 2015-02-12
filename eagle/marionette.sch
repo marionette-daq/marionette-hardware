@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1664,36 +1664,6 @@ http://www.onsemi.com/pub_link/Collateral/NCP705-D.PDF&lt;br&gt;</description>
 <connect gate="G$1" pin="IN" pad="6"/>
 <connect gate="G$1" pin="OUT" pad="1"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="3_3Vsupply">
-<packages>
-</packages>
-<symbols>
-<symbol name="+3.3V">
-<description>+3.3V supply symbol</description>
-<wire x1="0" y1="-2.54" x2="0" y2="1.016" width="0.254" layer="94"/>
-<circle x="0" y="2.54" radius="1.419903125" width="0.254" layer="94"/>
-<wire x1="0" y1="3.175" x2="0" y2="1.905" width="0.254" layer="94"/>
-<wire x1="0.635" y1="2.54" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
-<text x="-2.54" y="4.445" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+3.3V" x="0" y="-2.54" visible="off" length="point" direction="sup"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="+3.3V">
-<description>&lt;b&gt;3.3V power supply symbol</description>
-<gates>
-<gate name="+3.3V" symbol="+3.3V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4037,6 +4007,65 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 </deviceset>
 </devicesets>
 </library>
+<library name="3_3VDDAsupply">
+<description>3.3V analog power supply symbol</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+3.3V">
+<description>+3.3V supply symbol</description>
+<wire x1="0" y1="-2.54" x2="0" y2="1.016" width="0.254" layer="94"/>
+<circle x="0" y="2.54" radius="1.419903125" width="0.254" layer="94"/>
+<wire x1="0" y1="3.175" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="4.445" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+3.3VDDA" x="0" y="-2.54" visible="off" length="point" direction="sup"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3.3VDDA">
+<description>&lt;b&gt;3.3V analog power supply symbol</description>
+<gates>
+<gate name="+3.3_VDDA" symbol="+3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="3_3VDDsupply">
+<description>+3.3V digital supply symbol</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="3.3VDD">
+<pin name="+3.3VDD" x="0" y="-2.54" visible="off" length="point" direction="sup"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3.3VDD">
+<description>+3.3V digital supply symbol</description>
+<gates>
+<gate name="G$1" symbol="3.3VDD" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4108,8 +4137,6 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <part name="C24" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="100nF, 10V"/>
 <part name="C25" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="1uF, 10V"/>
 <part name="C26" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="100nF, 10V"/>
-<part name="U$6" library="3_3Vsupply" deviceset="+3.3V" device=""/>
-<part name="U$7" library="3_3Vsupply" deviceset="+3.3V" device=""/>
 <part name="D1" library="CBDU0530" deviceset="CDBU0530" device=""/>
 <part name="D2" library="CBDU0530" deviceset="CDBU0530" device=""/>
 <part name="U1" library="USB3318" deviceset="USB3318" device=""/>
@@ -4141,6 +4168,10 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <attribute name="8" value="GND"/>
 <attribute name="9" value="SWCLK"/>
 </part>
+<part name="U$5" library="3_3VDDAsupply" deviceset="+3.3VDDA" device=""/>
+<part name="U$6" library="3_3VDDAsupply" deviceset="+3.3VDDA" device=""/>
+<part name="U$7" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
+<part name="U$8" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4711,10 +4742,12 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <instance part="C26" gate="G$1" x="162.56" y="53.34" smashed="yes">
 <attribute name="NAME" x="164.084" y="53.721" size="1.778" layer="95"/>
 </instance>
-<instance part="U$6" gate="+3.3V" x="66.04" y="15.24"/>
-<instance part="U$7" gate="+3.3V" x="170.18" y="76.2"/>
 <instance part="D1" gate="G$1" x="-17.78" y="40.64"/>
 <instance part="D2" gate="G$1" x="-17.78" y="55.88"/>
+<instance part="U$5" gate="+3.3_VDDA" x="66.04" y="15.24"/>
+<instance part="U$6" gate="+3.3_VDDA" x="170.18" y="76.2"/>
+<instance part="U$7" gate="G$1" x="73.66" y="91.44"/>
+<instance part="U$8" gate="G$1" x="119.38" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -4883,7 +4916,118 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <junction x="210.82" y="45.72"/>
 </segment>
 </net>
-<net name="+3.3V" class="0">
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="L1"/>
+<wire x1="30.48" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="76.2" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="LX"/>
+<wire x1="27.94" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<wire x1="-15.24" y1="55.88" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="40.64" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="40.64" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="55.88" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-5.08" y="55.88"/>
+<wire x1="12.7" y1="88.9" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="88.9" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
+<junction x="27.94" y="88.9"/>
+<wire x1="27.94" y1="86.36" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VIN"/>
+<pinref part="U$2" gate="G$1" pin="CE/MODE"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="88.9" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
+<junction x="12.7" y="88.9"/>
+<wire x1="-5.08" y1="40.64" x2="-5.08" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-5.08" y="40.64"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="EN"/>
+<wire x1="27.94" y1="7.62" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="IN"/>
+<wire x1="30.48" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="12.7" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
+<junction x="27.94" y="12.7"/>
+<wire x1="27.94" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
+<junction x="12.7" y="12.7"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="55.88" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$11" pin="VCAP2"/>
+<wire x1="210.82" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="55.88" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$11" pin="VCAP1"/>
+<wire x1="203.2" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+3.3VDDA" class="0">
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="12.7" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="12.7" x2="66.04" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="OUT"/>
+<pinref part="U$5" gate="+3.3_VDDA" pin="+3.3VDDA"/>
+<junction x="66.04" y="12.7"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$11" pin="VDDA"/>
+<wire x1="170.18" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="73.66" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
+<junction x="220.98" y="73.66"/>
+<pinref part="U$1" gate="G$11" pin="VREF+"/>
+<wire x1="220.98" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
+<junction x="220.98" y="68.58"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="58.42" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="58.42" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="68.58" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
+<junction x="193.04" y="58.42"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="55.88" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="55.88" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="73.66" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
+<junction x="170.18" y="63.5"/>
+<pinref part="U$6" gate="+3.3_VDDA" pin="+3.3VDDA"/>
+<junction x="170.18" y="73.66"/>
+</segment>
+</net>
+<net name="+3.3VDD" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="L2"/>
+<wire x1="58.42" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="76.2" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VOUT"/>
+<wire x1="60.96" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<junction x="60.96" y="88.9"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="88.9" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="88.9" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
+<junction x="66.04" y="88.9"/>
+<pinref part="U$7" gate="G$1" pin="+3.3VDD"/>
+</segment>
 <segment>
 <pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$10" pin="VDD@14"/>
@@ -4979,116 +5123,7 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <wire x1="246.38" y1="2.54" x2="256.54" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="2.54" x2="256.54" y2="-2.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="12.7" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="12.7" x2="66.04" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="OUT"/>
-<pinref part="U$6" gate="+3.3V" pin="+3.3V"/>
-<junction x="66.04" y="12.7"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$11" pin="VDDA"/>
-<wire x1="170.18" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="73.66" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
-<junction x="220.98" y="73.66"/>
-<pinref part="U$1" gate="G$11" pin="VREF+"/>
-<wire x1="220.98" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
-<junction x="220.98" y="68.58"/>
-<pinref part="C24" gate="G$1" pin="1"/>
-<pinref part="C23" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="58.42" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="58.42" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="68.58" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
-<junction x="193.04" y="58.42"/>
-<pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="55.88" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C26" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="55.88" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="73.66" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
-<junction x="170.18" y="63.5"/>
-<pinref part="U$7" gate="+3.3V" pin="+3.3V"/>
-<junction x="170.18" y="73.66"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="L1"/>
-<wire x1="30.48" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="76.2" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="LX"/>
-<wire x1="27.94" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<wire x1="-15.24" y1="55.88" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="40.64" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="40.64" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="55.88" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
-<junction x="-5.08" y="55.88"/>
-<wire x1="12.7" y1="88.9" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="88.9" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
-<junction x="27.94" y="88.9"/>
-<wire x1="27.94" y1="86.36" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="VIN"/>
-<pinref part="U$2" gate="G$1" pin="CE/MODE"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="88.9" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
-<junction x="12.7" y="88.9"/>
-<wire x1="-5.08" y1="40.64" x2="-5.08" y2="12.7" width="0.1524" layer="91"/>
-<junction x="-5.08" y="40.64"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="U$3" gate="G$1" pin="EN"/>
-<wire x1="27.94" y1="7.62" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="IN"/>
-<wire x1="30.48" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="12.7" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
-<junction x="27.94" y="12.7"/>
-<wire x1="27.94" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
-<junction x="12.7" y="12.7"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="D2" gate="G$1" pin="C"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="L2"/>
-<wire x1="58.42" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="76.2" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="VOUT"/>
-<wire x1="60.96" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
-<junction x="60.96" y="88.9"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="88.9" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
-<junction x="66.04" y="88.9"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="55.88" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$11" pin="VCAP2"/>
-<wire x1="210.82" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="55.88" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$11" pin="VCAP1"/>
-<wire x1="203.2" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="+3.3VDD"/>
 </segment>
 </net>
 </nets>
