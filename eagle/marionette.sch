@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1857,58 +1857,6 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/3318.pdf</description>
 <connect gate="G$1" pin="VDD18" pad="21"/>
 <connect gate="G$1" pin="VDD33" pad="4"/>
 <connect gate="G$1" pin="VDDIO" pad="17"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="ABS07L">
-<description>32.768 kHz Crystal</description>
-<packages>
-<package name="2SMD">
-<smd name="P$1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="P$2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
-<wire x1="-2" y1="1" x2="2" y2="1" width="0.127" layer="21"/>
-<wire x1="-2" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
-<wire x1="-2" y1="1" x2="-2" y2="-1" width="0.127" layer="21"/>
-<wire x1="2" y1="1" x2="2" y2="-1" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="CLK">
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="2.54" x2="-3.81" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="3.81" y2="0" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0" x2="3.81" y2="2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<pin name="P$1" x="-10.16" y="0" visible="off" length="middle"/>
-<pin name="P$2" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
-<text x="-3.81" y="3.81" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-3.81" y="-6.35" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ABS07L">
-<description>&lt;b&gt; ABSO7L &lt;/b&gt;
-- 32.768 kHz Crystal&lt;br&gt;
-Datasheet: http://www.abracon.com/Resonators/ABS07L.pdf &lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="CLK" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="2SMD">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4066,6 +4014,67 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 </deviceset>
 </devicesets>
 </library>
+<library name="ABS25">
+<description>32.768kHz crystal</description>
+<packages>
+<package name="4-SOJ">
+<description>Plastic molded SMD - 8mm x 3.8mm</description>
+<smd name="1" x="-2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
+<smd name="2" x="2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
+<smd name="3" x="2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
+<smd name="4" x="-2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
+<text x="-1.7" y="-4.4" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.9" y="3.2" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="-4" y1="-1.9" x2="-4" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-4" y1="1.9" x2="-3.6" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="1.9" x2="1.9" y2="1.9" width="0.127" layer="21"/>
+<wire x1="3.6" y1="1.9" x2="4" y2="1.9" width="0.127" layer="21"/>
+<wire x1="4" y1="1.9" x2="4" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="4" y1="-1.9" x2="3.6" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="1.9" y1="-1.9" x2="-1.9" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="-1.9" x2="-4" y2="-1.9" width="0.127" layer="21"/>
+<text x="-3" y="-3.6" size="1.27" layer="21" font="vector" ratio="20" rot="R90">1</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CRYSTAL">
+<pin name="P$1" x="0" y="-2.54" visible="off" length="point" rot="R90"/>
+<pin name="P$2" x="0" y="2.54" visible="off" length="point" rot="R270"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0.762" x2="-1.016" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-0.762" x2="1.016" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-0.762" x2="1.016" y2="0.762" width="0.254" layer="94"/>
+<wire x1="1.016" y1="0.762" x2="-1.016" y2="0.762" width="0.254" layer="94"/>
+<text x="2.54" y="-2.54" size="1.27" layer="95" font="vector" ratio="20">&gt;NAME</text>
+<text x="2.54" y="0" size="1.27" layer="96" font="vector" ratio="20">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ABS25-32.768KHZ-6-T" prefix="X">
+<description>&lt;b&gt;ABS25&lt;\b&gt; - 32.768kHz Crystal oscilator, CL = 6pF 
+&lt;br&gt;&lt;br&gt;
+Datasheet:&lt;br&gt;
+http://www.abracon.com/Resonators/abs25.pdf</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="4-SOJ">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4140,8 +4149,6 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <part name="D1" library="CBDU0530" deviceset="CDBU0530" device=""/>
 <part name="D2" library="CBDU0530" deviceset="CDBU0530" device=""/>
 <part name="U1" library="USB3318" deviceset="USB3318" device=""/>
-<part name="U$4" library="ABS07L" deviceset="ABS07L" device=""/>
-<part name="C27" library="CAPACITOR_SMT" deviceset="C" device="C0603"/>
 <part name="C28" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="2.2uF, 10V"/>
 <part name="R1" library="RESISTOR" deviceset="R-US_" device="R0603" value="8.06k"/>
 <part name="C29" library="CAPACITOR_SMT" deviceset="C" device="C0603" value="100nF, 10V"/>
@@ -4172,6 +4179,10 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <part name="U$6" library="3_3VDDAsupply" deviceset="+3.3VDDA" device=""/>
 <part name="U$7" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
 <part name="U$8" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
+<part name="X1" library="ABS25" deviceset="ABS25-32.768KHZ-6-T" device=""/>
+<part name="C27" library="CAPACITOR_SMT" deviceset="C" device="C0402" value="11uF, 50V"/>
+<part name="C30" library="CAPACITOR_SMT" deviceset="C" device="C0402" value="11uF, 50V"/>
+<part name="GND3" library="GROUND" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4215,8 +4226,6 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <instance part="U$1" gate="G$8" x="304.8" y="-7.62" rot="MR0"/>
 <instance part="U$1" gate="G$9" x="304.8" y="-91.44" rot="MR0"/>
 <instance part="U1" gate="G$1" x="162.56" y="33.02"/>
-<instance part="U$4" gate="G$1" x="21.59" y="-129.54" rot="R90"/>
-<instance part="C27" gate="G$1" x="31.75" y="-128.27"/>
 <instance part="C28" gate="G$1" x="124.46" y="15.24"/>
 <instance part="R1" gate="G$1" x="144.78" y="15.24" rot="R270"/>
 <instance part="C29" gate="G$1" x="104.14" y="15.24"/>
@@ -4243,6 +4252,16 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <attribute name="8" x="68.58" y="54.61" size="2.54" layer="96" display="off"/>
 <attribute name="9" x="68.58" y="54.61" size="2.54" layer="96" display="off"/>
 </instance>
+<instance part="X1" gate="G$1" x="78.74" y="-129.54" rot="R180"/>
+<instance part="C27" gate="G$1" x="85.09" y="-124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="88.646" y="-119.761" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="89.154" y="-122.809" size="1.778" layer="96"/>
+</instance>
+<instance part="C30" gate="G$1" x="87.63" y="-134.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="86.614" y="-139.319" size="1.778" layer="95"/>
+<attribute name="VALUE" x="84.836" y="-136.271" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND3" gate="1" x="96.52" y="-133.35"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -4253,7 +4272,7 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <wire x1="27.94" y1="119.38" x2="25.4" y2="116.84" width="0.762" layer="92"/>
 <wire x1="25.4" y1="116.84" x2="25.4" y2="-73.66" width="0.762" layer="92"/>
 <label x="113.03" y="57.15" size="2.54" layer="95" rot="R90"/>
-<label x="29.21" y="-13.97" size="2.54" layer="95" rot="R90"/>
+<label x="29.21" y="-31.75" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
 <bus name="SPI_BUS:SPI2_NSS,SPI2_SCK,SPI2_MISO,SPI2_MOSI">
@@ -4270,34 +4289,36 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <label x="386.08" y="111.76" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
+<bus name="SDIO_BUS:SDIO_D7,SDIO_D6,SDIO_D5,SDIO_CMD,SDIO_CK,SDIO_D4,SDIO_D3,SDIO_D2,SDIO_D1,SDIO_D0">
+<segment>
+<wire x1="43.18" y1="6.35" x2="43.18" y2="-162.56" width="0.762" layer="92"/>
+<label x="46.99" y="-31.75" size="2.54" layer="95" rot="R90"/>
+</segment>
+</bus>
 </busses>
 <nets>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$1" gate="G$3" pin="PC13"/>
-<wire x1="-30.48" y1="-127" x2="8.89" y2="-127" width="0.1524" layer="91"/>
-<wire x1="8.89" y1="-127" x2="8.89" y2="-118.11" width="0.1524" layer="91"/>
-<wire x1="8.89" y1="-118.11" x2="21.59" y2="-118.11" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-127" x2="67.31" y2="-127" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="-127" x2="67.31" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="-124.46" x2="78.74" y2="-124.46" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="P$1"/>
+<wire x1="78.74" y1="-124.46" x2="78.74" y2="-127" width="0.1524" layer="91"/>
 <pinref part="C27" gate="G$1" pin="1"/>
-<wire x1="21.59" y1="-118.11" x2="31.75" y2="-118.11" width="0.1524" layer="91"/>
-<wire x1="31.75" y1="-118.11" x2="31.75" y2="-125.73" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="P$2"/>
-<wire x1="21.59" y1="-119.38" x2="21.59" y2="-118.11" width="0.1524" layer="91"/>
-<junction x="21.59" y="-118.11"/>
+<wire x1="78.74" y1="-124.46" x2="82.55" y2="-124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="C27" gate="G$1" pin="2"/>
-<wire x1="31.75" y1="-133.35" x2="31.75" y2="-140.97" width="0.1524" layer="91"/>
-<wire x1="31.75" y1="-140.97" x2="21.59" y2="-140.97" width="0.1524" layer="91"/>
-<wire x1="21.59" y1="-140.97" x2="8.89" y2="-140.97" width="0.1524" layer="91"/>
-<wire x1="8.89" y1="-140.97" x2="8.89" y2="-132.08" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$3" pin="PC14"/>
-<wire x1="8.89" y1="-132.08" x2="-30.48" y2="-132.08" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="P$1"/>
-<wire x1="21.59" y1="-139.7" x2="21.59" y2="-140.97" width="0.1524" layer="91"/>
-<junction x="21.59" y="-140.97"/>
+<wire x1="67.31" y1="-132.08" x2="-30.48" y2="-132.08" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="-132.08" x2="67.31" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="-134.62" x2="78.74" y2="-134.62" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="P$2"/>
+<wire x1="78.74" y1="-134.62" x2="78.74" y2="-132.08" width="0.1524" layer="91"/>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="-134.62" x2="82.55" y2="-134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -4638,6 +4659,99 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SBH11-PBPC-Dxx-ST-xx.p
 <wire x1="40.64" y1="43.18" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="13"/>
 <wire x1="43.18" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="90.17" y1="-134.62" x2="91.44" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-134.62" x2="91.44" y2="-129.54" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="-129.54" x2="91.44" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-124.46" x2="90.17" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-129.54" x2="96.52" y2="-129.54" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-129.54" x2="96.52" y2="-130.81" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="SDIO_D4" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB8"/>
+<wire x1="-30.48" y1="-7.62" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-5.08" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-8.89" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_CMD" class="0">
+<segment>
+<pinref part="U$1" gate="G$4" pin="PD2"/>
+<wire x1="-30.48" y1="-165.1" x2="40.64" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-162.56" x2="40.64" y2="-165.1" width="0.1524" layer="91"/>
+<label x="-8.89" y="-165.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_CK" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC12"/>
+<wire x1="-30.48" y1="-121.92" x2="40.64" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-119.38" x2="40.64" y2="-121.92" width="0.1524" layer="91"/>
+<label x="-8.89" y="-121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D3" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC11"/>
+<wire x1="-30.48" y1="-116.84" x2="40.64" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-114.3" x2="40.64" y2="-116.84" width="0.1524" layer="91"/>
+<label x="-8.89" y="-116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D2" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC10"/>
+<wire x1="-30.48" y1="-111.76" x2="40.64" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-109.22" x2="40.64" y2="-111.76" width="0.1524" layer="91"/>
+<label x="-8.89" y="-111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D1" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC9"/>
+<wire x1="-30.48" y1="-106.68" x2="40.64" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-104.14" x2="40.64" y2="-106.68" width="0.1524" layer="91"/>
+<label x="-8.89" y="-106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D0" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC8"/>
+<wire x1="-30.48" y1="-101.6" x2="40.64" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-99.06" x2="40.64" y2="-101.6" width="0.1524" layer="91"/>
+<label x="-8.89" y="-101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D7" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC7"/>
+<wire x1="-30.48" y1="-96.52" x2="40.64" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-93.98" x2="40.64" y2="-96.52" width="0.1524" layer="91"/>
+<label x="-8.89" y="-96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D6" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC6"/>
+<wire x1="-30.48" y1="-91.44" x2="40.64" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-88.9" x2="40.64" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-8.89" y="-91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D5" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB9"/>
+<wire x1="-30.48" y1="-12.7" x2="40.64" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-10.16" x2="40.64" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-8.89" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
