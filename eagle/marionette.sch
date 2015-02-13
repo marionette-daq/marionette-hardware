@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -53,6 +53,8 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -72,15 +74,26 @@
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
 <layer number="108" name="dxf_notes" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="110" name="labels" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="print" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="hints" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="bLogo" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tText" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bMask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -106,6 +119,15 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
@@ -4159,6 +4181,68 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 </deviceset>
 </devicesets>
 </library>
+<library name="con-hirose-microusb">
+<packages>
+<package name="ZX62D-B-5P8">
+<wire x1="-5.1" y1="-1.45" x2="5.1" y2="-1.45" width="0.1" layer="51"/>
+<rectangle x1="-4.5" y1="-1.4" x2="4.5" y2="1.9" layer="41"/>
+<pad name="P$1" x="3.51" y="0" drill="1.524"/>
+<pad name="P$2" x="-3.51" y="0" drill="1.524"/>
+<pad name="P$3" x="-2.425" y="3" drill="0.8382"/>
+<pad name="P$4" x="2.425" y="3" drill="0.8382"/>
+<smd name="P1" x="-1.3" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P2" x="-0.65" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P3" x="0" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P4" x="0.65" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="P5" x="1.3" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<text x="4" y="3.1" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MICRO-USB">
+<wire x1="7.62" y1="15.24" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<pin name="D+" x="10.16" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="D-" x="10.16" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="ID" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SHLD@1" x="10.16" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="SHLD@2" x="10.16" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="SHLD@3" x="10.16" y="-7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="SHLD@4" x="10.16" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="VCC" x="10.16" y="12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
+<text x="-7.62" y="17.78" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ZX62D-B-5P8">
+<gates>
+<gate name="G$1" symbol="MICRO-USB" x="13.716" y="-8.128"/>
+</gates>
+<devices>
+<device name="" package="ZX62D-B-5P8">
+<connects>
+<connect gate="G$1" pin="D+" pad="P3"/>
+<connect gate="G$1" pin="D-" pad="P2"/>
+<connect gate="G$1" pin="GND" pad="P5"/>
+<connect gate="G$1" pin="ID" pad="P4"/>
+<connect gate="G$1" pin="SHLD@1" pad="P$1"/>
+<connect gate="G$1" pin="SHLD@2" pad="P$2"/>
+<connect gate="G$1" pin="SHLD@3" pad="P$3"/>
+<connect gate="G$1" pin="SHLD@4" pad="P$4"/>
+<connect gate="G$1" pin="VCC" pad="P1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4292,6 +4376,9 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 <part name="J6" library="20POS_ANGLED_FEMALE_HEADER" deviceset="2X10FE" device=""/>
 <part name="J7" library="20POS_ANGLED_FEMALE_HEADER" deviceset="2X10FE" device=""/>
 <part name="GND9" library="GROUND" deviceset="GND" device=""/>
+<part name="U$2" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
+<part name="U$3" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
+<part name="GND10" library="GROUND" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4398,6 +4485,7 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 </instance>
 <instance part="U$1" gate="G$7" x="256.54" y="-185.42" rot="MR0"/>
 <instance part="U$1" gate="G$5" x="256.54" y="-93.98" rot="MR0"/>
+<instance part="U$3" gate="G$1" x="292.1" y="7.62" rot="MR0"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -4455,6 +4543,13 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 <wire x1="398.78" y1="-233.68" x2="401.32" y2="-231.14" width="0.762" layer="92"/>
 <wire x1="401.32" y1="-231.14" x2="401.32" y2="71.12" width="0.762" layer="92"/>
 <label x="39.37" y="-55.88" size="2.54" layer="95" rot="R90"/>
+</segment>
+</bus>
+<bus name="USB_FS_BUS:OTG_VBUS,FS_ID,FS_DP,FS_DM">
+<segment>
+<wire x1="63.5" y1="63.5" x2="63.5" y2="88.9" width="0.762" layer="92"/>
+<wire x1="63.5" y1="88.9" x2="66.04" y2="91.44" width="0.762" layer="92"/>
+<label x="66.04" y="63.5" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
 </busses>
@@ -5030,30 +5125,6 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 <label x="-8.89" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA9"/>
-<wire x1="-30.48" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA10"/>
-<wire x1="-30.48" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA11"/>
-<wire x1="-30.48" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA12"/>
-<wire x1="-30.48" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PA15" class="0">
 <segment>
 <wire x1="35.56" y1="53.34" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
@@ -5299,6 +5370,38 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 <wire x1="172.72" y1="-104.14" x2="104.14" y2="-104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="OTG_VBUS" class="0">
+<segment>
+<wire x1="63.5" y1="83.82" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PA9"/>
+<wire x1="-30.48" y1="81.28" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
+<label x="-8.89" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FS_ID" class="0">
+<segment>
+<wire x1="63.5" y1="78.74" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PA10"/>
+<wire x1="-30.48" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
+<label x="-8.89" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FS_DM" class="0">
+<segment>
+<wire x1="63.5" y1="73.66" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PA11"/>
+<wire x1="-30.48" y1="71.12" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
+<label x="-8.89" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FS_DP" class="0">
+<segment>
+<wire x1="63.5" y1="68.58" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PA12"/>
+<wire x1="-30.48" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
+<label x="-8.89" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -5400,15 +5503,23 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 <attribute name="NAME" x="164.084" y="53.721" size="1.778" layer="95"/>
 </instance>
 <instance part="D1" gate="G$1" x="-17.78" y="40.64"/>
-<instance part="D2" gate="G$1" x="-17.78" y="55.88"/>
+<instance part="D2" gate="G$1" x="-17.78" y="81.28"/>
 <instance part="U$5" gate="+3.3_VDDA" x="66.04" y="15.24"/>
 <instance part="U$6" gate="+3.3_VDDA" x="170.18" y="76.2"/>
 <instance part="U$7" gate="G$1" x="73.66" y="91.44"/>
 <instance part="U$8" gate="G$1" x="119.38" y="10.16"/>
 <instance part="U2" gate="G$1" x="43.18" y="2.54"/>
 <instance part="U3" gate="G$1" x="43.18" y="81.28"/>
+<instance part="U$2" gate="G$1" x="-45.72" y="68.58"/>
+<instance part="GND10" gate="1" x="-31.75" y="50.8"/>
 </instances>
 <busses>
+<bus name="USB_FS_BUS:OTG_VBUS,FS_ID,FS_DP,FS_DM">
+<segment>
+<wire x1="-25.4" y1="72.39" x2="-25.4" y2="87.63" width="0.762" layer="92"/>
+<wire x1="-25.4" y1="87.63" x2="-24.13" y2="88.9" width="0.762" layer="92"/>
+</segment>
+</bus>
 </busses>
 <nets>
 <net name="N$1" class="0">
@@ -5574,6 +5685,29 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 <wire x1="210.82" y1="45.72" x2="210.82" y2="48.26" width="0.1524" layer="91"/>
 <junction x="210.82" y="45.72"/>
 </segment>
+<segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="-31.75" y1="53.34" x2="-31.75" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="58.42" x2="-31.75" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="60.96" x2="-31.75" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="63.5" x2="-31.75" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="66.04" x2="-31.75" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="69.85" x2="-33.02" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="-33.02" y1="71.12" x2="-35.56" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="SHLD@1"/>
+<wire x1="-31.75" y1="66.04" x2="-35.56" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="SHLD@2"/>
+<wire x1="-31.75" y1="63.5" x2="-35.56" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="SHLD@3"/>
+<wire x1="-31.75" y1="60.96" x2="-35.56" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="SHLD@4"/>
+<wire x1="-31.75" y1="58.42" x2="-35.56" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-31.75" y="66.04"/>
+<junction x="-31.75" y="63.5"/>
+<junction x="-31.75" y="60.96"/>
+<junction x="-31.75" y="58.42"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -5586,11 +5720,11 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 </net>
 <net name="N$8" class="0">
 <segment>
-<wire x1="-15.24" y1="55.88" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="40.64" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="81.28" x2="-5.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="40.64" x2="-5.08" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="40.64" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="55.88" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
-<junction x="-5.08" y="55.88"/>
+<wire x1="-5.08" y1="81.28" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-5.08" y="81.28"/>
 <wire x1="12.7" y1="88.9" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="88.9" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
@@ -5783,6 +5917,39 @@ http://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/SFH11-PxxC-Dxx-RA-xx%2
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="2.54" x2="256.54" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="+3.3VDD"/>
+</segment>
+</net>
+<net name="FS_ID" class="0">
+<segment>
+<wire x1="-25.4" y1="74.93" x2="-26.67" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="ID"/>
+<wire x1="-26.67" y1="73.66" x2="-35.56" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FS_DP" class="0">
+<segment>
+<wire x1="-25.4" y1="77.47" x2="-26.67" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="D+"/>
+<wire x1="-26.67" y1="76.2" x2="-35.56" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FS_DM" class="0">
+<segment>
+<wire x1="-25.4" y1="80.01" x2="-26.67" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="D-"/>
+<wire x1="-26.67" y1="78.74" x2="-35.56" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OTG_VBUS" class="0">
+<segment>
+<wire x1="-25.4" y1="82.55" x2="-26.67" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VCC"/>
+<wire x1="-26.67" y1="81.28" x2="-35.56" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-25.4" y1="82.55" x2="-24.13" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="-24.13" y1="81.28" x2="-20.32" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
