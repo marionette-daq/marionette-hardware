@@ -104,10 +104,10 @@
 <symbol name="USB3318">
 <pin name="REFCLK" x="-12.7" y="7.62" length="short"/>
 <pin name="RBIAS" x="-12.7" y="-10.16" length="short"/>
-<pin name="VDD18" x="-12.7" y="5.08" length="short"/>
+<pin name="VDD18" x="17.78" y="2.54" length="short" rot="R180"/>
 <pin name="VDDIO" x="-12.7" y="0" length="short"/>
-<pin name="RESETB" x="-12.7" y="17.78" length="short"/>
-<pin name="CLKOUT" x="17.78" y="20.32" length="short" rot="R180"/>
+<pin name="RESETB" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="CLKOUT" x="17.78" y="27.94" length="short" rot="R180"/>
 <pin name="DIR" x="-12.7" y="12.7" length="short"/>
 <pin name="NXT" x="-12.7" y="15.24" length="short"/>
 <pin name="STP" x="-12.7" y="20.32" length="short"/>
@@ -119,13 +119,13 @@
 <pin name="DATA5" x="-12.7" y="35.56" length="short"/>
 <pin name="DATA6" x="-12.7" y="38.1" length="short"/>
 <pin name="DATA7" x="-12.7" y="40.64" length="short"/>
-<pin name="CPEN" x="-12.7" y="10.16" length="short"/>
-<pin name="ID" x="17.78" y="40.64" length="short" rot="R180"/>
-<pin name="VBUS" x="17.78" y="35.56" length="short" rot="R180"/>
+<pin name="CPEN" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="ID" x="17.78" y="33.02" length="short" rot="R180"/>
+<pin name="VBUS" x="17.78" y="40.64" length="short" rot="R180"/>
 <pin name="VBAT" x="-12.7" y="-5.08" length="short"/>
 <pin name="VDD33" x="-12.7" y="-2.54" length="short"/>
-<pin name="DP" x="17.78" y="30.48" length="short" rot="R180"/>
-<pin name="DM" x="17.78" y="25.4" length="short" rot="R180"/>
+<pin name="DP" x="17.78" y="35.56" length="short" rot="R180"/>
+<pin name="DM" x="17.78" y="38.1" length="short" rot="R180"/>
 <wire x1="-10.16" y1="43.18" x2="15.24" y2="43.18" width="0.254" layer="94"/>
 <wire x1="15.24" y1="43.18" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
