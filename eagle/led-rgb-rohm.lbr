@@ -120,6 +120,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>RGB LED</description>
 <packages>
 <package name="KINGBRITE_RGBLED_1.6X1.26">
 <description>KingBright RBG LED 4-lead package. 1.6x1.26 mm (0605 or 1513)
@@ -184,7 +185,11 @@
 </symbols>
 <devicesets>
 <deviceset name="LED_RGB_COMMON_ANODE-*" prefix="LED" uservalue="yes">
-<description>&lt;b&gt;RGB LED&lt;/b&gt; with comon anode</description>
+<description>&lt;b&gt;RGB LED&lt;/b&gt; with comon anode
+&lt;br&gt;
+&lt;br&gt;
+Datasheet:&lt;br&gt;
+http://media.digikey.com/pdf/Data%20Sheets/Kingbright%20PDFs/APHFT1612PBASURKVGAC.pdf</description>
 <gates>
 <gate name="LED" symbol="LED_RGB_COMMONANODE" x="12.7" y="0"/>
 </gates>
