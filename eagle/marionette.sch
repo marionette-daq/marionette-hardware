@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3614,6 +3614,64 @@ http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DC_DCKe.pdf</des
 </deviceset>
 </devicesets>
 </library>
+<library name="NX3225SA">
+<packages>
+<package name="DFN4SMD">
+<description>16 MHz SMD Crystal
+Note - Only pads 2 and 3 are used.</description>
+<smd name="P1" x="-1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="P3" x="-1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="P2" x="1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="P4" x="1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.5" y2="1" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<text x="-1.27" y="3.81" size="1.778" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="1.778" layer="27" font="vector">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="16MHZCLOCK">
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="0" length="middle"/>
+<pin name="P$2" x="7.62" y="0" length="middle" rot="R180"/>
+<text x="-2.54" y="5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NX3225SA">
+<description>&lt;b&gt;16 MHz Clock &lt;b&gt; &lt;br&gt;
+Datasheet: http://media.digikey.com/pdf/Data%20Sheets/NDK%20PDFs/NX3225SA-16.000000MHz-B3.pdf &lt;br&gt;
+Only connect pins 2 and 3</description>
+<gates>
+<gate name="G$1" symbol="16MHZCLOCK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN4SMD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P2"/>
+<connect gate="G$1" pin="P$2" pad="P3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3791,6 +3849,11 @@ http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DC_DCKe.pdf</des
 <part name="D3" library="CBDU0530" deviceset="CDBU0530" device=""/>
 <part name="R19" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
 <part name="U$17" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
+<part name="U$18" library="NX3225SA" deviceset="NX3225SA" device=""/>
+<part name="R20" library="rcl_custom" deviceset="R-US_" device="0603-C" value="2.26k"/>
+<part name="C34" library="rcl_custom" deviceset="C-EU" device="0603-C" value="4.4nF"/>
+<part name="C35" library="rcl_custom" deviceset="C-EU" device="0603-C" value="4.4nF"/>
+<part name="GND13" library="GROUND" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4988,6 +5051,11 @@ http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DC_DCKe.pdf</des
 <instance part="U$12" gate="G$1" x="45.72" y="160.02"/>
 <instance part="FRAME2" gate="G$1" x="-194.31" y="-200.66"/>
 <instance part="FRAME2" gate="G$2" x="257.81" y="-200.66"/>
+<instance part="U$18" gate="G$1" x="53.34" y="50.8"/>
+<instance part="R20" gate="R" x="40.64" y="45.72" rot="R90"/>
+<instance part="C34" gate="CE" x="45.72" y="43.18"/>
+<instance part="C35" gate="CE" x="60.96" y="43.18"/>
+<instance part="GND13" gate="1" x="53.34" y="33.02"/>
 </instances>
 <busses>
 <bus name="ADC_BUS:ADC1/2/3_IN2,ADC1/2_IN6,ADC1/2_IN7,ADC1/2/3_IN11,ADC1/2/3_IN13,ADC1/2_IN14,ADC1/2_IN15,ADC3_IN8,ADC3_IN14,ADC3_IN15,ADC3_IN4,ADC3_IN5,ADC3_IN6,ADC3_IN7,ADC3_IN8">
@@ -5677,6 +5745,45 @@ http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DC_DCKe.pdf</des
 <pinref part="R3" gate="R" pin="1"/>
 <wire x1="53.34" y1="142.24" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
 <junction x="53.34" y="142.24"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U$1" gate="G$8" pin="PH0"/>
+<wire x1="-66.04" y1="35.56" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="35.56" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$18" gate="G$1" pin="P$2"/>
+<wire x1="60.96" y1="60.96" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="50.8" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="C35" gate="CE" pin="1"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U$1" gate="G$8" pin="PH1"/>
+<wire x1="-66.04" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R20" gate="R" pin="1"/>
+<wire x1="40.64" y1="30.48" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="R20" gate="R" pin="2"/>
+<pinref part="U$18" gate="G$1" pin="P$1"/>
+<wire x1="40.64" y1="50.8" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="50.8" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="C34" gate="CE" pin="1"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="C34" gate="CE" pin="2"/>
+<pinref part="C35" gate="CE" pin="2"/>
+<wire x1="45.72" y1="38.1" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="53.34" y1="38.1" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="38.1" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
