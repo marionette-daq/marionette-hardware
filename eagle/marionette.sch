@@ -3555,6 +3555,65 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="DCK3R3">
+<description>3.3V 220mF Super Capacitor</description>
+<packages>
+<package name="SCAP">
+<smd name="N" x="-0.9" y="0" dx="0.6" dy="2" layer="1"/>
+<smd name="P" x="0.9" y="0" dx="0.6" dy="2" layer="1"/>
+<circle x="0" y="6" radius="3.5" width="0.127" layer="21"/>
+<wire x1="1" y1="7" x2="-1" y2="7" width="0.127" layer="21"/>
+<wire x1="-1" y1="7" x2="-1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1" y1="7" x2="1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.3" x2="1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.4" y1="1.4" x2="1.8" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.6" x2="1.6" y2="1.2" width="0.127" layer="21"/>
+<text x="-3.8" y="2.8" size="1.27" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+<text x="5" y="2.6" size="1.27" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SUPER_CAP">
+<pin name="P$1" x="0" y="2.54" visible="off" length="point" rot="R270"/>
+<pin name="P$2" x="0" y="-2.54" visible="off" length="point" rot="R270"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.508" width="0.254" layer="94"/>
+<wire x1="0" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
+<wire x1="0" y1="0.508" x2="0.762" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.254" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="0.762" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.27" x2="1.016" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.27" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="2.54" y="0" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="EDLC" prefix="C">
+<description>&lt;b&gt;EDLC&lt;/b&gt; - 3.3V, 220mF Super capacitor, 200 ohm ESR
+&lt;br&gt;
+&lt;br&gt;
+Datasheet:&lt;br&gt;
+http://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DC_DCKe.pdf</description>
+<gates>
+<gate name="G$1" symbol="SUPER_CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SCAP">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P"/>
+<connect gate="G$1" pin="P$2" pad="N"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3728,6 +3787,10 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="R16" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
 <part name="R17" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
 <part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
+<part name="C33" library="DCK3R3" deviceset="EDLC" device=""/>
+<part name="D3" library="CBDU0530" deviceset="CDBU0530" device=""/>
+<part name="R19" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
+<part name="U$17" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5730,10 +5793,14 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <instance part="FRAME3" gate="G$2" x="250.19" y="-102.87"/>
 <instance part="U$15" gate="G$1" x="146.05" y="93.98"/>
 <instance part="C31" gate="CE" x="147.32" y="88.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="148.336" y="85.979" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="141.224" y="81.661" size="1.778" layer="96"/>
+<attribute name="NAME" x="144.526" y="88.519" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="163.576" y="88.519" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND9" gate="1" x="130.81" y="83.82"/>
+<instance part="C33" gate="G$1" x="123.19" y="99.06"/>
+<instance part="D3" gate="G$1" x="110.49" y="104.14"/>
+<instance part="R19" gate="R" x="102.87" y="115.57" rot="R90"/>
+<instance part="U$17" gate="G$1" x="102.87" y="127"/>
 </instances>
 <busses>
 <bus name="USB_FS_BUS:OTG_VBUS,FS_ID,FS_DP,FS_DM">
@@ -5940,6 +6007,10 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <wire x1="142.24" y1="88.9" x2="130.81" y2="88.9" width="0.1524" layer="91"/>
 <junction x="130.81" y="88.9"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="C33" gate="G$1" pin="P$2"/>
+<wire x1="123.19" y1="96.52" x2="123.19" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="91.44" x2="125.73" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="125.73" y1="88.9" x2="130.81" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6137,6 +6208,11 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <wire x1="256.54" y1="2.54" x2="256.54" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="+3.3VDD"/>
 </segment>
+<segment>
+<pinref part="R19" gate="R" pin="2"/>
+<pinref part="U$17" gate="G$1" pin="+3.3VDD"/>
+<wire x1="102.87" y1="120.65" x2="102.87" y2="124.46" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="FS_ID" class="0">
 <segment>
@@ -6196,6 +6272,28 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <wire x1="156.21" y1="90.17" x2="156.21" y2="93.98" width="0.1524" layer="91"/>
 <junction x="156.21" y="93.98"/>
 <label x="186.69" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="C33" gate="G$1" pin="P$1"/>
+<wire x1="123.19" y1="101.6" x2="123.19" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="104.14" x2="190.5" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="104.14" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$11" pin="VBATT"/>
+<wire x1="195.58" y1="99.06" x2="223.52" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="123.19" y1="104.14" x2="113.03" y2="104.14" width="0.1524" layer="91"/>
+<junction x="123.19" y="104.14"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="107.95" y1="104.14" x2="105.41" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="105.41" y1="104.14" x2="102.87" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="106.68" x2="102.87" y2="110.49" width="0.1524" layer="91"/>
+<pinref part="R19" gate="R" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -7079,6 +7177,13 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <wire x1="-118.11" y1="-193.04" x2="-115.57" y2="-195.58" width="0.1524" layer="91"/>
 <wire x1="-115.57" y1="-195.58" x2="-101.6" y2="-195.58" width="0.1524" layer="91"/>
 <label x="-107.95" y="-195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PC6" class="0">
+<segment>
+<wire x1="-118.11" y1="-195.58" x2="-115.57" y2="-198.12" width="0.1524" layer="91"/>
+<wire x1="-115.57" y1="-198.12" x2="-101.6" y2="-198.12" width="0.1524" layer="91"/>
+<label x="-107.95" y="-198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

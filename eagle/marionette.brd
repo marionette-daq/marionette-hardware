@@ -777,6 +777,24 @@ Approx 12x12 mm</description>
 </package>
 </packages>
 </library>
+<library name="DCK3R3">
+<description>3.3V 220mF Super Capacitor</description>
+<packages>
+<package name="SCAP">
+<smd name="N" x="-0.9" y="0" dx="0.6" dy="2" layer="1"/>
+<smd name="P" x="0.9" y="0" dx="0.6" dy="2" layer="1"/>
+<circle x="0" y="6" radius="3.5" width="0.127" layer="21"/>
+<wire x1="1" y1="7" x2="-1" y2="7" width="0.127" layer="21"/>
+<wire x1="-1" y1="7" x2="-1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1" y1="7" x2="1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.3" x2="1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.4" y1="1.4" x2="1.8" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.6" x2="1.6" y2="1.2" width="0.127" layer="21"/>
+<text x="-3.8" y="2.8" size="1.27" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+<text x="5" y="2.6" size="1.27" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1102,6 +1120,9 @@ design rules under a new name.</description>
 <element name="R16" library="rcl_custom" package=".0603-C" value="10k" x="0.6" y="-27.8"/>
 <element name="R17" library="rcl_custom" package=".0603-C" value="10k" x="0.6" y="-30.7"/>
 <element name="R18" library="rcl_custom" package=".0603-C" value="10k" x="0.6" y="-33.6"/>
+<element name="C33" library="DCK3R3" package="SCAP" value="EDLC" x="-6.5" y="-34.5"/>
+<element name="D3" library="CBDU0530" package="SOD-523F" value="CDBU0530" x="-9.3" y="-38.1"/>
+<element name="R19" library="rcl_custom" package=".0603-C" value="" x="-10.6" y="-42.3"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -1272,6 +1293,7 @@ design rules under a new name.</description>
 <contactref element="C32" pad="2"/>
 <contactref element="J2" pad="5"/>
 <contactref element="J2" pad="3"/>
+<contactref element="C33" pad="N"/>
 <wire x1="48.422" y1="87.755" x2="48.772" y2="96.005" width="0" layer="19" extent="1-1"/>
 <wire x1="40.472" y1="87.63" x2="48.422" y2="87.755" width="0" layer="19" extent="1-1"/>
 <wire x1="37.0466" y1="87.755" x2="40.472" y2="87.63" width="0" layer="19" extent="1-1"/>
@@ -1345,6 +1367,7 @@ design rules under a new name.</description>
 <wire x1="1.3" y1="-13.6" x2="3" y2="44.46" width="0" layer="19" extent="1-1"/>
 <wire x1="3.53" y1="-22.735" x2="1.3" y2="-13.6" width="0" layer="19" extent="1-1"/>
 <wire x1="4.8" y1="-22.735" x2="3.53" y2="-22.735" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.4" y1="-34.5" x2="3.53" y2="-22.735" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDIO_CMD">
 <contactref element="U$1" pad="144"/>
@@ -1439,6 +1462,7 @@ design rules under a new name.</description>
 <contactref element="J2" pad="1"/>
 <contactref element="R18" pad="2"/>
 <contactref element="R17" pad="2"/>
+<contactref element="R19" pad="2"/>
 <wire x1="68.97" y1="60.07" x2="68.96" y2="61.37" width="0" layer="19" extent="1-1"/>
 <wire x1="67.46" y1="63.03" x2="68.96" y2="61.37" width="0" layer="19" extent="1-1"/>
 <wire x1="67.75" y1="57.13" x2="68.97" y2="60.07" width="0" layer="19" extent="1-1"/>
@@ -1492,6 +1516,7 @@ design rules under a new name.</description>
 <wire x1="1.3" y1="-27.8" x2="2.26" y2="-22.735" width="0" layer="19" extent="1-1"/>
 <wire x1="1.3" y1="-30.7" x2="1.3" y2="-27.8" width="0" layer="19" extent="1-1"/>
 <wire x1="1.3" y1="-33.6" x2="1.3" y2="-30.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.9" y1="-42.3" x2="1.3" y2="-33.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC1/2/3_IN2">
 <contactref element="U$1" pad="42"/>
@@ -2179,6 +2204,18 @@ design rules under a new name.</description>
 <contactref element="R15" pad="2"/>
 <contactref element="U1" pad="2"/>
 <wire x1="1.3" y1="-17.5" x2="27.53" y2="85.85" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$15">
+<contactref element="C33" pad="P"/>
+<contactref element="U$1" pad="6"/>
+<contactref element="D3" pad="P$2"/>
+<wire x1="-5.6" y1="-34.5" x2="42.55" y2="39.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.45" y1="-38.1" x2="-5.6" y2="-34.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$13">
+<contactref element="D3" pad="P$1"/>
+<contactref element="R19" pad="1"/>
+<wire x1="-10.15" y1="-38.1" x2="-11.3" y2="-42.3" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
