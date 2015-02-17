@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -320,7 +320,7 @@
 <wire x1="-3.81" y1="38.1" x2="-3.81" y2="-43.18" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-43.18" x2="-3.81" y2="-43.18" width="0.254" layer="94"/>
 <text x="0" y="39.37" size="2.54" layer="96">&gt;VALUE</text>
-<text x="17.78" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="17.78" y="0" size="3.81" layer="97">PORT_A</text>
 <text x="5.08" y="35.56" size="1.27" layer="95">&gt;PA0</text>
 <text x="5.08" y="30.48" size="1.27" layer="95">&gt;PA1</text>
 <text x="5.08" y="25.4" size="1.27" layer="95">&gt;PA2</text>
@@ -375,7 +375,7 @@
 <text x="3.81" y="-30.48" size="1.27" layer="95">&gt;PB13</text>
 <text x="3.81" y="-35.56" size="1.27" layer="95">&gt;PB14</text>
 <text x="3.81" y="-40.64" size="1.27" layer="95">&gt;PB15</text>
-<text x="12.7" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="12.7" y="0" size="3.81" layer="97">PORT_B</text>
 <text x="-2.54" y="40.64" size="2.54" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="PORT_C">
@@ -416,7 +416,7 @@
 <text x="10.16" y="-35.56" size="1.27" layer="95">&gt;PC14</text>
 <text x="10.16" y="-40.64" size="1.27" layer="95">&gt;PC15</text>
 <text x="2.54" y="40.64" size="2.54" layer="96">&gt;VALUE</text>
-<text x="22.86" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="22.86" y="0" size="3.81" layer="97">PORT_C</text>
 </symbol>
 <symbol name="PORT_D">
 <description>STM32F407 Port D pins</description>
@@ -456,7 +456,7 @@
 <text x="10.16" y="-35.56" size="1.27" layer="95">&gt;PD14</text>
 <text x="10.16" y="-40.64" size="1.27" layer="95">&gt;PD15</text>
 <text x="2.54" y="40.64" size="2.54" layer="96">&gt;VALUE</text>
-<text x="17.78" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="17.78" y="0" size="3.81" layer="97">PORT_D</text>
 </symbol>
 <symbol name="PORT_E">
 <pin name="PE0" x="-5.08" y="35.56" length="middle"/>
@@ -495,7 +495,7 @@
 <text x="10.16" y="-30.48" size="1.27" layer="95">&gt;PE13</text>
 <text x="10.16" y="-35.56" size="1.27" layer="95">&gt;PE14</text>
 <text x="10.16" y="-40.64" size="1.27" layer="95">&gt;PE15</text>
-<text x="20.32" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="20.32" y="0" size="3.81" layer="97">PORT_E</text>
 </symbol>
 <symbol name="PORT_F">
 <description>STM32F407 Port F pins</description>
@@ -535,7 +535,7 @@
 <text x="10.16" y="-30.48" size="1.27" layer="95">&gt;PF13</text>
 <text x="10.16" y="-35.56" size="1.27" layer="95">&gt;PF14</text>
 <text x="10.16" y="-40.64" size="1.27" layer="95">&gt;PF15</text>
-<text x="20.32" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="20.32" y="0" size="3.81" layer="97">PORT_F</text>
 </symbol>
 <symbol name="PORT_G">
 <description>STM32F407 Port G pins</description>
@@ -559,7 +559,7 @@
 <wire x1="0" y1="38.1" x2="0" y2="-43.18" width="0.254" layer="94"/>
 <wire x1="0" y1="-43.18" x2="2.54" y2="-43.18" width="0.254" layer="94"/>
 <text x="2.54" y="40.64" size="2.54" layer="96">&gt;VALUE</text>
-<text x="20.32" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="20.32" y="0" size="3.81" layer="97">PORT_G</text>
 <text x="10.16" y="35.56" size="1.27" layer="95">&gt;PG0</text>
 <text x="10.16" y="30.48" size="1.27" layer="95">&gt;PG1</text>
 <text x="10.16" y="25.4" size="1.27" layer="95">&gt;PG2</text>
@@ -595,7 +595,7 @@
 <wire x1="0" y1="27.94" x2="0" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="0" y1="-33.02" x2="2.54" y2="-33.02" width="0.254" layer="94"/>
 <text x="2.54" y="30.48" size="2.54" layer="96">&gt;VALUE</text>
-<text x="17.78" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="17.78" y="0" size="3.81" layer="97">PORT_I</text>
 <text x="10.16" y="25.4" size="1.27" layer="95">&gt;PI0</text>
 <text x="10.16" y="20.32" size="1.27" layer="95">&gt;PI1</text>
 <text x="10.16" y="15.24" size="1.27" layer="95">&gt;PI2</text>
@@ -630,7 +630,7 @@
 <wire x1="2.54" y1="38.1" x2="0" y2="38.1" width="0.254" layer="94"/>
 <wire x1="0" y1="38.1" x2="0" y2="-43.18" width="0.254" layer="94"/>
 <wire x1="0" y1="-43.18" x2="2.54" y2="-43.18" width="0.254" layer="94"/>
-<text x="17.78" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="22.86" y="0" size="3.81" layer="97">PORT_H</text>
 <text x="10.16" y="35.56" size="1.27" layer="95">&gt;PH0</text>
 <text x="10.16" y="30.48" size="1.27" layer="95">&gt;PH1</text>
 <text x="10.16" y="25.4" size="1.27" layer="95">&gt;PH2</text>
@@ -693,7 +693,7 @@
 <wire x1="0" y1="22.86" x2="0" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="0" y1="-27.94" x2="2.54" y2="-27.94" width="0.254" layer="94"/>
 <text x="2.54" y="25.4" size="2.54" layer="96">&gt;VALUE</text>
-<text x="20.32" y="0" size="2.54" layer="97">&gt;NAME</text>
+<text x="20.32" y="0" size="3.81" layer="97">SUPPLY</text>
 <pin name="VBATT" x="-5.08" y="20.32" length="middle"/>
 </symbol>
 </symbols>

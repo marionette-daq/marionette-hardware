@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -86,25 +86,26 @@
 </packages>
 <symbols>
 <symbol name="2X5">
-<pin name="VDD" x="-2.54" y="12.7" length="short"/>
-<pin name="SWDIO" x="-2.54" y="10.16" length="short"/>
-<pin name="GND" x="-2.54" y="7.62" length="short"/>
-<pin name="SWDCLK" x="-2.54" y="5.08" length="short"/>
-<pin name="GND@1" x="-2.54" y="2.54" length="short"/>
-<pin name="SWO" x="-2.54" y="0" length="short"/>
-<pin name="KEY" x="-2.54" y="-2.54" length="short"/>
-<pin name="NC" x="-2.54" y="-5.08" length="short"/>
-<pin name="GND_DETECT" x="-2.54" y="-7.62" length="short"/>
-<pin name="RESET" x="-2.54" y="-10.16" length="short"/>
-<wire x1="2.54" y1="13.97" x2="0" y2="13.97" width="0.254" layer="94"/>
-<wire x1="0" y1="13.97" x2="0" y2="-11.43" width="0.254" layer="94"/>
-<wire x1="0" y1="-11.43" x2="2.54" y2="-11.43" width="0.254" layer="94"/>
-<text x="0" y="15.24" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-13.97" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VDD" x="16.51" y="5.08" length="short" rot="R180"/>
+<pin name="SWDIO" x="-16.51" y="5.08" length="short"/>
+<pin name="GND" x="16.51" y="2.54" length="short" rot="R180"/>
+<pin name="SWDCLK" x="-16.51" y="2.54" length="short"/>
+<pin name="GND@1" x="16.51" y="0" length="short" rot="R180"/>
+<pin name="SWO" x="-16.51" y="0" length="short"/>
+<pin name="KEY" x="16.51" y="-2.54" length="short" rot="R180"/>
+<pin name="NC" x="-16.51" y="-2.54" length="short"/>
+<pin name="GND_DETECT" x="16.51" y="-5.08" length="short" rot="R180"/>
+<pin name="RESET" x="-16.51" y="-5.08" length="short"/>
+<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-6.35" width="0.254" layer="94"/>
+<text x="-3.81" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-8.89" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0.254" layer="94"/>
+<wire x1="13.97" y1="6.35" x2="13.97" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="13.97" y1="-6.35" x2="-13.97" y2="-6.35" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SWD_CONNECTOR" prefix="J">
+<deviceset name="SWD" prefix="J">
 <description>&lt;b&gt;Shrouded male pin header&lt;\b&gt; - 0.05" pitch 
 &lt;br&gt;&lt;br&gt;
 Datasheet:&lt;br&gt;
