@@ -3464,6 +3464,96 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="led-rgb-rohm">
+<description>RGB LED</description>
+<packages>
+<package name="KINGBRITE_RGBLED_1.6X1.26">
+<description>KingBright RBG LED 4-lead package. 1.6x1.26 mm (0605 or 1513)
+&lt;br&gt;Note, pins are numbered clockwise per datasheet and against the common convention.</description>
+<wire x1="0.5" y1="0" x2="0.7" y2="0" width="0.2" layer="21"/>
+<wire x1="-0.6" y1="0.63" x2="-0.8" y2="0.43" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="0.43" x2="-0.8" y2="-0.43" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="-0.43" x2="-0.6" y2="-0.63" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="-0.63" x2="0.6" y2="-0.63" width="0.1" layer="51"/>
+<wire x1="0.6" y1="-0.63" x2="0.8" y2="-0.43" width="0.1" layer="51"/>
+<wire x1="0.8" y1="-0.43" x2="0.8" y2="0.43" width="0.1" layer="51"/>
+<wire x1="0.8" y1="0.43" x2="0.6" y2="0.63" width="0.1" layer="51"/>
+<wire x1="0.6" y1="0.63" x2="-0.6" y2="0.63" width="0.1" layer="51"/>
+<smd name="1" x="0.8" y="-0.55" dx="1.1" dy="0.6" layer="1" rot="R180"/>
+<smd name="4" x="0.8" y="0.55" dx="1.1" dy="0.6" layer="1" rot="R180"/>
+<smd name="2" x="-0.8" y="-0.55" dx="1.1" dy="0.6" layer="1" rot="R180"/>
+<smd name="3" x="-0.8" y="0.55" dx="1.1" dy="0.6" layer="1" rot="R180"/>
+<rectangle x1="-0.15" y1="-0.5" x2="0.15" y2="-0.2" layer="51"/>
+<rectangle x1="0.2" y1="0.2" x2="0.5" y2="0.5" layer="51"/>
+<rectangle x1="-0.5" y1="0.2" x2="-0.2" y2="0.5" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LED_RGB_COMMONANODE">
+<wire x1="3.302" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="6.858" y2="0" width="0.254" layer="94"/>
+<wire x1="6.858" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.302" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.302" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="6.858" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-6.858" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.302" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-6.858" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-6.858" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-3.302" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-0.762" x2="-8.89" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-2.032" x2="-8.89" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-2.032" x2="-8.382" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-7.112" y1="-1.778" x2="-8.382" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-8.382" y1="-3.048" x2="-8.382" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-8.382" y1="-3.048" x2="-7.874" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="0" x2="1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.778" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="0.254" width="0.3048" layer="94"/>
+<text x="4.572" y="-1.397" size="1.016" layer="94">B</text>
+<text x="-10.16" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.588" y="-1.397" size="1.016" layer="94">R</text>
+<text x="-0.508" y="-1.397" size="1.016" layer="94">G</text>
+<pin name="BK" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="COMMON_ANODE" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="RK" x="-5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="GK" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LED_RGB_COMMON_ANODE-*" prefix="LED" uservalue="yes">
+<description>&lt;b&gt;RGB LED&lt;/b&gt; with comon anode
+&lt;br&gt;
+&lt;br&gt;
+Datasheet:&lt;br&gt;
+http://media.digikey.com/pdf/Data%20Sheets/Kingbright%20PDFs/APHFT1612PBASURKVGAC.pdf</description>
+<gates>
+<gate name="LED" symbol="LED_RGB_COMMONANODE" x="12.7" y="0"/>
+</gates>
+<devices>
+<device name="1.6X1.26" package="KINGBRITE_RGBLED_1.6X1.26">
+<connects>
+<connect gate="LED" pin="BK" pad="1"/>
+<connect gate="LED" pin="COMMON_ANODE" pad="2"/>
+<connect gate="LED" pin="GK" pad="4"/>
+<connect gate="LED" pin="RK" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3503,8 +3593,8 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <attribute name="PB5" value="ULPI_D7"/>
 <attribute name="PB6" value="I2C1_SCL"/>
 <attribute name="PB7" value="I2C1_SDA"/>
-<attribute name="PB8" value="SDIO_D4"/>
-<attribute name="PB9" value="SDIO_D5"/>
+<attribute name="PB8" value="GPIO"/>
+<attribute name="PB9" value="GPIO"/>
 <attribute name="PC0" value="ULPI_STP"/>
 <attribute name="PC1" value="ADC1/2/3_IN11"/>
 <attribute name="PC10" value="SDIO_02"/>
@@ -3517,8 +3607,8 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <attribute name="PC3" value="ADC1/2/3_IN13"/>
 <attribute name="PC4" value="ADC1/2_IN14"/>
 <attribute name="PC5" value="ADC1/2_IN15"/>
-<attribute name="PC6" value="SDIO_D6"/>
-<attribute name="PC7" value="SDIO_D7"/>
+<attribute name="PC6" value="GPIO"/>
+<attribute name="PC7" value="GPIO"/>
 <attribute name="PC8" value="SDIO_D0"/>
 <attribute name="PC9" value="SDIO_D1"/>
 <attribute name="PD2" value="SDIO_CMD"/>
@@ -3627,6 +3717,11 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <part name="U$15" library="PTS645" deviceset="PTS645" device=""/>
 <part name="C31" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100nF, 10V"/>
 <part name="GND9" library="GROUND" deviceset="GND" device=""/>
+<part name="LED1" library="led-rgb-rohm" deviceset="LED_RGB_COMMON_ANODE-*" device="1.6X1.26"/>
+<part name="U$16" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
+<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
+<part name="R13" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
+<part name="R14" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
 </parts>
 <sheets>
 <sheet>
@@ -3720,9 +3815,9 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <attribute name="VALUE" x="199.39" y="34.29" size="1.778" layer="96"/>
 </instance>
 <instance part="U$3" gate="G$1" x="294.64" y="60.96" rot="MR0"/>
-<instance part="R6" gate="R" x="83.82" y="-7.62" rot="R90"/>
-<instance part="R7" gate="R" x="96.52" y="-7.62" rot="R90"/>
-<instance part="U$10" gate="G$1" x="88.9" y="5.08"/>
+<instance part="R6" gate="R" x="166.37" y="-13.97" rot="R90"/>
+<instance part="R7" gate="R" x="179.07" y="-13.97" rot="R90"/>
+<instance part="U$10" gate="G$1" x="171.45" y="-1.27"/>
 <instance part="GND11" gate="1" x="219.71" y="-111.76"/>
 <instance part="U$13" gate="$" x="217.17" y="-78.74"/>
 <instance part="U$13" gate="CD" x="215.9" y="-62.23"/>
@@ -3738,6 +3833,11 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <instance part="GND12" gate="1" x="281.94" y="35.56"/>
 <instance part="FRAME1" gate="G$1" x="-138.43" y="-264.16"/>
 <instance part="FRAME1" gate="G$2" x="313.69" y="-264.16"/>
+<instance part="LED1" gate="LED" x="78.74" y="-25.4" rot="R270"/>
+<instance part="U$16" gate="G$1" x="101.6" y="-17.78"/>
+<instance part="R12" gate="R" x="63.5" y="-20.32"/>
+<instance part="R13" gate="R" x="63.5" y="-25.4"/>
+<instance part="R14" gate="R" x="63.5" y="-30.48"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -3746,35 +3846,23 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <wire x1="182.88" y1="116.84" x2="180.34" y2="119.38" width="0.762" layer="92"/>
 <wire x1="180.34" y1="119.38" x2="27.94" y2="119.38" width="0.762" layer="92"/>
 <wire x1="27.94" y1="119.38" x2="25.4" y2="116.84" width="0.762" layer="92"/>
-<wire x1="25.4" y1="116.84" x2="25.4" y2="-73.66" width="0.762" layer="92"/>
+<wire x1="25.4" y1="116.84" x2="25.4" y2="-68.58" width="0.762" layer="92"/>
 <label x="181.61" y="57.15" size="2.54" layer="95" rot="R90"/>
 <label x="30.48" y="-55.88" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
-<bus name="SDIO_BUS:SDIO_D7,SDIO_D6,SDIO_D5,SDIO_CMD,SDIO_CK,SDIO_D4,SDIO_D3,SDIO_D2,SDIO_D1,SDIO_D0">
-<segment>
-<wire x1="43.18" y1="-3.81" x2="43.18" y2="-162.56" width="0.762" layer="92"/>
-<label x="46.99" y="-55.88" size="2.54" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="43.18" y1="-60.96" x2="157.48" y2="-60.96" width="0.762" layer="92"/>
-<wire x1="157.48" y1="-60.96" x2="160.02" y2="-63.5" width="0.762" layer="92"/>
-<wire x1="160.02" y1="-63.5" x2="160.02" y2="-91.44" width="0.762" layer="92"/>
-<wire x1="160.02" y1="-91.44" x2="157.48" y2="-93.98" width="0.762" layer="92"/>
-</segment>
-</bus>
 <bus name="ADC_BUS:ADC1/2/3_IN2,ADC1/2_IN6,ADC1/2_IN7,ADC1/2/3_IN11,ADC1/2/3_IN13,ADC1/2_IN14,ADC1/2_IN15,ADC3_IN8,ADC3_IN14,ADC3_IN15,ADC3_IN4,ADC3_IN5,ADC3_IN6,ADC3_IN7,ADC3_IN8">
 <segment>
-<wire x1="15.24" y1="-88.9" x2="15.24" y2="132.08" width="0.762" layer="92"/>
+<wire x1="15.24" y1="-83.82" x2="15.24" y2="132.08" width="0.762" layer="92"/>
 <wire x1="15.24" y1="132.08" x2="20.32" y2="137.16" width="0.762" layer="92"/>
 <label x="19.05" y="-55.88" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
-<bus name="GPIO_BUS:PA15,PB4,PB14,PC15,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PD13,PD14,PD15,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PG9,PG10,PG11,PG12,PG13,PG14,PG15,PH2,PH3,PH5,PH6,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB4,PB14,PC6,PC15,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PD13,PD14,PD15,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PG9,PG10,PG11,PG12,PG13,PG14,PG15,PH2,PH3,PH5,PH6,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <wire x1="35.56" y1="-231.14" x2="38.1" y2="-233.68" width="0.762" layer="92"/>
 <wire x1="35.56" y1="53.34" x2="35.56" y2="-231.14" width="0.762" layer="92"/>
-<label x="39.37" y="-55.88" size="2.54" layer="95" rot="R90"/>
+<label x="43.18" y="-55.88" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
 <bus name="USB_FS_BUS:OTG_VBUS,FS_ID,FS_DP,FS_DM">
@@ -3786,9 +3874,9 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 </bus>
 <bus name="I2C_BUS:I2C3_SDA,I2C3_SCL,I2C3_SMBA,I2C1_SCL,I2C1_SDA,I2C2_SDA,I2C2_SLC,I2C2_SMBA">
 <segment>
-<wire x1="137.16" y1="-30.48" x2="137.16" y2="-15.24" width="0.762" layer="92"/>
-<wire x1="137.16" y1="-15.24" x2="139.7" y2="-12.7" width="0.762" layer="92"/>
-<label x="140.97" y="-31.75" size="2.54" layer="95" rot="R90"/>
+<wire x1="219.71" y1="-36.83" x2="219.71" y2="-21.59" width="0.762" layer="92"/>
+<wire x1="219.71" y1="-21.59" x2="222.25" y2="-19.05" width="0.762" layer="92"/>
+<label x="223.52" y="-38.1" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
 <bus name="UART:UART4_TX,UART4_RX">
@@ -3803,6 +3891,16 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <wire x1="35.56" y1="96.52" x2="35.56" y2="109.22" width="0.762" layer="92"/>
 <wire x1="35.56" y1="109.22" x2="33.02" y2="111.76" width="0.762" layer="92"/>
 <label x="39.37" y="96.52" size="2.54" layer="95" font="vector" rot="R90"/>
+</segment>
+</bus>
+<bus name="SDIO_BUS:SDIO_CMD,SDIO_CK,SDIO_D3,SDIO_D2,SDIO_D1,SDIO_D0">
+<segment>
+<wire x1="160.02" y1="-59.69" x2="160.02" y2="-92.71" width="0.762" layer="92"/>
+<wire x1="160.02" y1="-92.71" x2="157.48" y2="-95.25" width="0.762" layer="92"/>
+<wire x1="157.48" y1="-95.25" x2="45.72" y2="-95.25" width="0.762" layer="92"/>
+<wire x1="45.72" y1="-95.25" x2="43.18" y2="-97.79" width="0.762" layer="92"/>
+<wire x1="43.18" y1="-97.79" x2="43.18" y2="-162.56" width="0.762" layer="92"/>
+<label x="107.95" y="-96.52" size="2.54" layer="95" rot="R180"/>
 </segment>
 </bus>
 </busses>
@@ -4117,14 +4215,6 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <junction x="281.94" y="40.64"/>
 </segment>
 </net>
-<net name="SDIO_D4" class="0">
-<segment>
-<pinref part="U$1" gate="G$2" pin="PB8"/>
-<wire x1="-30.48" y1="-7.62" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-5.08" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-8.89" y="-7.62" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SDIO_CMD" class="0">
 <segment>
 <pinref part="U$1" gate="G$4" pin="PD2"/>
@@ -4229,30 +4319,6 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <junction x="167.64" y="-71.12"/>
 </segment>
 </net>
-<net name="SDIO_D7" class="0">
-<segment>
-<pinref part="U$1" gate="G$3" pin="PC7"/>
-<wire x1="-30.48" y1="-96.52" x2="40.64" y2="-96.52" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-93.98" x2="40.64" y2="-96.52" width="0.1524" layer="91"/>
-<label x="-8.89" y="-96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SDIO_D6" class="0">
-<segment>
-<pinref part="U$1" gate="G$3" pin="PC6"/>
-<wire x1="-30.48" y1="-91.44" x2="40.64" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-88.9" x2="40.64" y2="-91.44" width="0.1524" layer="91"/>
-<label x="-8.89" y="-91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SDIO_D5" class="0">
-<segment>
-<pinref part="U$1" gate="G$2" pin="PB9"/>
-<wire x1="-30.48" y1="-12.7" x2="40.64" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-10.16" x2="40.64" y2="-12.7" width="0.1524" layer="91"/>
-<label x="-8.89" y="-12.7" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="+3.3VDD" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="+3.3VDD"/>
@@ -4282,13 +4348,13 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 </segment>
 <segment>
 <pinref part="R6" gate="R" pin="2"/>
-<wire x1="83.82" y1="-2.54" x2="83.82" y2="0" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="0" x2="88.9" y2="0" width="0.1524" layer="91"/>
+<wire x1="166.37" y1="-8.89" x2="166.37" y2="-6.35" width="0.1524" layer="91"/>
+<wire x1="166.37" y1="-6.35" x2="171.45" y2="-6.35" width="0.1524" layer="91"/>
 <pinref part="R7" gate="R" pin="2"/>
-<wire x1="88.9" y1="0" x2="96.52" y2="0" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="0" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="0" x2="88.9" y2="2.54" width="0.1524" layer="91"/>
-<junction x="88.9" y="0"/>
+<wire x1="171.45" y1="-6.35" x2="179.07" y2="-6.35" width="0.1524" layer="91"/>
+<wire x1="179.07" y1="-6.35" x2="179.07" y2="-8.89" width="0.1524" layer="91"/>
+<wire x1="171.45" y1="-6.35" x2="171.45" y2="-3.81" width="0.1524" layer="91"/>
+<junction x="171.45" y="-6.35"/>
 <pinref part="U$10" gate="G$1" pin="+3.3VDD"/>
 </segment>
 <segment>
@@ -4315,6 +4381,12 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <junction x="180.34" y="-48.26"/>
 <pinref part="U$14" gate="G$1" pin="+3.3VDD"/>
 <label x="193.04" y="-86.36" size="1.778" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="LED" pin="COMMON_ANODE"/>
+<wire x1="81.28" y1="-25.4" x2="101.6" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="U$16" gate="G$1" pin="+3.3VDD"/>
+<wire x1="101.6" y1="-25.4" x2="101.6" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC1/2/3_IN2" class="0">
@@ -4566,33 +4638,37 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 </net>
 <net name="I2C1_SDA" class="0">
 <segment>
-<wire x1="137.16" y1="-20.32" x2="137.16" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="-22.86" x2="134.62" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-10.16" y="-2.54" size="1.778" layer="95" font="vector"/>
-<label x="109.22" y="-24.13" size="1.778" layer="95" font="vector"/>
-<wire x1="134.62" y1="-25.4" x2="96.52" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="-25.4" x2="63.5" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="-25.4" x2="63.5" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="-26.67" x2="219.71" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="-29.21" x2="217.17" y2="-31.75" width="0.1524" layer="91"/>
+<label x="-8.89" y="-2.54" size="1.778" layer="95" font="vector"/>
+<label x="191.77" y="-30.48" size="1.778" layer="95" font="vector"/>
+<wire x1="217.17" y1="-31.75" x2="179.07" y2="-31.75" width="0.1524" layer="91"/>
+<wire x1="179.07" y1="-31.75" x2="148.59" y2="-31.75" width="0.1524" layer="91"/>
+<wire x1="148.59" y1="-31.75" x2="146.05" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="146.05" y1="-29.21" x2="146.05" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="146.05" y1="-5.08" x2="143.51" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$2" pin="PB7"/>
-<wire x1="63.5" y1="-2.54" x2="-30.48" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="143.51" y1="-2.54" x2="-30.48" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R7" gate="R" pin="1"/>
-<wire x1="96.52" y1="-25.4" x2="96.52" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="96.52" y="-25.4"/>
+<wire x1="179.07" y1="-31.75" x2="179.07" y2="-19.05" width="0.1524" layer="91"/>
+<junction x="179.07" y="-31.75"/>
 </segment>
 </net>
 <net name="I2C1_SCL" class="0">
 <segment>
-<wire x1="137.16" y1="-17.78" x2="134.62" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-10.16" y="2.54" size="1.778" layer="95" font="vector"/>
-<wire x1="134.62" y1="-20.32" x2="83.82" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="-20.32" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-20.32" x2="68.58" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="-24.13" x2="217.17" y2="-26.67" width="0.1524" layer="91"/>
+<label x="-8.89" y="2.54" size="1.778" layer="95" font="vector"/>
+<wire x1="217.17" y1="-26.67" x2="166.37" y2="-26.67" width="0.1524" layer="91"/>
+<wire x1="166.37" y1="-26.67" x2="152.4" y2="-26.67" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-26.67" x2="149.86" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-24.13" x2="149.86" y2="0" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="0" x2="147.32" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$2" pin="PB6"/>
-<wire x1="68.58" y1="2.54" x2="-30.48" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="2.54" x2="-30.48" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="R6" gate="R" pin="1"/>
-<wire x1="83.82" y1="-20.32" x2="83.82" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="83.82" y="-20.32"/>
-<label x="109.22" y="-19.05" size="1.778" layer="95"/>
+<wire x1="166.37" y1="-26.67" x2="166.37" y2="-19.05" width="0.1524" layer="91"/>
+<junction x="166.37" y="-26.67"/>
+<label x="191.77" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ULPI_NXT" class="0">
@@ -4662,6 +4738,71 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <label x="-8.89" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="LED1" gate="LED" pin="RK"/>
+<pinref part="R12" gate="R" pin="2"/>
+<wire x1="73.66" y1="-20.32" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="LED1" gate="LED" pin="GK"/>
+<pinref part="R13" gate="R" pin="2"/>
+<wire x1="73.66" y1="-25.4" x2="68.58" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="LED1" gate="LED" pin="BK"/>
+<pinref part="R14" gate="R" pin="2"/>
+<wire x1="73.66" y1="-30.48" x2="68.58" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="R_LED" class="0">
+<segment>
+<pinref part="R12" gate="R" pin="1"/>
+<wire x1="58.42" y1="-20.32" x2="53.34" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-20.32" x2="50.8" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-17.78" x2="50.8" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-10.16" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$2" pin="PB8"/>
+<wire x1="48.26" y1="-7.62" x2="-30.48" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-8.89" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="G_LED" class="0">
+<segment>
+<pinref part="R13" gate="R" pin="1"/>
+<wire x1="58.42" y1="-25.4" x2="48.26" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-25.4" x2="45.72" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-22.86" x2="45.72" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-15.24" x2="43.18" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$2" pin="PB9"/>
+<wire x1="43.18" y1="-12.7" x2="-30.48" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-8.89" y="-12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_LED" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC6"/>
+<wire x1="-30.48" y1="-91.44" x2="43.18" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-91.44" x2="45.72" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-88.9" x2="45.72" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-33.02" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="R14" gate="R" pin="1"/>
+<wire x1="48.26" y1="-30.48" x2="58.42" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-8.89" y="-91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PC6" class="0">
+<segment>
+<wire x1="35.56" y1="-93.98" x2="33.02" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$3" pin="PC7"/>
+<wire x1="33.02" y1="-96.52" x2="-30.48" y2="-96.52" width="0.1524" layer="91"/>
+<label x="-8.89" y="-96.52" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -4719,7 +4860,7 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <label x="-2.54" y="-76.2" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
-<bus name="GPIO_BUS:PA15,PB4,PB14,PC15,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PD13,PD14,PD15,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PG9,PG10,PG11,PG12,PG13,PG14,PG15,PH2,PH3,PH5,PH6,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB4,PB14,PC6,PC15,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PD13,PD14,PD15,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PG9,PG10,PG11,PG12,PG13,PG14,PG15,PH2,PH3,PH5,PH6,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <wire x1="25.4" y1="57.15" x2="5.08" y2="40.64" width="0.762" layer="92"/>
 <wire x1="5.08" y1="40.64" x2="5.08" y2="-133.35" width="0.762" layer="92"/>
@@ -5991,7 +6132,7 @@ http://www.ck-components.com/14409/pts645_25apr13.pdf/</description>
 <instance part="FRAME4" gate="G$2" x="209.55" y="-250.19"/>
 </instances>
 <busses>
-<bus name="GPIO_BUS:PA15,PB4,PB14,PC15,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PD13,PD14,PD15,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PG9,PG10,PG11,PG12,PG13,PG14,PG15,PH2,PH3,PH5,PH6,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB4,PB14,PC6,PC15,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PD13,PD14,PD15,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PG9,PG10,PG11,PG12,PG13,PG14,PG15,PH2,PH3,PH5,PH6,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <wire x1="-115.57" y1="152.4" x2="-118.11" y2="149.86" width="0.762" layer="92"/>
 <wire x1="-118.11" y1="149.86" x2="-118.11" y2="-203.2" width="0.762" layer="92"/>
