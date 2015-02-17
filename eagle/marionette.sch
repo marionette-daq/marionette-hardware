@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3848,25 +3848,29 @@ Only connect pins 2 and 3</description>
 <part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
 <part name="C33" library="DCK3R3" deviceset="EDLC" device=""/>
 <part name="D3" library="CBDU0530" deviceset="CDBU0530" device=""/>
-<part name="R19" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
+<part name="R19" library="rcl_custom" deviceset="R-US_" device="0603-C" value="1k"/>
 <part name="U$17" library="3_3VDDsupply" deviceset="+3.3VDD" device=""/>
 <part name="R20" library="rcl_custom" deviceset="R-US_" device="0603-C" value="2.26k"/>
 <part name="C34" library="rcl_custom" deviceset="C-EU" device="0603-C" value="4.4nF"/>
 <part name="C35" library="rcl_custom" deviceset="C-EU" device="0603-C" value="4.4nF"/>
 <part name="GND13" library="GROUND" deviceset="GND" device=""/>
 <part name="X2" library="NX3225SA" deviceset="NX3225SA" device=""/>
+<part name="GND14" library="GROUND" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-125.73" y="86.36" size="3.81" layer="94">NOTES</text>
-<text x="-123.19" y="82.55" size="1.9304" layer="97">* MCO1 is clock out from MCU</text>
+<text x="-133.35" y="77.47" size="1.9304" layer="97">* MCO1 is clock out from MCU
+maybe add a net out to a test point or male pin
+</text>
 <text x="-123.19" y="76.2" size="1.778" layer="97">TO DO:</text>
 <text x="-120.65" y="64.77" size="1.778" layer="97">*Finish SWD connector
 *ULPI CPEN
 *Find 1.8V supply
 *BOOT0/BOOT1 conector</text>
 <text x="256.54" y="81.28" size="1.778" layer="97">*See figure 8.1 in USB3318 datasheet</text>
+<text x="299.72" y="96.52" size="1.778" layer="97">add diode and connect to 5v Vbus on supply</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-39.37" y="91.44" rot="MR0">
@@ -4374,10 +4378,14 @@ Only connect pins 2 and 3</description>
 <wire x1="143.51" y1="55.88" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="GND@1"/>
 <pinref part="J2" gate="G$1" pin="GND"/>
-<wire x1="149.86" y1="55.88" x2="149.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="55.88" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="50.8" x2="149.86" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="143.51" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="58.42" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
 <junction x="149.86" y="55.88"/>
+<pinref part="J2" gate="G$1" pin="GND_DETECT"/>
+<wire x1="143.51" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
+<junction x="149.86" y="50.8"/>
 </segment>
 </net>
 <net name="SDIO_CMD" class="0">
@@ -4865,12 +4873,15 @@ Only connect pins 2 and 3</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
-<wire x1="292.1" y1="73.66" x2="304.8" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="73.66" x2="297.18" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="73.66" x2="304.8" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="73.66" x2="292.1" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C32" gate="CE" pin="1"/>
 <pinref part="R15" gate="R" pin="1"/>
 <wire x1="274.32" y1="73.66" x2="292.1" y2="73.66" width="0.1524" layer="91"/>
 <junction x="292.1" y="73.66"/>
+<wire x1="297.18" y1="73.66" x2="297.18" y2="96.52" width="0.1524" layer="91"/>
+<junction x="297.18" y="73.66"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5915,6 +5926,7 @@ Only connect pins 2 and 3</description>
 <instance part="D3" gate="G$1" x="110.49" y="104.14"/>
 <instance part="R19" gate="R" x="102.87" y="115.57" rot="R90"/>
 <instance part="U$17" gate="G$1" x="102.87" y="127"/>
+<instance part="GND14" gate="1" x="123.19" y="88.9"/>
 </instances>
 <busses>
 <bus name="USB_FS_BUS:OTG_VBUS,FS_ID,FS_DP,FS_DM">
@@ -6121,10 +6133,11 @@ Only connect pins 2 and 3</description>
 <wire x1="142.24" y1="88.9" x2="130.81" y2="88.9" width="0.1524" layer="91"/>
 <junction x="130.81" y="88.9"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
 <pinref part="C33" gate="G$1" pin="P$2"/>
 <wire x1="123.19" y1="96.52" x2="123.19" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="123.19" y1="91.44" x2="125.73" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="125.73" y1="88.9" x2="130.81" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$5" class="0">
