@@ -107,7 +107,7 @@
 <pin name="VDD18" x="17.78" y="0" length="short" rot="R180"/>
 <pin name="VDDIO" x="-12.7" y="0" length="short"/>
 <pin name="RESETB" x="-12.7" y="7.62" length="short"/>
-<pin name="CLKOUT" x="-12.7" y="10.16" length="short"/>
+<pin name="CLKOUT" x="-12.7" y="10.16" length="short" direction="nc"/>
 <pin name="DIR" x="-12.7" y="15.24" length="short"/>
 <pin name="NXT" x="-12.7" y="17.78" length="short"/>
 <pin name="STP" x="-12.7" y="20.32" length="short"/>
