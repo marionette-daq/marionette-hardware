@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -678,32 +678,32 @@
 </symbol>
 <symbol name="SUPPLY_1">
 <description>Contains VDD and VSS pins for STM32F407i microprocessor</description>
-<pin name="VDD@0" x="-53.34" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@1" x="-45.72" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@2" x="-38.1" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@3" x="-30.48" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@4" x="-22.86" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@5" x="-15.24" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@6" x="-7.62" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@7" x="0" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@8" x="7.62" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@9" x="15.24" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@10" x="22.86" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@11" x="30.48" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@12" x="38.1" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@13" x="45.72" y="12.7" length="short" direction="sup" rot="R90"/>
+<pin name="VDD@0" x="-53.34" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@1" x="-45.72" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@2" x="-38.1" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@3" x="-30.48" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@4" x="-22.86" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@5" x="-15.24" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@6" x="-7.62" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@7" x="0" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@8" x="7.62" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@9" x="15.24" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@10" x="22.86" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@11" x="30.48" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@12" x="38.1" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@13" x="45.72" y="12.7" length="short" direction="pwr" rot="R90"/>
 <pin name="VDD@14" x="53.34" y="12.7" length="short" direction="pwr" rot="R90"/>
-<pin name="VSS@0" x="-38.1" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@1" x="-30.48" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@2" x="-22.86" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@3" x="-15.24" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@4" x="-7.62" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@5" x="0" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@6" x="7.62" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@7" x="15.24" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@8" x="22.86" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@9" x="30.48" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@10" x="38.1" y="-20.32" length="short" direction="sup" rot="R270"/>
+<pin name="VSS@0" x="-38.1" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@1" x="-30.48" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@2" x="-22.86" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@3" x="-15.24" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@4" x="-7.62" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@5" x="0" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@6" x="7.62" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@7" x="15.24" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@8" x="22.86" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@9" x="30.48" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@10" x="38.1" y="-20.32" length="short" direction="pwr" rot="R270"/>
 </symbol>
 <symbol name="SUPPLY_2">
 <description>Special function supply pins</description>
@@ -8973,6 +8973,44 @@ maybe add a net out to a test point or male pin
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,3,87.63,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,95.25,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,102.87,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,110.49,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,118.11,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,125.73,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,133.35,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,140.97,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,148.59,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,156.21,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,163.83,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,171.45,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,179.07,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,186.69,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,194.31,-22.86,U$1G$10,VDD,3.3VDD,,,"/>
+<approved hash="104,3,102.87,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,110.49,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,118.11,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,125.73,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,133.35,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,140.97,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,148.59,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,156.21,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,163.83,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,171.45,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,179.07,-55.88,U$1G$10,VSS,GND,,,"/>
+<approved hash="104,3,-165.1,95.25,U$2,SHLD,GND,,,"/>
+<approved hash="104,3,-165.1,92.71,U$2,SHLD,GND,,,"/>
+<approved hash="104,3,-165.1,90.17,U$2,SHLD,GND,,,"/>
+<approved hash="104,3,-165.1,87.63,U$2,SHLD,GND,,,"/>
+<approved hash="104,3,-165.1,110.49,U$2,VCC,OTG_VBUS,,,"/>
+<approved hash="104,1,331.47,85.09,U$3,SHLD,GND,,,"/>
+<approved hash="104,1,331.47,82.55,U$3,SHLD,GND,,,"/>
+<approved hash="104,1,331.47,80.01,U$3,SHLD,GND,,,"/>
+<approved hash="104,1,331.47,77.47,U$3,SHLD,GND,,,"/>
+<approved hash="104,1,331.47,100.33,U$3,VCC,N$2,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
