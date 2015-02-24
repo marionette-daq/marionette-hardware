@@ -411,30 +411,30 @@
 </package>
 <package name="MA12-2">
 <description>MA12-02 0.05" header</description>
-<pad name="1" x="-6.985" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="2" x="-6.985" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="3" x="-5.715" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="4" x="-5.715" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="5" x="-4.445" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="6" x="-4.445" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="7" x="-3.175" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="8" x="-3.175" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="9" x="-1.905" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="10" x="-1.905" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="11" x="-0.635" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="12" x="-0.635" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="13" x="0.635" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="14" x="0.635" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="15" x="1.905" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="16" x="1.905" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="17" x="3.175" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="18" x="3.175" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="19" x="4.445" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="20" x="4.445" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="21" x="5.715" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="22" x="5.715" y="-0.635" drill="0.8" shape="octagon"/>
-<pad name="23" x="6.985" y="0.635" drill="0.8" shape="octagon"/>
-<pad name="24" x="6.985" y="-0.635" drill="0.8" shape="octagon"/>
+<pad name="1" x="-6.985" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="2" x="-6.985" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="3" x="-5.715" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="4" x="-5.715" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="5" x="-4.445" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="6" x="-4.445" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="7" x="-3.175" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="8" x="-3.175" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="9" x="-1.905" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="10" x="-1.905" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="11" x="-0.635" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="12" x="-0.635" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="13" x="0.635" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="14" x="0.635" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="15" x="1.905" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="16" x="1.905" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="17" x="3.175" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="18" x="3.175" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="19" x="4.445" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="20" x="4.445" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="21" x="5.715" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="22" x="5.715" y="-0.635" drill="0.8" diameter="1.016"/>
+<pad name="23" x="6.985" y="0.635" drill="0.8" diameter="1.016"/>
+<pad name="24" x="6.985" y="-0.635" drill="0.8" diameter="1.016"/>
 <wire x1="-7.7724" y1="0.0254" x2="-7.7724" y2="1.3462" width="0.127" layer="51"/>
 <wire x1="-7.7724" y1="1.3462" x2="-7.366" y2="1.7272" width="0.127" layer="51"/>
 <wire x1="-7.366" y1="1.7272" x2="-6.731" y2="1.7272" width="0.127" layer="51"/>
