@@ -651,32 +651,32 @@
 </symbol>
 <symbol name="SUPPLY_1">
 <description>Contains VDD and VSS pins for STM32F407i microprocessor</description>
-<pin name="VDD@0" x="-53.34" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@1" x="-45.72" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@2" x="-38.1" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@3" x="-30.48" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@4" x="-22.86" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@5" x="-15.24" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@6" x="-7.62" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@7" x="0" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@8" x="7.62" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@9" x="15.24" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@10" x="22.86" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@11" x="30.48" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@12" x="38.1" y="12.7" length="short" direction="sup" rot="R90"/>
-<pin name="VDD@13" x="45.72" y="12.7" length="short" direction="sup" rot="R90"/>
+<pin name="VDD@0" x="-53.34" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@1" x="-45.72" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@2" x="-38.1" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@3" x="-30.48" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@4" x="-22.86" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@5" x="-15.24" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@6" x="-7.62" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@7" x="0" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@8" x="7.62" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@9" x="15.24" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@10" x="22.86" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@11" x="30.48" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@12" x="38.1" y="12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="VDD@13" x="45.72" y="12.7" length="short" direction="pwr" rot="R90"/>
 <pin name="VDD@14" x="53.34" y="12.7" length="short" direction="pwr" rot="R90"/>
-<pin name="VSS@0" x="-38.1" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@1" x="-30.48" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@2" x="-22.86" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@3" x="-15.24" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@4" x="-7.62" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@5" x="0" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@6" x="7.62" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@7" x="15.24" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@8" x="22.86" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@9" x="30.48" y="-20.32" length="short" direction="sup" rot="R270"/>
-<pin name="VSS@10" x="38.1" y="-20.32" length="short" direction="sup" rot="R270"/>
+<pin name="VSS@0" x="-38.1" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@1" x="-30.48" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@2" x="-22.86" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@3" x="-15.24" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@4" x="-7.62" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@5" x="0" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@6" x="7.62" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@7" x="15.24" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@8" x="22.86" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@9" x="30.48" y="-20.32" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS@10" x="38.1" y="-20.32" length="short" direction="pwr" rot="R270"/>
 </symbol>
 <symbol name="SUPPLY_2">
 <description>Special function supply pins</description>
