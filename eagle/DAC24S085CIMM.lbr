@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -104,7 +104,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DAC124S085CIMM">
+<deviceset name="DAC124S085CIMM" prefix="U">
 <description>&lt;b&gt;DAC24S084CIMM&lt;/b&gt; &lt;br&gt;
 4 output 12bit DAC &lt;br&gt;
 Datasheet: http://www.ti.com/lit/ds/symlink/dac124s085.pdf</description>
