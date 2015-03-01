@@ -1054,7 +1054,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MA10-2" prefix="SV" uservalue="yes">
+<deviceset name="MA10-2" prefix="J" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="MA10-2" x="0" y="0"/>
