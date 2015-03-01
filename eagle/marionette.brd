@@ -746,6 +746,42 @@ ftp://ftp.cadsoft.de/eagle/userfiles/libraries/rcl.lbr (2007.05.29)&lt;br&gt;</d
 <rectangle x1="8.636" y1="-1.524" x2="9.144" y2="-1.016" layer="51"/>
 <rectangle x1="11.176" y1="-1.524" x2="11.684" y2="-1.016" layer="51"/>
 </package>
+<package name="2X03/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="6.985" x2="-2.54" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="6.985" x2="0" y2="1.27" width="0.762" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="6.985" x2="2.54" y2="1.27" width="0.762" layer="21"/>
+<pad name="2" x="-2.54" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="4" x="0" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="6" x="2.54" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.016" shape="octagon"/>
+<pad name="3" x="0" y="-6.35" drill="1.016" shape="octagon"/>
+<pad name="5" x="2.54" y="-6.35" drill="1.016" shape="octagon"/>
+<text x="-4.445" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.921" y1="0.635" x2="-2.159" y2="1.143" layer="21"/>
+<rectangle x1="-0.381" y1="0.635" x2="0.381" y2="1.143" layer="21"/>
+<rectangle x1="2.159" y1="0.635" x2="2.921" y2="1.143" layer="21"/>
+<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-1.905" layer="21"/>
+<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
+<rectangle x1="-2.921" y1="-5.461" x2="-2.159" y2="-4.699" layer="21"/>
+<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-2.921" layer="51"/>
+<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-2.921" layer="51"/>
+<rectangle x1="-0.381" y1="-5.461" x2="0.381" y2="-4.699" layer="21"/>
+<rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
+<rectangle x1="2.159" y1="-5.461" x2="2.921" y2="-4.699" layer="21"/>
+<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-2.921" layer="51"/>
+</package>
 </packages>
 </library>
 <library name="SWD_CONNECTOR">
@@ -1551,7 +1587,6 @@ design rules under a new name.</description>
 <element name="J3" library="MA_HEADER" package="MA02-2W" value="" x="68.58" y="2.54" rot="R180"/>
 <element name="J4" library="MA_HEADER" package="MA03-2" value="" x="81.28" y="22.86" rot="R90"/>
 <element name="J5" library="MA_HEADER" package="MA03-1" value="" x="27.94" y="43.18" rot="R270"/>
-<element name="J6" library="MA_HEADER" package="MA02-2W" value="" x="33.02" y="2.54" rot="R180"/>
 <element name="J8" library="MA_HEADER" package="MA04-2W" value="MA04-2W" x="48.26" y="2.54" rot="R180"/>
 <element name="LED1" library="led-rgb-rohm" package="KINGBRITE_RGBLED_1.6X1.26" value="" x="6.35" y="29.21" rot="R270"/>
 <element name="Q1" library="BSS84" package="SOT23" value="BSS84" x="86.36" y="38.1" rot="R90"/>
@@ -1678,6 +1713,7 @@ design rules under a new name.</description>
 </element>
 <element name="U6" library="DAC24S085CIMM" package="10-TFSOP" value="DAC124S085CIMM" x="-106.68" y="-59.69"/>
 <element name="J7" library="MA_HEADER" package="MA03-1" value="" x="-104.14" y="-66.04"/>
+<element name="J6" library="MA_HEADER" package="2X03/90" value="MA03-2W" x="-116.84" y="-59.69"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -1866,11 +1902,12 @@ design rules under a new name.</description>
 <contactref element="J12" pad="1"/>
 <contactref element="J13" pad="1"/>
 <contactref element="J3" pad="1"/>
-<contactref element="J6" pad="1"/>
 <contactref element="SV3" pad="4"/>
 <contactref element="SV4" pad="4"/>
 <contactref element="U6" pad="6"/>
 <contactref element="C39" pad="2"/>
+<contactref element="J6" pad="4"/>
+<wire x1="-105.68" y1="-58.29" x2="-116.84" y2="-63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.14" y1="-35.56" x2="-105.68" y2="-58.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.14" y1="-25.4" x2="-104.14" y2="-35.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-98.36" y1="80.01" x2="-104.14" y2="-25.4" width="0" layer="19" extent="1-1"/>
@@ -1949,7 +1986,6 @@ design rules under a new name.</description>
 <wire x1="52.07" y1="3.81" x2="53.2609125" y2="16.3378625" width="0" layer="19" extent="1-1"/>
 <wire x1="52.07" y1="1.27" x2="52.07" y2="3.81" width="0" layer="19" extent="1-1"/>
 <wire x1="40.64" y1="3.81" x2="52.07" y2="3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="3.81" x2="40.64" y2="3.81" width="0" layer="19" extent="1-1"/>
 <wire x1="55.88" y1="59.055" x2="55.028678125" y2="46.3899" width="0" layer="19" extent="1-1"/>
 <wire x1="54.61" y1="59.055" x2="55.88" y2="59.055" width="0" layer="19" extent="1-1"/>
 <wire x1="58.42" y1="59.055" x2="55.88" y2="59.055" width="0" layer="19" extent="1-1"/>
@@ -2205,7 +2241,7 @@ design rules under a new name.</description>
 <signal name="DAC1">
 <contactref element="U$1" pad="50"/>
 <contactref element="J6" pad="3"/>
-<wire x1="31.75" y1="3.81" x2="60.331978125" y2="15.63075625" width="0" layer="19" extent="1-1"/>
+<wire x1="60.331978125" y1="15.63075625" x2="-116.84" y2="-66.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="LED1" pad="3"/>
@@ -2297,14 +2333,14 @@ design rules under a new name.</description>
 <wire x1="49.371825" y1="40.733046875" x2="-107.68" y2="-58.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_A">
-<contactref element="J6" pad="2"/>
 <contactref element="U6" pad="2"/>
-<wire x1="34.29" y1="1.27" x2="-107.18" y2="-61.09" width="0" layer="19" extent="1-1"/>
+<contactref element="J6" pad="1"/>
+<wire x1="-107.18" y1="-61.09" x2="-119.38" y2="-66.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_B">
-<contactref element="J6" pad="4"/>
 <contactref element="U6" pad="3"/>
-<wire x1="31.75" y1="1.27" x2="-106.68" y2="-61.09" width="0" layer="19" extent="1-1"/>
+<contactref element="J6" pad="2"/>
+<wire x1="-106.68" y1="-61.09" x2="-119.38" y2="-63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3.3VDDA">
 <contactref element="C2" pad="1"/>
@@ -2999,9 +3035,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="DAC_C">
 <contactref element="U6" pad="4"/>
+<contactref element="J6" pad="5"/>
+<wire x1="-106.18" y1="-61.09" x2="-114.3" y2="-66.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_D">
 <contactref element="U6" pad="5"/>
+<contactref element="J6" pad="6"/>
+<wire x1="-105.68" y1="-61.09" x2="-114.3" y2="-63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="U6" pad="7"/>
