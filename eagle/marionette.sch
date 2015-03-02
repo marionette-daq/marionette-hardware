@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3790,33 +3790,6 @@ Only connect pins 2 and 3</description>
 <rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 </package>
-<package name="MA02-2">
-<pad name="1" x="-1.27" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="2" x="-1.27" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="3" x="1.27" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="4" x="1.27" y="-1.27" drill="1.016" shape="octagon"/>
-<wire x1="-2.54" y1="1.905" x2="-2.54" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.905" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="1.905" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.127" layer="21"/>
-<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.127" layer="21"/>
-<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.127" layer="21"/>
-<wire x1="1.905" y1="2.54" x2="2.54" y2="1.905" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="1.905" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="1.905" y1="-2.54" x2="0.635" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-2.54" x2="0" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="0" y1="-1.905" x2="-0.635" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="-2.54" x2="-1.905" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="-2.54" x2="-2.54" y2="-1.905" width="0.127" layer="21"/>
-<rectangle x1="-1.524" y1="1.016" x2="-1.016" y2="1.524" layer="51"/>
-<rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51"/>
-<rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
-<rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
-<text x="-3.81" y="1.27" size="1.27" layer="21" ratio="20">1</text>
-<text x="-3.302" y="-4.064" size="1.27" layer="27" ratio="20">&gt;VALUE</text>
-<text x="-3.048" y="2.794" size="1.27" layer="25" ratio="20">&gt;NAME</text>
-</package>
 <package name="MA10-2">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-12.065" y1="2.54" x2="-10.795" y2="2.54" width="0.1524" layer="21"/>
@@ -3961,6 +3934,33 @@ Only connect pins 2 and 3</description>
 <rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
 <rectangle x1="2.159" y1="-5.461" x2="2.921" y2="-4.699" layer="21"/>
 <rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-2.921" layer="51"/>
+</package>
+<package name="MA02-2">
+<pad name="1" x="-1.27" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="2" x="-1.27" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="3" x="1.27" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="4" x="1.27" y="-1.27" drill="1.016" shape="octagon"/>
+<wire x1="-2.54" y1="1.905" x2="-2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.127" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="1.905" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="0.635" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="0" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.905" x2="-0.635" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="-1.905" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-2.54" y2="-1.905" width="0.127" layer="21"/>
+<rectangle x1="-1.524" y1="1.016" x2="-1.016" y2="1.524" layer="51"/>
+<rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51"/>
+<rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
+<rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
+<text x="-3.81" y="1.27" size="1.27" layer="21" ratio="20">1</text>
+<text x="-3.302" y="-4.064" size="1.27" layer="27" ratio="20">&gt;VALUE</text>
+<text x="-3.048" y="2.794" size="1.27" layer="25" ratio="20">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -4204,25 +4204,6 @@ Only connect pins 2 and 3</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MA02-2" prefix="SV" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="MA02-2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MA02-2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MA10-2" prefix="J" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
@@ -4277,6 +4258,25 @@ Only connect pins 2 and 3</description>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MA02-2" prefix="J" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MA02-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MA02-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4629,6 +4629,75 @@ Datasheet:&lt;br&gt; http://www.abracon.com/Resonators/ABS07-120-32.768kHz-T.pdf
 </deviceset>
 </devicesets>
 </library>
+<library name="MAX3051ESA">
+<description>&lt;b&gt; Can bus transceiver &lt;/b&gt; &lt;br&gt;
+Package: 8-SOIC N</description>
+<packages>
+<package name="8-SOICN">
+<description>&lt;b&gt;Can Bus Transceiver&lt;/b&gt;</description>
+<smd name="1" x="-1.175" y="0.975" dx="1.3" dy="0.42" layer="1"/>
+<smd name="2" x="-1.175" y="0.325" dx="1.3" dy="0.42" layer="1"/>
+<smd name="3" x="-1.174" y="-0.325" dx="1.3" dy="0.42" layer="1"/>
+<smd name="4" x="-1.175" y="-0.975" dx="1.3" dy="0.42" layer="1"/>
+<smd name="5" x="1.175" y="0.975" dx="1.3" dy="0.42" layer="1"/>
+<smd name="6" x="1.175" y="0.325" dx="1.3" dy="0.42" layer="1"/>
+<smd name="7" x="1.174" y="-0.325" dx="1.3" dy="0.42" layer="1"/>
+<smd name="8" x="1.175" y="-0.975" dx="1.3" dy="0.42" layer="1"/>
+<wire x1="-0.8125" y1="1.45" x2="0.8125" y2="1.45" width="0.127" layer="39"/>
+<wire x1="0.8125" y1="1.45" x2="0.8125" y2="-1.45" width="0.127" layer="39"/>
+<wire x1="0.8125" y1="-1.45" x2="-0.8125" y2="-1.45" width="0.127" layer="39"/>
+<wire x1="-0.8125" y1="-1.45" x2="-0.8125" y2="1.45" width="0.127" layer="39"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-2.54" y="1.27" size="1.27" layer="21" font="vector" ratio="20">1</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX3051">
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="8.89" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="6.35" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="VCC" x="-17.78" y="-5.08" length="middle"/>
+<pin name="TXD" x="-17.78" y="2.54" length="middle"/>
+<pin name="RS" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="RXD" x="-17.78" y="0" length="middle"/>
+<pin name="CANH" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="CANL" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+<pin name="SHDN" x="-17.78" y="-2.54" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX3051ESA" prefix="U">
+<description>&lt;b&gt;Can bus transciever&lt;/b&gt;&lt;br&gt;
+Datasheet:&lt;br&gt;
+http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf</description>
+<gates>
+<gate name="G$1" symbol="MAX3051" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="8-SOICN">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RS" pad="8"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="SHDN" pad="5"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4868,16 +4937,21 @@ Datasheet:&lt;br&gt; http://www.abracon.com/Resonators/ABS07-120-32.768kHz-T.pdf
 <part name="U$27" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>
 <part name="U$29" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>
 <part name="U$30" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>
-<part name="SV3" library="MA_HEADER" deviceset="MA02-2" device=""/>
 <part name="GND29" library="GROUND" deviceset="GND" device=""/>
 <part name="U$32" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>
-<part name="SV4" library="MA_HEADER" deviceset="MA02-2" device=""/>
 <part name="J9" library="MA_HEADER" deviceset="MA10-2" device=""/>
 <part name="J14" library="MA_HEADER" deviceset="MA10-2" device=""/>
 <part name="FRAME4" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="U6" library="DAC24S085CIMM" deviceset="DAC124S085CIMM" device=""/>
 <part name="J7" library="MA_HEADER" deviceset="MA03-1" device=""/>
 <part name="J6" library="MA_HEADER" deviceset="MA03-2W" device=""/>
+<part name="U5" library="MAX3051ESA" deviceset="MAX3051ESA" device=""/>
+<part name="GND28" library="GROUND" deviceset="GND" device=""/>
+<part name="U$31" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>
+<part name="C44" library="rcl_custom" deviceset="C-EU" device="0603-C" value="0.1uF"/>
+<part name="R29" library="rcl_custom" deviceset="R-US_" device="0402-C" value="120"/>
+<part name="J15" library="MA_HEADER" deviceset="MA02-2" device=""/>
+<part name="J16" library="MA_HEADER" deviceset="MA02-2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6230,6 +6304,7 @@ maybe add a net out to a test point or male pin
 </sheet>
 <sheet>
 <plain>
+<text x="106.68" y="-81.28" size="1.778" layer="97">*RS pulled low for HS operation</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$6" x="-73.66" y="104.14" rot="MR0">
@@ -6336,6 +6411,11 @@ maybe add a net out to a test point or male pin
 <instance part="U$19" gate="3.3VDD" x="53.34" y="22.86"/>
 <instance part="U$20" gate="3.3VDD" x="45.72" y="160.02"/>
 <instance part="U$22" gate="3.3VDD" x="321.31" y="0"/>
+<instance part="U5" gate="G$1" x="101.6" y="-63.5"/>
+<instance part="GND28" gate="1" x="101.6" y="-88.9"/>
+<instance part="U$31" gate="3.3VDD" x="72.39" y="-78.74"/>
+<instance part="C44" gate="CE" x="92.71" y="-78.74" rot="R270"/>
+<instance part="R29" gate="R" x="144.78" y="-62.23" rot="R90"/>
 </instances>
 <busses>
 <bus name="ADC_BUS:ADC1/2/3_IN2,ADC1/2_IN6,ADC1/2_IN7,ADC1/2/3_IN11,ADC1/2/3_IN13,ADC1/2_IN14,ADC1/2_IN15,ADC3_IN9,ADC3_IN14,ADC3_IN15,ADC3_IN4,ADC3_IN5,ADC3_IN6,ADC3_IN7,ADC3_IN8">
@@ -6383,11 +6463,10 @@ maybe add a net out to a test point or male pin
 <label x="34.29" y="6.35" size="2.54" layer="95" font="vector" rot="R90"/>
 </segment>
 </bus>
-<bus name="CAN_BUS:CAN1_TX,CAN1_RX">
+<bus name="CAN_BUS:CAN1_P,CAN1_M">
 <segment>
-<wire x1="15.24" y1="-22.86" x2="17.78" y2="-25.4" width="0.762" layer="92"/>
-<wire x1="17.78" y1="-25.4" x2="17.78" y2="-105.41" width="0.762" layer="92"/>
-<label x="21.59" y="-69.85" size="2.54" layer="95" font="vector" rot="R90"/>
+<wire x1="161.29" y1="-43.18" x2="158.75" y2="-45.72" width="0.762" layer="92"/>
+<wire x1="158.75" y1="-45.72" x2="158.75" y2="-76.2" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -6950,18 +7029,28 @@ maybe add a net out to a test point or male pin
 </net>
 <net name="CAN1_TX" class="0">
 <segment>
-<wire x1="17.78" y1="-27.94" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$8" pin="PH13"/>
-<wire x1="15.24" y1="-30.48" x2="-66.04" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-30.48" x2="-66.04" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-43.18" y="-30.48" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$1" pin="TXD"/>
+<wire x1="83.82" y1="-60.96" x2="30.48" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-60.96" x2="27.94" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-58.42" x2="27.94" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-33.02" x2="25.4" y2="-30.48" width="0.1524" layer="91"/>
+<label x="64.77" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN1_RX" class="0">
 <segment>
-<wire x1="17.78" y1="-104.14" x2="15.24" y2="-106.68" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$9" pin="PI9"/>
-<wire x1="15.24" y1="-106.68" x2="-66.04" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-106.68" x2="-66.04" y2="-106.68" width="0.1524" layer="91"/>
 <label x="-48.26" y="-106.68" size="1.778" layer="95"/>
+<wire x1="25.4" y1="-106.68" x2="27.94" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-104.14" x2="27.94" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-66.04" x2="30.48" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="RXD"/>
+<wire x1="30.48" y1="-63.5" x2="83.82" y2="-63.5" width="0.1524" layer="91"/>
+<label x="64.77" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
@@ -7000,6 +7089,21 @@ maybe add a net out to a test point or male pin
 <junction x="129.54" y="38.1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="139.7" y1="38.1" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND28" gate="1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="GND"/>
+<wire x1="101.6" y1="-86.36" x2="101.6" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="C44" gate="CE" pin="1"/>
+<wire x1="101.6" y1="-78.74" x2="101.6" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="-78.74" x2="101.6" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="101.6" y="-78.74"/>
+<pinref part="U5" gate="G$1" pin="RS"/>
+<wire x1="119.38" y1="-68.58" x2="121.92" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-68.58" x2="124.46" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-71.12" x2="124.46" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-76.2" x2="121.92" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-78.74" x2="101.6" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -7137,13 +7241,31 @@ maybe add a net out to a test point or male pin
 <junction x="321.31" y="-35.56"/>
 <pinref part="U$22" gate="3.3VDD" pin="3.3VDD"/>
 </segment>
+<segment>
+<pinref part="U$31" gate="3.3VDD" pin="3.3VDD"/>
+<wire x1="72.39" y1="-81.28" x2="72.39" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="-83.82" x2="74.93" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="-86.36" x2="80.01" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="-86.36" x2="82.55" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="-83.82" x2="82.55" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="VCC"/>
+<wire x1="82.55" y1="-78.74" x2="82.55" y2="-69.85" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="-69.85" x2="83.82" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="C44" gate="CE" pin="2"/>
+<wire x1="82.55" y1="-78.74" x2="87.63" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="82.55" y="-78.74"/>
+</segment>
 </net>
 <net name="PF2" class="0">
 <segment>
-<wire x1="25.4" y1="132.08" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="SHDN"/>
+<wire x1="83.82" y1="-66.04" x2="57.15" y2="-66.04" width="0.1524" layer="91"/>
+<label x="57.15" y="-66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<label x="-30.48" y="129.54" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$1" gate="G$6" pin="PF2"/>
-<wire x1="22.86" y1="129.54" x2="-68.58" y2="129.54" width="0.1524" layer="91"/>
-<label x="-40.64" y="129.54" size="1.778" layer="95"/>
+<wire x1="-68.58" y1="129.54" x2="-30.48" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PH9" class="0">
@@ -7152,6 +7274,34 @@ maybe add a net out to a test point or male pin
 <pinref part="U$1" gate="G$8" pin="PH9"/>
 <wire x1="2.54" y1="-10.16" x2="-66.04" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-43.18" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN1_P" class="0">
+<segment>
+<wire x1="158.75" y1="-53.34" x2="156.21" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="-55.88" x2="144.78" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-55.88" x2="133.35" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="-55.88" x2="128.27" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="CANH"/>
+<wire x1="128.27" y1="-60.96" x2="119.38" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="R29" gate="R" pin="2"/>
+<wire x1="144.78" y1="-55.88" x2="144.78" y2="-57.15" width="0.1524" layer="91"/>
+<junction x="144.78" y="-55.88"/>
+<label x="139.7" y="-55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN1_M" class="0">
+<segment>
+<wire x1="158.75" y1="-71.12" x2="156.21" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="-68.58" x2="144.78" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-68.58" x2="133.35" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="-68.58" x2="128.27" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="CANL"/>
+<wire x1="128.27" y1="-63.5" x2="119.38" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="R29" gate="R" pin="1"/>
+<wire x1="144.78" y1="-68.58" x2="144.78" y2="-67.31" width="0.1524" layer="91"/>
+<junction x="144.78" y="-68.58"/>
+<label x="139.7" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -7803,21 +7953,6 @@ maybe add a net out to a test point or male pin
 <junction x="-128.27" y="-13.97"/>
 </segment>
 </net>
-<net name="VDD" class="0">
-<segment>
-<wire x1="-50.8" y1="97.79" x2="-48.26" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="97.79" x2="-48.26" y2="110.49" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="110.49" x2="-50.8" y2="110.49" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="110.49" x2="-43.18" y2="110.49" width="0.1524" layer="91"/>
-<junction x="-48.26" y="110.49"/>
-<pinref part="C4" gate="CE" pin="1"/>
-<wire x1="-43.18" y1="110.49" x2="-43.18" y2="107.95" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="110.49" x2="-35.56" y2="110.49" width="0.1524" layer="91"/>
-<junction x="-43.18" y="110.49"/>
-<pinref part="U3" gate="G$1" pin="VOUT"/>
-<pinref part="U3" gate="G$1" pin="L2"/>
-</segment>
-</net>
 <net name="3.3VDD" class="0">
 <segment>
 <pinref part="R16" gate="R" pin="2"/>
@@ -7945,6 +8080,21 @@ maybe add a net out to a test point or male pin
 <wire x1="204.47" y1="-27.94" x2="204.47" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="3.3VDD" pin="3.3VDD"/>
 </segment>
+<segment>
+<wire x1="-50.8" y1="97.79" x2="-48.26" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="97.79" x2="-48.26" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="110.49" x2="-50.8" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="110.49" x2="-43.18" y2="110.49" width="0.1524" layer="91"/>
+<junction x="-48.26" y="110.49"/>
+<pinref part="C4" gate="CE" pin="1"/>
+<wire x1="-43.18" y1="110.49" x2="-43.18" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="110.49" x2="-35.56" y2="110.49" width="0.1524" layer="91"/>
+<junction x="-43.18" y="110.49"/>
+<pinref part="U3" gate="G$1" pin="VOUT"/>
+<pinref part="U3" gate="G$1" pin="L2"/>
+<pinref part="U$11" gate="3.3VDD" pin="3.3VDD"/>
+<wire x1="-35.56" y1="110.49" x2="-35.56" y2="114.3" width="0.1524" layer="91"/>
+</segment>
 </net>
 </nets>
 </sheet>
@@ -8012,15 +8162,15 @@ maybe add a net out to a test point or male pin
 <instance part="U$16" gate="3.3VDD" x="-6.35" y="133.35"/>
 <instance part="U$17" gate="3.3VDD" x="104.14" y="129.54"/>
 <instance part="U$18" gate="3.3VDD" x="-6.35" y="-78.74"/>
-<instance part="SV3" gate="G$1" x="-20.32" y="12.7" rot="R180"/>
 <instance part="GND29" gate="1" x="-6.35" y="-34.29"/>
 <instance part="U$32" gate="3.3VDD" x="-6.35" y="-16.51"/>
-<instance part="SV4" gate="G$1" x="-19.05" y="-25.4" rot="R180"/>
 <instance part="J9" gate="G$1" x="-166.37" y="91.44" rot="R180"/>
 <instance part="J14" gate="G$1" x="-166.37" y="44.45" rot="R180"/>
 <instance part="FRAME4" gate="G$1" x="-247.65" y="-116.84"/>
 <instance part="FRAME4" gate="G$2" x="77.47" y="-116.84"/>
 <instance part="J6" gate="G$1" x="80.01" y="-33.02" rot="R180"/>
+<instance part="J15" gate="G$1" x="-20.32" y="12.7" rot="R180"/>
+<instance part="J16" gate="G$1" x="-19.05" y="-25.4" rot="R180"/>
 </instances>
 <busses>
 <bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD6,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
@@ -8064,17 +8214,17 @@ maybe add a net out to a test point or male pin
 <label x="138.43" y="21.59" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
-<bus name="CAN_BUS:CAN1_TX,CAN1_RX">
+<bus name="CAN_BUS:CAN1_P,CAN1_M">
 <segment>
 <wire x1="-78.74" y1="137.16" x2="-81.28" y2="134.62" width="0.762" layer="92"/>
-<wire x1="-81.28" y1="134.62" x2="-81.28" y2="120.65" width="0.762" layer="92"/>
+<wire x1="-81.28" y1="134.62" x2="-81.28" y2="114.3" width="0.762" layer="92"/>
 <label x="-82.55" y="120.65" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
 <bus name="UART:UART4_TX,UART4_RX">
 <segment>
 <wire x1="-78.74" y1="86.36" x2="-81.28" y2="83.82" width="0.762" layer="92"/>
-<wire x1="-81.28" y1="83.82" x2="-81.28" y2="71.12" width="0.762" layer="92"/>
+<wire x1="-81.28" y1="83.82" x2="-81.28" y2="63.5" width="0.762" layer="92"/>
 <label x="-82.55" y="73.66" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
@@ -8133,7 +8283,7 @@ maybe add a net out to a test point or male pin
 <wire x1="-82.55" y1="16.51" x2="-80.01" y2="13.97" width="0.1524" layer="91"/>
 <wire x1="-80.01" y1="13.97" x2="-27.94" y2="13.97" width="0.1524" layer="91"/>
 <label x="-57.15" y="13.97" size="1.778" layer="95"/>
-<pinref part="SV3" gate="G$1" pin="1"/>
+<pinref part="J15" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
@@ -8141,23 +8291,7 @@ maybe add a net out to a test point or male pin
 <wire x1="-82.55" y1="13.97" x2="-80.01" y2="11.43" width="0.1524" layer="91"/>
 <wire x1="-80.01" y1="11.43" x2="-27.94" y2="11.43" width="0.1524" layer="91"/>
 <label x="-57.15" y="11.43" size="1.778" layer="95"/>
-<pinref part="SV3" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="CAN1_TX" class="0">
-<segment>
-<wire x1="-81.28" y1="125.73" x2="-78.74" y2="123.19" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="123.19" x2="-26.67" y2="123.19" width="0.1524" layer="91"/>
-<label x="-53.34" y="123.19" size="1.778" layer="95"/>
-<pinref part="J12" gate="1" pin="4"/>
-</segment>
-</net>
-<net name="CAN1_RX" class="0">
-<segment>
-<wire x1="-81.28" y1="123.19" x2="-78.74" y2="120.65" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="120.65" x2="-26.67" y2="120.65" width="0.1524" layer="91"/>
-<label x="-53.34" y="120.65" size="1.778" layer="95"/>
-<pinref part="J12" gate="1" pin="2"/>
+<pinref part="J15" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="UART4_TX" class="0">
@@ -8267,9 +8401,6 @@ maybe add a net out to a test point or male pin
 <junction x="105.41" y="97.79"/>
 </segment>
 <segment>
-<wire x1="72.39" y1="17.78" x2="69.85" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="69.85" y1="17.78" x2="67.31" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="67.31" y1="15.24" x2="67.31" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="67.31" y1="10.16" x2="69.85" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="69.85" y1="7.62" x2="80.01" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -8281,7 +8412,13 @@ maybe add a net out to a test point or male pin
 <wire x1="90.17" y1="7.62" x2="80.01" y2="7.62" width="0.1524" layer="91"/>
 <junction x="80.01" y="7.62"/>
 <pinref part="J10" gate="1" pin="1"/>
+<pinref part="J10" gate="1" pin="14"/>
+<wire x1="72.39" y1="33.02" x2="67.31" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="33.02" x2="67.31" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="J10" gate="1" pin="2"/>
+<wire x1="67.31" y1="17.78" x2="67.31" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="17.78" x2="67.31" y2="17.78" width="0.1524" layer="91"/>
+<junction x="67.31" y="17.78"/>
 </segment>
 <segment>
 <pinref part="J12" gate="1" pin="1"/>
@@ -8316,14 +8453,14 @@ maybe add a net out to a test point or male pin
 <wire x1="-10.16" y1="11.43" x2="-7.62" y2="8.89" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="8.89" x2="-7.62" y2="6.35" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<pinref part="SV3" gate="G$1" pin="4"/>
+<pinref part="J15" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <wire x1="-11.43" y1="-26.67" x2="-8.89" y2="-26.67" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="-26.67" x2="-6.35" y2="-29.21" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="-29.21" x2="-6.35" y2="-31.75" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-<pinref part="SV4" gate="G$1" pin="4"/>
+<pinref part="J16" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="+3.3VDDA" class="0">
@@ -8631,7 +8768,7 @@ maybe add a net out to a test point or male pin
 <wire x1="-7.62" y1="19.05" x2="-7.62" y2="16.51" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="16.51" x2="-10.16" y2="13.97" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="13.97" x2="-12.7" y2="13.97" width="0.1524" layer="91"/>
-<pinref part="SV3" gate="G$1" pin="2"/>
+<pinref part="J15" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-11.43" y1="73.66" x2="-8.89" y2="73.66" width="0.1524" layer="91"/>
@@ -8676,7 +8813,7 @@ maybe add a net out to a test point or male pin
 <wire x1="-6.35" y1="-19.05" x2="-6.35" y2="-21.59" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="-21.59" x2="-8.89" y2="-24.13" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="-24.13" x2="-11.43" y2="-24.13" width="0.1524" layer="91"/>
-<pinref part="SV4" gate="G$1" pin="2"/>
+<pinref part="J16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PD6" class="0">
@@ -8722,17 +8859,17 @@ maybe add a net out to a test point or male pin
 <net name="I2C3_SDA" class="0">
 <segment>
 <wire x1="-81.28" y1="-21.59" x2="-78.74" y2="-24.13" width="0.1524" layer="91"/>
-<pinref part="SV4" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="-24.13" x2="-26.67" y2="-24.13" width="0.1524" layer="91"/>
 <label x="-55.88" y="-24.13" size="1.778" layer="95"/>
+<pinref part="J16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="I2C3_SCL" class="0">
 <segment>
 <wire x1="-81.28" y1="-24.13" x2="-78.74" y2="-26.67" width="0.1524" layer="91"/>
-<pinref part="SV4" gate="G$1" pin="3"/>
 <wire x1="-78.74" y1="-26.67" x2="-26.67" y2="-26.67" width="0.1524" layer="91"/>
 <label x="-55.88" y="-26.67" size="1.778" layer="95"/>
+<pinref part="J16" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="PI4" class="0">
@@ -8994,6 +9131,22 @@ maybe add a net out to a test point or male pin
 <label x="121.92" y="-30.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="CAN1_P" class="0">
+<segment>
+<wire x1="-81.28" y1="125.73" x2="-78.74" y2="123.19" width="0.1524" layer="91"/>
+<pinref part="J12" gate="1" pin="4"/>
+<wire x1="-78.74" y1="123.19" x2="-26.67" y2="123.19" width="0.1524" layer="91"/>
+<label x="-54.61" y="123.19" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN1_M" class="0">
+<segment>
+<wire x1="-81.28" y1="123.19" x2="-78.74" y2="120.65" width="0.1524" layer="91"/>
+<pinref part="J12" gate="1" pin="2"/>
+<wire x1="-78.74" y1="120.65" x2="-26.67" y2="120.65" width="0.1524" layer="91"/>
+<label x="-54.61" y="120.65" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -9029,11 +9182,6 @@ maybe add a net out to a test point or male pin
 <approved hash="104,3,-165.1,90.17,U$2,SHLD,GND,,,"/>
 <approved hash="104,3,-165.1,87.63,U$2,SHLD,GND,,,"/>
 <approved hash="104,3,-165.1,110.49,U$2,VCC,OTG_VBUS,,,"/>
-<approved hash="104,1,331.47,85.09,U$3,SHLD,GND,,,"/>
-<approved hash="104,1,331.47,82.55,U$3,SHLD,GND,,,"/>
-<approved hash="104,1,331.47,80.01,U$3,SHLD,GND,,,"/>
-<approved hash="104,1,331.47,77.47,U$3,SHLD,GND,,,"/>
-<approved hash="104,1,331.47,100.33,U$3,VCC,N$2,,,"/>
 </errors>
 </schematic>
 </drawing>
