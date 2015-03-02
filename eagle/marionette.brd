@@ -1266,29 +1266,6 @@ Approx 12x12 mm</description>
 </package>
 </packages>
 </library>
-<library name="ABS25">
-<description>32.768kHz crystal</description>
-<packages>
-<package name="4-SOJ">
-<description>Plastic molded SMD - 8mm x 3.8mm</description>
-<smd name="1" x="-2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
-<smd name="2" x="2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
-<smd name="3" x="2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
-<smd name="4" x="-2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
-<text x="-1.7" y="-4.4" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.9" y="3.2" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="-4" y1="-1.9" x2="-4" y2="1.9" width="0.127" layer="21"/>
-<wire x1="-4" y1="1.9" x2="-3.6" y2="1.9" width="0.127" layer="21"/>
-<wire x1="-1.9" y1="1.9" x2="1.9" y2="1.9" width="0.127" layer="21"/>
-<wire x1="3.6" y1="1.9" x2="4" y2="1.9" width="0.127" layer="21"/>
-<wire x1="4" y1="1.9" x2="4" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="4" y1="-1.9" x2="3.6" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="1.9" y1="-1.9" x2="-1.9" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="-3.6" y1="-1.9" x2="-4" y2="-1.9" width="0.127" layer="21"/>
-<text x="-3" y="-3.6" size="1.27" layer="21" font="vector" ratio="20" rot="R90">1</text>
-</package>
-</packages>
-</library>
 <library name="NX3225SA">
 <description>16MHz crystal</description>
 <packages>
@@ -1331,6 +1308,22 @@ Note - Only pads 2 and 3 are used.</description>
 <text x="-1.8" y="-2.1" size="0.7" layer="21" font="vector" ratio="20">1</text>
 <text x="2.2" y="-1.6" size="0.7" layer="21" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 <text x="3.2" y="-1.6" size="0.7" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="ABS07">
+<description>32.768 kHz Crystal 3.2mm x 1.5mm</description>
+<packages>
+<package name="2-SMD_ABM7">
+<description>32.768 kHZ Crystal - SMD 3.2x1.5mm</description>
+<text x="-3" y="3" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-3" y="-4" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<smd name="P$1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="P$2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0.75" x2="1.6" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.127" layer="51"/>
 </package>
 </packages>
 </library>
@@ -1542,11 +1535,11 @@ design rules under a new name.</description>
 <element name="C24" library="rcl_custom" package=".0603-C" value="100nF, 10V" x="-29.21" y="90.17"/>
 <element name="C25" library="rcl_custom" package=".0603-C" value="1uF, 10V" x="-57.15" y="95.25"/>
 <element name="C26" library="rcl_custom" package=".0603-C" value="100nF, 10V" x="-38.1" y="90.17"/>
-<element name="C27" library="rcl_custom" package=".0402-C" value="11uF, 50V" x="-25.4" y="109.22"/>
+<element name="C27" library="rcl_custom" package=".0402-C" value="11pF, 50V" x="-25.4" y="109.22"/>
 <element name="C28" library="rcl_custom" package=".0603-C" value="2.2uF, 10V" x="-93.98" y="90.17"/>
 <element name="C29" library="rcl_custom" package=".0603-C" value="100nF, 10V" x="-46.99" y="90.17"/>
 <element name="C3" library="rcl_custom" package=".0603-C" value="4.7uF, 10V" x="20.32" y="38.1"/>
-<element name="C30" library="rcl_custom" package=".0402-C" value="11uF, 50V" x="-33.02" y="109.22"/>
+<element name="C30" library="rcl_custom" package=".0402-C" value="11pF, 50V" x="-33.02" y="109.22"/>
 <element name="C31" library="rcl_custom" package=".0603-C" value="100nF, 10V" x="-55.88" y="90.17"/>
 <element name="C32" library="rcl_custom" package=".0603-C" value="1uF, 10V" x="-64.77" y="95.25"/>
 <element name="C33" library="DCK3R3" package="SCAP" value="EDLC" x="27.94" y="21.59"/>
@@ -1695,7 +1688,7 @@ design rules under a new name.</description>
 <element name="U2" library="NCP705" package="WDFN6" value="NCP705" x="19.05" y="30.48"/>
 <element name="U3" library="XCL206B" package="56-BCPGA" value="XCL206B" x="20.32" y="35.56"/>
 <element name="U4" library="AAT3221" package="SOT23-5" value="AAT3221" x="29.21" y="35.56" rot="R180"/>
-<element name="X1" library="ABS25" package="4-SOJ" value="ABS25-32.768KHZ-6-T" x="35.56" y="20.32" rot="R180"/>
+<element name="X1" library="ABS07" package="2-SMD_ABM7" value="ABSO7" x="35.56" y="20.32" rot="R180"/>
 <element name="X2" library="NX3225SA" package="DFN4SMD" value="NX3225SA" x="45.72" y="12.7" rot="R270"/>
 <element name="SV3" library="MA_HEADER" package="MA02-2" value="" x="-105.41" y="-24.13"/>
 <element name="SV4" library="MA_HEADER" package="MA02-2" value="" x="-105.41" y="-34.29"/>
@@ -1718,17 +1711,17 @@ design rules under a new name.</description>
 <signals>
 <signal name="N$3">
 <contactref element="U$1" pad="8"/>
-<contactref element="X1" pad="1"/>
+<contactref element="X1" pad="P$1"/>
 <contactref element="C27" pad="1"/>
 <wire x1="43.0078625" y1="26.5909125" x2="-25.85" y2="109.22" width="0" layer="19" extent="1-1"/>
-<wire x1="38.31" y1="21.92" x2="43.0078625" y2="26.5909125" width="0" layer="19" extent="1-1"/>
+<wire x1="36.81" y1="20.32" x2="43.0078625" y2="26.5909125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="U$1" pad="9"/>
-<contactref element="X1" pad="4"/>
+<contactref element="X1" pad="P$2"/>
 <contactref element="C30" pad="2"/>
 <wire x1="43.361415625" y1="26.23735625" x2="-32.57" y2="109.22" width="0" layer="19" extent="1-1"/>
-<wire x1="38.31" y1="18.72" x2="43.361415625" y2="26.23735625" width="0" layer="19" extent="1-1"/>
+<wire x1="34.31" y1="20.32" x2="43.361415625" y2="26.23735625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="R1" pad="1"/>

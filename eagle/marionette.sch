@@ -1297,67 +1297,6 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/3318.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="ABS25">
-<description>32.768kHz crystal</description>
-<packages>
-<package name="4-SOJ">
-<description>Plastic molded SMD - 8mm x 3.8mm</description>
-<smd name="1" x="-2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
-<smd name="2" x="2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
-<smd name="3" x="2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
-<smd name="4" x="-2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
-<text x="-1.7" y="-4.4" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.9" y="3.2" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="-4" y1="-1.9" x2="-4" y2="1.9" width="0.127" layer="21"/>
-<wire x1="-4" y1="1.9" x2="-3.6" y2="1.9" width="0.127" layer="21"/>
-<wire x1="-1.9" y1="1.9" x2="1.9" y2="1.9" width="0.127" layer="21"/>
-<wire x1="3.6" y1="1.9" x2="4" y2="1.9" width="0.127" layer="21"/>
-<wire x1="4" y1="1.9" x2="4" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="4" y1="-1.9" x2="3.6" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="1.9" y1="-1.9" x2="-1.9" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="-3.6" y1="-1.9" x2="-4" y2="-1.9" width="0.127" layer="21"/>
-<text x="-3" y="-3.6" size="1.27" layer="21" font="vector" ratio="20" rot="R90">1</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CRYSTAL">
-<pin name="P$1" x="0" y="-2.54" visible="off" length="point" rot="R90"/>
-<pin name="P$2" x="0" y="2.54" visible="off" length="point" rot="R270"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="0.762" x2="-1.016" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-0.762" x2="1.016" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="1.016" y1="-0.762" x2="1.016" y2="0.762" width="0.254" layer="94"/>
-<wire x1="1.016" y1="0.762" x2="-1.016" y2="0.762" width="0.254" layer="94"/>
-<text x="2.54" y="-2.54" size="1.27" layer="95" font="vector" ratio="20">&gt;NAME</text>
-<text x="2.54" y="0" size="1.27" layer="96" font="vector" ratio="20">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ABS25-32.768KHZ-6-T" prefix="X">
-<description>&lt;b&gt;ABS25&lt;\b&gt; - 32.768kHz Crystal oscilator, CL = 6pF 
-&lt;br&gt;&lt;br&gt;
-Datasheet:&lt;br&gt;
-http://www.abracon.com/Resonators/abs25.pdf</description>
-<gates>
-<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="4-SOJ">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="NCP705">
 <description>5.0V - 3.3V LDO</description>
 <packages>
@@ -4638,6 +4577,58 @@ Datasheet: http://www.ti.com/lit/ds/symlink/dac124s085.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ABS07">
+<description>32.768 kHz Crystal 3.2mm x 1.5mm</description>
+<packages>
+<package name="2-SMD_ABM7">
+<description>32.768 kHZ Crystal - SMD 3.2x1.5mm</description>
+<text x="-3" y="3" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-3" y="-4" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<smd name="P$1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="P$2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
+<wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0.75" x2="1.6" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CLK">
+<wire x1="-0.635" y1="0.635" x2="0.635" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-0.635" x2="-0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<pin name="P$1" x="-3.81" y="0" visible="off" length="short"/>
+<pin name="P$2" x="3.81" y="0" visible="off" length="short" rot="R180"/>
+<text x="-3.175" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-3.175" y="-3.81" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ABSO7" prefix="X">
+<description>&lt;b&gt; ABS07 &lt;/b&gt;
+- 16MHz crystal&lt;br&gt;
+&lt;br&gt;
+Datasheet:&lt;br&gt; http://www.abracon.com/Resonators/ABS07-120-32.768kHz-T.pdf</description>
+<gates>
+<gate name="G$1" symbol="CLK" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="2-SMD_ABM7">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4758,9 +4749,9 @@ Datasheet: http://www.ti.com/lit/ds/symlink/dac124s085.pdf</description>
 <part name="GND6" library="GROUND" deviceset="GND" device=""/>
 <part name="U$5" library="3_3VDDAsupply" deviceset="+3.3VDDA" device=""/>
 <part name="U$6" library="3_3VDDAsupply" deviceset="+3.3VDDA" device=""/>
-<part name="X1" library="ABS25" deviceset="ABS25-32.768KHZ-6-T" device=""/>
-<part name="C27" library="rcl_custom" deviceset="C-EU" device="0402-C" value="11uF, 50V"/>
-<part name="C30" library="rcl_custom" deviceset="C-EU" device="0402-C" value="11uF, 50V"/>
+<part name="X1" library="ABS07" deviceset="ABSO7" device=""/>
+<part name="C27" library="rcl_custom" deviceset="C-EU" device="0402-C" value="11pF, 50V"/>
+<part name="C30" library="rcl_custom" deviceset="C-EU" device="0402-C" value="11pF, 50V"/>
 <part name="GND3" library="GROUND" deviceset="GND" device=""/>
 <part name="GND4" library="GROUND" deviceset="GND" device=""/>
 <part name="U2" library="NCP705" deviceset="NCP705" device=""/>
@@ -4988,7 +4979,10 @@ maybe add a net out to a test point or male pin
 <attribute name="VALUE" x="286.004" y="47.371" size="1.778" layer="96"/>
 </instance>
 <instance part="GND6" gate="1" x="260.35" y="24.13"/>
-<instance part="X1" gate="G$1" x="78.74" y="-129.54" rot="R180"/>
+<instance part="X1" gate="G$1" x="78.74" y="-129.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="81.915" y="-129.54" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="69.215" y="-129.54" size="1.778" layer="96" font="vector"/>
+</instance>
 <instance part="C27" gate="CE" x="85.09" y="-124.46" smashed="yes" rot="R90">
 <attribute name="NAME" x="87.884" y="-124.079" size="1.778" layer="95"/>
 </instance>
@@ -5127,7 +5121,7 @@ maybe add a net out to a test point or male pin
 <wire x1="67.31" y1="-127" x2="67.31" y2="-124.46" width="0.1524" layer="91"/>
 <wire x1="67.31" y1="-124.46" x2="78.74" y2="-124.46" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="P$1"/>
-<wire x1="78.74" y1="-124.46" x2="78.74" y2="-127" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-124.46" x2="78.74" y2="-125.73" width="0.1524" layer="91"/>
 <pinref part="C27" gate="CE" pin="1"/>
 <wire x1="78.74" y1="-124.46" x2="82.55" y2="-124.46" width="0.1524" layer="91"/>
 <junction x="78.74" y="-124.46"/>
@@ -5140,7 +5134,7 @@ maybe add a net out to a test point or male pin
 <wire x1="67.31" y1="-132.08" x2="67.31" y2="-134.62" width="0.1524" layer="91"/>
 <wire x1="67.31" y1="-134.62" x2="78.74" y2="-134.62" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="P$2"/>
-<wire x1="78.74" y1="-134.62" x2="78.74" y2="-132.08" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-134.62" x2="78.74" y2="-133.35" width="0.1524" layer="91"/>
 <pinref part="C30" gate="CE" pin="2"/>
 <wire x1="78.74" y1="-134.62" x2="82.55" y2="-134.62" width="0.1524" layer="91"/>
 <junction x="78.74" y="-134.62"/>
