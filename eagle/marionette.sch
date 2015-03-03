@@ -5267,14 +5267,14 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <part name="TP5" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
 <part name="TP6" library="Tova" deviceset="TEST-POINT" device="8MIL-TEST-POINT" value="TEST-POINT8MIL-TEST-POINT"/>
 <part name="GND31" library="GROUND" deviceset="GND" device=""/>
+<part name="TP7" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP8" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP9" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP10" library="Tova" deviceset="TEST-POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-125.73" y="86.36" size="3.81" layer="94">NOTES</text>
-<text x="-133.35" y="77.47" size="1.9304" layer="97">* MCO1 is clock out from MCU
-maybe add a net out to a test point or male pin
-</text>
 <text x="283.21" y="107.95" size="1.778" layer="97">*See figure 8.1 in USB3318 datasheet</text>
 <text x="78.74" y="-215.9" size="1.778" layer="97">2mA</text>
 <wire x1="50.8" y1="-111.76" x2="50.8" y2="-144.78" width="1.016" layer="94"/>
@@ -5445,6 +5445,11 @@ maybe add a net out to a test point or male pin
 <instance part="U6" gate="G$1" x="285.75" y="-185.42"/>
 <instance part="J7" gate="G$1" x="220.98" y="-209.55"/>
 <instance part="TP1" gate="G$1" x="38.1" y="86.36"/>
+<instance part="TP7" gate="G$1" x="262.89" y="-187.96" smashed="yes">
+<attribute name="NAME" x="256.54" y="-187.96" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP8" gate="G$1" x="233.68" y="54.61"/>
+<instance part="TP9" gate="G$1" x="280.67" y="59.69"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -6237,14 +6242,14 @@ maybe add a net out to a test point or male pin
 <wire x1="349.25" y1="110.49" x2="358.14" y2="110.49" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="USB_HS_M" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="DM"/>
 <pinref part="U$3" gate="G$1" pin="D-"/>
 <wire x1="275.59" y1="97.79" x2="358.14" y2="97.79" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="USB_HS_P" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="DP"/>
 <pinref part="U$3" gate="G$1" pin="D+"/>
@@ -6352,10 +6357,13 @@ maybe add a net out to a test point or male pin
 <pinref part="C29" gate="CE" pin="1"/>
 <wire x1="283.21" y1="54.61" x2="283.21" y2="59.69" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VDD18"/>
-<wire x1="275.59" y1="59.69" x2="283.21" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="275.59" y1="59.69" x2="280.67" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="280.67" y1="59.69" x2="283.21" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="283.21" y1="59.69" x2="283.21" y2="62.23" width="0.1524" layer="91"/>
 <junction x="283.21" y="59.69"/>
 <pinref part="U$26" gate="G$1" pin="+1.8V"/>
+<pinref part="TP9" gate="G$1" pin="1"/>
+<junction x="280.67" y="59.69"/>
 </segment>
 </net>
 <net name="USART2_TX" class="0">
@@ -6413,6 +6421,7 @@ maybe add a net out to a test point or male pin
 <pinref part="C39" gate="CE" pin="1"/>
 <wire x1="262.89" y1="-187.96" x2="262.89" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="262.89" y="-187.96"/>
+<pinref part="TP7" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R17" gate="R" pin="2"/>
@@ -6580,7 +6589,8 @@ maybe add a net out to a test point or male pin
 <wire x1="245.11" y1="54.61" x2="240.03" y2="54.61" width="0.1524" layer="91"/>
 <wire x1="240.03" y1="54.61" x2="240.03" y2="57.15" width="0.1524" layer="91"/>
 <junction x="240.03" y="54.61"/>
-<wire x1="224.79" y1="54.61" x2="240.03" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="224.79" y1="54.61" x2="233.68" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="54.61" x2="240.03" y2="54.61" width="0.1524" layer="91"/>
 <wire x1="224.79" y1="54.61" x2="224.79" y2="55.88" width="0.1524" layer="91"/>
 <junction x="224.79" y="54.61"/>
 <wire x1="214.63" y1="54.61" x2="224.79" y2="54.61" width="0.1524" layer="91"/>
@@ -6588,6 +6598,8 @@ maybe add a net out to a test point or male pin
 <pinref part="C28" gate="CE" pin="1"/>
 <wire x1="212.09" y1="44.45" x2="212.09" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="U$30" gate="3.3VDD" pin="3.3VDD"/>
+<pinref part="TP8" gate="G$1" pin="1"/>
+<junction x="233.68" y="54.61"/>
 </segment>
 </net>
 <net name="PD6" class="0">
@@ -6742,6 +6754,7 @@ maybe add a net out to a test point or male pin
 <instance part="U$31" gate="3.3VDD" x="72.39" y="-78.74"/>
 <instance part="C44" gate="CE" x="92.71" y="-78.74" rot="R270"/>
 <instance part="R29" gate="R" x="144.78" y="-62.23" rot="R90"/>
+<instance part="TP10" gate="G$1" x="82.55" y="-73.66"/>
 </instances>
 <busses>
 <bus name="ADC_BUS:ADC1/2/3_IN2,ADC1/2_IN6,ADC1/2_IN7,ADC1/2/3_IN11,ADC1/2/3_IN13,ADC1/2_IN14,ADC1/2_IN15,ADC3_IN9,ADC3_IN14,ADC3_IN15,ADC3_IN4,ADC3_IN5,ADC3_IN6,ADC3_IN7,ADC3_IN8">
@@ -7576,11 +7589,14 @@ maybe add a net out to a test point or male pin
 <wire x1="80.01" y1="-86.36" x2="82.55" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="-83.82" x2="82.55" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="VCC"/>
-<wire x1="82.55" y1="-78.74" x2="82.55" y2="-69.85" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="-78.74" x2="82.55" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="-73.66" x2="82.55" y2="-69.85" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="-69.85" x2="83.82" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="C44" gate="CE" pin="2"/>
 <wire x1="82.55" y1="-78.74" x2="87.63" y2="-78.74" width="0.1524" layer="91"/>
 <junction x="82.55" y="-78.74"/>
+<pinref part="TP10" gate="G$1" pin="1"/>
+<junction x="82.55" y="-73.66"/>
 </segment>
 </net>
 <net name="PF2" class="0">
@@ -9606,10 +9622,4 @@ maybe add a net out to a test point or male pin
 </errors>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
