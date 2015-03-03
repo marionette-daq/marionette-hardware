@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3962,6 +3962,30 @@ Only connect pins 2 and 3</description>
 <text x="-3.302" y="-4.064" size="1.27" layer="27" ratio="20">&gt;VALUE</text>
 <text x="-3.048" y="2.794" size="1.27" layer="25" ratio="20">&gt;NAME</text>
 </package>
+<package name="MA02-1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.54" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-1.651" size="1.27" layer="21" ratio="10">1</text>
+<text x="-2.54" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MA04-2">
@@ -4085,6 +4109,18 @@ Only connect pins 2 and 3</description>
 <pin name="1" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="MA02-1">
+<pin name="1" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="1.016" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="0" width="1.016" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
+<text x="0" y="6.35" size="1.27" layer="104">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4277,6 +4313,22 @@ Only connect pins 2 and 3</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MA02-1" prefix="J">
+<gates>
+<gate name="G$1" symbol="MA02-1" x="-2.54" y="-1.27"/>
+</gates>
+<devices>
+<device name="" package="MA02-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4698,6 +4750,253 @@ http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Tova">
+<packages>
+<package name="2MM-TEST-POINT">
+<wire x1="-0.85" y1="-0.9" x2="0.85" y2="-0.9" width="0.2032" layer="21"/>
+<wire x1="0.85" y1="-0.9" x2="0.85" y2="0.9" width="0.2032" layer="21"/>
+<wire x1="0.85" y1="0.9" x2="-0.85" y2="0.9" width="0.2032" layer="21"/>
+<wire x1="-0.85" y1="0.9" x2="-0.85" y2="-0.9" width="0.2032" layer="21"/>
+<rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.7366"/>
+<text x="-1.6" y="1.5" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+<package name="20MIL-TEST-POINT">
+<description>20mil diameter test pad</description>
+<pad name="P$1" x="0" y="0" drill="0.508"/>
+<wire x1="-0.75" y1="0.75" x2="0.75" y2="0.75" width="0.127" layer="21"/>
+<wire x1="0.75" y1="0.75" x2="0.75" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-0.75" x2="-0.75" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-0.75" x2="-0.75" y2="0.75" width="0.127" layer="21"/>
+<text x="-1.25" y="1" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="51"/>
+</package>
+<package name="15MIL-TEST-POINT">
+<description>15mil test point</description>
+<pad name="P$1" x="0" y="0" drill="0.381"/>
+<wire x1="-0.6" y1="-0.6" x2="-0.6" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="0.6" x2="0.6" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="0.6" x2="0.6" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.6" x2="-0.6" y2="-0.6" width="0.127" layer="21"/>
+<rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="51"/>
+<text x="-1.1" y="0.8" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+<package name="10MIL-TEST-POINT">
+<description>10mil diameter test pad</description>
+<pad name="P$1" x="0" y="0" drill="0.254"/>
+<wire x1="-0.573" y1="-0.573" x2="-0.573" y2="0.573" width="0.127" layer="21"/>
+<wire x1="-0.573" y1="0.573" x2="0.573" y2="0.573" width="0.127" layer="21"/>
+<wire x1="0.573" y1="0.573" x2="0.573" y2="-0.573" width="0.127" layer="21"/>
+<wire x1="0.573" y1="-0.573" x2="-0.573" y2="-0.573" width="0.127" layer="21"/>
+<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="51"/>
+<text x="-1.073" y="0.746" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+<package name="8MIL-TEST-POINT">
+<description>8mil test point</description>
+<pad name="P$1" x="0" y="0" drill="0.2032"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="0.5" x2="0.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-0.5" x2="-0.5" y2="-0.5" width="0.127" layer="21"/>
+<text x="-0.9" y="0.7" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="TEST-POINT">
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<pin name="1" x="0" y="0" visible="off" length="point" direction="pas"/>
+<text x="-5.08" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TEST-POINT" prefix="TP">
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2MM-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="20MIL-TEST-POINT" package="20MIL-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="15MIL-TEST-POINT" package="15MIL-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="10MIL-TEST-POINT" package="10MIL-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="8MIL-TEST-POINT" package="8MIL-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="mount">
+<description>APDM library of mounting points
+Mostly holes, includes keep-out for screw heads.</description>
+<packages>
+<package name="#4/.225-BARE+HEAD_OR_SMALL_NUT">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.225" outline for screw head.
+The 0.225" outline will also accomodate a 3/16" (small) #4 nut.
+For standard #4 nuts + tool clearance use the 0.4" outline.&lt;br&gt;
+Note, this outline does not include nut-tool clearance, for that use at least the 0.3" outline. However, this outline is acceptable for screw heads, which require no additional tool clearance, or for nuts accessible from the side, etc.</description>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="2.8575" width="0" layer="39"/>
+<circle x="0" y="0" radius="2.8575" width="0" layer="41"/>
+<text x="2.8575" y="2.8575" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="2.8575" y="-2.8575" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="2.8575" width="0" layer="42"/>
+</package>
+<package name="#4/.250-BARE+STD_WASHER">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.250" outline for standard #4 washer.
+For #4 star lock washers or standard size #4 nuts use use the 0.3" outline. 1/4" is a good choice for a screw head + standard washer, but will not provide enough room for a standard nut to turn.</description>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="3.175" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="41"/>
+<text x="2.8575" y="2.8575" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="2.8575" y="-2.8575" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="42"/>
+</package>
+<package name="#4/.300-BARE+STD_NUT_OR_STAR_WASHER">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.300" outline for standard #4 nut or star lock washer.
+For standard tool clearance, use the 0.400" outline.&lt;br&gt;
+Note 0.300" is acceptable clearance for a ground-down 3/16" nut driver.</description>
+<wire x1="-1.8331" y1="3.175" x2="1.8331" y2="3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="3.175" x2="3.6662" y2="0" width="0.127" layer="51"/>
+<wire x1="3.6662" y1="0" x2="1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="-3.175" x2="-1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="-1.8331" y1="-3.175" x2="-3.6661" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.6661" y1="0" x2="-1.8331" y2="3.175" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="3.81" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="41"/>
+<text x="2.8575" y="2.8575" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="3.175" y="-3.175" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="42"/>
+</package>
+<package name="#4/.325-BARE+SMALL_TOOL_CLEARANCE">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.325" outline for 3/16" (small) #4 nut-tool. If nut driving is not required, the 0.250" outline may be used.</description>
+<wire x1="-1.8331" y1="3.175" x2="1.8331" y2="3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="3.175" x2="3.6662" y2="0" width="0.127" layer="51"/>
+<wire x1="3.6662" y1="0" x2="1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="-3.175" x2="-1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="-1.8331" y1="-3.175" x2="-3.6661" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.6661" y1="0" x2="-1.8331" y2="3.175" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="4.1275" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="4.1275" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="41"/>
+<text x="2.8575" y="2.8575" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="3.175" y="-3.81" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="42"/>
+<circle x="0" y="0" radius="4.1275" width="0" layer="40"/>
+</package>
+<package name="#4/.400-BARE+STD_TOOL_CLEARANCE">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not required, the 0.300" outline may be used.</description>
+<wire x1="-1.8331" y1="3.175" x2="1.8331" y2="3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="3.175" x2="3.6662" y2="0" width="0.127" layer="51"/>
+<wire x1="3.6662" y1="0" x2="1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="-3.175" x2="-1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="-1.8331" y1="-3.175" x2="-3.6661" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.6661" y1="0" x2="-1.8331" y2="3.175" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="5.08" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="5.08" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="41"/>
+<text x="4.1275" y="3.4925" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="42"/>
+<circle x="0" y="0" radius="5.08" width="0" layer="40"/>
+</package>
+</packages>
+<symbols>
+<symbol name="HOLE+SCREWHEAD">
+<wire x1="-1.6256" y1="1.8542" x2="1.8796" y2="-1.6002" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.6256" x2="1.6256" y2="-1.8796" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94" curve="90"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<text x="1.27" y="2.54" size="1.27" layer="95">&gt;Name</text>
+<text x="2.54" y="-2.54" size="1.27" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="#4-BARE_MOUNTING_HOLE">
+<description>1/8" drill hole for #4 screw mount</description>
+<gates>
+<gate name="MT" symbol="HOLE+SCREWHEAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="/.225" package="#4/.225-BARE+HEAD_OR_SMALL_NUT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/.250" package="#4/.250-BARE+STD_WASHER">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/.300" package="#4/.300-BARE+STD_NUT_OR_STAR_WASHER">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/.325" package="#4/.325-BARE+SMALL_TOOL_CLEARANCE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/.400" package="#4/.400-BARE+STD_TOOL_CLEARANCE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4950,8 +5249,24 @@ http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf</description>
 <part name="U$31" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>
 <part name="C44" library="rcl_custom" deviceset="C-EU" device="0603-C" value="0.1uF"/>
 <part name="R29" library="rcl_custom" deviceset="R-US_" device="0402-C" value="120"/>
-<part name="J15" library="MA_HEADER" deviceset="MA02-2" device=""/>
+<part name="J15" library="MA_HEADER" deviceset="MA02-2W" device=""/>
 <part name="J16" library="MA_HEADER" deviceset="MA02-2" device=""/>
+<part name="TP1" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="J17" library="MA_HEADER" deviceset="MA02-1" device=""/>
+<part name="J18" library="MA_HEADER" deviceset="MA02-1" device=""/>
+<part name="J19" library="MA_HEADER" deviceset="MA02-1" device=""/>
+<part name="J20" library="MA_HEADER" deviceset="MA02-1" device=""/>
+<part name="GND30" library="GROUND" deviceset="GND" device=""/>
+<part name="U$33" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="U$34" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="U$35" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="U$36" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="TP2" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP3" library="Tova" deviceset="TEST-POINT" device="20MIL-TEST-POINT"/>
+<part name="TP4" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP5" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="TP6" library="Tova" deviceset="TEST-POINT" device="8MIL-TEST-POINT" value="TEST-POINT8MIL-TEST-POINT"/>
+<part name="GND31" library="GROUND" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5129,6 +5444,7 @@ maybe add a net out to a test point or male pin
 <instance part="U$30" gate="3.3VDD" x="224.79" y="58.42"/>
 <instance part="U6" gate="G$1" x="285.75" y="-185.42"/>
 <instance part="J7" gate="G$1" x="220.98" y="-209.55"/>
+<instance part="TP1" gate="G$1" x="38.1" y="86.36"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -6011,9 +6327,9 @@ maybe add a net out to a test point or male pin
 <net name="MCO1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PA8"/>
-<wire x1="-30.48" y1="86.36" x2="33.02" y2="86.36" width="0.1524" layer="91"/>
-<label x="33.02" y="86.36" size="1.778" layer="95" xref="yes"/>
+<wire x1="-30.48" y1="86.36" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
 <label x="-8.89" y="86.36" size="1.778" layer="95"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SD_DETECT" class="0">
@@ -7342,6 +7658,16 @@ maybe add a net out to a test point or male pin
 <wire x1="191.77" y1="69.85" x2="191.77" y2="130.81" width="1.016" layer="94"/>
 <wire x1="191.77" y1="130.81" x2="107.95" y2="130.81" width="1.016" layer="94"/>
 <text x="123.19" y="123.19" size="3.81" layer="97">5.0V - 1.8V LDO</text>
+<wire x1="36.83" y1="-99.06" x2="36.83" y2="-130.81" width="1.016" layer="94"/>
+<wire x1="36.83" y1="-130.81" x2="123.19" y2="-130.81" width="1.016" layer="94"/>
+<wire x1="123.19" y1="-130.81" x2="123.19" y2="-99.06" width="1.016" layer="94"/>
+<wire x1="123.19" y1="-99.06" x2="36.83" y2="-99.06" width="1.016" layer="94"/>
+<text x="48.26" y="-105.41" size="5.08" layer="97">Mounting stuff</text>
+<wire x1="-156.21" y1="-99.06" x2="-156.21" y2="-128.27" width="1.016" layer="94"/>
+<wire x1="-156.21" y1="-128.27" x2="-76.2" y2="-128.27" width="1.016" layer="94"/>
+<wire x1="-76.2" y1="-128.27" x2="-76.2" y2="-99.06" width="1.016" layer="94"/>
+<wire x1="-76.2" y1="-99.06" x2="-156.21" y2="-99.06" width="1.016" layer="94"/>
+<text x="-154.94" y="-105.41" size="5.08" layer="97">Test the test pads</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$10" x="140.97" y="-35.56"/>
@@ -7460,6 +7786,16 @@ maybe add a net out to a test point or male pin
 <instance part="U$9" gate="3.3VDD" x="-116.84" y="-54.61"/>
 <instance part="U$10" gate="3.3VDD" x="67.31" y="-20.32"/>
 <instance part="U$11" gate="3.3VDD" x="-35.56" y="116.84"/>
+<instance part="U$33" gate="MT" x="45.72" y="-113.03"/>
+<instance part="U$34" gate="MT" x="45.72" y="-123.19"/>
+<instance part="U$35" gate="MT" x="86.36" y="-113.03"/>
+<instance part="U$36" gate="MT" x="86.36" y="-123.19"/>
+<instance part="TP2" gate="G$1" x="-127" y="-113.03"/>
+<instance part="TP3" gate="G$1" x="-120.65" y="-113.03"/>
+<instance part="TP4" gate="G$1" x="-114.3" y="-113.03"/>
+<instance part="TP5" gate="G$1" x="-107.95" y="-113.03"/>
+<instance part="TP6" gate="G$1" x="-101.6" y="-113.03"/>
+<instance part="GND31" gate="1" x="-114.3" y="-124.46"/>
 </instances>
 <busses>
 <bus name="USB_FS_BUS:OTG_VBUS,FS_ID,FS_DP,FS_DM">
@@ -7720,6 +8056,29 @@ maybe add a net out to a test point or male pin
 <wire x1="-109.22" y1="35.56" x2="-109.22" y2="33.02" width="0.1524" layer="91"/>
 <junction x="-109.22" y="35.56"/>
 <pinref part="GND27" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="TP2" gate="G$1" pin="1"/>
+<wire x1="-127" y1="-113.03" x2="-127" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="-127" y1="-116.84" x2="-125.73" y2="-118.11" width="0.1524" layer="91"/>
+<wire x1="-125.73" y1="-118.11" x2="-120.65" y2="-118.11" width="0.1524" layer="91"/>
+<wire x1="-120.65" y1="-118.11" x2="-114.3" y2="-118.11" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-118.11" x2="-107.95" y2="-118.11" width="0.1524" layer="91"/>
+<wire x1="-107.95" y1="-118.11" x2="-102.87" y2="-118.11" width="0.1524" layer="91"/>
+<wire x1="-102.87" y1="-118.11" x2="-101.6" y2="-116.84" width="0.1524" layer="91"/>
+<pinref part="TP6" gate="G$1" pin="1"/>
+<wire x1="-101.6" y1="-116.84" x2="-101.6" y2="-113.03" width="0.1524" layer="91"/>
+<pinref part="TP5" gate="G$1" pin="1"/>
+<wire x1="-107.95" y1="-113.03" x2="-107.95" y2="-118.11" width="0.1524" layer="91"/>
+<junction x="-107.95" y="-118.11"/>
+<pinref part="TP4" gate="G$1" pin="1"/>
+<wire x1="-114.3" y1="-113.03" x2="-114.3" y2="-118.11" width="0.1524" layer="91"/>
+<junction x="-114.3" y="-118.11"/>
+<pinref part="TP3" gate="G$1" pin="1"/>
+<wire x1="-120.65" y1="-113.03" x2="-120.65" y2="-118.11" width="0.1524" layer="91"/>
+<junction x="-120.65" y="-118.11"/>
+<wire x1="-114.3" y1="-118.11" x2="-114.3" y2="-121.92" width="0.1524" layer="91"/>
+<pinref part="GND31" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -8152,6 +8511,11 @@ maybe add a net out to a test point or male pin
 <wire x1="-224.79" y1="148.59" x2="-101.6" y2="148.59" width="1.016" layer="94"/>
 <wire x1="-101.6" y1="148.59" x2="-101.6" y2="-34.29" width="1.016" layer="94"/>
 <text x="-171.45" y="140.97" size="5.08" layer="97">GPIO</text>
+<wire x1="-224.79" y1="-48.26" x2="-101.6" y2="-48.26" width="1.016" layer="94"/>
+<wire x1="-101.6" y1="-48.26" x2="-101.6" y2="-109.22" width="1.016" layer="94"/>
+<wire x1="-101.6" y1="-109.22" x2="-224.79" y2="-109.22" width="1.016" layer="94"/>
+<wire x1="-224.79" y1="-109.22" x2="-224.79" y2="-48.26" width="1.016" layer="94"/>
+<text x="-200.66" y="-63.5" size="5.08" layer="97">I GOT GROUNDS YO!</text>
 </plain>
 <instances>
 <instance part="J8" gate="G$1" x="105.41" y="111.76"/>
@@ -8180,8 +8544,13 @@ maybe add a net out to a test point or male pin
 <instance part="FRAME4" gate="G$1" x="-247.65" y="-116.84"/>
 <instance part="FRAME4" gate="G$2" x="77.47" y="-116.84"/>
 <instance part="J6" gate="G$1" x="80.01" y="-33.02" rot="R180"/>
-<instance part="J15" gate="G$1" x="-20.32" y="12.7" rot="R180"/>
+<instance part="J15" gate="1" x="-20.32" y="12.7" rot="R180"/>
 <instance part="J16" gate="G$1" x="-19.05" y="-25.4" rot="R180"/>
+<instance part="J17" gate="G$1" x="-207.01" y="-82.55"/>
+<instance part="J18" gate="G$1" x="-181.61" y="-82.55"/>
+<instance part="J19" gate="G$1" x="-158.75" y="-82.55"/>
+<instance part="J20" gate="G$1" x="-133.35" y="-82.55"/>
+<instance part="GND30" gate="1" x="-158.75" y="-102.87"/>
 </instances>
 <busses>
 <bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD6,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
@@ -8294,7 +8663,7 @@ maybe add a net out to a test point or male pin
 <wire x1="-82.55" y1="16.51" x2="-80.01" y2="13.97" width="0.1524" layer="91"/>
 <wire x1="-80.01" y1="13.97" x2="-27.94" y2="13.97" width="0.1524" layer="91"/>
 <label x="-57.15" y="13.97" size="1.778" layer="95"/>
-<pinref part="J15" gate="G$1" pin="1"/>
+<pinref part="J15" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
@@ -8302,7 +8671,7 @@ maybe add a net out to a test point or male pin
 <wire x1="-82.55" y1="13.97" x2="-80.01" y2="11.43" width="0.1524" layer="91"/>
 <wire x1="-80.01" y1="11.43" x2="-27.94" y2="11.43" width="0.1524" layer="91"/>
 <label x="-57.15" y="11.43" size="1.778" layer="95"/>
-<pinref part="J15" gate="G$1" pin="3"/>
+<pinref part="J15" gate="1" pin="3"/>
 </segment>
 </net>
 <net name="UART4_TX" class="0">
@@ -8464,7 +8833,7 @@ maybe add a net out to a test point or male pin
 <wire x1="-10.16" y1="11.43" x2="-7.62" y2="8.89" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="8.89" x2="-7.62" y2="6.35" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<pinref part="J15" gate="G$1" pin="4"/>
+<pinref part="J15" gate="1" pin="4"/>
 </segment>
 <segment>
 <wire x1="-11.43" y1="-26.67" x2="-8.89" y2="-26.67" width="0.1524" layer="91"/>
@@ -8472,6 +8841,47 @@ maybe add a net out to a test point or male pin
 <wire x1="-6.35" y1="-29.21" x2="-6.35" y2="-31.75" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <pinref part="J16" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="J19" gate="G$1" pin="1"/>
+<wire x1="-151.13" y1="-80.01" x2="-146.05" y2="-80.01" width="0.1524" layer="91"/>
+<wire x1="-146.05" y1="-80.01" x2="-146.05" y2="-82.55" width="0.1524" layer="91"/>
+<pinref part="J19" gate="G$1" pin="2"/>
+<wire x1="-146.05" y1="-82.55" x2="-146.05" y2="-95.25" width="0.1524" layer="91"/>
+<wire x1="-151.13" y1="-82.55" x2="-146.05" y2="-82.55" width="0.1524" layer="91"/>
+<junction x="-146.05" y="-82.55"/>
+<pinref part="J18" gate="G$1" pin="1"/>
+<wire x1="-173.99" y1="-80.01" x2="-168.91" y2="-80.01" width="0.1524" layer="91"/>
+<wire x1="-168.91" y1="-80.01" x2="-168.91" y2="-82.55" width="0.1524" layer="91"/>
+<pinref part="J18" gate="G$1" pin="2"/>
+<wire x1="-168.91" y1="-82.55" x2="-173.99" y2="-82.55" width="0.1524" layer="91"/>
+<wire x1="-168.91" y1="-82.55" x2="-168.91" y2="-95.25" width="0.1524" layer="91"/>
+<junction x="-168.91" y="-82.55"/>
+<wire x1="-146.05" y1="-95.25" x2="-158.75" y2="-95.25" width="0.1524" layer="91"/>
+<wire x1="-158.75" y1="-95.25" x2="-168.91" y2="-95.25" width="0.1524" layer="91"/>
+<wire x1="-158.75" y1="-95.25" x2="-158.75" y2="-100.33" width="0.1524" layer="91"/>
+<junction x="-158.75" y="-95.25"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<pinref part="J17" gate="G$1" pin="2"/>
+<wire x1="-199.39" y1="-82.55" x2="-194.31" y2="-82.55" width="0.1524" layer="91"/>
+<pinref part="J17" gate="G$1" pin="1"/>
+<wire x1="-199.39" y1="-80.01" x2="-194.31" y2="-80.01" width="0.1524" layer="91"/>
+<wire x1="-194.31" y1="-80.01" x2="-194.31" y2="-82.55" width="0.1524" layer="91"/>
+<wire x1="-194.31" y1="-82.55" x2="-194.31" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-194.31" y1="-93.98" x2="-193.04" y2="-95.25" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="-95.25" x2="-168.91" y2="-95.25" width="0.1524" layer="91"/>
+<pinref part="J20" gate="G$1" pin="2"/>
+<wire x1="-125.73" y1="-82.55" x2="-120.65" y2="-82.55" width="0.1524" layer="91"/>
+<pinref part="J20" gate="G$1" pin="1"/>
+<wire x1="-125.73" y1="-80.01" x2="-120.65" y2="-80.01" width="0.1524" layer="91"/>
+<wire x1="-120.65" y1="-80.01" x2="-120.65" y2="-82.55" width="0.1524" layer="91"/>
+<wire x1="-120.65" y1="-82.55" x2="-120.65" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-120.65" y1="-93.98" x2="-121.92" y2="-95.25" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="-95.25" x2="-146.05" y2="-95.25" width="0.1524" layer="91"/>
+<junction x="-194.31" y="-82.55"/>
+<junction x="-168.91" y="-95.25"/>
+<junction x="-146.05" y="-95.25"/>
+<junction x="-120.65" y="-82.55"/>
 </segment>
 </net>
 <net name="+3.3VDDA" class="0">
@@ -8779,7 +9189,7 @@ maybe add a net out to a test point or male pin
 <wire x1="-7.62" y1="19.05" x2="-7.62" y2="16.51" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="16.51" x2="-10.16" y2="13.97" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="13.97" x2="-12.7" y2="13.97" width="0.1524" layer="91"/>
-<pinref part="J15" gate="G$1" pin="2"/>
+<pinref part="J15" gate="1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-11.43" y1="73.66" x2="-8.89" y2="73.66" width="0.1524" layer="91"/>
