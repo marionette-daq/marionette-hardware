@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5271,6 +5271,20 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <part name="TP8" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP9" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP10" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP11" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="TP12" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="TP13" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="TP14" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="TP15" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="TP16" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="TP17" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="TP18" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="J21" library="MA_HEADER" deviceset="MA02-2W" device=""/>
+<part name="D13" library="CBDU0530" deviceset="CDBU0530" device=""/>
+<part name="GND32" library="GROUND" deviceset="GND" device=""/>
+<part name="C45" library="rcl_custom" deviceset="C-EU" device="0805-B" value="10uF, 10V"/>
+<part name="C46" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1uF, 10V"/>
+<part name="GND33" library="GROUND" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5302,6 +5316,25 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <wire x1="189.23" y1="-10.16" x2="299.72" y2="-10.16" width="1.016" layer="94"/>
 <wire x1="299.72" y1="-10.16" x2="299.72" y2="-139.7" width="1.016" layer="94"/>
 <text x="207.01" y="-17.78" size="5.08" layer="97">SD Card Interface</text>
+<wire x1="212.09" y1="81.915" x2="212.09" y2="76.835" width="0.1524" layer="97"/>
+<wire x1="212.09" y1="76.835" x2="212.09" y2="70.485" width="0.1524" layer="97"/>
+<wire x1="212.09" y1="70.485" x2="217.17" y2="70.485" width="0.1524" layer="97"/>
+<wire x1="217.17" y1="70.485" x2="217.17" y2="81.915" width="0.1524" layer="97"/>
+<wire x1="217.17" y1="81.915" x2="212.09" y2="81.915" width="0.1524" layer="97"/>
+<wire x1="212.09" y1="76.835" x2="203.835" y2="74.93" width="0.1524" layer="97"/>
+<wire x1="203.835" y1="69.215" x2="203.835" y2="81.28" width="0.1524" layer="97"/>
+<wire x1="203.835" y1="81.28" x2="193.675" y2="81.28" width="0.1524" layer="97"/>
+<wire x1="193.675" y1="81.28" x2="193.675" y2="69.215" width="0.1524" layer="97"/>
+<wire x1="193.675" y1="69.215" x2="203.835" y2="69.215" width="0.1524" layer="97"/>
+<wire x1="200.66" y1="-177.8" x2="200.66" y2="-184.785" width="0.1524" layer="97"/>
+<wire x1="200.66" y1="-184.785" x2="205.74" y2="-184.785" width="0.1524" layer="97"/>
+<wire x1="205.74" y1="-184.785" x2="205.74" y2="-177.8" width="0.1524" layer="97"/>
+<wire x1="205.74" y1="-177.8" x2="200.66" y2="-177.8" width="0.1524" layer="97"/>
+<wire x1="200.66" y1="-177.8" x2="198.755" y2="-175.26" width="0.1524" layer="97"/>
+<wire x1="198.755" y1="-175.26" x2="189.865" y2="-175.26" width="0.1524" layer="97"/>
+<wire x1="189.865" y1="-175.26" x2="189.865" y2="-169.545" width="0.1524" layer="97"/>
+<wire x1="189.865" y1="-169.545" x2="198.755" y2="-169.545" width="0.1524" layer="97"/>
+<wire x1="198.755" y1="-169.545" x2="198.755" y2="-175.26" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-39.37" y="91.44" rot="MR0">
@@ -5450,6 +5483,24 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 </instance>
 <instance part="TP8" gate="G$1" x="233.68" y="54.61"/>
 <instance part="TP9" gate="G$1" x="280.67" y="59.69"/>
+<instance part="TP13" gate="G$1" x="203.2" y="-180.34" smashed="yes">
+<attribute name="NAME" x="191.135" y="-172.085" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP14" gate="G$1" x="203.2" y="-182.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="191.135" y="-174.625" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP15" gate="G$1" x="214.63" y="80.01" smashed="yes" rot="R180">
+<attribute name="NAME" x="201.295" y="80.01" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="TP16" gate="G$1" x="214.63" y="77.47" smashed="yes" rot="R180">
+<attribute name="NAME" x="201.295" y="77.47" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="TP17" gate="G$1" x="214.63" y="74.93" smashed="yes" rot="R180">
+<attribute name="NAME" x="201.295" y="74.93" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="TP18" gate="G$1" x="214.63" y="72.39" smashed="yes" rot="R180">
+<attribute name="NAME" x="201.295" y="72.39" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -5659,8 +5710,11 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <segment>
 <wire x1="209.55" y1="82.55" x2="212.09" y2="80.01" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="STP"/>
-<wire x1="212.09" y1="80.01" x2="245.11" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="80.01" x2="214.63" y2="80.01" width="0.1524" layer="91"/>
 <label x="224.79" y="80.01" size="1.778" layer="95"/>
+<pinref part="TP15" gate="G$1" pin="1"/>
+<wire x1="214.63" y1="80.01" x2="245.11" y2="80.01" width="0.1524" layer="91"/>
+<junction x="214.63" y="80.01"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="-58.42" x2="22.86" y2="-60.96" width="0.1524" layer="91"/>
@@ -5673,8 +5727,11 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <segment>
 <wire x1="209.55" y1="77.47" x2="212.09" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="DIR"/>
-<wire x1="212.09" y1="74.93" x2="245.11" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="74.93" x2="214.63" y2="74.93" width="0.1524" layer="91"/>
 <label x="224.79" y="74.93" size="1.778" layer="95"/>
+<pinref part="TP17" gate="G$1" pin="1"/>
+<wire x1="214.63" y1="74.93" x2="245.11" y2="74.93" width="0.1524" layer="91"/>
+<junction x="214.63" y="74.93"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="-68.58" x2="22.86" y2="-71.12" width="0.1524" layer="91"/>
@@ -5689,8 +5746,11 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <segment>
 <wire x1="209.55" y1="74.93" x2="212.09" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="REFCLK"/>
-<wire x1="212.09" y1="72.39" x2="245.11" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="72.39" x2="214.63" y2="72.39" width="0.1524" layer="91"/>
 <label x="224.79" y="72.39" size="1.778" layer="95"/>
+<pinref part="TP18" gate="G$1" pin="1"/>
+<wire x1="214.63" y1="72.39" x2="245.11" y2="72.39" width="0.1524" layer="91"/>
+<junction x="214.63" y="72.39"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="104.14" x2="22.86" y2="101.6" width="0.1524" layer="91"/>
@@ -6222,8 +6282,11 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <segment>
 <wire x1="209.55" y1="80.01" x2="212.09" y2="77.47" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="NXT"/>
-<wire x1="212.09" y1="77.47" x2="245.11" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="77.47" x2="214.63" y2="77.47" width="0.1524" layer="91"/>
 <label x="224.79" y="77.47" size="1.778" layer="95" font="vector"/>
+<pinref part="TP16" gate="G$1" pin="1"/>
+<wire x1="214.63" y1="77.47" x2="245.11" y2="77.47" width="0.1524" layer="91"/>
+<junction x="214.63" y="77.47"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -6370,9 +6433,12 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <segment>
 <pinref part="U$1" gate="G$4" pin="PD5"/>
 <label x="-8.89" y="-180.34" size="1.778" layer="95" font="vector"/>
-<wire x1="-30.48" y1="-180.34" x2="269.24" y2="-180.34" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-180.34" x2="203.2" y2="-180.34" width="0.1524" layer="91"/>
 <label x="251.46" y="-180.34" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="DIN"/>
+<pinref part="TP13" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="-180.34" x2="269.24" y2="-180.34" width="0.1524" layer="91"/>
+<junction x="203.2" y="-180.34"/>
 </segment>
 </net>
 <net name="USART2_CK" class="0">
@@ -6383,7 +6449,10 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <wire x1="182.88" y1="-190.5" x2="190.5" y2="-182.88" width="0.1524" layer="91"/>
 <label x="251.46" y="-182.88" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="SCLK"/>
-<wire x1="190.5" y1="-182.88" x2="269.24" y2="-182.88" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-182.88" x2="203.2" y2="-182.88" width="0.1524" layer="91"/>
+<pinref part="TP14" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="-182.88" x2="269.24" y2="-182.88" width="0.1524" layer="91"/>
+<junction x="203.2" y="-182.88"/>
 </segment>
 </net>
 <net name="DAC_A" class="0">
@@ -6643,6 +6712,16 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <wire x1="170.18" y1="-96.52" x2="170.18" y2="-38.1" width="1.016" layer="94"/>
 <wire x1="170.18" y1="-38.1" x2="43.18" y2="-38.1" width="1.016" layer="94"/>
 <text x="68.58" y="-45.72" size="5.08" layer="97">CAN Transceiver</text>
+<wire x1="35.56" y1="-58.42" x2="35.56" y2="-66.04" width="0.1524" layer="97"/>
+<wire x1="35.56" y1="-66.04" x2="40.64" y2="-66.04" width="0.1524" layer="97"/>
+<wire x1="40.64" y1="-66.04" x2="40.64" y2="-58.42" width="0.1524" layer="97"/>
+<wire x1="40.64" y1="-58.42" x2="35.56" y2="-58.42" width="0.1524" layer="97"/>
+<wire x1="35.56" y1="-58.42" x2="33.655" y2="-56.515" width="0.1524" layer="97"/>
+<wire x1="33.655" y1="-56.515" x2="29.845" y2="-56.515" width="0.1524" layer="97"/>
+<wire x1="29.845" y1="-56.515" x2="29.845" y2="-51.435" width="0.1524" layer="97"/>
+<wire x1="29.845" y1="-51.435" x2="37.465" y2="-51.435" width="0.1524" layer="97"/>
+<wire x1="37.465" y1="-51.435" x2="37.465" y2="-56.515" width="0.1524" layer="97"/>
+<wire x1="37.465" y1="-56.515" x2="33.655" y2="-56.515" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$6" x="-73.66" y="104.14" rot="MR0">
@@ -6755,6 +6834,12 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <instance part="C44" gate="CE" x="92.71" y="-78.74" rot="R270"/>
 <instance part="R29" gate="R" x="144.78" y="-62.23" rot="R90"/>
 <instance part="TP10" gate="G$1" x="82.55" y="-73.66"/>
+<instance part="TP11" gate="G$1" x="38.1" y="-60.96" smashed="yes">
+<attribute name="NAME" x="30.48" y="-53.975" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP12" gate="G$1" x="38.1" y="-63.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="30.48" y="-55.88" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 <bus name="ADC_BUS:ADC1/2/3_IN2,ADC1/2_IN6,ADC1/2_IN7,ADC1/2/3_IN11,ADC1/2/3_IN13,ADC1/2_IN14,ADC1/2_IN15,ADC3_IN9,ADC3_IN14,ADC3_IN15,ADC3_IN4,ADC3_IN5,ADC3_IN6,ADC3_IN7,ADC3_IN8">
@@ -7373,11 +7458,14 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <wire x1="25.4" y1="-30.48" x2="-66.04" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-43.18" y="-30.48" size="1.778" layer="95"/>
 <pinref part="U5" gate="G$1" pin="TXD"/>
-<wire x1="83.82" y1="-60.96" x2="30.48" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="-60.96" x2="38.1" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-60.96" x2="30.48" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-60.96" x2="27.94" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-58.42" x2="27.94" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-33.02" x2="25.4" y2="-30.48" width="0.1524" layer="91"/>
 <label x="64.77" y="-60.96" size="1.778" layer="95"/>
+<pinref part="TP11" gate="G$1" pin="1"/>
+<junction x="38.1" y="-60.96"/>
 </segment>
 </net>
 <net name="CAN1_RX" class="0">
@@ -7389,8 +7477,11 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <wire x1="27.94" y1="-104.14" x2="27.94" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-66.04" x2="30.48" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="RXD"/>
-<wire x1="30.48" y1="-63.5" x2="83.82" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-63.5" x2="38.1" y2="-63.5" width="0.1524" layer="91"/>
 <label x="64.77" y="-63.5" size="1.778" layer="95"/>
+<pinref part="TP12" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="-63.5" x2="83.82" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="38.1" y="-63.5"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
@@ -7790,15 +7881,15 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <instance part="GND24" gate="1" x="-116.84" y="-85.09"/>
 <instance part="J4" gate="1" x="-116.84" y="-69.85"/>
 <instance part="J5" gate="G$1" x="-74.93" y="-44.45"/>
-<instance part="C40" gate="CE" x="-114.3" y="45.72" smashed="yes">
-<attribute name="NAME" x="-112.776" y="46.101" size="1.778" layer="95"/>
+<instance part="C40" gate="CE" x="-85.09" y="48.26" smashed="yes">
+<attribute name="NAME" x="-83.566" y="48.641" size="1.778" layer="95"/>
 </instance>
-<instance part="C41" gate="CE" x="-104.14" y="45.72" smashed="yes">
-<attribute name="NAME" x="-102.616" y="46.101" size="1.778" layer="95"/>
+<instance part="C41" gate="CE" x="-74.93" y="48.26" smashed="yes">
+<attribute name="NAME" x="-73.406" y="48.641" size="1.778" layer="95"/>
 </instance>
-<instance part="GND27" gate="1" x="-109.22" y="30.48"/>
+<instance part="GND27" gate="1" x="-80.01" y="35.56"/>
 <instance part="U$7" gate="3.3VDD" x="-62.23" y="16.51"/>
-<instance part="U$8" gate="3.3VDD" x="-168.91" y="-3.81"/>
+<instance part="U$8" gate="3.3VDD" x="-168.91" y="-6.35"/>
 <instance part="U$9" gate="3.3VDD" x="-116.84" y="-54.61"/>
 <instance part="U$10" gate="3.3VDD" x="67.31" y="-20.32"/>
 <instance part="U$11" gate="3.3VDD" x="-35.56" y="116.84"/>
@@ -7812,6 +7903,16 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <instance part="TP5" gate="G$1" x="-107.95" y="-113.03"/>
 <instance part="TP6" gate="G$1" x="-101.6" y="-113.03"/>
 <instance part="GND31" gate="1" x="-114.3" y="-124.46"/>
+<instance part="J21" gate="1" x="-167.64" y="24.13"/>
+<instance part="D13" gate="G$1" x="-147.32" y="25.4"/>
+<instance part="GND32" gate="1" x="-167.64" y="10.16"/>
+<instance part="C45" gate="CE" x="-130.81" y="19.05" smashed="yes">
+<attribute name="NAME" x="-129.286" y="19.431" size="1.778" layer="95"/>
+</instance>
+<instance part="C46" gate="CE" x="-120.65" y="19.05" smashed="yes">
+<attribute name="NAME" x="-119.126" y="19.431" size="1.778" layer="95"/>
+</instance>
+<instance part="GND33" gate="1" x="-125.73" y="5.08"/>
 </instances>
 <busses>
 <bus name="USB_FS_BUS:OTG_VBUS,FS_ID,FS_DP,FS_DM">
@@ -8064,13 +8165,13 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 </segment>
 <segment>
 <pinref part="C41" gate="CE" pin="2"/>
-<wire x1="-104.14" y1="40.64" x2="-104.14" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="35.56" x2="-109.22" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-74.93" y1="43.18" x2="-74.93" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-74.93" y1="40.64" x2="-80.01" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C40" gate="CE" pin="2"/>
-<wire x1="-109.22" y1="35.56" x2="-114.3" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="35.56" x2="-114.3" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="35.56" x2="-109.22" y2="33.02" width="0.1524" layer="91"/>
-<junction x="-109.22" y="35.56"/>
+<wire x1="-80.01" y1="40.64" x2="-85.09" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-85.09" y1="40.64" x2="-85.09" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-80.01" y1="40.64" x2="-80.01" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-80.01" y="40.64"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -8095,6 +8196,34 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <junction x="-120.65" y="-118.11"/>
 <wire x1="-114.3" y1="-118.11" x2="-114.3" y2="-121.92" width="0.1524" layer="91"/>
 <pinref part="GND31" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J21" gate="1" pin="2"/>
+<wire x1="-175.26" y1="22.86" x2="-177.8" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="22.86" x2="-180.34" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="20.32" x2="-180.34" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="17.78" x2="-177.8" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="15.24" x2="-167.64" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="15.24" x2="-157.48" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="15.24" x2="-154.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="17.78" x2="-154.94" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="20.32" x2="-157.48" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="J21" gate="1" pin="1"/>
+<wire x1="-157.48" y1="22.86" x2="-160.02" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+<wire x1="-167.64" y1="15.24" x2="-167.64" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-167.64" y="15.24"/>
+</segment>
+<segment>
+<pinref part="C46" gate="CE" pin="2"/>
+<wire x1="-120.65" y1="13.97" x2="-120.65" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-120.65" y1="10.16" x2="-125.73" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C45" gate="CE" pin="2"/>
+<wire x1="-125.73" y1="10.16" x2="-130.81" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-130.81" y1="10.16" x2="-130.81" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="-125.73" y1="10.16" x2="-125.73" y2="7.62" width="0.1524" layer="91"/>
+<junction x="-125.73" y="10.16"/>
+<pinref part="GND33" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -8140,8 +8269,9 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <wire x1="-114.3" y1="110.49" x2="-114.3" y2="54.61" width="0.1524" layer="91"/>
 <junction x="-114.3" y="110.49"/>
 <junction x="-114.3" y="54.61"/>
-<wire x1="-114.3" y1="54.61" x2="-104.14" y2="54.61" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="54.61" x2="-10.16" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="54.61" x2="-85.09" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="-85.09" y1="54.61" x2="-74.93" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="-74.93" y1="54.61" x2="-10.16" y2="54.61" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="54.61" x2="99.06" y2="54.61" width="0.1524" layer="91"/>
 <junction x="-10.16" y="54.61"/>
 <pinref part="U4" gate="G$1" pin="EN"/>
@@ -8160,11 +8290,16 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <junction x="99.06" y="54.61"/>
 <label x="121.92" y="110.49" size="1.778" layer="95"/>
 <label x="187.96" y="54.61" size="1.778" layer="95" xref="yes"/>
-<pinref part="C40" gate="CE" pin="1"/>
-<wire x1="-114.3" y1="54.61" x2="-114.3" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C41" gate="CE" pin="1"/>
-<wire x1="-104.14" y1="54.61" x2="-104.14" y2="48.26" width="0.1524" layer="91"/>
-<junction x="-104.14" y="54.61"/>
+<wire x1="-74.93" y1="54.61" x2="-74.93" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-74.93" y="54.61"/>
+<pinref part="D13" gate="G$1" pin="C"/>
+<wire x1="-144.78" y1="25.4" x2="-116.84" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="25.4" x2="-114.3" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="27.94" x2="-114.3" y2="54.61" width="0.1524" layer="91"/>
+<pinref part="C40" gate="CE" pin="1"/>
+<wire x1="-85.09" y1="50.8" x2="-85.09" y2="54.61" width="0.1524" layer="91"/>
+<junction x="-85.09" y="54.61"/>
 </segment>
 </net>
 <net name="+3.3VDDA" class="0">
@@ -8346,10 +8481,10 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <pinref part="U$7" gate="3.3VDD" pin="3.3VDD"/>
 </segment>
 <segment>
-<wire x1="-168.91" y1="-6.35" x2="-168.91" y2="-8.89" width="0.1524" layer="91"/>
-<wire x1="-168.91" y1="-8.89" x2="-163.83" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="-168.91" y1="-8.89" x2="-168.91" y2="-11.43" width="0.1524" layer="91"/>
+<wire x1="-168.91" y1="-11.43" x2="-166.37" y2="-13.97" width="0.1524" layer="91"/>
 <pinref part="R19" gate="R" pin="2"/>
-<wire x1="-163.83" y1="-13.97" x2="-161.29" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="-166.37" y1="-13.97" x2="-161.29" y2="-13.97" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="3.3VDD" pin="3.3VDD"/>
 </segment>
 <segment>
@@ -8482,6 +8617,31 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <wire x1="-35.56" y1="110.49" x2="-35.56" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="J21" gate="1" pin="4"/>
+<wire x1="-175.26" y1="25.4" x2="-177.8" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="25.4" x2="-180.34" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="27.94" x2="-180.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="30.48" x2="-177.8" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="33.02" x2="-157.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="33.02" x2="-154.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="30.48" x2="-154.94" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="J21" gate="1" pin="3"/>
+<wire x1="-154.94" y1="25.4" x2="-160.02" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="D13" gate="G$1" pin="A"/>
+<wire x1="-154.94" y1="25.4" x2="-149.86" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-154.94" y="25.4"/>
+</segment>
+</net>
+<net name="VCC1" class="0">
+<segment>
+<pinref part="C46" gate="CE" pin="1"/>
+<wire x1="-120.65" y1="25.4" x2="-120.65" y2="21.59" width="0.1524" layer="91"/>
+<pinref part="C45" gate="CE" pin="1"/>
+<wire x1="-130.81" y1="21.59" x2="-130.81" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -8537,15 +8697,15 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <instance part="J8" gate="G$1" x="105.41" y="111.76"/>
 <instance part="J10" gate="1" x="80.01" y="27.94"/>
 <instance part="J11" gate="1" x="-161.29" y="-7.62" rot="R180"/>
-<instance part="J12" gate="1" x="-19.05" y="121.92"/>
-<instance part="J13" gate="1" x="-19.05" y="72.39"/>
+<instance part="J12" gate="1" x="-21.59" y="121.92"/>
+<instance part="J13" gate="1" x="-21.59" y="72.39"/>
 <instance part="GND17" gate="1" x="105.41" y="93.98"/>
 <instance part="GND18" gate="1" x="-7.62" y="3.81"/>
 <instance part="U$21" gate="+3.3_VDDA" x="78.74" y="54.61"/>
 <instance part="GND19" gate="1" x="80.01" y="3.81"/>
 <instance part="GND20" gate="1" x="-6.35" y="110.49"/>
 <instance part="GND21" gate="1" x="-6.35" y="60.96"/>
-<instance part="J3" gate="1" x="-19.05" y="-90.17"/>
+<instance part="J3" gate="1" x="-21.59" y="-90.17"/>
 <instance part="GND22" gate="1" x="-6.35" y="-101.6"/>
 <instance part="GND25" gate="1" x="95.25" y="-45.72"/>
 <instance part="U$12" gate="3.3VDD" x="-7.62" y="21.59"/>
@@ -8560,8 +8720,8 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <instance part="FRAME4" gate="G$1" x="-247.65" y="-116.84"/>
 <instance part="FRAME4" gate="G$2" x="77.47" y="-116.84"/>
 <instance part="J6" gate="G$1" x="80.01" y="-33.02" rot="R180"/>
-<instance part="J15" gate="1" x="-20.32" y="12.7" rot="R180"/>
-<instance part="J16" gate="G$1" x="-19.05" y="-25.4" rot="R180"/>
+<instance part="J15" gate="1" x="-20.955" y="12.7"/>
+<instance part="J16" gate="G$1" x="-20.955" y="-25.4"/>
 <instance part="J17" gate="G$1" x="-207.01" y="-82.55"/>
 <instance part="J18" gate="G$1" x="-181.61" y="-82.55"/>
 <instance part="J19" gate="G$1" x="-158.75" y="-82.55"/>
@@ -8677,23 +8837,21 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <net name="I2C2_SDA" class="0">
 <segment>
 <wire x1="-82.55" y1="16.51" x2="-80.01" y2="13.97" width="0.1524" layer="91"/>
-<wire x1="-80.01" y1="13.97" x2="-27.94" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="-80.01" y1="13.97" x2="-28.575" y2="13.97" width="0.1524" layer="91"/>
 <label x="-57.15" y="13.97" size="1.778" layer="95"/>
-<pinref part="J15" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
 <segment>
 <wire x1="-82.55" y1="13.97" x2="-80.01" y2="11.43" width="0.1524" layer="91"/>
-<wire x1="-80.01" y1="11.43" x2="-27.94" y2="11.43" width="0.1524" layer="91"/>
+<wire x1="-80.01" y1="11.43" x2="-28.575" y2="11.43" width="0.1524" layer="91"/>
 <label x="-57.15" y="11.43" size="1.778" layer="95"/>
-<pinref part="J15" gate="1" pin="3"/>
 </segment>
 </net>
 <net name="UART4_TX" class="0">
 <segment>
 <wire x1="-81.28" y1="76.2" x2="-78.74" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="73.66" x2="-26.67" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="73.66" x2="-29.21" y2="73.66" width="0.1524" layer="91"/>
 <label x="-53.34" y="73.66" size="1.778" layer="95"/>
 <pinref part="J13" gate="1" pin="4"/>
 </segment>
@@ -8701,7 +8859,7 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <net name="UART4_RX" class="0">
 <segment>
 <wire x1="-81.28" y1="73.66" x2="-78.74" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="71.12" x2="-26.67" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="71.12" x2="-29.21" y2="71.12" width="0.1524" layer="91"/>
 <label x="-53.34" y="71.12" size="1.778" layer="95"/>
 <pinref part="J13" gate="1" pin="2"/>
 </segment>
@@ -8818,20 +8976,20 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 </segment>
 <segment>
 <pinref part="J12" gate="1" pin="1"/>
-<wire x1="-11.43" y1="120.65" x2="-8.89" y2="120.65" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="120.65" x2="-8.89" y2="120.65" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="120.65" x2="-6.35" y2="118.11" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="118.11" x2="-6.35" y2="113.03" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="-11.43" y1="71.12" x2="-8.89" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="71.12" x2="-8.89" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="71.12" x2="-6.35" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="68.58" x2="-6.35" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <pinref part="J13" gate="1" pin="1"/>
 </segment>
 <segment>
-<wire x1="-11.43" y1="-91.44" x2="-8.89" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="-91.44" x2="-8.89" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="-91.44" x2="-6.35" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="-93.98" x2="-6.35" y2="-99.06" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -8845,18 +9003,17 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <pinref part="J6" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<wire x1="-12.7" y1="11.43" x2="-10.16" y2="11.43" width="0.1524" layer="91"/>
+<wire x1="-13.335" y1="11.43" x2="-10.16" y2="11.43" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="11.43" x2="-7.62" y2="8.89" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="8.89" x2="-7.62" y2="6.35" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<pinref part="J15" gate="1" pin="4"/>
 </segment>
 <segment>
-<wire x1="-11.43" y1="-26.67" x2="-8.89" y2="-26.67" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="-26.67" x2="-6.35" y2="-29.21" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="-29.21" x2="-6.35" y2="-31.75" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-<pinref part="J16" gate="G$1" pin="4"/>
+<pinref part="J16" gate="G$1" pin="1"/>
+<wire x1="-13.335" y1="-26.67" x2="-8.89" y2="-26.67" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J19" gate="G$1" pin="1"/>
@@ -9043,7 +9200,7 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <segment>
 <wire x1="-81.28" y1="-86.36" x2="-78.74" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="J3" gate="1" pin="4"/>
-<wire x1="-78.74" y1="-88.9" x2="-26.67" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-88.9" x2="-29.21" y2="-88.9" width="0.1524" layer="91"/>
 <label x="-53.34" y="-88.9" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -9051,7 +9208,7 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <segment>
 <wire x1="-81.28" y1="-88.9" x2="-78.74" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="J3" gate="1" pin="2"/>
-<wire x1="-78.74" y1="-91.44" x2="-26.67" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-91.44" x2="-29.21" y2="-91.44" width="0.1524" layer="91"/>
 <label x="-53.34" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -9204,11 +9361,10 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <pinref part="U$12" gate="3.3VDD" pin="3.3VDD"/>
 <wire x1="-7.62" y1="19.05" x2="-7.62" y2="16.51" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="16.51" x2="-10.16" y2="13.97" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="13.97" x2="-12.7" y2="13.97" width="0.1524" layer="91"/>
-<pinref part="J15" gate="1" pin="2"/>
+<wire x1="-10.16" y1="13.97" x2="-13.335" y2="13.97" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-11.43" y1="73.66" x2="-8.89" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="73.66" x2="-8.89" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="73.66" x2="-6.35" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="76.2" x2="-6.35" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="J13" gate="1" pin="3"/>
@@ -9216,7 +9372,7 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 </segment>
 <segment>
 <pinref part="J12" gate="1" pin="3"/>
-<wire x1="-11.43" y1="123.19" x2="-8.89" y2="123.19" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="123.19" x2="-8.89" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="123.19" x2="-6.35" y2="125.73" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="130.81" x2="-6.35" y2="125.73" width="0.1524" layer="91"/>
 <pinref part="U$16" gate="3.3VDD" pin="3.3VDD"/>
@@ -9239,7 +9395,7 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <pinref part="U$17" gate="3.3VDD" pin="3.3VDD"/>
 </segment>
 <segment>
-<wire x1="-11.43" y1="-88.9" x2="-8.89" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="-88.9" x2="-8.89" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="-88.9" x2="-6.35" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="-86.36" x2="-6.35" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="J3" gate="1" pin="3"/>
@@ -9249,8 +9405,7 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <pinref part="U$32" gate="3.3VDD" pin="3.3VDD"/>
 <wire x1="-6.35" y1="-19.05" x2="-6.35" y2="-21.59" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="-21.59" x2="-8.89" y2="-24.13" width="0.1524" layer="91"/>
-<wire x1="-8.89" y1="-24.13" x2="-11.43" y2="-24.13" width="0.1524" layer="91"/>
-<pinref part="J16" gate="G$1" pin="2"/>
+<wire x1="-8.89" y1="-24.13" x2="-13.335" y2="-24.13" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PD6" class="0">
@@ -9296,17 +9451,15 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <net name="I2C3_SDA" class="0">
 <segment>
 <wire x1="-81.28" y1="-21.59" x2="-78.74" y2="-24.13" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="-24.13" x2="-26.67" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-24.13" x2="-28.575" y2="-24.13" width="0.1524" layer="91"/>
 <label x="-55.88" y="-24.13" size="1.778" layer="95"/>
-<pinref part="J16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="I2C3_SCL" class="0">
 <segment>
 <wire x1="-81.28" y1="-24.13" x2="-78.74" y2="-26.67" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="-26.67" x2="-26.67" y2="-26.67" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-26.67" x2="-28.575" y2="-26.67" width="0.1524" layer="91"/>
 <label x="-55.88" y="-26.67" size="1.778" layer="95"/>
-<pinref part="J16" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="PI4" class="0">
@@ -9572,7 +9725,7 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <segment>
 <wire x1="-81.28" y1="125.73" x2="-78.74" y2="123.19" width="0.1524" layer="91"/>
 <pinref part="J12" gate="1" pin="4"/>
-<wire x1="-78.74" y1="123.19" x2="-26.67" y2="123.19" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="123.19" x2="-29.21" y2="123.19" width="0.1524" layer="91"/>
 <label x="-54.61" y="123.19" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -9580,7 +9733,7 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <segment>
 <wire x1="-81.28" y1="123.19" x2="-78.74" y2="120.65" width="0.1524" layer="91"/>
 <pinref part="J12" gate="1" pin="2"/>
-<wire x1="-78.74" y1="120.65" x2="-26.67" y2="120.65" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="120.65" x2="-29.21" y2="120.65" width="0.1524" layer="91"/>
 <label x="-54.61" y="120.65" size="1.778" layer="95"/>
 </segment>
 </net>
