@@ -5272,8 +5272,6 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <part name="TP5" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
 <part name="TP6" library="Tova" deviceset="TEST-POINT" device="8MIL-TEST-POINT" value="TEST-POINT8MIL-TEST-POINT"/>
 <part name="GND31" library="GROUND" deviceset="GND" device=""/>
-<part name="TP7" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP10" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP11" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
 <part name="TP12" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
 <part name="TP13" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
@@ -5481,9 +5479,6 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <instance part="U6" gate="G$1" x="285.75" y="-185.42"/>
 <instance part="J7" gate="G$1" x="220.98" y="-209.55"/>
 <instance part="TP1" gate="G$1" x="38.1" y="86.36"/>
-<instance part="TP7" gate="G$1" x="262.89" y="-187.96" smashed="yes">
-<attribute name="NAME" x="256.54" y="-187.96" size="1.778" layer="95" font="vector"/>
-</instance>
 <instance part="TP13" gate="G$1" x="203.2" y="-180.34" smashed="yes">
 <attribute name="NAME" x="191.135" y="-172.085" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -6488,7 +6483,6 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <pinref part="C39" gate="CE" pin="1"/>
 <wire x1="262.89" y1="-187.96" x2="262.89" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="262.89" y="-187.96"/>
-<pinref part="TP7" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R17" gate="R" pin="2"/>
@@ -6828,7 +6822,6 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <instance part="U$31" gate="3.3VDD" x="72.39" y="-78.74"/>
 <instance part="C44" gate="CE" x="92.71" y="-78.74" rot="R270"/>
 <instance part="R29" gate="R" x="144.78" y="-62.23" rot="R90"/>
-<instance part="TP10" gate="G$1" x="82.55" y="-73.66"/>
 <instance part="TP11" gate="G$1" x="38.1" y="-60.96" smashed="yes">
 <attribute name="NAME" x="30.48" y="-53.975" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -7675,14 +7668,11 @@ Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not r
 <wire x1="80.01" y1="-86.36" x2="82.55" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="-83.82" x2="82.55" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="VCC"/>
-<wire x1="82.55" y1="-78.74" x2="82.55" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="82.55" y1="-73.66" x2="82.55" y2="-69.85" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="-78.74" x2="82.55" y2="-69.85" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="-69.85" x2="83.82" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="C44" gate="CE" pin="2"/>
 <wire x1="82.55" y1="-78.74" x2="87.63" y2="-78.74" width="0.1524" layer="91"/>
 <junction x="82.55" y="-78.74"/>
-<pinref part="TP10" gate="G$1" pin="1"/>
-<junction x="82.55" y="-73.66"/>
 </segment>
 </net>
 <net name="PF2" class="0">
