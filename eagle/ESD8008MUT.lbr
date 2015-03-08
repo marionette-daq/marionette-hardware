@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -64,26 +64,77 @@
 <packages>
 <package name="UFDFN-14">
 <description>&lt;b&gt;UFDFN-14&lt;/b&gt;</description>
-<smd name="P8" x="2.5" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="P7" x="2" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="GND3" x="1.5" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="P6" x="1" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="P5" x="0.5" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="GND2" x="0" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="P4" x="-0.5" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="P3" x="-1" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="GND1" x="-1.5" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="P2" x="-2" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="P1" x="-2.5" y="-0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="GND6" x="1.5" y="0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="GND5" x="0" y="0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
-<smd name="GND4" x="-1.5" y="0.9" dx="0.26" dy="0.43" layer="1" rot="R180"/>
+<smd name="P8" x="2.5" y="-0.65" dx="0.26" dy="0.5" layer="1" rot="R180"/>
+<smd name="P7" x="2" y="-0.65" dx="0.26" dy="0.5" layer="1" rot="R180"/>
+<smd name="GND@3" x="1.5" y="-0.685" dx="0.26" dy="0.43" layer="1" rot="R180"/>
+<smd name="P6" x="1" y="-0.65" dx="0.26" dy="0.5" layer="1" rot="R180"/>
+<smd name="P5" x="0.5" y="-0.65" dx="0.26" dy="0.5" layer="1" rot="R180"/>
+<smd name="GND@2" x="0" y="-0.685" dx="0.26" dy="0.43" layer="1" rot="R180"/>
+<smd name="P4" x="-0.5" y="-0.65" dx="0.26" dy="0.5" layer="1" rot="R180"/>
+<smd name="P3" x="-1" y="-0.65" dx="0.26" dy="0.5" layer="1" rot="R180"/>
+<smd name="GND@1" x="-1.5" y="-0.685" dx="0.26" dy="0.43" layer="1" rot="R180"/>
+<smd name="P2" x="-2" y="-0.65" dx="0.26" dy="0.5" layer="1" rot="R180"/>
+<smd name="P1" x="-2.5" y="-0.65" dx="0.26" dy="0.5" layer="1" rot="R180"/>
+<smd name="GND@6" x="1.5" y="0.685" dx="0.26" dy="0.43" layer="1" rot="R180"/>
+<smd name="GND@5" x="0" y="0.685" dx="0.26" dy="0.43" layer="1" rot="R180"/>
+<smd name="GND@4" x="-1.5" y="0.685" dx="0.26" dy="0.43" layer="1" rot="R180"/>
 <wire x1="2.75" y1="-0.75" x2="-2.75" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="-2.75" y1="-0.75" x2="-2.75" y2="0.75" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="-0.75" x2="-2.75" y2="0.75" width="0.127" layer="21"/>
 <wire x1="-2.75" y1="0.75" x2="2.75" y2="0.75" width="0.127" layer="51"/>
-<wire x1="2.75" y1="0.75" x2="2.75" y2="-0.75" width="0.127" layer="51"/>
-<text x="-2.5" y="3" size="0.7" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.5" y="2" size="0.7" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="2.75" y1="0.75" x2="2.75" y2="-0.75" width="0.127" layer="21"/>
+<text x="3.06" y="0.18" size="0.7" layer="25" font="vector">&gt;NAME</text>
+<text x="3.05" y="-0.76" size="0.7" layer="27" font="vector">&gt;VALUE</text>
+<smd name="P$1" x="-1.5" y="0" dx="0.56" dy="0.62" layer="1"/>
+<smd name="GND@8" x="0" y="0" dx="0.56" dy="0.62" layer="1"/>
+<smd name="GND@9" x="1.5" y="0" dx="0.56" dy="0.62" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="-1.63" y="-0.47"/>
+<vertex x="-1.63" y="-0.46"/>
+<vertex x="-1.78" y="-0.31"/>
+<vertex x="-1.22" y="-0.31"/>
+<vertex x="-1.37" y="-0.46"/>
+<vertex x="-1.37" y="-0.47"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="-1.63" y="0.47"/>
+<vertex x="-1.63" y="0.46"/>
+<vertex x="-1.78" y="0.31"/>
+<vertex x="-1.22" y="0.31"/>
+<vertex x="-1.37" y="0.46"/>
+<vertex x="-1.37" y="0.47"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="-0.28" y="0.31"/>
+<vertex x="-0.13" y="0.46"/>
+<vertex x="-0.13" y="0.47"/>
+<vertex x="0.13" y="0.47"/>
+<vertex x="0.13" y="0.46"/>
+<vertex x="0.28" y="0.31"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="1.37" y="0.47"/>
+<vertex x="1.37" y="0.46"/>
+<vertex x="1.22" y="0.31"/>
+<vertex x="1.78" y="0.31"/>
+<vertex x="1.63" y="0.46"/>
+<vertex x="1.63" y="0.47"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="1.37" y="-0.47"/>
+<vertex x="1.37" y="-0.46"/>
+<vertex x="1.22" y="-0.31"/>
+<vertex x="1.78" y="-0.31"/>
+<vertex x="1.63" y="-0.46"/>
+<vertex x="1.63" y="-0.47"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="-0.13" y="-0.47"/>
+<vertex x="-0.13" y="-0.46"/>
+<vertex x="-0.28" y="-0.31"/>
+<vertex x="0.28" y="-0.31"/>
+<vertex x="0.13" y="-0.46"/>
+<vertex x="0.13" y="-0.47"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -93,20 +144,20 @@
 <wire x1="7.62" y1="10.16" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
 <pin name="GND" x="12.7" y="0" length="middle" rot="R180"/>
-<text x="2.54" y="15.24" size="1.778" layer="95" font="vector" rot="R180">&gt;NAME</text>
-<text x="2.54" y="17.78" size="1.778" layer="96" font="vector" rot="R180">&gt;VALUE</text>
-<pin name="P$1" x="-12.7" y="7.62" length="middle"/>
-<pin name="P$2" x="-12.7" y="5.08" length="middle"/>
-<pin name="P$3" x="-12.7" y="2.54" length="middle"/>
-<pin name="P$4" x="-12.7" y="0" length="middle"/>
-<pin name="P$5" x="-12.7" y="-2.54" length="middle"/>
-<pin name="P$6" x="-12.7" y="-5.08" length="middle"/>
-<pin name="P$7" x="-12.7" y="-7.62" length="middle"/>
-<pin name="P$8" x="-12.7" y="-10.16" length="middle"/>
+<text x="-6.35" y="11.43" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-6.35" y="13.97" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="I/O1" x="-12.7" y="7.62" length="middle"/>
+<pin name="I/O2" x="-12.7" y="5.08" length="middle"/>
+<pin name="I/O3" x="-12.7" y="2.54" length="middle"/>
+<pin name="I/04" x="-12.7" y="0" length="middle"/>
+<pin name="I/05" x="-12.7" y="-2.54" length="middle"/>
+<pin name="I/06" x="-12.7" y="-5.08" length="middle"/>
+<pin name="I/O7" x="-12.7" y="-7.62" length="middle"/>
+<pin name="I/O8" x="-12.7" y="-10.16" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESD8008">
+<deviceset name="ESD8008" prefix="D">
 <description>&lt;b&gt;TVS Diode - ESD Protection&lt;/b&gt;&lt;br&gt;
 Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</description>
 <gates>
@@ -115,15 +166,15 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <devices>
 <device name="" package="UFDFN-14">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND1 GND2 GND3 GND4 GND5 GND6"/>
-<connect gate="G$1" pin="P$1" pad="P1"/>
-<connect gate="G$1" pin="P$2" pad="P2"/>
-<connect gate="G$1" pin="P$3" pad="P3"/>
-<connect gate="G$1" pin="P$4" pad="P4"/>
-<connect gate="G$1" pin="P$5" pad="P5"/>
-<connect gate="G$1" pin="P$6" pad="P6"/>
-<connect gate="G$1" pin="P$7" pad="P7"/>
-<connect gate="G$1" pin="P$8" pad="P8"/>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3 GND@4 GND@5 GND@6"/>
+<connect gate="G$1" pin="I/04" pad="P4"/>
+<connect gate="G$1" pin="I/05" pad="P5"/>
+<connect gate="G$1" pin="I/06" pad="P6"/>
+<connect gate="G$1" pin="I/O1" pad="P1"/>
+<connect gate="G$1" pin="I/O2" pad="P2"/>
+<connect gate="G$1" pin="I/O3" pad="P3"/>
+<connect gate="G$1" pin="I/O7" pad="P7"/>
+<connect gate="G$1" pin="I/O8" pad="P8"/>
 </connects>
 <technologies>
 <technology name=""/>
