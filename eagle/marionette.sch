@@ -10711,7 +10711,8 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <pinref part="U8" gate="G$5" pin="VCC"/>
 <wire x1="-12.7" y1="-31.75" x2="-12.7" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-30.48" x2="-11.43" y2="-29.21" width="0.1524" layer="91"/>
-<wire x1="-11.43" y1="-29.21" x2="-2.54" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="-11.43" y1="-29.21" x2="-10.16" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-29.21" x2="-2.54" y2="-29.21" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-29.21" x2="0" y2="-29.21" width="0.1524" layer="91"/>
 <wire x1="0" y1="-29.21" x2="3.81" y2="-29.21" width="0.1524" layer="91"/>
 <wire x1="3.81" y1="-29.21" x2="7.62" y2="-29.21" width="0.1524" layer="91"/>
@@ -10739,6 +10740,9 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <pinref part="U$38" gate="+3.3_VDDA" pin="+3.3VDDA"/>
 <wire x1="3.81" y1="-29.21" x2="3.81" y2="-26.67" width="0.1524" layer="91"/>
 <junction x="3.81" y="-29.21"/>
+<pinref part="C82" gate="CE" pin="1"/>
+<wire x1="-10.16" y1="-31.75" x2="-10.16" y2="-29.21" width="0.1524" layer="91"/>
+<junction x="-10.16" y="-29.21"/>
 </segment>
 </net>
 <net name="ADC3_IN14" class="0">
