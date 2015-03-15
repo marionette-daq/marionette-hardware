@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5113,57 +5113,6 @@ http://www.ti.com/lit/ds/symlink/lmv341.pdf</description>
 <wire x1="2.75" y1="0.75" x2="2.75" y2="-0.75" width="0.127" layer="21"/>
 <text x="3.06" y="0.18" size="0.7" layer="25" font="vector">&gt;NAME</text>
 <text x="3.05" y="-0.76" size="0.7" layer="27" font="vector">&gt;VALUE</text>
-<smd name="P$1" x="-1.5" y="0" dx="0.56" dy="0.62" layer="1"/>
-<smd name="GND@8" x="0" y="0" dx="0.56" dy="0.62" layer="1"/>
-<smd name="GND@9" x="1.5" y="0" dx="0.56" dy="0.62" layer="1"/>
-<polygon width="0" layer="1">
-<vertex x="-1.63" y="-0.47"/>
-<vertex x="-1.63" y="-0.46"/>
-<vertex x="-1.78" y="-0.31"/>
-<vertex x="-1.22" y="-0.31"/>
-<vertex x="-1.37" y="-0.46"/>
-<vertex x="-1.37" y="-0.47"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="-1.63" y="0.47"/>
-<vertex x="-1.63" y="0.46"/>
-<vertex x="-1.78" y="0.31"/>
-<vertex x="-1.22" y="0.31"/>
-<vertex x="-1.37" y="0.46"/>
-<vertex x="-1.37" y="0.47"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="-0.28" y="0.31"/>
-<vertex x="-0.13" y="0.46"/>
-<vertex x="-0.13" y="0.47"/>
-<vertex x="0.13" y="0.47"/>
-<vertex x="0.13" y="0.46"/>
-<vertex x="0.28" y="0.31"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="1.37" y="0.47"/>
-<vertex x="1.37" y="0.46"/>
-<vertex x="1.22" y="0.31"/>
-<vertex x="1.78" y="0.31"/>
-<vertex x="1.63" y="0.46"/>
-<vertex x="1.63" y="0.47"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="1.37" y="-0.47"/>
-<vertex x="1.37" y="-0.46"/>
-<vertex x="1.22" y="-0.31"/>
-<vertex x="1.78" y="-0.31"/>
-<vertex x="1.63" y="-0.46"/>
-<vertex x="1.63" y="-0.47"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="-0.13" y="-0.47"/>
-<vertex x="-0.13" y="-0.46"/>
-<vertex x="-0.28" y="-0.31"/>
-<vertex x="0.28" y="-0.31"/>
-<vertex x="0.13" y="-0.46"/>
-<vertex x="0.13" y="-0.47"/>
-</polygon>
 </package>
 </packages>
 <symbols>
