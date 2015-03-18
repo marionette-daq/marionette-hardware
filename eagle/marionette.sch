@@ -5430,7 +5430,6 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <part name="TP3" library="Tova" deviceset="TEST-POINT" device="20MIL-TEST-POINT"/>
 <part name="TP4" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
 <part name="TP5" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
-<part name="TP6" library="Tova" deviceset="TEST-POINT" device="8MIL-TEST-POINT" value="TEST-POINT8MIL-TEST-POINT"/>
 <part name="GND31" library="GROUND" deviceset="GND" device=""/>
 <part name="TP11" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
 <part name="TP12" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
@@ -8127,7 +8126,6 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <instance part="TP3" gate="G$1" x="-120.65" y="-113.03"/>
 <instance part="TP4" gate="G$1" x="-114.3" y="-113.03"/>
 <instance part="TP5" gate="G$1" x="-107.95" y="-113.03"/>
-<instance part="TP6" gate="G$1" x="-101.6" y="-113.03"/>
 <instance part="GND31" gate="1" x="-114.3" y="-124.46"/>
 <instance part="J21" gate="1" x="-167.64" y="24.13"/>
 <instance part="D13" gate="G$1" x="-147.32" y="25.4"/>
@@ -8416,14 +8414,6 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <wire x1="-127" y1="-116.84" x2="-125.73" y2="-118.11" width="0.1524" layer="91"/>
 <wire x1="-125.73" y1="-118.11" x2="-120.65" y2="-118.11" width="0.1524" layer="91"/>
 <wire x1="-120.65" y1="-118.11" x2="-114.3" y2="-118.11" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="-118.11" x2="-107.95" y2="-118.11" width="0.1524" layer="91"/>
-<wire x1="-107.95" y1="-118.11" x2="-102.87" y2="-118.11" width="0.1524" layer="91"/>
-<wire x1="-102.87" y1="-118.11" x2="-101.6" y2="-116.84" width="0.1524" layer="91"/>
-<pinref part="TP6" gate="G$1" pin="1"/>
-<wire x1="-101.6" y1="-116.84" x2="-101.6" y2="-113.03" width="0.1524" layer="91"/>
-<pinref part="TP5" gate="G$1" pin="1"/>
-<wire x1="-107.95" y1="-113.03" x2="-107.95" y2="-118.11" width="0.1524" layer="91"/>
-<junction x="-107.95" y="-118.11"/>
 <pinref part="TP4" gate="G$1" pin="1"/>
 <wire x1="-114.3" y1="-113.03" x2="-114.3" y2="-118.11" width="0.1524" layer="91"/>
 <junction x="-114.3" y="-118.11"/>
@@ -8432,6 +8422,10 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <junction x="-120.65" y="-118.11"/>
 <wire x1="-114.3" y1="-118.11" x2="-114.3" y2="-121.92" width="0.1524" layer="91"/>
 <pinref part="GND31" gate="1" pin="GND"/>
+<wire x1="-114.3" y1="-118.11" x2="-109.22" y2="-118.11" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="-118.11" x2="-107.95" y2="-116.84" width="0.1524" layer="91"/>
+<pinref part="TP5" gate="G$1" pin="1"/>
+<wire x1="-107.95" y1="-116.84" x2="-107.95" y2="-113.03" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J21" gate="1" pin="2"/>
