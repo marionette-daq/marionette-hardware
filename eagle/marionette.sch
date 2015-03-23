@@ -10704,6 +10704,7 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <wire x1="-129.54" y1="-31.75" x2="-129.54" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-182.88" y1="-39.37" x2="-157.48" y2="-39.37" width="0.1524" layer="91"/>
 <junction x="-157.48" y="-39.37"/>
+<label x="-175.26" y="-39.37" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC1/2/3_IN2" class="0">
@@ -10722,25 +10723,7 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <wire x1="-99.06" y1="-13.97" x2="-99.06" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-182.88" y1="-21.59" x2="-127" y2="-21.59" width="0.1524" layer="91"/>
 <junction x="-127" y="-21.59"/>
-</segment>
-</net>
-<net name="ADC1/2_IN7" class="0">
-<segment>
-<wire x1="194.31" y1="101.6" x2="191.77" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="C67" gate="CE" pin="1"/>
-<pinref part="U9" gate="G$3" pin="OUT"/>
-<wire x1="160.02" y1="99.06" x2="161.29" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="161.29" y1="106.68" x2="161.29" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U9" gate="G$3" pin="-V"/>
-<wire x1="147.32" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="101.6" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="106.68" x2="161.29" y2="106.68" width="0.1524" layer="91"/>
-<junction x="144.78" y="106.68"/>
-<wire x1="144.78" y1="106.68" x2="133.35" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="133.35" y1="106.68" x2="133.35" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="191.77" y1="99.06" x2="161.29" y2="99.06" width="0.1524" layer="91"/>
-<junction x="161.29" y="99.06"/>
-<label x="170.18" y="99.06" size="1.778" layer="95"/>
+<label x="-175.26" y="-21.59" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -11126,6 +11109,7 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <junction x="-49.53" y="21.59"/>
 <wire x1="-182.88" y1="13.97" x2="-66.04" y2="13.97" width="0.1524" layer="91"/>
 <junction x="-66.04" y="13.97"/>
+<label x="-175.26" y="13.97" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -11263,24 +11247,26 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <junction x="-137.16" y="106.68"/>
 <wire x1="-182.88" y1="99.06" x2="-153.67" y2="99.06" width="0.1524" layer="91"/>
 <junction x="-153.67" y="99.06"/>
+<label x="-175.26" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC1/2_IN14" class="0">
 <segment>
-<wire x1="-185.42" y1="44.45" x2="-182.88" y2="41.91" width="0.1524" layer="91"/>
-<wire x1="-52.07" y1="44.45" x2="-49.53" y2="44.45" width="0.1524" layer="91"/>
-<wire x1="-49.53" y1="44.45" x2="-49.53" y2="49.53" width="0.1524" layer="91"/>
-<wire x1="-49.53" y1="49.53" x2="-38.1" y2="49.53" width="0.1524" layer="91"/>
-<pinref part="C71" gate="CE" pin="1"/>
-<wire x1="-38.1" y1="49.53" x2="-38.1" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-49.53" y1="49.53" x2="-66.04" y2="49.53" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="49.53" x2="-66.04" y2="41.91" width="0.1524" layer="91"/>
-<wire x1="-64.77" y1="41.91" x2="-66.04" y2="41.91" width="0.1524" layer="91"/>
-<pinref part="U9" gate="G$1" pin="-V"/>
-<pinref part="U9" gate="G$1" pin="OUT"/>
-<junction x="-49.53" y="49.53"/>
-<wire x1="-182.88" y1="41.91" x2="-66.04" y2="41.91" width="0.1524" layer="91"/>
-<junction x="-66.04" y="41.91"/>
+<wire x1="194.31" y1="101.6" x2="191.77" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C67" gate="CE" pin="1"/>
+<pinref part="U9" gate="G$3" pin="OUT"/>
+<wire x1="160.02" y1="99.06" x2="161.29" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="106.68" x2="161.29" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U9" gate="G$3" pin="-V"/>
+<wire x1="147.32" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="101.6" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="106.68" x2="161.29" y2="106.68" width="0.1524" layer="91"/>
+<junction x="144.78" y="106.68"/>
+<wire x1="144.78" y1="106.68" x2="133.35" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="106.68" x2="133.35" y2="105.41" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="99.06" x2="161.29" y2="99.06" width="0.1524" layer="91"/>
+<junction x="161.29" y="99.06"/>
+<label x="170.18" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC3_IN15" class="0">
@@ -11318,6 +11304,7 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <junction x="-80.01" y="3.81"/>
 <wire x1="-182.88" y1="-3.81" x2="-96.52" y2="-3.81" width="0.1524" layer="91"/>
 <junction x="-96.52" y="-3.81"/>
+<label x="-175.26" y="-3.81" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC1/2/3_IN11" class="0">
@@ -11374,6 +11361,7 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <junction x="-78.74" y="68.58"/>
 <wire x1="-182.88" y1="60.96" x2="-95.25" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-95.25" y="60.96"/>
+<label x="-175.26" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC3_IN6" class="0">
@@ -11392,6 +11380,7 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <wire x1="-96.52" y1="87.63" x2="-96.52" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="-182.88" y1="80.01" x2="-124.46" y2="80.01" width="0.1524" layer="91"/>
 <junction x="-124.46" y="80.01"/>
+<label x="-175.26" y="80.01" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC3_IN7" class="0">
@@ -11430,6 +11419,25 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <wire x1="191.77" y1="-39.37" x2="165.1" y2="-39.37" width="0.1524" layer="91"/>
 <junction x="165.1" y="-39.37"/>
 <label x="170.18" y="-39.37" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC1/2_IN7" class="0">
+<segment>
+<wire x1="-185.42" y1="44.45" x2="-182.88" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="-52.07" y1="44.45" x2="-49.53" y2="44.45" width="0.1524" layer="91"/>
+<wire x1="-49.53" y1="44.45" x2="-49.53" y2="49.53" width="0.1524" layer="91"/>
+<wire x1="-49.53" y1="49.53" x2="-38.1" y2="49.53" width="0.1524" layer="91"/>
+<pinref part="C71" gate="CE" pin="1"/>
+<wire x1="-38.1" y1="49.53" x2="-38.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-49.53" y1="49.53" x2="-66.04" y2="49.53" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="49.53" x2="-66.04" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="-64.77" y1="41.91" x2="-66.04" y2="41.91" width="0.1524" layer="91"/>
+<pinref part="U9" gate="G$1" pin="-V"/>
+<pinref part="U9" gate="G$1" pin="OUT"/>
+<junction x="-49.53" y="49.53"/>
+<wire x1="-182.88" y1="41.91" x2="-66.04" y2="41.91" width="0.1524" layer="91"/>
+<junction x="-66.04" y="41.91"/>
+<label x="-175.26" y="41.91" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
