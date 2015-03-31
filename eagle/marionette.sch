@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5684,7 +5684,7 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <instance part="R9" gate="R" x="219.71" y="-55.88" rot="R90"/>
 <instance part="R10" gate="R" x="227.33" y="-55.88" rot="R90"/>
 <instance part="R11" gate="R" x="234.95" y="-55.88" rot="R90"/>
-<instance part="GND12" gate="1" x="355.6" y="64.77"/>
+<instance part="GND12" gate="1" x="346.71" y="64.77"/>
 <instance part="FRAME1" gate="G$1" x="-138.43" y="-264.16"/>
 <instance part="FRAME1" gate="G$2" x="313.69" y="-264.16"/>
 <instance part="LED1" gate="LED" x="96.52" y="-226.06" rot="R270"/>
@@ -6059,34 +6059,9 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <label x="254" y="-111.76" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
-<wire x1="358.14" y1="90.17" x2="355.6" y2="90.17" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="90.17" x2="355.6" y2="85.09" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="SHLD@1"/>
-<wire x1="355.6" y1="85.09" x2="355.6" y2="82.55" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="82.55" x2="355.6" y2="80.01" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="80.01" x2="355.6" y2="77.47" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="77.47" x2="355.6" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="71.12" x2="355.6" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="85.09" x2="355.6" y2="85.09" width="0.1524" layer="91"/>
-<junction x="355.6" y="85.09"/>
-<pinref part="U$3" gate="G$1" pin="SHLD@2"/>
-<wire x1="358.14" y1="82.55" x2="355.6" y2="82.55" width="0.1524" layer="91"/>
-<junction x="355.6" y="82.55"/>
-<pinref part="U$3" gate="G$1" pin="SHLD@3"/>
-<wire x1="358.14" y1="80.01" x2="355.6" y2="80.01" width="0.1524" layer="91"/>
-<junction x="355.6" y="80.01"/>
-<pinref part="U$3" gate="G$1" pin="SHLD@4"/>
-<wire x1="358.14" y1="77.47" x2="355.6" y2="77.47" width="0.1524" layer="91"/>
-<junction x="355.6" y="77.47"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="355.6" y1="85.09" x2="346.71" y2="85.09" width="0.1524" layer="91"/>
-<pinref part="C36" gate="CE" pin="1"/>
-<wire x1="346.71" y1="85.09" x2="346.71" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="C36" gate="CE" pin="2"/>
-<wire x1="346.71" y1="74.93" x2="346.71" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="346.71" y1="71.12" x2="355.6" y2="71.12" width="0.1524" layer="91"/>
-<junction x="355.6" y="71.12"/>
+<wire x1="346.71" y1="74.93" x2="346.71" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="260.35" y1="31.75" x2="240.03" y2="31.75" width="0.1524" layer="91"/>
@@ -6916,6 +6891,30 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <wire x1="307.34" y1="-190.5" x2="309.88" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="-193.04" x2="323.85" y2="-193.04" width="0.1524" layer="91"/>
 <label x="323.85" y="-193.04" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="358.14" y1="90.17" x2="355.6" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="90.17" x2="355.6" y2="85.09" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="SHLD@1"/>
+<wire x1="355.6" y1="85.09" x2="355.6" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="82.55" x2="355.6" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="80.01" x2="355.6" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="85.09" x2="355.6" y2="85.09" width="0.1524" layer="91"/>
+<junction x="355.6" y="85.09"/>
+<pinref part="U$3" gate="G$1" pin="SHLD@2"/>
+<wire x1="358.14" y1="82.55" x2="355.6" y2="82.55" width="0.1524" layer="91"/>
+<junction x="355.6" y="82.55"/>
+<pinref part="U$3" gate="G$1" pin="SHLD@3"/>
+<wire x1="358.14" y1="80.01" x2="355.6" y2="80.01" width="0.1524" layer="91"/>
+<junction x="355.6" y="80.01"/>
+<pinref part="U$3" gate="G$1" pin="SHLD@4"/>
+<wire x1="358.14" y1="77.47" x2="355.6" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="85.09" x2="346.71" y2="85.09" width="0.1524" layer="91"/>
+<pinref part="C36" gate="CE" pin="1"/>
+<wire x1="346.71" y1="85.09" x2="346.71" y2="82.55" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
