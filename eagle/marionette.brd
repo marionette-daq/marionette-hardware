@@ -8,27 +8,27 @@
 </settings>
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="15" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="14" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -36,17 +36,17 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -3205,7 +3205,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="38.481" y="46.609" extent="1-16" drill="0.254"/>
 <via x="68.199" y="48.641" extent="1-16" drill="0.254"/>
 <via x="69.088" y="49.53" extent="1-16" drill="0.254"/>
-<via x="70.104" y="60.325" extent="1-16" drill="0.254"/>
+<via x="70.231" y="60.452" extent="1-16" drill="0.254"/>
 <via x="66.421" y="65.151" extent="1-16" drill="0.254"/>
 <via x="62.611" y="69.088" extent="1-16" drill="0.254"/>
 <via x="58.801" y="72.644" extent="1-16" drill="0.254"/>
@@ -3924,9 +3924,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="109.777" y1="62.526" x2="109.777" y2="61.426" width="0" layer="19" extent="1-1"/>
 <wire x1="109.539" y1="64.516" x2="109.777" y2="62.526" width="0" layer="19" extent="1-1"/>
 <wire x1="95.377" y1="66.841" x2="109.539" y2="64.516" width="0" layer="19" extent="1-1"/>
-<wire x1="55.753" y1="19.558" x2="32.024" y2="63.693" width="0" layer="19" extent="1-1"/>
 <wire x1="56.290365625" y1="16.983971875" x2="56.290365625" y2="18.303971875" width="0" layer="19" extent="1-1"/>
-<wire x1="55.88" y1="11.43" x2="56.290365625" y2="16.983971875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCO1">
 <contactref element="U$1" pad="119"/>
@@ -4111,7 +4109,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="97.917" y="16.256" extent="1-16" drill="0.254"/>
 <via x="50.419" y="38.1" extent="1-16" drill="0.254"/>
 <via x="98.425" y="16.256" extent="1-16" drill="0.254"/>
-<via x="94.869" y="16.891" extent="1-16" drill="0.254"/>
+<via x="94.869" y="17.018" extent="1-16" drill="0.254"/>
 <wire x1="98.425" y1="16.256" x2="115.697" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
@@ -4298,6 +4296,10 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="22.225" y="64.77"/>
 <vertex x="11.43" y="64.77"/>
 <vertex x="11.43" y="11.43"/>
+<vertex x="55.372" y="11.43"/>
+<vertex x="55.372" y="20.828"/>
+<vertex x="61.595" y="20.828"/>
+<vertex x="61.595" y="11.43"/>
 <vertex x="128.27" y="11.43"/>
 <vertex x="128.27" y="64.77"/>
 <vertex x="23.876" y="64.77"/>
