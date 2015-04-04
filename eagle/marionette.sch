@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10098,21 +10098,16 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 </net>
 <net name="PH6" class="0">
 <segment>
-<wire x1="74.93" y1="107.95" x2="72.39" y2="105.41" width="0.1524" layer="91"/>
-<pinref part="J11" gate="1" pin="20"/>
-<wire x1="72.39" y1="105.41" x2="46.99" y2="105.41" width="0.1524" layer="91"/>
-<label x="62.23" y="105.41" size="1.778" layer="95"/>
-<wire x1="46.99" y1="105.41" x2="31.75" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="15.24" x2="46.99" y2="16.51" width="0.1524" layer="91"/>
-<wire x1="46.99" y1="16.51" x2="46.99" y2="105.41" width="0.1524" layer="91"/>
-<junction x="46.99" y="105.41"/>
-</segment>
-<segment>
 <pinref part="J11" gate="1" pin="19"/>
 <wire x1="-27.94" y1="109.22" x2="-25.4" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="105.41" x2="16.51" y2="105.41" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="105.41" x2="11.43" y2="105.41" width="0.1524" layer="91"/>
 <label x="-19.05" y="105.41" size="1.778" layer="95"/>
+<wire x1="11.43" y1="105.41" x2="16.51" y2="105.41" width="0.1524" layer="91"/>
+<wire x1="11.43" y1="105.41" x2="11.43" y2="13.97" width="0.1524" layer="91"/>
+<junction x="11.43" y="105.41"/>
+<wire x1="11.43" y1="13.97" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="D26" gate="G$1" pin="I/O8"/>
+<wire x1="10.16" y1="12.7" x2="-5.08" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PE2" class="0">
@@ -10373,6 +10368,20 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <junction x="10.16" y="107.95"/>
 <pinref part="D26" gate="G$1" pin="I/05"/>
 <wire x1="8.89" y1="20.32" x2="-5.08" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PH3" class="0">
+<segment>
+<wire x1="74.93" y1="107.95" x2="72.39" y2="105.41" width="0.1524" layer="91"/>
+<pinref part="J11" gate="1" pin="20"/>
+<wire x1="72.39" y1="105.41" x2="46.99" y2="105.41" width="0.1524" layer="91"/>
+<label x="62.23" y="105.41" size="1.778" layer="95"/>
+<wire x1="46.99" y1="105.41" x2="31.75" y2="105.41" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="15.24" x2="46.99" y2="16.51" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="16.51" x2="46.99" y2="105.41" width="0.1524" layer="91"/>
+<junction x="46.99" y="105.41"/>
+<pinref part="D26" gate="G$1" pin="I/O7"/>
+<wire x1="45.72" y1="15.24" x2="-5.08" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
