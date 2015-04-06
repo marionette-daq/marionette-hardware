@@ -8,14 +8,14 @@
 </settings>
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="14" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -4974,8 +4974,13 @@ Please make sure your boards conform to these design rules.</description>
 </polygon>
 <via x="38.608" y="40.386" extent="1-16" drill="0.254"/>
 <via x="38.608" y="38.989" extent="1-16" drill="0.254"/>
-<wire x1="55.372" y1="40.005" x2="55.967421875" y2="39.43136875" width="0" layer="19" extent="1-1"/>
-<wire x1="54.644425" y1="40.677203125" x2="55.372" y2="40.005" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="1" isolate="0.2032" thermals="no">
+<vertex x="56.515" y="39.497"/>
+<vertex x="55.88" y="38.862"/>
+<vertex x="54.483" y="40.259"/>
+<vertex x="54.991" y="40.767"/>
+<vertex x="55.118" y="40.894"/>
+</polygon>
 </signal>
 <signal name="PD6">
 <contactref element="U$1" pad="150"/>
@@ -7010,7 +7015,12 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$41">
 <contactref element="D2" pad="P$1"/>
 <contactref element="U$2" pad="P1"/>
-<wire x1="94.654" y1="68.707" x2="94.645" y2="71.62" width="0" layer="19" extent="1-1"/>
+<polygon width="0.127" layer="1" isolate="0.2032" thermals="no">
+<vertex x="95.504" y="72.39"/>
+<vertex x="94.234" y="72.39"/>
+<vertex x="94.234" y="68.199"/>
+<vertex x="95.504" y="68.199"/>
+</polygon>
 </signal>
 <signal name="SDIO_CMD">
 <contactref element="U$13" pad="P3"/>
