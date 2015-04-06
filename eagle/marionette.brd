@@ -8,12 +8,12 @@
 </settings>
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="14" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -269,6 +269,24 @@
 <wire x1="89.408" y1="12.7" x2="63.246" y2="12.7" width="0.127" layer="21"/>
 <text x="64.516" y="9.144" size="1.016" layer="21" font="vector" ratio="20" rot="R90">GND</text>
 <text x="89.027" y="8.382" size="0.635" layer="21" font="vector" ratio="20" rot="R90">3.3VDDA</text>
+<text x="84.455" y="55.372" size="1.016" layer="21" font="vector" ratio="20">BOOT1</text>
+<text x="96.901" y="55.499" size="1.016" layer="21" font="vector" ratio="20">BOOT0</text>
+<text x="84.582" y="57.912" size="1.016" layer="21" font="vector" ratio="20">3.3V</text>
+<text x="96.901" y="57.912" size="1.016" layer="21" font="vector" ratio="20">3.3V</text>
+<text x="96.901" y="52.705" size="1.016" layer="21" font="vector" ratio="20">GND</text>
+<text x="84.328" y="52.832" size="1.016" layer="21" font="vector" ratio="20">GND</text>
+<text x="93.345" y="32.639" size="1.016" layer="21" ratio="20">3.3VDDA</text>
+<text x="93.345" y="30.099" size="1.016" layer="21" ratio="20">VREF_IN</text>
+<text x="92.71" y="27.559" size="1.016" layer="21" ratio="20">EXT_VREF</text>
+<text x="48.006" y="25.654" size="1.016" layer="21" font="vector" ratio="20">VREF_IN</text>
+<text x="48.006" y="28.194" size="1.016" layer="21" font="vector" ratio="20">EXT_VREF</text>
+<text x="48.006" y="23.114" size="1.016" layer="21" font="vector" ratio="20">3.3VDDA</text>
+<text x="93.472" y="35.306" size="1.016" layer="21" font="vector" ratio="20">DAC SUPPLY</text>
+<text x="49.53" y="31.115" size="1.016" layer="21" font="vector" ratio="20"> mSUPPLY</text>
+<text x="12.192" y="65.024" size="1.778" layer="21" font="vector" ratio="20">GND</text>
+<text x="37.592" y="20.701" size="1.778" layer="21" font="vector" ratio="20">GND</text>
+<text x="123.317" y="21.59" size="1.778" layer="21" font="vector" ratio="20">GND</text>
+<text x="123.19" y="64.897" size="1.778" layer="21" font="vector" ratio="20">GND</text>
 </plain>
 <libraries>
 <library name="rcl_custom">
@@ -2084,21 +2102,21 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="11.938" y="13.716" size="1.27" layer="27" ratio="20"/>
 <attribute name="NAME" x="18.669" y="16.891" size="0.635" layer="25" ratio="20" rot="R90"/>
 </element>
-<element name="J17" library="MA_HEADER" package="MA02-1" value="MA02-1" x="113.03" y="41.783" smashed="yes" rot="R180">
-<attribute name="NAME" x="115.57" y="40.132" size="0.635" layer="25" ratio="10" rot="R180"/>
+<element name="J17" library="MA_HEADER" package="MA02-1" value="MA02-1" x="125.222" y="63.119" smashed="yes" rot="R180">
+<attribute name="NAME" x="127.762" y="61.468" size="0.635" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="J18" library="MA_HEADER" package="MA02-1" value="MA02-1" x="9.144" y="43.561" smashed="yes">
-<attribute name="NAME" x="6.604" y="45.212" size="0.635" layer="25" ratio="10"/>
+<element name="J18" library="MA_HEADER" package="MA02-1" value="MA02-1" x="14.478" y="63.119" smashed="yes" rot="R180">
+<attribute name="NAME" x="17.018" y="61.468" size="0.635" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="J19" library="MA_HEADER" package="MA02-1" value="MA02-1" x="8.255" y="11.43" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.795" y="9.779" size="0.635" layer="25" ratio="10" rot="R180"/>
+<element name="J19" library="MA_HEADER" package="MA02-1" value="MA02-1" x="39.751" y="18.796" smashed="yes" rot="R180">
+<attribute name="NAME" x="42.291" y="17.145" size="0.635" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="J2" library="SWD_CONNECTOR" package="2X10_BOXHEADER" value="SWD" x="67.945" y="73.66" smashed="yes">
 <attribute name="VALUE" x="73.845" y="74.36" size="0.635" layer="27" font="vector" ratio="20"/>
 <attribute name="NAME" x="73.845" y="72.76" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="J20" library="MA_HEADER" package="MA02-1" value="MA02-1" x="131.445" y="11.43" smashed="yes" rot="R180">
-<attribute name="NAME" x="133.985" y="9.779" size="0.635" layer="25" ratio="10" rot="R180"/>
+<element name="J20" library="MA_HEADER" package="MA02-1" value="MA02-1" x="125.603" y="19.812" smashed="yes" rot="R180">
+<attribute name="NAME" x="128.143" y="18.161" size="0.635" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="J21" library="MA_HEADER" package="MA02-2W" value="" x="58.42" y="5.715" smashed="yes">
 <attribute name="NAME" x="62.103" y="4.445" size="0.635" layer="25" ratio="10" rot="R90"/>
@@ -2119,9 +2137,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="J6" library="MA_HEADER" package="MA03-2W" value="MA03-2W" x="95.25" y="5.715" smashed="yes">
 <attribute name="NAME" x="100.203" y="5.08" size="0.635" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="J7" library="MA_HEADER" package="MA03-1" value="" x="101.854" y="30.607" smashed="yes" rot="R270">
-<attribute name="NAME" x="102.997" y="26.543" size="0.635" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="98.933" y="34.417" size="1.27" layer="27" ratio="10" rot="R270"/>
+<element name="J7" library="MA_HEADER" package="MA03-1" value="" x="101.6" y="30.607" smashed="yes" rot="R90">
+<attribute name="NAME" x="102.997" y="26.416" size="0.635" layer="25" ratio="10"/>
+<attribute name="VALUE" x="104.521" y="26.797" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="J8" library="MA_HEADER" package="MA04-2W" value="MA04-2W" x="48.26" y="5.715" smashed="yes">
 <attribute name="NAME" x="54.483" y="5.08" size="0.635" layer="25" ratio="10" rot="R90"/>
@@ -2191,35 +2209,35 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="117.856" y="52.578" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R21" library="rcl_custom" package=".0603-C" value="649" x="41.656" y="74.422" smashed="yes" rot="R90">
-<attribute name="NAME" x="41.922" y="75.708" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="51.955" y="74.057" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="41.656" y="74.422" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R22" library="rcl_custom" package=".0603-C" value="649" x="40.386" y="74.422" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.652" y="75.708" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="50.685" y="74.057" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="40.386" y="74.422" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R23" library="rcl_custom" package=".0603-C" value="649" x="39.116" y="74.422" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.382" y="75.708" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="49.415" y="74.057" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="39.116" y="74.422" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R24" library="rcl_custom" package=".0603-C" value="649" x="37.846" y="74.422" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.112" y="75.708" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="48.145" y="74.057" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="37.846" y="74.422" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R25" library="rcl_custom" package=".0603-C" value="649" x="36.576" y="74.422" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.842" y="75.708" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="46.875" y="74.057" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="36.576" y="74.422" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R26" library="rcl_custom" package=".0603-C" value="649" x="35.306" y="74.422" smashed="yes" rot="R90">
-<attribute name="NAME" x="35.572" y="75.708" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="45.605" y="74.057" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="35.306" y="74.422" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R27" library="rcl_custom" package=".0603-C" value="649" x="34.036" y="74.422" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.302" y="75.708" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="44.335" y="74.057" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="34.036" y="74.422" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R28" library="rcl_custom" package=".0603-C" value="649" x="32.766" y="74.422" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.032" y="75.708" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="43.065" y="74.057" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="32.766" y="74.422" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R29" library="rcl_custom" package=".0402-C" value="120" x="22.1742" y="21.8948" smashed="yes" rot="R90">
@@ -3461,6 +3479,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="42.418" y="36.195" extent="1-16" drill="0.254"/>
 <via x="58.039" y="45.72" extent="1-16" drill="0.254"/>
 <via x="61.722" y="49.403" extent="1-16" drill="0.254"/>
+<contactref element="U$3" pad="P5"/>
+<via x="56.896" y="66.04" extent="1-16" drill="0.254"/>
 <wire x1="29.567" y1="32.054" x2="28.067" y2="32.054" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDIO_CK">
@@ -3949,9 +3969,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="70.104" y1="66.294" x2="88.011" y2="66.294" width="0.127" layer="16"/>
 <via x="88.011" y="66.294" extent="1-16" drill="0.254"/>
 <wire x1="88.011" y1="66.294" x2="88.962" y2="66.294" width="0.127" layer="1"/>
-</signal>
-<signal name="OTG_VBUS">
-<contactref element="U$1" pad="120"/>
 </signal>
 <signal name="FS_ID">
 <contactref element="U$1" pad="121"/>
@@ -4493,7 +4510,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$15">
 <contactref element="U6" pad="7"/>
 <contactref element="J7" pad="2"/>
-<wire x1="101.854" y1="30.607" x2="101.219" y2="30.607" width="0.127" layer="16"/>
+<wire x1="101.6" y1="30.607" x2="101.219" y2="30.607" width="0.2032" layer="16"/>
 <wire x1="101.219" y1="30.607" x2="97.155" y2="26.543" width="0.2032" layer="16"/>
 <wire x1="97.155" y1="26.543" x2="97.155" y2="20.574" width="0.2032" layer="16"/>
 <via x="97.155" y="20.574" extent="1-16" drill="0.254"/>
@@ -4754,7 +4771,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="40.132" y="64.643" extent="1-16" drill="0.254"/>
 <via x="45.466" y="66.04" extent="1-16" drill="0.254"/>
 <via x="50.038" y="70.739" extent="1-16" drill="0.254"/>
-<via x="54.229" y="69.977" extent="1-16" drill="0.254"/>
 <via x="58.801" y="65.405" extent="1-16" drill="0.254"/>
 <via x="62.611" y="61.595" extent="1-16" drill="0.254"/>
 <via x="66.929" y="57.15" extent="1-16" drill="0.254"/>
@@ -4771,7 +4787,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="66.548" y="56.769" extent="1-16" drill="0.254"/>
 <via x="70.1294" y="50.546" extent="1-16" drill="0.254"/>
 <via x="71.1454" y="51.562" extent="1-16" drill="0.254"/>
-<via x="53.848" y="69.596" extent="1-16" drill="0.254"/>
 <via x="62.23" y="61.214" extent="1-16" drill="0.254"/>
 <via x="58.42" y="65.024" extent="1-16" drill="0.254"/>
 <polygon width="0.127" layer="1" isolate="0.2032" thermals="no">
@@ -4779,6 +4794,10 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="60.706" y="67.564"/>
 <vertex x="56.515" y="63.373"/>
 <vertex x="56.388" y="63.373"/>
+<vertex x="54.61" y="65.024"/>
+<vertex x="58.166" y="68.58"/>
+<vertex x="57.785" y="68.961"/>
+<vertex x="54.737" y="65.913"/>
 <vertex x="53.848" y="65.913"/>
 <vertex x="53.848" y="69.469"/>
 <vertex x="56.261" y="71.882"/>
@@ -4981,6 +5000,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="54.991" y="40.767"/>
 <vertex x="55.118" y="40.894"/>
 </polygon>
+<contactref element="U$1" pad="120"/>
 </signal>
 <signal name="PD6">
 <contactref element="U$1" pad="150"/>
@@ -6978,17 +6998,19 @@ Please make sure your boards conform to these design rules.</description>
 <via x="48.133" y="43.815" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="N$36">
-<contactref element="U$3" pad="P5"/>
 <contactref element="U$3" pad="P$2"/>
 <contactref element="U$3" pad="P$3"/>
 <contactref element="U$3" pad="P$4"/>
-<contactref element="C36" pad="1"/>
 <contactref element="U$3" pad="P$1"/>
-<wire x1="24.904" y1="71.168" x2="25.989" y2="74.168" width="0" layer="19" extent="1-1"/>
-<wire x1="21.179" y1="71.493" x2="24.904" y2="71.168" width="0" layer="19" extent="1-1"/>
-<wire x1="20.054" y1="71.168" x2="21.179" y2="71.493" width="0" layer="19" extent="1-1"/>
-<wire x1="20.066" y1="69.026" x2="20.054" y2="71.168" width="0" layer="19" extent="1-1"/>
-<wire x1="18.969" y1="74.168" x2="20.054" y2="71.168" width="0" layer="19" extent="1-1"/>
+<contactref element="C36" pad="1"/>
+<polygon width="0.127" layer="16" isolate="0.2032">
+<vertex x="17.907" y="74.549"/>
+<vertex x="17.907" y="70.612"/>
+<vertex x="27.178" y="70.612"/>
+<vertex x="27.178" y="74.549"/>
+</polygon>
+<wire x1="20.054" y1="71.168" x2="20.066" y2="71.168" width="0.635" layer="1"/>
+<wire x1="20.066" y1="71.168" x2="20.066" y2="69.026" width="0.635" layer="1"/>
 </signal>
 <signal name="PD8">
 <contactref element="U$1" pad="96"/>
