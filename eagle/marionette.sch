@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4557,20 +4557,20 @@ https://www.fairchildsemi.com/datasheets/BS/BSS84.pdf</description>
 <smd name="P$2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
 <wire x1="-0.8" y1="0.5" x2="0.8" y2="0.5" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0.5" x2="0.8" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-0.5" x2="-0.24" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-0.24" y1="-0.5" x2="-0.8" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.5" x2="0.235" y2="-0.505" width="0.127" layer="21"/>
+<wire x1="0.235" y1="-0.505" x2="-0.8" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="-0.8" y1="-0.5" x2="-0.8" y2="0.5" width="0.127" layer="51"/>
 <text x="-2" y="0.6" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-2.25" y="-1.5" size="0.8128" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="-0.24" y1="-0.5" x2="-0.24" y2="-0.01" width="0.127" layer="21"/>
-<wire x1="-0.24" y1="-0.01" x2="-0.24" y2="0.49" width="0.127" layer="21"/>
-<wire x1="0.19" y1="0.3" x2="-0.24" y2="-0.01" width="0.127" layer="21"/>
-<wire x1="-0.24" y1="-0.01" x2="0.19" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="0.19" y1="-0.3" x2="0.19" y2="0.3" width="0.127" layer="21"/>
-<wire x1="0.19" y1="0.3" x2="-0.14" y2="-0.01" width="0.127" layer="21"/>
-<wire x1="-0.14" y1="-0.01" x2="0.06" y2="-0.21" width="0.127" layer="21"/>
-<wire x1="0.06" y1="-0.21" x2="0.09" y2="0.13" width="0.127" layer="21"/>
-<wire x1="0.09" y1="0.13" x2="-0.01" y2="-0.02" width="0.127" layer="21"/>
+<wire x1="0.235" y1="-0.505" x2="0.24" y2="0.01" width="0.127" layer="21"/>
+<wire x1="0.24" y1="0.01" x2="0.24" y2="0.505" width="0.127" layer="21"/>
+<wire x1="-0.19" y1="-0.3" x2="0.24" y2="0.01" width="0.127" layer="21"/>
+<wire x1="0.24" y1="0.01" x2="-0.19" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-0.19" y1="0.3" x2="-0.19" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.19" y1="-0.3" x2="0.14" y2="0.01" width="0.127" layer="21"/>
+<wire x1="0.14" y1="0.01" x2="-0.06" y2="0.21" width="0.127" layer="21"/>
+<wire x1="-0.06" y1="0.21" x2="-0.09" y2="-0.13" width="0.127" layer="21"/>
+<wire x1="-0.09" y1="-0.13" x2="0.01" y2="0.02" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
