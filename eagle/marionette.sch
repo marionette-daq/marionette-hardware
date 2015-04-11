@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5612,6 +5612,8 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <part name="U11" library="PTS645" deviceset="PTS645" device=""/>
 <part name="C83" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100nF, 10V"/>
 <part name="GND54" library="GROUND" deviceset="GND" device=""/>
+<part name="SCL" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
+<part name="SDA" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
 </parts>
 <sheets>
 <sheet>
@@ -7006,9 +7008,9 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <wire x1="35.56" y1="-58.42" x2="33.655" y2="-56.515" width="0.1524" layer="97"/>
 <wire x1="33.655" y1="-56.515" x2="29.845" y2="-56.515" width="0.1524" layer="97"/>
 <wire x1="29.845" y1="-56.515" x2="29.845" y2="-51.435" width="0.1524" layer="97"/>
-<wire x1="29.845" y1="-51.435" x2="37.465" y2="-51.435" width="0.1524" layer="97"/>
-<wire x1="37.465" y1="-51.435" x2="37.465" y2="-56.515" width="0.1524" layer="97"/>
-<wire x1="37.465" y1="-56.515" x2="33.655" y2="-56.515" width="0.1524" layer="97"/>
+<wire x1="29.845" y1="-51.435" x2="41.91" y2="-51.435" width="0.1524" layer="97"/>
+<wire x1="41.91" y1="-51.435" x2="41.91" y2="-56.515" width="0.1524" layer="97"/>
+<wire x1="41.91" y1="-56.515" x2="33.655" y2="-56.515" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$6" x="-73.66" y="104.14" rot="MR0">
@@ -9051,6 +9053,12 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <instance part="GND31" gate="1" x="-68.58" y="-10.16"/>
 <instance part="D28" gate="G$1" x="-207.01" y="-91.44" rot="MR270"/>
 <instance part="GND53" gate="1" x="-207.01" y="-107.95"/>
+<instance part="SCL" gate="G$1" x="-201.93" y="-54.61" smashed="yes">
+<attribute name="NAME" x="-200.025" y="-55.245" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SDA" gate="G$1" x="-209.55" y="-54.61" smashed="yes" rot="R180">
+<attribute name="NAME" x="-215.9" y="-55.245" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 <bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD6,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
@@ -9376,11 +9384,14 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <pinref part="J3" gate="1" pin="4"/>
 <wire x1="-227.33" y1="-40.64" x2="-224.79" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-224.79" y1="-43.18" x2="-201.93" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-201.93" y1="-43.18" x2="-201.93" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-201.93" y1="-43.18" x2="-201.93" y2="-54.61" width="0.1524" layer="91"/>
 <junction x="-201.93" y="-43.18"/>
+<wire x1="-201.93" y1="-54.61" x2="-201.93" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="-201.93" y1="-43.18" x2="-200.66" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-222.25" y="-43.18" size="1.778" layer="95"/>
 <pinref part="D28" gate="G$1" pin="I/06"/>
+<pinref part="SCL" gate="G$1" pin="1"/>
+<junction x="-201.93" y="-54.61"/>
 </segment>
 </net>
 <net name="I2C1_SDA" class="0">
@@ -9388,11 +9399,14 @@ Datasheet: &lt;br&gt;http://www.onsemi.com/pub_link/Collateral/ESD8008-D.PDF</de
 <pinref part="J3" gate="1" pin="2"/>
 <wire x1="-227.33" y1="-43.18" x2="-224.79" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-224.79" y1="-45.72" x2="-209.55" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-209.55" y1="-78.74" x2="-209.55" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-209.55" y1="-78.74" x2="-209.55" y2="-54.61" width="0.1524" layer="91"/>
 <junction x="-209.55" y="-45.72"/>
+<wire x1="-209.55" y1="-54.61" x2="-209.55" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-209.55" y1="-45.72" x2="-200.66" y2="-45.72" width="0.1524" layer="91"/>
 <label x="-222.25" y="-45.72" size="1.778" layer="95"/>
 <pinref part="D28" gate="G$1" pin="I/O3"/>
+<pinref part="SDA" gate="G$1" pin="1"/>
+<junction x="-209.55" y="-54.61"/>
 </segment>
 </net>
 <net name="PE1" class="0">
