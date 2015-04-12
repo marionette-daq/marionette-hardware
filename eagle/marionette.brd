@@ -719,25 +719,29 @@ ftp://ftp.cadsoft.de/eagle/userfiles/libraries/rcl.lbr (2007.05.29)&lt;br&gt;</d
 <library name="LS_Q976_NR_1">
 <description>Red LED 2V 20mA</description>
 <packages>
-<package name="RED_LED">
-<smd name="P$1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<smd name="P$2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<wire x1="-0.8" y1="0.5" x2="0.8" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.5" x2="0.8" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-0.5" x2="0.235" y2="-0.505" width="0.127" layer="21"/>
-<wire x1="0.235" y1="-0.505" x2="-0.8" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.5" x2="-0.8" y2="0.5" width="0.127" layer="51"/>
-<text x="-2" y="0.6" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-2.25" y="-1.5" size="0.8128" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="0.235" y1="-0.505" x2="0.24" y2="0.01" width="0.127" layer="21"/>
-<wire x1="0.24" y1="0.01" x2="0.24" y2="0.505" width="0.127" layer="21"/>
-<wire x1="-0.19" y1="-0.3" x2="0.24" y2="0.01" width="0.127" layer="21"/>
-<wire x1="0.24" y1="0.01" x2="-0.19" y2="0.3" width="0.127" layer="21"/>
-<wire x1="-0.19" y1="0.3" x2="-0.19" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="-0.19" y1="-0.3" x2="0.14" y2="0.01" width="0.127" layer="21"/>
-<wire x1="0.14" y1="0.01" x2="-0.06" y2="0.21" width="0.127" layer="21"/>
-<wire x1="-0.06" y1="0.21" x2="-0.09" y2="-0.13" width="0.127" layer="21"/>
-<wire x1="-0.09" y1="-0.13" x2="0.01" y2="0.02" width="0.127" layer="21"/>
+<package name="CHIPLED_0603">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.635" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.905" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
 </package>
 </packages>
 </library>
@@ -2226,7 +2230,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="47.7302125" y="72.771" size="0.3" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
 <element name="C19" library="rcl_custom" package=".0603-C" value="100nF, 10V" x="43.18" y="68.304209375" smashed="yes" rot="R135">
-<attribute name="NAME" x="43.356775" y="67.066771875" size="0.635" layer="25" font="vector" ratio="15" rot="R135"/>
+<attribute name="NAME" x="44.880775" y="68.590771875" size="0.635" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="43.18" y="68.304209375" size="0.3" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
 <element name="C2" library="rcl_custom" package=".0603-C" value="1uF, 10V" x="57.215365625" y="15.71718125" smashed="yes" rot="R180">
@@ -2234,7 +2238,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="57.215365625" y="15.71718125" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="C20" library="rcl_custom" package=".0603-C" value="100nF, 10V" x="39.116" y="65.637209375" smashed="yes" rot="R135">
-<attribute name="NAME" x="38.530775" y="66.685771875" size="0.635" layer="25" font="vector" ratio="15" rot="R135"/>
+<attribute name="NAME" x="40.816775" y="65.923771875" size="0.635" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="39.116" y="65.637209375" size="0.3" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
 <element name="C21" library="rcl_custom" package=".0603-C" value="100nF, 10V" x="34.87239375" y="60.631603125" smashed="yes" rot="R135">
@@ -2305,7 +2309,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="20.066" y="68.326" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="C37" library="rcl_custom" package=".0603-C" value="1uF, 10V" x="30.353" y="67.31" smashed="yes" rot="R180">
-<attribute name="NAME" x="31.766" y="67.044" size="0.635" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="31.766" y="66.663" size="0.635" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="30.353" y="67.31" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="C38" library="rcl_custom" package=".0603-C" value="1uF, 10V" x="27.686" y="64.135" smashed="yes" rot="R90">
@@ -2371,14 +2375,14 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D1" library="CBDU0530" package="SOD-523F" value="CDBU0530" x="109.855" y="66.675" smashed="yes" rot="R90">
 <attribute name="NAME" x="110.098" y="63.867" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="D10" library="LS_Q976_NR_1" package="RED_LED" value="LS_Q976" x="35.306" y="70.993" smashed="yes" rot="R270">
-<attribute name="NAME" x="35.044" y="69.691" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
+<element name="LED7" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="35.306" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.044" y="69.945" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="D11" library="LS_Q976_NR_1" package="RED_LED" value="LS_Q976" x="34.036" y="70.993" smashed="yes" rot="R270">
-<attribute name="NAME" x="33.774" y="69.691" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
+<element name="LED8" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="34.036" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.647" y="69.945" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="D12" library="LS_Q976_NR_1" package="RED_LED" value="LS_Q976" x="32.766" y="70.993" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.25" y="69.691" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
+<element name="LED9" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="32.766" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="32.504" y="69.945" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="D13" library="CBDU0530" package="SOD-523F" value="CDBU0530" x="59.69" y="9.652" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.06" y="11.67" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
@@ -2392,20 +2396,20 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D4" library="CBDU0530" package="SOD-523F" value="CDBU0530" x="30.607" y="68.453" smashed="yes">
 <attribute name="NAME" x="30.085" y="69.226" size="0.635" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="D5" library="LS_Q976_NR_1" package="RED_LED" value="LS_Q976" x="41.656" y="70.993" smashed="yes" rot="R270">
-<attribute name="NAME" x="41.394" y="69.691" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
+<element name="LED2" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="41.656" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="41.267" y="69.945" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="D6" library="LS_Q976_NR_1" package="RED_LED" value="LS_Q976" x="40.386" y="70.993" smashed="yes" rot="R270">
-<attribute name="NAME" x="40.124" y="69.691" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
+<element name="LED3" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="40.386" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="40.124" y="69.945" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="D7" library="LS_Q976_NR_1" package="RED_LED" value="LS_Q976" x="39.116" y="70.993" smashed="yes" rot="R270">
-<attribute name="NAME" x="38.854" y="69.691" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
+<element name="LED4" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="39.116" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="38.854" y="69.945" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="D8" library="LS_Q976_NR_1" package="RED_LED" value="LS_Q976" x="37.846" y="70.993" smashed="yes" rot="R270">
-<attribute name="NAME" x="37.584" y="69.691" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
+<element name="LED5" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="37.846" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="37.711" y="69.945" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="D9" library="LS_Q976_NR_1" package="RED_LED" value="LS_Q976" x="36.576" y="70.993" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.314" y="69.691" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
+<element name="LED6" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="36.576" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="36.314" y="69.945" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J1" library="PJ_047A" package="MALE_JACK" value="" x="115.951" y="76.2" smashed="yes" rot="R270">
 <attribute name="VALUE" x="117.221" y="63.5" size="1.27" layer="27" rot="R270"/>
@@ -6811,75 +6815,75 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PG8">
 <contactref element="U$1" pad="112"/>
-<contactref element="D5" pad="P$2"/>
+<contactref element="LED2" pad="C"/>
 <wire x1="60.30128125" y1="65.425940625" x2="54.692340625" y2="59.817" width="0.127" layer="1"/>
 <wire x1="54.692340625" y1="59.817" x2="54.483" y2="59.817" width="0.127" layer="1"/>
 <via x="54.483" y="59.817" extent="1-16" drill="0.254"/>
 <wire x1="54.483" y1="59.817" x2="44.069" y2="70.231" width="0.127" layer="16"/>
 <via x="44.069" y="70.231" extent="1-16" drill="0.254"/>
 <wire x1="44.069" y1="70.231" x2="41.656" y2="70.231" width="0.127" layer="1"/>
-<wire x1="41.656" y1="70.231" x2="41.656" y2="70.243" width="0.127" layer="1"/>
+<wire x1="41.656" y1="70.231" x2="41.656" y2="70.37" width="0.127" layer="1"/>
 </signal>
 <signal name="PG9">
 <contactref element="U$1" pad="152"/>
-<contactref element="D6" pad="P$2"/>
+<contactref element="LED3" pad="C"/>
 <wire x1="43.684271875" y1="65.77949375" x2="43.684271875" y2="65.789728125" width="0.127" layer="1"/>
 <wire x1="43.684271875" y1="65.789728125" x2="40.386" y2="69.088" width="0.127" layer="1"/>
-<wire x1="40.386" y1="69.088" x2="40.386" y2="70.243" width="0.127" layer="1"/>
+<wire x1="40.386" y1="69.088" x2="40.386" y2="70.37" width="0.127" layer="1"/>
 </signal>
 <signal name="PG10">
 <contactref element="U$1" pad="153"/>
-<contactref element="D7" pad="P$2"/>
+<contactref element="LED4" pad="C"/>
 <wire x1="43.330715625" y1="65.425940625" x2="43.330715625" y2="65.508284375" width="0.127" layer="1"/>
 <wire x1="43.330715625" y1="65.508284375" x2="39.116" y2="69.723" width="0.127" layer="1"/>
-<wire x1="39.116" y1="69.723" x2="39.116" y2="70.243" width="0.127" layer="1"/>
+<wire x1="39.116" y1="69.723" x2="39.116" y2="70.37" width="0.127" layer="1"/>
 </signal>
 <signal name="PG11">
 <contactref element="U$1" pad="154"/>
-<contactref element="D8" pad="P$2"/>
+<contactref element="LED5" pad="C"/>
 <wire x1="42.9771625" y1="65.0723875" x2="42.9771625" y2="65.0998375" width="0.127" layer="1"/>
 <wire x1="42.9771625" y1="65.0998375" x2="42.8501625" y2="65.0998375" width="0.127" layer="1"/>
 <wire x1="42.8501625" y1="65.0998375" x2="38.862" y2="69.088" width="0.127" layer="1"/>
 <wire x1="38.862" y1="69.088" x2="38.354" y2="69.088" width="0.127" layer="1"/>
 <wire x1="38.354" y1="69.088" x2="37.846" y2="69.596" width="0.127" layer="1"/>
-<wire x1="37.846" y1="69.596" x2="37.846" y2="70.243" width="0.127" layer="1"/>
+<wire x1="37.846" y1="69.596" x2="37.846" y2="70.37" width="0.127" layer="1"/>
 </signal>
 <signal name="PG12">
 <contactref element="U$1" pad="155"/>
-<contactref element="D9" pad="P$2"/>
+<contactref element="LED6" pad="C"/>
 <wire x1="42.623609375" y1="64.718834375" x2="42.596165625" y2="64.718834375" width="0.127" layer="1"/>
 <wire x1="42.596165625" y1="64.718834375" x2="38.608" y2="68.707" width="0.127" layer="1"/>
 <wire x1="38.608" y1="68.707" x2="37.465" y2="68.707" width="0.127" layer="1"/>
 <wire x1="37.465" y1="68.707" x2="36.576" y2="69.596" width="0.127" layer="1"/>
-<wire x1="36.576" y1="69.596" x2="36.576" y2="70.243" width="0.127" layer="1"/>
+<wire x1="36.576" y1="69.596" x2="36.576" y2="70.37" width="0.127" layer="1"/>
 </signal>
 <signal name="PG13">
 <contactref element="U$1" pad="156"/>
-<contactref element="D10" pad="P$2"/>
+<contactref element="LED7" pad="C"/>
 <wire x1="42.27005625" y1="64.36528125" x2="42.18771875" y2="64.36528125" width="0.127" layer="1"/>
 <wire x1="42.18771875" y1="64.36528125" x2="42.18771875" y2="64.49228125" width="0.127" layer="1"/>
 <wire x1="42.18771875" y1="64.49228125" x2="38.354" y2="68.326" width="0.127" layer="1"/>
 <wire x1="38.354" y1="68.326" x2="36.576" y2="68.326" width="0.127" layer="1"/>
 <wire x1="36.576" y1="68.326" x2="35.306" y2="69.596" width="0.127" layer="1"/>
-<wire x1="35.306" y1="69.596" x2="35.306" y2="70.243" width="0.127" layer="1"/>
+<wire x1="35.306" y1="69.596" x2="35.306" y2="70.37" width="0.127" layer="1"/>
 </signal>
 <signal name="PG14">
 <contactref element="U$1" pad="157"/>
-<contactref element="D11" pad="P$2"/>
+<contactref element="LED8" pad="C"/>
 <wire x1="41.916503125" y1="64.011725" x2="41.906275" y2="64.011725" width="0.127" layer="1"/>
 <wire x1="41.906275" y1="64.011725" x2="38.1" y2="67.818" width="0.127" layer="1"/>
 <wire x1="38.1" y1="67.818" x2="35.56" y2="67.818" width="0.127" layer="1"/>
 <wire x1="35.56" y1="67.818" x2="34.036" y2="69.342" width="0.127" layer="1"/>
-<wire x1="34.036" y1="69.342" x2="34.036" y2="70.243" width="0.127" layer="1"/>
+<wire x1="34.036" y1="69.342" x2="34.036" y2="70.37" width="0.127" layer="1"/>
 </signal>
 <signal name="PG15">
 <contactref element="U$1" pad="160"/>
-<contactref element="D12" pad="P$2"/>
+<contactref element="LED9" pad="C"/>
 <wire x1="40.85584375" y1="62.951065625" x2="40.807934375" y2="62.951065625" width="0.127" layer="1"/>
 <wire x1="40.807934375" y1="62.951065625" x2="36.449" y2="67.31" width="0.127" layer="1"/>
 <wire x1="36.449" y1="67.31" x2="34.925" y2="67.31" width="0.127" layer="1"/>
 <wire x1="34.925" y1="67.31" x2="32.766" y2="69.469" width="0.127" layer="1"/>
-<wire x1="32.766" y1="69.469" x2="32.766" y2="70.243" width="0.127" layer="1"/>
+<wire x1="32.766" y1="69.469" x2="32.766" y2="70.37" width="0.127" layer="1"/>
 </signal>
 <signal name="CAN1_TX">
 <contactref element="U$1" pad="128"/>
@@ -6988,43 +6992,43 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$25">
 <contactref element="R21" pad="1"/>
-<contactref element="D5" pad="P$1"/>
-<wire x1="41.656" y1="72.833" x2="41.656" y2="71.743" width="0.254" layer="1"/>
+<contactref element="LED2" pad="A"/>
+<wire x1="41.656" y1="72.833" x2="41.656" y2="71.87" width="0.254" layer="1"/>
 </signal>
 <signal name="N$26">
-<contactref element="D6" pad="P$1"/>
+<contactref element="LED3" pad="A"/>
 <contactref element="R22" pad="1"/>
-<wire x1="40.386" y1="72.833" x2="40.386" y2="71.743" width="0.254" layer="1"/>
+<wire x1="40.386" y1="72.833" x2="40.386" y2="71.87" width="0.254" layer="1"/>
 </signal>
 <signal name="N$27">
 <contactref element="R23" pad="1"/>
-<contactref element="D7" pad="P$1"/>
-<wire x1="39.116" y1="72.833" x2="39.116" y2="71.743" width="0.254" layer="1"/>
+<contactref element="LED4" pad="A"/>
+<wire x1="39.116" y1="72.833" x2="39.116" y2="71.87" width="0.254" layer="1"/>
 </signal>
 <signal name="N$28">
-<contactref element="D8" pad="P$1"/>
+<contactref element="LED5" pad="A"/>
 <contactref element="R24" pad="1"/>
-<wire x1="37.846" y1="72.833" x2="37.846" y2="71.743" width="0.254" layer="1"/>
+<wire x1="37.846" y1="72.833" x2="37.846" y2="71.87" width="0.254" layer="1"/>
 </signal>
 <signal name="N$29">
 <contactref element="R25" pad="1"/>
-<contactref element="D9" pad="P$1"/>
-<wire x1="36.576" y1="72.833" x2="36.576" y2="71.743" width="0.254" layer="1"/>
+<contactref element="LED6" pad="A"/>
+<wire x1="36.576" y1="72.833" x2="36.576" y2="71.87" width="0.254" layer="1"/>
 </signal>
 <signal name="N$30">
-<contactref element="D10" pad="P$1"/>
+<contactref element="LED7" pad="A"/>
 <contactref element="R26" pad="1"/>
-<wire x1="35.306" y1="72.833" x2="35.306" y2="71.743" width="0.254" layer="1"/>
+<wire x1="35.306" y1="72.833" x2="35.306" y2="71.87" width="0.254" layer="1"/>
 </signal>
 <signal name="N$31">
 <contactref element="R27" pad="1"/>
-<contactref element="D11" pad="P$1"/>
-<wire x1="34.036" y1="72.833" x2="34.036" y2="71.743" width="0.254" layer="1"/>
+<contactref element="LED8" pad="A"/>
+<wire x1="34.036" y1="72.833" x2="34.036" y2="71.87" width="0.254" layer="1"/>
 </signal>
 <signal name="N$32">
-<contactref element="D12" pad="P$1"/>
+<contactref element="LED9" pad="A"/>
 <contactref element="R28" pad="1"/>
-<wire x1="32.766" y1="72.833" x2="32.766" y2="71.743" width="0.254" layer="1"/>
+<wire x1="32.766" y1="72.833" x2="32.766" y2="71.87" width="0.254" layer="1"/>
 </signal>
 <signal name="PF2">
 <contactref element="U5" pad="5"/>

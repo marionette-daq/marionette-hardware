@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4552,25 +4552,29 @@ https://www.fairchildsemi.com/datasheets/BS/BSS84.pdf</description>
 <library name="LS_Q976_NR_1">
 <description>Red LED 2V 20mA</description>
 <packages>
-<package name="RED_LED">
-<smd name="P$1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<smd name="P$2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<wire x1="-0.8" y1="0.5" x2="0.8" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.5" x2="0.8" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-0.5" x2="0.235" y2="-0.505" width="0.127" layer="21"/>
-<wire x1="0.235" y1="-0.505" x2="-0.8" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.5" x2="-0.8" y2="0.5" width="0.127" layer="51"/>
-<text x="-2" y="0.6" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-2.25" y="-1.5" size="0.8128" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="0.235" y1="-0.505" x2="0.24" y2="0.01" width="0.127" layer="21"/>
-<wire x1="0.24" y1="0.01" x2="0.24" y2="0.505" width="0.127" layer="21"/>
-<wire x1="-0.19" y1="-0.3" x2="0.24" y2="0.01" width="0.127" layer="21"/>
-<wire x1="0.24" y1="0.01" x2="-0.19" y2="0.3" width="0.127" layer="21"/>
-<wire x1="-0.19" y1="0.3" x2="-0.19" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="-0.19" y1="-0.3" x2="0.14" y2="0.01" width="0.127" layer="21"/>
-<wire x1="0.14" y1="0.01" x2="-0.06" y2="0.21" width="0.127" layer="21"/>
-<wire x1="-0.06" y1="0.21" x2="-0.09" y2="-0.13" width="0.127" layer="21"/>
-<wire x1="-0.09" y1="-0.13" x2="0.01" y2="0.02" width="0.127" layer="21"/>
+<package name="CHIPLED_0603">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.635" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.905" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -4591,12 +4595,12 @@ https://www.fairchildsemi.com/datasheets/BS/BSS84.pdf</description>
 <wire x1="-0.635" y1="3.175" x2="-1.27" y2="3.175" width="0.254" layer="94"/>
 <text x="-5.08" y="-3.175" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-5.08" y="3.175" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="P$2" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<pin name="A" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LS_Q976" prefix="D">
+<deviceset name="LS_Q976" prefix="LED">
 <description>LS_Q976 LED &lt;br&gt;
 Red LED - 
 http://www.osram-os.com/Graphics/XPic9/00128792_0.pdf</description>
@@ -4604,10 +4608,10 @@ http://www.osram-os.com/Graphics/XPic9/00128792_0.pdf</description>
 <gate name="G$1" symbol="RED_LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="RED_LED">
+<device name="" package="CHIPLED_0603">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5500,14 +5504,14 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <part name="C43" library="rcl_custom" deviceset="C-EU" device="0603-C" value="0.1uF"/>
 <part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-C" value="100"/>
 <part name="R20" library="rcl_custom" deviceset="R-US_" device="0603-C" value="60k"/>
-<part name="D5" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
-<part name="D6" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
-<part name="D7" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
-<part name="D8" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
-<part name="D9" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
-<part name="D10" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
-<part name="D11" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
-<part name="D12" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED2" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED3" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED4" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED5" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED6" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED7" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED8" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED9" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
 <part name="R21" library="rcl_custom" deviceset="R-US_" device="0603-C" value="649"/>
 <part name="R22" library="rcl_custom" deviceset="R-US_" device="0603-C" value="649"/>
 <part name="R23" library="rcl_custom" deviceset="R-US_" device="0603-C" value="649"/>
@@ -7183,35 +7187,35 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <instance part="C35" gate="CE" x="121.92" y="45.72" rot="R90"/>
 <instance part="GND13" gate="1" x="139.7" y="33.02"/>
 <instance part="X2" gate="G$1" x="109.22" y="38.1" rot="R90"/>
-<instance part="D5" gate="G$1" x="284.48" y="-5.08" smashed="yes" rot="MR0">
+<instance part="LED2" gate="G$1" x="284.48" y="-5.08" smashed="yes" rot="MR0">
 <attribute name="NAME" x="292.1" y="-4.445" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="283.21" y="-4.445" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="D6" gate="G$1" x="284.48" y="-10.16" smashed="yes" rot="MR0">
+<instance part="LED3" gate="G$1" x="284.48" y="-10.16" smashed="yes" rot="MR0">
 <attribute name="NAME" x="292.1" y="-9.525" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="283.21" y="-9.525" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="D7" gate="G$1" x="284.48" y="-15.24" smashed="yes" rot="MR0">
+<instance part="LED4" gate="G$1" x="284.48" y="-15.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="292.1" y="-14.605" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="283.21" y="-14.605" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="D8" gate="G$1" x="284.48" y="-20.32" smashed="yes" rot="MR0">
+<instance part="LED5" gate="G$1" x="284.48" y="-20.32" smashed="yes" rot="MR0">
 <attribute name="NAME" x="292.1" y="-19.685" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="283.21" y="-19.685" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="D9" gate="G$1" x="284.48" y="-25.4" smashed="yes" rot="MR0">
+<instance part="LED6" gate="G$1" x="284.48" y="-25.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="292.1" y="-24.765" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="283.21" y="-24.765" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="D10" gate="G$1" x="284.48" y="-30.48" smashed="yes" rot="MR0">
+<instance part="LED7" gate="G$1" x="284.48" y="-30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="293.37" y="-29.845" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="283.21" y="-29.845" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="D11" gate="G$1" x="284.48" y="-35.56" smashed="yes" rot="MR0">
+<instance part="LED8" gate="G$1" x="284.48" y="-35.56" smashed="yes" rot="MR0">
 <attribute name="NAME" x="293.37" y="-34.925" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="283.21" y="-34.925" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="D12" gate="G$1" x="284.48" y="-40.64" smashed="yes" rot="MR0">
+<instance part="LED9" gate="G$1" x="284.48" y="-40.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="293.37" y="-40.005" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="283.21" y="-40.005" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
@@ -7815,7 +7819,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <pinref part="U$1" gate="G$7" pin="PG8"/>
 <wire x1="281.94" y1="-5.08" x2="209.55" y2="-5.08" width="0.1524" layer="91"/>
 <label x="224.79" y="-5.08" size="1.778" layer="95" font="vector"/>
-<pinref part="D5" gate="G$1" pin="P$2"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="PG9" class="0">
@@ -7823,7 +7827,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <pinref part="U$1" gate="G$7" pin="PG9"/>
 <wire x1="281.94" y1="-10.16" x2="209.55" y2="-10.16" width="0.1524" layer="91"/>
 <label x="224.79" y="-10.16" size="1.778" layer="95" font="vector"/>
-<pinref part="D6" gate="G$1" pin="P$2"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="PG10" class="0">
@@ -7831,7 +7835,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <pinref part="U$1" gate="G$7" pin="PG10"/>
 <wire x1="281.94" y1="-15.24" x2="209.55" y2="-15.24" width="0.1524" layer="91"/>
 <label x="224.79" y="-15.24" size="1.778" layer="95" font="vector"/>
-<pinref part="D7" gate="G$1" pin="P$2"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="PG11" class="0">
@@ -7839,7 +7843,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <pinref part="U$1" gate="G$7" pin="PG11"/>
 <wire x1="281.94" y1="-20.32" x2="209.55" y2="-20.32" width="0.1524" layer="91"/>
 <label x="224.79" y="-20.32" size="1.778" layer="95" font="vector"/>
-<pinref part="D8" gate="G$1" pin="P$2"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="PG12" class="0">
@@ -7847,7 +7851,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <pinref part="U$1" gate="G$7" pin="PG12"/>
 <wire x1="281.94" y1="-25.4" x2="209.55" y2="-25.4" width="0.1524" layer="91"/>
 <label x="224.79" y="-25.4" size="1.778" layer="95" font="vector"/>
-<pinref part="D9" gate="G$1" pin="P$2"/>
+<pinref part="LED6" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="PG13" class="0">
@@ -7855,7 +7859,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <pinref part="U$1" gate="G$7" pin="PG13"/>
 <wire x1="281.94" y1="-30.48" x2="209.55" y2="-30.48" width="0.1524" layer="91"/>
 <label x="224.79" y="-30.48" size="1.778" layer="95" font="vector"/>
-<pinref part="D10" gate="G$1" pin="P$2"/>
+<pinref part="LED7" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="PG14" class="0">
@@ -7863,7 +7867,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <pinref part="U$1" gate="G$7" pin="PG14"/>
 <wire x1="281.94" y1="-35.56" x2="209.55" y2="-35.56" width="0.1524" layer="91"/>
 <label x="224.79" y="-35.56" size="1.778" layer="95" font="vector"/>
-<pinref part="D11" gate="G$1" pin="P$2"/>
+<pinref part="LED8" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="PG15" class="0">
@@ -7871,7 +7875,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <pinref part="U$1" gate="G$7" pin="PG15"/>
 <wire x1="281.94" y1="-40.64" x2="209.55" y2="-40.64" width="0.1524" layer="91"/>
 <label x="224.79" y="-40.64" size="1.778" layer="95" font="vector"/>
-<pinref part="D12" gate="G$1" pin="P$2"/>
+<pinref part="LED9" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="CAN1_TX" class="0">
@@ -7982,12 +7986,12 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <segment>
 <pinref part="R21" gate="R" pin="1"/>
 <wire x1="300.99" y1="-5.08" x2="289.56" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="D5" gate="G$1" pin="P$1"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="D6" gate="G$1" pin="P$1"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="R22" gate="R" pin="1"/>
 <wire x1="289.56" y1="-10.16" x2="300.99" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
@@ -7995,13 +7999,13 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <net name="N$27" class="0">
 <segment>
 <pinref part="R23" gate="R" pin="1"/>
-<pinref part="D7" gate="G$1" pin="P$1"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="300.99" y1="-15.24" x2="289.56" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="D8" gate="G$1" pin="P$1"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
 <pinref part="R24" gate="R" pin="1"/>
 <wire x1="289.56" y1="-20.32" x2="300.99" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
@@ -8009,13 +8013,13 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <net name="N$29" class="0">
 <segment>
 <pinref part="R25" gate="R" pin="1"/>
-<pinref part="D9" gate="G$1" pin="P$1"/>
+<pinref part="LED6" gate="G$1" pin="A"/>
 <wire x1="300.99" y1="-25.4" x2="289.56" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="D10" gate="G$1" pin="P$1"/>
+<pinref part="LED7" gate="G$1" pin="A"/>
 <pinref part="R26" gate="R" pin="1"/>
 <wire x1="289.56" y1="-30.48" x2="300.99" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
@@ -8023,13 +8027,13 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <net name="N$31" class="0">
 <segment>
 <pinref part="R27" gate="R" pin="1"/>
-<pinref part="D11" gate="G$1" pin="P$1"/>
+<pinref part="LED8" gate="G$1" pin="A"/>
 <wire x1="300.99" y1="-35.56" x2="289.56" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="D12" gate="G$1" pin="P$1"/>
+<pinref part="LED9" gate="G$1" pin="A"/>
 <pinref part="R28" gate="R" pin="1"/>
 <wire x1="289.56" y1="-40.64" x2="300.99" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
