@@ -2708,10 +2708,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U15" library="PTS645" package="SMT" value="PTS645" x="81.661" y="72.009" smashed="yes" rot="R180">
 <attribute name="NAME" x="85.038" y="73.009" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="U18" library="con-hirose-microusb" package="ZX62D-B-5P8" value="ZX62D-B-5P8" x="93.345" y="74.295" smashed="yes" rot="R180">
+<element name="J23" library="con-hirose-microusb" package="ZX62D-B-5P8" value="ZX62D-B-5P8" x="93.345" y="74.295" smashed="yes" rot="R180">
 <attribute name="NAME" x="89.345" y="71.195" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="U17" library="con-hirose-microusb" package="ZX62D-B-5P8" value="ZX62D-B-5P8" x="22.479" y="74.295" smashed="yes" rot="R180">
+<element name="J22" library="con-hirose-microusb" package="ZX62D-B-5P8" value="ZX62D-B-5P8" x="22.479" y="74.295" smashed="yes" rot="R180">
 <attribute name="NAME" x="18.479" y="71.195" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 </element>
 <element name="U$33" library="mount" package="#4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="#4-BARE_MOUNTING_HOLE/.300" x="133.985" y="5.08" smashed="yes"/>
@@ -3515,11 +3515,11 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C6" pad="2"/>
 <contactref element="U1" pad="48"/>
 <contactref element="U1" pad="37"/>
-<contactref element="U18" pad="P5"/>
-<contactref element="U18" pad="P$1"/>
-<contactref element="U18" pad="P$2"/>
-<contactref element="U18" pad="P$3"/>
-<contactref element="U18" pad="P$4"/>
+<contactref element="J23" pad="P5"/>
+<contactref element="J23" pad="P$1"/>
+<contactref element="J23" pad="P$2"/>
+<contactref element="J23" pad="P$3"/>
+<contactref element="J23" pad="P$4"/>
 <contactref element="U15" pad="1"/>
 <contactref element="U15" pad="2"/>
 <contactref element="C31" pad="2"/>
@@ -3851,7 +3851,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="42.545" y="35.941" extent="1-16" drill="0.254"/>
 <via x="58.039" y="45.72" extent="1-16" drill="0.254"/>
 <via x="61.722" y="49.403" extent="1-16" drill="0.254"/>
-<contactref element="U17" pad="P5"/>
+<contactref element="J22" pad="P5"/>
 <via x="29.591" y="32.766" extent="1-16" drill="0.254"/>
 <via x="33.909" y="40.894" extent="1-16" drill="0.254"/>
 <contactref element="U11" pad="2"/>
@@ -4616,7 +4616,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="FS_ID">
 <contactref element="U1" pad="121"/>
-<contactref element="U18" pad="P4"/>
+<contactref element="J23" pad="P4"/>
 <wire x1="74.803" y1="70.485" x2="77.343" y2="67.945" width="0.127" layer="1"/>
 <wire x1="57.1193" y1="68.607921875" x2="57.1193" y2="68.6763" width="0.127" layer="1"/>
 <wire x1="57.1193" y1="68.6763" x2="58.928" y2="70.485" width="0.127" layer="1"/>
@@ -4631,7 +4631,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="FS_DM">
 <contactref element="U1" pad="122"/>
-<contactref element="U18" pad="P2"/>
+<contactref element="J23" pad="P2"/>
 <wire x1="75.184" y1="70.739" x2="77.47" y2="68.453" width="0.127" layer="1"/>
 <wire x1="77.47" y1="68.453" x2="92.456" y2="68.453" width="0.127" layer="1"/>
 <wire x1="92.456" y1="68.453" x2="93.98" y2="69.977" width="0.127" layer="1"/>
@@ -4643,7 +4643,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="FS_DP">
 <contactref element="U1" pad="123"/>
-<contactref element="U18" pad="P3"/>
+<contactref element="J23" pad="P3"/>
 <wire x1="75.311" y1="70.993" x2="77.597" y2="68.707" width="0.127" layer="1"/>
 <wire x1="77.597" y1="68.707" x2="92.202" y2="68.707" width="0.127" layer="1"/>
 <wire x1="92.202" y1="68.707" x2="93.345" y2="69.85" width="0.127" layer="1"/>
@@ -4749,7 +4749,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="28.575" y1="62.23" x2="34.417" y2="62.23" width="0.127" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="U17" pad="P1"/>
+<contactref element="J22" pad="P1"/>
 <contactref element="C32" pad="1"/>
 <contactref element="R15" pad="1"/>
 <contactref element="D4" pad="P$1"/>
@@ -4764,7 +4764,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="USB_HS_M">
 <contactref element="U16" pad="5"/>
-<contactref element="U17" pad="P2"/>
+<contactref element="J22" pad="P2"/>
 <wire x1="21.983" y1="66.139" x2="21.983" y2="69.354" width="0.127" layer="1"/>
 <wire x1="21.983" y1="69.354" x2="23.114" y2="70.485" width="0.127" layer="1"/>
 <wire x1="23.114" y1="70.485" x2="23.114" y2="71.478" width="0.127" layer="1"/>
@@ -4772,14 +4772,14 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="USB_HS_P">
 <contactref element="U16" pad="6"/>
-<contactref element="U17" pad="P3"/>
+<contactref element="J22" pad="P3"/>
 <wire x1="21.483" y1="66.139" x2="21.483" y2="69.235" width="0.127" layer="1"/>
 <wire x1="21.483" y1="69.235" x2="22.479" y2="70.231" width="0.127" layer="1"/>
 <wire x1="22.479" y1="70.231" x2="22.479" y2="71.62" width="0.127" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="U16" pad="1"/>
-<contactref element="U17" pad="P4"/>
+<contactref element="J22" pad="P4"/>
 <wire x1="21.829" y1="71.62" x2="21.844" y2="71.478" width="0.127" layer="1"/>
 <wire x1="21.844" y1="71.478" x2="21.844" y2="70.358" width="0.127" layer="1"/>
 <wire x1="21.844" y1="70.358" x2="23.983" y2="68.219" width="0.127" layer="16"/>
@@ -7706,10 +7706,10 @@ Please make sure your boards conform to these design rules.</description>
 <via x="48.133" y="43.815" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="N$36">
-<contactref element="U17" pad="P$2"/>
-<contactref element="U17" pad="P$3"/>
-<contactref element="U17" pad="P$4"/>
-<contactref element="U17" pad="P$1"/>
+<contactref element="J22" pad="P$2"/>
+<contactref element="J22" pad="P$3"/>
+<contactref element="J22" pad="P$4"/>
+<contactref element="J22" pad="P$1"/>
 <contactref element="C36" pad="1"/>
 <polygon width="0.127" layer="16" isolate="0.2032">
 <vertex x="17.907" y="74.549"/>
@@ -7744,7 +7744,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$41">
 <contactref element="D2" pad="P$1"/>
-<contactref element="U18" pad="P1"/>
+<contactref element="J23" pad="P1"/>
 <polygon width="0.127" layer="1" isolate="0.2032" thermals="no">
 <vertex x="95.504" y="72.39"/>
 <vertex x="94.234" y="72.39"/>

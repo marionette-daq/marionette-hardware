@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5427,8 +5427,8 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <part name="GND4" library="GROUND" deviceset="GND" device=""/>
 <part name="U2" library="NCP705" deviceset="NCP705" device=""/>
 <part name="U3" library="XCL206B" deviceset="XCL206B" device=""/>
-<part name="U18" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
-<part name="U17" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
+<part name="J23" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
+<part name="J22" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
 <part name="GND10" library="GROUND" deviceset="GND" device=""/>
 <part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-C" value="4.7k"/>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-C" value="4.7k"/>
@@ -5823,7 +5823,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 </instance>
 <instance part="GND3" gate="1" x="96.52" y="-133.35"/>
 <instance part="GND4" gate="1" x="149.86" y="40.64"/>
-<instance part="U17" gate="G$1" x="368.3" y="87.63" rot="MR0"/>
+<instance part="J22" gate="G$1" x="368.3" y="87.63" rot="MR0"/>
 <instance part="R6" gate="R" x="68.58" y="-7.62" rot="R90"/>
 <instance part="R7" gate="R" x="81.28" y="-7.62" rot="R90"/>
 <instance part="GND11" gate="1" x="261.62" y="-132.08"/>
@@ -6219,7 +6219,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <pinref part="GND12" gate="1" pin="GND"/>
 <pinref part="C36" gate="CE" pin="2"/>
 <wire x1="355.6" y1="67.31" x2="355.6" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U17" gate="G$1" pin="GND"/>
+<pinref part="J22" gate="G$1" pin="GND"/>
 <wire x1="355.6" y1="63.5" x2="355.6" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="90.17" x2="351.79" y2="90.17" width="0.1524" layer="91"/>
 <wire x1="351.79" y1="90.17" x2="351.79" y2="63.5" width="0.1524" layer="91"/>
@@ -6657,7 +6657,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U17" gate="G$1" pin="VCC"/>
+<pinref part="J22" gate="G$1" pin="VCC"/>
 <wire x1="331.47" y1="100.33" x2="349.25" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="349.25" y1="100.33" x2="358.14" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="331.47" y1="100.33" x2="331.47" y2="90.17" width="0.1524" layer="91"/>
@@ -6674,21 +6674,21 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <net name="USB_HS_M" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="DM"/>
-<pinref part="U17" gate="G$1" pin="D-"/>
+<pinref part="J22" gate="G$1" pin="D-"/>
 <wire x1="275.59" y1="97.79" x2="358.14" y2="97.79" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_HS_P" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="DP"/>
-<pinref part="U17" gate="G$1" pin="D+"/>
+<pinref part="J22" gate="G$1" pin="D+"/>
 <wire x1="275.59" y1="95.25" x2="358.14" y2="95.25" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="ID"/>
-<pinref part="U17" gate="G$1" pin="ID"/>
+<pinref part="J22" gate="G$1" pin="ID"/>
 <wire x1="275.59" y1="92.71" x2="358.14" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7066,18 +7066,18 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="U17" gate="G$1" pin="SHLD@1"/>
+<pinref part="J22" gate="G$1" pin="SHLD@1"/>
 <wire x1="355.6" y1="85.09" x2="355.6" y2="82.55" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="82.55" x2="355.6" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="80.01" x2="355.6" y2="77.47" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="85.09" x2="355.6" y2="85.09" width="0.1524" layer="91"/>
-<pinref part="U17" gate="G$1" pin="SHLD@2"/>
+<pinref part="J22" gate="G$1" pin="SHLD@2"/>
 <wire x1="358.14" y1="82.55" x2="355.6" y2="82.55" width="0.1524" layer="91"/>
 <junction x="355.6" y="82.55"/>
-<pinref part="U17" gate="G$1" pin="SHLD@3"/>
+<pinref part="J22" gate="G$1" pin="SHLD@3"/>
 <wire x1="358.14" y1="80.01" x2="355.6" y2="80.01" width="0.1524" layer="91"/>
 <junction x="355.6" y="80.01"/>
-<pinref part="U17" gate="G$1" pin="SHLD@4"/>
+<pinref part="J22" gate="G$1" pin="SHLD@4"/>
 <wire x1="358.14" y1="77.47" x2="355.6" y2="77.47" width="0.1524" layer="91"/>
 <pinref part="C36" gate="CE" pin="1"/>
 <wire x1="355.6" y1="77.47" x2="355.6" y2="74.93" width="0.1524" layer="91"/>
@@ -8287,7 +8287,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <instance part="U$6" gate="+3.3_VDDA" x="-48.26" y="-34.29"/>
 <instance part="U2" gate="G$1" x="39.37" y="100.33"/>
 <instance part="U3" gate="G$1" x="-66.04" y="102.87"/>
-<instance part="U18" gate="G$1" x="-175.26" y="97.79"/>
+<instance part="J23" gate="G$1" x="-175.26" y="97.79"/>
 <instance part="GND10" gate="1" x="-161.29" y="80.01"/>
 <instance part="FRAME3" gate="G$1" x="-196.85" y="-137.16"/>
 <instance part="FRAME3" gate="G$2" x="128.27" y="-137.16"/>
@@ -8542,15 +8542,15 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <wire x1="-161.29" y1="92.71" x2="-161.29" y2="95.25" width="0.1524" layer="91"/>
 <wire x1="-161.29" y1="95.25" x2="-161.29" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="-161.29" y1="99.06" x2="-162.56" y2="100.33" width="0.1524" layer="91"/>
-<pinref part="U18" gate="G$1" pin="GND"/>
+<pinref part="J23" gate="G$1" pin="GND"/>
 <wire x1="-162.56" y1="100.33" x2="-165.1" y2="100.33" width="0.1524" layer="91"/>
-<pinref part="U18" gate="G$1" pin="SHLD@1"/>
+<pinref part="J23" gate="G$1" pin="SHLD@1"/>
 <wire x1="-161.29" y1="95.25" x2="-165.1" y2="95.25" width="0.1524" layer="91"/>
-<pinref part="U18" gate="G$1" pin="SHLD@2"/>
+<pinref part="J23" gate="G$1" pin="SHLD@2"/>
 <wire x1="-161.29" y1="92.71" x2="-165.1" y2="92.71" width="0.1524" layer="91"/>
-<pinref part="U18" gate="G$1" pin="SHLD@3"/>
+<pinref part="J23" gate="G$1" pin="SHLD@3"/>
 <wire x1="-161.29" y1="90.17" x2="-165.1" y2="90.17" width="0.1524" layer="91"/>
-<pinref part="U18" gate="G$1" pin="SHLD@4"/>
+<pinref part="J23" gate="G$1" pin="SHLD@4"/>
 <wire x1="-161.29" y1="87.63" x2="-165.1" y2="87.63" width="0.1524" layer="91"/>
 <junction x="-161.29" y="95.25"/>
 <junction x="-161.29" y="92.71"/>
@@ -8792,7 +8792,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <net name="FS_ID" class="0">
 <segment>
 <wire x1="-143.51" y1="101.6" x2="-144.78" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="U18" gate="G$1" pin="ID"/>
+<pinref part="J23" gate="G$1" pin="ID"/>
 <wire x1="-144.78" y1="102.87" x2="-165.1" y2="102.87" width="0.1524" layer="91"/>
 <label x="-160.02" y="102.87" size="1.778" layer="95"/>
 </segment>
@@ -8800,7 +8800,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <net name="FS_DP" class="0">
 <segment>
 <wire x1="-143.51" y1="104.14" x2="-144.78" y2="105.41" width="0.1524" layer="91"/>
-<pinref part="U18" gate="G$1" pin="D+"/>
+<pinref part="J23" gate="G$1" pin="D+"/>
 <wire x1="-144.78" y1="105.41" x2="-165.1" y2="105.41" width="0.1524" layer="91"/>
 <label x="-160.02" y="105.41" size="1.778" layer="95"/>
 </segment>
@@ -8808,7 +8808,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <net name="FS_DM" class="0">
 <segment>
 <wire x1="-143.51" y1="106.68" x2="-144.78" y2="107.95" width="0.1524" layer="91"/>
-<pinref part="U18" gate="G$1" pin="D-"/>
+<pinref part="J23" gate="G$1" pin="D-"/>
 <wire x1="-144.78" y1="107.95" x2="-165.1" y2="107.95" width="0.1524" layer="91"/>
 <label x="-160.02" y="107.95" size="1.778" layer="95"/>
 </segment>
@@ -9101,7 +9101,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <net name="N$41" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
-<pinref part="U18" gate="G$1" pin="VCC"/>
+<pinref part="J23" gate="G$1" pin="VCC"/>
 <wire x1="-149.86" y1="110.49" x2="-165.1" y2="110.49" width="0.1524" layer="91"/>
 </segment>
 </net>
