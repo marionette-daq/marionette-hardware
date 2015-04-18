@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6319,6 +6319,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <part name="GND62" library="GROUND" deviceset="GND" device=""/>
 <part name="GND10" library="GROUND" deviceset="GND" device=""/>
 <part name="C47" library="rcl_custom" deviceset="C-EU" device="0603-C" value="0.1uF, 10V"/>
+<part name="MCO1" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
 </parts>
 <sheets>
 <sheet>
@@ -6368,6 +6369,7 @@ data sheet for application diagram</text>
 <text x="436.88" y="355.6" size="1.778" layer="97">*Verify Rvbus value
 table 5-7 of USB3320
 data sheet</text>
+<wire x1="344.17" y1="87.63" x2="339.09" y2="87.63" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="99.06" y="356.87" rot="MR0">
@@ -6535,6 +6537,9 @@ data sheet</text>
 <instance part="C47" gate="CE" x="406.4" y="67.31" smashed="yes">
 <attribute name="NAME" x="407.924" y="67.691" size="1.778" layer="95"/>
 </instance>
+<instance part="MCO1" gate="G$1" x="168.91" y="351.79" smashed="yes">
+<attribute name="NAME" x="167.005" y="353.695" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -6560,7 +6565,7 @@ data sheet</text>
 <label x="157.48" y="205.74" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
-<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD6,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <wire x1="173.99" y1="318.77" x2="173.99" y2="50.8" width="0.762" layer="92"/>
 <label x="177.8" y="204.47" size="2.54" layer="95" rot="R90"/>
@@ -7163,6 +7168,12 @@ data sheet</text>
 <wire x1="171.45" y1="227.33" x2="107.95" y2="227.33" width="0.1524" layer="91"/>
 <label x="129.54" y="227.33" size="1.778" layer="95" font="vector"/>
 </segment>
+<segment>
+<pinref part="U14" gate="U" pin="XI"/>
+<wire x1="405.13" y1="377.19" x2="405.13" y2="381" width="0.1524" layer="91"/>
+<wire x1="405.13" y1="381" x2="402.59" y2="381" width="0.1524" layer="91"/>
+<label x="402.59" y="381" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="PC15" class="0">
 <segment>
@@ -7442,15 +7453,9 @@ data sheet</text>
 <net name="MCO1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA8"/>
-<wire x1="107.95" y1="351.79" x2="170.18" y2="351.79" width="0.1524" layer="91"/>
+<wire x1="107.95" y1="351.79" x2="168.91" y2="351.79" width="0.1524" layer="91"/>
 <label x="129.54" y="351.79" size="1.778" layer="95"/>
-<label x="170.18" y="351.79" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U14" gate="U" pin="XI"/>
-<wire x1="405.13" y1="377.19" x2="405.13" y2="381" width="0.1524" layer="91"/>
-<wire x1="405.13" y1="381" x2="396.24" y2="381" width="0.1524" layer="91"/>
-<label x="396.24" y="381" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="MCO1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SD_DETECT" class="0">
@@ -7845,6 +7850,20 @@ data sheet</text>
 <junction x="487.68" y="369.57"/>
 </segment>
 </net>
+<net name="PD5" class="0">
+<segment>
+<wire x1="173.99" y1="87.63" x2="171.45" y2="85.09" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$4" pin="PD5"/>
+<wire x1="171.45" y1="85.09" x2="107.95" y2="85.09" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PD7" class="0">
+<segment>
+<wire x1="173.99" y1="77.47" x2="171.45" y2="74.93" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$4" pin="PD7"/>
+<wire x1="171.45" y1="74.93" x2="107.95" y2="74.93" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -8004,7 +8023,7 @@ data sheet</text>
 <label x="191.77" y="124.46" size="2.54" layer="95" rot="R90"/>
 </segment>
 </bus>
-<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD6,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <wire x1="219.71" y1="257.81" x2="199.39" y2="241.3" width="0.762" layer="92"/>
 <wire x1="199.39" y1="241.3" x2="199.39" y2="85.09" width="0.762" layer="92"/>
@@ -8016,7 +8035,7 @@ data sheet</text>
 <label x="223.52" y="270.51" size="2.54" layer="95" font="vector" rot="R90"/>
 </segment>
 <segment>
-<wire x1="445.77" y1="201.93" x2="445.77" y2="347.98" width="0.762" layer="92"/>
+<wire x1="445.77" y1="194.31" x2="445.77" y2="347.98" width="0.762" layer="92"/>
 <wire x1="445.77" y1="347.98" x2="443.23" y2="350.52" width="0.762" layer="92"/>
 <label x="450.85" y="267.97" size="2.54" layer="95" font="vector" rot="R90"/>
 </segment>
@@ -8536,14 +8555,6 @@ data sheet</text>
 <label x="419.1" y="200.66" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="PG8" class="0">
-<segment>
-<pinref part="U1" gate="G$7" pin="PG8"/>
-<wire x1="476.25" y1="195.58" x2="403.86" y2="195.58" width="0.1524" layer="91"/>
-<label x="419.1" y="195.58" size="1.778" layer="95" font="vector"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
-</segment>
-</net>
 <net name="PG9" class="0">
 <segment>
 <pinref part="U1" gate="G$7" pin="PG9"/>
@@ -8886,6 +8897,21 @@ data sheet</text>
 <pinref part="U5" gate="G$1" pin="RS"/>
 <wire x1="313.69" y1="132.08" x2="316.23" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R30" gate="R" pin="2"/>
+</segment>
+</net>
+<net name="PG8" class="0">
+<segment>
+<wire x1="445.77" y1="198.12" x2="443.23" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$7" pin="PG8"/>
+<wire x1="443.23" y1="195.58" x2="403.86" y2="195.58" width="0.1524" layer="91"/>
+<label x="419.1" y="195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PD7" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="476.25" y1="195.58" x2="458.47" y2="195.58" width="0.1524" layer="91"/>
+<label x="458.47" y="195.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -9838,7 +9864,7 @@ data sheet</text>
 </instance>
 </instances>
 <busses>
-<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD6,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <wire x1="15.24" y1="220.98" x2="15.24" y2="250.19" width="0.762" layer="92"/>
 <wire x1="15.24" y1="250.19" x2="17.78" y2="252.73" width="0.762" layer="92"/>
@@ -11038,20 +11064,6 @@ data sheet</text>
 <wire x1="144.78" y1="198.12" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PB14" class="0">
-<segment>
-<wire x1="219.71" y1="242.57" x2="217.17" y2="240.03" width="0.1524" layer="91"/>
-<pinref part="J14" gate="G$1" pin="6"/>
-<wire x1="217.17" y1="240.03" x2="182.88" y2="240.03" width="0.1524" layer="91"/>
-<label x="207.01" y="240.03" size="1.778" layer="95"/>
-<wire x1="182.88" y1="240.03" x2="177.8" y2="240.03" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="189.23" x2="182.88" y2="240.03" width="0.1524" layer="91"/>
-<junction x="182.88" y="240.03"/>
-<wire x1="182.88" y1="189.23" x2="181.61" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="D17" gate="G$1" pin="I/O8"/>
-<wire x1="181.61" y1="187.96" x2="139.7" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PB15" class="0">
 <segment>
 <wire x1="219.71" y1="240.03" x2="217.17" y2="237.49" width="0.1524" layer="91"/>
@@ -11246,6 +11258,20 @@ data sheet</text>
 <wire x1="157.48" y1="130.81" x2="156.21" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="D21" gate="G$1" pin="I/O8"/>
 <wire x1="156.21" y1="129.54" x2="139.7" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PG8" class="0">
+<segment>
+<wire x1="219.71" y1="242.57" x2="217.17" y2="240.03" width="0.1524" layer="91"/>
+<pinref part="J14" gate="G$1" pin="6"/>
+<wire x1="217.17" y1="240.03" x2="182.88" y2="240.03" width="0.1524" layer="91"/>
+<label x="207.01" y="240.03" size="1.778" layer="95"/>
+<wire x1="182.88" y1="240.03" x2="177.8" y2="240.03" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="189.23" x2="182.88" y2="240.03" width="0.1524" layer="91"/>
+<junction x="182.88" y="240.03"/>
+<wire x1="182.88" y1="189.23" x2="181.61" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="D17" gate="G$1" pin="I/O8"/>
+<wire x1="181.61" y1="187.96" x2="139.7" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
