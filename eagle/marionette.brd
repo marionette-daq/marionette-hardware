@@ -4286,7 +4286,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="64.516" y="54.356" extent="1-16" drill="0.254"/>
 <wire x1="22.352" y1="57.912" x2="23.553984375" y2="57.8530125" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="SDIO_CK">
+<signal name="SDIO_CK-SPI3_MOSI">
 <contactref element="U1" pad="141"/>
 <contactref element="U13" pad="P5"/>
 <via x="48.768" y="68.453" extent="1-16" drill="0.254"/>
@@ -4337,7 +4337,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="94.869" y1="47.244" x2="102.87" y2="55.245" width="0.127" layer="16"/>
 <wire x1="102.87" y1="55.245" x2="112.522" y2="55.245" width="0.127" layer="16"/>
 </signal>
-<signal name="SDIO_D2">
+<signal name="SDIO_D2-SPI3_SCK">
 <contactref element="U1" pad="139"/>
 <contactref element="U13" pad="P1"/>
 <via x="49.53" y="69.088" extent="1-16" drill="0.254"/>

@@ -6601,7 +6601,7 @@ data sheet</text>
 <label x="167.64" y="388.62" size="2.54" layer="95" font="vector" rot="R90"/>
 </segment>
 </bus>
-<bus name="SDIO_BUS:SDIO_CMD,SDIO_CK,SDIO_D3,SDIO_D2,SDIO_D1,SDIO_D0">
+<bus name="SDIO_BUS:SDIO_CMD,SDIO_CK-SPI3_MOSI,SDIO_D3,SDIO_D2-SPI3_SCK,SDIO_D1,SDIO_D0">
 <segment>
 <wire x1="340.36" y1="196.85" x2="340.36" y2="172.72" width="0.762" layer="92"/>
 <wire x1="340.36" y1="172.72" x2="337.82" y2="170.18" width="0.762" layer="92"/>
@@ -6987,7 +6987,7 @@ data sheet</text>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="SDIO_CK" class="0">
+<net name="SDIO_CK-SPI3_MOSI" class="0">
 <segment>
 <pinref part="U1" gate="G$3" pin="PC12"/>
 <wire x1="107.95" y1="143.51" x2="179.07" y2="143.51" width="0.1524" layer="91"/>
@@ -6998,7 +6998,7 @@ data sheet</text>
 <wire x1="340.36" y1="191.77" x2="342.9" y2="189.23" width="0.1524" layer="91"/>
 <pinref part="U13" gate="$" pin="5"/>
 <wire x1="342.9" y1="189.23" x2="392.43" y2="189.23" width="0.1524" layer="91"/>
-<label x="374.65" y="189.23" size="1.778" layer="95" font="vector"/>
+<label x="365.76" y="189.23" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
 <wire x1="314.96" y1="87.63" x2="317.5" y2="85.09" width="0.1524" layer="91"/>
@@ -7007,6 +7007,7 @@ data sheet</text>
 <pinref part="U6" gate="G$1" pin="DIN"/>
 <wire x1="341.63" y1="85.09" x2="407.67" y2="85.09" width="0.1524" layer="91"/>
 <junction x="341.63" y="85.09"/>
+<label x="354.33" y="85.09" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_D3" class="0">
@@ -7027,7 +7028,7 @@ data sheet</text>
 <junction x="373.38" y="186.69"/>
 </segment>
 </net>
-<net name="SDIO_D2" class="0">
+<net name="SDIO_D2-SPI3_SCK" class="0">
 <segment>
 <pinref part="U1" gate="G$3" pin="PC10"/>
 <wire x1="107.95" y1="153.67" x2="179.07" y2="153.67" width="0.1524" layer="91"/>
@@ -7038,7 +7039,7 @@ data sheet</text>
 <wire x1="340.36" y1="184.15" x2="342.9" y2="181.61" width="0.1524" layer="91"/>
 <pinref part="U13" gate="$" pin="1"/>
 <wire x1="342.9" y1="181.61" x2="365.76" y2="181.61" width="0.1524" layer="91"/>
-<label x="384.81" y="184.15" size="1.778" layer="95" font="vector" rot="R180"/>
+<label x="365.76" y="181.61" size="1.778" layer="95" font="vector"/>
 <pinref part="R10" gate="R" pin="1"/>
 <wire x1="365.76" y1="181.61" x2="392.43" y2="181.61" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="204.47" x2="365.76" y2="181.61" width="0.1524" layer="91"/>
@@ -7051,6 +7052,7 @@ data sheet</text>
 <pinref part="U6" gate="G$1" pin="SCLK"/>
 <wire x1="341.63" y1="82.55" x2="407.67" y2="82.55" width="0.1524" layer="91"/>
 <junction x="341.63" y="82.55"/>
+<label x="354.33" y="82.55" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_D1" class="0">
