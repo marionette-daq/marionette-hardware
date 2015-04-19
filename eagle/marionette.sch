@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6062,7 +6062,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <part name="FRAME1" library="frames" deviceset="FRAME_C_L" device=""/>
 <part name="FRAME2" library="frames" deviceset="FRAME_C_L" device=""/>
 <part name="FRAME3" library="frames" deviceset="FRAME_B_L" device="" value="Supply"/>
-<part name="U15" library="PTS645" deviceset="PTS645" device=""/>
+<part name="S1" library="PTS645" deviceset="PTS645" device=""/>
 <part name="C31" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100nF, 10V"/>
 <part name="GND9" library="GROUND" deviceset="GND" device=""/>
 <part name="LED1" library="led-rgb-rohm" deviceset="LED_RGB_COMMON_ANODE-*" device="1.6X1.26"/>
@@ -6116,7 +6116,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <part name="C41" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1uF, 10V"/>
 <part name="GND27" library="GROUND" deviceset="GND" device=""/>
 <part name="Q1" library="BSS84" deviceset="BSS84" device=""/>
-<part name="C42" library="rcl_custom" deviceset="C-EU" device="0603-C" value="10pF"/>
+<part name="C42" library="rcl_custom" deviceset="C-EU" device="0402-C" value="10pF"/>
 <part name="C43" library="rcl_custom" deviceset="C-EU" device="0603-C" value="0.1uF"/>
 <part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-C" value="100"/>
 <part name="R20" library="rcl_custom" deviceset="R-US_" device="0603-C" value="60k"/>
@@ -6302,7 +6302,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <part name="D28" library="ESD8008MUT" deviceset="ESD8008" device=""/>
 <part name="GND53" library="GROUND" deviceset="GND" device=""/>
 <part name="U$39" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>
-<part name="U11" library="PTS645" deviceset="PTS645" device=""/>
+<part name="S2" library="PTS645" deviceset="PTS645" device=""/>
 <part name="C83" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100nF, 10V"/>
 <part name="GND54" library="GROUND" deviceset="GND" device=""/>
 <part name="SCL" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
@@ -6318,7 +6318,7 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <part name="C86" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100nF, 10V"/>
 <part name="GND62" library="GROUND" deviceset="GND" device=""/>
 <part name="GND10" library="GROUND" deviceset="GND" device=""/>
-<part name="C47" library="rcl_custom" deviceset="C-EU" device="0603-C" value="0.1uF, 10V"/>
+<part name="C47" library="rcl_custom" deviceset="C-EU" device="0603-C" value="0.1uF, 10V Low ESR"/>
 <part name="MCO1" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
 </parts>
 <sheets>
@@ -9033,7 +9033,7 @@ data sheet</text>
 <instance part="U3" gate="G$1" x="130.81" y="240.03"/>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="FRAME3" gate="G$2" x="325.12" y="0"/>
-<instance part="U15" gate="G$1" x="93.98" y="106.68" rot="R90"/>
+<instance part="S1" gate="G$1" x="93.98" y="106.68" rot="R90"/>
 <instance part="C31" gate="CE" x="99.06" y="107.95" smashed="yes">
 <attribute name="NAME" x="105.156" y="110.109" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -9080,7 +9080,7 @@ data sheet</text>
 <instance part="U$37" gate="3.3VDD" x="171.45" y="107.95" smashed="yes">
 <attribute name="VALUE" x="173.99" y="107.95" size="1.778" layer="96"/>
 </instance>
-<instance part="U11" gate="G$1" x="93.98" y="59.69" rot="R90"/>
+<instance part="S2" gate="G$1" x="93.98" y="59.69" rot="R90"/>
 <instance part="C83" gate="CE" x="100.33" y="60.96" smashed="yes">
 <attribute name="NAME" x="106.426" y="63.119" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -9265,7 +9265,7 @@ data sheet</text>
 <segment>
 <wire x1="96.52" y1="100.33" x2="96.52" y2="97.79" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<pinref part="U15" gate="G$1" pin="P$1"/>
+<pinref part="S1" gate="G$1" pin="P$1"/>
 <wire x1="93.98" y1="102.87" x2="93.98" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="C31" gate="CE" pin="2"/>
 <wire x1="99.06" y1="102.87" x2="99.06" y2="100.33" width="0.1524" layer="91"/>
@@ -9351,7 +9351,7 @@ data sheet</text>
 <pinref part="C83" gate="CE" pin="2"/>
 <wire x1="100.33" y1="55.88" x2="100.33" y2="52.07" width="0.1524" layer="91"/>
 <wire x1="100.33" y1="52.07" x2="96.52" y2="52.07" width="0.1524" layer="91"/>
-<pinref part="U11" gate="G$1" pin="P$1"/>
+<pinref part="S2" gate="G$1" pin="P$1"/>
 <wire x1="96.52" y1="52.07" x2="93.98" y2="52.07" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="52.07" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="52.07" x2="96.52" y2="49.53" width="0.1524" layer="91"/>
@@ -9500,7 +9500,7 @@ data sheet</text>
 <junction x="134.62" y="118.11"/>
 <wire x1="99.06" y1="118.11" x2="96.52" y2="118.11" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="118.11" x2="93.98" y2="115.57" width="0.1524" layer="91"/>
-<pinref part="U15" gate="G$1" pin="P$2"/>
+<pinref part="S1" gate="G$1" pin="P$2"/>
 <wire x1="93.98" y1="115.57" x2="93.98" y2="110.49" width="0.1524" layer="91"/>
 <pinref part="C31" gate="CE" pin="1"/>
 <wire x1="99.06" y1="118.11" x2="99.06" y2="110.49" width="0.1524" layer="91"/>
@@ -9538,7 +9538,7 @@ data sheet</text>
 <label x="71.12" y="67.31" size="1.778" layer="95"/>
 <label x="156.21" y="113.03" size="1.778" layer="95"/>
 <pinref part="J4" gate="1" pin="3"/>
-<pinref part="U11" gate="G$1" pin="P$2"/>
+<pinref part="S2" gate="G$1" pin="P$2"/>
 <wire x1="93.98" y1="63.5" x2="93.98" y2="67.31" width="0.1524" layer="91"/>
 <pinref part="C83" gate="CE" pin="1"/>
 <wire x1="100.33" y1="63.5" x2="100.33" y2="67.31" width="0.1524" layer="91"/>
