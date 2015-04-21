@@ -6302,7 +6302,6 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <part name="D28" library="ESD8008MUT" deviceset="ESD8008" device=""/>
 <part name="GND53" library="GROUND" deviceset="GND" device=""/>
 <part name="S2" library="PTS645" deviceset="PTS645" device=""/>
-<part name="C83" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100nF, 10V"/>
 <part name="GND54" library="GROUND" deviceset="GND" device=""/>
 <part name="SCL" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
 <part name="SDA" library="Tova" deviceset="TEST-POINT" device="10MIL-TEST-POINT"/>
@@ -6310,7 +6309,6 @@ http://www.atmel.com/Images/Atmel-8896-SEEPROM-AT24C04D-Datasheet.pdf</descripti
 <part name="GND57" library="GROUND" deviceset="GND" device=""/>
 <part name="C84" library="rcl_custom" deviceset="C-EU" device="0603-C" value="NP"/>
 <part name="R37" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
-<part name="U$1" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>
 <part name="U14" library="USB3320" deviceset="USB_PHY-SMSC-USB3320" device="-QFN32-5X5" value="USB3320"/>
 <part name="GND58" library="GROUND" deviceset="GND" device=""/>
 <part name="C85" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100nF, 10V"/>
@@ -9086,12 +9084,8 @@ data sheet</text>
 <attribute name="VALUE" x="173.99" y="107.95" size="1.778" layer="96"/>
 </instance>
 <instance part="S2" gate="G$1" x="93.98" y="59.69" rot="R90"/>
-<instance part="C83" gate="CE" x="100.33" y="60.96" smashed="yes">
-<attribute name="NAME" x="106.426" y="63.119" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="GND54" gate="1" x="96.52" y="46.99"/>
-<instance part="R37" gate="R" x="85.09" y="76.2" rot="R90"/>
-<instance part="U$1" gate="3.3VDD" x="85.09" y="86.36"/>
+<instance part="GND54" gate="1" x="93.98" y="34.29"/>
+<instance part="R37" gate="R" x="93.98" y="46.99" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -9353,15 +9347,9 @@ data sheet</text>
 <pinref part="GND33" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C83" gate="CE" pin="2"/>
-<wire x1="100.33" y1="55.88" x2="100.33" y2="52.07" width="0.1524" layer="91"/>
-<wire x1="100.33" y1="52.07" x2="96.52" y2="52.07" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="P$1"/>
-<wire x1="96.52" y1="52.07" x2="93.98" y2="52.07" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="52.07" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="52.07" x2="96.52" y2="49.53" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="41.91" x2="93.98" y2="36.83" width="0.1524" layer="91"/>
 <pinref part="GND54" gate="1" pin="GND"/>
-<junction x="96.52" y="52.07"/>
+<pinref part="R37" gate="R" pin="1"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -9531,10 +9519,8 @@ data sheet</text>
 </net>
 <net name="BOOT0" class="0">
 <segment>
-<wire x1="64.77" y1="67.31" x2="85.09" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="85.09" y1="67.31" x2="93.98" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="67.31" x2="100.33" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="100.33" y1="67.31" x2="109.22" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="67.31" x2="93.98" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="67.31" x2="109.22" y2="67.31" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="67.31" x2="111.76" y2="69.85" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="69.85" x2="111.76" y2="110.49" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="110.49" x2="114.3" y2="113.03" width="0.1524" layer="91"/>
@@ -9545,13 +9531,7 @@ data sheet</text>
 <pinref part="J4" gate="1" pin="3"/>
 <pinref part="S2" gate="G$1" pin="P$2"/>
 <wire x1="93.98" y1="63.5" x2="93.98" y2="67.31" width="0.1524" layer="91"/>
-<pinref part="C83" gate="CE" pin="1"/>
-<wire x1="100.33" y1="63.5" x2="100.33" y2="67.31" width="0.1524" layer="91"/>
 <junction x="93.98" y="67.31"/>
-<junction x="100.33" y="67.31"/>
-<pinref part="R37" gate="R" pin="1"/>
-<wire x1="85.09" y1="67.31" x2="85.09" y2="71.12" width="0.1524" layer="91"/>
-<junction x="85.09" y="67.31"/>
 </segment>
 </net>
 <net name="BOOT1" class="0">
@@ -9739,11 +9719,6 @@ data sheet</text>
 <pinref part="U$37" gate="3.3VDD" pin="3.3VDD"/>
 <wire x1="171.45" y1="104.14" x2="171.45" y2="105.41" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R37" gate="R" pin="2"/>
-<pinref part="U$1" gate="3.3VDD" pin="3.3VDD"/>
-<wire x1="85.09" y1="81.28" x2="85.09" y2="83.82" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -9760,6 +9735,13 @@ data sheet</text>
 <pinref part="D13" gate="G$1" pin="A"/>
 <wire x1="41.91" y1="162.56" x2="46.99" y2="162.56" width="0.1524" layer="91"/>
 <junction x="41.91" y="162.56"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="P$1"/>
+<wire x1="93.98" y1="52.07" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R37" gate="R" pin="2"/>
 </segment>
 </net>
 </nets>
