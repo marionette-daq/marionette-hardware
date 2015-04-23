@@ -165,21 +165,21 @@ package type OT</description>
 </packages>
 <symbols>
 <symbol name="LM3671">
-<pin name="VIN" x="-10.16" y="17.78" length="middle"/>
-<pin name="GND" x="2.54" y="-5.08" length="middle" rot="R90"/>
-<pin name="EN" x="-10.16" y="7.62" length="middle"/>
-<pin name="SW" x="15.24" y="17.78" length="middle" rot="R180"/>
-<pin name="FB" x="15.24" y="7.62" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="20.32" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
-<text x="-2.54" y="21.59" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.54" y="24.13" size="1.778" layer="104">&gt;NAME</text>
+<pin name="VIN" x="-12.7" y="7.62" length="middle"/>
+<pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="EN" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SW" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="FB" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-5.08" y="11.43" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="13.97" size="1.778" layer="104">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LM3671">
+<deviceset name="LM3671" prefix="U">
 <description>&lt;b&gt;LM3671&lt;\b&gt; - 2MHz 600mA Step Down DC-DC converter&lt;br&gt;&lt;br&gt;
 
 Data sheet:&lt;br&gt;
