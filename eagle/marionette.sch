@@ -6626,6 +6626,7 @@ http://www.ti.com/lit/ds/symlink/lm3671.pdf</description>
 </parts>
 <sheets>
 <sheet>
+<description>STM-1</description>
 <plain>
 <text x="217.17" y="49.53" size="1.778" layer="97">2mA</text>
 <wire x1="189.23" y1="153.67" x2="189.23" y2="120.65" width="1.016" layer="94"/>
@@ -8181,6 +8182,7 @@ data sheet</text>
 </nets>
 </sheet>
 <sheet>
+<description>STM - 2</description>
 <plain>
 <text x="300.99" y="114.3" size="1.778" layer="97">*RS pulled low for HS operation</text>
 <wire x1="285.75" y1="223.52" x2="285.75" y2="266.7" width="1.016" layer="94"/>
