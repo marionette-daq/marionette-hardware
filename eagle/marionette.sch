@@ -6497,81 +6497,81 @@ http://www.st.com/web/en/resource/technical/document/datasheet/CD00002190.pdf</d
 <part name="D17" library="ESD8008MUT" deviceset="ESD8008" device=""/>
 <part name="D18" library="ESD8008MUT" deviceset="ESD8008" device=""/>
 <part name="D19" library="ESD8008MUT" deviceset="ESD8008" device=""/>
-<part name="R31" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R32" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C49" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C50" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R31" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R32" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C49" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C50" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND35" library="GROUND" deviceset="GND" device=""/>
-<part name="R33" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R34" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C51" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C52" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R33" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R34" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C51" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C52" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND36" library="GROUND" deviceset="GND" device=""/>
-<part name="R35" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R36" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C53" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C54" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R35" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R36" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C53" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C54" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND37" library="GROUND" deviceset="GND" device=""/>
 <part name="GND38" library="GROUND" deviceset="GND" device=""/>
-<part name="R39" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R40" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C57" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C58" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R39" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R40" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C57" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C58" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND39" library="GROUND" deviceset="GND" device=""/>
-<part name="R41" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R42" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C59" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C60" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R41" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R42" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C59" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C60" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND40" library="GROUND" deviceset="GND" device=""/>
-<part name="R43" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R44" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C61" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C62" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R43" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R44" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C61" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C62" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND41" library="GROUND" deviceset="GND" device=""/>
-<part name="R45" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R46" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C63" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C64" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R45" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R46" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C63" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C64" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND42" library="GROUND" deviceset="GND" device=""/>
-<part name="R47" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R48" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C65" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C66" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R47" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R48" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C65" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C66" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND43" library="GROUND" deviceset="GND" device=""/>
-<part name="R49" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R50" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C67" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C68" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R49" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R50" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C67" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C68" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND44" library="GROUND" deviceset="GND" device=""/>
-<part name="R51" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R52" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C69" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C70" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R51" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R52" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C69" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C70" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND45" library="GROUND" deviceset="GND" device=""/>
-<part name="R53" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R54" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C71" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C72" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R53" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R54" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C71" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C72" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND46" library="GROUND" deviceset="GND" device=""/>
-<part name="R55" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R56" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C73" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C74" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R55" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R56" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C73" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C74" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND47" library="GROUND" deviceset="GND" device=""/>
-<part name="R57" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R58" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C75" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C76" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R57" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R58" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C75" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C76" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND48" library="GROUND" deviceset="GND" device=""/>
-<part name="R59" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R60" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C77" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C78" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R59" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R60" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C77" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C78" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND49" library="GROUND" deviceset="GND" device=""/>
-<part name="R61" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="R62" library="rcl_custom" deviceset="R-US_" device="0603-C"/>
-<part name="C79" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
-<part name="C80" library="rcl_custom" deviceset="C-EU" device="0603-C"/>
+<part name="R61" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="R62" library="rcl_custom" deviceset="R-US_" device="0603-C" value="7.5k"/>
+<part name="C79" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
+<part name="C80" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1nF"/>
 <part name="GND50" library="GROUND" deviceset="GND" device=""/>
 <part name="FRAME5" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="C55" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1uF"/>
@@ -11586,123 +11586,168 @@ data sheet</text>
 <instance part="U10" gate="G$5" x="201.93" y="99.06"/>
 <instance part="R31" gate="R" x="143.51" y="193.04" rot="MR0"/>
 <instance part="R32" gate="R" x="130.81" y="193.04" rot="MR0"/>
-<instance part="C49" gate="CE" x="137.16" y="199.39" rot="MR0"/>
+<instance part="C49" gate="CE" x="137.16" y="199.39" smashed="yes" rot="MR0">
+<attribute name="NAME" x="136.906" y="199.771" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="143.256" y="199.771" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="C50" gate="CE" x="124.46" y="189.23" smashed="yes" rot="MR0">
-<attribute name="NAME" x="122.936" y="184.531" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="122.936" y="184.531" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="124.206" y="184.531" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="130.556" y="184.531" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND35" gate="1" x="124.46" y="180.34" rot="MR0"/>
 <instance part="R33" gate="R" x="302.26" y="212.09"/>
 <instance part="R34" gate="R" x="314.96" y="212.09"/>
-<instance part="C51" gate="CE" x="308.61" y="218.44"/>
+<instance part="C51" gate="CE" x="308.61" y="218.44" smashed="yes">
+<attribute name="NAME" x="310.134" y="218.821" size="1.778" layer="95"/>
+<attribute name="VALUE" x="303.784" y="218.821" size="1.778" layer="96"/>
+</instance>
 <instance part="C52" gate="CE" x="321.31" y="208.28" smashed="yes">
 <attribute name="NAME" x="322.834" y="203.581" size="1.778" layer="95"/>
-<attribute name="VALUE" x="322.834" y="203.581" size="1.778" layer="96"/>
+<attribute name="VALUE" x="316.484" y="203.581" size="1.778" layer="96"/>
 </instance>
 <instance part="GND36" gate="1" x="321.31" y="199.39"/>
 <instance part="R35" gate="R" x="114.3" y="212.09" rot="MR0"/>
 <instance part="R36" gate="R" x="101.6" y="212.09" rot="MR0"/>
-<instance part="C53" gate="CE" x="107.95" y="218.44" rot="MR0"/>
+<instance part="C53" gate="CE" x="107.95" y="218.44" smashed="yes" rot="MR0">
+<attribute name="NAME" x="107.696" y="218.821" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="114.046" y="218.821" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="C54" gate="CE" x="95.25" y="208.28" smashed="yes" rot="MR0">
-<attribute name="NAME" x="93.726" y="203.581" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="93.726" y="203.581" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="94.996" y="203.581" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="101.346" y="203.581" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND37" gate="1" x="95.25" y="199.39" rot="MR0"/>
 <instance part="GND38" gate="1" x="208.28" y="87.63"/>
 <instance part="R39" gate="R" x="304.8" y="110.49"/>
 <instance part="R40" gate="R" x="317.5" y="110.49"/>
-<instance part="C57" gate="CE" x="311.15" y="116.84"/>
+<instance part="C57" gate="CE" x="311.15" y="116.84" smashed="yes">
+<attribute name="NAME" x="312.674" y="117.221" size="1.778" layer="95"/>
+<attribute name="VALUE" x="306.324" y="117.221" size="1.778" layer="96"/>
+</instance>
 <instance part="C58" gate="CE" x="323.85" y="106.68" smashed="yes">
 <attribute name="NAME" x="325.374" y="101.981" size="1.778" layer="95"/>
-<attribute name="VALUE" x="325.374" y="101.981" size="1.778" layer="96"/>
+<attribute name="VALUE" x="319.024" y="101.981" size="1.778" layer="96"/>
 </instance>
 <instance part="GND39" gate="1" x="323.85" y="97.79"/>
 <instance part="R41" gate="R" x="111.76" y="110.49" rot="MR0"/>
 <instance part="R42" gate="R" x="99.06" y="110.49" rot="MR0"/>
-<instance part="C59" gate="CE" x="105.41" y="116.84" rot="MR0"/>
+<instance part="C59" gate="CE" x="105.41" y="116.84" smashed="yes" rot="MR0">
+<attribute name="NAME" x="105.156" y="117.221" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="111.506" y="117.221" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="C60" gate="CE" x="92.71" y="106.68" smashed="yes" rot="MR0">
-<attribute name="NAME" x="91.186" y="101.981" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="91.186" y="101.981" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="92.456" y="101.981" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="98.806" y="101.981" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND40" gate="1" x="92.71" y="97.79" rot="MR0"/>
 <instance part="R43" gate="R" x="274.32" y="128.27"/>
 <instance part="R44" gate="R" x="287.02" y="128.27"/>
-<instance part="C61" gate="CE" x="280.67" y="134.62"/>
+<instance part="C61" gate="CE" x="280.67" y="134.62" smashed="yes">
+<attribute name="NAME" x="282.194" y="135.001" size="1.778" layer="95"/>
+<attribute name="VALUE" x="275.844" y="135.001" size="1.778" layer="96"/>
+</instance>
 <instance part="C62" gate="CE" x="293.37" y="124.46" smashed="yes">
 <attribute name="NAME" x="294.894" y="119.761" size="1.778" layer="95"/>
-<attribute name="VALUE" x="294.894" y="119.761" size="1.778" layer="96"/>
+<attribute name="VALUE" x="288.544" y="119.761" size="1.778" layer="96"/>
 </instance>
 <instance part="GND41" gate="1" x="293.37" y="115.57"/>
 <instance part="R45" gate="R" x="142.24" y="128.27" rot="MR0"/>
 <instance part="R46" gate="R" x="129.54" y="128.27" rot="MR0"/>
-<instance part="C63" gate="CE" x="135.89" y="134.62" rot="MR0"/>
+<instance part="C63" gate="CE" x="135.89" y="134.62" smashed="yes" rot="MR0">
+<attribute name="NAME" x="135.636" y="135.001" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="141.986" y="135.001" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="C64" gate="CE" x="123.19" y="124.46" smashed="yes" rot="MR0">
-<attribute name="NAME" x="121.666" y="119.761" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="121.666" y="119.761" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="122.936" y="119.761" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="129.286" y="119.761" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND42" gate="1" x="123.19" y="115.57" rot="MR0"/>
 <instance part="R47" gate="R" x="85.09" y="231.14" rot="MR0"/>
 <instance part="R48" gate="R" x="72.39" y="231.14" rot="MR0"/>
-<instance part="C65" gate="CE" x="78.74" y="237.49" rot="MR0"/>
+<instance part="C65" gate="CE" x="78.74" y="237.49" smashed="yes" rot="MR0">
+<attribute name="NAME" x="78.486" y="237.871" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="84.836" y="237.871" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="C66" gate="CE" x="66.04" y="227.33" smashed="yes" rot="MR0">
-<attribute name="NAME" x="64.516" y="222.631" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="64.516" y="222.631" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="65.786" y="222.631" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="72.136" y="222.631" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND43" gate="1" x="66.04" y="218.44" rot="MR0"/>
 <instance part="R49" gate="R" x="331.47" y="231.14"/>
 <instance part="R50" gate="R" x="344.17" y="231.14"/>
-<instance part="C67" gate="CE" x="337.82" y="237.49"/>
+<instance part="C67" gate="CE" x="337.82" y="237.49" smashed="yes">
+<attribute name="NAME" x="339.344" y="237.871" size="1.778" layer="95"/>
+<attribute name="VALUE" x="332.994" y="237.871" size="1.778" layer="96"/>
+</instance>
 <instance part="C68" gate="CE" x="350.52" y="227.33" smashed="yes">
 <attribute name="NAME" x="352.044" y="222.631" size="1.778" layer="95"/>
-<attribute name="VALUE" x="352.044" y="222.631" size="1.778" layer="96"/>
+<attribute name="VALUE" x="345.694" y="222.631" size="1.778" layer="96"/>
 </instance>
 <instance part="GND44" gate="1" x="350.52" y="218.44"/>
 <instance part="R51" gate="R" x="273.05" y="193.04"/>
 <instance part="R52" gate="R" x="285.75" y="193.04"/>
-<instance part="C69" gate="CE" x="279.4" y="199.39"/>
+<instance part="C69" gate="CE" x="279.4" y="199.39" smashed="yes">
+<attribute name="NAME" x="280.924" y="199.771" size="1.778" layer="95"/>
+<attribute name="VALUE" x="274.574" y="199.771" size="1.778" layer="96"/>
+</instance>
 <instance part="C70" gate="CE" x="292.1" y="189.23" smashed="yes">
 <attribute name="NAME" x="293.624" y="184.531" size="1.778" layer="95"/>
-<attribute name="VALUE" x="293.624" y="184.531" size="1.778" layer="96"/>
+<attribute name="VALUE" x="287.274" y="184.531" size="1.778" layer="96"/>
 </instance>
 <instance part="GND45" gate="1" x="292.1" y="180.34"/>
 <instance part="R53" gate="R" x="172.72" y="173.99" rot="MR0"/>
 <instance part="R54" gate="R" x="160.02" y="173.99" rot="MR0"/>
-<instance part="C71" gate="CE" x="166.37" y="180.34" rot="MR0"/>
+<instance part="C71" gate="CE" x="166.37" y="180.34" smashed="yes" rot="MR0">
+<attribute name="NAME" x="166.116" y="180.721" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="172.466" y="180.721" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="C72" gate="CE" x="153.67" y="170.18" smashed="yes" rot="MR0">
-<attribute name="NAME" x="152.146" y="165.481" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="152.146" y="165.481" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="153.416" y="165.481" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="159.766" y="165.481" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND46" gate="1" x="153.67" y="161.29" rot="MR0"/>
 <instance part="R55" gate="R" x="335.28" y="92.71"/>
 <instance part="R56" gate="R" x="347.98" y="92.71"/>
-<instance part="C73" gate="CE" x="341.63" y="99.06"/>
+<instance part="C73" gate="CE" x="341.63" y="99.06" smashed="yes">
+<attribute name="NAME" x="343.154" y="99.441" size="1.778" layer="95"/>
+<attribute name="VALUE" x="336.804" y="99.441" size="1.778" layer="96"/>
+</instance>
 <instance part="C74" gate="CE" x="354.33" y="88.9" smashed="yes">
 <attribute name="NAME" x="355.854" y="84.201" size="1.778" layer="95"/>
-<attribute name="VALUE" x="355.854" y="84.201" size="1.778" layer="96"/>
+<attribute name="VALUE" x="349.504" y="84.201" size="1.778" layer="96"/>
 </instance>
 <instance part="GND47" gate="1" x="354.33" y="80.01"/>
 <instance part="R57" gate="R" x="81.28" y="92.71" rot="MR0"/>
 <instance part="R58" gate="R" x="68.58" y="92.71" rot="MR0"/>
-<instance part="C75" gate="CE" x="74.93" y="99.06" rot="MR0"/>
+<instance part="C75" gate="CE" x="74.93" y="99.06" smashed="yes" rot="MR0">
+<attribute name="NAME" x="74.676" y="99.441" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="81.026" y="99.441" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="C76" gate="CE" x="62.23" y="88.9" smashed="yes" rot="MR0">
-<attribute name="NAME" x="60.706" y="84.201" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="60.706" y="84.201" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="61.976" y="84.201" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="68.326" y="84.201" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND48" gate="1" x="62.23" y="80.01" rot="MR0"/>
 <instance part="R59" gate="R" x="243.84" y="146.05"/>
 <instance part="R60" gate="R" x="256.54" y="146.05"/>
-<instance part="C77" gate="CE" x="250.19" y="152.4"/>
+<instance part="C77" gate="CE" x="250.19" y="152.4" smashed="yes">
+<attribute name="NAME" x="251.714" y="152.781" size="1.778" layer="95"/>
+<attribute name="VALUE" x="245.364" y="152.781" size="1.778" layer="96"/>
+</instance>
 <instance part="C78" gate="CE" x="262.89" y="142.24" smashed="yes">
 <attribute name="NAME" x="264.414" y="137.541" size="1.778" layer="95"/>
-<attribute name="VALUE" x="264.414" y="137.541" size="1.778" layer="96"/>
+<attribute name="VALUE" x="258.064" y="137.541" size="1.778" layer="96"/>
 </instance>
 <instance part="GND49" gate="1" x="262.89" y="133.35"/>
 <instance part="R61" gate="R" x="172.72" y="146.05" rot="MR0"/>
 <instance part="R62" gate="R" x="160.02" y="146.05" rot="MR0"/>
-<instance part="C79" gate="CE" x="166.37" y="152.4" rot="MR0"/>
+<instance part="C79" gate="CE" x="166.37" y="152.4" smashed="yes" rot="MR0">
+<attribute name="NAME" x="166.116" y="152.781" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="172.466" y="152.781" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="C80" gate="CE" x="153.67" y="142.24" smashed="yes" rot="MR0">
-<attribute name="NAME" x="152.146" y="137.541" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="152.146" y="137.541" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="153.416" y="137.541" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="159.766" y="137.541" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND50" gate="1" x="153.67" y="133.35" rot="MR0"/>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>

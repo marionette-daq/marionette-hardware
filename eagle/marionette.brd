@@ -2991,302 +2991,302 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D19" library="ESD8008MUT" package="UFDFN-14" value="ESD8008" x="104.394" y="9.525" smashed="yes">
 <attribute name="NAME" x="108.151" y="8.648" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="R31" library="rcl_custom" package=".0603-C" value="" x="79.375" y="24.13" smashed="yes" rot="R180">
+<element name="R31" library="rcl_custom" package=".0603-C" value="7.5k" x="79.375" y="24.13" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="24.245" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="25.68" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="24.13" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R32" library="rcl_custom" package=".0603-C" value="" x="79.375" y="21.59" smashed="yes">
+<element name="R32" library="rcl_custom" package=".0603-C" value="7.5k" x="79.375" y="21.59" smashed="yes">
 <attribute name="NAME" x="76.597" y="21.705" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="78.375" y="20.04" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="79.375" y="21.59" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C49" library="rcl_custom" package=".0603-C" value="" x="79.375" y="22.86" smashed="yes" rot="R180">
+<element name="C49" library="rcl_custom" package=".0603-C" value="1nF" x="79.375" y="22.86" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="22.975" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="24.41" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="22.86" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C50" library="rcl_custom" package=".0603-C" value="" x="79.375" y="20.32" smashed="yes" rot="R180">
+<element name="C50" library="rcl_custom" package=".0603-C" value="1nF" x="79.375" y="20.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="20.435" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="21.87" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="20.32" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R33" library="rcl_custom" package=".0603-C" value="" x="79.375" y="15.24" smashed="yes" rot="R180">
+<element name="R33" library="rcl_custom" package=".0603-C" value="7.5k" x="79.375" y="15.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="15.355" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="16.79" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="15.24" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R34" library="rcl_custom" package=".0603-C" value="" x="79.375" y="17.78" smashed="yes">
+<element name="R34" library="rcl_custom" package=".0603-C" value="7.5k" x="79.375" y="17.78" smashed="yes">
 <attribute name="NAME" x="76.597" y="17.895" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="78.375" y="16.23" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="79.375" y="17.78" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C51" library="rcl_custom" package=".0603-C" value="" x="79.375" y="16.51" smashed="yes" rot="R180">
+<element name="C51" library="rcl_custom" package=".0603-C" value="1nF" x="79.375" y="16.51" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="16.625" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="18.06" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="16.51" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C52" library="rcl_custom" package=".0603-C" value="" x="79.375" y="19.05" smashed="yes" rot="R180">
+<element name="C52" library="rcl_custom" package=".0603-C" value="1nF" x="79.375" y="19.05" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="19.165" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="20.6" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="19.05" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R35" library="rcl_custom" package=".0603-C" value="" x="89.535" y="15.24" smashed="yes">
+<element name="R35" library="rcl_custom" package=".0603-C" value="7.5k" x="89.535" y="15.24" smashed="yes">
 <attribute name="NAME" x="89.551" y="19.927" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="88.535" y="13.69" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="89.535" y="15.24" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R36" library="rcl_custom" package=".0603-C" value="" x="89.535" y="17.78" smashed="yes" rot="R180">
+<element name="R36" library="rcl_custom" package=".0603-C" value="7.5k" x="89.535" y="17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="89.551" y="22.467" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="90.535" y="19.33" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="89.535" y="17.78" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C53" library="rcl_custom" package=".0603-C" value="" x="89.535" y="16.51" smashed="yes">
+<element name="C53" library="rcl_custom" package=".0603-C" value="1nF" x="89.535" y="16.51" smashed="yes">
 <attribute name="NAME" x="89.551" y="21.197" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="88.535" y="14.96" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="89.535" y="16.51" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C54" library="rcl_custom" package=".0603-C" value="" x="89.535" y="19.05" smashed="yes">
+<element name="C54" library="rcl_custom" package=".0603-C" value="1nF" x="89.535" y="19.05" smashed="yes">
 <attribute name="NAME" x="89.551" y="23.737" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="88.535" y="17.5" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="89.535" y="19.05" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R39" library="rcl_custom" package=".0603-C" value="" x="63.5" y="24.13" smashed="yes" rot="R180">
+<element name="R39" library="rcl_custom" package=".0603-C" value="7.5k" x="63.5" y="24.13" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.722" y="23.864" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="64.5" y="25.68" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="24.13" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R40" library="rcl_custom" package=".0603-C" value="" x="63.5" y="21.59" smashed="yes">
+<element name="R40" library="rcl_custom" package=".0603-C" value="7.5k" x="63.5" y="21.59" smashed="yes">
 <attribute name="NAME" x="60.722" y="21.324" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="62.5" y="20.04" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="63.5" y="21.59" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C57" library="rcl_custom" package=".0603-C" value="" x="63.5" y="22.86" smashed="yes" rot="R180">
+<element name="C57" library="rcl_custom" package=".0603-C" value="1nF" x="63.5" y="22.86" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.722" y="22.594" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="64.5" y="24.41" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="22.86" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C58" library="rcl_custom" package=".0603-C" value="" x="63.5" y="20.32" smashed="yes" rot="R180">
+<element name="C58" library="rcl_custom" package=".0603-C" value="1nF" x="63.5" y="20.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.722" y="20.054" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="64.5" y="21.87" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="20.32" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R41" library="rcl_custom" package=".0603-C" value="" x="63.5" y="15.24" smashed="yes" rot="R180">
+<element name="R41" library="rcl_custom" package=".0603-C" value="7.5k" x="63.5" y="15.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.722" y="14.974" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="64.5" y="16.79" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="15.24" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R42" library="rcl_custom" package=".0603-C" value="" x="63.5" y="17.78" smashed="yes">
+<element name="R42" library="rcl_custom" package=".0603-C" value="7.5k" x="63.5" y="17.78" smashed="yes">
 <attribute name="NAME" x="60.722" y="17.514" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="62.5" y="16.23" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="63.5" y="17.78" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C59" library="rcl_custom" package=".0603-C" value="" x="63.5" y="16.51" smashed="yes" rot="R180">
+<element name="C59" library="rcl_custom" package=".0603-C" value="1nF" x="63.5" y="16.51" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.722" y="16.244" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="64.5" y="18.06" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="16.51" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C60" library="rcl_custom" package=".0603-C" value="" x="63.5" y="19.05" smashed="yes" rot="R180">
+<element name="C60" library="rcl_custom" package=".0603-C" value="1nF" x="63.5" y="19.05" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.722" y="18.784" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="64.5" y="20.6" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="19.05" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R43" library="rcl_custom" package=".0603-C" value="" x="73.66" y="15.24" smashed="yes">
+<element name="R43" library="rcl_custom" package=".0603-C" value="7.5k" x="73.66" y="15.24" smashed="yes">
 <attribute name="NAME" x="74.819" y="14.72" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="13.69" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="15.24" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R44" library="rcl_custom" package=".0603-C" value="" x="73.66" y="17.78" smashed="yes" rot="R180">
+<element name="R44" library="rcl_custom" package=".0603-C" value="7.5k" x="73.66" y="17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="74.819" y="17.26" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="74.66" y="19.33" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="73.66" y="17.78" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C61" library="rcl_custom" package=".0603-C" value="" x="73.66" y="16.51" smashed="yes">
+<element name="C61" library="rcl_custom" package=".0603-C" value="1nF" x="73.66" y="16.51" smashed="yes">
 <attribute name="NAME" x="74.819" y="15.99" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="14.96" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="16.51" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C62" library="rcl_custom" package=".0603-C" value="" x="73.66" y="19.05" smashed="yes">
+<element name="C62" library="rcl_custom" package=".0603-C" value="1nF" x="73.66" y="19.05" smashed="yes">
 <attribute name="NAME" x="74.819" y="18.53" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="17.5" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="19.05" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R45" library="rcl_custom" package=".0603-C" value="" x="73.66" y="24.13" smashed="yes">
+<element name="R45" library="rcl_custom" package=".0603-C" value="7.5k" x="73.66" y="24.13" smashed="yes">
 <attribute name="NAME" x="74.819" y="23.61" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="22.58" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="24.13" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R46" library="rcl_custom" package=".0603-C" value="" x="73.66" y="21.59" smashed="yes" rot="R180">
+<element name="R46" library="rcl_custom" package=".0603-C" value="7.5k" x="73.66" y="21.59" smashed="yes" rot="R180">
 <attribute name="NAME" x="74.819" y="21.07" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="74.66" y="23.14" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="73.66" y="21.59" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C63" library="rcl_custom" package=".0603-C" value="" x="73.66" y="22.86" smashed="yes">
+<element name="C63" library="rcl_custom" package=".0603-C" value="1nF" x="73.66" y="22.86" smashed="yes">
 <attribute name="NAME" x="74.819" y="22.34" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="21.31" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="22.86" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C64" library="rcl_custom" package=".0603-C" value="" x="73.66" y="20.32" smashed="yes">
+<element name="C64" library="rcl_custom" package=".0603-C" value="1nF" x="73.66" y="20.32" smashed="yes">
 <attribute name="NAME" x="74.819" y="19.8" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="18.77" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="20.32" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R47" library="rcl_custom" package=".0603-C" value="" x="89.535" y="35.56" smashed="yes">
+<element name="R47" library="rcl_custom" package=".0603-C" value="7.5k" x="89.535" y="35.56" smashed="yes">
 <attribute name="NAME" x="90.821" y="35.294" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="88.535" y="34.01" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="89.535" y="35.56" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R48" library="rcl_custom" package=".0603-C" value="" x="89.535" y="33.02" smashed="yes" rot="R180">
+<element name="R48" library="rcl_custom" package=".0603-C" value="7.5k" x="89.535" y="33.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="90.821" y="32.754" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="90.535" y="34.57" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="89.535" y="33.02" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C65" library="rcl_custom" package=".0603-C" value="" x="89.535" y="34.29" smashed="yes">
+<element name="C65" library="rcl_custom" package=".0603-C" value="1nF" x="89.535" y="34.29" smashed="yes">
 <attribute name="NAME" x="90.821" y="34.024" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="88.535" y="32.74" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="89.535" y="34.29" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C66" library="rcl_custom" package=".0603-C" value="" x="89.535" y="31.75" smashed="yes">
+<element name="C66" library="rcl_custom" package=".0603-C" value="1nF" x="89.535" y="31.75" smashed="yes">
 <attribute name="NAME" x="90.821" y="31.484" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="88.535" y="30.2" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="89.535" y="31.75" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R49" library="rcl_custom" package=".0603-C" value="" x="89.535" y="26.67" smashed="yes">
+<element name="R49" library="rcl_custom" package=".0603-C" value="7.5k" x="89.535" y="26.67" smashed="yes">
 <attribute name="NAME" x="90.821" y="26.404" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="88.535" y="25.12" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="89.535" y="26.67" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R50" library="rcl_custom" package=".0603-C" value="" x="89.535" y="29.21" smashed="yes" rot="R180">
+<element name="R50" library="rcl_custom" package=".0603-C" value="7.5k" x="89.535" y="29.21" smashed="yes" rot="R180">
 <attribute name="NAME" x="90.821" y="28.944" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="90.535" y="30.76" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="89.535" y="29.21" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C67" library="rcl_custom" package=".0603-C" value="" x="89.535" y="27.94" smashed="yes">
+<element name="C67" library="rcl_custom" package=".0603-C" value="1nF" x="89.535" y="27.94" smashed="yes">
 <attribute name="NAME" x="90.821" y="27.674" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="88.535" y="26.39" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="89.535" y="27.94" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C68" library="rcl_custom" package=".0603-C" value="" x="89.535" y="30.48" smashed="yes">
+<element name="C68" library="rcl_custom" package=".0603-C" value="1nF" x="89.535" y="30.48" smashed="yes">
 <attribute name="NAME" x="90.821" y="30.214" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="88.535" y="28.93" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="89.535" y="30.48" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R51" library="rcl_custom" package=".0603-C" value="" x="79.375" y="26.67" smashed="yes" rot="R180">
+<element name="R51" library="rcl_custom" package=".0603-C" value="7.5k" x="79.375" y="26.67" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="26.785" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="28.22" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="26.67" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R52" library="rcl_custom" package=".0603-C" value="" x="79.375" y="29.21" smashed="yes">
+<element name="R52" library="rcl_custom" package=".0603-C" value="7.5k" x="79.375" y="29.21" smashed="yes">
 <attribute name="NAME" x="76.597" y="29.325" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="78.375" y="27.66" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="79.375" y="29.21" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C69" library="rcl_custom" package=".0603-C" value="" x="79.375" y="27.94" smashed="yes" rot="R180">
+<element name="C69" library="rcl_custom" package=".0603-C" value="1nF" x="79.375" y="27.94" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="28.055" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="29.49" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="27.94" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C70" library="rcl_custom" package=".0603-C" value="" x="79.375" y="30.48" smashed="yes" rot="R180">
+<element name="C70" library="rcl_custom" package=".0603-C" value="1nF" x="79.375" y="30.48" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="30.595" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="32.03" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="30.48" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R53" library="rcl_custom" package=".0603-C" value="" x="79.375" y="35.56" smashed="yes" rot="R180">
+<element name="R53" library="rcl_custom" package=".0603-C" value="7.5k" x="79.375" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="35.675" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="37.11" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="35.56" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R54" library="rcl_custom" package=".0603-C" value="" x="79.375" y="33.02" smashed="yes">
+<element name="R54" library="rcl_custom" package=".0603-C" value="7.5k" x="79.375" y="33.02" smashed="yes">
 <attribute name="NAME" x="76.597" y="33.135" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="78.375" y="31.47" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="79.375" y="33.02" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C71" library="rcl_custom" package=".0603-C" value="" x="79.375" y="34.29" smashed="yes" rot="R180">
+<element name="C71" library="rcl_custom" package=".0603-C" value="1nF" x="79.375" y="34.29" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="34.405" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="35.84" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="34.29" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C72" library="rcl_custom" package=".0603-C" value="" x="79.375" y="31.75" smashed="yes" rot="R180">
+<element name="C72" library="rcl_custom" package=".0603-C" value="1nF" x="79.375" y="31.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.597" y="31.865" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="80.375" y="33.3" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="79.375" y="31.75" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R55" library="rcl_custom" package=".0603-C" value="" x="63.5" y="35.56" smashed="yes" rot="R180">
+<element name="R55" library="rcl_custom" package=".0603-C" value="7.5k" x="63.5" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.468" y="35.826" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="64.5" y="37.11" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="35.56" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R56" library="rcl_custom" package=".0603-C" value="" x="63.5" y="33.02" smashed="yes">
+<element name="R56" library="rcl_custom" package=".0603-C" value="7.5k" x="63.5" y="33.02" smashed="yes">
 <attribute name="NAME" x="62.468" y="33.286" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="62.5" y="31.47" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="63.5" y="33.02" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C73" library="rcl_custom" package=".0603-C" value="" x="63.5" y="34.29" smashed="yes" rot="R180">
+<element name="C73" library="rcl_custom" package=".0603-C" value="1nF" x="63.5" y="34.29" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.468" y="34.556" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="64.5" y="35.84" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="34.29" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C74" library="rcl_custom" package=".0603-C" value="" x="63.5" y="31.75" smashed="yes" rot="R180">
+<element name="C74" library="rcl_custom" package=".0603-C" value="1nF" x="63.5" y="31.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.468" y="32.016" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="64.5" y="33.3" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="31.75" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R57" library="rcl_custom" package=".0603-C" value="" x="63.5" y="26.67" smashed="yes" rot="R180">
+<element name="R57" library="rcl_custom" package=".0603-C" value="7.5k" x="63.5" y="26.67" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.468" y="26.936" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="64.5" y="28.22" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="26.67" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R58" library="rcl_custom" package=".0603-C" value="" x="63.5" y="29.21" smashed="yes">
+<element name="R58" library="rcl_custom" package=".0603-C" value="7.5k" x="63.5" y="29.21" smashed="yes">
 <attribute name="NAME" x="62.468" y="29.476" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="62.5" y="27.66" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="63.5" y="29.21" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C75" library="rcl_custom" package=".0603-C" value="" x="63.5" y="27.94" smashed="yes" rot="R180">
+<element name="C75" library="rcl_custom" package=".0603-C" value="1nF" x="63.5" y="27.94" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.468" y="28.206" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="64.5" y="29.49" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="27.94" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C76" library="rcl_custom" package=".0603-C" value="" x="63.5" y="30.48" smashed="yes" rot="R180">
+<element name="C76" library="rcl_custom" package=".0603-C" value="1nF" x="63.5" y="30.48" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.468" y="30.746" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="64.5" y="32.03" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="63.5" y="30.48" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R59" library="rcl_custom" package=".0603-C" value="" x="73.66" y="26.67" smashed="yes">
+<element name="R59" library="rcl_custom" package=".0603-C" value="7.5k" x="73.66" y="26.67" smashed="yes">
 <attribute name="NAME" x="74.819" y="26.15" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="25.12" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="26.67" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R60" library="rcl_custom" package=".0603-C" value="" x="73.66" y="29.21" smashed="yes" rot="R180">
+<element name="R60" library="rcl_custom" package=".0603-C" value="7.5k" x="73.66" y="29.21" smashed="yes" rot="R180">
 <attribute name="NAME" x="74.819" y="28.69" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="74.66" y="30.76" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="73.66" y="29.21" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C77" library="rcl_custom" package=".0603-C" value="" x="73.66" y="27.94" smashed="yes">
+<element name="C77" library="rcl_custom" package=".0603-C" value="1nF" x="73.66" y="27.94" smashed="yes">
 <attribute name="NAME" x="74.819" y="27.42" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="26.39" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="27.94" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C78" library="rcl_custom" package=".0603-C" value="" x="73.66" y="30.48" smashed="yes">
+<element name="C78" library="rcl_custom" package=".0603-C" value="1nF" x="73.66" y="30.48" smashed="yes">
 <attribute name="NAME" x="74.819" y="29.96" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="28.93" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="30.48" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R61" library="rcl_custom" package=".0603-C" value="" x="73.66" y="35.56" smashed="yes">
+<element name="R61" library="rcl_custom" package=".0603-C" value="7.5k" x="73.66" y="35.56" smashed="yes">
 <attribute name="NAME" x="74.819" y="35.04" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="34.01" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="35.56" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R62" library="rcl_custom" package=".0603-C" value="" x="73.66" y="33.02" smashed="yes" rot="R180">
+<element name="R62" library="rcl_custom" package=".0603-C" value="7.5k" x="73.66" y="33.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="74.819" y="32.5" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="74.66" y="34.57" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="73.66" y="33.02" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C79" library="rcl_custom" package=".0603-C" value="" x="73.66" y="34.29" smashed="yes">
+<element name="C79" library="rcl_custom" package=".0603-C" value="1nF" x="73.66" y="34.29" smashed="yes">
 <attribute name="NAME" x="74.819" y="33.77" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="32.74" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="34.29" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C80" library="rcl_custom" package=".0603-C" value="" x="73.66" y="31.75" smashed="yes">
+<element name="C80" library="rcl_custom" package=".0603-C" value="1nF" x="73.66" y="31.75" smashed="yes">
 <attribute name="NAME" x="74.819" y="31.23" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="72.66" y="30.2" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="73.66" y="31.75" size="0.3" layer="33" ratio="15" align="center"/>
