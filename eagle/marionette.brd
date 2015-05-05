@@ -2281,7 +2281,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="48.227434375" y="36.444775" size="0.635" layer="25" font="vector" ratio="20" rot="R225"/>
 <attribute name="NAME" x="49.203" y="37.03" size="0.3" layer="33" ratio="15" rot="R225" align="center"/>
 </element>
-<element name="C27" library="rcl_custom" package=".0603-C" value="11pF, 50V" x="33.909" y="49.022" smashed="yes" rot="R135">
+<element name="C27" library="rcl_custom" package=".0603-C" value="11p" x="33.909" y="49.022" smashed="yes" rot="R135">
 <attribute name="NAME" x="32.140096875" y="48.555071875" size="0.635" layer="25" font="vector" ratio="20" rot="R315"/>
 <attribute name="NAME" x="33.909" y="49.022" size="0.2" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
@@ -2297,7 +2297,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="107.581" y="68.596" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="NAME" x="107.315" y="66.929" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C30" library="rcl_custom" package=".0603-C" value="11pF, 50V" x="35.56" y="47.371" smashed="yes" rot="R135">
+<element name="C30" library="rcl_custom" package=".0603-C" value="11p" x="35.56" y="47.371" smashed="yes" rot="R135">
 <attribute name="NAME" x="33.994296875" y="46.83883125" size="0.635" layer="25" font="vector" ratio="20" rot="R315"/>
 <attribute name="NAME" x="35.56" y="47.371" size="0.2" layer="33" ratio="15" rot="R135" align="center"/>
 </element>

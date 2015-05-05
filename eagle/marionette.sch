@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -6064,8 +6064,8 @@ http://www.st.com/web/en/resource/technical/document/datasheet/CD00002190.pdf</d
 <part name="U$5" library="3_3VDDAsupply" deviceset="+3.3VDDA" device=""/>
 <part name="U$6" library="3_3VDDAsupply" deviceset="+3.3VDDA" device=""/>
 <part name="X1" library="ABS07" deviceset="ABSO7" device=""/>
-<part name="C27" library="rcl_custom" deviceset="C-EU" device="0603-C" value="11pF, 50V"/>
-<part name="C30" library="rcl_custom" deviceset="C-EU" device="0603-C" value="11pF, 50V"/>
+<part name="C27" library="rcl_custom" deviceset="C-EU" device="0603-C" value="11p"/>
+<part name="C30" library="rcl_custom" deviceset="C-EU" device="0603-C" value="11p"/>
 <part name="GND3" library="GROUND" deviceset="GND" device=""/>
 <part name="GND4" library="GROUND" deviceset="GND" device=""/>
 <part name="J22" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
@@ -6497,10 +6497,12 @@ data sheet</text>
 <attribute name="VALUE" x="213.995" y="137.16" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="C27" gate="CE" x="229.87" y="142.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="232.664" y="142.621" size="1.778" layer="95"/>
+<attribute name="NAME" x="225.044" y="143.891" size="1.778" layer="95"/>
+<attribute name="VALUE" x="232.664" y="143.891" size="1.778" layer="96"/>
 </instance>
 <instance part="C30" gate="CE" x="232.41" y="132.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="225.044" y="129.921" size="1.778" layer="95"/>
+<attribute name="NAME" x="225.044" y="128.651" size="1.778" layer="95"/>
+<attribute name="VALUE" x="232.664" y="128.651" size="1.778" layer="96"/>
 </instance>
 <instance part="GND3" gate="1" x="241.3" y="133.35"/>
 <instance part="GND4" gate="1" x="284.48" y="307.34"/>
