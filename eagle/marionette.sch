@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -7831,7 +7831,7 @@ data sheet</text>
 <label x="458.47" y="73.66" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="SHLD" class="0">
 <segment>
 <pinref part="J22" gate="G$1" pin="SHLD@1"/>
 <wire x1="496.57" y1="332.74" x2="496.57" y2="330.2" width="0.1524" layer="91"/>
@@ -12697,10 +12697,6 @@ for STM DAC1</text>
 <approved hash="104,3,358.14,101.6,U1G$10,VSS,GND,,,"/>
 <approved hash="104,3,365.76,101.6,U1G$10,VSS,GND,,,"/>
 <approved hash="104,3,373.38,101.6,U1G$10,VSS,GND,,,"/>
-<approved hash="104,1,499.11,332.74,J22,SHLD,N$36,,,"/>
-<approved hash="104,1,499.11,330.2,J22,SHLD,N$36,,,"/>
-<approved hash="104,1,499.11,327.66,J22,SHLD,N$36,,,"/>
-<approved hash="104,1,499.11,325.12,J22,SHLD,N$36,,,"/>
 <approved hash="104,1,499.11,347.98,J22,VCC,V_USB,,,"/>
 <approved hash="104,1,383.54,363.22,U14,VIO,3.3VDD,,,"/>
 <approved hash="104,1,383.54,365.76,U14,1.8V,+1.8V,,,"/>
