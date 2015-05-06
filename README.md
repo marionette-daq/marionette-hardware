@@ -1,7 +1,7 @@
 # Marionette Data Acquisition System
 
 This repo contains the open source hardware used in the Marionette data acquisition system.
-
+Click here to go to the [Wiki](https://github.com/marionette-daq/marionette-hardware/wiki)
 ## Marionette Specs
 
 - TBD
