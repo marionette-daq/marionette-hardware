@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -6090,8 +6090,8 @@ http://www.st.com/web/en/resource/technical/document/datasheet/CD00002190.pdf</d
 <part name="GND9" library="GROUND" deviceset="GND" device=""/>
 <part name="LED1" library="led-rgb-rohm" deviceset="LED_RGB_COMMON_ANODE-*" device="1.6X1.26" value="RGB"/>
 <part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-C" value="675"/>
-<part name="R13" library="rcl_custom" deviceset="R-US_" device="0603-C" value="50"/>
-<part name="R14" library="rcl_custom" deviceset="R-US_" device="0603-C" value="50"/>
+<part name="R13" library="rcl_custom" deviceset="R-US_" device="0603-C" value="51"/>
+<part name="R14" library="rcl_custom" deviceset="R-US_" device="0603-C" value="51"/>
 <part name="C32" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u"/>
 <part name="R15" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
 <part name="J2" library="SWD_CONNECTOR" deviceset="SWD" device=""/>

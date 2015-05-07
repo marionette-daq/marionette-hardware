@@ -2502,11 +2502,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="88.5564" y="68.9897" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="NAME" x="88.2904" y="72.2757" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R13" library="rcl_custom" package=".0603-C" value="50" x="86.995" y="72.3265" smashed="yes" rot="R90">
+<element name="R13" library="rcl_custom" package=".0603-C" value="51" x="86.995" y="72.3265" smashed="yes" rot="R90">
 <attribute name="NAME" x="87.261" y="69.0405" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="NAME" x="86.995" y="72.3265" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R14" library="rcl_custom" package=".0603-C" value="50" x="85.725" y="72.3265" smashed="yes" rot="R90">
+<element name="R14" library="rcl_custom" package=".0603-C" value="51" x="85.725" y="72.3265" smashed="yes" rot="R90">
 <attribute name="NAME" x="85.991" y="69.0405" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="NAME" x="85.725" y="72.3265" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
