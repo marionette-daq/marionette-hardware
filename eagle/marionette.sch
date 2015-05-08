@@ -6089,7 +6089,7 @@ http://www.st.com/web/en/resource/technical/document/datasheet/CD00002190.pdf</d
 <part name="C31" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
 <part name="GND9" library="GROUND" deviceset="GND" device=""/>
 <part name="LED1" library="led-rgb-rohm" deviceset="LED_RGB_COMMON_ANODE-*" device="1.6X1.26" value="RGB"/>
-<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-C" value="675"/>
+<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-C" value="649"/>
 <part name="R13" library="rcl_custom" deviceset="R-US_" device="0603-C" value="51"/>
 <part name="R14" library="rcl_custom" deviceset="R-US_" device="0603-C" value="51"/>
 <part name="C32" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u"/>

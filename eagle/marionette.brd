@@ -2498,7 +2498,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="116.979" y="61.357" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="NAME" x="117.856" y="62.103" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R12" library="rcl_custom" package=".0603-C" value="675" x="88.2904" y="72.2757" smashed="yes" rot="R90">
+<element name="R12" library="rcl_custom" package=".0603-C" value="649" x="88.2904" y="72.2757" smashed="yes" rot="R90">
 <attribute name="NAME" x="88.5564" y="68.9897" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="NAME" x="88.2904" y="72.2757" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
