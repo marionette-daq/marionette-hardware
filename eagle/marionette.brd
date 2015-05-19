@@ -285,8 +285,8 @@
 <text x="75.311" y="12.827" size="1.27" layer="21" font="vector" ratio="20">ADC</text>
 <wire x1="89.408" y1="12.7" x2="89.408" y2="8.128" width="0.127" layer="21"/>
 <wire x1="89.408" y1="12.7" x2="87.63" y2="12.7" width="0.127" layer="21"/>
-<text x="64.516" y="9.144" size="0.635" layer="21" font="vector" ratio="20" rot="R90">GND</text>
-<text x="88.773" y="8.636" size="0.635" layer="21" font="vector" ratio="20" rot="R90">3.3VDDA</text>
+<text x="88.773" y="9.525" size="0.635" layer="21" font="vector" ratio="20" rot="R90">GND</text>
+<text x="64.262" y="8.636" size="0.635" layer="21" font="vector" ratio="20" rot="R90">3.3VDDA</text>
 <text x="92.583" y="68.453" size="1.27" layer="21" font="vector" ratio="20">BOOT0</text>
 <text x="95.25" y="26.543" size="0.635" layer="21" font="vector" ratio="20">VREF_IN</text>
 <text x="95.123" y="28.575" size="0.762" layer="21" font="vector" ratio="20">DAC SUPPLY</text>
@@ -2675,10 +2675,81 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PA1" value="UART4_RX" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="PA2" value="ADC1/2/3_IN2" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="PA3" value="ULPI_D0" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="PI9" value="Can1_RX" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI9" value="CAN1_RX" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="PA4" value="DAC1" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="PA5" value="ULPI_CK" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="39.088075" y="55.172890625" size="0.635" layer="25" font="vector" ratio="20" rot="R45"/>
+<attribute name="PF13" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PF12" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PF11" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PF15" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PF14" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PH10" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PH6" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PH5" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PH3" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PH2" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PH15" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PH14" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PH12" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PH11" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI6" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI5" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI4" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI2" value="SPI2_MISO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI3" value="SPI2_MOSI" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI0" value="SPI2_NSS" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI1" value="SPI2_SCK" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI11" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI10" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI8" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PI7" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE5" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE4" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE3" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE2" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE1" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE0" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE15" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE14" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE13" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE12" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE11" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE10" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE9" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE8" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE7" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PE6" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG15" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG14" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG13" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG12" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG11" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG10" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG9" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG8" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG7" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG6" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG5" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG4" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG3" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG2" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG1" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PG0" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PB0" value="ULPI_D1" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PB1" value="ULPI_D2" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD15" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD14" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD13" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD12" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD11" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD10" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD9" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD8" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD7" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD5" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD4" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="PD3" value="GPIO" x="51.816" y="55.88" size="1.778" layer="27" rot="R45" display="off"/>
 </element>
 <element name="U13" library="con-microsd-hirose-dm3" package="HIROSE_DM3D(MICRO-SD)" value="CON_HIROSE_DM3D(MICROSD)" x="122.174" y="54.356" smashed="yes" rot="R270">
 <attribute name="NAME" x="123.65" y="49.617" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -6768,7 +6839,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="35.306" y1="38.989" x2="35.306" y2="12.573" width="0.127" layer="16"/>
 <wire x1="35.306" y1="12.573" x2="34.671" y2="11.938" width="0.127" layer="16"/>
 </signal>
-<signal name="N$20">
+<signal name="OSC_OUT">
 <contactref element="U1" pad="30"/>
 <contactref element="C34" pad="1"/>
 <contactref element="X2" pad="P2"/>
@@ -6779,7 +6850,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="42.6084" y1="40.4544" x2="42.5084" y2="40.3544" width="0.2032" layer="1"/>
 <wire x1="42.5084" y1="40.3544" x2="42.5084" y2="39.0906" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$23">
+<signal name="OSC_IN">
 <contactref element="C35" pad="1"/>
 <contactref element="U1" pad="29"/>
 <contactref element="X2" pad="P3"/>
