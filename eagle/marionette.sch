@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -12009,13 +12009,13 @@ for STM DAC1</text>
 <junction x="293.37" y="132.08"/>
 </segment>
 </net>
-<net name="N$61" class="0">
+<net name="ADC1/2_CH14" class="0">
 <segment>
-<pinref part="J10" gate="1" pin="3"/>
-<wire x1="215.9" y1="154.94" x2="219.71" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="219.71" y1="154.94" x2="278.13" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="278.13" y1="96.52" x2="330.2" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R55" gate="R" pin="1"/>
+<pinref part="R49" gate="R" pin="1"/>
+<pinref part="J10" gate="1" pin="17"/>
+<wire x1="215.9" y1="172.72" x2="219.71" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="172.72" x2="281.94" y2="234.95" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="234.95" x2="326.39" y2="234.95" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$62" class="0">
@@ -12194,7 +12194,7 @@ for STM DAC1</text>
 <junction x="262.89" y="149.86"/>
 </segment>
 </net>
-<net name="N$92" class="0">
+<net name="ADC3_CH4" class="0">
 <segment>
 <pinref part="J10" gate="1" pin="4"/>
 <wire x1="200.66" y1="154.94" x2="196.85" y2="154.94" width="0.1524" layer="91"/>
@@ -12263,16 +12263,7 @@ for STM DAC1</text>
 <label x="29.21" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$39" class="0">
-<segment>
-<pinref part="R53" gate="R" pin="1"/>
-<wire x1="184.15" y1="177.8" x2="177.8" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="J10" gate="1" pin="12"/>
-<wire x1="200.66" y1="165.1" x2="196.85" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="196.85" y1="165.1" x2="184.15" y2="177.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$43" class="0">
+<net name="ADC1/2_CH6" class="0">
 <segment>
 <pinref part="R51" gate="R" pin="1"/>
 <pinref part="J10" gate="1" pin="13"/>
@@ -12281,25 +12272,7 @@ for STM DAC1</text>
 <wire x1="248.92" y1="196.85" x2="267.97" y2="196.85" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$46" class="0">
-<segment>
-<pinref part="R49" gate="R" pin="1"/>
-<pinref part="J10" gate="1" pin="17"/>
-<wire x1="215.9" y1="172.72" x2="219.71" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="219.71" y1="172.72" x2="281.94" y2="234.95" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="234.95" x2="326.39" y2="234.95" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="R47" gate="R" pin="1"/>
-<pinref part="J10" gate="1" pin="18"/>
-<wire x1="200.66" y1="172.72" x2="196.85" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="196.85" y1="172.72" x2="134.62" y2="234.95" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="234.95" x2="90.17" y2="234.95" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$63" class="0">
+<net name="ADC3_CH15" class="0">
 <segment>
 <pinref part="R59" gate="R" pin="1"/>
 <wire x1="232.41" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
@@ -12308,7 +12281,7 @@ for STM DAC1</text>
 <wire x1="219.71" y1="162.56" x2="232.41" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$70" class="0">
+<net name="ADC_IN9" class="0">
 <segment>
 <pinref part="R61" gate="R" pin="1"/>
 <wire x1="184.15" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
@@ -12317,7 +12290,7 @@ for STM DAC1</text>
 <wire x1="196.85" y1="162.56" x2="184.15" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$74" class="0">
+<net name="ADC3_CH8" class="0">
 <segment>
 <pinref part="R45" gate="R" pin="1"/>
 <pinref part="J10" gate="1" pin="8"/>
@@ -12326,7 +12299,7 @@ for STM DAC1</text>
 <wire x1="168.91" y1="132.08" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$86" class="0">
+<net name="ADC_1/2/3_CH11" class="0">
 <segment>
 <pinref part="R43" gate="R" pin="1"/>
 <pinref part="J10" gate="1" pin="7"/>
@@ -12335,7 +12308,7 @@ for STM DAC1</text>
 <wire x1="247.65" y1="132.08" x2="269.24" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$94" class="0">
+<net name="ADC1/2/3_CH2" class="0">
 <segment>
 <pinref part="R41" gate="R" pin="1"/>
 <pinref part="J10" gate="1" pin="6"/>
@@ -12344,7 +12317,7 @@ for STM DAC1</text>
 <wire x1="153.67" y1="114.3" x2="116.84" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$97" class="0">
+<net name="ADC1/2/3_CH13" class="0">
 <segment>
 <pinref part="R39" gate="R" pin="1"/>
 <pinref part="J10" gate="1" pin="5"/>
@@ -12353,16 +12326,7 @@ for STM DAC1</text>
 <wire x1="262.89" y1="114.3" x2="299.72" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$99" class="0">
-<segment>
-<pinref part="R35" gate="R" pin="1"/>
-<pinref part="J10" gate="1" pin="16"/>
-<wire x1="200.66" y1="170.18" x2="196.85" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="196.85" y1="170.18" x2="151.13" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="151.13" y1="215.9" x2="119.38" y2="215.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$104" class="0">
+<net name="ADC3_CH7" class="0">
 <segment>
 <pinref part="R33" gate="R" pin="1"/>
 <pinref part="J10" gate="1" pin="15"/>
@@ -12371,7 +12335,7 @@ for STM DAC1</text>
 <wire x1="265.43" y1="215.9" x2="297.18" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$105" class="0">
+<net name="ADC3_CH5" class="0">
 <segment>
 <pinref part="R31" gate="R" pin="1"/>
 <pinref part="J10" gate="1" pin="14"/>
@@ -12666,6 +12630,42 @@ for STM DAC1</text>
 <pinref part="D23" gate="G$1" pin="I/O2"/>
 <wire x1="213.36" y1="33.02" x2="240.03" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="240.03" y1="33.02" x2="241.3" y2="34.29" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC3_CH14" class="0">
+<segment>
+<pinref part="J10" gate="1" pin="3"/>
+<wire x1="215.9" y1="154.94" x2="219.71" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="154.94" x2="278.13" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="278.13" y1="96.52" x2="330.2" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R55" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="ADC1/2_CH15" class="0">
+<segment>
+<pinref part="R47" gate="R" pin="1"/>
+<pinref part="J10" gate="1" pin="18"/>
+<wire x1="200.66" y1="172.72" x2="196.85" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="196.85" y1="172.72" x2="134.62" y2="234.95" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="234.95" x2="90.17" y2="234.95" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC_CH6" class="0">
+<segment>
+<pinref part="R35" gate="R" pin="1"/>
+<pinref part="J10" gate="1" pin="16"/>
+<wire x1="200.66" y1="170.18" x2="196.85" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="196.85" y1="170.18" x2="151.13" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="151.13" y1="215.9" x2="119.38" y2="215.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADC1/2_CH7" class="0">
+<segment>
+<pinref part="R53" gate="R" pin="1"/>
+<wire x1="184.15" y1="177.8" x2="177.8" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="J10" gate="1" pin="12"/>
+<wire x1="200.66" y1="165.1" x2="196.85" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="196.85" y1="165.1" x2="184.15" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
