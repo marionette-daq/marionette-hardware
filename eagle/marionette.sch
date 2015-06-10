@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -6431,7 +6431,7 @@ http://www.st.com/web/en/resource/technical/document/datasheet/CD00002190.pdf</d
 <part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-C" value="0"/>
 <part name="GND65" library="GROUND" deviceset="GND" device=""/>
 <part name="U$40" library="3_3VDDAsupply" deviceset="+3.3VDDA" device=""/>
-<part name="R66" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
+<part name="R66" library="rcl_custom" deviceset="R-US_" device="0603-C" value="0"/>
 <part name="GND66" library="GROUND" deviceset="GND" device=""/>
 <part name="U$41" library="3_3VDDAsupply" deviceset="+3.3VDDA" device=""/>
 <part name="U$42" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>

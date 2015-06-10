@@ -2091,7 +2091,7 @@ Please make sure your boards conform to these design rules.</description>
 <param name="mvCreamFrame" value="0"/>
 <param name="mlMinStopFrame" value="4mil"/>
 <param name="mlMaxStopFrame" value="4mil"/>
-<param name="mlMinCreamFrame" value="3mil"/>
+<param name="mlMinCreamFrame" value="4mil"/>
 <param name="mlMaxCreamFrame" value="3mil"/>
 <param name="mlViaStopLimit" value="10mil"/>
 <param name="srRoundness" value="0"/>
@@ -3279,7 +3279,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="101.753" y="17.415" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="100.203" y="18.415" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R66" library="rcl_custom" package=".0603-C" value="10k" x="56.007" y="24.13" smashed="yes" rot="R270">
+<element name="R66" library="rcl_custom" package=".0603-C" value="0" x="56.007" y="24.13" smashed="yes" rot="R270">
 <attribute name="NAME" x="56.884" y="25.13" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="54.457" y="25.13" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="56.007" y="24.13" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
