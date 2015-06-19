@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -4389,7 +4389,36 @@ Datasheet:&lt;br&gt; http://www.abracon.com/Resonators/ABS07-120-32.768kHz-T.pdf
 <description>&lt;b&gt; Can bus transceiver &lt;/b&gt; &lt;br&gt;
 Package: 8-SOIC N</description>
 <packages>
-<package name="8-SOICN">
+<package name="SO8">
+<description>&lt;b&gt;8-Lead Small Outline IC&lt;/b&gt; (SO-8)&lt;p&gt;
+Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+</package>
+<package name="SOT-23-8">
 <description>&lt;b&gt;Can Bus Transceiver&lt;/b&gt;</description>
 <smd name="1" x="-1.175" y="0.975" dx="1.3" dy="0.42" layer="1"/>
 <smd name="2" x="-1.175" y="0.325" dx="1.3" dy="0.42" layer="1"/>
@@ -4404,7 +4433,7 @@ Package: 8-SOIC N</description>
 <wire x1="0.8125" y1="-1.45" x2="-0.8125" y2="-1.45" width="0.127" layer="39"/>
 <wire x1="-0.8125" y1="-1.45" x2="-0.8125" y2="1.45" width="0.127" layer="39"/>
 <text x="-2.54" y="2.54" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-2.54" y="-3.455" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <text x="-2.54" y="1.27" size="1.27" layer="21" font="vector" ratio="20">1</text>
 </package>
 </packages>
@@ -4435,7 +4464,22 @@ http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf</description>
 <gate name="G$1" symbol="MAX3051" x="-2.54" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="8-SOICN">
+<device name="EKA+T" package="SOT-23-8">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RS" pad="8"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="SHDN" pad="5"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ESA+" package="SO8">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
@@ -6251,7 +6295,7 @@ http://www.st.com/web/en/resource/technical/document/datasheet/CD00002190.pdf</d
 <part name="FRAME4" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="U6" library="DAC24S085CIMM" deviceset="DAC124S085CIMM" device=""/>
 <part name="J6" library="MA_HEADER" deviceset="MA03-2W" device=""/>
-<part name="U5" library="MAX3051ESA" deviceset="MAX3051ESA" device=""/>
+<part name="U5" library="MAX3051ESA" deviceset="MAX3051ESA" device="ESA+"/>
 <part name="GND28" library="GROUND" deviceset="GND" device=""/>
 <part name="U$31" library="3_3VDDsupply" deviceset="3.3VDD" device=""/>
 <part name="C44" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
