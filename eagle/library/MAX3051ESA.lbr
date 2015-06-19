@@ -138,7 +138,7 @@ http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf</description>
 <gate name="G$1" symbol="MAX3051" x="-2.54" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="SOT-23-8">
+<device name="EKA+T" package="SOT-23-8">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
@@ -153,7 +153,7 @@ http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SOIC" package="SO8">
+<device name="ESA+" package="SO8">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
