@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="5" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -63,24 +63,24 @@
 <description>12 bit 4 output DAC</description>
 <packages>
 <package name="10-TFSOP">
-<description>10-TFSOP - 3MM WIDTH</description>
-<smd name="1" x="-1" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="2" x="-0.5" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="3" x="0" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="4" x="0.5" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="5" x="1" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="6" x="1" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="7" x="0.5" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="8" x="0" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="9" x="-0.5" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="10" x="-1" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<wire x1="-1" y1="0.8" x2="1" y2="0.8" width="0.127" layer="21"/>
-<wire x1="1" y1="0.8" x2="1" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="1" y1="-0.8" x2="-1" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1" y1="-0.8" x2="-1" y2="0.8" width="0.127" layer="21"/>
+<description>10-MSOP - 3MM WIDTH</description>
+<smd name="1" x="-1" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="2" x="-0.5" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="3" x="0" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="4" x="0.5" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="5" x="1" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="6" x="1" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="7" x="0.5" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="8" x="0" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="9" x="-0.5" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="10" x="-1" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<wire x1="-1.2" y1="1.5" x2="1.2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.2" y1="1.5" x2="1.2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-1.5" x2="-1.2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-1.5" x2="-1.2" y2="1.5" width="0.127" layer="21"/>
 <text x="2.2" y="-1.6" size="0.7" layer="21" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 <text x="3.2" y="-1.6" size="0.7" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
-<circle x="-0.6985" y="-0.508" radius="0.127" width="0.127" layer="21"/>
+<circle x="-0.8985" y="-1.208" radius="0.127" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
