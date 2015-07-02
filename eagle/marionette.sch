@@ -1050,23 +1050,20 @@ Type: &lt;b&gt;PJ-047A&lt;/b&gt;&lt;p&gt;</description>
 <packages>
 <package name="SOD-523F">
 <description>&lt;b&gt;SOD-523F&lt;\b&gt; - 0603 molded plastic</description>
-<smd name="P$1" x="-0.85" y="0" dx="0.35" dy="0.7" layer="1"/>
-<smd name="P$2" x="0.85" y="0" dx="0.35" dy="0.7" layer="1"/>
-<wire x1="-1.2" y1="0.5" x2="0.2" y2="0.5" width="0.127" layer="21"/>
+<smd name="P$1" x="-0.85" y="0" dx="0.6" dy="0.8" layer="1"/>
+<smd name="P$2" x="0.85" y="0" dx="0.6" dy="0.8" layer="1"/>
+<wire x1="-1.3" y1="0.5" x2="0.2" y2="0.5" width="0.127" layer="21"/>
 <wire x1="0.2" y1="0.5" x2="0.3" y2="0.5" width="0.127" layer="21"/>
 <wire x1="0.3" y1="0.5" x2="0.4" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.5" y1="0.5" x2="1.2" y2="0.5" width="0.127" layer="21"/>
-<wire x1="1.2" y1="0.5" x2="1.2" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="1.2" y1="-0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-0.5" x2="-1.2" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-1.2" y1="-0.5" x2="-1.2" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.5" x2="1.3" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1.3" y1="0.5" x2="1.3" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-0.5" x2="0.4" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.2" y1="-0.5" x2="-1.3" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.5" x2="-1.3" y2="0.5" width="0.127" layer="21"/>
 <text x="-2.3" y="0.9" size="1.016" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-2.3" y="-1.8" size="1.016" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <wire x1="0.2" y1="0.5" x2="0.2" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="0.2" y1="-0.5" x2="0.3" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.4" y1="-0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.5" y1="-0.5" x2="0.5" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.5" y1="0.5" x2="0.4" y2="0.5" width="0.127" layer="21"/>
 <wire x1="0.4" y1="0.5" x2="0.4" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="0.4" y1="-0.5" x2="0.3" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="0.3" y1="-0.5" x2="0.3" y2="0.5" width="0.127" layer="21"/>
@@ -4263,24 +4260,24 @@ http://www.osram-os.com/Graphics/XPic9/00128792_0.pdf</description>
 <description>12 bit 4 output DAC</description>
 <packages>
 <package name="10-TFSOP">
-<description>10-TFSOP - 3MM WIDTH</description>
-<smd name="1" x="-1" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="2" x="-0.5" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="3" x="0" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="4" x="0.5" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="5" x="1" y="-1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="6" x="1" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="7" x="0.5" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="8" x="0" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="9" x="-0.5" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<smd name="10" x="-1" y="1.4" dx="0.25" dy="0.6" layer="1"/>
-<wire x1="-1" y1="0.8" x2="1" y2="0.8" width="0.127" layer="21"/>
-<wire x1="1" y1="0.8" x2="1" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="1" y1="-0.8" x2="-1" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1" y1="-0.8" x2="-1" y2="0.8" width="0.127" layer="21"/>
+<description>10-MSOP - 3MM WIDTH</description>
+<smd name="1" x="-1" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="2" x="-0.5" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="3" x="0" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="4" x="0.5" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="5" x="1" y="-2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="6" x="1" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="7" x="0.5" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="8" x="0" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="9" x="-0.5" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<smd name="10" x="-1" y="2.3" dx="0.25" dy="0.6" layer="1"/>
+<wire x1="-1.2" y1="1.5" x2="1.2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.2" y1="1.5" x2="1.2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-1.5" x2="-1.2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-1.5" x2="-1.2" y2="1.5" width="0.127" layer="21"/>
 <text x="2.2" y="-1.6" size="0.7" layer="21" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 <text x="3.2" y="-1.6" size="0.7" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
-<circle x="-0.6985" y="-0.508" radius="0.127" width="0.127" layer="21"/>
+<circle x="-0.8985" y="-1.208" radius="0.127" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
