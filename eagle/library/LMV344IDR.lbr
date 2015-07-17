@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -135,29 +135,29 @@ SOIC-14</description>
 Datasheet: &lt;br&gt;
 http://www.ti.com/lit/ds/symlink/lmv341.pdf</description>
 <gates>
-<gate name="G$1" symbol="OPAMP" x="-7.62" y="12.7" addlevel="always"/>
-<gate name="G$2" symbol="OPAMP" x="-7.62" y="0" addlevel="always"/>
-<gate name="G$3" symbol="OPAMP" x="15.24" y="12.7" addlevel="always"/>
-<gate name="G$4" symbol="OPAMP" x="15.24" y="0" addlevel="always"/>
-<gate name="G$5" symbol="SUPPLY" x="0" y="-15.24" addlevel="always"/>
+<gate name="G1" symbol="OPAMP" x="-7.62" y="12.7" addlevel="always"/>
+<gate name="G2" symbol="OPAMP" x="-7.62" y="0" addlevel="always"/>
+<gate name="G3" symbol="OPAMP" x="15.24" y="12.7" addlevel="always"/>
+<gate name="G4" symbol="OPAMP" x="15.24" y="0" addlevel="always"/>
+<gate name="G5" symbol="SUPPLY" x="0" y="-15.24" addlevel="always"/>
 </gates>
 <devices>
 <device name="" package="SOIC-14">
 <connects>
-<connect gate="G$1" pin="+V" pad="3"/>
-<connect gate="G$1" pin="-V" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="1"/>
-<connect gate="G$2" pin="+V" pad="5"/>
-<connect gate="G$2" pin="-V" pad="6"/>
-<connect gate="G$2" pin="OUT" pad="7"/>
-<connect gate="G$3" pin="+V" pad="10"/>
-<connect gate="G$3" pin="-V" pad="9"/>
-<connect gate="G$3" pin="OUT" pad="8"/>
-<connect gate="G$4" pin="+V" pad="12"/>
-<connect gate="G$4" pin="-V" pad="13"/>
-<connect gate="G$4" pin="OUT" pad="14"/>
-<connect gate="G$5" pin="GND" pad="11"/>
-<connect gate="G$5" pin="VCC" pad="4"/>
+<connect gate="G1" pin="+V" pad="3"/>
+<connect gate="G1" pin="-V" pad="2"/>
+<connect gate="G1" pin="OUT" pad="1"/>
+<connect gate="G2" pin="+V" pad="5"/>
+<connect gate="G2" pin="-V" pad="6"/>
+<connect gate="G2" pin="OUT" pad="7"/>
+<connect gate="G3" pin="+V" pad="10"/>
+<connect gate="G3" pin="-V" pad="9"/>
+<connect gate="G3" pin="OUT" pad="8"/>
+<connect gate="G4" pin="+V" pad="12"/>
+<connect gate="G4" pin="-V" pad="13"/>
+<connect gate="G4" pin="OUT" pad="14"/>
+<connect gate="G5" pin="GND" pad="11"/>
+<connect gate="G5" pin="VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -924,7 +924,7 @@
 </symbol>
 <symbol name="STM_RST">
 <description>BYPASS_REG, BOOT0, NRST, PDR_ON chip operation pins.</description>
-<text x="25.4" y="0" size="3.81" layer="97">STM_RST</text>
+<text x="15.24" y="0" size="3.81" layer="97">STM_RST</text>
 <pin name="BYPASS_REG" x="-7.62" y="-7.62" length="middle" direction="in"/>
 <pin name="PDR_ON" x="-7.62" y="2.54" length="middle" direction="in"/>
 <pin name="BOOT0" x="-7.62" y="-2.54" length="middle" direction="in"/>
