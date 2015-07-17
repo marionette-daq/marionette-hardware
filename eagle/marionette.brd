@@ -6577,14 +6577,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="81.755" y1="20.32" x2="80.075" y2="20.32" width="0.2032" layer="1"/>
 <wire x1="80.075" y1="20.32" x2="80.075" y2="21.59" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$38">
+<signal name="ADC3_IN7_FILT">
 <contactref element="R33" pad="2"/>
 <contactref element="R34" pad="1"/>
 <contactref element="C51" pad="2"/>
 <wire x1="78.675" y1="15.24" x2="78.675" y2="16.51" width="0.2032" layer="1"/>
 <wire x1="78.675" y1="16.51" x2="78.675" y2="17.78" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$40">
+<signal name="ADC3_IN7+">
 <contactref element="R34" pad="2"/>
 <contactref element="C52" pad="1"/>
 <contactref element="U7" pad="5"/>
@@ -6605,14 +6605,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="87.155" y1="17.78" x2="88.835" y2="17.78" width="0.2032" layer="1"/>
 <wire x1="88.835" y1="17.78" x2="88.835" y2="19.05" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$50">
+<signal name="ADC1/2/3_IN13_FILT">
 <contactref element="R39" pad="2"/>
 <contactref element="R40" pad="1"/>
 <contactref element="C57" pad="2"/>
 <wire x1="62.8" y1="21.59" x2="62.8" y2="22.86" width="0.2032" layer="1"/>
 <wire x1="62.8" y1="22.86" x2="62.8" y2="24.13" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$52">
+<signal name="ADC1/2/3_IN13+">
 <contactref element="R40" pad="2"/>
 <contactref element="C58" pad="1"/>
 <contactref element="U8" pad="3"/>
@@ -6633,14 +6633,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="65.88" y1="17.78" x2="64.2" y2="17.78" width="0.2032" layer="1"/>
 <wire x1="64.2" y1="17.78" x2="64.2" y2="19.05" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$58">
+<signal name="ADC1/2/3_IN11_FILT">
 <contactref element="R43" pad="2"/>
 <contactref element="R44" pad="1"/>
 <contactref element="C61" pad="2"/>
 <wire x1="74.36" y1="15.24" x2="74.36" y2="16.51" width="0.2032" layer="1"/>
 <wire x1="74.36" y1="16.51" x2="74.36" y2="17.78" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$60">
+<signal name="ADC1/2/3_IN11+">
 <contactref element="R44" pad="2"/>
 <contactref element="C62" pad="1"/>
 <contactref element="U8" pad="10"/>
@@ -6690,28 +6690,28 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="87.155" y1="31.75" x2="88.835" y2="31.75" width="0.2032" layer="1"/>
 <wire x1="88.835" y1="31.75" x2="88.835" y2="33.02" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$69">
+<signal name="ADC1/2_IN14_FILT">
 <contactref element="R49" pad="2"/>
 <contactref element="R50" pad="1"/>
 <contactref element="C67" pad="2"/>
 <wire x1="90.235" y1="26.67" x2="90.235" y2="27.94" width="0.2032" layer="1"/>
 <wire x1="90.235" y1="27.94" x2="90.235" y2="29.21" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$71">
+<signal name="ADC1/2_IN14+">
 <contactref element="R50" pad="2"/>
 <contactref element="C68" pad="1"/>
 <contactref element="U9" pad="10"/>
 <wire x1="87.155" y1="29.21" x2="88.835" y2="29.21" width="0.2032" layer="1"/>
 <wire x1="88.835" y1="29.21" x2="88.835" y2="30.48" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$73">
+<signal name="ADC1/2_IN6_FILT">
 <contactref element="R51" pad="2"/>
 <contactref element="R52" pad="1"/>
 <contactref element="C69" pad="2"/>
 <wire x1="78.675" y1="26.67" x2="78.675" y2="27.94" width="0.2032" layer="1"/>
 <wire x1="78.675" y1="27.94" x2="78.675" y2="29.21" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$75">
+<signal name="ADC1/2_IN6+">
 <contactref element="R52" pad="2"/>
 <contactref element="C70" pad="1"/>
 <contactref element="U9" pad="5"/>
@@ -6760,14 +6760,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="65.88" y1="29.21" x2="64.2" y2="29.21" width="0.2032" layer="1"/>
 <wire x1="64.2" y1="29.21" x2="64.2" y2="30.48" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$89">
+<signal name="ADC3_IN15_FILT">
 <contactref element="R59" pad="2"/>
 <contactref element="R60" pad="1"/>
 <contactref element="C77" pad="2"/>
 <wire x1="74.36" y1="26.67" x2="74.36" y2="27.94" width="0.2032" layer="1"/>
 <wire x1="74.36" y1="27.94" x2="74.36" y2="29.21" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$91">
+<signal name="ADC3_IN15+">
 <contactref element="R60" pad="2"/>
 <contactref element="C78" pad="1"/>
 <contactref element="U10" pad="10"/>
