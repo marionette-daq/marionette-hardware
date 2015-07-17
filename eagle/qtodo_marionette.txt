@@ -1,0 +1,4 @@
+Questions and TODO list for the marionette board
+
+Is the input clock frequency on the USB3320 chosen correctly by the REFSEL[2:0] pins.  010 selects 12MHz.  Can PB14 generate 12MHz?
+
