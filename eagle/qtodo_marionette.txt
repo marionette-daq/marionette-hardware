@@ -1,4 +1,6 @@
 Questions and TODO list for the marionette board
 
-Is the input clock frequency on the USB3320 chosen correctly by the REFSEL[2:0] pins.  010 selects 12MHz.  Can PB14 generate 12MHz?
+Q: Is the input clock frequency on the USB3320 chosen correctly by the REFSEL[2:0] pins.  010 selects 12MHz.  Can PB14 generate 12MHz?
+
+Q: There are 15 available ADC signal lines but I am only using 12 (+ one on the MBUS ID SCHEME.  What is happening with the remaining three lines? 
 
