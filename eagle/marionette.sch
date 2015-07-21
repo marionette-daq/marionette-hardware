@@ -8321,65 +8321,6 @@ http://media.digikey.com/pdf/Data%20Sheets/Kingbright%20PDFs/APHFT1612PBASURKVGA
 </deviceset>
 </devicesets>
 </library>
-<library name="NX3225SA">
-<description>16MHz crystal</description>
-<packages>
-<package name="DFN4SMD">
-<description>16 MHz SMD Crystal
-Note - Only pads 2 and 3 are used.</description>
-<smd name="P1" x="-1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
-<smd name="P3" x="-1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
-<smd name="P2" x="1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
-<smd name="P4" x="1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
-<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.25" x2="1.5" y2="1" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
-<text x="-1.27" y="3.81" size="1.778" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.27" y="1.27" size="1.778" layer="27" font="vector">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="16MHZCLOCK">
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<pin name="P$1" x="-7.62" y="0" visible="off" length="middle"/>
-<pin name="P$2" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
-<text x="-2.54" y="5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NX3225SA" prefix="X">
-<description>&lt;b&gt;16 MHz Clock &lt;b&gt; &lt;br&gt;
-Datasheet: http://media.digikey.com/pdf/Data%20Sheets/NDK%20PDFs/NX3225SA-16.000000MHz-B3.pdf &lt;br&gt;
-Only connect pins 2 and 3</description>
-<gates>
-<gate name="G$1" symbol="16MHZCLOCK" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DFN4SMD">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P2"/>
-<connect gate="G$1" pin="P$2" pad="P3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MA_HEADER">
 <description>0.1" pitch angled male headers</description>
 <packages>
@@ -10222,10 +10163,6 @@ http://www.st.com/web/en/resource/technical/document/datasheet/CD00002190.pdf</d
 <smd name="1" x="0" y="0.4" dx="0.15" dy="0.25" layer="1" stop="no" thermals="no" cream="no"/>
 <smd name="2" x="0" y="-0.4" dx="0.15" dy="0.25" layer="1" stop="no" thermals="no" cream="no"/>
 <wire x1="0" y1="-0.3" x2="0" y2="0.3" width="0.15" layer="1"/>
-<text x="0.4" y="0" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<wire x1="0" y1="0.4" x2="0" y2="0.3" width="0.25" layer="21"/>
-<wire x1="0" y1="-0.3" x2="0" y2="-0.4" width="0.25" layer="21"/>
-<wire x1="0" y1="0.2" x2="0" y2="-0.2" width="0.1" layer="21"/>
 </package>
 <package name="CONN_IDC_2X5_0.100">
 <description>Shrouded, Keyed, Vertical, 0.1", 2x5, IDC connector, Sullins SBH11-PBPC-D05-ST, S9169-ND</description>
@@ -12566,28 +12503,113 @@ In use with boards from sunstone. Fit is good.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="NX3225SA">
+<description>16MHz crystal</description>
+<packages>
+<package name="DFN4SMD">
+<description>&lt;b&gt;16 MHz SMD Crystal&lt;/b&gt;&lt;br&gt;
+Based on NXP NX3225SA crystal</description>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<text x="2" y="2" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="2" y="1" size="0.85" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.1" layer="33"/>
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.1" layer="33"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.1" layer="33"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.1" layer="33"/>
+<wire x1="-1.35" y1="-1" x2="-0.55" y2="-1" width="0.1" layer="33"/>
+<wire x1="-0.55" y1="-1" x2="-0.95" y2="-0.25" width="0.1" layer="33"/>
+<wire x1="-0.95" y1="-0.25" x2="-1.35" y2="-1" width="0.1" layer="33"/>
+<text x="-1" y="-0.05" size="0.4" layer="33" ratio="15">&gt;NAME</text>
+<circle x="-1.2" y="-0.85" radius="0.206153125" width="0.1" layer="51"/>
+<wire x1="-2.05" y1="-0.3" x2="-2.05" y2="-1.65" width="0.2" layer="21"/>
+<wire x1="-2.05" y1="-1.65" x2="-0.5" y2="-1.65" width="0.2" layer="21"/>
+<wire x1="0.5" y1="-1.65" x2="2.05" y2="-1.65" width="0.2" layer="21"/>
+<wire x1="2.05" y1="-1.65" x2="2.05" y2="-0.3" width="0.2" layer="21"/>
+<wire x1="2.05" y1="0.3" x2="2.05" y2="1.65" width="0.2" layer="21"/>
+<wire x1="2.05" y1="1.65" x2="0.5" y2="1.65" width="0.2" layer="21"/>
+<wire x1="-0.5" y1="1.65" x2="-2.05" y2="1.65" width="0.2" layer="21"/>
+<wire x1="-2.05" y1="1.65" x2="-2.05" y2="0.3" width="0.2" layer="21"/>
+<circle x="-2.15" y="-1.75" radius="0.1581125" width="0.2" layer="21"/>
+<circle x="-2.15" y="-1.75" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-2.05" y1="-1.65" x2="-2.05" y2="1.65" width="0.05" layer="39"/>
+<wire x1="-2.05" y1="1.65" x2="2.05" y2="1.65" width="0.05" layer="39"/>
+<wire x1="2.05" y1="1.65" x2="2.05" y2="-1.65" width="0.05" layer="39"/>
+<wire x1="2.05" y1="-1.65" x2="-2.05" y2="-1.65" width="0.05" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="16MHZCLOCK">
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<pin name="XTAL1" x="-7.62" y="0" visible="off" length="middle"/>
+<pin name="XTAL2" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<text x="-2.54" y="5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="GND_PIN">
+<description>Single GND pin</description>
+<pin name="GND" x="0" y="-2.54" visible="off" length="short" direction="pwr" rot="R90"/>
+<text x="2.54" y="0" size="0.85" layer="95" ratio="15">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NX3225SA" prefix="X">
+<description>&lt;b&gt;Quartz Crystal Resonator &lt;/b&gt; &lt;br&gt;
+Frequency: 16MHz, Mfg.: NXP, Mfg_Part_NO.:  NX3225SA-16.000MHZ-STD-CSR-1, Digikey No.: 644-1049-2-ND
+Datasheet: http://media.digikey.com/pdf/Data%20Sheets/NDK%20PDFs/NX3225SA-16.000000MHz-B3.pdf &lt;br&gt;</description>
+<gates>
+<gate name="G1" symbol="16MHZCLOCK" x="0" y="0"/>
+<gate name="G2" symbol="GND_PIN" x="0" y="-10.16" addlevel="always"/>
+</gates>
+<devices>
+<device name="_NX3225SA_16MHZ" package="DFN4SMD">
+<connects>
+<connect gate="G1" pin="XTAL1" pad="1"/>
+<connect gate="G1" pin="XTAL2" pad="3"/>
+<connect gate="G2" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.2" drill="0.25">
+<clearance class="0" value="0.15"/>
+</class>
+<class number="1" name="dt_line" width="0.4" drill="0.25">
+<clearance class="1" value="0.7"/>
 </class>
 </classes>
 <parts>
 <part name="J1" library="PJ_047A" deviceset="JACK-PLUG" device=""/>
 <part name="GND" library="GROUND" deviceset="GND" device=""/>
-<part name="C1" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="4.7u"/>
-<part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
 <part name="GND5" library="GROUND" deviceset="GND" device=""/>
-<part name="C3" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="4.7u"/>
-<part name="C4" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
-<part name="C5" library="rcl_custom" deviceset="C-EU" device="0603-C" value="2.2u">
-<attribute name="V_RATING" value="10V"/>
-</part>
-<part name="C6" library="rcl_custom" deviceset="C-EU" device="0603-C" value="2.2u">
-<attribute name="V_RATING" value="10V"/>
+<part name="C4" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
 </part>
 <part name="C7" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
 <attribute name="V_RATING" value="25V"/>
@@ -12609,9 +12631,10 @@ In use with boards from sunstone. Fit is good.</description>
 <attribute name="V_RATING" value="25V"/>
 </part>
 <part name="D1" library="CBDU0530" deviceset="CDBU0530" device=""/>
-<part name="C28" library="rcl_custom" deviceset="C-EU" device="0603-C" value="2.2u"/>
 <part name="R1" library="rcl_custom" deviceset="R-US_" device="0603-C" value="8.06k"/>
-<part name="C29" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
+<part name="C29" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u">
+<attribute name="V_RATING" value="25V"/>
+</part>
 <part name="GND6" library="GROUND" deviceset="GND" device=""/>
 <part name="X1" library="ABS07" deviceset="ABSO7" device=""/>
 <part name="C27" library="rcl_custom" deviceset="C-EU" device="0603-C" value="11p"/>
@@ -12631,20 +12654,23 @@ In use with boards from sunstone. Fit is good.</description>
 <part name="GND12" library="GROUND" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" deviceset="FRAME_B_L" device="" value="Supply"/>
 <part name="S1" library="PTS645" deviceset="PTS645" device=""/>
-<part name="C31" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
+<part name="C31" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
+</part>
 <part name="GND9" library="GROUND" deviceset="GND" device=""/>
 <part name="LED10" library="led-rgb-rohm" deviceset="LED_RGB_COMMON_ANODE-*" device="1.6X1.26" value="RGB"/>
 <part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-C" value="620"/>
 <part name="R13" library="rcl_custom" deviceset="R-US_" device="0603-C" value="510"/>
 <part name="R14" library="rcl_custom" deviceset="R-US_" device="0603-C" value="510"/>
-<part name="C32" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u"/>
+<part name="C32" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u">
+<attribute name="V_RATING" value="25V"/>
+</part>
 <part name="R15" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
 <part name="D3" library="CBDU0530" deviceset="CDBU0530" device=""/>
 <part name="R19" library="rcl_custom" deviceset="R-US_" device="0603-C" value="1k"/>
 <part name="C34" library="rcl_custom" deviceset="C-EU" device="0603-C" value="4.4p"/>
 <part name="C35" library="rcl_custom" deviceset="C-EU" device="0603-C" value="4.4p"/>
 <part name="GND13" library="GROUND" deviceset="GND" device=""/>
-<part name="X2" library="NX3225SA" deviceset="NX3225SA" device=""/>
 <part name="R16" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
 <part name="D4" library="CBDU0530" deviceset="CDBU0530" device=""/>
 <part name="C36" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n 50V"/>
@@ -12652,8 +12678,9 @@ In use with boards from sunstone. Fit is good.</description>
 <part name="GND16" library="GROUND" deviceset="GND" device=""/>
 <part name="U4" library="LK112" deviceset="LK112" device=""/>
 <part name="GND23" library="GROUND" deviceset="GND" device=""/>
-<part name="C37" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u"/>
-<part name="C38" library="rcl_custom" deviceset="C-EU" device="0603-C" value="2.2u"/>
+<part name="C37" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u">
+<attribute name="V_RATING" value="25V"/>
+</part>
 <part name="GND26" library="GROUND" deviceset="GND" device=""/>
 <part name="R17" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
 <part name="C41" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
@@ -12790,8 +12817,12 @@ In use with boards from sunstone. Fit is good.</description>
 <part name="R37" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
 <part name="U14" library="USB3320" deviceset="USB_PHY-SMSC-USB3320" device="-QFN32-5X5" value="USB3320"/>
 <part name="GND58" library="GROUND" deviceset="GND" device=""/>
-<part name="C85" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
-<part name="C86" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
+<part name="C85" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C86" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
+</part>
 <part name="GND62" library="GROUND" deviceset="GND" device=""/>
 <part name="GND10" library="GROUND" deviceset="GND" device=""/>
 <part name="C47" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
@@ -12804,9 +12835,7 @@ In use with boards from sunstone. Fit is good.</description>
 <part name="U3" library="LM3671" deviceset="LM3671" device=""/>
 <part name="L1" library="rcl_custom" deviceset="L-US" device="-33(LQH3NP)" value="2.2uH"/>
 <part name="J7" library="MA_HEADER" deviceset="MA02-1" device=""/>
-<part name="C48" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="10u"/>
 <part name="U2" library="TC1262" deviceset="TC1262" device=""/>
-<part name="C83" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
 <part name="R64" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
 <part name="GND63" library="GROUND" deviceset="GND" device=""/>
 <part name="J23" library="MA_HEADER" deviceset="MA02-1" device=""/>
@@ -12817,12 +12846,11 @@ In use with boards from sunstone. Fit is good.</description>
 <part name="GND65" library="GROUND" deviceset="GND" device=""/>
 <part name="R66" library="rcl_custom" deviceset="R-US_" device="0603-C" value="0"/>
 <part name="GND66" library="GROUND" deviceset="GND" device=""/>
-<part name="C43" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="10u"/>
 <part name="GND67" library="GROUND" deviceset="GND" device=""/>
-<part name="C87" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
+<part name="C87" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
+</part>
 <part name="R67" library="rcl_custom" deviceset="R-US_" device="0603-C" value="10k"/>
-<part name="C88" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="4.7u"/>
-<part name="C89" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n"/>
 <part name="C90" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
 <attribute name="V_RATING" value="25V"/>
 </part>
@@ -12833,7 +12861,23 @@ In use with boards from sunstone. Fit is good.</description>
 <part name="J8" library="apdm_dock_testjig" deviceset="IDC_RECEPTACLE_2X20" device="-S9175-ND"/>
 <part name="J9" library="apdm_dock_testjig" deviceset="IDC_RECEPTACLE_2X20" device="-S9175-ND"/>
 <part name="FRAME4" library="frames" deviceset="FRAME_C_L" device=""/>
-<part name="U11" library="STM32F427" deviceset="STM32F427" device="-STM32F427"/>
+<part name="U11" library="STM32F427" deviceset="STM32F427" device="-STM32F427">
+<attribute name="PA0" value="UART4_TX"/>
+<attribute name="PA1" value="UART4_RX"/>
+<attribute name="PA10" value="SDIO-PWR"/>
+<attribute name="PA11" value="FS_N"/>
+<attribute name="PA12" value="FS_P"/>
+<attribute name="PA13" value="SWDIO"/>
+<attribute name="PA14" value="SWDCK"/>
+<attribute name="PA2" value="ADC1/2/3_IN2"/>
+<attribute name="PA3" value="ULPI_D0"/>
+<attribute name="PA4" value="DAC1"/>
+<attribute name="PA5" value="ULPI_CK"/>
+<attribute name="PA6" value="ADC1/2_IN6"/>
+<attribute name="PA7" value="ADC1/2_IN7"/>
+<attribute name="PA8" value="MCO1"/>
+<attribute name="PA9" value="V_USB"/>
+</part>
 <part name="GND17" library="GROUND" deviceset="GND" device=""/>
 <part name="GND8" library="GROUND" deviceset="GND" device=""/>
 <part name="GND18" library="GROUND" deviceset="GND" device=""/>
@@ -13063,6 +13107,80 @@ In use with boards from sunstone. Fit is good.</description>
 </part>
 <part name="V27" library="supply" deviceset="V3.3A" device=""/>
 <part name="GND24" library="GROUND" deviceset="GND" device=""/>
+<part name="TP63" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP70" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP71" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP111" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP112" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP113" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP114" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP115" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP116" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP117" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP118" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP119" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP120" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP121" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
+<part name="TP122" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
+<part name="TP123" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
+<part name="TP124" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
+<part name="TP125" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
+<part name="TP126" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
+<part name="TP127" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
+<part name="TP128" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
+<part name="X2" library="NX3225SA" deviceset="NX3225SA" device="_NX3225SA_16MHZ"/>
+<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-C" value="1Meg"/>
+<part name="C89" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C83" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C92" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C28" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C93" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C5" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C6" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C94" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C95" library="rcl_custom" deviceset="C-EU" device="0603-C" value="1u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C43" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C1" library="rcl_custom" deviceset="C-EU" device="C1206" value="10u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C3" library="rcl_custom" deviceset="C-EU" device="C1206" value="10u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C38" library="rcl_custom" deviceset="C-EU" device="C1206" value="10u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C48" library="rcl_custom" deviceset="C-EU" device="C1206" value="10u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C88" library="rcl_custom" deviceset="C-EU" device="C1206" value="10u">
+<attribute name="V_RATING" value="25V"/>
+</part>
+<part name="C96" library="rcl_custom" deviceset="C-EU" device="C1206" value="10u">
+<attribute name="V_RATING" value="25V"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -13080,9 +13198,9 @@ In use with boards from sunstone. Fit is good.</description>
 <wire x1="311.15" y1="205.74" x2="311.15" y2="266.7" width="1.016" layer="94"/>
 <wire x1="311.15" y1="266.7" x2="218.44" y2="266.7" width="1.016" layer="94"/>
 <wire x1="320.04" y1="266.7" x2="320.04" y2="205.74" width="1.016" layer="94"/>
-<wire x1="320.04" y1="205.74" x2="412.75" y2="205.74" width="1.016" layer="94"/>
-<wire x1="412.75" y1="205.74" x2="412.75" y2="266.7" width="1.016" layer="94"/>
-<wire x1="412.75" y1="266.7" x2="320.04" y2="266.7" width="1.016" layer="94"/>
+<wire x1="320.04" y1="205.74" x2="420.37" y2="205.74" width="1.016" layer="94"/>
+<wire x1="420.37" y1="205.74" x2="420.37" y2="266.7" width="1.016" layer="94"/>
+<wire x1="420.37" y1="266.7" x2="320.04" y2="266.7" width="1.016" layer="94"/>
 <text x="332.74" y="259.08" size="5.08" layer="97">3.3VDD - 1.8V LDO</text>
 <text x="19.05" y="30.48" size="3.048" layer="97">Mounting Hardware</text>
 <text x="16.51" y="251.46" size="1.778" layer="97">Ext power in
@@ -13099,16 +13217,11 @@ In use with boards from sunstone. Fit is good.</description>
 <instances>
 <instance part="J1" gate="G$1" x="25.4" y="243.84"/>
 <instance part="GND" gate="1" x="35.56" y="233.68"/>
-<instance part="C1" gate="CE" x="228.6" y="237.49"/>
-<instance part="C2" gate="CE" x="274.32" y="237.49"/>
 <instance part="GND5" gate="1" x="149.86" y="210.82"/>
-<instance part="C3" gate="CE" x="119.38" y="242.57" smashed="yes" rot="MR0">
-<attribute name="NAME" x="119.38" y="242.57" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="119.38" y="237.49" size="1.778" layer="96" rot="MR0"/>
-</instance>
 <instance part="C4" gate="CE" x="185.42" y="241.3" smashed="yes">
 <attribute name="NAME" x="186.944" y="241.681" size="1.778" layer="95"/>
-<attribute name="VALUE" x="186.944" y="236.601" size="1.778" layer="96"/>
+<attribute name="VALUE" x="185.674" y="234.061" size="1.778" layer="96"/>
+<attribute name="V_RATING" x="185.42" y="236.22" size="1.778" layer="96"/>
 </instance>
 <instance part="C7" gate="CE" x="293.37" y="121.92" smashed="yes">
 <attribute name="V_RATING" x="293.37" y="115.57" size="1.778" layer="96"/>
@@ -13126,8 +13239,11 @@ In use with boards from sunstone. Fit is good.</description>
 <instance part="FRAME3" gate="G$2" x="325.12" y="0"/>
 <instance part="U4" gate="G$1" x="360.68" y="241.3"/>
 <instance part="GND23" gate="1" x="360.68" y="213.36"/>
-<instance part="C37" gate="CE" x="330.2" y="236.22"/>
-<instance part="C38" gate="CE" x="400.05" y="233.68"/>
+<instance part="C37" gate="CE" x="330.2" y="236.22" smashed="yes">
+<attribute name="V_RATING" x="331.47" y="229.87" size="1.778" layer="96"/>
+<attribute name="NAME" x="331.724" y="236.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="331.724" y="227.711" size="1.778" layer="96"/>
+</instance>
 <instance part="C41" gate="CE" x="60.96" y="238.76" smashed="yes">
 <attribute name="V_RATING" x="62.23" y="233.68" size="1.778" layer="96"/>
 <attribute name="NAME" x="62.484" y="239.141" size="1.778" layer="95"/>
@@ -13150,9 +13266,7 @@ In use with boards from sunstone. Fit is good.</description>
 <attribute name="NAME" x="166.37" y="243.84" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="171.45" y="245.11" size="1.778" layer="96" rot="R270" align="top-left"/>
 </instance>
-<instance part="C48" gate="CE" x="198.12" y="241.3"/>
 <instance part="U2" gate="G$1" x="256.54" y="241.3"/>
-<instance part="C83" gate="CE" x="379.73" y="233.68"/>
 <instance part="J5" gate="A" x="24.13" y="218.44" smashed="yes">
 <attribute name="VALUE" x="20.32" y="210.82" size="1.778" layer="96"/>
 <attribute name="NAME" x="20.32" y="225.552" size="1.778" layer="95"/>
@@ -13160,14 +13274,13 @@ In use with boards from sunstone. Fit is good.</description>
 <instance part="D4" gate="G$1" x="71.12" y="185.42"/>
 <instance part="C87" gate="CE" x="129.54" y="242.57" smashed="yes" rot="MR0">
 <attribute name="NAME" x="129.54" y="242.57" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="129.54" y="237.49" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="129.54" y="234.95" size="1.778" layer="96" rot="MR0"/>
+<attribute name="V_RATING" x="129.54" y="237.49" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R67" gate="R" x="134.62" y="241.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="135.89" y="243.84" size="1.778" layer="95"/>
 <attribute name="VALUE" x="135.89" y="241.3" size="1.778" layer="96"/>
 </instance>
-<instance part="C88" gate="CE" x="287.02" y="237.49"/>
-<instance part="C89" gate="CE" x="238.76" y="237.49"/>
 <instance part="U11" gate="PWF_MAIN" x="284.48" y="120.65" smashed="yes" rot="MR0"/>
 <instance part="GND17" gate="1" x="284.48" y="107.95"/>
 <instance part="TP5" gate="TP" x="300.99" y="60.96" rot="R270"/>
@@ -13260,43 +13373,33 @@ In use with boards from sunstone. Fit is good.</description>
 </instance>
 <instance part="V1" gate="G1" x="88.9" y="254"/>
 <instance part="V2" gate="G1" x="13.97" y="226.06"/>
-<instance part="V3" gate="S" x="400.05" y="250.19"/>
+<instance part="V3" gate="S" x="407.67" y="250.19"/>
 <instance part="V4" gate="G1" x="198.12" y="252.73"/>
 <instance part="V5" gate="G$1" x="287.02" y="250.19"/>
 <instance part="V6" gate="G1" x="330.2" y="250.19"/>
 <instance part="TP16" gate="TP" x="50.8" y="248.92" rot="R90"/>
 <instance part="TP17" gate="TP" x="60.96" y="248.92" rot="R90"/>
-<instance part="TP18" gate="TP" x="119.38" y="248.92" rot="R90"/>
+<instance part="TP18" gate="TP" x="115.57" y="248.92" rot="R90"/>
 <instance part="TP11" gate="TP" x="383.54" y="248.92" rot="R90"/>
 <instance part="TP12" gate="TP" x="274.32" y="248.92" rot="R90"/>
 <instance part="V10" gate="G1" x="284.48" y="137.16"/>
 <instance part="TP1" gate="TP" x="185.42" y="248.92" rot="R90"/>
-<instance part="TP2" gate="TP" x="392.43" y="248.92" rot="R90"/>
+<instance part="TP2" gate="TP" x="394.97" y="248.92" rot="R90"/>
 <instance part="TP3" gate="TP" x="280.67" y="248.92" rot="R90"/>
 <instance part="TP4" gate="TP" x="191.77" y="248.92" rot="R90"/>
 <instance part="TP110" gate="TP" x="165.1" y="248.92" rot="R90"/>
 <instance part="SB4" gate="G1" x="340.36" y="242.57" smashed="yes">
 <attribute name="NAME" x="341.63" y="242.57" size="1.016" layer="95"/>
 </instance>
-<instance part="C5" gate="CE" x="128.27" y="109.22" smashed="yes">
-<attribute name="V_RATING" x="129.54" y="104.14" size="1.778" layer="96"/>
-<attribute name="NAME" x="129.794" y="109.601" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.794" y="101.981" size="1.778" layer="96"/>
+<instance part="C23" gate="CE" x="102.87" y="125.73" smashed="yes">
+<attribute name="V_RATING" x="104.14" y="120.65" size="1.778" layer="96"/>
+<attribute name="NAME" x="104.394" y="126.111" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.394" y="118.491" size="1.778" layer="96"/>
 </instance>
-<instance part="C6" gate="CE" x="140.97" y="104.14" smashed="yes">
-<attribute name="V_RATING" x="142.24" y="99.06" size="1.778" layer="96"/>
-<attribute name="NAME" x="142.494" y="104.521" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.494" y="96.901" size="1.778" layer="96"/>
-</instance>
-<instance part="C23" gate="CE" x="113.03" y="125.73" smashed="yes">
+<instance part="C24" gate="CE" x="113.03" y="125.73" smashed="yes">
 <attribute name="V_RATING" x="114.3" y="120.65" size="1.778" layer="96"/>
 <attribute name="NAME" x="114.554" y="126.111" size="1.778" layer="95"/>
 <attribute name="VALUE" x="114.554" y="118.491" size="1.778" layer="96"/>
-</instance>
-<instance part="C24" gate="CE" x="128.27" y="125.73" smashed="yes">
-<attribute name="V_RATING" x="129.54" y="120.65" size="1.778" layer="96"/>
-<attribute name="NAME" x="129.794" y="126.111" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.794" y="118.491" size="1.778" layer="96"/>
 </instance>
 <instance part="C25" gate="CE" x="165.1" y="85.09" smashed="yes">
 <attribute name="V_RATING" x="166.37" y="80.01" size="1.778" layer="96"/>
@@ -13313,12 +13416,12 @@ In use with boards from sunstone. Fit is good.</description>
 <attribute name="VALUE" x="161.544" y="129.921" size="1.778" layer="96"/>
 </instance>
 <instance part="R19" gate="R" x="175.26" y="138.43" rot="R90"/>
-<instance part="J4" gate="G$1" x="90.17" y="128.27"/>
+<instance part="J4" gate="G$1" x="85.09" y="128.27"/>
 <instance part="R66" gate="R" x="102.87" y="135.89" rot="R90"/>
-<instance part="GND66" gate="1" x="100.33" y="123.19"/>
+<instance part="GND66" gate="1" x="95.25" y="123.19"/>
 <instance part="U11" gate="PWR_REF" x="194.31" y="104.14"/>
-<instance part="GND8" gate="1" x="128.27" y="92.71"/>
-<instance part="GND18" gate="1" x="113.03" y="114.3"/>
+<instance part="GND8" gate="1" x="118.11" y="92.71"/>
+<instance part="GND18" gate="1" x="102.87" y="114.3"/>
 <instance part="GND7" gate="1" x="152.4" y="72.39"/>
 <instance part="TP14" gate="TP" x="147.32" y="133.35" rot="R90"/>
 <instance part="TP13" gate="TP" x="172.72" y="121.92" rot="R180"/>
@@ -13332,6 +13435,71 @@ In use with boards from sunstone. Fit is good.</description>
 <instance part="FIDUCIAL5" gate="FIDUCIAL" x="165.1" y="24.13"/>
 <instance part="FIDUCIAL6" gate="FIDUCIAL" x="165.1" y="8.89"/>
 <instance part="V12" gate="G1" x="228.6" y="254"/>
+<instance part="C89" gate="CE" x="238.76" y="237.49" smashed="yes">
+<attribute name="NAME" x="240.284" y="237.871" size="1.778" layer="95"/>
+<attribute name="VALUE" x="239.014" y="230.251" size="1.778" layer="96"/>
+<attribute name="V_RATING" x="238.76" y="232.41" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="CE" x="274.32" y="237.49" smashed="yes">
+<attribute name="NAME" x="275.844" y="237.871" size="1.778" layer="95"/>
+<attribute name="VALUE" x="274.574" y="230.251" size="1.778" layer="96"/>
+<attribute name="V_RATING" x="274.32" y="232.41" size="1.778" layer="96"/>
+</instance>
+<instance part="C83" gate="CE" x="379.73" y="233.68" smashed="yes">
+<attribute name="NAME" x="381.254" y="234.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="379.984" y="226.441" size="1.778" layer="96"/>
+<attribute name="V_RATING" x="379.73" y="228.6" size="1.778" layer="96"/>
+</instance>
+<instance part="C92" gate="CE" x="394.97" y="233.68" smashed="yes">
+<attribute name="NAME" x="396.494" y="234.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="395.224" y="226.441" size="1.778" layer="96"/>
+<attribute name="V_RATING" x="394.97" y="228.6" size="1.778" layer="96"/>
+</instance>
+<instance part="C5" gate="CE" x="118.11" y="109.22" smashed="yes">
+<attribute name="V_RATING" x="119.38" y="104.14" size="1.778" layer="96"/>
+<attribute name="NAME" x="119.634" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="119.634" y="101.981" size="1.778" layer="96"/>
+</instance>
+<instance part="C6" gate="CE" x="127" y="109.22" smashed="yes">
+<attribute name="V_RATING" x="128.27" y="104.14" size="1.778" layer="96"/>
+<attribute name="NAME" x="128.524" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="128.524" y="101.981" size="1.778" layer="96"/>
+</instance>
+<instance part="C94" gate="CE" x="135.89" y="104.14" smashed="yes">
+<attribute name="V_RATING" x="137.16" y="99.06" size="1.778" layer="96"/>
+<attribute name="NAME" x="137.414" y="104.521" size="1.778" layer="95"/>
+<attribute name="VALUE" x="137.414" y="96.901" size="1.778" layer="96"/>
+</instance>
+<instance part="C95" gate="CE" x="144.78" y="104.14" smashed="yes">
+<attribute name="V_RATING" x="146.05" y="99.06" size="1.778" layer="96"/>
+<attribute name="NAME" x="146.304" y="104.521" size="1.778" layer="95"/>
+<attribute name="VALUE" x="146.304" y="96.901" size="1.778" layer="96"/>
+</instance>
+<instance part="C1" gate="CE" x="115.57" y="242.57" smashed="yes">
+<attribute name="V_RATING" x="116.84" y="237.49" size="1.778" layer="96"/>
+<attribute name="NAME" x="117.094" y="242.951" size="1.778" layer="95"/>
+<attribute name="VALUE" x="117.094" y="235.331" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="CE" x="198.12" y="241.3" smashed="yes">
+<attribute name="V_RATING" x="199.39" y="236.22" size="1.778" layer="96"/>
+<attribute name="NAME" x="199.644" y="241.681" size="1.778" layer="95"/>
+<attribute name="VALUE" x="199.644" y="234.061" size="1.778" layer="96"/>
+</instance>
+<instance part="C38" gate="CE" x="228.6" y="237.49" smashed="yes">
+<attribute name="V_RATING" x="229.87" y="232.41" size="1.778" layer="96"/>
+<attribute name="NAME" x="230.124" y="237.871" size="1.778" layer="95"/>
+<attribute name="VALUE" x="230.124" y="230.251" size="1.778" layer="96"/>
+</instance>
+<instance part="C48" gate="CE" x="287.02" y="237.49" smashed="yes">
+<attribute name="V_RATING" x="288.29" y="232.41" size="1.778" layer="96"/>
+<attribute name="NAME" x="288.544" y="237.871" size="1.778" layer="95"/>
+<attribute name="VALUE" x="288.544" y="230.251" size="1.778" layer="96"/>
+</instance>
+<instance part="C88" gate="CE" x="407.67" y="233.68" smashed="yes">
+<attribute name="V_RATING" x="408.94" y="228.6" size="1.778" layer="96"/>
+<attribute name="NAME" x="409.194" y="234.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="409.194" y="226.441" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13347,14 +13515,12 @@ In use with boards from sunstone. Fit is good.</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="149.86" y1="213.36" x2="149.86" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<pinref part="C3" gate="CE" pin="2"/>
 <wire x1="149.86" y1="218.44" x2="149.86" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="237.49" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="218.44" x2="129.54" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="237.49" x2="115.57" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="218.44" x2="129.54" y2="218.44" width="0.1524" layer="91"/>
 <junction x="149.86" y="218.44"/>
 <wire x1="129.54" y1="218.44" x2="149.86" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="218.44" x2="185.42" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="C48" gate="CE" pin="2"/>
 <wire x1="185.42" y1="218.44" x2="149.86" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="236.22" x2="198.12" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="C4" gate="CE" pin="2"/>
@@ -13363,27 +13529,29 @@ In use with boards from sunstone. Fit is good.</description>
 <pinref part="C87" gate="CE" pin="2"/>
 <wire x1="129.54" y1="237.49" x2="129.54" y2="218.44" width="0.1524" layer="91"/>
 <junction x="129.54" y="218.44"/>
+<pinref part="C1" gate="CE" pin="2"/>
+<pinref part="C3" gate="CE" pin="2"/>
 </segment>
 <segment>
 <wire x1="256.54" y1="228.6" x2="256.54" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="C1" gate="CE" pin="2"/>
 <wire x1="228.6" y1="232.41" x2="228.6" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="220.98" x2="238.76" y2="220.98" width="0.1524" layer="91"/>
 <junction x="256.54" y="220.98"/>
-<pinref part="C2" gate="CE" pin="2"/>
 <wire x1="238.76" y1="220.98" x2="256.54" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="232.41" x2="274.32" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="220.98" x2="256.54" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="215.9" x2="256.54" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
-<pinref part="C89" gate="CE" pin="2"/>
 <wire x1="238.76" y1="232.41" x2="238.76" y2="220.98" width="0.1524" layer="91"/>
 <junction x="238.76" y="220.98"/>
-<pinref part="C88" gate="CE" pin="2"/>
 <wire x1="287.02" y1="232.41" x2="287.02" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="220.98" x2="274.32" y2="220.98" width="0.1524" layer="91"/>
 <junction x="274.32" y="220.98"/>
+<pinref part="C89" gate="CE" pin="2"/>
+<pinref part="C2" gate="CE" pin="2"/>
+<pinref part="C38" gate="CE" pin="2"/>
+<pinref part="C48" gate="CE" pin="2"/>
 </segment>
 <segment>
 <pinref part="C41" gate="CE" pin="2"/>
@@ -13411,18 +13579,22 @@ In use with boards from sunstone. Fit is good.</description>
 <pinref part="C37" gate="CE" pin="2"/>
 <wire x1="330.2" y1="231.14" x2="330.2" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="218.44" x2="360.68" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="C38" gate="CE" pin="2"/>
 <wire x1="360.68" y1="218.44" x2="379.73" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="379.73" y1="218.44" x2="400.05" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="400.05" y1="218.44" x2="400.05" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="379.73" y1="218.44" x2="394.97" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="394.97" y1="218.44" x2="407.67" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="407.67" y1="218.44" x2="407.67" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
 <wire x1="360.68" y1="218.44" x2="360.68" y2="223.52" width="0.1524" layer="91"/>
 <junction x="360.68" y="218.44"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="360.68" y1="218.44" x2="360.68" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="C83" gate="CE" pin="2"/>
 <wire x1="379.73" y1="228.6" x2="379.73" y2="218.44" width="0.1524" layer="91"/>
 <junction x="379.73" y="218.44"/>
+<pinref part="C83" gate="CE" pin="2"/>
+<pinref part="C92" gate="CE" pin="2"/>
+<wire x1="394.97" y1="228.6" x2="394.97" y2="218.44" width="0.1524" layer="91"/>
+<junction x="394.97" y="218.44"/>
+<pinref part="C88" gate="CE" pin="2"/>
 </segment>
 <segment>
 <pinref part="C7" gate="CE" pin="2"/>
@@ -13526,28 +13698,36 @@ In use with boards from sunstone. Fit is good.</description>
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
 <pinref part="GND66" gate="1" pin="GND"/>
-<wire x1="97.79" y1="128.27" x2="100.33" y2="128.27" width="0.1524" layer="91"/>
-<wire x1="100.33" y1="128.27" x2="100.33" y2="125.73" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="128.27" x2="95.25" y2="128.27" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="128.27" x2="95.25" y2="125.73" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="118.11" y1="95.25" x2="118.11" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="118.11" y1="96.52" x2="118.11" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="118.11" y1="96.52" x2="127" y2="96.52" width="0.1524" layer="91"/>
+<junction x="118.11" y="96.52"/>
+<wire x1="127" y1="96.52" x2="135.89" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="96.52" x2="135.89" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="C5" gate="CE" pin="2"/>
-<wire x1="128.27" y1="95.25" x2="128.27" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="128.27" y1="96.52" x2="128.27" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="128.27" y1="96.52" x2="140.97" y2="96.52" width="0.1524" layer="91"/>
-<junction x="128.27" y="96.52"/>
 <pinref part="C6" gate="CE" pin="2"/>
-<wire x1="140.97" y1="96.52" x2="140.97" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="127" y1="104.14" x2="127" y2="96.52" width="0.1524" layer="91"/>
+<junction x="127" y="96.52"/>
+<pinref part="C94" gate="CE" pin="2"/>
+<pinref part="C95" gate="CE" pin="2"/>
+<wire x1="144.78" y1="99.06" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="96.52" x2="135.89" y2="96.52" width="0.1524" layer="91"/>
+<junction x="135.89" y="96.52"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
 <pinref part="C23" gate="CE" pin="2"/>
-<wire x1="113.03" y1="116.84" x2="113.03" y2="118.11" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="116.84" x2="102.87" y2="118.11" width="0.1524" layer="91"/>
 <pinref part="C24" gate="CE" pin="2"/>
-<wire x1="113.03" y1="118.11" x2="113.03" y2="120.65" width="0.1524" layer="91"/>
-<wire x1="128.27" y1="120.65" x2="128.27" y2="118.11" width="0.1524" layer="91"/>
-<wire x1="128.27" y1="118.11" x2="113.03" y2="118.11" width="0.1524" layer="91"/>
-<junction x="113.03" y="118.11"/>
+<wire x1="102.87" y1="118.11" x2="102.87" y2="120.65" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="120.65" x2="113.03" y2="118.11" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="118.11" x2="102.87" y2="118.11" width="0.1524" layer="91"/>
+<junction x="102.87" y="118.11"/>
 </segment>
 <segment>
 <pinref part="C25" gate="CE" pin="2"/>
@@ -13567,13 +13747,12 @@ In use with boards from sunstone. Fit is good.</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="C3" gate="CE" pin="1"/>
-<wire x1="119.38" y1="246.38" x2="129.54" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="246.38" x2="129.54" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="246.38" x2="134.62" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="246.38" x2="137.16" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="246.38" x2="119.38" y2="245.11" width="0.1524" layer="91"/>
-<junction x="119.38" y="246.38"/>
-<wire x1="88.9" y1="246.38" x2="119.38" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="246.38" x2="115.57" y2="245.11" width="0.1524" layer="91"/>
+<junction x="115.57" y="246.38"/>
+<wire x1="88.9" y1="246.38" x2="115.57" y2="246.38" width="0.1524" layer="91"/>
 <label x="124.46" y="246.38" size="1.778" layer="95"/>
 <junction x="88.9" y="246.38"/>
 <wire x1="88.9" y1="215.9" x2="88.9" y2="246.38" width="0.1524" layer="91"/>
@@ -13594,6 +13773,7 @@ In use with boards from sunstone. Fit is good.</description>
 <junction x="134.62" y="246.38"/>
 <pinref part="V1" gate="G1" pin="VCC"/>
 <pinref part="TP18" gate="TP" pin="P"/>
+<pinref part="C1" gate="CE" pin="1"/>
 </segment>
 <segment>
 <wire x1="13.97" y1="223.52" x2="13.97" y2="220.98" width="0.1524" layer="91"/>
@@ -13605,7 +13785,6 @@ In use with boards from sunstone. Fit is good.</description>
 <junction x="21.59" y="220.98"/>
 </segment>
 <segment>
-<pinref part="C1" gate="CE" pin="1"/>
 <wire x1="241.3" y1="246.38" x2="238.76" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="246.38" x2="228.6" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="246.38" x2="228.6" y2="240.03" width="0.1524" layer="91"/>
@@ -13613,10 +13792,11 @@ In use with boards from sunstone. Fit is good.</description>
 <wire x1="228.6" y1="246.38" x2="228.6" y2="251.46" width="0.1524" layer="91"/>
 <junction x="228.6" y="246.38"/>
 <pinref part="U2" gate="G$1" pin="IN"/>
-<pinref part="C89" gate="CE" pin="1"/>
 <wire x1="238.76" y1="240.03" x2="238.76" y2="246.38" width="0.1524" layer="91"/>
 <junction x="238.76" y="246.38"/>
 <pinref part="V12" gate="G1" pin="VCC"/>
+<pinref part="C89" gate="CE" pin="1"/>
+<pinref part="C38" gate="CE" pin="1"/>
 </segment>
 </net>
 <net name="VEXT-ECOD" class="0">
@@ -13642,8 +13822,8 @@ In use with boards from sunstone. Fit is good.</description>
 <segment>
 <pinref part="U4" gate="G$1" pin="BYPASS"/>
 <wire x1="375.92" y1="238.76" x2="379.73" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="C83" gate="CE" pin="1"/>
 <wire x1="379.73" y1="238.76" x2="379.73" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="C83" gate="CE" pin="1"/>
 </segment>
 </net>
 <net name="VEXT-COAX" class="0">
@@ -13775,7 +13955,6 @@ In use with boards from sunstone. Fit is good.</description>
 <pinref part="C4" gate="CE" pin="1"/>
 <wire x1="185.42" y1="246.38" x2="185.42" y2="243.84" width="0.1524" layer="91"/>
 <junction x="185.42" y="246.38"/>
-<pinref part="C48" gate="CE" pin="1"/>
 <wire x1="185.42" y1="246.38" x2="191.77" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="191.77" y1="246.38" x2="198.12" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="246.38" x2="198.12" y2="243.84" width="0.1524" layer="91"/>
@@ -13791,6 +13970,7 @@ In use with boards from sunstone. Fit is good.</description>
 <pinref part="TP1" gate="TP" pin="P"/>
 <pinref part="TP4" gate="TP" pin="P"/>
 <junction x="191.77" y="246.38"/>
+<pinref part="C3" gate="CE" pin="1"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="146.05" x2="175.26" y2="143.51" width="0.1524" layer="91"/>
@@ -13800,24 +13980,25 @@ In use with boards from sunstone. Fit is good.</description>
 </net>
 <net name="V1.8A" class="0">
 <segment>
-<pinref part="C38" gate="CE" pin="1"/>
-<wire x1="400.05" y1="236.22" x2="400.05" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="407.67" y1="236.22" x2="407.67" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="OUT"/>
-<wire x1="400.05" y1="246.38" x2="400.05" y2="247.65" width="0.1524" layer="91"/>
-<junction x="400.05" y="246.38"/>
+<wire x1="407.67" y1="246.38" x2="407.67" y2="247.65" width="0.1524" layer="91"/>
+<junction x="407.67" y="246.38"/>
 <pinref part="V3" gate="S" pin="V1.8A"/>
 <wire x1="375.92" y1="246.38" x2="383.54" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="TP11" gate="TP" pin="P"/>
-<wire x1="383.54" y1="246.38" x2="392.43" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="246.38" x2="394.97" y2="246.38" width="0.1524" layer="91"/>
 <junction x="383.54" y="246.38"/>
 <pinref part="TP2" gate="TP" pin="P"/>
-<wire x1="392.43" y1="246.38" x2="400.05" y2="246.38" width="0.1524" layer="91"/>
-<junction x="392.43" y="246.38"/>
+<wire x1="394.97" y1="246.38" x2="407.67" y2="246.38" width="0.1524" layer="91"/>
+<junction x="394.97" y="246.38"/>
+<pinref part="C92" gate="CE" pin="1"/>
+<wire x1="394.97" y1="236.22" x2="394.97" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="C88" gate="CE" pin="1"/>
 </segment>
 </net>
 <net name="V3.3A" class="0">
 <segment>
-<pinref part="C2" gate="CE" pin="1"/>
 <wire x1="287.02" y1="247.65" x2="287.02" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="246.38" x2="280.67" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="OUT"/>
@@ -13825,13 +14006,14 @@ In use with boards from sunstone. Fit is good.</description>
 <wire x1="274.32" y1="246.38" x2="274.32" y2="240.03" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="246.38" x2="274.32" y2="246.38" width="0.1524" layer="91"/>
 <junction x="274.32" y="246.38"/>
-<pinref part="C88" gate="CE" pin="1"/>
 <wire x1="287.02" y1="246.38" x2="287.02" y2="240.03" width="0.1524" layer="91"/>
 <junction x="287.02" y="246.38"/>
 <pinref part="V5" gate="G$1" pin="V3.3A"/>
 <pinref part="TP12" gate="TP" pin="P"/>
 <pinref part="TP3" gate="TP" pin="P"/>
 <junction x="280.67" y="246.38"/>
+<pinref part="C2" gate="CE" pin="1"/>
+<pinref part="C48" gate="CE" pin="1"/>
 </segment>
 <segment>
 <pinref part="R66" gate="R" pin="2"/>
@@ -13864,21 +14046,20 @@ In use with boards from sunstone. Fit is good.</description>
 <net name="VREF+" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="1"/>
-<wire x1="97.79" y1="130.81" x2="102.87" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="130.81" x2="102.87" y2="130.81" width="0.1524" layer="91"/>
 <pinref part="R66" gate="R" pin="1"/>
 <junction x="102.87" y="130.81"/>
 <pinref part="U11" gate="PWR_REF" pin="VREF+"/>
 <wire x1="181.61" y1="116.84" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="116.84" x2="147.32" y2="130.81" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="130.81" x2="128.27" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="130.81" x2="113.03" y2="130.81" width="0.1524" layer="91"/>
 <pinref part="C23" gate="CE" pin="1"/>
-<wire x1="128.27" y1="130.81" x2="113.03" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="113.03" y1="130.81" x2="102.87" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="128.27" x2="102.87" y2="130.81" width="0.1524" layer="91"/>
+<junction x="102.87" y="130.81"/>
+<pinref part="C24" gate="CE" pin="1"/>
 <wire x1="113.03" y1="128.27" x2="113.03" y2="130.81" width="0.1524" layer="91"/>
 <junction x="113.03" y="130.81"/>
-<pinref part="C24" gate="CE" pin="1"/>
-<wire x1="128.27" y1="128.27" x2="128.27" y2="130.81" width="0.1524" layer="91"/>
-<junction x="128.27" y="130.81"/>
 <pinref part="TP14" gate="TP" pin="P"/>
 <junction x="147.32" y="130.81"/>
 </segment>
@@ -13903,15 +14084,21 @@ In use with boards from sunstone. Fit is good.</description>
 <net name="STM_VCAP_1" class="0">
 <segment>
 <pinref part="U11" gate="PWR_REF" pin="VCAP_1"/>
+<wire x1="181.61" y1="111.76" x2="127" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C5" gate="CE" pin="1"/>
-<wire x1="181.61" y1="111.76" x2="128.27" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="127" y1="111.76" x2="118.11" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C6" gate="CE" pin="1"/>
+<junction x="127" y="111.76"/>
 </segment>
 </net>
 <net name="STM_VCAP_2" class="0">
 <segment>
 <pinref part="U11" gate="PWR_REF" pin="VCAP_2"/>
-<pinref part="C6" gate="CE" pin="1"/>
-<wire x1="181.61" y1="106.68" x2="140.97" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="181.61" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C94" gate="CE" pin="1"/>
+<pinref part="C95" gate="CE" pin="1"/>
+<wire x1="144.78" y1="106.68" x2="135.89" y2="106.68" width="0.1524" layer="91"/>
+<junction x="144.78" y="106.68"/>
 </segment>
 </net>
 </nets>
@@ -13925,9 +14112,9 @@ In use with boards from sunstone. Fit is good.</description>
 <wire x1="262.89" y1="556.26" x2="262.89" y2="596.9" width="1.016" layer="94"/>
 <wire x1="262.89" y1="596.9" x2="200.66" y2="596.9" width="1.016" layer="94"/>
 <text x="203.2" y="590.55" size="5.08" layer="97">32.768kHz CLK</text>
-<wire x1="650.24" y1="713.74" x2="439.42" y2="713.74" width="1.016" layer="94"/>
-<wire x1="439.42" y1="713.74" x2="439.42" y2="831.85" width="1.016" layer="94"/>
-<wire x1="439.42" y1="831.85" x2="650.24" y2="831.85" width="1.016" layer="94"/>
+<wire x1="650.24" y1="713.74" x2="434.34" y2="713.74" width="1.016" layer="94"/>
+<wire x1="434.34" y1="713.74" x2="434.34" y2="831.85" width="1.016" layer="94"/>
+<wire x1="434.34" y1="831.85" x2="650.24" y2="831.85" width="1.016" layer="94"/>
 <wire x1="650.24" y1="831.85" x2="650.24" y2="713.74" width="1.016" layer="94"/>
 <text x="563.88" y="816.61" size="5.08" layer="97">USB HS PHY</text>
 <wire x1="430.53" y1="514.35" x2="340.36" y2="514.35" width="1.016" layer="94"/>
@@ -14028,11 +14215,19 @@ which can be connected through an analog MUX network to I2C or
 an ADC channel.  This is to verify correct connection of IDC cables
 to the marionette board in a test jig.
 Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
+<text x="334.01" y="260.35" size="1.778" layer="97">ADC3_CH4 (PF6) is tied to (PH7), and ADC3_CH8 (PF10) is tied to (PH8).
+To use the ADC channel to check the voltage on a bus line, tri-state the I2C
+port (), set the switch lines (ABUS_ID (PI5), SBUS_ID (PI6), GPIO_BUS_ID (PI7))
+ to choose a bus, then sample the voltage on the bus with the ADC. </text>
+<text x="556.26" y="767.588" size="1.778" layer="112">Swapped DP/DM</text>
 </plain>
 <instances>
-<instance part="C28" gate="CE" x="476.25" y="808.99"/>
 <instance part="R1" gate="R" x="523.24" y="736.6" rot="R270"/>
-<instance part="C29" gate="CE" x="457.2" y="803.91"/>
+<instance part="C29" gate="CE" x="449.58" y="803.91" smashed="yes">
+<attribute name="V_RATING" x="450.85" y="798.83" size="1.778" layer="96"/>
+<attribute name="NAME" x="451.104" y="804.291" size="1.778" layer="95"/>
+<attribute name="VALUE" x="451.104" y="796.671" size="1.778" layer="96"/>
+</instance>
 <instance part="GND6" gate="1" x="525.78" y="726.44"/>
 <instance part="X1" gate="G$1" x="228.6" y="574.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="231.775" y="574.04" size="1.778" layer="95" font="vector"/>
@@ -14047,7 +14242,7 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <attribute name="VALUE" x="237.744" y="565.531" size="1.778" layer="96"/>
 </instance>
 <instance part="GND3" gate="1" x="246.38" y="570.23"/>
-<instance part="J22" gate="G$1" x="626.11" y="762" rot="MR0"/>
+<instance part="J22" gate="G$1" x="626.11" y="759.46" rot="MR0"/>
 <instance part="R6" gate="R" x="215.9" y="716.28" rot="R90"/>
 <instance part="R7" gate="R" x="226.06" y="716.28" rot="R90"/>
 <instance part="GND11" gate="1" x="401.32" y="537.21"/>
@@ -14061,7 +14256,7 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <instance part="R9" gate="R" x="370.84" y="591.82" rot="R90"/>
 <instance part="R10" gate="R" x="378.46" y="591.82" rot="R90"/>
 <instance part="R11" gate="R" x="386.08" y="591.82" rot="R90"/>
-<instance part="GND12" gate="1" x="613.41" y="731.52"/>
+<instance part="GND12" gate="1" x="613.41" y="728.98"/>
 <instance part="LED10" gate="LED" x="207.01" y="482.6" rot="R270"/>
 <instance part="R12" gate="R" x="181.61" y="487.68" smashed="yes">
 <attribute name="NAME" x="173.99" y="487.9086" size="1.778" layer="95"/>
@@ -14077,15 +14272,16 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </instance>
 <instance part="C32" gate="CE" x="600.71" y="792.48" smashed="yes">
 <attribute name="NAME" x="595.884" y="792.861" size="1.778" layer="95"/>
-<attribute name="VALUE" x="597.154" y="787.781" size="1.778" layer="96"/>
+<attribute name="VALUE" x="597.154" y="785.241" size="1.778" layer="96"/>
+<attribute name="V_RATING" x="595.63" y="787.4" size="1.778" layer="96"/>
 </instance>
 <instance part="R15" gate="R" x="572.77" y="779.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="566.42" y="781.2786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="579.12" y="783.082" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C36" gate="CE" x="613.41" y="746.76" smashed="yes">
-<attribute name="NAME" x="614.934" y="742.061" size="1.778" layer="95"/>
-<attribute name="VALUE" x="614.934" y="739.521" size="1.778" layer="96"/>
+<instance part="C36" gate="CE" x="613.41" y="744.22" smashed="yes">
+<attribute name="NAME" x="614.934" y="739.521" size="1.778" layer="95"/>
+<attribute name="VALUE" x="614.934" y="736.981" size="1.778" layer="96"/>
 </instance>
 <instance part="GND15" gate="1" x="600.71" y="782.32"/>
 <instance part="GND16" gate="1" x="417.83" y="580.39"/>
@@ -14100,25 +14296,48 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <attribute name="VALUE" x="247.904" y="679.831" size="1.778" layer="96"/>
 </instance>
 <instance part="U14" gate="U" x="521.97" y="779.78"/>
-<instance part="GND58" gate="1" x="476.25" y="797.56"/>
-<instance part="C85" gate="CE" x="447.04" y="803.91"/>
-<instance part="C86" gate="CE" x="483.87" y="808.99"/>
-<instance part="GND62" gate="1" x="447.04" y="792.48"/>
+<instance part="GND58" gate="1" x="469.9" y="797.56"/>
+<instance part="C85" gate="CE" x="439.42" y="803.91" smashed="yes">
+<attribute name="V_RATING" x="440.69" y="798.83" size="1.778" layer="96"/>
+<attribute name="NAME" x="440.944" y="804.291" size="1.778" layer="95"/>
+<attribute name="VALUE" x="440.944" y="796.671" size="1.778" layer="96"/>
+</instance>
+<instance part="C86" gate="CE" x="483.87" y="808.99" smashed="yes">
+<attribute name="V_RATING" x="485.14" y="802.64" size="1.778" layer="96"/>
+<attribute name="NAME" x="485.394" y="809.371" size="1.778" layer="95"/>
+<attribute name="VALUE" x="485.394" y="800.481" size="1.778" layer="96"/>
+</instance>
+<instance part="GND62" gate="1" x="439.42" y="792.48"/>
 <instance part="GND10" gate="1" x="546.1" y="814.07"/>
 <instance part="MCO1" gate="G$1" x="165.1" y="795.02" smashed="yes">
 <attribute name="NAME" x="163.195" y="796.925" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="R38" gate="R" x="511.81" y="810.26" rot="R180"/>
+<instance part="R38" gate="R" x="513.08" y="810.26" rot="R180"/>
 <instance part="R63" gate="R" x="454.66" y="775.97" rot="R270"/>
 <instance part="GND34" gate="1" x="454.66" y="767.08"/>
 <instance part="R64" gate="R" x="200.66" y="726.44" rot="R90"/>
 <instance part="GND63" gate="1" x="200.66" y="718.82"/>
 <instance part="R65" gate="R" x="359.41" y="537.21" rot="R270"/>
-<instance part="C43" gate="CE" x="386.08" y="558.8"/>
-<instance part="GND67" gate="1" x="386.08" y="551.18"/>
+<instance part="GND67" gate="1" x="383.54" y="547.37"/>
 <instance part="GND68" gate="1" x="256.54" y="675.64"/>
 <instance part="GND70" gate="1" x="246.38" y="675.64"/>
-<instance part="U11" gate="G1" x="95.25" y="800.1" rot="MR0"/>
+<instance part="U11" gate="G1" x="95.25" y="800.1" rot="MR0">
+<attribute name="PA0" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA1" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA2" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA3" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA4" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA5" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA6" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA7" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA8" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA9" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA10" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA11" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA12" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA13" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PA14" x="95.25" y="800.1" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="U11" gate="G2" x="93.98" y="706.12" rot="MR0"/>
 <instance part="U11" gate="G3" x="99.06" y="612.14" rot="MR0"/>
 <instance part="U11" gate="G4" x="99.06" y="518.16" rot="MR0"/>
@@ -14131,12 +14350,16 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <instance part="S1" gate="G$1" x="772.16" y="768.35" rot="MR90"/>
 <instance part="C31" gate="CE" x="767.08" y="769.62" smashed="yes" rot="MR0">
 <attribute name="NAME" x="765.556" y="770.001" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="765.556" y="764.921" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="765.556" y="762.381" size="1.778" layer="96" rot="MR0"/>
+<attribute name="V_RATING" x="765.81" y="764.54" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND9" gate="1" x="769.62" y="756.92" rot="MR0"/>
 <instance part="R16" gate="R" x="767.08" y="781.05" rot="MR90"/>
 <instance part="TP19" gate="TP" x="600.71" y="800.1" rot="R90"/>
-<instance part="TP20" gate="TP" x="462.28" y="787.4" rot="R90"/>
+<instance part="TP20" gate="TP" x="462.28" y="787.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="460.883" y="789.3558" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="464.312" y="786.003" size="0.762" layer="96" rot="R90"/>
+</instance>
 <instance part="TP22" gate="TP" x="557.53" y="762" smashed="yes" rot="R90">
 <attribute name="NAME" x="558.673" y="765.2258" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="559.562" y="760.603" size="0.762" layer="96" rot="R90"/>
@@ -14168,8 +14391,8 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <instance part="TP37" gate="TP" x="217.17" y="566.42" rot="R270"/>
 <instance part="TP38" gate="TP" x="217.17" y="581.66" rot="R90"/>
 <instance part="V13" gate="G1" x="215.9" y="728.98"/>
-<instance part="V14" gate="S" x="447.04" y="816.61"/>
-<instance part="V15" gate="G1" x="476.25" y="824.23"/>
+<instance part="V14" gate="S" x="439.42" y="816.61"/>
+<instance part="V15" gate="G1" x="469.9" y="824.23"/>
 <instance part="V16" gate="G1" x="246.38" y="699.77"/>
 <instance part="V19" gate="G1" x="373.38" y="604.52"/>
 <instance part="V20" gate="G1" x="359.41" y="547.37"/>
@@ -14239,41 +14462,40 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <instance part="FRAME1" gate="G$2" x="1010.92" y="0"/>
 <instance part="R2" gate="R" x="213.36" y="466.09" rot="R90"/>
 <instance part="R3" gate="R" x="226.06" y="466.09" rot="R90"/>
-<instance part="C34" gate="CE" x="243.84" y="350.52" rot="R90"/>
-<instance part="C35" gate="CE" x="243.84" y="365.76" rot="R90"/>
-<instance part="GND13" gate="1" x="261.62" y="353.06"/>
-<instance part="X2" gate="G$1" x="231.14" y="358.14" rot="R90"/>
-<instance part="LED0" gate="G$1" x="241.3" y="60.96" smashed="yes" rot="MR0">
-<attribute name="NAME" x="246.38" y="64.135" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="240.03" y="64.135" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="C34" gate="CE" x="251.46" y="350.52" rot="R90"/>
+<instance part="C35" gate="CE" x="251.46" y="365.76" rot="R90"/>
+<instance part="GND13" gate="1" x="269.24" y="353.06"/>
+<instance part="LED0" gate="G$1" x="226.06" y="60.96" smashed="yes" rot="MR0">
+<attribute name="NAME" x="231.14" y="64.135" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="224.79" y="64.135" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED1" gate="G$1" x="241.3" y="55.88" smashed="yes" rot="MR0">
-<attribute name="NAME" x="246.38" y="59.055" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="240.03" y="56.515" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="LED1" gate="G$1" x="226.06" y="55.88" smashed="yes" rot="MR0">
+<attribute name="NAME" x="231.14" y="59.055" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="224.79" y="56.515" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED2" gate="G$1" x="241.3" y="50.8" smashed="yes" rot="MR0">
-<attribute name="NAME" x="246.38" y="53.975" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="240.03" y="51.435" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="LED2" gate="G$1" x="226.06" y="50.8" smashed="yes" rot="MR0">
+<attribute name="NAME" x="231.14" y="53.975" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="224.79" y="51.435" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED3" gate="G$1" x="241.3" y="45.72" smashed="yes" rot="MR0">
-<attribute name="NAME" x="246.38" y="48.895" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="240.03" y="46.355" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="LED3" gate="G$1" x="226.06" y="45.72" smashed="yes" rot="MR0">
+<attribute name="NAME" x="231.14" y="48.895" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="224.79" y="46.355" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED4" gate="G$1" x="241.3" y="40.64" smashed="yes" rot="MR0">
-<attribute name="NAME" x="246.38" y="43.815" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="240.03" y="41.275" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="LED4" gate="G$1" x="226.06" y="40.64" smashed="yes" rot="MR0">
+<attribute name="NAME" x="231.14" y="43.815" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="224.79" y="41.275" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED5" gate="G$1" x="241.3" y="35.56" smashed="yes" rot="MR0">
-<attribute name="NAME" x="246.38" y="38.735" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="240.03" y="36.195" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="LED5" gate="G$1" x="226.06" y="35.56" smashed="yes" rot="MR0">
+<attribute name="NAME" x="231.14" y="38.735" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="224.79" y="36.195" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED6" gate="G$1" x="241.3" y="30.48" smashed="yes" rot="MR0">
-<attribute name="NAME" x="246.38" y="33.655" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="240.03" y="31.115" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="LED6" gate="G$1" x="226.06" y="30.48" smashed="yes" rot="MR0">
+<attribute name="NAME" x="231.14" y="33.655" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="224.79" y="31.115" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED7" gate="G$1" x="241.3" y="25.4" smashed="yes" rot="MR0">
-<attribute name="NAME" x="246.38" y="28.575" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="240.03" y="26.035" size="1.778" layer="96" font="vector" rot="MR0"/>
+<instance part="LED7" gate="G$1" x="226.06" y="25.4" smashed="yes" rot="MR0">
+<attribute name="NAME" x="231.14" y="28.575" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="224.79" y="26.035" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
 <instance part="R21" gate="R" x="262.89" y="60.96" smashed="yes">
 <attribute name="NAME" x="260.35" y="63.2714" size="1.778" layer="95" rot="R180"/>
@@ -14352,6 +14574,82 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </instance>
 <instance part="V27" gate="G$1" x="378.46" y="59.69"/>
 <instance part="GND24" gate="1" x="378.46" y="33.02"/>
+<instance part="TP63" gate="TP" x="445.77" y="236.22"/>
+<instance part="TP70" gate="TP" x="481.33" y="241.3"/>
+<instance part="TP71" gate="TP" x="481.33" y="238.76"/>
+<instance part="TP111" gate="TP" x="356.87" y="332.74" rot="R90"/>
+<instance part="TP112" gate="TP" x="356.87" y="325.12" rot="R270"/>
+<instance part="TP113" gate="TP" x="245.11" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.507" y="62.8142" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.142" y="62.103" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="TP114" gate="TP" x="245.11" y="58.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.507" y="57.7342" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.142" y="57.023" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="TP115" gate="TP" x="245.11" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.507" y="52.6542" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.142" y="51.943" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="TP116" gate="TP" x="245.11" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.507" y="47.5742" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.142" y="46.863" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="TP117" gate="TP" x="245.11" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.507" y="42.4942" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.142" y="41.783" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="TP118" gate="TP" x="245.11" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.507" y="37.4142" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.142" y="36.703" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="TP119" gate="TP" x="245.11" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.507" y="32.3342" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.142" y="31.623" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="TP120" gate="TP" x="245.11" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.507" y="27.2542" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.142" y="26.543" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="TP121" gate="TP" x="201.93" y="127" rot="R90"/>
+<instance part="TP122" gate="TP" x="207.01" y="132.08" rot="R90"/>
+<instance part="TP123" gate="TP" x="213.36" y="137.16" rot="R90"/>
+<instance part="TP124" gate="TP" x="219.71" y="142.24" rot="R90"/>
+<instance part="TP125" gate="TP" x="194.31" y="256.54" rot="R90"/>
+<instance part="TP126" gate="TP" x="198.12" y="261.62" rot="R90"/>
+<instance part="TP127" gate="TP" x="203.2" y="266.7" rot="R90"/>
+<instance part="TP128" gate="TP" x="207.01" y="271.78" rot="R90"/>
+<instance part="X2" gate="G1" x="242.57" y="358.14" smashed="yes" rot="R270">
+<attribute name="NAME" x="238.76" y="361.95" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="233.68" y="345.44" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="X2" gate="G2" x="246.38" y="358.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.38" y="360.68" size="0.85" layer="95" ratio="15" rot="R90"/>
+</instance>
+<instance part="R4" gate="R" x="607.06" y="742.95" smashed="yes" rot="R270">
+<attribute name="NAME" x="605.5614" y="736.6" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="603.758" y="749.3" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C28" gate="CE" x="469.9" y="808.99" smashed="yes">
+<attribute name="V_RATING" x="471.17" y="803.91" size="1.778" layer="96"/>
+<attribute name="NAME" x="471.424" y="809.371" size="1.778" layer="95"/>
+<attribute name="VALUE" x="471.424" y="801.751" size="1.778" layer="96"/>
+</instance>
+<instance part="C93" gate="CE" x="477.52" y="808.99" smashed="yes">
+<attribute name="V_RATING" x="478.79" y="803.91" size="1.778" layer="96"/>
+<attribute name="NAME" x="479.044" y="809.371" size="1.778" layer="95"/>
+<attribute name="VALUE" x="479.044" y="801.751" size="1.778" layer="96"/>
+</instance>
+<instance part="C43" gate="CE" x="391.16" y="558.8" smashed="yes">
+<attribute name="V_RATING" x="392.43" y="553.72" size="1.778" layer="96"/>
+<attribute name="NAME" x="392.684" y="559.181" size="1.778" layer="95"/>
+<attribute name="VALUE" x="392.684" y="551.561" size="1.778" layer="96"/>
+</instance>
+<instance part="C96" gate="CE" x="383.54" y="558.8" smashed="yes">
+<attribute name="V_RATING" x="384.81" y="553.72" size="1.778" layer="96"/>
+<attribute name="NAME" x="385.064" y="559.181" size="1.778" layer="95"/>
+<attribute name="VALUE" x="385.064" y="551.561" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -14411,11 +14709,11 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </bus>
 <bus name="SPI_BUS:SPI2_NSS,SPI2_SCK,SPI2_MISO,SPI2_MOSI,SPI4_NSS,SPI4_SCK,SPI4_MISO,SPI4_MOSI">
 <segment>
-<wire x1="147.32" y1="255.27" x2="147.32" y2="273.05" width="0.762" layer="92"/>
-<label x="151.13" y="255.27" size="3.048" layer="95" rot="R90"/>
+<wire x1="259.08" y1="255.27" x2="259.08" y2="273.05" width="0.762" layer="92"/>
+<label x="262.89" y="255.27" size="3.048" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="114.3" x2="259.08" y2="146.05" width="0.762" layer="92"/>
+<wire x1="259.08" y1="114.3" x2="259.08" y2="255.27" width="0.762" layer="92"/>
 <label x="262.89" y="115.57" size="3.048" layer="95" rot="R90"/>
 </segment>
 </bus>
@@ -14775,13 +15073,17 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <pinref part="C36" gate="CE" pin="2"/>
-<wire x1="613.41" y1="741.68" x2="613.41" y2="737.87" width="0.1524" layer="91"/>
+<wire x1="613.41" y1="739.14" x2="613.41" y2="735.33" width="0.1524" layer="91"/>
 <pinref part="J22" gate="G$1" pin="GND"/>
-<wire x1="613.41" y1="737.87" x2="613.41" y2="734.06" width="0.1524" layer="91"/>
-<wire x1="615.95" y1="764.54" x2="609.6" y2="764.54" width="0.1524" layer="91"/>
-<wire x1="609.6" y1="764.54" x2="609.6" y2="737.87" width="0.1524" layer="91"/>
-<wire x1="609.6" y1="737.87" x2="613.41" y2="737.87" width="0.1524" layer="91"/>
-<junction x="613.41" y="737.87"/>
+<wire x1="613.41" y1="735.33" x2="613.41" y2="731.52" width="0.1524" layer="91"/>
+<wire x1="615.95" y1="762" x2="601.98" y2="762" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="762" x2="601.98" y2="735.33" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="735.33" x2="607.06" y2="735.33" width="0.1524" layer="91"/>
+<junction x="613.41" y="735.33"/>
+<pinref part="R4" gate="R" pin="2"/>
+<wire x1="607.06" y1="735.33" x2="613.41" y2="735.33" width="0.1524" layer="91"/>
+<wire x1="607.06" y1="735.33" x2="607.06" y2="737.87" width="0.1524" layer="91"/>
+<junction x="607.06" y="735.33"/>
 </segment>
 <segment>
 <pinref part="C32" gate="CE" pin="2"/>
@@ -14831,18 +15133,22 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C28" gate="CE" pin="2"/>
 <pinref part="GND58" gate="1" pin="GND"/>
-<wire x1="476.25" y1="803.91" x2="476.25" y2="800.1" width="0.1524" layer="91"/>
+<wire x1="469.9" y1="803.91" x2="469.9" y2="800.1" width="0.1524" layer="91"/>
+<pinref part="C28" gate="CE" pin="2"/>
+<pinref part="C93" gate="CE" pin="2"/>
+<wire x1="477.52" y1="803.91" x2="477.52" y2="800.1" width="0.1524" layer="91"/>
+<wire x1="477.52" y1="800.1" x2="469.9" y2="800.1" width="0.1524" layer="91"/>
+<junction x="469.9" y="800.1"/>
 </segment>
 <segment>
 <pinref part="C29" gate="CE" pin="2"/>
-<wire x1="447.04" y1="797.56" x2="457.2" y2="797.56" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="797.56" x2="457.2" y2="798.83" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="796.29" x2="449.58" y2="796.29" width="0.1524" layer="91"/>
+<wire x1="449.58" y1="796.29" x2="449.58" y2="798.83" width="0.1524" layer="91"/>
 <pinref part="C85" gate="CE" pin="2"/>
-<wire x1="447.04" y1="798.83" x2="447.04" y2="797.56" width="0.1524" layer="91"/>
-<junction x="447.04" y="797.56"/>
-<wire x1="447.04" y1="797.56" x2="447.04" y2="795.02" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="798.83" x2="439.42" y2="796.29" width="0.1524" layer="91"/>
+<junction x="439.42" y="796.29"/>
+<wire x1="439.42" y1="796.29" x2="439.42" y2="795.02" width="0.1524" layer="91"/>
 <pinref part="GND62" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -14864,10 +15170,6 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <segment>
 <pinref part="R64" gate="R" pin="1"/>
 <pinref part="GND63" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C43" gate="CE" pin="2"/>
-<pinref part="GND67" gate="1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="801.37" y1="735.33" x2="801.37" y2="734.06" width="0.1524" layer="91"/>
@@ -14911,15 +15213,17 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </segment>
 <segment>
 <pinref part="C34" gate="CE" pin="2"/>
-<wire x1="248.92" y1="350.52" x2="251.46" y2="350.52" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="350.52" x2="251.46" y2="358.14" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="350.52" x2="259.08" y2="350.52" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="350.52" x2="259.08" y2="358.14" width="0.1524" layer="91"/>
 <pinref part="C35" gate="CE" pin="2"/>
-<wire x1="251.46" y1="358.14" x2="251.46" y2="365.76" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="365.76" x2="248.92" y2="365.76" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="358.14" x2="261.62" y2="358.14" width="0.1524" layer="91"/>
-<junction x="251.46" y="358.14"/>
+<wire x1="259.08" y1="358.14" x2="259.08" y2="365.76" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="365.76" x2="256.54" y2="365.76" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="358.14" x2="269.24" y2="358.14" width="0.1524" layer="91"/>
+<junction x="259.08" y="358.14"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="261.62" y1="358.14" x2="261.62" y2="355.6" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="358.14" x2="269.24" y2="355.6" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G2" pin="GND"/>
+<wire x1="248.92" y1="358.14" x2="259.08" y2="358.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
@@ -14949,6 +15253,14 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <junction x="394.97" y="38.1"/>
 <pinref part="C91" gate="CE" pin="2"/>
 <wire x1="401.32" y1="38.1" x2="401.32" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND67" gate="1" pin="GND"/>
+<wire x1="383.54" y1="549.91" x2="383.54" y2="553.72" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="549.91" x2="391.16" y2="549.91" width="0.1524" layer="91"/>
+<junction x="383.54" y="549.91"/>
+<pinref part="C43" gate="CE" pin="2"/>
+<wire x1="391.16" y1="549.91" x2="391.16" y2="553.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDIO_CK-SPI3_MOSI" class="0">
@@ -15146,9 +15458,12 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <pinref part="U11" gate="G2" pin="PB14"/>
 </segment>
 <segment>
-<label x="505.46" y="810.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="513.08" y="817.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R38" gate="R" pin="2"/>
-<wire x1="505.46" y1="810.26" x2="506.73" y2="810.26" width="0.1524" layer="91"/>
+<wire x1="513.08" y1="817.88" x2="513.08" y2="814.07" width="0.1524" layer="91"/>
+<wire x1="513.08" y1="814.07" x2="508" y2="814.07" width="0.1524" layer="91"/>
+<wire x1="508" y1="814.07" x2="508" y2="812.8" width="0.1524" layer="91"/>
+<wire x1="508" y1="812.8" x2="508" y2="810.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDIO-PWR" class="0">
@@ -15325,28 +15640,12 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <junction x="236.22" y="708.66"/>
 </segment>
 </net>
-<net name="USB_HS_N" class="0">
-<segment>
-<pinref part="J22" gate="G$1" pin="D-"/>
-<wire x1="541.02" y1="767.08" x2="579.12" y2="767.08" width="0.1524" layer="91"/>
-<wire x1="579.12" y1="767.08" x2="579.12" y2="772.16" width="0.1524" layer="91"/>
-<wire x1="579.12" y1="772.16" x2="615.95" y2="772.16" width="0.1524" layer="91"/>
-<pinref part="U14" gate="U" pin="DM/DP"/>
-</segment>
-</net>
-<net name="USB_HS_P" class="0">
-<segment>
-<pinref part="J22" gate="G$1" pin="D+"/>
-<wire x1="541.02" y1="769.62" x2="615.95" y2="769.62" width="0.1524" layer="91"/>
-<pinref part="U14" gate="U" pin="DP/DM"/>
-</segment>
-</net>
 <net name="USB_ID" class="0">
 <segment>
 <pinref part="J22" gate="G$1" pin="ID"/>
-<wire x1="541.02" y1="774.7" x2="604.52" y2="774.7" width="0.1524" layer="91"/>
-<wire x1="604.52" y1="774.7" x2="604.52" y2="767.08" width="0.1524" layer="91"/>
-<wire x1="604.52" y1="767.08" x2="615.95" y2="767.08" width="0.1524" layer="91"/>
+<wire x1="541.02" y1="774.7" x2="579.12" y2="774.7" width="0.1524" layer="91"/>
+<wire x1="579.12" y1="774.7" x2="579.12" y2="764.54" width="0.1524" layer="91"/>
+<wire x1="579.12" y1="764.54" x2="615.95" y2="764.54" width="0.1524" layer="91"/>
 <pinref part="U14" gate="U" pin="ID"/>
 </segment>
 </net>
@@ -15460,26 +15759,6 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <junction x="398.78" y="612.14"/>
 </segment>
 </net>
-<net name="PB4" class="0">
-<segment>
-<label x="125.73" y="721.36" size="1.778" layer="95" font="vector"/>
-<wire x1="104.14" y1="721.36" x2="177.8" y2="721.36" width="0.1524" layer="91"/>
-<label x="177.8" y="721.36" size="1.778" layer="95" xref="yes"/>
-<pinref part="U11" gate="G2" pin="PB4"/>
-</segment>
-<segment>
-<pinref part="U14" gate="U" pin="!RST_B"/>
-<wire x1="500.38" y1="784.86" x2="462.28" y2="784.86" width="0.1524" layer="91"/>
-<label x="449.58" y="784.86" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R63" gate="R" pin="1"/>
-<wire x1="462.28" y1="784.86" x2="454.66" y2="784.86" width="0.1524" layer="91"/>
-<wire x1="454.66" y1="784.86" x2="449.58" y2="784.86" width="0.1524" layer="91"/>
-<wire x1="454.66" y1="781.05" x2="454.66" y2="784.86" width="0.1524" layer="91"/>
-<junction x="454.66" y="784.86"/>
-<pinref part="TP20" gate="TP" pin="P"/>
-<junction x="462.28" y="784.86"/>
-</segment>
-</net>
 <net name="PB15" class="0">
 <segment>
 <wire x1="104.14" y1="665.48" x2="167.64" y2="665.48" width="0.1524" layer="91"/>
@@ -15493,16 +15772,17 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="374.65" y1="544.83" x2="378.46" y2="544.83" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="544.83" x2="378.46" y2="561.34" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="561.34" x2="386.08" y2="561.34" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="561.34" x2="383.54" y2="561.34" width="0.1524" layer="91"/>
 <pinref part="U13" gate="$" pin="4"/>
 <pinref part="C42" gate="CE" pin="1"/>
-<wire x1="386.08" y1="561.34" x2="405.13" y2="561.34" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="561.34" x2="391.16" y2="561.34" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="561.34" x2="405.13" y2="561.34" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="544.83" x2="378.46" y2="539.75" width="0.1524" layer="91"/>
 <junction x="378.46" y="544.83"/>
-<pinref part="C43" gate="CE" pin="1"/>
-<junction x="386.08" y="561.34"/>
 <pinref part="TP15" gate="TP" pin="P"/>
 <junction x="378.46" y="561.34"/>
+<pinref part="C43" gate="CE" pin="1"/>
+<junction x="391.16" y="561.34"/>
 </segment>
 </net>
 <net name="SDIO-PWR_GATE" class="0">
@@ -15558,21 +15838,24 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <net name="SHLD" class="0">
 <segment>
 <pinref part="J22" gate="G$1" pin="SHLD@1"/>
-<wire x1="613.41" y1="759.46" x2="613.41" y2="756.92" width="0.1524" layer="91"/>
 <wire x1="613.41" y1="756.92" x2="613.41" y2="754.38" width="0.1524" layer="91"/>
 <wire x1="613.41" y1="754.38" x2="613.41" y2="751.84" width="0.1524" layer="91"/>
-<wire x1="615.95" y1="759.46" x2="613.41" y2="759.46" width="0.1524" layer="91"/>
-<pinref part="J22" gate="G$1" pin="SHLD@2"/>
+<wire x1="613.41" y1="751.84" x2="613.41" y2="749.3" width="0.1524" layer="91"/>
 <wire x1="615.95" y1="756.92" x2="613.41" y2="756.92" width="0.1524" layer="91"/>
-<junction x="613.41" y="756.92"/>
-<pinref part="J22" gate="G$1" pin="SHLD@3"/>
+<pinref part="J22" gate="G$1" pin="SHLD@2"/>
 <wire x1="615.95" y1="754.38" x2="613.41" y2="754.38" width="0.1524" layer="91"/>
 <junction x="613.41" y="754.38"/>
-<pinref part="J22" gate="G$1" pin="SHLD@4"/>
+<pinref part="J22" gate="G$1" pin="SHLD@3"/>
 <wire x1="615.95" y1="751.84" x2="613.41" y2="751.84" width="0.1524" layer="91"/>
-<pinref part="C36" gate="CE" pin="1"/>
-<wire x1="613.41" y1="751.84" x2="613.41" y2="749.3" width="0.1524" layer="91"/>
 <junction x="613.41" y="751.84"/>
+<pinref part="J22" gate="G$1" pin="SHLD@4"/>
+<wire x1="615.95" y1="749.3" x2="613.41" y2="749.3" width="0.1524" layer="91"/>
+<pinref part="C36" gate="CE" pin="1"/>
+<wire x1="613.41" y1="749.3" x2="613.41" y2="746.76" width="0.1524" layer="91"/>
+<junction x="613.41" y="749.3"/>
+<pinref part="R4" gate="R" pin="1"/>
+<wire x1="607.06" y1="748.03" x2="607.06" y2="749.3" width="0.1524" layer="91"/>
+<wire x1="607.06" y1="749.3" x2="613.41" y2="749.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PD8" class="0">
@@ -15638,8 +15921,8 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </segment>
 <segment>
 <pinref part="LED0" gate="G$1" pin="C"/>
-<wire x1="238.76" y1="60.96" x2="237.49" y2="60.96" width="0.1524" layer="91"/>
-<label x="237.49" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="223.52" y1="60.96" x2="222.25" y2="60.96" width="0.1524" layer="91"/>
+<label x="222.25" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="V_USB" class="0">
@@ -15652,13 +15935,13 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <wire x1="589.28" y1="722.63" x2="589.28" y2="779.78" width="0.1524" layer="91"/>
 <wire x1="614.68" y1="797.56" x2="610.87" y2="797.56" width="0.1524" layer="91"/>
 <pinref part="J22" gate="G$1" pin="VCC"/>
-<wire x1="610.87" y1="774.7" x2="615.95" y2="774.7" width="0.1524" layer="91"/>
+<wire x1="610.87" y1="772.16" x2="615.95" y2="772.16" width="0.1524" layer="91"/>
 <pinref part="R15" gate="R" pin="1"/>
 <wire x1="577.85" y1="779.78" x2="589.28" y2="779.78" width="0.1524" layer="91"/>
 <wire x1="589.28" y1="779.78" x2="589.28" y2="797.56" width="0.1524" layer="91"/>
 <wire x1="589.28" y1="797.56" x2="600.71" y2="797.56" width="0.1524" layer="91"/>
 <wire x1="600.71" y1="797.56" x2="610.87" y2="797.56" width="0.1524" layer="91"/>
-<wire x1="610.87" y1="797.56" x2="610.87" y2="774.7" width="0.1524" layer="91"/>
+<wire x1="610.87" y1="797.56" x2="610.87" y2="772.16" width="0.1524" layer="91"/>
 <junction x="610.87" y="797.56"/>
 <pinref part="C32" gate="CE" pin="1"/>
 <wire x1="600.71" y1="795.02" x2="600.71" y2="797.56" width="0.1524" layer="91"/>
@@ -15674,7 +15957,6 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <net name="USB3320_XIN" class="0">
 <segment>
 <pinref part="R38" gate="R" pin="1"/>
-<wire x1="516.89" y1="810.26" x2="518.16" y2="810.26" width="0.1524" layer="91"/>
 <pinref part="U14" gate="U" pin="XI"/>
 <wire x1="518.16" y1="810.26" x2="518.16" y2="805.18" width="0.1524" layer="91"/>
 </segment>
@@ -15708,13 +15990,13 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <pinref part="V13" gate="G1" pin="V3.3D"/>
 </segment>
 <segment>
-<pinref part="C28" gate="CE" pin="1"/>
-<wire x1="476.25" y1="811.53" x2="476.25" y2="821.69" width="0.1524" layer="91"/>
-<junction x="476.25" y="821.69"/>
+<wire x1="469.9" y1="811.53" x2="469.9" y2="821.69" width="0.1524" layer="91"/>
+<junction x="469.9" y="821.69"/>
 <wire x1="533.4" y1="821.69" x2="495.3" y2="821.69" width="0.1524" layer="91"/>
 <pinref part="U14" gate="U" pin="3.3V"/>
 <wire x1="495.3" y1="821.69" x2="492.76" y2="821.69" width="0.1524" layer="91"/>
-<wire x1="492.76" y1="821.69" x2="476.25" y2="821.69" width="0.1524" layer="91"/>
+<wire x1="492.76" y1="821.69" x2="477.52" y2="821.69" width="0.1524" layer="91"/>
+<wire x1="477.52" y1="821.69" x2="469.9" y2="821.69" width="0.1524" layer="91"/>
 <wire x1="500.38" y1="795.02" x2="495.3" y2="795.02" width="0.1524" layer="91"/>
 <wire x1="495.3" y1="795.02" x2="495.3" y2="797.56" width="0.1524" layer="91"/>
 <pinref part="U14" gate="U" pin="VBAT"/>
@@ -15734,6 +16016,10 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <wire x1="483.87" y1="811.53" x2="483.87" y2="814.07" width="0.1524" layer="91"/>
 <wire x1="483.87" y1="814.07" x2="492.76" y2="814.07" width="0.1524" layer="91"/>
 <junction x="492.76" y="814.07"/>
+<pinref part="C28" gate="CE" pin="1"/>
+<pinref part="C93" gate="CE" pin="1"/>
+<wire x1="477.52" y1="811.53" x2="477.52" y2="821.69" width="0.1524" layer="91"/>
+<junction x="477.52" y="821.69"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="697.23" x2="246.38" y2="693.42" width="0.1524" layer="91"/>
@@ -15862,18 +16148,18 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </net>
 <net name="V1.8A" class="0">
 <segment>
-<wire x1="468.63" y1="810.26" x2="457.2" y2="810.26" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="810.26" x2="447.04" y2="810.26" width="0.1524" layer="91"/>
-<wire x1="447.04" y1="810.26" x2="447.04" y2="814.07" width="0.1524" layer="91"/>
+<wire x1="461.01" y1="810.26" x2="449.58" y2="810.26" width="0.1524" layer="91"/>
+<wire x1="449.58" y1="810.26" x2="439.42" y2="810.26" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="810.26" x2="439.42" y2="814.07" width="0.1524" layer="91"/>
 <pinref part="U14" gate="U" pin="1.8V"/>
-<wire x1="500.38" y1="792.48" x2="468.63" y2="792.48" width="0.1524" layer="91"/>
-<wire x1="468.63" y1="792.48" x2="468.63" y2="810.26" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="792.48" x2="461.01" y2="792.48" width="0.1524" layer="91"/>
+<wire x1="461.01" y1="792.48" x2="461.01" y2="810.26" width="0.1524" layer="91"/>
 <pinref part="C29" gate="CE" pin="1"/>
-<wire x1="457.2" y1="806.45" x2="457.2" y2="810.26" width="0.1524" layer="91"/>
-<junction x="457.2" y="810.26"/>
+<wire x1="449.58" y1="806.45" x2="449.58" y2="810.26" width="0.1524" layer="91"/>
+<junction x="449.58" y="810.26"/>
 <pinref part="C85" gate="CE" pin="1"/>
-<wire x1="447.04" y1="806.45" x2="447.04" y2="810.26" width="0.1524" layer="91"/>
-<junction x="447.04" y="810.26"/>
+<wire x1="439.42" y1="806.45" x2="439.42" y2="810.26" width="0.1524" layer="91"/>
+<junction x="439.42" y="810.26"/>
 <pinref part="V14" gate="S" pin="V1.8A"/>
 </segment>
 </net>
@@ -15992,34 +16278,46 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </net>
 <net name="SPI2_NSS" class="0">
 <segment>
-<wire x1="147.32" y1="271.78" x2="144.78" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="269.24" x2="104.14" y2="269.24" width="0.1524" layer="91"/>
-<label x="124.46" y="269.24" size="1.778" layer="95"/>
+<wire x1="259.08" y1="271.78" x2="256.54" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="269.24" x2="207.01" y2="269.24" width="0.1524" layer="91"/>
+<label x="233.68" y="269.24" size="1.778" layer="95"/>
 <pinref part="U11" gate="G9" pin="PI0"/>
+<pinref part="TP128" gate="TP" pin="P"/>
+<wire x1="207.01" y1="269.24" x2="104.14" y2="269.24" width="0.1524" layer="91"/>
+<junction x="207.01" y="269.24"/>
 </segment>
 </net>
 <net name="SPI2_SCK" class="0">
 <segment>
-<wire x1="147.32" y1="266.7" x2="144.78" y2="264.16" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="264.16" x2="104.14" y2="264.16" width="0.1524" layer="91"/>
-<label x="124.46" y="264.16" size="1.778" layer="95"/>
+<wire x1="259.08" y1="266.7" x2="256.54" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="264.16" x2="203.2" y2="264.16" width="0.1524" layer="91"/>
+<label x="233.68" y="264.16" size="1.778" layer="95"/>
 <pinref part="U11" gate="G9" pin="PI1"/>
+<pinref part="TP127" gate="TP" pin="P"/>
+<wire x1="203.2" y1="264.16" x2="104.14" y2="264.16" width="0.1524" layer="91"/>
+<junction x="203.2" y="264.16"/>
 </segment>
 </net>
 <net name="SPI2_MISO" class="0">
 <segment>
-<wire x1="147.32" y1="261.62" x2="144.78" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="259.08" x2="104.14" y2="259.08" width="0.1524" layer="91"/>
-<label x="124.46" y="259.08" size="1.778" layer="95"/>
+<wire x1="259.08" y1="261.62" x2="256.54" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="259.08" x2="198.12" y2="259.08" width="0.1524" layer="91"/>
+<label x="233.68" y="259.08" size="1.778" layer="95"/>
 <pinref part="U11" gate="G9" pin="PI2"/>
+<pinref part="TP126" gate="TP" pin="P"/>
+<wire x1="198.12" y1="259.08" x2="104.14" y2="259.08" width="0.1524" layer="91"/>
+<junction x="198.12" y="259.08"/>
 </segment>
 </net>
 <net name="SPI2_MOSI" class="0">
 <segment>
-<wire x1="147.32" y1="256.54" x2="144.78" y2="254" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="254" x2="104.14" y2="254" width="0.1524" layer="91"/>
-<label x="124.46" y="254" size="1.778" layer="95"/>
+<wire x1="259.08" y1="256.54" x2="256.54" y2="254" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="254" x2="194.31" y2="254" width="0.1524" layer="91"/>
+<label x="233.68" y="254" size="1.778" layer="95"/>
 <pinref part="U11" gate="G9" pin="PI3"/>
+<pinref part="TP125" gate="TP" pin="P"/>
+<wire x1="194.31" y1="254" x2="104.14" y2="254" width="0.1524" layer="91"/>
+<junction x="194.31" y="254"/>
 </segment>
 </net>
 <net name="GPIO_BUS_ID" class="0">
@@ -16040,6 +16338,8 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <pinref part="U15" gate="G2" pin="EN"/>
 <wire x1="477.52" y1="107.95" x2="477.52" y2="99.06" width="0.1524" layer="91"/>
 <label x="441.96" y="129.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="TP63" gate="TP" pin="P"/>
+<junction x="443.23" y="236.22"/>
 </segment>
 </net>
 <net name="PI8" class="0">
@@ -16140,9 +16440,10 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <label x="416.56" y="278.13" size="1.778" layer="95"/>
 <label x="129.54" y="325.12" size="1.778" layer="95" font="vector"/>
 <wire x1="383.54" y1="278.13" x2="383.54" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="327.66" x2="152.4" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="327.66" x2="152.4" y2="325.12" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="325.12" x2="104.14" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="327.66" x2="356.87" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="356.87" y1="327.66" x2="158.75" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="327.66" x2="158.75" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="325.12" x2="104.14" y2="325.12" width="0.1524" layer="91"/>
 <pinref part="U11" gate="G8" pin="PH8"/>
 <wire x1="383.54" y1="278.13" x2="369.57" y2="278.13" width="0.1524" layer="91"/>
 <junction x="383.54" y="278.13"/>
@@ -16154,6 +16455,8 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <wire x1="454.66" y1="160.02" x2="476.25" y2="160.02" width="0.1524" layer="91"/>
 <junction x="454.66" y="160.02"/>
 <pinref part="U15" gate="G2" pin="Y"/>
+<pinref part="TP112" gate="TP" pin="P"/>
+<junction x="356.87" y="327.66"/>
 </segment>
 </net>
 <net name="I2C3_SCL/ADC3_CH4" class="0">
@@ -16168,8 +16471,9 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <wire x1="386.08" y1="280.67" x2="386.08" y2="297.18" width="0.1524" layer="91"/>
 <label x="129.54" y="330.2" size="1.778" layer="95" font="vector"/>
 <wire x1="386.08" y1="297.18" x2="386.08" y2="330.2" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="330.2" x2="104.14" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="330.2" x2="356.87" y2="330.2" width="0.1524" layer="91"/>
 <pinref part="U11" gate="G8" pin="PH7"/>
+<wire x1="356.87" y1="330.2" x2="104.14" y2="330.2" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="297.18" x2="369.57" y2="297.18" width="0.1524" layer="91"/>
 <junction x="386.08" y="297.18"/>
 <label x="369.57" y="297.18" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -16178,6 +16482,8 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <wire x1="457.2" y1="180.34" x2="476.25" y2="180.34" width="0.1524" layer="91"/>
 <junction x="457.2" y="180.34"/>
 <pinref part="U15" gate="G1" pin="Y"/>
+<pinref part="TP111" gate="TP" pin="P"/>
+<junction x="356.87" y="330.2"/>
 </segment>
 </net>
 <net name="I2C2_SDA" class="0">
@@ -16396,7 +16702,7 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </net>
 <net name="LED1_CATH" class="0">
 <segment>
-<wire x1="238.76" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
 <label x="119.38" y="55.88" size="1.778" layer="95" font="vector"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG9"/>
@@ -16404,7 +16710,7 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </net>
 <net name="LED2_CATH" class="0">
 <segment>
-<wire x1="238.76" y1="50.8" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="50.8" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
 <label x="119.38" y="50.8" size="1.778" layer="95" font="vector"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG10"/>
@@ -16412,7 +16718,7 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </net>
 <net name="LED3_CATH" class="0">
 <segment>
-<wire x1="238.76" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
 <label x="119.38" y="45.72" size="1.778" layer="95" font="vector"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG11"/>
@@ -16420,7 +16726,7 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </net>
 <net name="LED4_CATH" class="0">
 <segment>
-<wire x1="238.76" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
 <label x="119.38" y="40.64" size="1.778" layer="95" font="vector"/>
 <pinref part="LED4" gate="G$1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG12"/>
@@ -16428,7 +16734,7 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </net>
 <net name="LED5_CATH" class="0">
 <segment>
-<wire x1="238.76" y1="35.56" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="35.56" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
 <label x="119.38" y="35.56" size="1.778" layer="95" font="vector"/>
 <pinref part="LED5" gate="G$1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG13"/>
@@ -16436,7 +16742,7 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </net>
 <net name="LED6_CATH" class="0">
 <segment>
-<wire x1="238.76" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
 <label x="119.38" y="30.48" size="1.778" layer="95" font="vector"/>
 <pinref part="LED6" gate="G$1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG14"/>
@@ -16444,7 +16750,7 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 </net>
 <net name="LED7_CATH" class="0">
 <segment>
-<wire x1="238.76" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 <label x="119.38" y="25.4" size="1.778" layer="95" font="vector"/>
 <pinref part="LED7" gate="G$1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG15"/>
@@ -16495,23 +16801,27 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <wire x1="220.98" y1="350.52" x2="231.14" y2="350.52" width="0.1524" layer="91"/>
 <label x="129.54" y="360.68" size="1.778" layer="95"/>
 <pinref part="U11" gate="G8" pin="PH1"/>
-<pinref part="X2" gate="G$1" pin="P$1"/>
-<pinref part="C34" gate="CE" pin="1"/>
-<wire x1="231.14" y1="350.52" x2="241.3" y2="350.52" width="0.1524" layer="91"/>
 <pinref part="TP69" gate="TP" pin="P"/>
+<pinref part="C34" gate="CE" pin="1"/>
+<pinref part="X2" gate="G1" pin="XTAL2"/>
+<wire x1="248.92" y1="350.52" x2="242.57" y2="350.52" width="0.1524" layer="91"/>
+<wire x1="242.57" y1="350.52" x2="231.14" y2="350.52" width="0.1524" layer="91"/>
+<junction x="242.57" y="350.52"/>
 <junction x="231.14" y="350.52"/>
 </segment>
 </net>
 <net name="OSC_IN" class="0">
 <segment>
-<pinref part="C35" gate="CE" pin="1"/>
-<wire x1="231.14" y1="365.76" x2="241.3" y2="365.76" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="365.76" x2="104.14" y2="365.76" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="P$2"/>
-<junction x="231.14" y="365.76"/>
 <label x="129.54" y="365.76" size="1.778" layer="95"/>
 <pinref part="U11" gate="G8" pin="PH0"/>
 <pinref part="TP68" gate="TP" pin="P"/>
+<pinref part="X2" gate="G1" pin="XTAL1"/>
+<wire x1="231.14" y1="365.76" x2="242.57" y2="365.76" width="0.1524" layer="91"/>
+<junction x="231.14" y="365.76"/>
+<pinref part="C35" gate="CE" pin="1"/>
+<wire x1="242.57" y1="365.76" x2="248.92" y2="365.76" width="0.1524" layer="91"/>
+<junction x="242.57" y="365.76"/>
 </segment>
 </net>
 <net name="ADC3_IN9" class="0">
@@ -16525,57 +16835,81 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <net name="LED0_ANODE" class="0">
 <segment>
 <pinref part="R21" gate="R" pin="1"/>
-<wire x1="257.81" y1="60.96" x2="246.38" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="257.81" y1="60.96" x2="245.11" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="LED0" gate="G$1" pin="A"/>
+<pinref part="TP113" gate="TP" pin="P"/>
+<wire x1="245.11" y1="60.96" x2="231.14" y2="60.96" width="0.1524" layer="91"/>
+<junction x="245.11" y="60.96"/>
 </segment>
 </net>
 <net name="LED1_ANODE" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R22" gate="R" pin="1"/>
-<wire x1="246.38" y1="55.88" x2="257.81" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="55.88" x2="245.11" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="TP114" gate="TP" pin="P"/>
+<wire x1="245.11" y1="55.88" x2="257.81" y2="55.88" width="0.1524" layer="91"/>
+<junction x="245.11" y="55.88"/>
 </segment>
 </net>
 <net name="LED2_ANODE" class="0">
 <segment>
 <pinref part="R23" gate="R" pin="1"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="257.81" y1="50.8" x2="246.38" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="257.81" y1="50.8" x2="245.11" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="TP115" gate="TP" pin="P"/>
+<wire x1="245.11" y1="50.8" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
+<junction x="245.11" y="50.8"/>
 </segment>
 </net>
 <net name="LED3_ANODE" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="R24" gate="R" pin="1"/>
-<wire x1="246.38" y1="45.72" x2="257.81" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="45.72" x2="245.11" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="TP116" gate="TP" pin="P"/>
+<wire x1="245.11" y1="45.72" x2="257.81" y2="45.72" width="0.1524" layer="91"/>
+<junction x="245.11" y="45.72"/>
 </segment>
 </net>
 <net name="LED4_ANODE" class="0">
 <segment>
 <pinref part="R25" gate="R" pin="1"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="257.81" y1="40.64" x2="246.38" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="257.81" y1="40.64" x2="245.11" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="TP117" gate="TP" pin="P"/>
+<wire x1="245.11" y1="40.64" x2="231.14" y2="40.64" width="0.1524" layer="91"/>
+<junction x="245.11" y="40.64"/>
 </segment>
 </net>
 <net name="LED5_ANODE" class="0">
 <segment>
 <pinref part="LED5" gate="G$1" pin="A"/>
 <pinref part="R26" gate="R" pin="1"/>
-<wire x1="246.38" y1="35.56" x2="257.81" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="35.56" x2="245.11" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="TP118" gate="TP" pin="P"/>
+<wire x1="245.11" y1="35.56" x2="257.81" y2="35.56" width="0.1524" layer="91"/>
+<junction x="245.11" y="35.56"/>
 </segment>
 </net>
 <net name="LED6_ANODE" class="0">
 <segment>
 <pinref part="R27" gate="R" pin="1"/>
 <pinref part="LED6" gate="G$1" pin="A"/>
-<wire x1="257.81" y1="30.48" x2="246.38" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="257.81" y1="30.48" x2="245.11" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="TP119" gate="TP" pin="P"/>
+<wire x1="245.11" y1="30.48" x2="231.14" y2="30.48" width="0.1524" layer="91"/>
+<junction x="245.11" y="30.48"/>
 </segment>
 </net>
 <net name="LED7_ANODE" class="0">
 <segment>
 <pinref part="LED7" gate="G$1" pin="A"/>
 <pinref part="R28" gate="R" pin="1"/>
-<wire x1="246.38" y1="25.4" x2="257.81" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="25.4" x2="245.11" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="TP120" gate="TP" pin="P"/>
+<wire x1="245.11" y1="25.4" x2="257.81" y2="25.4" width="0.1524" layer="91"/>
+<junction x="245.11" y="25.4"/>
 </segment>
 </net>
 <net name="PF2" class="0">
@@ -16654,33 +16988,45 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <net name="SPI4_NSS" class="0">
 <segment>
 <wire x1="259.08" y1="140.97" x2="257.81" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="257.81" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="257.81" y1="139.7" x2="219.71" y2="139.7" width="0.1524" layer="91"/>
 <label x="240.03" y="139.7" size="1.778" layer="95"/>
 <pinref part="U11" gate="G5" pin="PE11"/>
+<pinref part="TP124" gate="TP" pin="P"/>
+<wire x1="219.71" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
+<junction x="219.71" y="139.7"/>
 </segment>
 </net>
 <net name="SPI4_SCK" class="0">
 <segment>
 <wire x1="259.08" y1="135.89" x2="257.81" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="257.81" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="257.81" y1="134.62" x2="213.36" y2="134.62" width="0.1524" layer="91"/>
 <label x="240.03" y="134.62" size="1.778" layer="95"/>
 <pinref part="U11" gate="G5" pin="PE12"/>
+<pinref part="TP123" gate="TP" pin="P"/>
+<wire x1="213.36" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
+<junction x="213.36" y="134.62"/>
 </segment>
 </net>
 <net name="SPI4_MISO" class="0">
 <segment>
 <wire x1="259.08" y1="130.81" x2="257.81" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="257.81" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="257.81" y1="129.54" x2="207.01" y2="129.54" width="0.1524" layer="91"/>
 <label x="240.03" y="129.54" size="1.778" layer="95"/>
 <pinref part="U11" gate="G5" pin="PE13"/>
+<pinref part="TP122" gate="TP" pin="P"/>
+<wire x1="207.01" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
+<junction x="207.01" y="129.54"/>
 </segment>
 </net>
 <net name="SPI4_MOSI" class="0">
 <segment>
 <wire x1="259.08" y1="125.73" x2="257.81" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="257.81" y1="124.46" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="257.81" y1="124.46" x2="201.93" y2="124.46" width="0.1524" layer="91"/>
 <label x="240.03" y="124.46" size="1.778" layer="95"/>
 <pinref part="U11" gate="G5" pin="PE14"/>
+<pinref part="TP121" gate="TP" pin="P"/>
+<wire x1="201.93" y1="124.46" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
+<junction x="201.93" y="124.46"/>
 </segment>
 </net>
 <net name="PI10" class="0">
@@ -16792,6 +17138,8 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <pinref part="U1" gate="G1" pin="EN"/>
 <wire x1="478.79" y1="269.24" x2="478.79" y2="278.13" width="0.1524" layer="91"/>
 <label x="476.25" y="243.84" size="1.778" layer="95" rot="R180"/>
+<pinref part="TP70" gate="TP" pin="P"/>
+<junction x="478.79" y="241.3"/>
 </segment>
 </net>
 <net name="SBUS_ID" class="0">
@@ -16809,6 +17157,42 @@ Set PF6 and PF10 to Rpu mode (weak pullup mode), to use I2C bus.</text>
 <pinref part="U1" gate="G4" pin="EN"/>
 <wire x1="478.79" y1="170.18" x2="478.79" y2="162.56" width="0.1524" layer="91"/>
 <label x="477.52" y="209.55" size="1.778" layer="95" rot="R90"/>
+<pinref part="TP71" gate="TP" pin="P"/>
+<junction x="478.79" y="238.76"/>
+</segment>
+</net>
+<net name="USB_P" class="1">
+<segment>
+<pinref part="J22" gate="G$1" pin="D+"/>
+<pinref part="U14" gate="U" pin="DM/DP"/>
+<wire x1="615.95" y1="767.08" x2="541.02" y2="767.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_N" class="1">
+<segment>
+<pinref part="U14" gate="U" pin="DP/DM"/>
+<pinref part="J22" gate="G$1" pin="D-"/>
+<wire x1="541.02" y1="769.62" x2="615.95" y2="769.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="!RST_B!" class="0">
+<segment>
+<pinref part="U14" gate="U" pin="!RST_B"/>
+<wire x1="500.38" y1="784.86" x2="462.28" y2="784.86" width="0.1524" layer="91"/>
+<label x="449.58" y="784.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R63" gate="R" pin="1"/>
+<wire x1="462.28" y1="784.86" x2="454.66" y2="784.86" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="784.86" x2="449.58" y2="784.86" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="781.05" x2="454.66" y2="784.86" width="0.1524" layer="91"/>
+<junction x="454.66" y="784.86"/>
+<pinref part="TP20" gate="TP" pin="P"/>
+<junction x="462.28" y="784.86"/>
+</segment>
+<segment>
+<label x="125.73" y="721.36" size="1.778" layer="95" font="vector"/>
+<wire x1="104.14" y1="721.36" x2="177.8" y2="721.36" width="0.1524" layer="91"/>
+<label x="177.8" y="721.36" size="1.778" layer="95" xref="yes"/>
+<pinref part="U11" gate="G2" pin="PB4"/>
 </segment>
 </net>
 </nets>
@@ -18317,7 +18701,7 @@ identification</text>
 <wire x1="134.62" y1="233.68" x2="134.62" y2="220.98" width="0.762" layer="92"/>
 </segment>
 <segment>
-<wire x1="38.1" y1="238.76" x2="38.1" y2="220.98" width="0.762" layer="92"/>
+<wire x1="38.1" y1="238.76" x2="38.1" y2="200.66" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="SAMPLE_ADC_BUS:ADC1/2_CH14,ADC3_CH7,ADC1/2_CH6,ADC3_CH15,ADC1/2/3_CH11,ADC1/2/3_CH13,ADC3_CH14,ADC1/2_CH15,ADC3_CH6,ADC3_CH5,ADC1/2_CH7,ADC3_IN9,ADC3_CH8,ADC1/2/3_CH2,ADC3_CH4">
@@ -18616,14 +19000,6 @@ identification</text>
 <pinref part="J9" gate="G1" pin="23"/>
 <wire x1="34.29" y1="203.2" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
 <label x="45.72" y="203.2" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PA15" class="0">
-<segment>
-<wire x1="27.94" y1="201.93" x2="29.21" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="J9" gate="G1" pin="25"/>
-<wire x1="29.21" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
-<label x="38.1" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB8" class="0">
@@ -19202,6 +19578,22 @@ identification</text>
 <label x="38.1" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="DAC_E" class="0">
+<segment>
+<wire x1="38.1" y1="201.93" x2="39.37" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="J9" gate="G1" pin="25"/>
+<wire x1="39.37" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
+<label x="43.18" y="200.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PA15" class="0">
+<segment>
+<wire x1="144.78" y1="125.73" x2="143.51" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J8" gate="G1" pin="36"/>
+<wire x1="143.51" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
+<label x="134.62" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -19336,6 +19728,26 @@ identification</text>
 <approved hash="113,2,170.969,764.819,TP62,,,,,"/>
 <approved hash="113,4,91.971,132.611,FRAME5,,,,,"/>
 <approved hash="113,2,558.8,431.8,FRAME1,,,,,"/>
+<approved hash="113,2,446.61,236.22,TP63,,,,,"/>
+<approved hash="113,2,482.17,241.3,TP70,,,,,"/>
+<approved hash="113,2,356.87,334.399,TP111,,,,,"/>
+<approved hash="113,2,356.87,323.461,TP112,,,,,"/>
+<approved hash="113,2,249.258,61.2394,TP113,,,,,"/>
+<approved hash="113,2,249.258,56.1594,TP114,,,,,"/>
+<approved hash="113,2,249.258,51.0794,TP115,,,,,"/>
+<approved hash="113,2,249.258,45.9994,TP116,,,,,"/>
+<approved hash="113,2,249.258,40.9194,TP117,,,,,"/>
+<approved hash="113,2,249.258,35.8394,TP118,,,,,"/>
+<approved hash="113,2,249.258,30.7594,TP119,,,,,"/>
+<approved hash="113,2,249.258,25.6794,TP120,,,,,"/>
+<approved hash="113,2,201.93,128.659,TP121,,,,,"/>
+<approved hash="113,2,207.01,133.739,TP122,,,,,"/>
+<approved hash="113,2,213.36,138.819,TP123,,,,,"/>
+<approved hash="113,2,219.71,143.899,TP124,,,,,"/>
+<approved hash="113,2,194.31,258.199,TP125,,,,,"/>
+<approved hash="113,2,198.12,263.279,TP126,,,,,"/>
+<approved hash="113,2,203.2,268.359,TP127,,,,,"/>
+<approved hash="113,2,207.01,273.439,TP128,,,,,"/>
 </errors>
 </schematic>
 </drawing>
