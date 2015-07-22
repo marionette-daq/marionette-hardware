@@ -6,3 +6,7 @@ Q: There are 15 available ADC signal lines but I am only using 12 (+ one on the 
 
 T: Set the "SwapDP/DM" register on the USB3320
 
+T:  Check the reference and the analog supply pinning to the DAC124
+
+T:  Must tie VREF+ on the STM to VDD because the two voltages must be within 300mV (double diode connected internally).
+
