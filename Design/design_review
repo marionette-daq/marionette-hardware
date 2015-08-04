@@ -1,0 +1,59 @@
+Pick package for XTAL, pick package for TCXO that matches.  Use 26MHz crystal.  Make TCXO NP option with np resistor on the Xin line.
+  Consider Abracon ASTX-H11-26.000MHZ-T (3.2mm x 2.5mm package, 2.5ppm, $2.72/hundred)  
+  Consider Connor-Winfield D32G-026.0M (3.2mm x 2.5mm package, 0.5ppm, $7.00/hundred)
+-DONE  added TCXO with passives
+
+Change input to be a 'T' pin block that selects VCC between Vext, Vcoax.
+Consolidate to 1 fuse.  -DONE
+Consider scaling down the fuse rating so that it explodes before the FR014f5JZ. -DONE FR014f5JZ is rated for 8A DC, fuse will blow in 2ms above 8A.
+Make sure the testpad on the SYNC pin has a through hole.
+-DONE
+Make proper kelvin connection between kelvin resistor and kelvin network.
+-MAYBE, do calculation to see if this is worthwhile 
+Label the current output of the supplies.
+-DONE
+Make sure the transistor in the Zeta has sufficient voltage rating.
+-DONE, Replaced 30V PFET with the IRFR9024 which is rated for 55V, 11A.  This is because the dock_test_jig will probably have a 24V supply because there is only one 18V supply available and thirty 24V supply wall warts.
+Check that the LDOs are low noise. -DONE replaced ADP125s with MIC5305 fixed output regulators.
+Check that the LDOs have at least 60dB PSRR.  DONE  85dB PSRR
+Compare LDOs to the MIC5305  DONE
+Check if the TPS40200 can be disabled by grounding the SS pin.  
+Make a note as to what each power supply is for (i.e. 1.8V is for ULPI)
+Put a box and label around the external power connector.  
+Move power header to the header page.
+Put STM power connections on the STM PORTS.
+Change sheet name to PORTS.
+Change power and boot to just POWER.
+Make a test pad with via device with 10mil drill hole and 20mil drill hole
+Change ECOD ANALOG to just ANALOG
+Standardize the pin headers (look at the STM power connections block)
+Mark the cap attributes according to actual electrical requirements.  Collapse the bom manually.
+Reassess the VCAP cap values.
+Make VBUS symbol.
+Remove the testpoints on the ULPI interface.
+Change the SO bootstraps on the ULPI to select 26MHz if dave says OK.
+Kill the BOOT0 jumper J23
+CAN transceiver SHDN should have a pullup? pulldown? to be normally off.
+Check RS value on the CAN transceiver MAX3051.
+Kill TP75 which is RS on the CAN.
+Change the SWD jumper back to vertical keyed type.
+Talk to Dave about how to program the ULPI registers (to enable DP/DM swap).
+Kill the EEPROM module.
+Put a series resistor in the Xout of the 26MHz crystal for gain control.
+Kill SD testpoints on parallel lines.
+Investigate pullups on the SDIO. See if the CMD line needs a pullup.
+Model transfer function in LTspice and graph as a sanity check.
+Relabel PF2 to CAN_SHDN or something.
+Connect the TCXO to the STM with an R to Cpar to Cseries to change a 1400mV square wave into a 200mV sine wave.
+TPs not necessary on serial buses that go to external headers.
+MBUS (I2C) will need real 4.7k, but these resistors should be on the interface board.   
+Call "Analog Connector ID", "Serial Connector ID", etc. instead of "Analog Bus ID", etc.
+Check that the Anti-Aliasing filter is correct.
+Change the supply for the MBUS switches to be V3.3D
+Run the DAC VA and VREFIN off a dedicated 3.3V analog supply.  Read the power suppply section of the DAC datasheet.
+Make the boxes around the Connector ID switches all the same size.  Crunchify the box sizes.
+Make sure that the STM can have an external reference
+Partition the power bus to facillitate debugging (put 10k resistors to the EN signals on the power supplies).
+Make 100mil jumper symbol as a placeholder in the BOM.
+Place TVS diodes
+Find out if the COMP pin on the TPS40200 can be used in compensation loop.
