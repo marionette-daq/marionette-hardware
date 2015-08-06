@@ -13232,7 +13232,6 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="C91" library="rcl_custom" deviceset="C-EU" device="0603-C" value="100n">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="V27" library="supply" deviceset="V3.3A" device=""/>
 <part name="GND24" library="GROUND" deviceset="GND" device=""/>
 <part name="TP63" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP70" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
@@ -13545,6 +13544,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 </part>
 <part name="GND57" library="GROUND" deviceset="GND" device=""/>
 <part name="XTAL1" library="dock_v2" deviceset="FA-238_24MHZ_XTAL_SHIELDED" device="_26MHZ_REF"/>
+<part name="V16" library="supply" deviceset="V3.3D" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13556,18 +13556,18 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <text x="345.44" y="381" size="5.08" layer="97">Zeta Switching Supply
 Vin = 3.3V to 18V
 Vout = 5.0V, 1.5A</text>
-<wire x1="234.95" y1="411.48" x2="234.95" y2="266.7" width="1.016" layer="94"/>
-<wire x1="234.95" y1="266.7" x2="513.08" y2="266.7" width="1.016" layer="94"/>
-<wire x1="513.08" y1="266.7" x2="513.08" y2="411.48" width="1.016" layer="94"/>
-<wire x1="513.08" y1="411.48" x2="234.95" y2="411.48" width="1.016" layer="94"/>
-<wire x1="240.03" y1="256.54" x2="240.03" y2="173.99" width="1.016" layer="94"/>
-<wire x1="240.03" y1="173.99" x2="370.84" y2="173.99" width="1.016" layer="94"/>
-<wire x1="370.84" y1="173.99" x2="370.84" y2="256.54" width="1.016" layer="94"/>
-<wire x1="370.84" y1="256.54" x2="240.03" y2="256.54" width="1.016" layer="94"/>
-<wire x1="240.03" y1="163.83" x2="240.03" y2="81.28" width="1.016" layer="94"/>
-<wire x1="240.03" y1="81.28" x2="370.84" y2="81.28" width="1.016" layer="94"/>
-<wire x1="370.84" y1="81.28" x2="370.84" y2="163.83" width="1.016" layer="94"/>
-<wire x1="370.84" y1="163.83" x2="240.03" y2="163.83" width="1.016" layer="94"/>
+<wire x1="234.95" y1="411.48" x2="234.95" y2="266.7" width="0.254" layer="97" style="shortdash"/>
+<wire x1="234.95" y1="266.7" x2="513.08" y2="266.7" width="0.254" layer="97" style="shortdash"/>
+<wire x1="513.08" y1="266.7" x2="513.08" y2="411.48" width="0.254" layer="97" style="shortdash"/>
+<wire x1="513.08" y1="411.48" x2="234.95" y2="411.48" width="0.254" layer="97" style="shortdash"/>
+<wire x1="240.03" y1="256.54" x2="240.03" y2="173.99" width="0.254" layer="97" style="shortdash"/>
+<wire x1="240.03" y1="173.99" x2="370.84" y2="173.99" width="0.254" layer="97" style="shortdash"/>
+<wire x1="370.84" y1="173.99" x2="370.84" y2="256.54" width="0.254" layer="97" style="shortdash"/>
+<wire x1="370.84" y1="256.54" x2="240.03" y2="256.54" width="0.254" layer="97" style="shortdash"/>
+<wire x1="240.03" y1="163.83" x2="240.03" y2="81.28" width="0.254" layer="97" style="shortdash"/>
+<wire x1="240.03" y1="81.28" x2="370.84" y2="81.28" width="0.254" layer="97" style="shortdash"/>
+<wire x1="370.84" y1="81.28" x2="370.84" y2="163.83" width="0.254" layer="97" style="shortdash"/>
+<wire x1="370.84" y1="163.83" x2="240.03" y2="163.83" width="0.254" layer="97" style="shortdash"/>
 <text x="252.73" y="147.32" size="5.08" layer="97">5V to 1.8V LDO
 (ULPI Supply)</text>
 <text x="163.83" y="-31.75" size="3.048" layer="97">Mounting Hardware</text>
@@ -13576,20 +13576,20 @@ Vout = 5.0V, 1.5A</text>
 <text x="27.94" y="325.12" size="1.778" layer="97">Ext power in
 (Edge connector)</text>
 <text x="5.08" y="236.22" size="1.778" layer="97">From microUSB connector</text>
-<wire x1="40.64" y1="46.99" x2="199.39" y2="46.99" width="1.016" layer="94"/>
-<wire x1="199.39" y1="46.99" x2="199.39" y2="163.83" width="1.016" layer="94"/>
-<wire x1="199.39" y1="163.83" x2="40.64" y2="163.83" width="1.016" layer="94"/>
-<wire x1="40.64" y1="163.83" x2="40.64" y2="46.99" width="1.016" layer="94"/>
+<wire x1="40.64" y1="46.99" x2="199.39" y2="46.99" width="0.254" layer="97" style="shortdash"/>
+<wire x1="199.39" y1="46.99" x2="199.39" y2="163.83" width="0.254" layer="97" style="shortdash"/>
+<wire x1="199.39" y1="163.83" x2="40.64" y2="163.83" width="0.254" layer="97" style="shortdash"/>
+<wire x1="40.64" y1="163.83" x2="40.64" y2="46.99" width="0.254" layer="97" style="shortdash"/>
 <text x="88.9" y="154.94" size="5.08" layer="97">STM Power</text>
 <text x="288.29" y="314.96" size="1.778" layer="97">fsw = 500kHz</text>
 <text x="243.84" y="276.86" size="1.778" layer="97">TPS40200 may be synchronized above it's free running frequency
 by connecting open collector output to the RC pin.  See TPS40200
 datasheet pg. 9 for details.</text>
-<wire x1="40.64" y1="198.12" x2="40.64" y2="256.54" width="1.016" layer="94"/>
-<wire x1="40.64" y1="256.54" x2="220.98" y2="256.54" width="1.016" layer="94"/>
-<wire x1="220.98" y1="256.54" x2="220.98" y2="173.99" width="1.016" layer="94"/>
-<wire x1="220.98" y1="173.99" x2="40.64" y2="173.99" width="1.016" layer="94"/>
-<wire x1="40.64" y1="173.99" x2="40.64" y2="198.12" width="1.016" layer="94"/>
+<wire x1="40.64" y1="198.12" x2="40.64" y2="256.54" width="0.254" layer="97" style="shortdash"/>
+<wire x1="40.64" y1="256.54" x2="220.98" y2="256.54" width="0.254" layer="97" style="shortdash"/>
+<wire x1="220.98" y1="256.54" x2="220.98" y2="173.99" width="0.254" layer="97" style="shortdash"/>
+<wire x1="220.98" y1="173.99" x2="40.64" y2="173.99" width="0.254" layer="97" style="shortdash"/>
+<wire x1="40.64" y1="173.99" x2="40.64" y2="198.12" width="0.254" layer="97" style="shortdash"/>
 <text x="107.95" y="247.65" size="5.08" layer="97"> 3.3VDD 600mA Digital Supply</text>
 <text x="10.16" y="414.02" size="5.08" layer="97">Coax Power Input (3.3V, 5V, 18V)</text>
 <text x="10.16" y="375.92" size="5.08" layer="97">Pinheader Pwr Input(3.3V, 5V, 18V)</text>
@@ -15142,50 +15142,50 @@ datasheet pg. 9 for details.</text>
 <description>Ports</description>
 <plain>
 <text x="179.07" y="492.76" size="1.778" layer="97">2mA</text>
-<wire x1="200.66" y1="596.9" x2="200.66" y2="556.26" width="1.016" layer="94"/>
-<wire x1="200.66" y1="556.26" x2="262.89" y2="556.26" width="1.016" layer="94"/>
-<wire x1="262.89" y1="556.26" x2="262.89" y2="596.9" width="1.016" layer="94"/>
-<wire x1="262.89" y1="596.9" x2="200.66" y2="596.9" width="1.016" layer="94"/>
+<wire x1="200.66" y1="596.9" x2="200.66" y2="556.26" width="0.254" layer="97"/>
+<wire x1="200.66" y1="556.26" x2="262.89" y2="556.26" width="0.254" layer="97"/>
+<wire x1="262.89" y1="556.26" x2="262.89" y2="596.9" width="0.254" layer="97"/>
+<wire x1="262.89" y1="596.9" x2="200.66" y2="596.9" width="0.254" layer="97"/>
 <text x="203.2" y="590.55" size="5.08" layer="97">32.768kHz CLK</text>
-<wire x1="650.24" y1="713.74" x2="434.34" y2="713.74" width="1.016" layer="94"/>
-<wire x1="434.34" y1="713.74" x2="434.34" y2="852.17" width="1.016" layer="94"/>
-<wire x1="434.34" y1="852.17" x2="650.24" y2="852.17" width="1.016" layer="94"/>
-<wire x1="650.24" y1="852.17" x2="650.24" y2="713.74" width="1.016" layer="94"/>
+<wire x1="650.24" y1="713.74" x2="434.34" y2="713.74" width="0.254" layer="97" style="shortdash"/>
+<wire x1="434.34" y1="713.74" x2="434.34" y2="852.17" width="0.254" layer="97" style="shortdash"/>
+<wire x1="434.34" y1="852.17" x2="650.24" y2="852.17" width="0.254" layer="97" style="shortdash"/>
+<wire x1="650.24" y1="852.17" x2="650.24" y2="713.74" width="0.254" layer="97" style="shortdash"/>
 <text x="563.88" y="816.61" size="5.08" layer="97">USB HS PHY</text>
-<wire x1="448.31" y1="514.35" x2="340.36" y2="514.35" width="1.016" layer="94"/>
-<wire x1="340.36" y1="514.35" x2="340.36" y2="624.84" width="1.016" layer="94"/>
-<wire x1="340.36" y1="624.84" x2="448.31" y2="624.84" width="1.016" layer="94"/>
-<wire x1="448.31" y1="624.84" x2="448.31" y2="514.35" width="1.016" layer="94"/>
+<wire x1="448.31" y1="514.35" x2="340.36" y2="514.35" width="0.254" layer="97" style="shortdash"/>
+<wire x1="340.36" y1="514.35" x2="340.36" y2="624.84" width="0.254" layer="97" style="shortdash"/>
+<wire x1="340.36" y1="624.84" x2="448.31" y2="624.84" width="0.254" layer="97" style="shortdash"/>
+<wire x1="448.31" y1="624.84" x2="448.31" y2="514.35" width="0.254" layer="97" style="shortdash"/>
 <text x="350.52" y="617.22" size="5.08" layer="97">SD Card Interface</text>
 <text x="563.88" y="811.53" size="1.778" layer="97">*See Figure 8-1 USB3320 
 data sheet for application diagram</text>
 <text x="553.72" y="788.67" size="1.778" layer="97">*Verify Rvbus value
 table 5-7 of USB3320
 data sheet</text>
-<wire x1="694.69" y1="713.74" x2="855.98" y2="713.74" width="1.016" layer="94"/>
-<wire x1="855.98" y1="713.74" x2="855.98" y2="831.85" width="1.016" layer="94"/>
-<wire x1="855.98" y1="831.85" x2="694.69" y2="831.85" width="1.016" layer="94"/>
-<wire x1="694.69" y1="831.85" x2="694.69" y2="713.74" width="1.016" layer="94"/>
+<wire x1="694.69" y1="713.74" x2="855.98" y2="713.74" width="0.254" layer="97" style="shortdash"/>
+<wire x1="855.98" y1="713.74" x2="855.98" y2="831.85" width="0.254" layer="97" style="shortdash"/>
+<wire x1="855.98" y1="831.85" x2="694.69" y2="831.85" width="0.254" layer="97" style="shortdash"/>
+<wire x1="694.69" y1="831.85" x2="694.69" y2="713.74" width="0.254" layer="97" style="shortdash"/>
 <text x="721.36" y="822.96" size="5.08" layer="97">STM CONTROL</text>
 <text x="715.01" y="579.12" size="1.778" layer="97">KEY</text>
 <text x="754.38" y="579.12" size="1.778" layer="97">NC</text>
-<wire x1="694.69" y1="613.41" x2="694.69" y2="557.53" width="1.016" layer="94"/>
-<wire x1="694.69" y1="557.53" x2="811.53" y2="557.53" width="1.016" layer="94"/>
-<wire x1="811.53" y1="557.53" x2="811.53" y2="613.41" width="1.016" layer="94"/>
-<wire x1="811.53" y1="613.41" x2="694.69" y2="613.41" width="1.016" layer="94"/>
+<wire x1="694.69" y1="613.41" x2="694.69" y2="557.53" width="0.254" layer="97" style="shortdash"/>
+<wire x1="694.69" y1="557.53" x2="811.53" y2="557.53" width="0.254" layer="97" style="shortdash"/>
+<wire x1="811.53" y1="557.53" x2="811.53" y2="613.41" width="0.254" layer="97" style="shortdash"/>
+<wire x1="811.53" y1="613.41" x2="694.69" y2="613.41" width="0.254" layer="97" style="shortdash"/>
 <text x="718.82" y="604.52" size="5.08" layer="97">SWD Interface</text>
 <text x="762" y="635" size="1.778" layer="97">*RS pulled low for HS operation
  value of RS resistor controls 
  output slope.</text>
-<wire x1="195.58" y1="337.82" x2="195.58" y2="441.96" width="1.016" layer="94"/>
-<wire x1="195.58" y1="441.96" x2="306.07" y2="441.96" width="1.016" layer="94"/>
-<wire x1="306.07" y1="441.96" x2="306.07" y2="337.82" width="1.016" layer="94"/>
-<wire x1="306.07" y1="337.82" x2="195.58" y2="337.82" width="1.016" layer="94"/>
+<wire x1="195.58" y1="337.82" x2="195.58" y2="441.96" width="0.254" layer="97" style="shortdash"/>
+<wire x1="195.58" y1="441.96" x2="306.07" y2="441.96" width="0.254" layer="97" style="shortdash"/>
+<wire x1="306.07" y1="441.96" x2="306.07" y2="337.82" width="0.254" layer="97" style="shortdash"/>
+<wire x1="306.07" y1="337.82" x2="195.58" y2="337.82" width="0.254" layer="97" style="shortdash"/>
 <text x="248.92" y="434.34" size="5.08" layer="97">26 MHz CLK</text>
-<wire x1="694.69" y1="699.77" x2="694.69" y2="631.19" width="1.016" layer="94"/>
-<wire x1="694.69" y1="631.19" x2="824.23" y2="631.19" width="1.016" layer="94"/>
-<wire x1="824.23" y1="631.19" x2="824.23" y2="699.77" width="1.016" layer="94"/>
-<wire x1="824.23" y1="699.77" x2="694.69" y2="699.77" width="1.016" layer="94"/>
+<wire x1="694.69" y1="699.77" x2="694.69" y2="631.19" width="0.254" layer="97" style="shortdash"/>
+<wire x1="694.69" y1="631.19" x2="824.23" y2="631.19" width="0.254" layer="97" style="shortdash"/>
+<wire x1="824.23" y1="631.19" x2="824.23" y2="699.77" width="0.254" layer="97" style="shortdash"/>
+<wire x1="824.23" y1="699.77" x2="694.69" y2="699.77" width="0.254" layer="97" style="shortdash"/>
 <text x="722.63" y="690.88" size="5.08" layer="97">CAN Transceiver</text>
 <text x="398.78" y="314.96" size="2.54" layer="97">INH</text>
 <text x="408.94" y="314.96" size="2.54" layer="97">A</text>
@@ -15222,25 +15222,25 @@ data sheet</text>
 <text x="422.91" y="309.88" size="1.778" layer="97">0</text>
 <text x="422.91" y="304.8" size="1.778" layer="97">1</text>
 <text x="420.37" y="299.72" size="1.778" layer="97">High-Z</text>
-<wire x1="462.28" y1="303.53" x2="462.28" y2="226.06" width="1.016" layer="97"/>
+<wire x1="462.28" y1="299.72" x2="462.28" y2="226.06" width="1.016" layer="97"/>
 <wire x1="462.28" y1="226.06" x2="510.54" y2="226.06" width="1.016" layer="97"/>
-<wire x1="510.54" y1="226.06" x2="510.54" y2="303.53" width="1.016" layer="97"/>
-<wire x1="510.54" y1="303.53" x2="462.28" y2="303.53" width="1.016" layer="97"/>
-<text x="464.82" y="298.45" size="3.048" layer="97">Analog Bus ID</text>
-<text x="464.82" y="198.12" size="3.048" layer="97">Serial Bus ID</text>
-<text x="467.36" y="134.62" size="3.048" layer="97">GPIO Bus ID</text>
-<wire x1="462.28" y1="203.2" x2="510.54" y2="203.2" width="1.016" layer="97"/>
-<wire x1="510.54" y1="203.2" x2="510.54" y2="144.78" width="1.016" layer="97"/>
-<wire x1="510.54" y1="144.78" x2="462.28" y2="144.78" width="1.016" layer="97"/>
-<wire x1="462.28" y1="144.78" x2="462.28" y2="203.2" width="1.016" layer="97"/>
-<wire x1="462.28" y1="139.7" x2="510.54" y2="139.7" width="1.016" layer="97"/>
-<wire x1="510.54" y1="139.7" x2="510.54" y2="81.28" width="1.016" layer="97"/>
-<wire x1="510.54" y1="81.28" x2="462.28" y2="81.28" width="1.016" layer="97"/>
-<wire x1="462.28" y1="81.28" x2="462.28" y2="139.7" width="1.016" layer="97"/>
-<wire x1="326.39" y1="364.49" x2="326.39" y2="10.16" width="1.016" layer="94"/>
-<wire x1="326.39" y1="10.16" x2="541.02" y2="10.16" width="1.016" layer="94"/>
-<wire x1="541.02" y1="10.16" x2="541.02" y2="364.49" width="1.016" layer="94"/>
-<wire x1="541.02" y1="364.49" x2="326.39" y2="364.49" width="1.016" layer="94"/>
+<wire x1="510.54" y1="226.06" x2="510.54" y2="299.72" width="1.016" layer="97"/>
+<wire x1="510.54" y1="299.72" x2="462.28" y2="299.72" width="1.016" layer="97"/>
+<text x="468.63" y="293.37" size="3.048" layer="97">Analog Connector ID</text>
+<text x="467.36" y="214.63" size="3.048" layer="97">Serial Connector ID</text>
+<text x="469.9" y="152.4" size="3.048" layer="97">GPIO Connector ID</text>
+<wire x1="462.28" y1="220.98" x2="510.54" y2="220.98" width="1.016" layer="97"/>
+<wire x1="510.54" y1="220.98" x2="510.54" y2="162.56" width="1.016" layer="97"/>
+<wire x1="510.54" y1="162.56" x2="462.28" y2="162.56" width="1.016" layer="97"/>
+<wire x1="462.28" y1="162.56" x2="462.28" y2="220.98" width="1.016" layer="97"/>
+<wire x1="462.28" y1="157.48" x2="510.54" y2="157.48" width="1.016" layer="97"/>
+<wire x1="510.54" y1="157.48" x2="510.54" y2="99.06" width="1.016" layer="97"/>
+<wire x1="510.54" y1="99.06" x2="462.28" y2="99.06" width="1.016" layer="97"/>
+<wire x1="462.28" y1="99.06" x2="462.28" y2="157.48" width="1.016" layer="97"/>
+<wire x1="326.39" y1="364.49" x2="326.39" y2="87.63" width="0.254" layer="97" style="shortdash"/>
+<wire x1="326.39" y1="87.63" x2="541.02" y2="87.63" width="0.254" layer="97" style="shortdash"/>
+<wire x1="541.02" y1="87.63" x2="541.02" y2="364.49" width="0.254" layer="97" style="shortdash"/>
+<wire x1="541.02" y1="364.49" x2="326.39" y2="364.49" width="0.254" layer="97" style="shortdash"/>
 <text x="405.13" y="353.06" size="5.08" layer="97">CONNECTOR ID SCHEME</text>
 <text x="394.97" y="334.01" size="1.778" layer="97">Each 40 pin IDC connector has two pins
 which can be connected through an analog MUX network to I2C or
@@ -15560,24 +15560,23 @@ Cpar is to low pass filter square wave</text>
 <instance part="TP74" gate="TP" x="788.67" y="656.59" rot="R270"/>
 <instance part="U1" gate="G1" x="478.79" y="280.67" rot="MR180"/>
 <instance part="U1" gate="G2" x="478.79" y="260.35" rot="MR180"/>
-<instance part="U1" gate="G3" x="478.79" y="180.34"/>
-<instance part="U1" gate="G4" x="478.79" y="160.02"/>
-<instance part="U1" gate="G5" x="378.46" y="45.72"/>
-<instance part="U15" gate="G1" x="477.52" y="119.38"/>
-<instance part="U15" gate="G2" x="477.52" y="96.52"/>
-<instance part="U15" gate="G5" x="394.97" y="45.72"/>
-<instance part="C39" gate="CE" x="383.54" y="48.26" smashed="yes">
-<attribute name="V_RATING" x="384.81" y="43.18" size="1.778" layer="96"/>
-<attribute name="NAME" x="385.064" y="48.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="385.064" y="41.021" size="1.778" layer="96"/>
+<instance part="U1" gate="G3" x="478.79" y="198.12"/>
+<instance part="U1" gate="G4" x="478.79" y="177.8"/>
+<instance part="U1" gate="G5" x="472.44" y="327.66"/>
+<instance part="U15" gate="G1" x="477.52" y="137.16"/>
+<instance part="U15" gate="G2" x="477.52" y="114.3"/>
+<instance part="U15" gate="G5" x="488.95" y="327.66"/>
+<instance part="C39" gate="CE" x="477.52" y="330.2" smashed="yes">
+<attribute name="V_RATING" x="478.79" y="325.12" size="1.778" layer="96"/>
+<attribute name="NAME" x="479.044" y="330.581" size="1.778" layer="95"/>
+<attribute name="VALUE" x="479.044" y="322.961" size="1.778" layer="96"/>
 </instance>
-<instance part="C91" gate="CE" x="401.32" y="48.26" smashed="yes">
-<attribute name="V_RATING" x="402.59" y="43.18" size="1.778" layer="96"/>
-<attribute name="NAME" x="402.844" y="48.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="402.844" y="41.021" size="1.778" layer="96"/>
+<instance part="C91" gate="CE" x="495.3" y="330.2" smashed="yes">
+<attribute name="V_RATING" x="496.57" y="325.12" size="1.778" layer="96"/>
+<attribute name="NAME" x="496.824" y="330.581" size="1.778" layer="95"/>
+<attribute name="VALUE" x="496.824" y="322.961" size="1.778" layer="96"/>
 </instance>
-<instance part="V27" gate="G$1" x="378.46" y="59.69"/>
-<instance part="GND24" gate="1" x="378.46" y="33.02"/>
+<instance part="GND24" gate="1" x="472.44" y="314.96"/>
 <instance part="TP63" gate="TP" x="445.77" y="236.22"/>
 <instance part="TP70" gate="TP" x="481.33" y="241.3"/>
 <instance part="TP71" gate="TP" x="481.33" y="238.76"/>
@@ -15702,6 +15701,7 @@ Cpar is to low pass filter square wave</text>
 <instance part="GND57" gate="1" x="243.84" y="384.81"/>
 <instance part="XTAL1" gate="XTAL" x="229.87" y="358.14"/>
 <instance part="XTAL1" gate="XTAL_GND" x="237.49" y="358.14"/>
+<instance part="V16" gate="G1" x="472.44" y="341.63"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -16217,18 +16217,18 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
 <pinref part="U1" gate="G5" pin="V-"/>
-<wire x1="378.46" y1="35.56" x2="378.46" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="38.1" x2="383.54" y2="38.1" width="0.1524" layer="91"/>
-<junction x="378.46" y="38.1"/>
+<wire x1="472.44" y1="317.5" x2="472.44" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="320.04" x2="477.52" y2="320.04" width="0.1524" layer="91"/>
+<junction x="472.44" y="320.04"/>
 <pinref part="C39" gate="CE" pin="2"/>
-<wire x1="383.54" y1="38.1" x2="383.54" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="477.52" y1="320.04" x2="477.52" y2="325.12" width="0.1524" layer="91"/>
 <pinref part="U15" gate="G5" pin="V-"/>
-<wire x1="383.54" y1="38.1" x2="394.97" y2="38.1" width="0.1524" layer="91"/>
-<junction x="383.54" y="38.1"/>
-<wire x1="394.97" y1="38.1" x2="401.32" y2="38.1" width="0.1524" layer="91"/>
-<junction x="394.97" y="38.1"/>
+<wire x1="477.52" y1="320.04" x2="488.95" y2="320.04" width="0.1524" layer="91"/>
+<junction x="477.52" y="320.04"/>
+<wire x1="488.95" y1="320.04" x2="495.3" y2="320.04" width="0.1524" layer="91"/>
+<junction x="488.95" y="320.04"/>
 <pinref part="C91" gate="CE" pin="2"/>
-<wire x1="401.32" y1="38.1" x2="401.32" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="495.3" y1="320.04" x2="495.3" y2="325.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND67" gate="1" pin="GND"/>
@@ -17090,6 +17090,22 @@ Cpar is to low pass filter square wave</text>
 <wire x1="397.51" y1="599.44" x2="397.51" y2="596.9" width="0.1524" layer="91"/>
 <junction x="387.35" y="599.44"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G5" pin="V+"/>
+<wire x1="472.44" y1="339.09" x2="472.44" y2="335.28" width="0.1524" layer="91"/>
+<pinref part="U15" gate="G5" pin="V+"/>
+<wire x1="472.44" y1="335.28" x2="477.52" y2="335.28" width="0.1524" layer="91"/>
+<junction x="472.44" y="335.28"/>
+<wire x1="477.52" y1="335.28" x2="488.95" y2="335.28" width="0.1524" layer="91"/>
+<wire x1="488.95" y1="335.28" x2="495.3" y2="335.28" width="0.1524" layer="91"/>
+<junction x="488.95" y="335.28"/>
+<pinref part="C91" gate="CE" pin="1"/>
+<wire x1="495.3" y1="335.28" x2="495.3" y2="332.74" width="0.1524" layer="91"/>
+<pinref part="C39" gate="CE" pin="1"/>
+<wire x1="477.52" y1="335.28" x2="477.52" y2="332.74" width="0.1524" layer="91"/>
+<junction x="477.52" y="335.28"/>
+<pinref part="V16" gate="G1" pin="V3.3D"/>
+</segment>
 </net>
 <net name="V1.8A" class="0">
 <segment>
@@ -17255,17 +17271,17 @@ Cpar is to low pass filter square wave</text>
 <pinref part="U11" gate="G9" pin="PI7"/>
 <wire x1="443.23" y1="236.22" x2="146.05" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="146.05" y1="236.22" x2="146.05" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="443.23" y1="236.22" x2="443.23" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="443.23" y1="129.54" x2="471.17" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="443.23" y1="236.22" x2="443.23" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="443.23" y1="147.32" x2="471.17" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U15" gate="G1" pin="EN"/>
-<wire x1="471.17" y1="129.54" x2="477.52" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="477.52" y1="129.54" x2="477.52" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="471.17" y1="129.54" x2="471.17" y2="107.95" width="0.1524" layer="91"/>
-<junction x="471.17" y="129.54"/>
-<wire x1="471.17" y1="107.95" x2="477.52" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="471.17" y1="147.32" x2="477.52" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="477.52" y1="147.32" x2="477.52" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="471.17" y1="147.32" x2="471.17" y2="125.73" width="0.1524" layer="91"/>
+<junction x="471.17" y="147.32"/>
+<wire x1="471.17" y1="125.73" x2="477.52" y2="125.73" width="0.1524" layer="91"/>
 <pinref part="U15" gate="G2" pin="EN"/>
-<wire x1="477.52" y1="107.95" x2="477.52" y2="99.06" width="0.1524" layer="91"/>
-<label x="441.96" y="129.54" size="1.778" layer="95" rot="R90"/>
+<wire x1="477.52" y1="125.73" x2="477.52" y2="116.84" width="0.1524" layer="91"/>
+<label x="441.96" y="147.32" size="1.778" layer="95" rot="R90"/>
 <pinref part="TP63" gate="TP" pin="P"/>
 <junction x="443.23" y="236.22"/>
 </segment>
@@ -17362,9 +17378,9 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="383.54" y1="278.13" x2="454.66" y2="278.13" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="278.13" x2="454.66" y2="260.35" width="0.1524" layer="91"/>
-<wire x1="454.66" y1="260.35" x2="454.66" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="454.66" y1="160.02" x2="454.66" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="454.66" y1="96.52" x2="474.98" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="260.35" x2="454.66" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="177.8" x2="454.66" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="114.3" x2="474.98" y2="114.3" width="0.1524" layer="91"/>
 <label x="416.56" y="278.13" size="1.778" layer="95"/>
 <label x="129.54" y="325.12" size="1.778" layer="95" font="vector"/>
 <wire x1="383.54" y1="278.13" x2="383.54" y2="327.66" width="0.1524" layer="91"/>
@@ -17380,8 +17396,8 @@ Cpar is to low pass filter square wave</text>
 <wire x1="476.25" y1="260.35" x2="454.66" y2="260.35" width="0.1524" layer="91"/>
 <junction x="454.66" y="260.35"/>
 <pinref part="U1" gate="G4" pin="Y"/>
-<wire x1="454.66" y1="160.02" x2="476.25" y2="160.02" width="0.1524" layer="91"/>
-<junction x="454.66" y="160.02"/>
+<wire x1="454.66" y1="177.8" x2="476.25" y2="177.8" width="0.1524" layer="91"/>
+<junction x="454.66" y="177.8"/>
 <pinref part="U15" gate="G2" pin="Y"/>
 <pinref part="TP112" gate="TP" pin="P"/>
 <junction x="356.87" y="327.66"/>
@@ -17391,10 +17407,10 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="386.08" y1="280.67" x2="457.2" y2="280.67" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="280.67" x2="476.25" y2="280.67" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="280.67" x2="457.2" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="280.67" x2="457.2" y2="198.12" width="0.1524" layer="91"/>
 <junction x="457.2" y="280.67"/>
-<wire x1="457.2" y1="180.34" x2="457.2" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="119.38" x2="474.98" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="198.12" x2="457.2" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="137.16" x2="474.98" y2="137.16" width="0.1524" layer="91"/>
 <label x="416.56" y="280.67" size="1.778" layer="95"/>
 <wire x1="386.08" y1="280.67" x2="386.08" y2="297.18" width="0.1524" layer="91"/>
 <label x="129.54" y="330.2" size="1.778" layer="95" font="vector"/>
@@ -17407,8 +17423,8 @@ Cpar is to low pass filter square wave</text>
 <label x="369.57" y="297.18" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U1" gate="G1" pin="Y"/>
 <pinref part="U1" gate="G3" pin="Y"/>
-<wire x1="457.2" y1="180.34" x2="476.25" y2="180.34" width="0.1524" layer="91"/>
-<junction x="457.2" y="180.34"/>
+<wire x1="457.2" y1="198.12" x2="476.25" y2="198.12" width="0.1524" layer="91"/>
+<junction x="457.2" y="198.12"/>
 <pinref part="U15" gate="G1" pin="Y"/>
 <pinref part="TP111" gate="TP" pin="P"/>
 <junction x="356.87" y="330.2"/>
@@ -17963,22 +17979,6 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="V3.3A" class="0">
 <segment>
-<pinref part="V27" gate="G$1" pin="V3.3A"/>
-<pinref part="U1" gate="G5" pin="V+"/>
-<wire x1="378.46" y1="57.15" x2="378.46" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U15" gate="G5" pin="V+"/>
-<wire x1="378.46" y1="53.34" x2="383.54" y2="53.34" width="0.1524" layer="91"/>
-<junction x="378.46" y="53.34"/>
-<wire x1="383.54" y1="53.34" x2="394.97" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="394.97" y1="53.34" x2="401.32" y2="53.34" width="0.1524" layer="91"/>
-<junction x="394.97" y="53.34"/>
-<pinref part="C91" gate="CE" pin="1"/>
-<wire x1="401.32" y1="53.34" x2="401.32" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C39" gate="CE" pin="1"/>
-<wire x1="383.54" y1="53.34" x2="383.54" y2="50.8" width="0.1524" layer="91"/>
-<junction x="383.54" y="53.34"/>
-</segment>
-<segment>
 <pinref part="C47" gate="CE" pin="1"/>
 <pinref part="C33" gate="CE" pin="1"/>
 <wire x1="248.92" y1="421.64" x2="248.92" y2="419.1" width="0.1524" layer="91"/>
@@ -18008,29 +18008,29 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="SBUS_SCL" class="0">
 <segment>
-<wire x1="481.33" y1="180.34" x2="485.14" y2="180.34" width="0.1524" layer="91"/>
-<label x="485.14" y="180.34" size="1.778" layer="95" xref="yes"/>
+<wire x1="481.33" y1="198.12" x2="485.14" y2="198.12" width="0.1524" layer="91"/>
+<label x="485.14" y="198.12" size="1.778" layer="95" xref="yes"/>
 <pinref part="U1" gate="G3" pin="Z"/>
 </segment>
 </net>
 <net name="SBUS_SDA" class="0">
 <segment>
-<wire x1="481.33" y1="160.02" x2="485.14" y2="160.02" width="0.1524" layer="91"/>
-<label x="485.14" y="160.02" size="1.778" layer="95" xref="yes"/>
+<wire x1="481.33" y1="177.8" x2="485.14" y2="177.8" width="0.1524" layer="91"/>
+<label x="485.14" y="177.8" size="1.778" layer="95" xref="yes"/>
 <pinref part="U1" gate="G4" pin="Z"/>
 </segment>
 </net>
 <net name="GPIO_BUS_SCL" class="0">
 <segment>
-<wire x1="480.06" y1="119.38" x2="485.14" y2="119.38" width="0.1524" layer="91"/>
-<label x="485.14" y="119.38" size="1.778" layer="95" xref="yes"/>
+<wire x1="480.06" y1="137.16" x2="485.14" y2="137.16" width="0.1524" layer="91"/>
+<label x="485.14" y="137.16" size="1.778" layer="95" xref="yes"/>
 <pinref part="U15" gate="G1" pin="Z"/>
 </segment>
 </net>
 <net name="GPIO_BUS_SDA" class="0">
 <segment>
-<wire x1="480.06" y1="96.52" x2="485.14" y2="96.52" width="0.1524" layer="91"/>
-<label x="485.14" y="96.52" size="1.778" layer="95" xref="yes"/>
+<wire x1="480.06" y1="114.3" x2="485.14" y2="114.3" width="0.1524" layer="91"/>
+<label x="485.14" y="114.3" size="1.778" layer="95" xref="yes"/>
 <pinref part="U15" gate="G2" pin="Z"/>
 </segment>
 </net>
@@ -18085,15 +18085,15 @@ Cpar is to low pass filter square wave</text>
 <wire x1="478.79" y1="238.76" x2="104.14" y2="238.76" width="0.1524" layer="91"/>
 <label x="124.46" y="238.76" size="1.778" layer="95" font="vector"/>
 <pinref part="U1" gate="G3" pin="EN"/>
-<wire x1="478.79" y1="238.76" x2="478.79" y2="189.23" width="0.1524" layer="91"/>
-<wire x1="478.79" y1="189.23" x2="478.79" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="478.79" y1="189.23" x2="473.71" y2="189.23" width="0.1524" layer="91"/>
-<junction x="478.79" y="189.23"/>
-<wire x1="473.71" y1="189.23" x2="473.71" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="473.71" y1="170.18" x2="478.79" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="478.79" y1="238.76" x2="478.79" y2="207.01" width="0.1524" layer="91"/>
+<wire x1="478.79" y1="207.01" x2="478.79" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="478.79" y1="207.01" x2="473.71" y2="207.01" width="0.1524" layer="91"/>
+<junction x="478.79" y="207.01"/>
+<wire x1="473.71" y1="207.01" x2="473.71" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="473.71" y1="187.96" x2="478.79" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G4" pin="EN"/>
-<wire x1="478.79" y1="170.18" x2="478.79" y2="162.56" width="0.1524" layer="91"/>
-<label x="477.52" y="209.55" size="1.778" layer="95" rot="R90"/>
+<wire x1="478.79" y1="187.96" x2="478.79" y2="180.34" width="0.1524" layer="91"/>
+<label x="478.79" y="227.33" size="1.778" layer="95" rot="R90"/>
 <pinref part="TP71" gate="TP" pin="P"/>
 <junction x="478.79" y="238.76"/>
 </segment>
@@ -19914,11 +19914,11 @@ Option</text>
 <text x="82.55" y="311.15" size="3.048" layer="97">Analog</text>
 <text x="82.55" y="209.55" size="3.048" layer="97">Serial</text>
 <text x="82.55" y="107.95" size="3.048" layer="97">GPIO</text>
-<wire x1="157.48" y1="340.36" x2="157.48" y2="266.7" width="1.016" layer="94"/>
-<wire x1="157.48" y1="266.7" x2="248.92" y2="266.7" width="1.016" layer="94"/>
-<wire x1="248.92" y1="266.7" x2="248.92" y2="345.44" width="1.016" layer="94"/>
-<wire x1="248.92" y1="345.44" x2="157.48" y2="345.44" width="1.016" layer="94"/>
-<wire x1="157.48" y1="345.44" x2="157.48" y2="340.36" width="1.016" layer="94"/>
+<wire x1="157.48" y1="340.36" x2="157.48" y2="266.7" width="0.254" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="266.7" x2="248.92" y2="266.7" width="0.254" layer="97" style="shortdash"/>
+<wire x1="248.92" y1="266.7" x2="248.92" y2="345.44" width="0.254" layer="97" style="shortdash"/>
+<wire x1="248.92" y1="345.44" x2="157.48" y2="345.44" width="0.254" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="345.44" x2="157.48" y2="340.36" width="0.254" layer="97" style="shortdash"/>
 <text x="163.83" y="336.55" size="5.08" layer="97">External Power Connector</text>
 </plain>
 <instances>
