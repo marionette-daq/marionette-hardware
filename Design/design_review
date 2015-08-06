@@ -17,39 +17,40 @@ Make sure the transistor in the Zeta has sufficient voltage rating.
 Check that the LDOs are low noise. -DONE replaced ADP125s with MIC5305 fixed output regulators.
 Check that the LDOs have at least 60dB PSRR.  DONE  85dB PSRR
 Compare LDOs to the MIC5305  DONE
-Check if the TPS40200 can be disabled by grounding the SS pin.  
-Make a note as to what each power supply is for (i.e. 1.8V is for ULPI)
-Put a box and label around the external power connector.  
-Move power header to the header page.
-Put STM power connections on the STM PORTS.
-Change sheet name to PORTS.
-Change power and boot to just POWER.
-Make a test pad with via device with 10mil drill hole and 20mil drill hole
-Change ECOD ANALOG to just ANALOG
-Standardize the pin headers (look at the STM power connections block)
-Mark the cap attributes according to actual electrical requirements.  Collapse the bom manually.
-Reassess the VCAP cap values.
-Make VBUS symbol.
-Remove the testpoints on the ULPI interface.
-Change the SO bootstraps on the ULPI to select 26MHz if dave says OK.
-Kill the BOOT0 jumper J23
-CAN transceiver SHDN should have a pullup? pulldown? to be normally off.
-Check RS value on the CAN transceiver MAX3051.
-Kill TP75 which is RS on the CAN.
-Change the SWD jumper back to vertical keyed type.
-Talk to Dave about how to program the ULPI registers (to enable DP/DM swap).
-Kill the EEPROM module.
-Put a series resistor in the Xout of the 26MHz crystal for gain control.
-Kill SD testpoints on parallel lines.
-Investigate pullups on the SDIO. See if the CMD line needs a pullup.
+
+Check if the TPS40200 can be disabled by grounding the SS pin. DONE- yes grounding the SS pin shuts off the switching supply
+Make a note as to what each power supply is for (i.e. 1.8V is for ULPI) -DONE
+Put a box and label around the external power connector.  -DONE
+Move power header to the header page.  -DONE
+Put STM power connections on the STM PORTS.  -WHAT DOES THIS mEAN?
+Change sheet name to PORTS.  -DONE
+Change power and boot to just POWER.  -DONE
+Make a test pad with via device with 10mil drill hole and 20mil drill hole -DONE with 0.6mm drill
+Change ECOD ANALOG to just ANALOG -DONE
+
+Mark the cap attributes according to actual electrical requirements.  Collapse the bom manually.  DONE
+Reassess the VCAP cap values.  DONE
+Make VBUS symbol.  DONE
+Remove the testpoints on the ULPI interface.  DONE
+Change the SO bootstraps on the ULPI to select 26MHz if dave says OK.  DONE
+Kill the BOOT0 jumper J23.  DONE
+CAN transceiver SHDN should have a pullup? pulldown? to be normally off.  DONE, SHDN signal is "shutdown on high", therefore put a 10k pullup in, I did.
+Check RS value on the CAN transceiver MAX3051.  DONE, RS is pulled low for high speed operation.  slope of signal controlled by RS resistor value.
+Kill TP75 which is RS on the CAN.  DONE
+Change the SWD jumper back to vertical keyed type. DONE 
+Talk to Dave about how to program the ULPI registers (to enable DP/DM swap).  -DONE  chibios does not have solid infrastructure for swapping DP/DM and so leave in default state until future rev.
+Kill the EEPROM module.  KILLED_IT
+Put a series resistor in the Xout of the 26MHz crystal for gain control.  DONE, the gain control is only needed on the TCXO I presume and so I presume that the gain control can be done with the NP resistor on the XIN line.
+Kill SD testpoints on parallel lines.  DONE
+Investigate pullups on the SDIO. See if the CMD line needs a pullup.  DONE, put a 50k pullup resistor on the CMD line and all unused data lines so that they don't float if a card is not inserted.  See http://cdn.sparkfun.com/datasheets/Components/General/SDSpec.pdf section 3-3.  Apparently the resistor value should be 50kish.  The marionette_v1.0 value was 4.7k.  
 Model transfer function in LTspice and graph as a sanity check.
-Relabel PF2 to CAN_SHDN or something.
-Connect the TCXO to the STM with an R to Cpar to Cseries to change a 1400mV square wave into a 200mV sine wave.
+Relabel PF2 to CAN_SHDN or something.  DONE
+Connect the TCXO to the STM with an R to Cpar to Cseries to change a 1400mV square wave into a 200mV sine wave.  DONE  
 TPs not necessary on serial buses that go to external headers.
 MBUS (I2C) will need real 4.7k, but these resistors should be on the interface board.   
-Call "Analog Connector ID", "Serial Connector ID", etc. instead of "Analog Bus ID", etc.
+Call "Analog Connector ID", "Serial Connector ID", etc. instead of "Analog Bus ID", etc.  DONE
 Check that the Anti-Aliasing filter is correct.
-Change the supply for the MBUS switches to be V3.3D
+Change the supply for the MBUS switches to be V3.3D  DONE
 Run the DAC VA and VREFIN off a dedicated 3.3V analog supply.  Read the power suppply section of the DAC datasheet.
 Make the boxes around the Connector ID switches all the same size.  Crunchify the box sizes.
 Make sure that the STM can have an external reference
