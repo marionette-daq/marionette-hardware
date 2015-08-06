@@ -3636,6 +3636,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="V_RATING" value="10V" x="-90.4" y="-779.6" size="1.778" layer="27" display="off"/>
 </element>
 <element name="XTAL1" library="dock_v2" package="CRYSTAL-3.2X2.5(4_TERMINAL)" value="FA-238_24MHZ_XTAL_SHIELDED_26MHZ_REF" x="-94.9" y="-778.3"/>
+<element name="TP31" library="dock_v2" package="PAD-0.7+SILK" value="" x="-95.5" y="-784.2"/>
 </elements>
 <signals>
 <signal name="OSC32_IN">
@@ -4594,7 +4595,11 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="MCO1">
 <contactref element="MCO1" pad="PAD"/>
 <contactref element="U11" pad="119"/>
-<wire x1="32.979184375" y1="51.01040625" x2="62.4" y2="87.4" width="0" layer="19" extent="1-1"/>
+<contactref element="C98" pad="1"/>
+<contactref element="TP31" pad="PAD"/>
+<wire x1="32.979184375" y1="51.01040625" x2="-46.5" y2="-195.2" width="0" layer="19" extent="1-1"/>
+<wire x1="62.4" y1="87.4" x2="32.979184375" y2="51.01040625" width="0" layer="19" extent="1-1"/>
+<wire x1="-95.5" y1="-784.2" x2="-46.5" y2="-195.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SD_DETECT">
 <contactref element="U13" pad="S0"/>
@@ -6213,8 +6218,6 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="USB_PHY_REFCLK_12MHZ">
 <contactref element="U11" pad="115"/>
-<contactref element="C98" pad="1"/>
-<wire x1="34.393396875" y1="52.42461875" x2="-46.5" y2="-195.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4" class="1">
 <contactref element="D4" pad="CATH"/>

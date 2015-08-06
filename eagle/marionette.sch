@@ -13545,6 +13545,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="GND57" library="GROUND" deviceset="GND" device=""/>
 <part name="XTAL1" library="dock_v2" deviceset="FA-238_24MHZ_XTAL_SHIELDED" device="_26MHZ_REF"/>
 <part name="V16" library="supply" deviceset="V3.3D" device=""/>
+<part name="TP31" library="dock_v2" deviceset="PAD+X" device="-0.7+SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -15345,8 +15346,8 @@ Cpar is to low pass filter square wave</text>
 </instance>
 <instance part="GND62" gate="1" x="439.42" y="792.48"/>
 <instance part="GND10" gate="1" x="525.78" y="816.61"/>
-<instance part="MCO1" gate="G1" x="165.1" y="795.02" smashed="yes">
-<attribute name="NAME" x="163.195" y="796.925" size="1.778" layer="95" font="vector"/>
+<instance part="MCO1" gate="G1" x="194.31" y="795.02" smashed="yes">
+<attribute name="NAME" x="192.405" y="796.925" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="R63" gate="R" x="454.66" y="775.97" rot="R270"/>
 <instance part="GND34" gate="1" x="454.66" y="767.08"/>
@@ -15687,7 +15688,7 @@ Cpar is to low pass filter square wave</text>
 <attribute name="NAME" x="760.73" y="740.41" size="1.778" layer="95"/>
 </instance>
 <instance part="J4" gate="G1" x="736.6" y="582.93" rot="MR0"/>
-<instance part="S7" gate="G$1" x="187.96" y="793.75"/>
+<instance part="S7" gate="G$1" x="203.2" y="793.75"/>
 <instance part="S8" gate="G$1" x="610.87" y="797.56"/>
 <instance part="R77" gate="R" x="731.52" y="674.37" rot="R90"/>
 <instance part="R78" gate="R" x="397.51" y="591.82" rot="R90"/>
@@ -15702,6 +15703,7 @@ Cpar is to low pass filter square wave</text>
 <instance part="XTAL1" gate="XTAL" x="229.87" y="358.14"/>
 <instance part="XTAL1" gate="XTAL_GND" x="237.49" y="358.14"/>
 <instance part="V16" gate="G1" x="472.44" y="341.63"/>
+<instance part="TP31" gate="TP" x="165.1" y="797.56" rot="R90"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -16721,6 +16723,18 @@ Cpar is to low pass filter square wave</text>
 <label x="125.73" y="795.02" size="1.778" layer="95"/>
 <pinref part="MCO1" gate="G1" pin="TP"/>
 <pinref part="U11" gate="G1" pin="PA8"/>
+<pinref part="TP31" gate="TP" pin="P"/>
+<wire x1="165.1" y1="795.02" x2="194.31" y2="795.02" width="0.1524" layer="91"/>
+<junction x="165.1" y="795.02"/>
+<junction x="194.31" y="795.02"/>
+<wire x1="194.31" y1="795.02" x2="194.31" y2="807.72" width="0.1524" layer="91"/>
+<wire x1="194.31" y1="807.72" x2="194.31" y2="845.82" width="0.1524" layer="91"/>
+<pinref part="C98" gate="CE" pin="1"/>
+<wire x1="518.16" y1="831.85" x2="518.16" y2="839.47" width="0.1524" layer="91"/>
+<wire x1="194.31" y1="845.82" x2="518.16" y2="845.82" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="845.82" x2="518.16" y2="839.47" width="0.1524" layer="91"/>
+<label x="509.27" y="845.82" size="1.778" layer="95"/>
+<label x="176.53" y="795.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SD_DETECT" class="0">
@@ -18124,11 +18138,6 @@ Cpar is to low pass filter square wave</text>
 <label x="125.73" y="617.22" size="1.778" layer="95"/>
 <pinref part="U11" gate="G3" pin="PC6"/>
 </segment>
-<segment>
-<pinref part="C98" gate="CE" pin="1"/>
-<wire x1="518.16" y1="831.85" x2="518.16" y2="839.47" width="0.1524" layer="91"/>
-<label x="518.16" y="839.47" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -18139,8 +18148,8 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="VBUS" class="0">
 <segment>
-<wire x1="187.96" y1="793.75" x2="187.96" y2="789.94" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="789.94" x2="104.14" y2="789.94" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="793.75" x2="203.2" y2="789.94" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="789.94" x2="104.14" y2="789.94" width="0.1524" layer="91"/>
 <label x="125.73" y="789.94" size="1.778" layer="95"/>
 <pinref part="U11" gate="G1" pin="PA9"/>
 <pinref part="S7" gate="G$1" pin="VBUS"/>
