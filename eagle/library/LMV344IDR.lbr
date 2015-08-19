@@ -130,10 +130,11 @@ SOIC-14</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LVM344" prefix="U">
+<deviceset name="LMV344" prefix="U">
 <description>&lt;b&gt;Rail-to-Rail Output CMOS Operational Amplifier with Shutdown&lt;/b&gt;&lt;br&gt;
 Datasheet: &lt;br&gt;
-http://www.ti.com/lit/ds/symlink/lmv341.pdf</description>
+http://www.ti.com/lit/ds/symlink/lmv341.pdf&lt;br&gt;
+Digikey Part No.:  296-20925-1-ND</description>
 <gates>
 <gate name="G1" symbol="OPAMP" x="-7.62" y="12.7" addlevel="always"/>
 <gate name="G2" symbol="OPAMP" x="-7.62" y="0" addlevel="always"/>
