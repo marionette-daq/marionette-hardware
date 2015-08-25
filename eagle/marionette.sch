@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -13669,9 +13669,6 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="C143" library="rcl_custom" deviceset="C-EU" device="0603-C" value="10n">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="V18" library="supply" deviceset="VCC" device=""/>
-<part name="V32" library="supply" deviceset="VCC" device=""/>
-<part name="V37" library="supply" deviceset="VCC" device=""/>
 <part name="D1" library="apdm_ap_v2" deviceset="ESD8006" device="-ESD8006"/>
 <part name="D5" library="apdm_ap_v2" deviceset="ESD8006" device="-ESD8006"/>
 <part name="D6" library="apdm_ap_v2" deviceset="ESD8006" device="-ESD8006"/>
@@ -13686,6 +13683,9 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="D15" library="apdm_ap_v2" deviceset="ESD8006" device="-ESD8006"/>
 <part name="D16" library="apdm_ap_v2" deviceset="ESD8006" device="-ESD8006"/>
 <part name="GND90" library="GROUND" deviceset="GND" device=""/>
+<part name="V18" library="supply" deviceset="V5" device=""/>
+<part name="V32" library="supply" deviceset="V5" device=""/>
+<part name="V37" library="supply" deviceset="V5" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20713,9 +20713,6 @@ Option</text>
 <instance part="J12" gate="G1" x="208.28" y="297.18"/>
 <instance part="V12" gate="S" x="165.1" y="294.64"/>
 <instance part="V17" gate="G$1" x="172.72" y="299.72"/>
-<instance part="V18" gate="G1" x="101.6" y="312.42"/>
-<instance part="V32" gate="G1" x="101.6" y="210.82"/>
-<instance part="V37" gate="G1" x="101.6" y="109.22"/>
 <instance part="D1" gate="G7" x="166.37" y="252.73"/>
 <instance part="D1" gate="G1" x="118.11" y="236.22"/>
 <instance part="D1" gate="G2" x="120.65" y="229.87"/>
@@ -20808,6 +20805,9 @@ Option</text>
 <instance part="D16" gate="G5" x="355.6" y="8.89"/>
 <instance part="D16" gate="G6" x="370.84" y="8.89"/>
 <instance part="GND90" gate="1" x="166.37" y="241.3"/>
+<instance part="V18" gate="G1" x="101.6" y="312.42"/>
+<instance part="V32" gate="G1" x="101.6" y="210.82"/>
+<instance part="V37" gate="G1" x="101.6" y="109.22"/>
 </instances>
 <busses>
 <bus name="DAC_0UTPUT_BUS:DAC_A,DAC_B,DAC_C,DAC_D,DAC_E">
@@ -20857,33 +20857,6 @@ Option</text>
 <wire x1="205.74" y1="309.88" x2="213.36" y2="309.88" width="0.1524" layer="91"/>
 <pinref part="J12" gate="G1" pin="1"/>
 <junction x="200.66" y="309.88"/>
-</segment>
-<segment>
-<wire x1="101.6" y1="106.68" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
-<junction x="93.98" y="99.06"/>
-<pinref part="J3" gate="G1" pin="5"/>
-<pinref part="J3" gate="G1" pin="6"/>
-<pinref part="V37" gate="G1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="101.6" y1="208.28" x2="101.6" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="200.66" x2="93.98" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
-<junction x="93.98" y="200.66"/>
-<pinref part="J8" gate="G1" pin="5"/>
-<pinref part="J8" gate="G1" pin="6"/>
-<pinref part="V32" gate="G1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="J9" gate="G1" pin="6"/>
-<wire x1="101.6" y1="309.88" x2="101.6" y2="302.26" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="302.26" x2="93.98" y2="302.26" width="0.1524" layer="91"/>
-<pinref part="J9" gate="G1" pin="5"/>
-<wire x1="93.98" y1="302.26" x2="78.74" y2="302.26" width="0.1524" layer="91"/>
-<junction x="93.98" y="302.26"/>
-<pinref part="V18" gate="G1" pin="VCC"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -21003,7 +20976,6 @@ Option</text>
 <pinref part="D1" gate="G7" pin="PIN"/>
 <wire x1="166.37" y1="247.65" x2="168.91" y2="247.65" width="0.1524" layer="91"/>
 <wire x1="168.91" y1="247.65" x2="196.85" y2="247.65" width="0.1524" layer="91"/>
-<wire x1="196.85" y1="247.65" x2="196.85" y2="246.38" width="0.1524" layer="91"/>
 <junction x="166.37" y="247.65"/>
 <pinref part="D2" gate="G7" pin="PIN"/>
 <wire x1="168.91" y1="250.19" x2="168.91" y2="247.65" width="0.1524" layer="91"/>
@@ -21837,6 +21809,33 @@ Option</text>
 <wire x1="205.74" y1="304.8" x2="213.36" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="J12" gate="G1" pin="5"/>
 <junction x="200.66" y="304.8"/>
+</segment>
+<segment>
+<wire x1="101.6" y1="106.68" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
+<junction x="93.98" y="99.06"/>
+<pinref part="J3" gate="G1" pin="5"/>
+<pinref part="J3" gate="G1" pin="6"/>
+<pinref part="V37" gate="G1" pin="V5"/>
+</segment>
+<segment>
+<wire x1="101.6" y1="208.28" x2="101.6" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="200.66" x2="93.98" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
+<junction x="93.98" y="200.66"/>
+<pinref part="J8" gate="G1" pin="5"/>
+<pinref part="J8" gate="G1" pin="6"/>
+<pinref part="V32" gate="G1" pin="V5"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G1" pin="6"/>
+<wire x1="101.6" y1="309.88" x2="101.6" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="302.26" x2="93.98" y2="302.26" width="0.1524" layer="91"/>
+<pinref part="J9" gate="G1" pin="5"/>
+<wire x1="93.98" y1="302.26" x2="78.74" y2="302.26" width="0.1524" layer="91"/>
+<junction x="93.98" y="302.26"/>
+<pinref part="V18" gate="G1" pin="V5"/>
 </segment>
 </net>
 <net name="V1.8A" class="0">
