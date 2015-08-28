@@ -12943,7 +12943,10 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <clearance class="1" value="0.7"/>
 </class>
 <class number="3" name="med-isolate" width="0.2" drill="0">
-<clearance class="3" value="0.2"/>
+<clearance class="0" value="0.35"/>
+<clearance class="1" value="0.35"/>
+<clearance class="2" value="0.35"/>
+<clearance class="3" value="0.35"/>
 </class>
 </classes>
 <parts>
@@ -12963,10 +12966,10 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="C25" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="C26" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1u">
+<part name="C26" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="R1" library="rcl_custom" deviceset="R-US_" device="0603-B" value="8.06k"/>
+<part name="R1" library="rcl_custom" deviceset="R-US_" device="0402-B" value="8.06k"/>
 <part name="C29" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -12992,15 +12995,15 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 </part>
 <part name="GND9" library="GROUND" deviceset="GND" device=""/>
 <part name="LED10" library="led-rgb-rohm" deviceset="LED_RGB_COMMON_ANODE-*" device="1.6X1.26" value="RGB"/>
-<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-B" value="620"/>
-<part name="R13" library="rcl_custom" deviceset="R-US_" device="0603-B" value="510"/>
-<part name="R14" library="rcl_custom" deviceset="R-US_" device="0603-B" value="510"/>
+<part name="R12" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
+<part name="R13" library="rcl_custom" deviceset="R-US_" device="0402-B" value="510"/>
+<part name="R14" library="rcl_custom" deviceset="R-US_" device="0402-B" value="510"/>
 <part name="C32" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="R15" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R15" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="D3" library="CBDU0530" deviceset="CDBU0530" device=""/>
-<part name="R19" library="rcl_custom" deviceset="R-US_" device="0603-B" value="1k"/>
+<part name="R19" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="C34" library="rcl_custom" deviceset="C-EU" device="0402-B" value="4.4p">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13008,7 +13011,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND13" library="GROUND" deviceset="GND" device=""/>
-<part name="R16" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R16" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="C36" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13028,20 +13031,20 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="LED5" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
 <part name="LED6" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
 <part name="LED7" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
-<part name="R21" library="rcl_custom" deviceset="R-US_" device="0603-B" value="620"/>
-<part name="R22" library="rcl_custom" deviceset="R-US_" device="0603-B" value="620"/>
-<part name="R23" library="rcl_custom" deviceset="R-US_" device="0603-B" value="620"/>
-<part name="R24" library="rcl_custom" deviceset="R-US_" device="0603-B" value="620"/>
-<part name="R25" library="rcl_custom" deviceset="R-US_" device="0603-B" value="620"/>
-<part name="R26" library="rcl_custom" deviceset="R-US_" device="0603-B" value="620"/>
-<part name="R27" library="rcl_custom" deviceset="R-US_" device="0603-B" value="620"/>
-<part name="R28" library="rcl_custom" deviceset="R-US_" device="0603-B" value="620"/>
+<part name="R21" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
+<part name="R22" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
+<part name="R23" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
+<part name="R24" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
+<part name="R25" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
+<part name="R26" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
+<part name="R27" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
+<part name="R28" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
 <part name="U5" library="MAX3051ESA" deviceset="MAX3051ESA" device="ESA+"/>
 <part name="GND28" library="GROUND" deviceset="GND" device=""/>
 <part name="C44" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="R29" library="rcl_custom" deviceset="R-US_" device="0603-B" value="120"/>
+<part name="R29" library="rcl_custom" deviceset="R-US_" device="0402-B" value="120"/>
 <part name="H1" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="H2" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="H3" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
@@ -13050,13 +13053,13 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="50V"/>
 </part>
 <part name="GND33" library="GROUND" deviceset="GND" device=""/>
-<part name="R30" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
+<part name="R30" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="U7" library="LMV344IDR" deviceset="LMV344" device=""/>
 <part name="U8" library="LMV344IDR" deviceset="LMV344" device=""/>
 <part name="U9" library="LMV344IDR" deviceset="LMV344" device=""/>
 <part name="U10" library="LMV344IDR" deviceset="LMV344" device=""/>
-<part name="R31" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R32" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R31" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R32" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C49" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10v"/>
 </part>
@@ -13064,8 +13067,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND35" library="GROUND" deviceset="GND" device=""/>
-<part name="R33" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R34" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R33" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R34" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C51" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13073,8 +13076,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND36" library="GROUND" deviceset="GND" device=""/>
-<part name="R35" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R36" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R35" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R36" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C53" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10v"/>
 </part>
@@ -13083,8 +13086,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 </part>
 <part name="GND37" library="GROUND" deviceset="GND" device=""/>
 <part name="GND38" library="GROUND" deviceset="GND" device=""/>
-<part name="R39" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R40" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R39" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R40" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C57" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13092,8 +13095,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10v"/>
 </part>
 <part name="GND39" library="GROUND" deviceset="GND" device=""/>
-<part name="R41" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R42" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R41" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R42" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C59" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13101,8 +13104,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND40" library="GROUND" deviceset="GND" device=""/>
-<part name="R43" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R44" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R43" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R44" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C61" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13110,8 +13113,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND41" library="GROUND" deviceset="GND" device=""/>
-<part name="R45" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R46" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R45" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R46" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C63" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13119,8 +13122,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND42" library="GROUND" deviceset="GND" device=""/>
-<part name="R47" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R48" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R47" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R48" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C65" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10v"/>
 </part>
@@ -13128,8 +13131,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10v"/>
 </part>
 <part name="GND43" library="GROUND" deviceset="GND" device=""/>
-<part name="R49" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R50" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R49" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R50" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C67" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13137,8 +13140,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND44" library="GROUND" deviceset="GND" device=""/>
-<part name="R51" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R52" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R51" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R52" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C69" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13146,8 +13149,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND45" library="GROUND" deviceset="GND" device=""/>
-<part name="R53" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R54" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R53" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R54" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C71" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13155,8 +13158,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND46" library="GROUND" deviceset="GND" device=""/>
-<part name="R55" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R56" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R55" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R56" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C73" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10v"/>
 </part>
@@ -13164,8 +13167,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10v"/>
 </part>
 <part name="GND47" library="GROUND" deviceset="GND" device=""/>
-<part name="R57" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R58" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R57" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R58" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C75" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13173,8 +13176,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND48" library="GROUND" deviceset="GND" device=""/>
-<part name="R59" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R60" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R59" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R60" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C77" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13182,8 +13185,8 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND49" library="GROUND" deviceset="GND" device=""/>
-<part name="R61" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
-<part name="R62" library="rcl_custom" deviceset="R-US_" device="0603-B" value="7.5k"/>
+<part name="R61" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
+<part name="R62" library="rcl_custom" deviceset="R-US_" device="0402-B" value="7.5k"/>
 <part name="C79" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13204,7 +13207,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND54" library="GROUND" deviceset="GND" device=""/>
-<part name="R37" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R37" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="U14" library="USB3320" deviceset="USB_PHY-SMSC-USB3320" device="-QFN32-5X5" value="USB3320"/>
 <part name="GND58" library="GROUND" deviceset="GND" device=""/>
 <part name="C85" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
@@ -13216,12 +13219,12 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="GND62" library="GROUND" deviceset="GND" device=""/>
 <part name="GND10" library="GROUND" deviceset="GND" device=""/>
 <part name="MCO1" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
-<part name="R63" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R63" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="GND34" library="GROUND" deviceset="GND" device=""/>
 <part name="R64" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
 <part name="GND63" library="GROUND" deviceset="GND" device=""/>
 <part name="R65" library="rcl_custom" deviceset="R-US_" device="0603-B" value="100k"/>
-<part name="R66" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
+<part name="R66" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="GND66" library="GROUND" deviceset="GND" device=""/>
 <part name="GND67" library="GROUND" deviceset="GND" device=""/>
 <part name="J3" library="apdm_dock_testjig" deviceset="IDC_RECEPTACLE_2X20" device="-S9175-ND"/>
@@ -13432,7 +13435,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="TP126" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP127" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP128" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
-<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-B" value="1Meg"/>
+<part name="R4" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1Meg"/>
 <part name="C28" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13464,9 +13467,9 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="R5701" library="rcl_custom" deviceset="R_SENSE" device="2512-6PAD_KELVIN_CONNECTION" value=".050"/>
 <part name="D2" library="apdm_ap_v2" deviceset="ESD8006" device="-ESD8006"/>
 <part name="FRAME2" library="frames" deviceset="FRAME_C_L" device=""/>
-<part name="R5" library="rcl_custom" deviceset="R-US_" device="0603-B" value="47k"/>
+<part name="R5" library="rcl_custom" deviceset="R-US_" device="0402-B" value="47k"/>
 <part name="V33" library="supply" deviceset="V1.8A" device=""/>
-<part name="R67" library="rcl_custom" deviceset="R-US_" device="0603-B" value="47k"/>
+<part name="R67" library="rcl_custom" deviceset="R-US_" device="0402-B" value="47k"/>
 <part name="GND5" library="GROUND" deviceset="GND" device=""/>
 <part name="V34" library="supply" deviceset="V3.3D" device=""/>
 <part name="C98" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
@@ -13520,9 +13523,9 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="C109" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
 <attribute name="V_RATING" value="25V"/>
 </part>
-<part name="R38" library="rcl_custom" deviceset="R-US_" device="0603-B" value="86.6k"/>
-<part name="R68" library="rcl_custom" deviceset="R-US_" device="0603-B" value="1k"/>
-<part name="R69" library="rcl_custom" deviceset="R-US_" device="0603-B" value="1.6k"/>
+<part name="R38" library="rcl_custom" deviceset="R-US_" device="0402-B" value="86.6k"/>
+<part name="R68" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R69" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1.6k"/>
 <part name="C110" library="rcl_custom" deviceset="C-EU" device="0402-B" value="470pF">
 <attribute name="V_RATING" value="25V"/>
 </part>
@@ -13549,10 +13552,10 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 </part>
 <part name="V1" library="supply" deviceset="VCC" device=""/>
 <part name="S3" library="supply" deviceset="V5D" device=""/>
-<part name="R72" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R72" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="L2" library="dock_v2" deviceset="INDUCTOR_FERRITE_CORE" device="_SRN3015-2R2M" value="SRN3015-2R2M"/>
-<part name="R73" library="rcl_custom" deviceset="R-US_" device="0603-B" value="562k"/>
-<part name="R74" library="rcl_custom" deviceset="R-US_" device="0603-B" value="100k"/>
+<part name="R73" library="rcl_custom" deviceset="R-US_" device="0402-B" value="562k"/>
+<part name="R74" library="rcl_custom" deviceset="R-US_" device="0402-B" value="100k"/>
 <part name="C1" library="rcl_custom" deviceset="C-EU" device="0402-B" value="6.8p">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13577,7 +13580,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="V4" library="supply" deviceset="V3.3D" device=""/>
 <part name="U17" library="LM3671" deviceset="LM3671" device=""/>
 <part name="S4" library="supply" deviceset="V5D" device=""/>
-<part name="R75" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R75" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="TP3" library="apdm" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="GND2" library="supply" deviceset="GND" device=""/>
 <part name="C2" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
@@ -13669,7 +13672,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="S5" library="supply" deviceset="V5D" device=""/>
-<part name="R76" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R76" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="TP2" library="apdm" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="GND23" library="supply" deviceset="GND" device=""/>
 <part name="C45" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
@@ -13705,7 +13708,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="S7" library="supply" deviceset="VBUS" device=""/>
 <part name="S8" library="supply" deviceset="VBUS" device=""/>
 <part name="S9" library="supply" deviceset="VBUS" device=""/>
-<part name="R77" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R77" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="R78" library="rcl_custom" deviceset="R-US_" device="0603-B" value="47k"/>
 <part name="TP29" library="dock_v2" deviceset="PAD+X" device="-0.7+SILK"/>
 <part name="TP30" library="dock_v2" deviceset="PAD+X" device="-0.7+SILK"/>
@@ -13716,25 +13719,25 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="XTAL1" library="dock_v2" deviceset="FA-238_24MHZ_XTAL_SHIELDED" device="_26MHZ_REF"/>
 <part name="V16" library="supply" deviceset="V3.3D" device=""/>
 <part name="TP31" library="dock_v2" deviceset="PAD+X" device="-0.7+SILK"/>
-<part name="R79" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
+<part name="R79" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="C84" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np">
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND59" library="GROUND" deviceset="GND" device=""/>
-<part name="R80" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R81" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R82" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R83" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R85" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R86" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R87" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R88" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R89" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R90" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R91" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R92" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R93" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R94" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
+<part name="R80" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R81" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R82" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R83" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R85" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R86" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R87" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R88" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R89" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R90" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R91" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R92" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R93" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R94" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="C95" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13795,7 +13798,7 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="TP33" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="TP34" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="S10" library="supply" deviceset="V5D" device=""/>
-<part name="R95" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R95" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="TP35" library="apdm" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="GND87" library="supply" deviceset="GND" device=""/>
 <part name="C137" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
@@ -13852,10 +13855,10 @@ http://cnctech.us/pdfs/3220-XX-0100-00.pdf</description>
 <part name="SW1" library="apdm_ap_v2" deviceset="SW-MOM-TACTILE" device="-B3F-1000"/>
 <part name="SW2" library="apdm_ap_v2" deviceset="SW-MOM-TACTILE" device="-B3F-1000"/>
 <part name="J5" library="dock_v2" deviceset="CON_COAX_PWR_PJ-047AH" device="-NO_MILL"/>
-<part name="R71" library="rcl_custom" deviceset="R-US_" device="0603-B"/>
-<part name="R96" library="rcl_custom" deviceset="R-US_" device="0603-B" value="90.9k"/>
-<part name="R97" library="rcl_custom" deviceset="R-US_" device="0603-B" value="15k"/>
-<part name="R98" library="rcl_custom" deviceset="R-US_" device="0603-B"/>
+<part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
+<part name="R96" library="rcl_custom" deviceset="R-US_" device="0402-B" value="90.9k"/>
+<part name="R97" library="rcl_custom" deviceset="R-US_" device="0402-B" value="15k"/>
+<part name="R98" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
 <part name="C144" library="rcl_custom" deviceset="C-EU" device="0402-B" value="220p">
 <attribute name="V_RATING" value="50V"/>
 </part>
@@ -15115,7 +15118,7 @@ datasheet pg. 9 for details.</text>
 <wire x1="116.84" y1="401.32" x2="116.84" y2="368.3" width="0.3048" layer="91"/>
 </segment>
 </net>
-<net name="V_EXT" class="0">
+<net name="V_EXT" class="3">
 <segment>
 <wire x1="26.67" y1="368.3" x2="26.67" y2="363.22" width="0.1524" layer="91"/>
 <wire x1="26.67" y1="363.22" x2="34.29" y2="363.22" width="0.1524" layer="91"/>
