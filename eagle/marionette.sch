@@ -10626,7 +10626,7 @@ Source part as a 100mil 2 x 3 header, then snip off the unneeded pins with side 
 </package>
 <package name="PAD+VIA_0.25MM">
 <pad name="TP" x="0" y="0" drill="0.25"/>
-<circle x="0" y="0" radius="0.632453125" width="0.15" layer="21"/>
+<circle x="0" y="0" radius="0.45" width="0.15" layer="21"/>
 <text x="0.6" y="0.8" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
 </package>
 <package name="PJ-047">
@@ -11613,8 +11613,10 @@ Clip NC1 and NC2 pins after soldering.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FA-238_24MHZ_XTAL_SHIELDED" prefix="XTAL">
+<deviceset name="XTAL_SHIELDED" prefix="XTAL">
 <description>&lt;b&gt;Shielded Quartz Crystal&lt;/b&gt;&lt;br&gt;
+&lt;b&gt;26MHz&lt;/b&gt;  10pF, 60 ohm ESR, 10ppm, Pkg: 3.2mm x 2.5mm,  Mfg: CTS-Frequency Controls, Mfg_Part_No.: 403C11A26M00000, Digikey Part No.: CTX951CT-ND&lt;br&gt;
+&lt;b&gt;26MHz&lt;/b&gt;  10pF, 50 ohm ESR, 10ppm, Pkg: 3.2mm x 2.5mm, Mfg: NDK, Mfg_Part_No.: NX3225SA-26.000M-STD-CSQ-1, Digikey_Part_No.: 644-1269-1-ND&lt;br&gt;
 Epson Family (now Kyocera!) of quartz crystals.  FA-238V (12.000MHz to 15.999MHz), FA-238 (16MHz to 60MHz), TSX3225 reference crystal (16MHz to 48MHz) &lt;br&gt;
 &lt;b&gt;24MHz&lt;/b&gt;   FA-238 24.0000MB-C3,  50ppm, 18pF Cload, 60 ohms load, Mfg. Part No. FA-238 24.0000MB-C3, Digikey Part No.:  SER3689CT-ND&lt;br&gt;
 &lt;b&gt;26MHz reference&lt;/b&gt;  TSX-3225_26.000MHz, 10ppm, 40 ohms load, Mfg Part No.: TSX-3225 26.0000MF09Z-AC3, DIgikey Part No.: SER3627CT-ND &lt;br&gt;</description>
@@ -11634,6 +11636,26 @@ Epson Family (now Kyocera!) of quartz crystals.  FA-238V (12.000MHz to 15.999MHz
 </technologies>
 </device>
 <device name="_26MHZ_REF" package="CRYSTAL-3.2X2.5(4_TERMINAL)">
+<connects>
+<connect gate="XTAL" pin="1" pad="1"/>
+<connect gate="XTAL" pin="2" pad="3"/>
+<connect gate="XTAL_GND" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_403C11A26M00000" package="CRYSTAL-3.2X2.5(4_TERMINAL)">
+<connects>
+<connect gate="XTAL" pin="1" pad="1"/>
+<connect gate="XTAL" pin="2" pad="3"/>
+<connect gate="XTAL_GND" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_NX3225SA-26.0000M-STD-CSQ-1" package="CRYSTAL-3.2X2.5(4_TERMINAL)">
 <connects>
 <connect gate="XTAL" pin="1" pad="1"/>
 <connect gate="XTAL" pin="2" pad="3"/>
@@ -13241,7 +13263,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="R1" library="rcl_custom" deviceset="R-US_" device="0402-B" value="8.06k"/>
-<part name="C29" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u">
+<part name="C29" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10n">
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND6" library="GROUND" deviceset="GND" device=""/>
@@ -13252,8 +13274,8 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="J22" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
 <part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-B" value="4.7k"/>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B" value="4.7k"/>
-<part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-B" value="4.7k"/>
-<part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-B" value="4.7k"/>
+<part name="R6" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
+<part name="R7" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
 <part name="GND11" library="GROUND" deviceset="GND" device=""/>
 <part name="U13" library="con-microsd-hirose-dm3" deviceset="CON_HIROSE_DM3*" device="D(MICROSD)"/>
 <part name="R8" library="rcl_custom" deviceset="R-US_" device="0402-B" value="47k"/>
@@ -13320,7 +13342,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="H2" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="H3" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="H4" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
-<part name="C46" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
+<part name="C46" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100p">
 <attribute name="V_RATING" value="50V"/>
 </part>
 <part name="GND33" library="GROUND" deviceset="GND" device=""/>
@@ -13481,7 +13503,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="R37" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="U14" library="USB3320" deviceset="USB_PHY-SMSC-USB3320" device="-QFN32-5X5" value="USB3320"/>
 <part name="GND58" library="GROUND" deviceset="GND" device=""/>
-<part name="C85" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
+<part name="C85" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u">
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="C86" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
@@ -13489,10 +13511,10 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 </part>
 <part name="GND62" library="GROUND" deviceset="GND" device=""/>
 <part name="GND10" library="GROUND" deviceset="GND" device=""/>
-<part name="MCO1" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
+<part name="TP301" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="R63" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="GND34" library="GROUND" deviceset="GND" device=""/>
-<part name="R64" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R64" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="GND63" library="GROUND" deviceset="GND" device=""/>
 <part name="R65" library="rcl_custom" deviceset="R-US_" device="0402-B" value="100k"/>
 <part name="R66" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
@@ -13532,9 +13554,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP10" library="dock_v2" deviceset="PAD+X" device="-2.0-CREAM+SILK"/>
 <part name="GND20" library="GROUND" deviceset="GND" device=""/>
 <part name="GND21" library="GROUND" deviceset="GND" device=""/>
-<part name="C40" library="rcl_custom" deviceset="C-EU" device="C1206" value="1u">
-<attribute name="V_RATING" value="50V"/>
-</part>
 <part name="C8" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13891,8 +13910,8 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 </part>
 <part name="GND69" library="GROUND" deviceset="GND" device=""/>
 <part name="V6" library="supply" deviceset="V3.3A" device=""/>
-<part name="R17" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
-<part name="R18" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10k"/>
+<part name="R17" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R18" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="GND80" library="GROUND" deviceset="GND" device=""/>
 <part name="C90" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
 <attribute name="V_RATING" value="10V"/>
@@ -13931,10 +13950,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="R76" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="TP2" library="apdm" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="GND23" library="supply" deviceset="GND" device=""/>
-<part name="C45" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
-<attribute name="V_RATING" value="10V"/>
-</part>
-<part name="C83" library="rcl_custom" deviceset="C-EU" device="0805-B" value="4.7u">
+<part name="C83" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u">
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND27" library="supply" deviceset="GND" device=""/>
@@ -13945,7 +13961,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND56" library="supply" deviceset="GND" device=""/>
-<part name="TP131" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP138" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP139" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="C119" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
@@ -13972,7 +13987,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND57" library="GROUND" deviceset="GND" device=""/>
-<part name="XTAL1" library="dock_v2" deviceset="FA-238_24MHZ_XTAL_SHIELDED" device="_26MHZ_REF"/>
+<part name="XTAL1" library="dock_v2" deviceset="XTAL_SHIELDED" device="_403C11A26M00000"/>
 <part name="V16" library="supply" deviceset="V3.3D" device=""/>
 <part name="TP31" library="dock_v2" deviceset="PAD+X" device="-0.7+SILK"/>
 <part name="R79" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
@@ -14163,6 +14178,10 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="GND91" library="supply" deviceset="GND" device=""/>
 <part name="GND92" library="supply" deviceset="GND" device=""/>
 <part name="V38" library="supply" deviceset="V3.3A" device=""/>
+<part name="TP300" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
+<part name="C40" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10n">
+<attribute name="V_RATING" value="50V"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -14212,7 +14231,7 @@ datasheet pg. 9 for details.</text>
 <text x="10.16" y="375.92" size="5.08" layer="97">Pinheader Pwr Input(3.3V, 12V, 18V)</text>
 <text x="6.35" y="331.47" size="5.08" layer="97">USB Power Input (4.5V, 5.0V, 5.5V)</text>
 <text x="417.83" y="241.3" size="5.08" layer="97">V3.3DAC
-(analog supply for DAC)</text>
+(analog supply for DAC and Op Amps)</text>
 <wire x1="412.75" y1="256.54" x2="412.75" y2="173.99" width="0.254" layer="97" style="shortdash"/>
 <wire x1="412.75" y1="173.99" x2="543.56" y2="173.99" width="0.254" layer="97" style="shortdash"/>
 <wire x1="543.56" y1="173.99" x2="543.56" y2="256.54" width="0.254" layer="97" style="shortdash"/>
@@ -14253,11 +14272,6 @@ datasheet pg. 9 for details.</text>
 <instance part="TP10" gate="TP" x="332.74" y="13.97" rot="R270"/>
 <instance part="GND20" gate="1" x="283.21" y="10.16"/>
 <instance part="GND21" gate="1" x="44.45" y="353.06"/>
-<instance part="C40" gate="CE" x="127" y="360.68" smashed="yes">
-<attribute name="V_RATING" x="128.27" y="355.6" size="1.778" layer="96"/>
-<attribute name="NAME" x="128.524" y="361.061" size="1.778" layer="95"/>
-<attribute name="VALUE" x="128.524" y="353.441" size="1.778" layer="96"/>
-</instance>
 <instance part="C8" gate="CE" x="299.72" y="40.64" smashed="yes">
 <attribute name="V_RATING" x="299.72" y="34.29" size="1.778" layer="96"/>
 <attribute name="NAME" x="301.244" y="41.021" size="1.778" layer="95"/>
@@ -14663,17 +14677,12 @@ datasheet pg. 9 for details.</text>
 <attribute name="VALUE" x="306.578" y="114.173" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND23" gate="G1" x="332.74" y="102.87"/>
-<instance part="C45" gate="CE" x="373.38" y="123.19" smashed="yes" rot="R180">
-<attribute name="V_RATING" x="378.46" y="123.19" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="379.476" y="127.889" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="379.476" y="120.269" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="C83" gate="CE" x="386.08" y="125.73" smashed="yes">
 <attribute name="V_RATING" x="387.35" y="121.92" size="1.778" layer="96"/>
 <attribute name="NAME" x="387.604" y="126.111" size="1.778" layer="95"/>
 <attribute name="VALUE" x="387.604" y="119.761" size="1.778" layer="96"/>
 </instance>
-<instance part="GND27" gate="G1" x="373.38" y="115.57"/>
+<instance part="GND27" gate="G1" x="386.08" y="115.57"/>
 <instance part="C89" gate="CE" x="279.4" y="125.73" smashed="yes">
 <attribute name="V_RATING" x="280.67" y="120.65" size="1.778" layer="96"/>
 <attribute name="NAME" x="280.924" y="126.111" size="1.778" layer="95"/>
@@ -14685,7 +14694,6 @@ datasheet pg. 9 for details.</text>
 <attribute name="VALUE" x="298.196" y="120.269" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND56" gate="G1" x="279.4" y="115.57"/>
-<instance part="TP131" gate="G1" x="360.68" y="130.81"/>
 <instance part="TP138" gate="G1" x="373.38" y="130.81"/>
 <instance part="TP139" gate="TP" x="381" y="133.35" rot="R90"/>
 <instance part="C119" gate="CE" x="350.52" y="115.57" smashed="yes" rot="R180">
@@ -14845,6 +14853,11 @@ datasheet pg. 9 for details.</text>
 <instance part="GND91" gate="G1" x="143.51" y="218.44"/>
 <instance part="GND92" gate="G1" x="242.57" y="222.25"/>
 <instance part="V38" gate="G$1" x="252.73" y="237.49"/>
+<instance part="C40" gate="CE" x="127" y="360.68" smashed="yes">
+<attribute name="V_RATING" x="128.27" y="355.6" size="1.778" layer="96"/>
+<attribute name="NAME" x="128.524" y="361.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="128.524" y="353.441" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15208,13 +15221,9 @@ datasheet pg. 9 for details.</text>
 </segment>
 <segment>
 <pinref part="GND27" gate="G1" pin="GND"/>
-<pinref part="C45" gate="CE" pin="1"/>
-<wire x1="373.38" y1="115.57" x2="373.38" y2="118.11" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="115.57" x2="386.08" y2="118.11" width="0.1524" layer="91"/>
 <pinref part="C83" gate="CE" pin="2"/>
-<wire x1="373.38" y1="118.11" x2="373.38" y2="120.65" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="118.11" x2="386.08" y2="118.11" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="118.11" x2="386.08" y2="120.65" width="0.1524" layer="91"/>
-<junction x="373.38" y="118.11"/>
 </segment>
 <segment>
 <pinref part="C89" gate="CE" pin="2"/>
@@ -15495,7 +15504,7 @@ datasheet pg. 9 for details.</text>
 <junction x="76.2" y="93.98"/>
 </segment>
 </net>
-<net name="TIP_PWR" class="0">
+<net name="TIP_PWR" class="3">
 <segment>
 <wire x1="48.26" y1="401.32" x2="60.96" y2="401.32" width="0.3048" layer="91"/>
 <pinref part="SG1" gate="SG" pin="1"/>
@@ -15887,7 +15896,7 @@ datasheet pg. 9 for details.</text>
 <pinref part="U17" gate="G$1" pin="FB"/>
 </segment>
 </net>
-<net name="VIN" class="0">
+<net name="VIN" class="3">
 <segment>
 <pinref part="J2" gate="G1" pin="P"/>
 <wire x1="118.11" y1="363.22" x2="127" y2="363.22" width="0.3048" layer="91"/>
@@ -15896,10 +15905,10 @@ datasheet pg. 9 for details.</text>
 <wire x1="127" y1="363.22" x2="137.16" y2="363.22" width="0.3048" layer="91"/>
 <wire x1="137.16" y1="363.22" x2="144.78" y2="363.22" width="0.3048" layer="91"/>
 <junction x="137.16" y="363.22"/>
-<pinref part="C40" gate="CE" pin="1"/>
 <junction x="127" y="363.22"/>
 <pinref part="TP17" gate="TP" pin="P"/>
 <pinref part="TP18" gate="TP" pin="P"/>
+<pinref part="C40" gate="CE" pin="1"/>
 </segment>
 </net>
 <net name="VIN_FUSED" class="0">
@@ -15937,16 +15946,12 @@ datasheet pg. 9 for details.</text>
 <net name="V1.8A" class="0">
 <segment>
 <wire x1="342.9" y1="130.81" x2="360.68" y2="130.81" width="0.1524" layer="91"/>
-<pinref part="C45" gate="CE" pin="2"/>
 <wire x1="360.68" y1="130.81" x2="373.38" y2="130.81" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="130.81" x2="373.38" y2="128.27" width="0.1524" layer="91"/>
-<junction x="360.68" y="130.81"/>
 <pinref part="C83" gate="CE" pin="1"/>
 <wire x1="373.38" y1="130.81" x2="381" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="381" y1="130.81" x2="386.08" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="130.81" x2="386.08" y2="128.27" width="0.1524" layer="91"/>
 <junction x="373.38" y="130.81"/>
-<pinref part="TP131" gate="G1" pin="TP"/>
 <pinref part="TP138" gate="G1" pin="TP"/>
 <pinref part="TP139" gate="TP" pin="P"/>
 <junction x="381" y="130.81"/>
@@ -15966,7 +15971,7 @@ datasheet pg. 9 for details.</text>
 <pinref part="TP140" gate="G1" pin="TP"/>
 </segment>
 </net>
-<net name="VBUS" class="0">
+<net name="VBUS" class="3">
 <segment>
 <wire x1="116.84" y1="317.5" x2="77.47" y2="317.5" width="0.3048" layer="91"/>
 <pinref part="SG2" gate="SG" pin="1"/>
@@ -16212,6 +16217,8 @@ Rshunt is specified in datasheet
    for proper operation of TCXO.
 Cseries is for DC blocking.
 Cpar is to low pass filter square wave</text>
+<text x="220.98" y="359.41" size="1.778" layer="97">26.00000MHz
+10ppm</text>
 </plain>
 <instances>
 <instance part="R1" gate="R" x="523.24" y="736.6" rot="R270"/>
@@ -16299,7 +16306,7 @@ Cpar is to low pass filter square wave</text>
 </instance>
 <instance part="GND62" gate="1" x="439.42" y="792.48"/>
 <instance part="GND10" gate="1" x="525.78" y="816.61"/>
-<instance part="MCO1" gate="TP" x="194.31" y="795.02" smashed="yes">
+<instance part="TP301" gate="TP" x="194.31" y="795.02" smashed="yes">
 <attribute name="NAME" x="192.405" y="796.925" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="R63" gate="R" x="454.66" y="775.97" rot="R270"/>
@@ -16670,6 +16677,9 @@ Cpar is to low pass filter square wave</text>
 <attribute name="V_RATING" x="384.81" y="554.99" size="1.778" layer="96"/>
 <attribute name="NAME" x="385.064" y="559.181" size="1.778" layer="95"/>
 <attribute name="VALUE" x="385.064" y="552.831" size="1.778" layer="96"/>
+</instance>
+<instance part="TP300" gate="TP" x="195.58" y="731.52" smashed="yes">
+<attribute name="NAME" x="196.215" y="733.425" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -17405,12 +17415,15 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="BOOT1" class="0">
 <segment>
-<wire x1="104.14" y1="731.52" x2="200.66" y2="731.52" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="731.52" x2="195.58" y2="731.52" width="0.1524" layer="91"/>
 <label x="125.73" y="731.52" size="1.778" layer="95"/>
 <pinref part="R64" gate="R" pin="2"/>
 <pinref part="U11" gate="G2" pin="PB2"/>
 <pinref part="TP64" gate="TP" pin="P"/>
 <junction x="200.66" y="731.52"/>
+<pinref part="TP300" gate="TP" pin="TP"/>
+<wire x1="195.58" y1="731.52" x2="200.66" y2="731.52" width="0.1524" layer="91"/>
+<junction x="195.58" y="731.52"/>
 </segment>
 </net>
 <net name="PA15" class="0">
@@ -17693,7 +17706,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="104.14" y1="795.02" x2="165.1" y2="795.02" width="0.1524" layer="91"/>
 <label x="125.73" y="795.02" size="1.778" layer="95"/>
-<pinref part="MCO1" gate="TP" pin="TP"/>
+<pinref part="TP301" gate="TP" pin="TP"/>
 <pinref part="U11" gate="G1" pin="PA8"/>
 <pinref part="TP31" gate="TP" pin="P"/>
 <wire x1="165.1" y1="795.02" x2="194.31" y2="795.02" width="0.1524" layer="91"/>
@@ -19124,7 +19137,7 @@ Cpar is to low pass filter square wave</text>
 <wire x1="259.08" y1="398.78" x2="261.62" y2="398.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VBUS" class="0">
+<net name="VBUS" class="3">
 <segment>
 <wire x1="203.2" y1="793.75" x2="203.2" y2="789.94" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="789.94" x2="104.14" y2="789.94" width="0.1524" layer="91"/>
@@ -20955,7 +20968,7 @@ Option</text>
 <pinref part="V30" gate="G$1" pin="V3.3A"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="DAC124_VREFIN" class="0">
 <segment>
 <pinref part="R84" gate="R" pin="2"/>
 <pinref part="U4" gate="G1" pin="VREFIN"/>
