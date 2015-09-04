@@ -6591,18 +6591,51 @@ http://media.digikey.com/pdf/Data%20Sheets/Kingbright%20PDFs/APHFT1612PBASURKVGA
 <packages>
 <package name="SOT23">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<wire x1="1.4" y1="0.6" x2="-1.4" y2="0.6" width="0.3" layer="51"/>
+<wire x1="-1.4" y1="0.6" x2="-1.4" y2="-0.6" width="0.3" layer="51"/>
+<wire x1="-1.4" y1="-0.6" x2="1.4" y2="-0.6" width="0.3" layer="51"/>
+<wire x1="1.4" y1="-0.6" x2="1.4" y2="0.6" width="0.3" layer="51"/>
+<wire x1="-1.8" y1="-2" x2="1.8" y2="-2" width="0.05" layer="39"/>
+<wire x1="1.8" y1="-2" x2="1.8" y2="2" width="0.05" layer="39"/>
+<wire x1="1.8" y1="2" x2="-1.8" y2="2" width="0.05" layer="39"/>
+<wire x1="-1.8" y1="2" x2="-1.8" y2="-2" width="0.05" layer="39"/>
+<wire x1="-0.3" y1="-0.79" x2="0.3" y2="-0.79" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.3" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="0.8" x2="-0.7" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.3" x2="1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="0.7" y2="0.8" width="0.127" layer="21"/>
+<rectangle x1="-0.25" y1="0.65" x2="0.25" y2="1.3" layer="51"/>
+<rectangle x1="-1.2" y1="-1.3" x2="-0.7" y2="-0.65" layer="51"/>
+<rectangle x1="0.7" y1="-1.3" x2="1.2" y2="-0.65" layer="51"/>
+<rectangle x1="-0.5" y1="-0.3" x2="0.5" y2="0.3" layer="35"/>
+<rectangle x1="-1.45" y1="-1.545" x2="-0.455" y2="-0.455" layer="29"/>
+<rectangle x1="0.455" y1="-1.545" x2="1.455" y2="-0.445" layer="29"/>
+<rectangle x1="-0.5" y1="0.455" x2="0.5" y2="1.55" layer="29"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1" stop="no"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1" stop="no"/>
+<smd name="3" x="0" y="1" dx="0.8" dy="0.9" layer="1" stop="no"/>
+<text x="2" y="1" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="2" y="0" size="0.85" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<wire x1="1.45" y1="0.65" x2="1.45" y2="-0.65" width="0.15" layer="33"/>
+<wire x1="-1.55" y1="0.65" x2="-1.55" y2="-0.65" width="0.15" layer="33"/>
+<text x="0" y="0" size="0.3" layer="33" align="center">&gt;NAME</text>
+<wire x1="-1.2" y1="-0.35" x2="-0.8" y2="-0.35" width="0.1" layer="33"/>
+<wire x1="-0.8" y1="-0.35" x2="-1" y2="-0.15" width="0.1" layer="33"/>
+<wire x1="-1" y1="-0.15" x2="-1.2" y2="-0.35" width="0.1" layer="33"/>
+<wire x1="-0.25" y1="0.65" x2="-0.25" y2="1.25" width="0.2" layer="33"/>
+<wire x1="-0.25" y1="1.25" x2="0.25" y2="1.25" width="0.2" layer="33"/>
+<wire x1="0.25" y1="1.25" x2="0.25" y2="0.65" width="0.2" layer="33"/>
+<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="-1.25" width="0.2" layer="33"/>
+<wire x1="-1.2" y1="-1.25" x2="-0.75" y2="-1.25" width="0.2" layer="33"/>
+<wire x1="-0.75" y1="-1.25" x2="-0.75" y2="-0.65" width="0.2" layer="33"/>
+<wire x1="0.75" y1="-0.65" x2="0.75" y2="-1.25" width="0.2" layer="33"/>
+<wire x1="0.75" y1="-1.25" x2="1.2" y2="-1.25" width="0.2" layer="33"/>
+<wire x1="1.2" y1="-1.25" x2="1.2" y2="-0.65" width="0.2" layer="33"/>
+<wire x1="1.4" y1="0.65" x2="0.3" y2="0.65" width="0.2" layer="33"/>
+<wire x1="-1.5" y1="0.65" x2="-0.3" y2="0.65" width="0.2" layer="33"/>
+<wire x1="-1.25" y1="-0.65" x2="-1.5" y2="-0.65" width="0.2" layer="33"/>
+<wire x1="-0.7" y1="-0.65" x2="0.7" y2="-0.65" width="0.2" layer="33"/>
+<wire x1="1.4" y1="-0.65" x2="1.25" y2="-0.65" width="0.2" layer="33"/>
 </package>
 </packages>
 <symbols>
@@ -6654,14 +6687,14 @@ http://media.digikey.com/pdf/Data%20Sheets/Kingbright%20PDFs/APHFT1612PBASURKVGA
 Datasheet:&lt;br&gt;
 https://www.fairchildsemi.com/datasheets/BS/BSS84.pdf</description>
 <gates>
-<gate name="G$1" symbol="P-MOS" x="0" y="0"/>
+<gate name="G1" symbol="P-MOS" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT23">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
+<connect gate="G1" pin="D" pad="3"/>
+<connect gate="G1" pin="G" pad="1"/>
+<connect gate="G1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10622,7 +10655,7 @@ Source part as a 100mil 2 x 3 header, then snip off the unneeded pins with side 
 <package name="PAD+VIA_0.6MM">
 <pad name="TP" x="0" y="0" drill="0.6"/>
 <text x="0.8" y="0.6" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<circle x="0" y="0" radius="0.806225" width="0.15" layer="21"/>
+<circle x="0" y="0" radius="0.6" width="0.15" layer="21"/>
 </package>
 <package name="PAD+VIA_0.25MM">
 <pad name="TP" x="0" y="0" drill="0.25"/>
@@ -13232,8 +13265,8 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.2" drill="0.25">
-<clearance class="0" value="0.15"/>
+<class number="0" name="default" width="0.15" drill="0.25">
+<clearance class="0" value="0.125"/>
 </class>
 <class number="1" name="dt_line" width="0.4" drill="0.25">
 <clearance class="1" value="0.7"/>
@@ -13272,8 +13305,8 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="C30" library="rcl_custom" deviceset="C-EU" device="0402-B" value="11p"/>
 <part name="GND3" library="GROUND" deviceset="GND" device=""/>
 <part name="J22" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
-<part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-B" value="4.7k"/>
-<part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B" value="4.7k"/>
+<part name="R2" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
+<part name="R3" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
 <part name="R6" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
 <part name="R7" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
 <part name="GND11" library="GROUND" deviceset="GND" device=""/>
@@ -14182,6 +14215,8 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="C40" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10n">
 <attribute name="V_RATING" value="50V"/>
 </part>
+<part name="TP52" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
+<part name="TP53" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16137,10 +16172,10 @@ data sheet</text>
  value of RS resistor controls 
  output slope.</text>
 <wire x1="195.58" y1="337.82" x2="195.58" y2="441.96" width="0.254" layer="97" style="shortdash"/>
-<wire x1="195.58" y1="441.96" x2="306.07" y2="441.96" width="0.254" layer="97" style="shortdash"/>
-<wire x1="306.07" y1="441.96" x2="306.07" y2="337.82" width="0.254" layer="97" style="shortdash"/>
-<wire x1="306.07" y1="337.82" x2="195.58" y2="337.82" width="0.254" layer="97" style="shortdash"/>
-<text x="248.92" y="434.34" size="5.08" layer="97">26 MHz CLK</text>
+<wire x1="195.58" y1="441.96" x2="316.23" y2="441.96" width="0.254" layer="97" style="shortdash"/>
+<wire x1="316.23" y1="441.96" x2="316.23" y2="337.82" width="0.254" layer="97" style="shortdash"/>
+<wire x1="316.23" y1="337.82" x2="195.58" y2="337.82" width="0.254" layer="97" style="shortdash"/>
+<text x="199.39" y="433.07" size="5.08" layer="97">26 MHz XTAL / TCXO (choose one)</text>
 <wire x1="694.69" y1="699.77" x2="694.69" y2="631.19" width="0.254" layer="97" style="shortdash"/>
 <wire x1="694.69" y1="631.19" x2="824.23" y2="631.19" width="0.254" layer="97" style="shortdash"/>
 <wire x1="824.23" y1="631.19" x2="824.23" y2="699.77" width="0.254" layer="97" style="shortdash"/>
@@ -16285,7 +16320,7 @@ Cpar is to low pass filter square wave</text>
 </instance>
 <instance part="GND15" gate="1" x="600.71" y="782.32"/>
 <instance part="GND16" gate="1" x="435.61" y="580.39"/>
-<instance part="Q1" gate="G$1" x="369.57" y="544.83" rot="R90"/>
+<instance part="Q1" gate="G1" x="369.57" y="544.83" rot="R90"/>
 <instance part="C42" gate="CE" x="378.46" y="537.21" smashed="yes">
 <attribute name="V_RATING" x="382.27" y="534.67" size="1.778" layer="96"/>
 <attribute name="NAME" x="379.984" y="537.591" size="1.778" layer="95"/>
@@ -16681,6 +16716,8 @@ Cpar is to low pass filter square wave</text>
 <instance part="TP300" gate="TP" x="195.58" y="731.52" smashed="yes">
 <attribute name="NAME" x="196.215" y="733.425" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
+<instance part="TP52" gate="G1" x="391.16" y="280.67"/>
+<instance part="TP53" gate="G1" x="396.24" y="278.13"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -17745,7 +17782,7 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="SDIO-PWR-SWITCHED" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="D"/>
+<pinref part="Q1" gate="G1" pin="D"/>
 <wire x1="374.65" y1="544.83" x2="378.46" y2="544.83" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="544.83" x2="378.46" y2="561.34" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="561.34" x2="383.54" y2="561.34" width="0.1524" layer="91"/>
@@ -17770,7 +17807,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="359.41" y1="532.13" x2="359.41" y2="529.59" width="0.1524" layer="91"/>
 <wire x1="359.41" y1="529.59" x2="367.03" y2="529.59" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="G"/>
+<pinref part="Q1" gate="G1" pin="G"/>
 <wire x1="367.03" y1="529.59" x2="367.03" y2="539.75" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="524.51" x2="367.03" y2="524.51" width="0.1524" layer="91"/>
 <wire x1="367.03" y1="524.51" x2="367.03" y2="529.59" width="0.1524" layer="91"/>
@@ -17964,7 +18001,7 @@ Cpar is to low pass filter square wave</text>
 <junction x="477.52" y="821.69"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="Q1" gate="G1" pin="S"/>
 <wire x1="364.49" y1="544.83" x2="359.41" y2="544.83" width="0.1524" layer="91"/>
 <wire x1="359.41" y1="544.83" x2="359.41" y2="542.29" width="0.1524" layer="91"/>
 <pinref part="R65" gate="R" pin="1"/>
@@ -18378,7 +18415,8 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="I2C3_SDA/ADC3_CH8" class="0">
 <segment>
-<wire x1="383.54" y1="278.13" x2="454.66" y2="278.13" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="278.13" x2="396.24" y2="278.13" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="278.13" x2="454.66" y2="278.13" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="278.13" x2="454.66" y2="260.35" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="260.35" x2="454.66" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="177.8" x2="454.66" y2="114.3" width="0.1524" layer="91"/>
@@ -18403,11 +18441,14 @@ Cpar is to low pass filter square wave</text>
 <pinref part="U15" gate="G2" pin="Y"/>
 <pinref part="TP112" gate="TP" pin="P"/>
 <junction x="356.87" y="327.66"/>
+<pinref part="TP53" gate="G1" pin="TP"/>
+<junction x="396.24" y="278.13"/>
 </segment>
 </net>
 <net name="I2C3_SCL/ADC3_CH4" class="0">
 <segment>
-<wire x1="386.08" y1="280.67" x2="457.2" y2="280.67" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="280.67" x2="391.16" y2="280.67" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="280.67" x2="457.2" y2="280.67" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="280.67" x2="476.25" y2="280.67" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="280.67" x2="457.2" y2="198.12" width="0.1524" layer="91"/>
 <junction x="457.2" y="280.67"/>
@@ -18430,6 +18471,8 @@ Cpar is to low pass filter square wave</text>
 <pinref part="U15" gate="G1" pin="Y"/>
 <pinref part="TP111" gate="TP" pin="P"/>
 <junction x="356.87" y="330.2"/>
+<pinref part="TP52" gate="G1" pin="TP"/>
+<junction x="391.16" y="280.67"/>
 </segment>
 </net>
 <net name="I2C2_SDA" class="0">
@@ -18444,6 +18487,7 @@ Cpar is to low pass filter square wave</text>
 <pinref part="U11" gate="G6" pin="PF0"/>
 <pinref part="TP47" gate="TP" pin="P"/>
 <junction x="236.22" y="459.74"/>
+<wire x1="254" y1="461.01" x2="252.73" y2="459.74" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 </net>
 <net name="PF11" class="0">
@@ -18738,6 +18782,7 @@ Cpar is to low pass filter square wave</text>
 <pinref part="U11" gate="G6" pin="PF1"/>
 <pinref part="TP46" gate="TP" pin="P"/>
 <junction x="236.22" y="454.66"/>
+<wire x1="254" y1="455.93" x2="252.73" y2="454.66" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 </net>
 <net name="OSC_OUT" class="0">
