@@ -14472,6 +14472,8 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 </part>
 <part name="GND93" library="supply" deviceset="GND" device=""/>
 <part name="TP131" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
+<part name="TP143" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
+<part name="TP144" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17127,7 +17129,7 @@ Cpar is to low pass filter square wave</text>
 <label x="161.29" y="422.91" size="3.048" layer="95" rot="R90"/>
 </segment>
 </bus>
-<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC13,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC13,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <label x="175.26" y="396.24" size="3.048" layer="95" font="vector" rot="R90"/>
 <wire x1="170.18" y1="762" x2="170.18" y2="377.19" width="0.762" layer="92"/>
@@ -21931,6 +21933,12 @@ Option</text>
 <instance part="D18" gate="G4" x="67.31" y="232.41"/>
 <instance part="D18" gate="G5" x="97.79" y="232.41"/>
 <instance part="D18" gate="G6" x="64.77" y="237.49"/>
+<instance part="TP143" gate="G1" x="54.61" y="295.91" smashed="yes">
+<attribute name="NAME" x="45.72" y="294.64" size="1.778" layer="95" ratio="15"/>
+</instance>
+<instance part="TP144" gate="G1" x="49.53" y="298.45" smashed="yes">
+<attribute name="NAME" x="40.64" y="297.18" size="1.778" layer="95" ratio="15"/>
+</instance>
 </instances>
 <busses>
 <bus name="DAC_0UTPUT_BUS:DAC_A,DAC_B,DAC_C,DAC_D,DAC_E">
@@ -21949,7 +21957,7 @@ Option</text>
 <wire x1="124.46" y1="208.28" x2="124.46" y2="194.31" width="0.762" layer="92"/>
 </segment>
 </bus>
-<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC13,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC13,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <wire x1="11.43" y1="328.93" x2="11.43" y2="50.8" width="0.762" layer="92"/>
 <wire x1="11.43" y1="328.93" x2="153.67" y2="328.93" width="0.762" layer="92"/>
@@ -23062,15 +23070,14 @@ Option</text>
 </net>
 <net name="PF2" class="0">
 <segment>
-<wire x1="11.43" y1="297.18" x2="12.7" y2="295.91" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G1" pin="9"/>
-<wire x1="12.7" y1="295.91" x2="62.23" y2="295.91" width="0.1524" layer="91"/>
-<label x="16.51" y="295.91" size="1.778" layer="95"/>
 <pinref part="D18" gate="G4" pin="CATHODE"/>
 <wire x1="62.23" y1="295.91" x2="78.74" y2="295.91" width="0.1524" layer="91"/>
 <wire x1="67.31" y1="234.95" x2="67.31" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="67.31" y1="246.38" x2="62.23" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="62.23" y1="246.38" x2="62.23" y2="295.91" width="0.1524" layer="91"/>
+<pinref part="TP143" gate="G1" pin="TP"/>
+<wire x1="62.23" y1="295.91" x2="54.61" y2="295.91" width="0.1524" layer="91"/>
 <junction x="62.23" y="295.91"/>
 </segment>
 </net>
@@ -23561,6 +23568,13 @@ Option</text>
 <junction x="200.66" y="299.72"/>
 <pinref part="J12" gate="G1" pin="10"/>
 <junction x="215.9" y="299.72"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="J3" gate="G1" pin="7"/>
+<pinref part="TP144" gate="G1" pin="TP"/>
+<wire x1="78.74" y1="298.45" x2="49.53" y2="298.45" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
