@@ -14474,6 +14474,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP131" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="TP143" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP144" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
+<part name="TP145" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21939,6 +21940,9 @@ Option</text>
 <instance part="TP144" gate="G1" x="49.53" y="298.45" smashed="yes">
 <attribute name="NAME" x="40.64" y="297.18" size="1.778" layer="95" ratio="15"/>
 </instance>
+<instance part="TP145" gate="G1" x="46.99" y="55.88" smashed="yes">
+<attribute name="NAME" x="48.26" y="55.88" size="1.778" layer="95" ratio="15"/>
+</instance>
 </instances>
 <busses>
 <bus name="DAC_0UTPUT_BUS:DAC_A,DAC_B,DAC_C,DAC_D,DAC_E">
@@ -22603,19 +22607,6 @@ Option</text>
 </segment>
 </net>
 <net name="PD5" class="0">
-<segment>
-<wire x1="11.43" y1="57.15" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="J9" gate="G1" pin="35"/>
-<wire x1="12.7" y1="55.88" x2="54.61" y2="55.88" width="0.1524" layer="91"/>
-<label x="38.1" y="56.134" size="1.778" layer="95"/>
-<pinref part="D7" gate="G4" pin="CATHODE"/>
-<wire x1="54.61" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="41.91" y1="30.48" x2="41.91" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="41.91" y1="43.18" x2="54.61" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="54.61" y1="43.18" x2="54.61" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="54.61" y1="50.8" x2="54.61" y2="55.88" width="0.1524" layer="91"/>
-<junction x="54.61" y="55.88"/>
-</segment>
 <segment>
 <wire x1="11.43" y1="261.62" x2="12.7" y2="260.35" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G1" pin="37"/>
@@ -23575,6 +23566,21 @@ Option</text>
 <pinref part="J3" gate="G1" pin="7"/>
 <pinref part="TP144" gate="G1" pin="TP"/>
 <wire x1="78.74" y1="298.45" x2="49.53" y2="298.45" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="J9_35" class="0">
+<segment>
+<pinref part="J9" gate="G1" pin="35"/>
+<label x="38.1" y="56.134" size="1.778" layer="95"/>
+<pinref part="D7" gate="G4" pin="CATHODE"/>
+<wire x1="54.61" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="41.91" y1="30.48" x2="41.91" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="41.91" y1="43.18" x2="54.61" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="43.18" x2="54.61" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="50.8" x2="54.61" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="TP145" gate="G1" pin="TP"/>
+<wire x1="54.61" y1="55.88" x2="46.99" y2="55.88" width="0.1524" layer="91"/>
+<junction x="54.61" y="55.88"/>
 </segment>
 </net>
 </nets>
