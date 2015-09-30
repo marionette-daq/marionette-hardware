@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -107,21 +107,23 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="-5.08" y="3.175" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <pin name="A" x="-5.08" y="0" visible="off" length="short"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<text x="-2.286" y="0" size="0.254" layer="94">&gt;COLOR</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="LS_Q976" prefix="LED">
 <description>LS_Q976 LED &lt;br&gt;
-Red LED - 
+Mfg: Osram, Package: 0603, Digikey Part No.: 475-2512-1-ND, Mfg_part_no.: LS Q976, If = 20mA, wavelength = 633nm (red) &lt;br&gt;
+Red LED - &lt;br&gt;
 http://www.osram-os.com/Graphics/XPic9/00128792_0.pdf</description>
 <gates>
-<gate name="G$1" symbol="RED_LED" x="0" y="0"/>
+<gate name="G1" symbol="RED_LED" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="CHIPLED_0603">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G1" pin="A" pad="A"/>
+<connect gate="G1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>

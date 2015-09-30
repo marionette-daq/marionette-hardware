@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -6769,21 +6769,23 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="-5.08" y="3.175" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <pin name="A" x="-5.08" y="0" visible="off" length="short"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<text x="-2.286" y="0" size="0.254" layer="94">&gt;COLOR</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="LS_Q976" prefix="LED">
 <description>LS_Q976 LED &lt;br&gt;
-Red LED - 
+Mfg: Osram, Package: 0603, Digikey Part No.: 475-2512-1-ND, Mfg_part_no.: LS Q976, If = 20mA, wavelength = 633nm (red) &lt;br&gt;
+Red LED - &lt;br&gt;
 http://www.osram-os.com/Graphics/XPic9/00128792_0.pdf</description>
 <gates>
-<gate name="G$1" symbol="RED_LED" x="0" y="0"/>
+<gate name="G1" symbol="RED_LED" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="CHIPLED_0603">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G1" pin="A" pad="A"/>
+<connect gate="G1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10693,7 +10695,7 @@ Source part as a 100mil 2 x 3 header, then snip off the unneeded pins with side 
 <pad name="NC2" x="2.54" y="2.54" drill="1.016" rot="R90"/>
 </package>
 <package name="PAD+GND_VIA_0.6MM">
-<pad name="TP" x="0" y="0" drill="0.6"/>
+<pad name="TP" x="0" y="0" drill="0.6" thermals="no"/>
 <text x="0.8" y="0.6" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <wire x1="-0.6" y1="0.6" x2="-0.6" y2="-0.6" width="0.15" layer="21"/>
 <wire x1="-0.6" y1="-0.6" x2="0.6" y2="-0.6" width="0.15" layer="21"/>
@@ -10706,7 +10708,7 @@ Source part as a 100mil 2 x 3 header, then snip off the unneeded pins with side 
 <circle x="0" y="0" radius="0.6" width="0.15" layer="21"/>
 </package>
 <package name="PAD+GND_VIA_0.25MM">
-<pad name="TP" x="0" y="0" drill="0.25"/>
+<pad name="TP" x="0" y="0" drill="0.25" thermals="no"/>
 <text x="0.8" y="0.6" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <wire x1="-0.4" y1="0.4" x2="-0.4" y2="-0.4" width="0.15" layer="21"/>
 <wire x1="-0.4" y1="-0.4" x2="0.4" y2="-0.4" width="0.15" layer="21"/>
@@ -11235,6 +11237,7 @@ with Vcc, Gnd, Out</description>
 <wire x1="-0.508" y1="-2.286" x2="0.508" y2="-2.286" width="0.254" layer="94"/>
 <wire x1="-0.127" y1="-2.794" x2="0.127" y2="-2.794" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.27" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-0.715" y="-1.115" size="0.254" layer="94" ratio="15">0.25mm</text>
 </symbol>
 <symbol name="PAD+VIA_0.25MM">
 <description>square with small circle to represent 0.25mm testpad via</description>
@@ -13502,7 +13505,8 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <clearance class="0" value="0.125"/>
 </class>
 <class number="1" name="dt_line" width="0.4" drill="0.25">
-<clearance class="1" value="0.7"/>
+<clearance class="0" value="0.127"/>
+<clearance class="1" value="0.127"/>
 </class>
 <class number="3" name="med-isolate" width="0.2" drill="0">
 <clearance class="0" value="0.35"/>
@@ -16851,35 +16855,35 @@ Cpar is to low pass filter square wave</text>
 <attribute name="VALUE" x="256.159" y="367.284" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND13" gate="1" x="269.24" y="353.06"/>
-<instance part="LED0" gate="G$1" x="226.06" y="60.96" smashed="yes" rot="MR0">
+<instance part="LED0" gate="G1" x="226.06" y="60.96" smashed="yes" rot="MR0">
 <attribute name="NAME" x="231.14" y="64.135" size="1.778" layer="95" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="224.79" y="64.135" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED1" gate="G$1" x="226.06" y="55.88" smashed="yes" rot="MR0">
+<instance part="LED1" gate="G1" x="226.06" y="55.88" smashed="yes" rot="MR0">
 <attribute name="NAME" x="231.14" y="59.055" size="1.778" layer="95" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="224.79" y="56.515" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED2" gate="G$1" x="226.06" y="50.8" smashed="yes" rot="MR0">
+<instance part="LED2" gate="G1" x="226.06" y="50.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="231.14" y="53.975" size="1.778" layer="95" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="224.79" y="51.435" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED3" gate="G$1" x="226.06" y="45.72" smashed="yes" rot="MR0">
+<instance part="LED3" gate="G1" x="226.06" y="45.72" smashed="yes" rot="MR0">
 <attribute name="NAME" x="231.14" y="48.895" size="1.778" layer="95" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="224.79" y="46.355" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED4" gate="G$1" x="226.06" y="40.64" smashed="yes" rot="MR0">
+<instance part="LED4" gate="G1" x="226.06" y="40.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="231.14" y="43.815" size="1.778" layer="95" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="224.79" y="41.275" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED5" gate="G$1" x="226.06" y="35.56" smashed="yes" rot="MR0">
+<instance part="LED5" gate="G1" x="226.06" y="35.56" smashed="yes" rot="MR0">
 <attribute name="NAME" x="231.14" y="38.735" size="1.778" layer="95" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="224.79" y="36.195" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED6" gate="G$1" x="226.06" y="30.48" smashed="yes" rot="MR0">
+<instance part="LED6" gate="G1" x="226.06" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="231.14" y="33.655" size="1.778" layer="95" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="224.79" y="31.115" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED7" gate="G$1" x="226.06" y="25.4" smashed="yes" rot="MR0">
+<instance part="LED7" gate="G1" x="226.06" y="25.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="231.14" y="28.575" size="1.778" layer="95" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="224.79" y="26.035" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
@@ -18313,7 +18317,7 @@ Cpar is to low pass filter square wave</text>
 <label x="125.73" y="518.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED0" gate="G$1" pin="C"/>
+<pinref part="LED0" gate="G1" pin="C"/>
 <wire x1="223.52" y1="60.96" x2="222.25" y2="60.96" width="0.1524" layer="91"/>
 <label x="222.25" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18895,7 +18899,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="223.52" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
 <label x="119.38" y="55.88" size="1.778" layer="95" font="vector"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LED1" gate="G1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG9"/>
 </segment>
 </net>
@@ -18903,7 +18907,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="223.52" y1="50.8" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
 <label x="119.38" y="50.8" size="1.778" layer="95" font="vector"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG10"/>
 </segment>
 </net>
@@ -18911,7 +18915,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="223.52" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
 <label x="119.38" y="45.72" size="1.778" layer="95" font="vector"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="LED3" gate="G1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG11"/>
 </segment>
 </net>
@@ -18919,7 +18923,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="223.52" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
 <label x="119.38" y="40.64" size="1.778" layer="95" font="vector"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="LED4" gate="G1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG12"/>
 </segment>
 </net>
@@ -18927,7 +18931,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="223.52" y1="35.56" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
 <label x="119.38" y="35.56" size="1.778" layer="95" font="vector"/>
-<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="LED5" gate="G1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG13"/>
 </segment>
 </net>
@@ -18935,7 +18939,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="223.52" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
 <label x="119.38" y="30.48" size="1.778" layer="95" font="vector"/>
-<pinref part="LED6" gate="G$1" pin="C"/>
+<pinref part="LED6" gate="G1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG14"/>
 </segment>
 </net>
@@ -18943,7 +18947,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <wire x1="223.52" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 <label x="119.38" y="25.4" size="1.778" layer="95" font="vector"/>
-<pinref part="LED7" gate="G$1" pin="C"/>
+<pinref part="LED7" gate="G1" pin="C"/>
 <pinref part="U11" gate="G7" pin="PG15"/>
 </segment>
 </net>
@@ -19043,7 +19047,7 @@ Cpar is to low pass filter square wave</text>
 <segment>
 <pinref part="R21" gate="R" pin="1"/>
 <wire x1="257.81" y1="60.96" x2="245.11" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="LED0" gate="G$1" pin="A"/>
+<pinref part="LED0" gate="G1" pin="A"/>
 <pinref part="TP113" gate="TP" pin="P"/>
 <wire x1="245.11" y1="60.96" x2="231.14" y2="60.96" width="0.1524" layer="91"/>
 <junction x="245.11" y="60.96"/>
@@ -19051,7 +19055,7 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="LED1_ANODE" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LED1" gate="G1" pin="A"/>
 <pinref part="R22" gate="R" pin="1"/>
 <wire x1="231.14" y1="55.88" x2="245.11" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="TP114" gate="TP" pin="P"/>
@@ -19062,7 +19066,7 @@ Cpar is to low pass filter square wave</text>
 <net name="LED2_ANODE" class="0">
 <segment>
 <pinref part="R23" gate="R" pin="1"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G1" pin="A"/>
 <wire x1="257.81" y1="50.8" x2="245.11" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="TP115" gate="TP" pin="P"/>
 <wire x1="245.11" y1="50.8" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
@@ -19071,7 +19075,7 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="LED3_ANODE" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED3" gate="G1" pin="A"/>
 <pinref part="R24" gate="R" pin="1"/>
 <wire x1="231.14" y1="45.72" x2="245.11" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="TP116" gate="TP" pin="P"/>
@@ -19082,7 +19086,7 @@ Cpar is to low pass filter square wave</text>
 <net name="LED4_ANODE" class="0">
 <segment>
 <pinref part="R25" gate="R" pin="1"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G1" pin="A"/>
 <wire x1="257.81" y1="40.64" x2="245.11" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="TP117" gate="TP" pin="P"/>
 <wire x1="245.11" y1="40.64" x2="231.14" y2="40.64" width="0.1524" layer="91"/>
@@ -19091,7 +19095,7 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="LED5_ANODE" class="0">
 <segment>
-<pinref part="LED5" gate="G$1" pin="A"/>
+<pinref part="LED5" gate="G1" pin="A"/>
 <pinref part="R26" gate="R" pin="1"/>
 <wire x1="231.14" y1="35.56" x2="245.11" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="TP118" gate="TP" pin="P"/>
@@ -19102,7 +19106,7 @@ Cpar is to low pass filter square wave</text>
 <net name="LED6_ANODE" class="0">
 <segment>
 <pinref part="R27" gate="R" pin="1"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
+<pinref part="LED6" gate="G1" pin="A"/>
 <wire x1="257.81" y1="30.48" x2="245.11" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="TP119" gate="TP" pin="P"/>
 <wire x1="245.11" y1="30.48" x2="231.14" y2="30.48" width="0.1524" layer="91"/>
@@ -19111,7 +19115,7 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="LED7_ANODE" class="0">
 <segment>
-<pinref part="LED7" gate="G$1" pin="A"/>
+<pinref part="LED7" gate="G1" pin="A"/>
 <pinref part="R28" gate="R" pin="1"/>
 <wire x1="231.14" y1="25.4" x2="245.11" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="TP120" gate="TP" pin="P"/>
@@ -23561,7 +23565,7 @@ Option</text>
 <junction x="215.9" y="299.72"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="TP_AUX" class="0">
 <segment>
 <pinref part="J3" gate="G1" pin="7"/>
 <pinref part="TP144" gate="G1" pin="TP"/>
