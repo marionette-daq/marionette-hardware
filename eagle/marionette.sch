@@ -13508,11 +13508,11 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <clearance class="0" value="0.127"/>
 <clearance class="1" value="0.127"/>
 </class>
-<class number="3" name="med-isolate" width="0.2" drill="0">
-<clearance class="0" value="0.35"/>
-<clearance class="1" value="0.35"/>
-<clearance class="2" value="0.35"/>
-<clearance class="3" value="0.35"/>
+<class number="3" name="med-isolate" width="0.2" drill="0.25">
+<clearance class="0" value="0.2"/>
+<clearance class="1" value="0.2"/>
+<clearance class="2" value="0.2"/>
+<clearance class="3" value="0.2"/>
 </class>
 </classes>
 <parts>
