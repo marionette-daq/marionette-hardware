@@ -14163,7 +14163,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND78" library="GROUND" deviceset="GND" device=""/>
-<part name="R84" library="rcl_custom" deviceset="R-US_" device="0603-C" value="0"/>
+<part name="R84" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND79" library="GROUND" deviceset="GND" device=""/>
 <part name="TCXO1" library="dock_v2" deviceset="TCXO" device="_D32G-026.0M">
