@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16643,6 +16643,7 @@ Cseries is for DC blocking.
 Cpar is to low pass filter square wave</text>
 <text x="220.98" y="359.41" size="1.778" layer="97">26.00000MHz
 10ppm</text>
+<text x="393.7" y="904.24" size="5.08" layer="112">Should PA9 be connected to VBUS?  Should there be some sort of EMI protection?</text>
 </plain>
 <instances>
 <instance part="R1" gate="R" x="523.24" y="736.6" rot="R270"/>
