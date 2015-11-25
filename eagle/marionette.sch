@@ -10667,6 +10667,10 @@ Source part as a 100mil 2 x 3 header, then snip off the unneeded pins with side 
 <wire x1="-0.6" y1="-0.6" x2="0.6" y2="-0.6" width="0.15" layer="21"/>
 <wire x1="0.6" y1="-0.6" x2="0.6" y2="0.6" width="0.15" layer="21"/>
 <wire x1="0.6" y1="0.6" x2="-0.6" y2="0.6" width="0.15" layer="21"/>
+<wire x1="-0.6" y1="0.6" x2="-0.6" y2="-0.6" width="0.15" layer="22"/>
+<wire x1="-0.6" y1="-0.6" x2="0.6" y2="-0.6" width="0.15" layer="22"/>
+<wire x1="0.6" y1="-0.6" x2="0.6" y2="0.6" width="0.15" layer="22"/>
+<wire x1="0.6" y1="0.6" x2="-0.6" y2="0.6" width="0.15" layer="22"/>
 </package>
 <package name="PAD+VIA_0.6MM">
 <pad name="TP" x="0" y="0" drill="0.6"/>
@@ -10681,6 +10685,10 @@ Source part as a 100mil 2 x 3 header, then snip off the unneeded pins with side 
 <wire x1="-0.4" y1="-0.4" x2="0.4" y2="-0.4" width="0.15" layer="21"/>
 <wire x1="0.4" y1="-0.4" x2="0.4" y2="0.4" width="0.15" layer="21"/>
 <wire x1="0.4" y1="0.4" x2="-0.4" y2="0.4" width="0.15" layer="21"/>
+<wire x1="-0.4" y1="0.4" x2="-0.4" y2="-0.4" width="0.15" layer="22"/>
+<wire x1="-0.4" y1="-0.4" x2="0.4" y2="-0.4" width="0.15" layer="22"/>
+<wire x1="0.4" y1="-0.4" x2="0.4" y2="0.4" width="0.15" layer="22"/>
+<wire x1="0.4" y1="0.4" x2="-0.4" y2="0.4" width="0.15" layer="22"/>
 </package>
 <package name="PAD+VIA_0.25MM">
 <pad name="TP" x="0" y="0" drill="0.25"/>
@@ -13843,16 +13851,12 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP25" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP26" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP14" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
-<part name="TP13" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP13" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP15" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP28" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP27" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP37" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP38" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
-<part name="TP42" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
-<part name="TP43" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
-<part name="TP44" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
-<part name="TP45" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="V8" library="supply" deviceset="V3.3A" device=""/>
 <part name="V9" library="supply" deviceset="V3.3D" device=""/>
 <part name="V10" library="supply" deviceset="V3.3D" device=""/>
@@ -13879,8 +13883,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP66" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP67" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP72" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
-<part name="TP73" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
-<part name="TP74" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP77" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP79" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP81" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
@@ -13897,15 +13899,12 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP102" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP105" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP106" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
-<part name="TP107" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP109" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP108" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="SB1" library="apdm_dock_testjig" deviceset="TRACE_BRIDGE" device="_6MIL"/>
 <part name="SB2" library="apdm_dock_testjig" deviceset="TRACE_BRIDGE" device="_6MIL"/>
 <part name="SB3" library="apdm_dock_testjig" deviceset="TRACE_BRIDGE" device="_6MIL"/>
 <part name="GND14" library="GROUND" deviceset="GND" device=""/>
-<part name="TP61" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
-<part name="TP62" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="FIDUCIAL1" library="dock_v2" deviceset="FIDUCIAL" device="-1.0X2.0"/>
 <part name="FIDUCIAL2" library="dock_v2" deviceset="FIDUCIAL" device="-1.0X2.0"/>
 <part name="FIDUCIAL3" library="dock_v2" deviceset="FIDUCIAL" device="-1.0X2.0"/>
@@ -14132,7 +14131,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP11" library="dock_v2" deviceset="PAD+X" device="-2.0-NOCREAM+SILK"/>
 <part name="TP12" library="dock_v2" deviceset="PAD+X" device="-2.0-NOCREAM+SILK"/>
 <part name="TP17" library="dock_v2" deviceset="PAD+X" device="-2.0-NOCREAM+SILK"/>
-<part name="TP18" library="dock_v2" deviceset="PAD+X" device="-2.0-NOCREAM+SILK"/>
 <part name="V7" library="supply" deviceset="VCC" device=""/>
 <part name="TP201" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP200" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
@@ -14182,7 +14180,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="TP140" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP141" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
-<part name="TP142" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="J4" library="SWD_CONNECTOR" deviceset="SWD" device=""/>
 <part name="S6" library="supply" deviceset="V5D" device=""/>
 <part name="S7" library="supply" deviceset="VBUS" device=""/>
@@ -14274,9 +14271,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND86" library="GROUND" deviceset="GND" device=""/>
-<part name="TP32" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
-<part name="TP33" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
-<part name="TP34" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="S10" library="supply" deviceset="V5D" device=""/>
 <part name="R95" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="TP35" library="apdm" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
@@ -14295,7 +14289,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND89" library="supply" deviceset="GND" device=""/>
-<part name="TP36" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP49" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP50" library="dock_v2" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="U3" library="apdm_alt" deviceset="MIC5305" device="_MIC5305-3.3YD5">
@@ -14412,7 +14405,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <attribute name="V_RATING" value="35V"/>
 </part>
 <part name="GND93" library="supply" deviceset="GND" device=""/>
-<part name="TP131" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="TP143" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP144" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP145" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
@@ -14434,6 +14426,9 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="D22" library="apdm_alt" deviceset="DIODE_SCHOTTKY-*" device="_B130LB" value="np"/>
 <part name="D23" library="apdm_alt" deviceset="DIODE_SCHOTTKY-*" device="_B130LB" value="np"/>
 <part name="TP84" library="dock_v2" deviceset="PAD+X" device="-2.0-CREAM+SILK"/>
+<part name="TP18" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
+<part name="TP32" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
+<part name="TP33" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14870,7 +14865,6 @@ circuit.</text>
 <instance part="TP11" gate="TP" x="77.47" y="467.36" rot="R90"/>
 <instance part="TP12" gate="TP" x="77.47" y="421.64" rot="R90"/>
 <instance part="TP17" gate="TP" x="127" y="467.36" rot="R90"/>
-<instance part="TP18" gate="TP" x="137.16" y="467.36" rot="R90"/>
 <instance part="TP201" gate="G1" x="297.18" y="425.45" smashed="yes">
 <attribute name="NAME" x="293.37" y="421.64" size="1.778" layer="95"/>
 </instance>
@@ -14985,9 +14979,6 @@ circuit.</text>
 <attribute name="VALUE" x="642.366" y="313.309" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND89" gate="G1" x="624.84" y="309.88"/>
-<instance part="TP36" gate="G1" x="706.12" y="325.12" smashed="yes">
-<attribute name="NAME" x="703.58" y="327.66" size="1.778" layer="95"/>
-</instance>
 <instance part="TP49" gate="G1" x="718.82" y="325.12" smashed="yes">
 <attribute name="NAME" x="715.01" y="327.66" size="1.778" layer="95"/>
 </instance>
@@ -15149,6 +15140,12 @@ circuit.</text>
 <attribute name="VALUE" x="441.96" y="329.438" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="TP84" gate="TP" x="340.36" y="13.97" rot="R270"/>
+<instance part="TP32" gate="TP" x="426.72" y="425.45" smashed="yes">
+<attribute name="NAME" x="419.1" y="422.91" size="1.778" layer="95" ratio="15"/>
+</instance>
+<instance part="TP33" gate="TP" x="471.17" y="425.45" smashed="yes">
+<attribute name="NAME" x="472.44" y="427.99" size="1.778" layer="95" ratio="15" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15710,7 +15707,7 @@ circuit.</text>
 <pinref part="R19" gate="R" pin="1"/>
 </segment>
 </net>
-<net name="VBATT" class="0">
+<net name="VBAT" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="106.68" y1="113.03" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
@@ -15985,6 +15982,7 @@ circuit.</text>
 <pinref part="C101" gate="CE" pin="2"/>
 <junction x="410.21" y="425.45"/>
 <wire x1="410.21" y1="425.45" x2="410.21" y2="431.8" width="0.3048" layer="91"/>
+<pinref part="TP32" gate="TP" pin="TP"/>
 </segment>
 </net>
 <net name="TPS40200_V5D/FB" class="0">
@@ -16042,6 +16040,7 @@ circuit.</text>
 <pinref part="C147" gate="CE" pin="1"/>
 <wire x1="471.17" y1="424.18" x2="471.17" y2="425.45" width="0.1524" layer="91"/>
 <junction x="471.17" y="425.45"/>
+<pinref part="TP33" gate="TP" pin="TP"/>
 </segment>
 <segment>
 <pinref part="S4" gate="G1" pin="V5D"/>
@@ -16158,7 +16157,6 @@ circuit.</text>
 <junction x="137.16" y="464.82"/>
 <junction x="127" y="464.82"/>
 <pinref part="TP17" gate="TP" pin="P"/>
-<pinref part="TP18" gate="TP" pin="P"/>
 <pinref part="C40" gate="CE" pin="1"/>
 </segment>
 </net>
@@ -16256,17 +16254,14 @@ circuit.</text>
 </net>
 <net name="V3.3DAC" class="0">
 <segment>
-<wire x1="688.34" y1="325.12" x2="706.12" y2="325.12" width="0.1524" layer="91"/>
+<wire x1="688.34" y1="325.12" x2="718.82" y2="325.12" width="0.1524" layer="91"/>
 <pinref part="C137" gate="CE" pin="2"/>
-<wire x1="706.12" y1="325.12" x2="718.82" y2="325.12" width="0.1524" layer="91"/>
 <wire x1="718.82" y1="325.12" x2="718.82" y2="322.58" width="0.1524" layer="91"/>
-<junction x="706.12" y="325.12"/>
 <pinref part="C138" gate="CE" pin="1"/>
 <wire x1="718.82" y1="325.12" x2="726.44" y2="325.12" width="0.1524" layer="91"/>
 <wire x1="726.44" y1="325.12" x2="731.52" y2="325.12" width="0.1524" layer="91"/>
 <wire x1="731.52" y1="325.12" x2="731.52" y2="322.58" width="0.1524" layer="91"/>
 <junction x="718.82" y="325.12"/>
-<pinref part="TP36" gate="G1" pin="TP"/>
 <pinref part="TP49" gate="G1" pin="TP"/>
 <pinref part="TP50" gate="TP" pin="P"/>
 <junction x="726.44" y="325.12"/>
@@ -16824,14 +16819,6 @@ Cpar is to low pass filter square wave</text>
 <attribute name="NAME" x="535.94" y="812.8" size="1.016" layer="95" rot="R90"/>
 </instance>
 <instance part="GND14" gate="1" x="477.52" y="797.56"/>
-<instance part="TP61" gate="TP" x="165.1" y="772.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="166.497" y="771.4742" size="1.778" layer="95"/>
-<attribute name="VALUE" x="167.132" y="770.763" size="0.762" layer="96" rot="R90"/>
-</instance>
-<instance part="TP62" gate="TP" x="167.64" y="767.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="169.037" y="766.3942" size="1.778" layer="95"/>
-<attribute name="VALUE" x="169.672" y="765.683" size="0.762" layer="96" rot="R90"/>
-</instance>
 <instance part="V31" gate="G1" x="707.39" y="594.36"/>
 <instance part="GND22" gate="1" x="707.39" y="570.23"/>
 <instance part="FRAME1" gate="G$1" x="558.8" y="50.8"/>
@@ -16933,8 +16920,6 @@ Cpar is to low pass filter square wave</text>
 <instance part="TP46" gate="TP" x="236.22" y="452.12" rot="R270"/>
 <instance part="TP47" gate="TP" x="236.22" y="462.28" rot="R90"/>
 <instance part="TP72" gate="TP" x="726.44" y="659.13" rot="R270"/>
-<instance part="TP73" gate="TP" x="788.67" y="674.37" rot="R90"/>
-<instance part="TP74" gate="TP" x="788.67" y="656.59" rot="R270"/>
 <instance part="U1" gate="G1" x="478.79" y="280.67" rot="MR180"/>
 <instance part="U1" gate="G2" x="478.79" y="260.35" rot="MR180"/>
 <instance part="U1" gate="G3" x="478.79" y="198.12"/>
@@ -17047,9 +17032,6 @@ Cpar is to low pass filter square wave</text>
 <attribute name="VALUE" x="236.22" y="397.51" size="1.778" layer="96" rot="MR180"/>
 <attribute name="V_RATING" x="236.22" y="401.32" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="TP142" gate="TP" x="758.19" y="741.68" smashed="yes">
-<attribute name="NAME" x="760.73" y="740.41" size="1.778" layer="95"/>
-</instance>
 <instance part="J4" gate="G1" x="736.6" y="582.93" rot="MR0"/>
 <instance part="S7" gate="G$1" x="203.2" y="793.75"/>
 <instance part="S8" gate="G$1" x="610.87" y="797.56"/>
@@ -17093,7 +17075,6 @@ Cpar is to low pass filter square wave</text>
 </instance>
 <instance part="TP52" gate="G1" x="391.16" y="280.67"/>
 <instance part="TP53" gate="G1" x="396.24" y="278.13"/>
-<instance part="TP131" gate="TP" x="161.29" y="617.22"/>
 <instance part="C151" gate="CE" x="463.55" y="808.99" smashed="yes">
 <attribute name="V_RATING" x="464.82" y="802.64" size="1.778" layer="96"/>
 <attribute name="NAME" x="465.074" y="809.371" size="1.778" layer="95"/>
@@ -17104,6 +17085,7 @@ Cpar is to low pass filter square wave</text>
 <attribute name="NAME" x="477.774" y="809.371" size="1.778" layer="95"/>
 <attribute name="VALUE" x="482.346" y="802.259" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="TP18" gate="TP" x="161.29" y="617.22"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -17394,12 +17376,9 @@ Cpar is to low pass filter square wave</text>
 </segment>
 <segment>
 <wire x1="190.5" y1="765.81" x2="189.23" y2="764.54" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="764.54" x2="167.64" y2="764.54" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="764.54" x2="189.23" y2="764.54" width="0.1524" layer="91"/>
 <label x="125.73" y="764.54" size="1.778" layer="95" font="vector"/>
 <pinref part="U11" gate="G1" pin="PA14"/>
-<pinref part="TP62" gate="TP" pin="P"/>
-<junction x="167.64" y="764.54"/>
-<wire x1="189.23" y1="764.54" x2="167.64" y2="764.54" width="0.1524" layer="91"/>
 <label x="177.8" y="764.54" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -17412,12 +17391,9 @@ Cpar is to low pass filter square wave</text>
 </segment>
 <segment>
 <wire x1="190.5" y1="770.89" x2="189.23" y2="769.62" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="769.62" x2="165.1" y2="769.62" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="769.62" x2="189.23" y2="769.62" width="0.1524" layer="91"/>
 <label x="125.73" y="769.62" size="1.778" layer="95" font="vector"/>
 <pinref part="U11" gate="G1" pin="PA13"/>
-<pinref part="TP61" gate="TP" pin="P"/>
-<wire x1="165.1" y1="769.62" x2="189.23" y2="769.62" width="0.1524" layer="91"/>
-<junction x="165.1" y="769.62"/>
 <label x="177.8" y="769.62" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -17550,8 +17526,6 @@ Cpar is to low pass filter square wave</text>
 <pinref part="U11" gate="CTRL" pin="BYPASS_REG"/>
 <wire x1="758.19" y1="736.6" x2="758.19" y2="741.68" width="0.1524" layer="91"/>
 <wire x1="758.19" y1="741.68" x2="754.38" y2="741.68" width="0.1524" layer="91"/>
-<pinref part="TP142" gate="TP" pin="TP"/>
-<junction x="758.19" y="741.68"/>
 </segment>
 <segment>
 <wire x1="769.62" y1="762" x2="769.62" y2="759.46" width="0.1524" layer="91"/>
@@ -19119,8 +19093,6 @@ Cpar is to low pass filter square wave</text>
 <wire x1="798.83" y1="671.83" x2="798.83" y2="670.56" width="0.1524" layer="91"/>
 <junction x="798.83" y="671.83"/>
 <label x="793.75" y="671.83" size="1.778" layer="95"/>
-<pinref part="TP73" gate="TP" pin="P"/>
-<junction x="788.67" y="671.83"/>
 </segment>
 </net>
 <net name="CAN1_N" class="0">
@@ -19135,8 +19107,6 @@ Cpar is to low pass filter square wave</text>
 <wire x1="798.83" y1="659.13" x2="798.83" y2="660.4" width="0.1524" layer="91"/>
 <junction x="798.83" y="659.13"/>
 <label x="793.75" y="656.59" size="1.778" layer="95"/>
-<pinref part="TP74" gate="TP" pin="P"/>
-<junction x="788.67" y="659.13"/>
 </segment>
 </net>
 <net name="CAN_RS" class="0">
@@ -19339,10 +19309,10 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="USB_PHY_REFCLK_12MHZ" class="0">
 <segment>
-<wire x1="161.29" y1="617.22" x2="104.14" y2="617.22" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="617.22" x2="104.14" y2="617.22" width="0.1524" layer="91"/>
 <label x="125.73" y="617.22" size="1.778" layer="95"/>
 <pinref part="U11" gate="G3" pin="PC6"/>
-<pinref part="TP131" gate="TP" pin="TP"/>
+<pinref part="TP18" gate="TP" pin="P"/>
 </segment>
 </net>
 <net name="TCXO_OUT" class="0">
@@ -20050,22 +20020,6 @@ Option</text>
 <instance part="FRAME4" gate="G$2" x="325.12" y="1.27"/>
 <instance part="V30" gate="G1" x="218.44" y="537.21"/>
 <instance part="GND26" gate="1" x="346.71" y="346.71"/>
-<instance part="TP42" gate="TP" x="368.3" y="386.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="369.697" y="385.3942" size="1.778" layer="95"/>
-<attribute name="VALUE" x="370.332" y="384.683" size="0.762" layer="96" rot="R90"/>
-</instance>
-<instance part="TP43" gate="TP" x="368.3" y="365.76" smashed="yes" rot="R270">
-<attribute name="NAME" x="369.697" y="365.0742" size="1.778" layer="95"/>
-<attribute name="VALUE" x="366.268" y="367.157" size="0.762" layer="96" rot="R270"/>
-</instance>
-<instance part="TP44" gate="TP" x="374.65" y="370.84" smashed="yes" rot="R270">
-<attribute name="NAME" x="376.047" y="370.1542" size="1.778" layer="95"/>
-<attribute name="VALUE" x="372.618" y="372.237" size="0.762" layer="96" rot="R270"/>
-</instance>
-<instance part="TP45" gate="TP" x="374.65" y="381" smashed="yes" rot="R90">
-<attribute name="NAME" x="376.047" y="380.3142" size="1.778" layer="95"/>
-<attribute name="VALUE" x="376.682" y="379.603" size="0.762" layer="96" rot="R90"/>
-</instance>
 <instance part="TP77" gate="TP" x="71.12" y="500.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="71.8058" y="501.777" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="73.152" y="498.983" size="0.762" layer="96" rot="R90"/>
@@ -20127,7 +20081,6 @@ Option</text>
 <attribute name="VALUE" x="73.152" y="34.163" size="0.762" layer="96" rot="R90"/>
 </instance>
 <instance part="TP106" gate="TP" x="331.47" y="459.74" rot="R90"/>
-<instance part="TP107" gate="TP" x="356.87" y="452.12" rot="R270"/>
 <instance part="U4" gate="G1" x="346.71" y="374.65"/>
 <instance part="C126" gate="CE" x="322.58" y="417.83" smashed="yes">
 <attribute name="V_RATING" x="323.85" y="412.75" size="1.778" layer="96"/>
@@ -20322,15 +20275,6 @@ Option</text>
 </instance>
 <instance part="GND86" gate="1" x="50.8" y="19.05" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="53.34" y="16.51" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="TP32" gate="TP" x="304.8" y="372.11" smashed="yes">
-<attribute name="NAME" x="306.07" y="372.11" size="1.778" layer="95" ratio="15"/>
-</instance>
-<instance part="TP33" gate="TP" x="308.61" y="369.57" smashed="yes">
-<attribute name="NAME" x="309.88" y="369.57" size="1.778" layer="95" ratio="15"/>
-</instance>
-<instance part="TP34" gate="TP" x="312.42" y="367.03" smashed="yes">
-<attribute name="NAME" x="313.69" y="367.03" size="1.778" layer="95" ratio="15"/>
 </instance>
 <instance part="V27" gate="G1" x="346.71" y="422.91"/>
 </instances>
@@ -21174,10 +21118,7 @@ Option</text>
 <wire x1="335.28" y1="447.04" x2="347.98" y2="447.04" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="447.04" x2="347.98" y2="454.66" width="0.1524" layer="91"/>
 <junction x="347.98" y="454.66"/>
-<pinref part="TP107" gate="TP" pin="P"/>
-<wire x1="356.87" y1="454.66" x2="347.98" y2="454.66" width="0.1524" layer="91"/>
-<junction x="356.87" y="454.66"/>
-<wire x1="410.21" y1="454.66" x2="356.87" y2="454.66" width="0.1524" layer="91"/>
+<wire x1="410.21" y1="454.66" x2="347.98" y2="454.66" width="0.1524" layer="91"/>
 <label x="388.62" y="454.66" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -21186,8 +21127,6 @@ Option</text>
 <wire x1="411.48" y1="384.81" x2="410.21" y2="383.54" width="0.1524" layer="91"/>
 <wire x1="361.95" y1="379.73" x2="368.3" y2="379.73" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="379.73" x2="368.3" y2="383.54" width="0.1524" layer="91"/>
-<pinref part="TP42" gate="TP" pin="P"/>
-<junction x="368.3" y="383.54"/>
 <wire x1="410.21" y1="383.54" x2="368.3" y2="383.54" width="0.1524" layer="91"/>
 <label x="388.62" y="383.54" size="1.778" layer="95"/>
 <pinref part="U4" gate="G1" pin="VOUTA"/>
@@ -21198,8 +21137,6 @@ Option</text>
 <wire x1="411.48" y1="374.65" x2="410.21" y2="373.38" width="0.1524" layer="91"/>
 <wire x1="361.95" y1="374.65" x2="374.65" y2="374.65" width="0.1524" layer="91"/>
 <wire x1="374.65" y1="374.65" x2="374.65" y2="373.38" width="0.1524" layer="91"/>
-<pinref part="TP44" gate="TP" pin="P"/>
-<junction x="374.65" y="373.38"/>
 <wire x1="410.21" y1="373.38" x2="374.65" y2="373.38" width="0.1524" layer="91"/>
 <label x="388.62" y="373.38" size="1.778" layer="95"/>
 <pinref part="U4" gate="G1" pin="VOUTC"/>
@@ -21210,8 +21147,6 @@ Option</text>
 <wire x1="411.48" y1="369.57" x2="410.21" y2="368.3" width="0.1524" layer="91"/>
 <wire x1="361.95" y1="372.11" x2="368.3" y2="372.11" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="372.11" x2="368.3" y2="368.3" width="0.1524" layer="91"/>
-<pinref part="TP43" gate="TP" pin="P"/>
-<junction x="368.3" y="368.3"/>
 <wire x1="410.21" y1="368.3" x2="368.3" y2="368.3" width="0.1524" layer="91"/>
 <label x="388.62" y="368.3" size="1.778" layer="95"/>
 <pinref part="U4" gate="G1" pin="VOUTD"/>
@@ -21222,8 +21157,6 @@ Option</text>
 <wire x1="411.48" y1="379.73" x2="410.21" y2="378.46" width="0.1524" layer="91"/>
 <wire x1="361.95" y1="377.19" x2="374.65" y2="377.19" width="0.1524" layer="91"/>
 <wire x1="374.65" y1="377.19" x2="374.65" y2="378.46" width="0.1524" layer="91"/>
-<pinref part="TP45" gate="TP" pin="P"/>
-<junction x="374.65" y="378.46"/>
 <wire x1="410.21" y1="378.46" x2="374.65" y2="378.46" width="0.1524" layer="91"/>
 <label x="388.62" y="378.46" size="1.778" layer="95"/>
 <pinref part="U4" gate="G1" pin="VOUTB"/>
@@ -21315,34 +21248,24 @@ Option</text>
 <segment>
 <wire x1="257.81" y1="373.38" x2="259.08" y2="372.11" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G1" pin="DIN"/>
-<wire x1="259.08" y1="372.11" x2="304.8" y2="372.11" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="372.11" x2="331.47" y2="372.11" width="0.1524" layer="91"/>
 <label x="262.89" y="372.11" size="1.778" layer="95"/>
-<pinref part="TP32" gate="TP" pin="TP"/>
-<wire x1="304.8" y1="372.11" x2="331.47" y2="372.11" width="0.1524" layer="91"/>
-<junction x="304.8" y="372.11"/>
 </segment>
 </net>
 <net name="SPI4_SCK" class="0">
 <segment>
 <wire x1="257.81" y1="370.84" x2="259.08" y2="369.57" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G1" pin="SCLK"/>
-<wire x1="259.08" y1="369.57" x2="308.61" y2="369.57" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="369.57" x2="331.47" y2="369.57" width="0.1524" layer="91"/>
 <label x="262.89" y="369.57" size="1.778" layer="95"/>
-<pinref part="TP33" gate="TP" pin="TP"/>
-<wire x1="308.61" y1="369.57" x2="331.47" y2="369.57" width="0.1524" layer="91"/>
-<junction x="308.61" y="369.57"/>
 </segment>
 </net>
 <net name="SPI4_NSS" class="0">
 <segment>
 <wire x1="257.81" y1="368.3" x2="259.08" y2="367.03" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G1" pin="!SYNC!"/>
-<wire x1="259.08" y1="367.03" x2="292.1" y2="367.03" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="367.03" x2="331.47" y2="367.03" width="0.1524" layer="91"/>
 <label x="262.89" y="367.03" size="1.778" layer="95"/>
-<wire x1="292.1" y1="367.03" x2="312.42" y2="367.03" width="0.1524" layer="91"/>
-<pinref part="TP34" gate="TP" pin="TP"/>
-<wire x1="312.42" y1="367.03" x2="331.47" y2="367.03" width="0.1524" layer="91"/>
-<junction x="312.42" y="367.03"/>
 </segment>
 </net>
 <net name="ADC1/2_CH14_OUT" class="0">
