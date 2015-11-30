@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -10800,30 +10800,14 @@ Available with 2.1 &amp;amp; 2.5&amp;nbsp;mm inner pin diameters.
 <wire x1="-3.9" y1="-3.9" x2="-3.9" y2="3.9" width="0.13" layer="21"/>
 <wire x1="-3.9" y1="3.9" x2="-3.1" y2="3.9" width="0.13" layer="21"/>
 <rectangle x1="-4" y1="-5" x2="8.5" y2="5" layer="39"/>
-<rectangle x1="3.1" y1="-1.5" x2="5.1" y2="1.5" layer="31"/>
-<rectangle x1="4.8" y1="2.3" x2="7.8" y2="4.3" layer="31"/>
-<rectangle x1="4.8" y1="-4.3" x2="7.8" y2="-2.3" layer="31"/>
-<rectangle x1="3.1" y1="-1.5" x2="5.1" y2="1.5" layer="32"/>
-<rectangle x1="4.8" y1="-4.3" x2="7.8" y2="-2.3" layer="32"/>
-<rectangle x1="4.8" y1="2.3" x2="7.8" y2="4.3" layer="32"/>
-<smd name="PIN" x="6.3" y="-3.3" dx="2" dy="3" layer="1" roundness="50" rot="R90" cream="no"/>
-<smd name="PIN.B" x="6.3" y="-3.3" dx="2" dy="3" layer="16" roundness="50" rot="R270" cream="no"/>
-<smd name="RING" x="4.1" y="0" dx="3" dy="2" layer="1" roundness="50" rot="R90" cream="no"/>
-<smd name="RING.B" x="4.1" y="0" dx="3" dy="2" layer="16" roundness="50" rot="R270" cream="no"/>
-<smd name="S1" x="-1.1" y="-3.7" dx="2" dy="3.4" layer="1" rot="R90"/>
-<smd name="S1.B" x="-1.1" y="-3.7" dx="2" dy="3.4" layer="16" rot="R270"/>
-<smd name="S2" x="-1.1" y="3.7" dx="2" dy="3.4" layer="1" rot="R90"/>
-<smd name="S2.B" x="-1.1" y="3.7" dx="2" dy="3.4" layer="16" rot="R270"/>
-<smd name="SWITCH" x="6.3" y="3.3" dx="2" dy="3" layer="1" roundness="50" rot="R90" cream="no"/>
-<smd name="SWITCH.B" x="6.3" y="3.3" dx="2" dy="3" layer="16" roundness="50" rot="R270" cream="no"/>
 <text x="2" y="5" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="1" y="-6.5" size="1" layer="27" font="vector">&gt;VALUE</text>
 <hole x="0" y="0" drill="2.4"/>
-<hole x="6.3" y="3.3" drill="2.225"/>
-<hole x="-1.1" y="3.7" drill="2.375"/>
-<hole x="-1.1" y="-3.7" drill="2.375"/>
-<hole x="6.3" y="-3.4" drill="2.225"/>
-<hole x="4" y="0" drill="2.225"/>
+<pad name="RING" x="4" y="0" drill="2.225"/>
+<pad name="TIP" x="6.3" y="-3.3" drill="2.225"/>
+<pad name="SWITCH" x="6.3" y="3.3" drill="2.225"/>
+<pad name="S1" x="-1.1" y="3.7" drill="2.375"/>
+<pad name="S2" x="-1.1" y="-3.7" drill="2.375"/>
 </package>
 <package name="SOT23-3">
 <description>SOT23-3
@@ -11847,10 +11831,10 @@ Epson Family (now Kyocera!) of quartz crystals.  FA-238V (12.000MHz to 15.999MHz
 </device>
 <device name="-NO_MILL" package="PJ-047_NO_MILLED_SLOTS">
 <connects>
-<connect gate="G1" pin="CHASSIS_GND" pad="S1 S1.B S2 S2.B"/>
-<connect gate="G1" pin="RING" pad="RING RING.B"/>
-<connect gate="G1" pin="SW" pad="SWITCH SWITCH.B"/>
-<connect gate="G1" pin="TIP" pad="PIN PIN.B"/>
+<connect gate="G1" pin="CHASSIS_GND" pad="S1 S2"/>
+<connect gate="G1" pin="RING" pad="RING"/>
+<connect gate="G1" pin="SW" pad="SWITCH"/>
+<connect gate="G1" pin="TIP" pad="TIP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15960,7 +15944,7 @@ circuit.</text>
 <wire x1="387.35" y1="252.73" x2="387.35" y2="255.27" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TPS40200_CC" class="1">
+<net name="TPS40200_CC" class="0">
 <segment>
 <pinref part="C103" gate="CE" pin="2"/>
 <pinref part="C102" gate="CE" pin="2"/>
