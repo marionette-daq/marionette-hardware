@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -13575,7 +13575,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 </part>
 <part name="R29" library="rcl_custom" deviceset="R-US_" device="0402-B" value="120"/>
 <part name="H1" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
-<part name="H2" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="H2" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300" value="#4-BARE_MOUNTING_HOLE/.300"/>
 <part name="H3" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="H4" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
 <part name="C46" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100p">
@@ -14314,10 +14314,10 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="SW1" library="apdm_ap_v2" deviceset="SW-MOM-TACTILE" device="-B3F-1000"/>
 <part name="SW2" library="apdm_ap_v2" deviceset="SW-MOM-TACTILE" device="-B3F-1000"/>
 <part name="J5" library="dock_v2" deviceset="CON_COAX_PWR_PJ-047AH" device="-NO_MILL"/>
-<part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
+<part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B" value="np"/>
 <part name="R96" library="rcl_custom" deviceset="R-US_" device="0402-B" value="90.9k"/>
 <part name="R97" library="rcl_custom" deviceset="R-US_" device="0402-B" value="15k"/>
-<part name="R98" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
+<part name="R98" library="rcl_custom" deviceset="R-US_" device="0402-B" value="np"/>
 <part name="C144" library="rcl_custom" deviceset="C-EU" device="0402-B" value="220p">
 <attribute name="V_RATING" value="50V"/>
 </part>
@@ -14418,6 +14418,16 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP32" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="TP33" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="TP34" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
+<part name="TP36" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
+<part name="TP40" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
+<part name="TP41" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
+<part name="GND91" library="GROUND" deviceset="GND" device=""/>
+<part name="GND94" library="GROUND" deviceset="GND" device=""/>
+<part name="GND95" library="GROUND" deviceset="GND" device=""/>
+<part name="TP42" library="dock_v2" deviceset="PAD+VIA_GND_0.6MM" device=""/>
+<part name="TP43" library="dock_v2" deviceset="PAD+VIA_GND_0.6MM" device=""/>
+<part name="TP44" library="dock_v2" deviceset="PAD+VIA_GND_0.6MM" device=""/>
+<part name="TP45" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15132,6 +15142,9 @@ circuit.</text>
 <attribute name="NAME" x="472.44" y="427.99" size="1.778" layer="95" ratio="15" rot="R90"/>
 </instance>
 <instance part="TP34" gate="G1" x="563.88" y="325.12"/>
+<instance part="TP45" gate="G1" x="311.15" y="438.15" smashed="yes">
+<attribute name="NAME" x="308.61" y="440.69" size="1.778" layer="95" ratio="15"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15769,11 +15782,14 @@ circuit.</text>
 </net>
 <net name="TPS40200_SS" class="0">
 <segment>
-<wire x1="322.58" y1="438.15" x2="300.99" y2="438.15" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="438.15" x2="311.15" y2="438.15" width="0.1524" layer="91"/>
 <pinref part="TP130" gate="TP" pin="P"/>
 <junction x="300.99" y="438.15"/>
 <pinref part="U5002" gate="G1" pin="SS"/>
 <pinref part="C109" gate="CE" pin="2"/>
+<pinref part="TP45" gate="G1" pin="TP"/>
+<wire x1="311.15" y1="438.15" x2="300.99" y2="438.15" width="0.1524" layer="91"/>
+<junction x="311.15" y="438.15"/>
 </segment>
 </net>
 <net name="TPS40200_RC" class="0">
@@ -20260,6 +20276,21 @@ Option</text>
 <attribute name="VALUE" x="53.34" y="16.51" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="V27" gate="G1" x="346.71" y="422.91"/>
+<instance part="TP36" gate="G1" x="166.37" y="63.5"/>
+<instance part="TP40" gate="G1" x="166.37" y="96.52"/>
+<instance part="TP41" gate="G1" x="166.37" y="30.48"/>
+<instance part="GND91" gate="1" x="166.37" y="86.36" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="168.91" y="83.82" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND94" gate="1" x="166.37" y="52.07" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="168.91" y="49.53" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND95" gate="1" x="166.37" y="19.05" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="168.91" y="16.51" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="TP42" gate="G1" x="166.37" y="88.9"/>
+<instance part="TP43" gate="G1" x="166.37" y="54.61"/>
+<instance part="TP44" gate="G1" x="166.37" y="21.59"/>
 </instances>
 <busses>
 <bus name="ADC_BUS:ADC1/2/3_IN2,ADC1/2_IN6,ADC1/2_IN7,ADC1/2/3_IN11,ADC1/2/3_IN13,ADC1/2_IN14,ADC1/2_IN15,ADC3_IN9,ADC3_IN14,ADC3_IN15,ADC3_IN4,ADC3_IN5,ADC3_IN6,ADC3_IN7,ADC3_IN8">
@@ -20272,11 +20303,11 @@ Option</text>
 <label x="16.51" y="505.46" size="3.048" layer="95" rot="R90"/>
 </segment>
 </bus>
-<bus name="SAMPLE_ADC_BUS:ADC1/2_CH14,ADC3_CH7,ADC1/2_CH6,ADC3_CH15,ADC1/2/3_CH11,ADC1/2/3_CH13,ADC3_CH14,ADC1/2_CH15,ADC3_CH6,ADC3_CH5,ADC1/2_CH7,ADC3_CH9,ADC3_CH8,ADC1/2/3_CH2,ADC3_CH4">
+<bus name="SAMPLE_ADC_BUS:ADC1/2_CH14,ADC3_CH7,ADC1/2_CH6,ADC3_CH15,ADC1/2/3_CH11,ADC1/2/3_CH13,ADC3_CH14,ADC1/2_CH15,ADC3_CH6,ADC3_CH5,ADC1/2_CH7,ADC3_CH9">
 <segment>
-<wire x1="177.8" y1="516.89" x2="177.8" y2="20.32" width="0.762" layer="92"/>
+<wire x1="177.8" y1="516.89" x2="177.8" y2="121.92" width="0.762" layer="92"/>
 <label x="182.88" y="463.55" size="3.048" layer="95" rot="R90"/>
-<label x="182.88" y="74.93" size="3.048" layer="95" rot="R90"/>
+<label x="182.88" y="121.92" size="3.048" layer="95" rot="R90"/>
 </segment>
 </bus>
 <bus name="DAC_0UTPUT_BUS:DAC_A,DAC_B,DAC_C,DAC_D,DAC_E">
@@ -20500,6 +20531,18 @@ Option</text>
 <pinref part="GND86" gate="1" pin="GND"/>
 <pinref part="C136" gate="CE" pin="2"/>
 <wire x1="50.8" y1="21.59" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND91" gate="1" pin="GND"/>
+<pinref part="TP42" gate="G1" pin="TP"/>
+</segment>
+<segment>
+<pinref part="GND94" gate="1" pin="GND"/>
+<pinref part="TP43" gate="G1" pin="TP"/>
+</segment>
+<segment>
+<pinref part="GND95" gate="1" pin="GND"/>
+<pinref part="TP44" gate="G1" pin="TP"/>
 </segment>
 </net>
 <net name="ADC3_IN4" class="0">
@@ -20844,10 +20887,10 @@ Option</text>
 </net>
 <net name="ADC3_CH4" class="0">
 <segment>
-<wire x1="177.8" y1="31.75" x2="176.53" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R57" gate="R" pin="1"/>
 <label x="144.78" y="30.48" size="1.778" layer="95"/>
-<wire x1="176.53" y1="30.48" x2="120.65" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="TP41" gate="G1" pin="TP"/>
+<wire x1="166.37" y1="30.48" x2="120.65" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC3_IN9_FILT" class="0">
@@ -20914,10 +20957,10 @@ Option</text>
 </net>
 <net name="ADC3_CH8" class="0">
 <segment>
-<wire x1="177.8" y1="97.79" x2="176.53" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R45" gate="R" pin="1"/>
 <label x="144.78" y="96.52" size="1.778" layer="95"/>
-<wire x1="176.53" y1="96.52" x2="120.65" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="TP40" gate="G1" pin="TP"/>
+<wire x1="166.37" y1="96.52" x2="120.65" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC1/2/3_CH11" class="0">
@@ -20930,10 +20973,10 @@ Option</text>
 </net>
 <net name="ADC1/2/3_CH2" class="0">
 <segment>
-<wire x1="177.8" y1="64.77" x2="176.53" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R41" gate="R" pin="1"/>
-<wire x1="176.53" y1="63.5" x2="120.65" y2="63.5" width="0.1524" layer="91"/>
 <label x="142.24" y="63.5" size="1.778" layer="95"/>
+<pinref part="TP36" gate="G1" pin="TP"/>
+<wire x1="166.37" y1="63.5" x2="120.65" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC1/2/3_CH13" class="0">
@@ -21769,9 +21812,11 @@ Option</text>
 <bus name="DAC_0UTPUT_BUS:DAC_A,DAC_B,DAC_C,DAC_D,DAC_E">
 <segment>
 <wire x1="144.78" y1="101.6" x2="144.78" y2="88.9" width="0.762" layer="92"/>
+<label x="144.78" y="96.52" size="3.048" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="38.1" y1="106.68" x2="38.1" y2="68.58" width="0.762" layer="92"/>
+<label x="36.83" y="90.17" size="3.048" layer="95" rot="R90"/>
 </segment>
 </bus>
 <bus name="SPI_BUS:SPI2_NSS,SPI2_SCK,SPI2_MISO,SPI2_MOSI,SPI4_NSS,SPI4_SCK,SPI4_MISO,SPI4_MOSI">
@@ -21787,14 +21832,21 @@ Option</text>
 <wire x1="11.43" y1="328.93" x2="11.43" y2="50.8" width="0.762" layer="92"/>
 <wire x1="11.43" y1="328.93" x2="153.67" y2="328.93" width="0.762" layer="92"/>
 <wire x1="153.67" y1="328.93" x2="153.67" y2="50.8" width="0.762" layer="92"/>
+<label x="24.13" y="330.2" size="3.048" layer="95"/>
+<label x="10.16" y="198.12" size="3.048" layer="95" rot="R90"/>
+<label x="10.16" y="68.58" size="3.048" layer="95" rot="R90"/>
+<label x="157.48" y="69.85" size="3.048" layer="95" rot="R90"/>
+<label x="157.48" y="199.39" size="3.048" layer="95" rot="R90"/>
 </segment>
 </bus>
-<bus name="SAMPLE_ADC_BUS:ADC1/2_CH14,ADC3_CH7,ADC1/2_CH6,ADC3_CH15,ADC1/2/3_CH11,ADC1/2/3_CH13,ADC3_CH14,ADC1/2_CH15,ADC3_CH6,ADC3_CH5,ADC1/2_CH7,ADC3_CH9,ADC3_CH8,ADC1/2/3_CH2,ADC3_CH4">
+<bus name="SAMPLE_ADC_BUS:ADC1/2_CH14,ADC3_CH7,ADC1/2_CH6,ADC3_CH15,ADC1/2/3_CH11,ADC1/2/3_CH13,ADC3_CH14,ADC1/2_CH15,ADC3_CH6,ADC3_CH5,ADC1/2_CH7,ADC3_CH9">
 <segment>
 <wire x1="33.02" y1="93.98" x2="33.02" y2="71.12" width="0.762" layer="92"/>
+<label x="31.75" y="69.85" size="3.048" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="149.86" y1="93.98" x2="149.86" y2="73.66" width="0.762" layer="92"/>
+<label x="149.86" y="88.9" size="3.048" layer="95" rot="R90"/>
 </segment>
 </bus>
 </busses>
@@ -23412,7 +23464,6 @@ Option</text>
 <approved hash="104,2,500.38,792.48,U14,1.8V,V1.8A,,,"/>
 <approved hash="104,2,500.38,795.02,U14,3.3V,V3.3D,,,"/>
 <approved hash="104,2,500.38,797.56,U14,VBAT,V3.3D,,,"/>
-<approved hash="104,1,113.03,109.22,U11PWR_REF,VBAT,VBATT,,,"/>
 <approved hash="104,1,113.03,99.06,U11PWR_REF,VCAP_1,STM_VCAP_1,,,"/>
 <approved hash="104,1,113.03,93.98,U11PWR_REF,VCAP_2,STM_VCAP_2,,,"/>
 <approved hash="104,1,113.03,88.9,U11PWR_REF,VDDA,V3.3A,,,"/>
@@ -23421,6 +23472,8 @@ Option</text>
 <approved hash="104,1,283.21,44.45,U11PWF_MAIN,VSS,GND,,,"/>
 <approved hash="104,2,472.44,335.28,U1G5,V+,V3.3D,,,"/>
 <approved hash="104,2,472.44,320.04,U1G5,V-,GND,,,"/>
+<approved hash="114,2,488.368,139.311,U15,G3,EN,,,"/>
+<approved hash="114,2,488.368,139.311,U15,G4,EN,,,"/>
 <approved hash="104,2,488.95,335.28,U15G5,V+,V3.3D,,,"/>
 <approved hash="104,2,488.95,320.04,U15G5,V-,GND,,,"/>
 <approved hash="104,4,168.91,250.19,D2G7,PIN,GND,,,"/>
@@ -23453,8 +23506,8 @@ Option</text>
 <approved hash="110,2,563.88,768.35,DP,DM,,,,"/>
 <approved hash="110,4,101.6,53.34,ADC1/2_CH14,PD8,,,,"/>
 <approved hash="110,4,101.6,53.34,ADC1/2_CH14,PD8,,,,"/>
-<approved hash="110,4,62.23,68.58,ADC3_IN9,DAC_E,,,,"/>
-<approved hash="110,4,62.23,68.58,ADC3_IN9,DAC_E,,,,"/>
+<approved hash="110,4,62.23,68.58,ADC3_CH9,DAC_E,,,,"/>
+<approved hash="110,4,62.23,68.58,ADC3_CH9,DAC_E,,,,"/>
 <approved hash="113,3,216.004,279.296,FRAME4,,,,,"/>
 <approved hash="113,1,294.64,14.0745,TP5,,,,,"/>
 <approved hash="113,1,302.26,14.0745,TP6,,,,,"/>
@@ -23464,7 +23517,7 @@ Option</text>
 <approved hash="113,1,332.74,13.3694,TP10,,,,,"/>
 <approved hash="113,1,77.47,506.061,TP16,,,,,"/>
 <approved hash="113,2,600.71,800.701,TP19,,,,,"/>
-<approved hash="113,2,459.19,785.245,TP20,,,,,"/>
+<approved hash="113,2,437.6,785.245,TP20,,,,,"/>
 <approved hash="113,2,555.71,760.48,TP22,,,,,"/>
 <approved hash="113,2,557.53,753.779,TP23,,,,,"/>
 <approved hash="113,2,758.19,785.461,TP24,,,,,"/>
@@ -23477,10 +23530,6 @@ Option</text>
 <approved hash="113,2,370.171,529.59,TP27,,,,,"/>
 <approved hash="113,2,217.17,565.819,TP37,,,,,"/>
 <approved hash="113,2,217.17,582.261,TP38,,,,,"/>
-<approved hash="113,3,371.39,383.819,TP42,,,,,"/>
-<approved hash="113,3,371.39,368.021,TP43,,,,,"/>
-<approved hash="113,3,377.74,373.101,TP44,,,,,"/>
-<approved hash="113,3,377.74,378.739,TP45,,,,,"/>
 <approved hash="113,2,236.22,451.519,TP46,,,,,"/>
 <approved hash="113,2,236.22,462.881,TP47,,,,,"/>
 <approved hash="113,2,419.701,612.14,TP48,,,,,"/>
@@ -23490,44 +23539,24 @@ Option</text>
 <approved hash="113,2,197.57,482.879,TP66,,,,,"/>
 <approved hash="113,2,197.57,477.799,TP67,,,,,"/>
 <approved hash="113,2,726.44,658.529,TP72,,,,,"/>
-<approved hash="113,2,788.67,674.971,TP73,,,,,"/>
-<approved hash="113,2,788.67,655.989,TP74,,,,,"/>
-<approved hash="113,3,127,498.441,TP76,,,,,"/>
 <approved hash="113,3,71.12,500.981,TP77,,,,,"/>
-<approved hash="113,3,128.27,465.421,TP78,,,,,"/>
 <approved hash="113,3,71.12,467.961,TP79,,,,,"/>
-<approved hash="113,3,129.54,432.401,TP80,,,,,"/>
 <approved hash="113,3,71.12,434.941,TP81,,,,,"/>
-<approved hash="113,3,129.54,399.381,TP82,,,,,"/>
 <approved hash="113,3,71.12,401.921,TP83,,,,,"/>
-<approved hash="113,3,129.54,366.361,TP84,,,,,"/>
 <approved hash="113,3,71.12,368.901,TP85,,,,,"/>
 <approved hash="113,3,71.12,335.881,TP86,,,,,"/>
-<approved hash="113,3,129.54,333.341,TP87,,,,,"/>
-<approved hash="113,3,129.54,300.321,TP88,,,,,"/>
 <approved hash="113,3,71.12,302.861,TP89,,,,,"/>
 <approved hash="113,3,71.12,269.841,TP90,,,,,"/>
-<approved hash="113,3,129.54,267.301,TP91,,,,,"/>
-<approved hash="113,3,129.54,231.741,TP92,,,,,"/>
 <approved hash="113,3,71.12,234.281,TP93,,,,,"/>
 <approved hash="113,3,71.12,201.261,TP94,,,,,"/>
-<approved hash="113,3,129.54,198.721,TP95,,,,,"/>
-<approved hash="113,3,129.54,165.701,TP96,,,,,"/>
 <approved hash="113,3,71.12,168.241,TP97,,,,,"/>
 <approved hash="113,3,71.12,135.221,TP98,,,,,"/>
-<approved hash="113,3,129.54,132.681,TP99,,,,,"/>
-<approved hash="113,3,129.54,100.366,TP100,,,,,"/>
 <approved hash="113,3,71.12,102.906,TP101,,,,,"/>
 <approved hash="113,3,71.12,69.8858,TP102,,,,,"/>
-<approved hash="113,3,129.54,67.3458,TP103,,,,,"/>
-<approved hash="113,3,129.54,34.3258,TP104,,,,,"/>
 <approved hash="113,3,71.12,36.8658,TP105,,,,,"/>
 <approved hash="113,3,331.47,461.046,TP106,,,,,"/>
-<approved hash="113,3,356.87,450.814,TP107,,,,,"/>
 <approved hash="113,2,524.607,808.391,TP109,,,,,"/>
 <approved hash="113,2,547.406,784.86,TP108,,,,,"/>
-<approved hash="113,2,168.19,769.899,TP61,,,,,"/>
-<approved hash="113,2,170.73,764.819,TP62,,,,,"/>
 <approved hash="113,2,558.8,431.8,FRAME1,,,,,"/>
 <approved hash="113,2,451.451,236.22,TP63,,,,,"/>
 <approved hash="113,2,481.931,241.3,TP70,,,,,"/>
@@ -23542,14 +23571,6 @@ Option</text>
 <approved hash="113,2,248.905,35.8394,TP118,,,,,"/>
 <approved hash="113,2,248.905,30.7594,TP119,,,,,"/>
 <approved hash="113,2,248.905,25.6794,TP120,,,,,"/>
-<approved hash="113,2,201.93,128.306,TP121,,,,,"/>
-<approved hash="113,2,207.01,133.386,TP122,,,,,"/>
-<approved hash="113,2,213.36,138.466,TP123,,,,,"/>
-<approved hash="113,2,219.71,143.546,TP124,,,,,"/>
-<approved hash="113,2,194.31,257.846,TP125,,,,,"/>
-<approved hash="113,2,198.12,262.926,TP126,,,,,"/>
-<approved hash="113,2,203.2,268.006,TP127,,,,,"/>
-<approved hash="113,2,207.01,273.086,TP128,,,,,"/>
 <approved hash="113,1,296.56,438.429,TP130,,,,,"/>
 <approved hash="113,1,453.426,392.43,TP132,,,,,"/>
 <approved hash="113,1,62.2215,458.47,SG5,,,,,"/>
@@ -23562,11 +23583,9 @@ Option</text>
 <approved hash="113,1,77.47,467.961,TP11,,,,,"/>
 <approved hash="113,1,77.47,422.241,TP12,,,,,"/>
 <approved hash="113,1,127,467.961,TP17,,,,,"/>
-<approved hash="113,1,137.16,467.961,TP18,,,,,"/>
 <approved hash="113,1,286.23,321.031,TP1,,,,,"/>
 <approved hash="113,1,457.2,429.296,TP137,,,,,"/>
 <approved hash="113,1,584.2,328.966,TP129,,,,,"/>
-<approved hash="113,1,359.41,337.856,TP136,,,,,"/>
 <approved hash="113,1,652.217,215.621,TP2,,,,,"/>
 <approved hash="113,1,726.44,234.986,TP139,,,,,"/>
 <approved hash="113,1,24.3671,118.241,JP1,,,,,"/>
@@ -23576,6 +23595,12 @@ Option</text>
 <approved hash="113,1,652.852,308.331,TP35,,,,,"/>
 <approved hash="113,1,726.44,328.261,TP50,,,,,"/>
 <approved hash="113,1,431.8,279.296,FRAME5,,,,,"/>
+<approved hash="113,1,392.43,428.591,TP76,,,,,"/>
+<approved hash="113,1,390.491,443.23,TP78,,,,,"/>
+<approved hash="113,1,387.35,467.961,TP80,,,,,"/>
+<approved hash="113,1,331.47,318.169,TP82,,,,,"/>
+<approved hash="113,1,340.36,13.3694,TP84,,,,,"/>
+<approved hash="113,2,161.891,617.22,TP18,,,,,"/>
 </errors>
 </schematic>
 </drawing>
