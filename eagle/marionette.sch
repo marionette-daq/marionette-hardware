@@ -6539,6 +6539,8 @@ Approx 12x12 mm</description>
 <rectangle x1="-0.15" y1="-0.5" x2="0.15" y2="-0.2" layer="51"/>
 <rectangle x1="0.2" y1="0.2" x2="0.5" y2="0.5" layer="51"/>
 <rectangle x1="-0.5" y1="0.2" x2="-0.2" y2="0.5" layer="51"/>
+<text x="2" y="2" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="2" y="1" size="0.85" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -10677,6 +10679,7 @@ Source part as a 100mil 2 x 3 header, then snip off the unneeded pins with side 
 <text x="0.8" y="0.6" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <circle x="0" y="0" radius="0.6" width="0.15" layer="21"/>
 <circle x="0" y="0" radius="0.6" width="0.15" layer="22"/>
+<text x="0.8" y="0.6" size="0.85" layer="26" font="vector" ratio="15">&gt;NAME</text>
 </package>
 <package name="PAD+GND_VIA_0.25MM">
 <pad name="TP" x="0" y="0" drill="0.25" thermals="no"/>
@@ -13164,7 +13167,10 @@ Datasheet: http://www.ti.com/lit/ds/symlink/dac124s085.pdf</description>
 <wire x1="5.625" y1="-1.85" x2="1.175" y2="-1.85" width="0.127" layer="21"/>
 <text x="5.9" y="0.7" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <text x="5.9" y="-0.9" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-3.3" y="-3.3" size="1.27" layer="21" font="vector" ratio="20">1</text>
+<wire x1="-3.2" y1="0" x2="-1.9" y2="0" width="0.2" layer="21"/>
+<wire x1="-1.9" y1="0" x2="-1.9" y2="-1.3" width="0.2" layer="21"/>
+<wire x1="-1.9" y1="-1.3" x2="-3.2" y2="-1.3" width="0.2" layer="21"/>
+<wire x1="-3.2" y1="-1.3" x2="-3.2" y2="0" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -14121,7 +14127,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP1" library="apdm" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="TP4" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP39" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
-<part name="TP41" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP133" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP134" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP135" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
@@ -14362,7 +14367,6 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP56" library="dock_v2" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 <part name="TP57" library="dock_v2" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 <part name="TP58" library="dock_v2" deviceset="PAD+VIA_GND_0.6MM" device=""/>
-<part name="TP59" library="dock_v2" deviceset="PAD+VIA_GND_0.25MM" device=""/>
 <part name="TP60" library="dock_v2" deviceset="PAD+VIA_GND_0.25MM" device=""/>
 <part name="TP68" library="dock_v2" deviceset="PAD+VIA_GND_0.25MM" device=""/>
 <part name="TP69" library="dock_v2" deviceset="PAD+VIA_GND_0.25MM" device=""/>
@@ -14413,6 +14417,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP18" library="dock_v2" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP32" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="TP33" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
+<part name="TP34" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14861,9 +14866,6 @@ circuit.</text>
 </instance>
 <instance part="TP4" gate="G1" x="369.57" y="334.01"/>
 <instance part="TP39" gate="G1" x="382.27" y="334.01"/>
-<instance part="TP41" gate="G1" x="563.88" y="325.12" smashed="yes">
-<attribute name="NAME" x="561.34" y="327.66" size="1.778" layer="95"/>
-</instance>
 <instance part="TP133" gate="G1" x="481.33" y="425.45" smashed="yes">
 <attribute name="NAME" x="482.6" y="427.99" size="1.778" layer="95" ratio="15" rot="R90"/>
 </instance>
@@ -15073,7 +15075,6 @@ circuit.</text>
 <instance part="TP58" gate="G1" x="389.89" y="16.51" smashed="yes">
 <attribute name="NAME" x="387.35" y="19.05" size="1.778" layer="95"/>
 </instance>
-<instance part="TP59" gate="G1" x="400.05" y="16.51"/>
 <instance part="TP60" gate="G1" x="411.48" y="16.51"/>
 <instance part="TP68" gate="G1" x="421.64" y="16.51"/>
 <instance part="TP69" gate="G1" x="433.07" y="16.51"/>
@@ -15130,6 +15131,7 @@ circuit.</text>
 <instance part="TP33" gate="TP" x="471.17" y="425.45" smashed="yes">
 <attribute name="NAME" x="472.44" y="427.99" size="1.778" layer="95" ratio="15" rot="R90"/>
 </instance>
+<instance part="TP34" gate="G1" x="563.88" y="325.12"/>
 </instances>
 <busses>
 </busses>
@@ -15265,12 +15267,9 @@ circuit.</text>
 <pinref part="TP58" gate="G1" pin="TP"/>
 <wire x1="379.73" y1="16.51" x2="389.89" y2="16.51" width="0.1524" layer="91"/>
 <junction x="379.73" y="16.51"/>
-<pinref part="TP59" gate="G1" pin="TP"/>
-<wire x1="389.89" y1="16.51" x2="400.05" y2="16.51" width="0.1524" layer="91"/>
 <junction x="389.89" y="16.51"/>
 <pinref part="TP60" gate="G1" pin="TP"/>
-<wire x1="400.05" y1="16.51" x2="411.48" y2="16.51" width="0.1524" layer="91"/>
-<junction x="400.05" y="16.51"/>
+<wire x1="389.89" y1="16.51" x2="411.48" y2="16.51" width="0.1524" layer="91"/>
 <pinref part="TP68" gate="G1" pin="TP"/>
 <wire x1="411.48" y1="16.51" x2="421.64" y2="16.51" width="0.1524" layer="91"/>
 <junction x="411.48" y="16.51"/>
@@ -15645,18 +15644,18 @@ circuit.</text>
 <pinref part="C48" gate="CE" pin="2"/>
 <wire x1="563.88" y1="325.12" x2="576.58" y2="325.12" width="0.1524" layer="91"/>
 <wire x1="576.58" y1="325.12" x2="576.58" y2="322.58" width="0.1524" layer="91"/>
-<junction x="563.88" y="325.12"/>
 <pinref part="C88" gate="CE" pin="1"/>
 <wire x1="576.58" y1="325.12" x2="584.2" y2="325.12" width="0.1524" layer="91"/>
 <wire x1="584.2" y1="325.12" x2="589.28" y2="325.12" width="0.1524" layer="91"/>
 <wire x1="589.28" y1="325.12" x2="589.28" y2="322.58" width="0.1524" layer="91"/>
 <junction x="576.58" y="325.12"/>
-<pinref part="TP41" gate="G1" pin="TP"/>
 <pinref part="TP129" gate="TP" pin="P"/>
 <junction x="584.2" y="325.12"/>
 <pinref part="U40" gate="G1" pin="VOUT"/>
 <pinref part="V3.3A" gate="G1" pin="V3.3A"/>
 <junction x="589.28" y="325.12"/>
+<pinref part="TP34" gate="G1" pin="TP"/>
+<junction x="563.88" y="325.12"/>
 </segment>
 </net>
 <net name="VREF+" class="0">
