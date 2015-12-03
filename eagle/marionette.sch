@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -14428,6 +14428,7 @@ MC4558, dual op amp, Vin = +-2V to 20V, GBW = 5.5MHz, Pkg: SOIC-8, Mfg.: ST, Mfg
 <part name="TP43" library="dock_v2" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 <part name="TP44" library="dock_v2" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 <part name="TP45" library="dock_v2" deviceset="PAD+VIA_0.6MM" device=""/>
+<part name="R104" library="rcl_custom" deviceset="R-US_" device="0603-B" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -17085,6 +17086,10 @@ Cpar is to low pass filter square wave</text>
 <attribute name="VALUE" x="482.346" y="802.259" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="TP18" gate="TP" x="161.29" y="617.22"/>
+<instance part="R104" gate="R" x="571.5" y="767.08" smashed="yes">
+<attribute name="NAME" x="570.23" y="763.4986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="572.77" y="761.238" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -19358,11 +19363,9 @@ Cpar is to low pass filter square wave</text>
 </net>
 <net name="DP" class="0">
 <segment>
-<pinref part="U14" gate="U" pin="DP/DM"/>
-<wire x1="541.02" y1="769.62" x2="562.61" y2="769.62" width="0.1524" layer="91"/>
-<wire x1="562.61" y1="769.62" x2="565.15" y2="767.08" width="0.1524" layer="91"/>
 <pinref part="J22" gate="G$1" pin="D+"/>
-<wire x1="565.15" y1="767.08" x2="615.95" y2="767.08" width="0.1524" layer="91"/>
+<pinref part="R104" gate="R" pin="2"/>
+<wire x1="576.58" y1="767.08" x2="615.95" y2="767.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAN_SHDN" class="0">
@@ -19588,6 +19591,15 @@ Cpar is to low pass filter square wave</text>
 <wire x1="387.35" y1="599.44" x2="397.51" y2="599.44" width="0.1524" layer="91"/>
 <wire x1="397.51" y1="599.44" x2="397.51" y2="596.9" width="0.1524" layer="91"/>
 <junction x="387.35" y="599.44"/>
+</segment>
+</net>
+<net name="DP_1" class="0">
+<segment>
+<pinref part="R104" gate="R" pin="1"/>
+<wire x1="565.15" y1="767.08" x2="566.42" y2="767.08" width="0.1524" layer="91"/>
+<wire x1="562.61" y1="769.62" x2="565.15" y2="767.08" width="0.1524" layer="91"/>
+<pinref part="U14" gate="U" pin="DP/DM"/>
+<wire x1="541.02" y1="769.62" x2="562.61" y2="769.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
