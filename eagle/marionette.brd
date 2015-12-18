@@ -3942,7 +3942,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="90.31" y="52.34" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="91.56" y="68.41" size="0.85" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="C99" library="rcl_custom" package="C1210" value="10uF" x="84.71" y="64.84" locked="yes" smashed="yes" rot="R180">
+<element name="C99" library="rcl_custom" package="C1210" value="10u" x="84.71" y="64.84" locked="yes" smashed="yes" rot="R180">
 <attribute name="V_RATING" value="35V" x="84.71" y="64.84" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="87.411" y="65.807" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="86.107" y="67.261" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
@@ -3953,17 +3953,17 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="85.11" y="63.84" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="84.31" y="62.24" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C101" library="rcl_custom" package="C1210" value="10uF" x="84.71" y="67.84" locked="yes" smashed="yes" rot="R180">
+<element name="C101" library="rcl_custom" package="C1210" value="10u" x="84.71" y="67.84" locked="yes" smashed="yes" rot="R180">
 <attribute name="V_RATING" value="35V" x="84.71" y="67.84" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="89.189" y="66.093" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="86.107" y="70.261" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C102" library="rcl_custom" package="C1210" value="10uF" x="84.71" y="70.84" locked="yes" smashed="yes" rot="R180">
+<element name="C102" library="rcl_custom" package="C1210" value="10u" x="84.71" y="70.84" locked="yes" smashed="yes" rot="R180">
 <attribute name="V_RATING" value="35V" x="84.71" y="70.84" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="88.189" y="69.293" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="86.107" y="73.261" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C103" library="rcl_custom" package="C1210" value="10uF" x="84.71" y="73.84" locked="yes" smashed="yes" rot="R180">
+<element name="C103" library="rcl_custom" package="C1210" value="10u" x="84.71" y="73.84" locked="yes" smashed="yes" rot="R180">
 <attribute name="V_RATING" value="35V" x="84.71" y="73.84" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="86.507" y="76.689" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="86.107" y="76.261" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
@@ -4020,7 +4020,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="104.5" y="84.1" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="103.7" y="82.5" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C110" library="rcl_custom" package=".0402-B" value="470pF" x="103.7" y="81.3" locked="yes" smashed="yes">
+<element name="C110" library="rcl_custom" package=".0402-B" value="470p" x="103.7" y="81.3" locked="yes" smashed="yes">
 <attribute name="V_RATING" value="25V" x="103.7" y="81.3" size="0.5" layer="27" display="off"/>
 <attribute name="NAME" x="105.9" y="79.9" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="102.9" y="79.7" size="0.8" layer="27" font="vector" ratio="15"/>
@@ -4032,17 +4032,17 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="104" y="66.7" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="105.6" y="65.9" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C112" library="rcl_custom" package="C1210" value="10uF" x="109.8" y="65.9" locked="yes" smashed="yes" rot="R270">
+<element name="C112" library="rcl_custom" package="C1210" value="10u" x="109.8" y="65.9" locked="yes" smashed="yes" rot="R270">
 <attribute name="V_RATING" value="10V" x="109.8" y="65.9" size="0.5" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="109.751" y="63.197" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="107.379" y="67.297" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="C113" library="rcl_custom" package="C1210" value="10uF" x="112.9" y="65.9" locked="yes" smashed="yes" rot="R270">
+<element name="C113" library="rcl_custom" package="C1210" value="10u" x="112.9" y="65.9" locked="yes" smashed="yes" rot="R270">
 <attribute name="V_RATING" value="10V" x="112.9" y="65.9" size="0.5" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="111.903" y="69.151" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="110.479" y="67.297" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="C114" library="rcl_custom" package="C1210" value="10uF" x="116.3" y="65.9" locked="yes" smashed="yes" rot="R270">
+<element name="C114" library="rcl_custom" package="C1210" value="10u" x="116.3" y="65.9" locked="yes" smashed="yes" rot="R270">
 <attribute name="V_RATING" value="10V" x="116.3" y="65.9" size="0.5" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="116.203" y="69.251" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="113.879" y="67.297" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
@@ -4954,7 +4954,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="29.45" y="63.7" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="30.25" y="65.3" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C152" library="rcl_custom" package=".0402-B" value="100nF" x="28.2" y="65.3" locked="yes" rot="R180">
+<element name="C152" library="rcl_custom" package=".0402-B" value="100n" x="28.2" y="65.3" locked="yes" rot="R180">
 <attribute name="V_RATING" value="10V" x="28.2" y="65.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R106" library="rcl_custom" package=".0402-B" value="np" x="62.5" y="17.6" locked="yes" smashed="yes">

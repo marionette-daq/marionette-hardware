@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -13702,19 +13702,19 @@ Mfg.: Rohm, Package 0404 (1mm x 1mm), Mfg. Part No.: SMLP34RGB2W3, Digikey Part 
 <part name="GND30" library="GROUND" deviceset="GND" device=""/>
 <part name="GND51" library="GROUND" deviceset="GND" device=""/>
 <part name="L1" library="marionette" deviceset="INDUCTOR_COUPLED" device="_SRF1260-4R7Y" value="SRF1260-4R7Y"/>
-<part name="C99" library="rcl_custom" deviceset="C-EU" device="C1210" value="10uF">
+<part name="C99" library="rcl_custom" deviceset="C-EU" device="C1210" value="10u">
 <attribute name="V_RATING" value="35V"/>
 </part>
 <part name="C100" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
 <attribute name="V_RATING" value="35V"/>
 </part>
-<part name="C101" library="rcl_custom" deviceset="C-EU" device="C1210" value="10uF">
+<part name="C101" library="rcl_custom" deviceset="C-EU" device="C1210" value="10u">
 <attribute name="V_RATING" value="35V"/>
 </part>
-<part name="C102" library="rcl_custom" deviceset="C-EU" device="C1210" value="10uF">
+<part name="C102" library="rcl_custom" deviceset="C-EU" device="C1210" value="10u">
 <attribute name="V_RATING" value="35V"/>
 </part>
-<part name="C103" library="rcl_custom" deviceset="C-EU" device="C1210" value="10uF">
+<part name="C103" library="rcl_custom" deviceset="C-EU" device="C1210" value="10u">
 <attribute name="V_RATING" value="35V"/>
 </part>
 <part name="D4" library="marionette" deviceset="DIODE_SCHOTTKY-*" device="_B130LB" value="B130LB"/>
@@ -13740,19 +13740,19 @@ Mfg.: Rohm, Package 0404 (1mm x 1mm), Mfg. Part No.: SMLP34RGB2W3, Digikey Part 
 <part name="R38" library="rcl_custom" deviceset="R-US_" device="0402-B" value="86.6k"/>
 <part name="R68" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="R69" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1.6k"/>
-<part name="C110" library="rcl_custom" deviceset="C-EU" device="0402-B" value="470pF">
+<part name="C110" library="rcl_custom" deviceset="C-EU" device="0402-B" value="470p">
 <attribute name="V_RATING" value="25V"/>
 </part>
 <part name="C111" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="C112" library="rcl_custom" deviceset="C-EU" device="C1210" value="10uF">
+<part name="C112" library="rcl_custom" deviceset="C-EU" device="C1210" value="10u">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="C113" library="rcl_custom" deviceset="C-EU" device="C1210" value="10uF">
+<part name="C113" library="rcl_custom" deviceset="C-EU" device="C1210" value="10u">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="C114" library="rcl_custom" deviceset="C-EU" device="C1210" value="10uF">
+<part name="C114" library="rcl_custom" deviceset="C-EU" device="C1210" value="10u">
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="C115" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np">
@@ -14157,7 +14157,7 @@ Mfg.: Rohm, Package 0404 (1mm x 1mm), Mfg. Part No.: SMLP34RGB2W3, Digikey Part 
 <part name="TP59" library="marionette" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 <part name="GND98" library="GROUND" deviceset="GND" device=""/>
 <part name="R105" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
-<part name="C152" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100nF">
+<part name="C152" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND99" library="GROUND" deviceset="GND" device=""/>
