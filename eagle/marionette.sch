@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -13336,7 +13336,7 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <part name="C26" library="rcl_custom" deviceset="C-EU" device="0805-B" value="4.7u">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="R1" library="rcl_custom" deviceset="R-US_" device="0402-B" value="8.06k"/>
+<part name="R201" library="rcl_custom" deviceset="R-US_" device="0402-B" value="8.06k"/>
 <part name="C29" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10n">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13346,8 +13346,8 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <part name="C30" library="rcl_custom" deviceset="C-EU" device="0402-B" value="11p"/>
 <part name="GND3" library="GROUND" deviceset="GND" device=""/>
 <part name="J22" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
-<part name="R2" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
-<part name="R3" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
+<part name="R202" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
+<part name="R203" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
 <part name="R6" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
 <part name="R7" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
 <part name="GND11" library="GROUND" deviceset="GND" device=""/>
@@ -13763,7 +13763,7 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <part name="TP118" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP119" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP120" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
-<part name="R4" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1Meg"/>
+<part name="R204" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1Meg"/>
 <part name="C28" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u">
 <attribute name="V_RATING" value="10V"/>
 </part>
@@ -13864,10 +13864,10 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <part name="C114" library="rcl_custom" deviceset="C-EU" device="C1210" value="10u">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="C115" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np">
+<part name="C115" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100p">
 <attribute name="V_RATING" value="25V"/>
 </part>
-<part name="C116" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np">
+<part name="C116" library="rcl_custom" deviceset="C-EU" device="0402-B" value="2.2n">
 <attribute name="V_RATING" value="25V"/>
 </part>
 <part name="C117" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np">
@@ -14144,10 +14144,10 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <part name="SW1" library="marionette" deviceset="SW-MOM-TACTILE" device="-B3F-1000"/>
 <part name="SW2" library="marionette" deviceset="SW-MOM-TACTILE" device="-B3F-1000"/>
 <part name="J5" library="marionette" deviceset="CON_COAX_PWR_PJ-047AH" device="-NO_MILL"/>
-<part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B" value="np"/>
+<part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B" value="240k"/>
 <part name="R96" library="rcl_custom" deviceset="R-US_" device="0402-B" value="90.9k"/>
 <part name="R97" library="rcl_custom" deviceset="R-US_" device="0402-B" value="15k"/>
-<part name="R98" library="rcl_custom" deviceset="R-US_" device="0402-B" value="np"/>
+<part name="R98" library="rcl_custom" deviceset="R-US_" device="0402-B" value="100k"/>
 <part name="C144" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100p">
 <attribute name="V_RATING" value="50V"/>
 </part>
@@ -16146,7 +16146,7 @@ The trace capacitance is about 1pF.
  Therefore choose parallel caps of 11pF.</text>
 </plain>
 <instances>
-<instance part="R1" gate="R" x="523.24" y="736.6" rot="R270"/>
+<instance part="R201" gate="R" x="523.24" y="736.6" rot="R270"/>
 <instance part="C29" gate="CE" x="427.99" y="803.91" smashed="yes">
 <attribute name="V_RATING" x="429.26" y="798.83" size="1.778" layer="96"/>
 <attribute name="NAME" x="429.514" y="804.291" size="1.778" layer="95"/>
@@ -16332,8 +16332,8 @@ The trace capacitance is about 1pF.
 <instance part="GND22" gate="1" x="834.39" y="570.23"/>
 <instance part="FRAME1" gate="G$1" x="558.8" y="50.8"/>
 <instance part="FRAME1" gate="G$2" x="1010.92" y="0"/>
-<instance part="R2" gate="R" x="213.36" y="466.09" rot="R90"/>
-<instance part="R3" gate="R" x="226.06" y="466.09" rot="R90"/>
+<instance part="R202" gate="R" x="213.36" y="466.09" rot="R90"/>
+<instance part="R203" gate="R" x="226.06" y="466.09" rot="R90"/>
 <instance part="C34" gate="CE" x="251.46" y="350.52" smashed="yes" rot="R90">
 <attribute name="V_RATING" x="247.65" y="345.44" size="1.778" layer="96"/>
 <attribute name="NAME" x="246.634" y="348.361" size="1.778" layer="95"/>
@@ -16503,7 +16503,7 @@ The trace capacitance is about 1pF.
 <attribute name="NAME" x="246.507" y="27.2542" size="1.778" layer="95"/>
 <attribute name="VALUE" x="247.142" y="26.543" size="0.762" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="R" x="646.43" y="742.95" smashed="yes" rot="R270">
+<instance part="R204" gate="R" x="646.43" y="742.95" smashed="yes" rot="R270">
 <attribute name="NAME" x="644.9314" y="736.6" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="643.128" y="749.3" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -17176,7 +17176,7 @@ The trace capacitance is about 1pF.
 <wire x1="641.35" y1="762" x2="641.35" y2="735.33" width="0.1524" layer="91"/>
 <wire x1="641.35" y1="735.33" x2="646.43" y2="735.33" width="0.1524" layer="91"/>
 <junction x="652.78" y="735.33"/>
-<pinref part="R4" gate="R" pin="2"/>
+<pinref part="R204" gate="R" pin="2"/>
 <wire x1="646.43" y1="735.33" x2="652.78" y2="735.33" width="0.1524" layer="91"/>
 <wire x1="646.43" y1="735.33" x2="646.43" y2="737.87" width="0.1524" layer="91"/>
 <junction x="646.43" y="735.33"/>
@@ -17196,7 +17196,7 @@ The trace capacitance is about 1pF.
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R1" gate="R" pin="2"/>
+<pinref part="R201" gate="R" pin="2"/>
 <wire x1="523.24" y1="731.52" x2="523.24" y2="730.25" width="0.1524" layer="91"/>
 <wire x1="523.24" y1="730.25" x2="525.78" y2="730.25" width="0.1524" layer="91"/>
 <pinref part="U14" gate="U" pin="GND"/>
@@ -18111,7 +18111,7 @@ The trace capacitance is about 1pF.
 <wire x1="662.94" y1="749.3" x2="652.78" y2="749.3" width="0.1524" layer="91"/>
 <wire x1="652.78" y1="749.3" x2="652.78" y2="746.76" width="0.1524" layer="91"/>
 <junction x="652.78" y="749.3"/>
-<pinref part="R4" gate="R" pin="1"/>
+<pinref part="R204" gate="R" pin="1"/>
 <wire x1="646.43" y1="748.03" x2="646.43" y2="749.3" width="0.1524" layer="91"/>
 <wire x1="646.43" y1="749.3" x2="652.78" y2="749.3" width="0.1524" layer="91"/>
 <pinref part="SG3" gate="SG" pin="1"/>
@@ -18149,7 +18149,7 @@ The trace capacitance is about 1pF.
 <net name="RBIAS" class="0">
 <segment>
 <pinref part="U14" gate="U" pin="RBIAS"/>
-<pinref part="R1" gate="R" pin="1"/>
+<pinref part="R201" gate="R" pin="1"/>
 <wire x1="523.24" y1="744.22" x2="523.24" y2="742.95" width="0.1524" layer="91"/>
 <pinref part="TP21" gate="TP" pin="P"/>
 <wire x1="523.24" y1="742.95" x2="523.24" y2="741.68" width="0.1524" layer="91"/>
@@ -18540,7 +18540,7 @@ The trace capacitance is about 1pF.
 <segment>
 <wire x1="252.73" y1="459.74" x2="236.22" y2="459.74" width="0.1524" layer="91"/>
 <label x="132.08" y="459.74" size="1.778" layer="95" font="vector"/>
-<pinref part="R2" gate="R" pin="1"/>
+<pinref part="R202" gate="R" pin="1"/>
 <wire x1="236.22" y1="459.74" x2="213.36" y2="459.74" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="459.74" x2="104.14" y2="459.74" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="459.74" x2="213.36" y2="461.01" width="0.1524" layer="91"/>
@@ -18839,7 +18839,7 @@ The trace capacitance is about 1pF.
 <wire x1="226.06" y1="454.66" x2="104.14" y2="454.66" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="454.66" x2="226.06" y2="461.01" width="0.1524" layer="91"/>
 <junction x="226.06" y="454.66"/>
-<pinref part="R3" gate="R" pin="1"/>
+<pinref part="R203" gate="R" pin="1"/>
 <pinref part="U11" gate="G6" pin="PF1"/>
 <pinref part="TP46" gate="TP" pin="P"/>
 <junction x="236.22" y="454.66"/>
@@ -19438,10 +19438,10 @@ The trace capacitance is about 1pF.
 <pinref part="J13" gate="G1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R2" gate="R" pin="2"/>
+<pinref part="R202" gate="R" pin="2"/>
 <wire x1="213.36" y1="471.17" x2="213.36" y2="472.44" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="472.44" x2="226.06" y2="472.44" width="0.1524" layer="91"/>
-<pinref part="R3" gate="R" pin="2"/>
+<pinref part="R203" gate="R" pin="2"/>
 <wire x1="226.06" y1="472.44" x2="226.06" y2="471.17" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="472.44" x2="226.06" y2="473.71" width="0.1524" layer="91"/>
 <junction x="226.06" y="472.44"/>
