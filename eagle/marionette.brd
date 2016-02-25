@@ -2908,12 +2908,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="49.2" y="88" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="V_RATING" value="10V" x="49.2" y="88" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C34" library="rcl_custom" package=".0402-B" value="4.7p/np" x="60.6" y="35.9" locked="yes" smashed="yes" rot="R135">
+<element name="C34" library="rcl_custom" package=".0402-B" value="18p/np" x="60.6" y="35.9" locked="yes" smashed="yes" rot="R135">
 <attribute name="NAME" x="61.696971875" y="33.9761875" size="0.85" layer="25" font="vector" ratio="15" rot="R45"/>
 <attribute name="NAME" x="60.6" y="35.9" size="0.3" layer="33" ratio="15" rot="R135" align="center"/>
 <attribute name="V_RATING" value="10V" x="60.6" y="35.9" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
-<element name="C35" library="rcl_custom" package=".0402-B" value="4.7p/np" x="56.4" y="33.5" locked="yes" smashed="yes" rot="R315">
+<element name="C35" library="rcl_custom" package=".0402-B" value="18p/np" x="56.4" y="33.5" locked="yes" smashed="yes" rot="R315">
 <attribute name="NAME" x="56.4" y="33.5" size="0.3" layer="33" ratio="15" rot="R315" align="center"/>
 <attribute name="V_RATING" value="10V" x="56.4" y="33.5" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
@@ -4213,7 +4213,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="60.89705625" y="31.265684375" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="59.2" y="30.7" size="0.2" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
-<element name="R18" library="rcl_custom" package=".0402-B" value="np/10k" x="55.6" y="32.7" locked="yes" smashed="yes" rot="R135">
+<element name="R18" library="rcl_custom" package=".0402-B" value="np/100k" x="55.6" y="32.7" locked="yes" smashed="yes" rot="R135">
 <attribute name="NAME" x="53.5" y="32.331371875" size="0.85" layer="25" font="vector" ratio="15" rot="R315"/>
 <attribute name="VALUE" x="57.29705625" y="33.265684375" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="55.6" y="32.7" size="0.2" layer="33" ratio="15" rot="R135" align="center"/>
@@ -4355,7 +4355,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="60.7" y="32.9" size="0.85" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="61.6" y="31.7" size="1.27" layer="28" font="vector" ratio="10" rot="MR0"/>
 </element>
-<element name="C6" library="rcl_custom" package=".0402-B" value="np/100n" x="58.4" y="29.9" locked="yes" smashed="yes" rot="R135">
+<element name="C6" library="rcl_custom" package=".0402-B" value="np/np" x="58.4" y="29.9" locked="yes" smashed="yes" rot="R135">
 <attribute name="V_RATING" value="10V" x="58.4" y="29.9" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="NAME" x="58.5" y="28.568628125" size="0.85" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="VALUE" x="60.09705625" y="30.465684375" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>

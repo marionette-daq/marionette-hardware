@@ -6584,19 +6584,19 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 Datasheet:&lt;br&gt;
 http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf</description>
 <gates>
-<gate name="G$1" symbol="MAX3051" x="-2.54" y="2.54"/>
+<gate name="G1" symbol="MAX3051" x="-2.54" y="2.54"/>
 </gates>
 <devices>
 <device name="EKA+T" package="SOT-23-8">
 <connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="RS" pad="8"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="SHDN" pad="5"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="3"/>
+<connect gate="G1" pin="CANH" pad="7"/>
+<connect gate="G1" pin="CANL" pad="6"/>
+<connect gate="G1" pin="GND" pad="2"/>
+<connect gate="G1" pin="RS" pad="8"/>
+<connect gate="G1" pin="RXD" pad="4"/>
+<connect gate="G1" pin="SHDN" pad="5"/>
+<connect gate="G1" pin="TXD" pad="1"/>
+<connect gate="G1" pin="VCC" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6604,14 +6604,14 @@ http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf</description>
 </device>
 <device name="ESA+" package="SO8">
 <connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="RS" pad="8"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="SHDN" pad="5"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="3"/>
+<connect gate="G1" pin="CANH" pad="7"/>
+<connect gate="G1" pin="CANL" pad="6"/>
+<connect gate="G1" pin="GND" pad="2"/>
+<connect gate="G1" pin="RS" pad="8"/>
+<connect gate="G1" pin="RXD" pad="4"/>
+<connect gate="G1" pin="SHDN" pad="5"/>
+<connect gate="G1" pin="TXD" pad="1"/>
+<connect gate="G1" pin="VCC" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7536,7 +7536,8 @@ Digikey Part No.:  296-20925-1-ND</description>
 <devicesets>
 <deviceset name="USB_PHY-SMSC-USB3320" prefix="U" uservalue="yes">
 <description>SMSC USB3320
-&lt;br&gt;High Speed USB 2.0 PHY, ULPI Transceiver.</description>
+&lt;br&gt;High Speed USB 2.0 PHY, ULPI Transceiver.&lt;br&gt;
+mfg.: SMSC, Package: QFN32, Digikey Part No.: USB3320C-EZK-CT-ND</description>
 <gates>
 <gate name="U" symbol="SMSC-USB3320" x="0" y="0"/>
 </gates>
@@ -8463,7 +8464,8 @@ Digikey Part No.:  296-20925-1-ND</description>
 </symbols>
 <devicesets>
 <deviceset name="STM32F427" prefix="U">
-<description>&lt;b&gt;ARM Cortex-M4 32b MCU+FPU &lt;br&gt;</description>
+<description>&lt;b&gt;ARM Cortex-M4 32b MCU+FPU &lt;br&gt;&lt;/b&gt;
+Mfg.: STM, Mfg. Part No.: STM32F427IIT6, Pkg.: LQFP176, Digikey Part No.: 497-14051-ND</description>
 <gates>
 <gate name="CTRL" symbol="STM_RST" x="228.6" y="0"/>
 <gate name="G1" symbol="PORT_A" x="-121.92" y="99.06"/>
@@ -8905,16 +8907,16 @@ package type OT</description>
 Data sheet:&lt;br&gt;
 http://www.ti.com/lit/ds/symlink/lm3671.pdf</description>
 <gates>
-<gate name="G$1" symbol="LM3671" x="-2.54" y="-7.62"/>
+<gate name="G1" symbol="LM3671" x="-2.54" y="-7.62"/>
 </gates>
 <devices>
 <device name="" package="SOT23-5L">
 <connects>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="FB" pad="4"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="SW" pad="5"/>
-<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G1" pin="EN" pad="3"/>
+<connect gate="G1" pin="FB" pad="4"/>
+<connect gate="G1" pin="GND" pad="2"/>
+<connect gate="G1" pin="SW" pad="5"/>
+<connect gate="G1" pin="VIN" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13370,10 +13372,10 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <part name="R15" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="D3" library="marionette" deviceset="DIODE_SCHOTTKY-*" device="-BAS40-00_SOT23-3" value="BAS40-00"/>
 <part name="R19" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
-<part name="C34" library="rcl_custom" deviceset="C-EU" device="0402-B" value="4.7p/np">
+<part name="C34" library="rcl_custom" deviceset="C-EU" device="0402-B" value="18p/np">
 <attribute name="V_RATING" value="10V"/>
 </part>
-<part name="C35" library="rcl_custom" deviceset="C-EU" device="0402-B" value="4.7p/np">
+<part name="C35" library="rcl_custom" deviceset="C-EU" device="0402-B" value="18p/np">
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND13" library="GROUND" deviceset="GND" device=""/>
@@ -13945,7 +13947,7 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <part name="GND69" library="GROUND" deviceset="GND" device=""/>
 <part name="V6" library="supply" deviceset="V3.3A" device=""/>
 <part name="R17" library="rcl_custom" deviceset="R-US_" device="0402-B" value="np/0"/>
-<part name="R18" library="rcl_custom" deviceset="R-US_" device="0402-B" value="np/10k"/>
+<part name="R18" library="rcl_custom" deviceset="R-US_" device="0402-B" value="np/100k"/>
 <part name="GND80" library="GROUND" deviceset="GND" device=""/>
 <part name="C90" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np/100n">
 <attribute name="V_RATING" value="10V"/>
@@ -14009,7 +14011,7 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <part name="R77" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="R78" library="rcl_custom" deviceset="R-US_" device="0402-B" value="47k"/>
 <part name="TP30" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
-<part name="C6" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np/100n">
+<part name="C6" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np/np">
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND57" library="GROUND" deviceset="GND" device=""/>
@@ -14577,7 +14579,7 @@ power supply to chip.</text>
 <instance part="GND53" gate="G1" x="397.51" y="308.61"/>
 <instance part="GND55" gate="G1" x="407.67" y="318.77"/>
 <instance part="V4" gate="G1" x="440.69" y="336.55"/>
-<instance part="U17" gate="G$1" x="341.63" y="326.39"/>
+<instance part="U17" gate="G1" x="341.63" y="326.39"/>
 <instance part="S4" gate="G1" x="520.7" y="327.66"/>
 <instance part="R75" gate="R" x="551.18" y="320.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="553.72" y="321.5386" size="1.778" layer="95"/>
@@ -15097,7 +15099,7 @@ power supply to chip.</text>
 <segment>
 <pinref part="GND1" gate="G1" pin="GND"/>
 <wire x1="341.63" y1="308.61" x2="341.63" y2="311.15" width="0.1524" layer="91"/>
-<pinref part="U17" gate="G$1" pin="GND"/>
+<pinref part="U17" gate="G1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C3" gate="CE" pin="1"/>
@@ -15625,7 +15627,7 @@ power supply to chip.</text>
 <segment>
 <pinref part="R72" gate="R" pin="1"/>
 <wire x1="321.31" y1="334.01" x2="328.93" y2="334.01" width="0.1524" layer="91"/>
-<pinref part="U17" gate="G$1" pin="VIN"/>
+<pinref part="U17" gate="G1" pin="VIN"/>
 <pinref part="C2" gate="CE" pin="2"/>
 <wire x1="321.31" y1="334.01" x2="308.61" y2="334.01" width="0.1524" layer="91"/>
 <junction x="321.31" y="334.01"/>
@@ -15667,7 +15669,7 @@ power supply to chip.</text>
 <wire x1="321.31" y1="323.85" x2="328.93" y2="323.85" width="0.1524" layer="91"/>
 <wire x1="318.77" y1="323.85" x2="321.31" y2="323.85" width="0.1524" layer="91"/>
 <junction x="321.31" y="323.85"/>
-<pinref part="U17" gate="G$1" pin="EN"/>
+<pinref part="U17" gate="G1" pin="EN"/>
 <pinref part="TP200" gate="G1" pin="TP"/>
 <pinref part="TP1" gate="TP" pin="P"/>
 <wire x1="321.31" y1="321.31" x2="321.31" y2="323.85" width="0.1524" layer="91"/>
@@ -15677,7 +15679,7 @@ power supply to chip.</text>
 <segment>
 <pinref part="L2" gate="G1" pin="2"/>
 <wire x1="354.33" y1="334.01" x2="359.41" y2="334.01" width="0.1524" layer="91"/>
-<pinref part="U17" gate="G$1" pin="SW"/>
+<pinref part="U17" gate="G1" pin="SW"/>
 </segment>
 </net>
 <net name="LM3671_FB" class="0">
@@ -15695,7 +15697,7 @@ power supply to chip.</text>
 <junction x="382.27" y="321.31"/>
 <pinref part="C3" gate="CE" pin="2"/>
 <wire x1="382.27" y1="321.31" x2="382.27" y2="318.77" width="0.1524" layer="91"/>
-<pinref part="U17" gate="G$1" pin="FB"/>
+<pinref part="U17" gate="G1" pin="FB"/>
 <pinref part="TP82" gate="TP" pin="P"/>
 <junction x="369.57" y="321.31"/>
 </segment>
@@ -16026,11 +16028,12 @@ data sheet</text>
 <text x="889" y="635" size="1.778" layer="97">*RS pulled low for HS operation
  value of RS resistor controls 
  output slope.</text>
-<wire x1="195.58" y1="337.82" x2="195.58" y2="441.96" width="0.254" layer="97" style="shortdash"/>
-<wire x1="195.58" y1="441.96" x2="341.63" y2="441.96" width="0.254" layer="97" style="shortdash"/>
-<wire x1="341.63" y1="441.96" x2="341.63" y2="337.82" width="0.254" layer="97" style="shortdash"/>
+<wire x1="195.58" y1="337.82" x2="195.58" y2="447.04" width="0.254" layer="97" style="shortdash"/>
+<wire x1="195.58" y1="447.04" x2="341.63" y2="447.04" width="0.254" layer="97" style="shortdash"/>
+<wire x1="341.63" y1="447.04" x2="341.63" y2="337.82" width="0.254" layer="97" style="shortdash"/>
 <wire x1="341.63" y1="337.82" x2="195.58" y2="337.82" width="0.254" layer="97" style="shortdash"/>
-<text x="199.39" y="433.07" size="5.08" layer="97">26 MHz XTAL / TCXO (choose one)</text>
+<text x="207.01" y="430.53" size="5.08" layer="97">26 MHz XTAL / TCXO
+(choose one/ see IMPORTANT note)</text>
 <wire x1="821.69" y1="699.77" x2="821.69" y2="631.19" width="0.254" layer="97" style="shortdash"/>
 <wire x1="821.69" y1="631.19" x2="951.23" y2="631.19" width="0.254" layer="97" style="shortdash"/>
 <wire x1="951.23" y1="631.19" x2="951.23" y2="699.77" width="0.254" layer="97" style="shortdash"/>
@@ -16152,6 +16155,16 @@ The trace capacitance is about 1pF.
 tplace layer
 demarcation of pin 1
 Digikey part no. in the device info.</text>
+<text x="279.4" y="345.44" size="1.778" layer="97">The CTX951CT-ND capacitor has a
+ 10pF load capacitance which is an
+ 18pF cap on each side + some trace
+capacitance in series = 10pF.</text>
+<text x="347.98" y="416.56" size="2.54" layer="112">IMPORTANT:
+versions of STM32F427 bootloader before version 9 (v9) will not boot if given an external clock signal 
+(i.e. TCXO).  Need chips made after 30th week of 2014 (datecode 430), with silicon revision 3.  See
+ STM32F40x Errata sheet v6 p35 (DM00037591.pdf) for an outline of how to read date codes
+and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just use a standard crystal
+ (which is driven by the STM OSC_OUT)</text>
 </plain>
 <instances>
 <instance part="R201" gate="R" x="523.24" y="736.6" rot="R270"/>
@@ -16417,7 +16430,7 @@ Digikey part no. in the device info.</text>
 <attribute name="NAME" x="260.35" y="27.7114" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="270.51" y="27.432" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U5" gate="G$1" x="882.65" y="664.21"/>
+<instance part="U5" gate="G1" x="882.65" y="664.21"/>
 <instance part="GND28" gate="1" x="882.65" y="638.81"/>
 <instance part="C44" gate="CE" x="863.6" y="651.51" smashed="yes" rot="R180">
 <attribute name="V_RATING" x="862.33" y="651.51" size="1.778" layer="96" rot="R180"/>
@@ -16434,8 +16447,14 @@ Digikey part no. in the device info.</text>
 <instance part="V26" gate="G1" x="226.06" y="476.25"/>
 <instance part="V28" gate="G1" x="278.13" y="66.04"/>
 <instance part="V29" gate="G1" x="863.6" y="683.26"/>
-<instance part="TP46" gate="TP" x="236.22" y="452.12" rot="R270"/>
-<instance part="TP47" gate="TP" x="236.22" y="462.28" rot="R90"/>
+<instance part="TP46" gate="TP" x="236.22" y="452.12" smashed="yes" rot="R270">
+<attribute name="NAME" x="237.617" y="451.4342" size="1.778" layer="95"/>
+<attribute name="VALUE" x="232.918" y="453.263" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="TP47" gate="TP" x="236.22" y="462.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="237.617" y="461.5942" size="1.778" layer="95"/>
+<attribute name="VALUE" x="239.522" y="461.137" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="TP72" gate="TP" x="853.44" y="659.13" rot="R270"/>
 <instance part="U1" gate="G1" x="504.19" y="280.67" smashed="yes" rot="MR180">
 <attribute name="NAME" x="506.73" y="275.59" size="1.778" layer="95" ratio="15" rot="MR180"/>
@@ -17307,7 +17326,7 @@ Digikey part no. in the device info.</text>
 </segment>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
-<pinref part="U5" gate="G$1" pin="GND"/>
+<pinref part="U5" gate="G1" pin="GND"/>
 <wire x1="882.65" y1="641.35" x2="882.65" y2="643.89" width="0.1524" layer="91"/>
 <pinref part="C44" gate="CE" pin="1"/>
 <wire x1="882.65" y1="643.89" x2="882.65" y2="651.51" width="0.1524" layer="91"/>
@@ -18817,7 +18836,7 @@ Digikey part no. in the device info.</text>
 </net>
 <net name="CAN1_TX" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="TXD"/>
+<pinref part="U5" gate="G1" pin="TXD"/>
 <wire x1="864.87" y1="666.75" x2="850.9" y2="666.75" width="0.1524" layer="91"/>
 <label x="850.9" y="666.75" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18834,7 +18853,7 @@ Digikey part no. in the device info.</text>
 <label x="119.38" y="223.52" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="RXD"/>
+<pinref part="U5" gate="G1" pin="RXD"/>
 <wire x1="836.93" y1="664.21" x2="864.87" y2="664.21" width="0.1524" layer="91"/>
 <label x="836.93" y="664.21" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18993,7 +19012,7 @@ Digikey part no. in the device info.</text>
 <wire x1="937.26" y1="671.83" x2="925.83" y2="671.83" width="0.1524" layer="91"/>
 <wire x1="925.83" y1="671.83" x2="915.67" y2="671.83" width="0.1524" layer="91"/>
 <wire x1="915.67" y1="671.83" x2="915.67" y2="666.75" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="CANH"/>
+<pinref part="U5" gate="G1" pin="CANH"/>
 <wire x1="915.67" y1="666.75" x2="900.43" y2="666.75" width="0.1524" layer="91"/>
 <pinref part="R29" gate="R" pin="2"/>
 <wire x1="925.83" y1="671.83" x2="925.83" y2="670.56" width="0.1524" layer="91"/>
@@ -19007,7 +19026,7 @@ Digikey part no. in the device info.</text>
 <wire x1="937.26" y1="659.13" x2="925.83" y2="659.13" width="0.1524" layer="91"/>
 <wire x1="925.83" y1="659.13" x2="915.67" y2="659.13" width="0.1524" layer="91"/>
 <wire x1="915.67" y1="659.13" x2="915.67" y2="664.21" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="CANL"/>
+<pinref part="U5" gate="G1" pin="CANL"/>
 <wire x1="915.67" y1="664.21" x2="900.43" y2="664.21" width="0.1524" layer="91"/>
 <pinref part="R29" gate="R" pin="1"/>
 <wire x1="925.83" y1="659.13" x2="925.83" y2="660.4" width="0.1524" layer="91"/>
@@ -19018,7 +19037,7 @@ Digikey part no. in the device info.</text>
 <net name="CAN_RS" class="0">
 <segment>
 <wire x1="902.97" y1="659.13" x2="902.97" y2="656.59" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="RS"/>
+<pinref part="U5" gate="G1" pin="RS"/>
 <wire x1="900.43" y1="659.13" x2="902.97" y2="659.13" width="0.1524" layer="91"/>
 <pinref part="R30" gate="R" pin="2"/>
 </segment>
@@ -19296,7 +19315,7 @@ Digikey part no. in the device info.</text>
 </net>
 <net name="CAN_SHDN" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="SHDN"/>
+<pinref part="U5" gate="G1" pin="SHDN"/>
 <wire x1="864.87" y1="661.67" x2="858.52" y2="661.67" width="0.1524" layer="91"/>
 <label x="839.47" y="660.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="TP72" gate="TP" pin="P"/>
@@ -19456,7 +19475,7 @@ Digikey part no. in the device info.</text>
 <pinref part="V26" gate="G1" pin="V3.3D"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="VCC"/>
+<pinref part="U5" gate="G1" pin="VCC"/>
 <wire x1="863.6" y1="659.13" x2="864.87" y2="659.13" width="0.1524" layer="91"/>
 <pinref part="C44" gate="CE" pin="2"/>
 <wire x1="863.6" y1="656.59" x2="863.6" y2="659.13" width="0.1524" layer="91"/>
