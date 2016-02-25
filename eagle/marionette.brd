@@ -23,16 +23,16 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="14" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -47,16 +47,16 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -269,6 +269,10 @@
 
 </text>
 <text x="105.6" y="-29.3" size="5" layer="48">Marionette DAQ V2.0</text>
+<text x="15" y="98.9" size="1.778" layer="49">Should probably pull back the co-planar ground plane from the FS USB signals.</text>
+<text x="15.9" y="101.9" size="1.778" layer="49">Move the buttons farther apart - at least 2cm for fat-fingered engineers.</text>
+<text x="15.7" y="104.7" size="1.778" layer="49">Add slightly larger holes (13mil?) ground/signal pairs near the power supplies to conveniently measure signals in mag field.</text>
+<text x="15.5" y="107.5" size="1.778" layer="49">Add tstop/bstop rectangles near edge to clip on ground leads of oscilloscope probes, or put some ground vias for through hole pins/loops.</text>
 </plain>
 <libraries>
 <library name="rcl_custom">
@@ -4401,7 +4405,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="104.6" y="30.5" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="R86" library="rcl_custom" package=".0402-B" value="0" x="104.6" y="41.7" locked="yes" smashed="yes" rot="R180">
-<attribute name="NAME" x="100.9" y="42.2" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="105.7" y="43.3" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="105.4" y="43.3" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="104.6" y="41.7" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
@@ -4472,7 +4476,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C128" library="rcl_custom" package=".0402-B" value="np" x="102.7" y="41.7" locked="yes" smashed="yes" rot="R180">
 <attribute name="V_RATING" value="10V" x="102.7" y="41.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="97.9" y="42.2" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="102" y="43.2" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="103.5" y="43.3" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="102.7" y="41.7" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
@@ -4965,7 +4969,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="62.5" y="17.6" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
 <element name="R107" library="rcl_custom" package=".0402-B" value="np" x="62.5" y="16.1" locked="yes" smashed="yes">
-<attribute name="NAME" x="58.45" y="15.65" size="0.8" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="57.25" y="15.75" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="61.7" y="14.5" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="62.5" y="16.1" size="0.2" layer="33" ratio="15" align="center"/>
 </element>

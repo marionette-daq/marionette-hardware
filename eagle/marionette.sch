@@ -14369,8 +14369,10 @@ for current sensing and low inductance
 power supply to chip.</text>
 <text x="1101.09" y="5.08" size="5.08" layer="94">2.0</text>
 <text x="1026.16" y="24.13" size="7.62" layer="94">POWER</text>
-<text x="861.06" y="276.86" size="7.62" layer="112">MIC5305 fixed regulators are non-stocked at Mouser and Digikey.  Also their accuracy is only 1%, so this was stupid choice.  Should use adjustable regulators for BOM reduction in future.</text>
-<text x="862.33" y="261.62" size="7.62" layer="112">Temporary fix for V2.0 is using the ADP121 1% LDO from Analog.</text>
+<text x="792.48" y="320.04" size="7.62" layer="112">MIC5305 fixed regulators are non-stocked at Mouser and Digikey.  Also their accuracy is only 1%, so this was stupid choice.  Should use adjustable regulators for BOM reduction in future.</text>
+<text x="791.21" y="304.8" size="7.62" layer="112">Temporary fix for V2.0 is using the ADP121 1% LDO from Analog.</text>
+<text x="726.44" y="236.22" size="1.778" layer="112">Use ADP160AUJZ-1.8</text>
+<text x="792.48" y="292.1" size="7.62" layer="112">Add power supply indicator lights, i.e. 5V, 3.3V_digital, 3.3V_analog, etc.</text>
 </plain>
 <instances>
 <instance part="GND" gate="1" x="52.07" y="496.57"/>
@@ -16144,6 +16146,12 @@ will power down quickly.</text>
  capacitance of 12.5pF
 The trace capacitance is about 1pF. 
  Therefore choose parallel caps of 11pF.</text>
+<text x="180.34" y="500.38" size="5.08" layer="112">This RGB LED is WAYYYY too small
+- get bigger package.</text>
+<text x="960.12" y="662.94" size="5.08" layer="112">Add some package details to MAX3051 SO-8 package:
+tplace layer
+demarcation of pin 1
+Digikey part no. in the device info.</text>
 </plain>
 <instances>
 <instance part="R201" gate="R" x="523.24" y="736.6" rot="R270"/>
