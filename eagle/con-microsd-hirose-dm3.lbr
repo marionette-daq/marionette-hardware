@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mic" unit="mic" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -257,7 +257,7 @@ Approx 12x12 mm</description>
 <devicesets>
 <deviceset name="CON_HIROSE_DM3*">
 <description>Hirose &amp;mu;SD card socket without ejection mechanism.&lt;br&gt;
-Approx 12x12 mm</description>
+size: Approx 12x12 mm, Mfg. Part No.: DM3D-SF, Digikey Part No.: HR1941CT-ND</description>
 <gates>
 <gate name="$" symbol="CONN_RECEP_8GPS" x="5.08" y="1.27"/>
 <gate name="CD" symbol="SW_SPST" x="3.81" y="17.78" addlevel="always"/>
