@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -9473,6 +9473,45 @@ TDI</text>
 <text x="22.86" y="25.4" size="1.778" layer="95">&gt;NAME</text>
 <text x="22.86" y="22.86" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="NPN">
+<description>BJT NPN symbol</description>
+<pin name="E" x="2.54" y="-3.81" visible="off" length="point"/>
+<pin name="C" x="2.54" y="3.81" visible="off" length="point"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="point"/>
+<wire x1="2.54" y1="3.81" x2="0" y2="2.032" width="0.3048" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="0" y2="-2.032" width="0.3048" layer="94"/>
+<wire x1="0" y1="3.048" x2="0" y2="2.032" width="0.3048" layer="94"/>
+<wire x1="0" y1="2.032" x2="0" y2="0" width="0.3048" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.032" width="0.3048" layer="94"/>
+<wire x1="0" y1="-2.032" x2="0" y2="-3.048" width="0.3048" layer="94"/>
+<wire x1="1.9304" y1="-2.8956" x2="2.54" y2="-3.81" width="0.3048" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="1.524" y2="-3.556" width="0.3048" layer="94"/>
+<wire x1="1.9304" y1="-2.8956" x2="1.524" y2="-3.556" width="0.3048" layer="94"/>
+<wire x1="1.8796" y1="-3.0734" x2="1.9812" y2="-3.2512" width="0.3048" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.3048" layer="94"/>
+<text x="5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ADP160">
+<description>&lt;b&gt; Fixed Output LDO &lt;/b&gt;</description>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.508" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.508" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.508" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.508" layer="94"/>
+<pin name="EN" x="-10.16" y="-5.08" visible="off" length="short" direction="in"/>
+<pin name="GND" x="0" y="-12.7" visible="off" length="short" direction="pwr" rot="R90"/>
+<pin name="VIN" x="-10.16" y="5.08" visible="off" length="short" direction="pwr"/>
+<pin name="VOUT" x="10.16" y="5.08" visible="off" length="short" direction="pwr" rot="R180"/>
+<text x="-2.54" y="-9.652" size="1.524" layer="97" ratio="15">GND</text>
+<text x="-6.858" y="-6.096" size="1.524" layer="97" ratio="15">EN</text>
+<text x="-6.858" y="4.318" size="1.524" layer="97" ratio="15">VIN</text>
+<text x="1.016" y="4.318" size="1.524" layer="97" ratio="15">VOUT</text>
+<text x="-4.318" y="7.62" size="1.524" layer="94" ratio="15">ADP160</text>
+<text x="-2.54" y="0" size="1.524" layer="94" ratio="15">&gt;VOUT</text>
+<text x="10.16" y="15.24" size="1.778" layer="95" ratio="15">&gt;NAME</text>
+<text x="10.16" y="12.7" size="1.778" layer="96" ratio="15">&gt;VALUE</text>
+<text x="0" y="10.668" size="1.778" layer="94">&gt;VOUT</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ABSO7" prefix="X">
@@ -13348,6 +13387,58 @@ Vin = (2.5V, 12V) Vabs_max = 17V, Vout = (2.5V, 8.0V), Fsync = 2.4MHz, Pkg.: WSO
 <connect gate="G1" pin="VAUX" pad="6"/>
 <connect gate="G1" pin="VIN" pad="2"/>
 <connect gate="G1" pin="VOUT" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPN" prefix="Q">
+<description>&lt;b&gt; Bipolar Junction Transistor n-type &lt;/b&gt;&lt;br&gt;
+MMBT3904, Vce_max = 40V, Vbe = (650mV, 950mV), Icmax = 200mA, Hfe = 100, GBW = 300MHz, Pkg.: SOT23-3, Mfg.: NXP, Mfg Part No.: MMBT3904LT1G, Digikey Part No.: MMBT3904LT1GOSCT-ND</description>
+<gates>
+<gate name="G1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_MMBT3904" package="SOT23-3">
+<connects>
+<connect gate="G1" pin="B" pad="1"/>
+<connect gate="G1" pin="C" pad="3"/>
+<connect gate="G1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADP160" prefix="U">
+<description>&lt;b&gt; LDO fixed output &lt;/b&gt; &lt;br&gt;
+Vin = (2.2V, 5.5V), Vdropout = 195mV, Imax = 150mA, PSRR = 72dB, Output/Input cap minimum = 1uF, Pkg. = TSOT-5 (BGA also available), Mfg.: Analog &lt;br&gt;
+Vout = 1.8V, Mfg Part No.: ADP160AUJZ-1.8-R7, Digikey Part No.: ADP160AUJZ-1.8-R7CT-ND &lt;br&gt;
+Vout = 3.3V, Mfg Part No.: ADP160AUJZ-3.3-R7, Digikey Part No.: ADP160AUJZ-3.3-R7CT-ND &lt;br&gt;</description>
+<gates>
+<gate name="G1" symbol="ADP160" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_1.8V" package="SOT23-5">
+<connects>
+<connect gate="G1" pin="EN" pad="3"/>
+<connect gate="G1" pin="GND" pad="2 4"/>
+<connect gate="G1" pin="VIN" pad="1"/>
+<connect gate="G1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_3.3V" package="SOT23-5">
+<connects>
+<connect gate="G1" pin="EN" pad="3"/>
+<connect gate="G1" pin="GND" pad="2 4"/>
+<connect gate="G1" pin="VIN" pad="1"/>
+<connect gate="G1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
