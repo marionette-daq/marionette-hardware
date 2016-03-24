@@ -14946,6 +14946,7 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="GND103" library="supply" deviceset="GND" device=""/>
 <part name="R68" library="rcl_custom" deviceset="R-US_" device="0402-B" value="100"/>
 <part name="R27" library="rcl_custom" deviceset="R-US_" device="0402-B" value="100"/>
+<part name="TP62" library="marionette" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15339,10 +15340,10 @@ LED</text>
 <instance part="TP58" gate="G1" x="647.7" y="67.31" smashed="yes">
 <attribute name="NAME" x="645.16" y="69.85" size="1.778" layer="95"/>
 </instance>
-<instance part="TP60" gate="G1" x="669.29" y="67.31"/>
-<instance part="TP68" gate="G1" x="679.45" y="67.31"/>
-<instance part="TP69" gate="G1" x="690.88" y="67.31"/>
-<instance part="TP75" gate="G1" x="702.31" y="67.31"/>
+<instance part="TP60" gate="G1" x="681.99" y="67.31"/>
+<instance part="TP68" gate="G1" x="692.15" y="67.31"/>
+<instance part="TP69" gate="G1" x="703.58" y="67.31"/>
+<instance part="TP75" gate="G1" x="715.01" y="67.31"/>
 <instance part="Q2" gate="G1" x="504.19" y="318.77" rot="R90"/>
 <instance part="Q2" gate="G2" x="514.35" y="318.77" rot="MR90"/>
 <instance part="V39" gate="G1" x="416.56" y="213.36" smashed="yes">
@@ -15572,6 +15573,9 @@ LED</text>
 <attribute name="NAME" x="350.52" y="392.2014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="350.52" y="389.382" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="TP62" gate="G1" x="668.02" y="67.31" smashed="yes">
+<attribute name="NAME" x="665.48" y="69.85" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15642,19 +15646,22 @@ LED</text>
 <pinref part="TP60" gate="G1" pin="TP"/>
 <wire x1="647.7" y1="67.31" x2="657.86" y2="67.31" width="0.1524" layer="91"/>
 <pinref part="TP68" gate="G1" pin="TP"/>
-<wire x1="657.86" y1="67.31" x2="669.29" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="669.29" y1="67.31" x2="679.45" y2="67.31" width="0.1524" layer="91"/>
-<junction x="669.29" y="67.31"/>
+<wire x1="657.86" y1="67.31" x2="668.02" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="668.02" y1="67.31" x2="681.99" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="681.99" y1="67.31" x2="692.15" y2="67.31" width="0.1524" layer="91"/>
+<junction x="681.99" y="67.31"/>
 <pinref part="TP69" gate="G1" pin="TP"/>
-<wire x1="679.45" y1="67.31" x2="690.88" y2="67.31" width="0.1524" layer="91"/>
-<junction x="679.45" y="67.31"/>
+<wire x1="692.15" y1="67.31" x2="703.58" y2="67.31" width="0.1524" layer="91"/>
+<junction x="692.15" y="67.31"/>
 <pinref part="TP75" gate="G1" pin="TP"/>
-<wire x1="690.88" y1="67.31" x2="702.31" y2="67.31" width="0.1524" layer="91"/>
-<junction x="690.88" y="67.31"/>
+<wire x1="703.58" y1="67.31" x2="715.01" y2="67.31" width="0.1524" layer="91"/>
+<junction x="703.58" y="67.31"/>
 <pinref part="TP84" gate="TP" pin="P"/>
 <junction x="598.17" y="67.31"/>
 <pinref part="TP74" gate="G1" pin="TP"/>
 <junction x="657.86" y="67.31"/>
+<pinref part="TP62" gate="G1" pin="TP"/>
+<junction x="668.02" y="67.31"/>
 </segment>
 <segment>
 <pinref part="GND21" gate="1" pin="GND"/>

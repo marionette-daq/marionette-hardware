@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="20" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="20" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="yes" active="yes"/>
@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -158,10 +158,10 @@
 <wire x1="150" y1="0" x2="150" y2="95" width="0" layer="20"/>
 <wire x1="150" y1="95" x2="0" y2="95.01" width="0" layer="20"/>
 <wire x1="0" y1="95.01" x2="0" y2="0" width="0" layer="20"/>
-<text x="149.447" y="77.933" size="1.27" layer="21" font="vector" ratio="20" rot="R90">BOOT0</text>
+<text x="149.147" y="77.933" size="1.27" layer="21" font="vector" ratio="20" rot="R90">BOOT0</text>
 <text x="116" y="90" size="2.54" layer="21" font="vector" ratio="20">MARIONETTE</text>
 <text x="118.6" y="86" size="1.27" layer="21" font="vector" ratio="20">REV 2.1</text>
-<text x="149.747" y="67.139" size="1.27" layer="21" font="vector" ratio="20" rot="R90">!RESET</text>
+<text x="149.447" y="67.089" size="1.27" layer="21" font="vector" ratio="20" rot="R90">!RESET</text>
 <rectangle x1="120" y1="76" x2="136" y2="84" layer="21"/>
 <text x="62.3" y="77.3" size="1.5" layer="21" font="vector" ratio="15">Coax
 (3.3V, 24V)</text>
@@ -188,7 +188,7 @@
 <wire x1="132.7" y1="35.1" x2="132.9" y2="35.1" width="0.2" layer="21"/>
 <text x="79.6" y="48.7" size="0.85" layer="21" ratio="15">V3.3A_EN</text>
 <text x="68.8" y="42" size="0.85" layer="21" ratio="15">V3.3A</text>
-<text x="70.3" y="59.05" size="0.85" layer="21" ratio="15" rot="R90">V3.3D_EN</text>
+<text x="69.55" y="58.8" size="0.85" layer="21" ratio="15" rot="R90">V3.3D_EN</text>
 <text x="63" y="61.15" size="0.85" layer="21" ratio="15">V3.3D</text>
 <text x="21.75" y="47.05" size="0.85" layer="21" ratio="15" rot="R90">V3.3D</text>
 <text x="92.05" y="27.65" size="0.85" layer="21" ratio="15" rot="R270">V3.3DAC</text>
@@ -251,8 +251,8 @@
 <wire x1="1.8" y1="52.27" x2="1.8" y2="51.92" width="0.18" layer="21" style="shortdash"/>
 <text x="11.46" y="82.86" size="1.2" layer="21" font="vector" ratio="15" rot="R270">Flash</text>
 <text x="148.5" y="56" size="1.2" layer="21" font="vector" ratio="15" rot="R90">SWDIO</text>
-<text x="31.5" y="85.8" size="0.85" layer="22" font="vector" ratio="15" rot="MR0">MCO1</text>
-<text x="87.2" y="58.6" size="0.85" layer="22" font="vector" ratio="15" rot="MR0">V5D</text>
+<text x="31" y="88.75" size="0.85" layer="21" font="vector" ratio="15" rot="R270">MCO1</text>
+<text x="89.05" y="57.2" size="0.85" layer="22" font="vector" ratio="15" rot="MR0">V5D</text>
 <text x="86.95" y="57.2" size="0.85" layer="21" font="vector" ratio="15">V5D</text>
 <text x="0.3" y="-46.4" size="2" layer="49" ratio="15">PCB Stackup:
 
@@ -301,6 +301,18 @@
 <wire x1="83.1" y1="64" x2="83.35" y2="64" width="0.15" layer="21"/>
 <wire x1="83.1" y1="64" x2="83.05" y2="64" width="0.15" layer="21"/>
 <wire x1="83.05" y1="64" x2="83.05" y2="63.8" width="0.15" layer="21"/>
+<text x="65.1" y="70.75" size="0.85" layer="21" ratio="15">U2</text>
+<text x="96.5" y="35.6" size="0.85" layer="21" font="vector" ratio="15">ADC3_CH4</text>
+<text x="118.1" y="24.95" size="0.85" layer="21" font="vector" ratio="15" rot="R90">ADC3_CH8</text>
+<text x="101.1" y="27.1" size="0.85" layer="21" font="vector" ratio="15" rot="R90">ADC1/2/3
+_CH2</text>
+<wire x1="101.45" y1="26.75" x2="102.25" y2="25.5" width="0.15" layer="21"/>
+<wire x1="102.25" y1="25.75" x2="102.25" y2="25.5" width="0.15" layer="21"/>
+<wire x1="102.25" y1="25.5" x2="102" y2="25.65" width="0.15" layer="21"/>
+<wire x1="117.05" y1="28.8" x2="117.05" y2="30.55" width="0.15" layer="21"/>
+<wire x1="117.05" y1="30.55" x2="116.9" y2="30.7" width="0.15" layer="21"/>
+<wire x1="117.05" y1="30.7" x2="116.9" y2="30.7" width="0.15" layer="21"/>
+<wire x1="116.9" y1="30.7" x2="116.9" y2="30.55" width="0.15" layer="21"/>
 </plain>
 <libraries>
 <library name="rcl_custom">
@@ -2950,11 +2962,11 @@ Please make sure your boards conform to these design rules.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="0mil"/>
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="11mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -3099,7 +3111,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="53.5" y="30" size="0.2" layer="33" ratio="15" rot="R45" align="center"/>
 </element>
 <element name="C31" library="rcl_custom" package=".0402-B" value="100n" x="63" y="48.8" locked="yes" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.949996875" y="48.440996875" size="0.85" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="65.009003125" y="47.149996875" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="63" y="48.8" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="V_RATING" value="25V" x="63" y="48.8" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -3143,7 +3155,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="V_RATING" value="10V" x="51.2" y="31.2" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
 <element name="D3" library="marionette" package="SOT23-3" value="BAS40-00" x="49.35" y="26.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="47.993409375" y="27.877925" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="47.243409375" y="26.877925" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R201" library="rcl_custom" package=".0402-B" value="8.06k" x="33.5" y="88.2" locked="yes" smashed="yes" rot="R90">
 <attribute name="NAME" x="34.757478125" y="89.779790625" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
@@ -3178,7 +3190,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="63" y="50" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="R19" library="rcl_custom" package=".0402-B" value="1k" x="52.35" y="25.35" smashed="yes">
-<attribute name="NAME" x="52.011515625" y="23.637253125" size="0.85" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="51.161515625" y="23.737253125" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="52.35" y="25.35" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
 <element name="R202" library="rcl_custom" package=".0402-B" value="4.7k" x="59" y="26.3" locked="yes" smashed="yes">
@@ -3219,7 +3231,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="25.6572" y="20.3084" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="X1" library="ABS07" package="2-SMD_ABM7" value="ABSO7" x="54.1" y="28.2" locked="yes" smashed="yes" rot="R45">
-<attribute name="NAME" x="53.502646875" y="25.88219375" size="0.85" layer="25" font="vector" ratio="15" rot="R225"/>
+<attribute name="NAME" x="56.602646875" y="29.03219375" size="0.85" layer="25" font="vector" ratio="15" rot="R225"/>
 </element>
 <element name="R30" library="rcl_custom" package=".0402-B" value="0" x="20.3" y="20.6" locked="yes" smashed="yes" rot="R90">
 <attribute name="NAME" x="19.442" y="19.2286" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
@@ -3246,7 +3258,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="121.6" y="28.1" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
 <element name="C49" library="rcl_custom" package=".0402-B" value="1n" x="121.6" y="29.3" locked="yes" smashed="yes" rot="R180">
-<attribute name="NAME" x="120.478" y="29.685" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="122.6" y="30.85" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="121.6" y="29.3" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="V_RATING" value="10v" x="121.6" y="29.3" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3262,7 +3273,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="119.7" y="23.3" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
 <element name="R34" library="rcl_custom" package=".0402-B" value="7.5k" x="121.6" y="24.5" locked="yes" smashed="yes">
-<attribute name="NAME" x="120.578" y="24.885" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="120.6" y="22.95" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="121.6" y="24.5" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
@@ -3272,7 +3282,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="V_RATING" value="10V" x="121.6" y="23.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C52" library="rcl_custom" package=".0402-B" value="1n" x="121.6" y="25.7" locked="yes" smashed="yes" rot="R180">
-<attribute name="NAME" x="120.578" y="26.085" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="122.6" y="27.25" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="121.6" y="25.7" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="V_RATING" value="10V" x="121.6" y="25.7" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3308,13 +3317,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="104.6" y="28.1" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
 <element name="C57" library="rcl_custom" package=".0402-B" value="1n" x="104.6" y="29.3" locked="yes" smashed="yes" rot="R180">
-<attribute name="NAME" x="100.322" y="28.834" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="105.6" y="30.85" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="104.6" y="29.3" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="V_RATING" value="10V" x="104.6" y="29.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C58" library="rcl_custom" package=".0402-B" value="1n" x="104.6" y="26.9" locked="yes" smashed="yes" rot="R180">
-<attribute name="NAME" x="103.378" y="27.266" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="105.6" y="28.45" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="104.6" y="26.9" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="V_RATING" value="10v" x="104.6" y="26.9" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3352,7 +3359,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="V_RATING" value="10V" x="114.6" y="23.3" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C62" library="rcl_custom" package=".0402-B" value="1n" x="114.6" y="25.7" locked="yes" smashed="yes">
-<attribute name="NAME" x="115.759" y="25.28" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="113.6" y="24.15" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="114.6" y="25.7" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="V_RATING" value="10V" x="114.6" y="25.7" size="1.778" layer="27" display="off"/>
@@ -3371,7 +3377,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="V_RATING" value="10V" x="114.6" y="29.3" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C64" library="rcl_custom" package=".0402-B" value="1n" x="114.6" y="26.9" locked="yes" smashed="yes">
-<attribute name="NAME" x="115.759" y="26.48" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="113.6" y="25.35" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="114.6" y="26.9" size="0.3" layer="33" ratio="15" align="center"/>
 <attribute name="V_RATING" value="10V" x="114.6" y="26.9" size="1.778" layer="27" display="off"/>
@@ -3487,7 +3492,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="102.7" y="34.5" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
 <element name="R58" library="rcl_custom" package=".0402-B" value="7.5k" x="104.6" y="35.7" locked="yes" smashed="yes">
-<attribute name="NAME" x="103.568" y="35.966" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="103.6" y="34.15" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="104.6" y="35.7" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
@@ -3497,7 +3501,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="V_RATING" value="10V" x="104.6" y="34.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C76" library="rcl_custom" package=".0402-B" value="1n" x="104.6" y="36.9" locked="yes" smashed="yes" rot="R180">
-<attribute name="NAME" x="103.568" y="37.166" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="105.6" y="38.45" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="104.6" y="36.9" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 <attribute name="V_RATING" value="10V" x="104.6" y="36.9" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3569,7 +3572,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="V_RATING" value="10V" x="126.5" y="42.7" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R37" library="rcl_custom" package=".0402-B" value="10k" x="137.9" y="83.15" smashed="yes" rot="R270">
-<attribute name="NAME" x="136.2705" y="83.8145" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="138.1705" y="82.0645" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="136.35" y="84.15" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="137.9" y="83.15" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
@@ -3733,13 +3736,13 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C19" library="rcl_custom" package=".0402-B" value="100n" x="31.5" y="36.8" locked="yes" smashed="yes" rot="R135">
 <attribute name="V_RATING" value="10V" x="31.5" y="36.8" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="32.1" y="34.468628125" size="0.85" layer="25" font="vector" ratio="15" rot="R135"/>
+<attribute name="NAME" x="29.95" y="35.068628125" size="0.85" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="VALUE" x="33.19705625" y="37.365684375" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="31.5" y="36.8" size="0.2" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
 <element name="C20" library="rcl_custom" package=".0402-B" value="100n" x="35.125" y="33.15" locked="yes" smashed="yes" rot="R135">
 <attribute name="V_RATING" value="10V" x="35.125" y="33.15" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="34.925" y="31.468628125" size="0.85" layer="25" font="vector" ratio="15" rot="R135"/>
+<attribute name="NAME" x="35.675" y="30.718628125" size="0.85" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="VALUE" x="36.82205625" y="33.715684375" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="35.125" y="33.15" size="0.2" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
@@ -3778,7 +3781,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="40.1" y="30.3" size="0.2" layer="34" rot="MR0" align="center"/>
 </element>
 <element name="TP26" library="marionette" package="PAD-ROUND-0.7-NOCREAM+SILK" value="" x="40.35" y="33.2" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="41.52" y="34.224" size="0.85" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="43.77" y="33.574" size="0.85" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="NAME" x="40.35" y="33.2" size="0.2" layer="34" rot="MR0" align="center"/>
 </element>
 <element name="TP14" library="marionette" package="PAD-ROUND-0.7-NOCREAM+SILK" value="" x="64.6" y="35.9" locked="yes" smashed="yes" rot="MR0">
@@ -3802,15 +3805,15 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="49.25" y="31.55" size="0.2" layer="34" rot="MR0" align="center"/>
 </element>
 <element name="TP38" library="marionette" package="PAD-ROUND-0.7-NOCREAM+SILK" value="" x="49.3" y="29.3" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="49.9" y="28.3" size="0.85" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="NAME" x="51.05" y="30.35" size="0.85" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="NAME" x="49.3" y="29.3" size="0.2" layer="34" rot="MR0" align="center"/>
 </element>
 <element name="TP46" library="marionette" package="PAD-ROUND-0.7-NOCREAM+SILK" value="" x="55.1" y="16.2" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="55.87" y="14.424" size="0.85" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="56.276" y="15.62" size="0.85" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="NAME" x="55.1" y="16.2" size="0.2" layer="34" rot="MR0" align="center"/>
 </element>
 <element name="TP47" library="marionette" package="PAD-ROUND-0.7-NOCREAM+SILK" value="" x="57.9" y="15.75" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="58.93" y="16.226" size="0.85" layer="26" font="vector" ratio="15" rot="MR180"/>
+<attribute name="NAME" x="58.226" y="14.97" size="0.85" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="NAME" x="57.9" y="15.75" size="0.2" layer="34" rot="MR0" align="center"/>
 </element>
 <element name="TP48" library="marionette" package="PAD-ROUND-0.7-NOCREAM+SILK" value="" x="26.3" y="55" locked="yes" smashed="yes" rot="MR0">
@@ -4144,13 +4147,13 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="93.6" y="30.45" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
 <element name="JP5" library="marionette" package="1X02" value="" x="98.9" y="24.3" locked="yes" smashed="yes" rot="R270">
-<attribute name="NAME" x="97.8338" y="27.1788" size="0.85" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="98.4712" y="19.3838" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="95.725" y="26.84" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="TCXO1" library="marionette" package="CRYSTAL-3.2X2.5(4_TERMINAL)" value="np/TCXO_D32G-026.0M" x="61.9" y="31.2" locked="yes" smashed="yes" rot="R135">
 <attribute name="FREQ" value="26 MHz" x="61.9" y="31.2" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="PPM" value="0.5 ppm" x="61.9" y="31.2" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="65.228428125" y="30.770709375" size="0.85" layer="25" font="vector" ratio="15" rot="R225"/>
+<attribute name="NAME" x="66.078428125" y="30.270709375" size="0.85" layer="25" font="vector" ratio="15" rot="R225"/>
 <attribute name="VALUE" x="65.364821875" y="31.765684375" size="0.85" layer="27" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="61.9" y="31.2" size="0.4" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
@@ -4162,7 +4165,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C47" library="rcl_custom" package=".0402-B" value="np/100n" x="64" y="34.3" locked="yes" smashed="yes" rot="R135">
 <attribute name="V_RATING" value="10V" x="64" y="34.3" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="67" y="31.968628125" size="0.85" layer="25" font="vector" ratio="15" rot="R135"/>
+<attribute name="NAME" x="66.45" y="32.018628125" size="0.85" layer="25" font="vector" ratio="15" rot="R135"/>
 <attribute name="VALUE" x="65.69705625" y="34.865684375" size="0.8" layer="27" font="vector" ratio="15" rot="R135"/>
 <attribute name="NAME" x="64" y="34.3" size="0.2" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
@@ -4232,12 +4235,12 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="U41" library="marionette" package="SOT23-5" value="ADP160_1.8V" x="30.1" y="80.1" locked="yes" smashed="yes" rot="R90">
 <attribute name="VOUT" value="1.8V" x="30.1" y="80.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="27.005" y="79.205" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="30.145" y="77.055" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="33.475" y="78.195" size="0.8" layer="27" font="vector" ratio="20" rot="R90"/>
 <attribute name="NAME" x="30.5" y="79.3" size="0.3" layer="33" ratio="15" rot="R90"/>
 </element>
 <element name="R76" library="rcl_custom" package=".0402-B" value="10k" x="28.9" y="77.4" locked="yes" smashed="yes" rot="R180">
-<attribute name="NAME" x="29.5" y="75.8" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="26.95" y="78.85" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="29.7" y="79" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="28.9" y="77.4" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
@@ -4409,7 +4412,6 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C125" library="rcl_custom" package=".0402-B" value="np" x="102.7" y="30.5" locked="yes" smashed="yes" rot="R180">
 <attribute name="V_RATING" value="10V" x="102.7" y="30.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="101.7" y="31" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="103.5" y="32.1" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="102.7" y="30.5" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
@@ -4465,7 +4467,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="102.7" y="33.3" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="R95" library="rcl_custom" package=".0402-B" value="10k" x="87.2" y="32" locked="yes" smashed="yes" rot="R90">
-<attribute name="NAME" x="86.3" y="32.3" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="86.7" y="31" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="88.8" y="31.2" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="87.2" y="32" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
@@ -4493,7 +4495,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C140" library="rcl_custom" package=".0402-B" value="100n" x="90.5" y="34.2" locked="yes" smashed="yes">
 <attribute name="V_RATING" value="10V" x="90.5" y="26.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="93.5" y="35.5" size="0.85" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="93.1" y="35.8" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="89.7" y="32.6" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="90.5" y="34.2" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
@@ -4583,13 +4585,13 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D14" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="14" y="27.9" locked="yes" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.75" y="28.9" size="0.5" layer="33" ratio="15" rot="R270"/>
 <attribute name="NAME" x="13.75" y="28.9" size="0.5" layer="33" ratio="15" rot="R270"/>
-<attribute name="NAME" x="15" y="29.4" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="15.75" y="29.4" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="14" y="25.9" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="D15" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="14" y="35.4" locked="yes" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.75" y="36.4" size="0.5" layer="33" ratio="15" rot="R270"/>
 <attribute name="NAME" x="13.75" y="36.4" size="0.5" layer="33" ratio="15" rot="R270"/>
-<attribute name="NAME" x="15" y="36.5" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="15.65" y="36.5" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="14" y="33.4" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="D16" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="14" y="42.6" locked="yes" smashed="yes" rot="R270">
@@ -4611,12 +4613,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="14" y="56.4" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="SW1" library="marionette" package="SW-MOM-OMRON-6X6X4.3" value="SW-MOM-TACTILE-B3F-1000" x="143.3" y="81" smashed="yes">
-<attribute name="NAME" x="148.5" y="79.85" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="144.5" y="77.6" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="148.3" y="84" size="0.85" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="141.5" y="81" size="0.85" layer="33" ratio="15"/>
 </element>
 <element name="SW2" library="marionette" package="SW-MOM-OMRON-6X6X4.3" value="SW-MOM-TACTILE-B3F-1000" x="143.3" y="70" smashed="yes">
-<attribute name="NAME" x="148.5" y="68.75" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="145.55" y="66.5" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="148.3" y="73" size="0.85" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="141.5" y="70" size="0.85" layer="33" ratio="15"/>
 </element>
@@ -4654,17 +4656,17 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="40.1" y="27.675" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="38.6" y="25.875" size="0.4" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C146" library="rcl_custom" package=".0805-B" value="4.7u" x="30.8" y="87" locked="yes" smashed="yes" rot="R270">
-<attribute name="V_RATING" value="10V" x="30.8" y="87" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="29.8" y="88.7" size="0.85" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="29" y="88.5" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
-<attribute name="NAME" x="30.8" y="87" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
+<element name="C146" library="rcl_custom" package=".0805-B" value="4.7u" x="29.25" y="87" smashed="yes" rot="R270">
+<attribute name="V_RATING" value="10V" x="29.25" y="87" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="28.25" y="88.7" size="0.85" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="27.45" y="88.5" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="29.25" y="87" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C96" library="rcl_custom" package=".0805-B" value="4.7u" x="28.8" y="87" locked="yes" smashed="yes" rot="R270">
-<attribute name="V_RATING" value="10V" x="28.8" y="87" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="27.2" y="88.7" size="0.85" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="27" y="88.5" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
-<attribute name="NAME" x="28.8" y="87" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
+<element name="C96" library="rcl_custom" package=".0805-B" value="4.7u" x="27.1" y="87" smashed="yes" rot="R270">
+<attribute name="V_RATING" value="10V" x="27.1" y="87" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="25.5" y="88.7" size="0.85" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="25.3" y="88.5" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="27.1" y="87" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="C118" library="rcl_custom" package=".0805-B" value="4.7u" x="69.6" y="51" locked="yes" smashed="yes" rot="R270">
 <attribute name="V_RATING" value="10V" x="69.6" y="51" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4804,7 +4806,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="122.55" y="68.85" size="0.85" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="TP84" library="marionette" package="PAD-ROUND-1.0-NOCREAM+SILK" value="" x="64.65" y="92.9" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="63.35" y="91.4" size="0.85" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="63.55" y="92.35" size="0.85" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="TP18" library="marionette" package="PAD-ROUND-0.7-NOCREAM+SILK" value="" x="33.65" y="52.05" locked="yes" smashed="yes" rot="MR0">
 <attribute name="NAME" x="34.65" y="53.05" size="0.85" layer="26" font="vector" ratio="15" rot="MR0"/>
@@ -4815,11 +4817,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="68.6" y="42" size="0.85" layer="26" font="vector" ratio="15"/>
 </element>
 <element name="TP36" library="marionette" package="PAD+VIA_0.6MM" value="PAD+VIA_0.6MM" x="102.65" y="24.6" locked="yes" smashed="yes">
-<attribute name="NAME" x="103.6" y="26.2" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="103.45" y="25.2" size="0.85" layer="26" font="vector" ratio="15"/>
 </element>
 <element name="TP40" library="marionette" package="PAD+VIA_0.6MM" value="PAD+VIA_0.6MM" x="116.55" y="31.5" locked="yes" smashed="yes">
-<attribute name="NAME" x="117" y="31.1" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="115.85" y="29.7" size="0.85" layer="26" font="vector" ratio="15"/>
 </element>
 <element name="TP41" library="marionette" package="PAD+VIA_0.6MM" value="PAD+VIA_0.6MM" x="100.75" y="34.65" locked="yes" smashed="yes">
@@ -4836,8 +4836,8 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="SG3" library="marionette" package="SPARKGAP_5MIL" value="" x="46.75" y="92.25" locked="yes"/>
 <element name="TP13" library="marionette" package="PAD+VIA_0.6MM" value="PAD+VIA_0.6MM" x="47.4" y="25.5" smashed="yes">
-<attribute name="NAME" x="46.25" y="24.7" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
-<attribute name="NAME" x="48.2" y="26.1" size="0.85" layer="26" font="vector" ratio="15"/>
+<attribute name="NAME" x="48.2" y="24.9" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="47.95" y="24.15" size="0.85" layer="26" font="vector" ratio="15"/>
 </element>
 <element name="TP59" library="marionette" package="PAD+GND_VIA_0.6MM" value="PAD+VIA_GND_0.6MM" x="46.6" y="20.35" locked="yes" smashed="yes">
 <attribute name="NAME" x="45.85" y="19.7" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
@@ -4908,7 +4908,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="96.8" y="19.8" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R111" library="rcl_custom" package=".0402-B" value="1k" x="63" y="47.6" locked="yes" smashed="yes">
-<attribute name="NAME" x="63.45" y="46.15" size="0.8" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="61.95" y="44.9" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="62.2" y="46" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="63" y="47.6" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
@@ -4963,7 +4963,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="TP29" library="dock_v2" package="PAD+VIA_0.25MM" value="PAD+VIA_0.25MM" x="79.05" y="63.5" smashed="yes">
 <attribute name="NAME" x="78.8" y="62.75" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="TP32" library="dock_v2" package="PAD-1,0-NO_CREAM+SILK" value="" x="78" y="61.3" rot="MR0"/>
+<element name="TP32" library="dock_v2" package="PAD-1,0-NO_CREAM+SILK" value="" x="78" y="61.3" smashed="yes" rot="MR0">
+<attribute name="NAME" x="79.02" y="59.574" size="0.8" layer="26" font="vector" ratio="20" rot="MR0"/>
+<attribute name="NAME" x="78" y="61.3" size="0.2" layer="34" rot="MR0" align="center"/>
+</element>
 <element name="TP45" library="dock_v2" package="PAD-2.0-NOCREAM+SILK" value="" x="72.05" y="67.5" smashed="yes">
 <attribute name="NAME" x="70.15" y="65.15" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="72.05" y="67.5" size="0.3" layer="33" align="center"/>
@@ -4988,9 +4991,18 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="69.05" y="72.3" size="0.8" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="73.4" y="70.7" size="1" layer="27" ratio="10"/>
 </element>
-<element name="C106" library="rcl_custom" package="1206-B" value="np" x="92" y="64.4"/>
-<element name="C109" library="rcl_custom" package="1206-B" value="np" x="92" y="62"/>
-<element name="C110" library="rcl_custom" package="1206-B" value="np" x="92" y="59.6"/>
+<element name="C106" library="rcl_custom" package="1206-B" value="np" x="92" y="64.4" smashed="yes">
+<attribute name="NAME" x="95.25" y="64.1" size="0.8" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="91.2" y="62.1" size="1" layer="27" ratio="10"/>
+</element>
+<element name="C109" library="rcl_custom" package="1206-B" value="np" x="92" y="62" smashed="yes">
+<attribute name="NAME" x="95.45" y="61.85" size="0.8" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="91.2" y="59.7" size="1" layer="27" ratio="10"/>
+</element>
+<element name="C110" library="rcl_custom" package="1206-B" value="np" x="92" y="59.6" smashed="yes">
+<attribute name="NAME" x="95.25" y="59.3" size="0.8" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="91.2" y="57.3" size="1" layer="27" ratio="10"/>
+</element>
 <element name="Q1" library="dock_v2" package="SOT23-3" value="NX3020NAK" x="82" y="62.15" smashed="yes" rot="R270">
 <attribute name="NAME" x="81.8" y="60.35" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="82" y="60.15" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
@@ -5024,7 +5036,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="79.7" y="63.6" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="LED1" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="104" y="77.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="104.635" y="78.57" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="105.685" y="75.82" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="102.095" y="78.57" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R22" library="rcl_custom" package=".0402-B" value="330" x="104" y="74.4" smashed="yes" rot="R270">
@@ -5033,7 +5045,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="104" y="74.4" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="LED2" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="108" y="77.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="108.635" y="78.57" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="109.735" y="76.07" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="106.095" y="78.57" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R23" library="rcl_custom" package=".0402-B" value="330" x="108" y="74.4" smashed="yes" rot="R270">
@@ -5042,7 +5054,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="108" y="74.4" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="LED3" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="112" y="77.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="112.635" y="78.57" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="113.635" y="76.87" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="110.095" y="78.57" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R24" library="rcl_custom" package=".0402-B" value="330" x="112" y="74.4" smashed="yes" rot="R270">
@@ -5051,13 +5063,13 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="112" y="74.4" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="Q4" library="dock_v2" package="SOT23-3" value="NX3020NAK" x="117" y="70.9" smashed="yes" rot="R90">
-<attribute name="NAME" x="116" y="72.9" size="0.85" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="118.05" y="68.75" size="0.85" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="117" y="72.9" size="0.85" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="117" y="70.9" size="0.3" layer="33" rot="R90" align="center"/>
 </element>
 <element name="R25" library="rcl_custom" package=".0402-B" value="10k" x="113.8" y="70" rot="R180"/>
 <element name="LED4" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="116" y="77.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="116.635" y="78.57" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="118.035" y="78.92" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="114.095" y="78.57" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R26" library="rcl_custom" package=".0402-B" value="330" x="116" y="74" smashed="yes" rot="R270">
@@ -5067,21 +5079,34 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="TP74" library="marionette" package="PAD+GND_VIA_0.6MM" value="PAD+VIA_GND_0.6MM" x="89" y="52"/>
 <element name="LED5" library="apdm" package="LED-3528" value="SMLV56RGB1W1" x="101" y="87" rot="R90"/>
-<element name="Q6" library="marionette" package="SOT23-3" value="MMBT3904" x="102.5" y="70.5" rot="R270"/>
-<element name="Q7" library="marionette" package="SOT23-3" value="MMBT3904" x="94.3" y="70.5" rot="R270"/>
+<element name="Q6" library="marionette" package="SOT23-3" value="MMBT3904" x="102.5" y="70.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="103.85" y="67.75" size="0.85" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="102.5" y="68.5" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="102.5" y="70.9" size="0.3" layer="33" ratio="15" rot="R270"/>
+</element>
+<element name="Q7" library="marionette" package="SOT23-3" value="MMBT3904" x="94.3" y="70.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="93.75" y="67.65" size="0.85" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="94.3" y="68.5" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="94.3" y="70.9" size="0.3" layer="33" ratio="15" rot="R270"/>
+</element>
 <element name="R71" library="rcl_custom" package=".0402-B" value="820" x="93.5" y="76" rot="R270"/>
 <element name="R97" library="rcl_custom" package=".0402-B" value="100" x="93.5" y="73.7" rot="R270"/>
-<element name="Q8" library="marionette" package="SOT23-3" value="MMBT3904" x="98.4" y="70.5" rot="R270"/>
+<element name="Q8" library="marionette" package="SOT23-3" value="MMBT3904" x="98.4" y="70.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="98.1" y="67.65" size="0.85" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="98.4" y="68.5" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="98.4" y="70.9" size="0.3" layer="33" ratio="15" rot="R270"/>
+</element>
 <element name="LED6" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="96" y="77.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="96.635" y="78.57" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="96.635" y="75.57" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="94.095" y="78.57" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="LED8" library="LS_Q976_NR_1" package="CHIPLED_0603" value="LS_Q976" x="100" y="77.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="100.635" y="78.57" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="100.435" y="75.47" size="0.85" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="98.095" y="78.57" size="0.85" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R68" library="rcl_custom" package=".0402-B" value="100" x="96.9" y="67.8" rot="R180"/>
 <element name="R27" library="rcl_custom" package=".0402-B" value="100" x="101.5" y="67.5" rot="R270"/>
+<element name="TP62" library="marionette" package="PAD+GND_VIA_0.6MM" value="PAD+VIA_GND_0.6MM" x="85.25" y="31.6" smashed="yes"/>
 </elements>
 <signals>
 <signal name="OSC32_IN">
@@ -6012,7 +6037,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="99.9" y1="14.2725" x2="99.8975" y2="14.275" width="0.15" layer="1"/>
 <wire x1="101.1" y1="13.6" x2="101.1" y2="14.2725" width="0.25" layer="1"/>
 <wire x1="101.1" y1="14.2725" x2="101.1025" y2="14.275" width="0.15" layer="1"/>
-<wire x1="91.7975" y1="14.275" x2="91.7975" y2="13.6025" width="0.15" layer="1"/>
+<wire x1="91.7975" y1="14.275" x2="91.7975" y2="14.2" width="0.15" layer="1"/>
+<wire x1="91.7975" y1="14.2" x2="91.7975" y2="13.6025" width="0.15" layer="1"/>
 <wire x1="91.7975" y1="13.6025" x2="91.8" y2="13.6" width="0.15" layer="1"/>
 <wire x1="93.0025" y1="14.275" x2="93.0025" y2="13.6025" width="0.15" layer="1"/>
 <wire x1="93.0025" y1="13.6025" x2="93" y2="13.6" width="0.15" layer="1"/>
@@ -6028,9 +6054,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="125.3975" y1="13.6025" x2="125.4" y2="13.6" width="0.15" layer="1"/>
 <wire x1="126.6025" y1="14.275" x2="126.6025" y2="13.6025" width="0.15" layer="1"/>
 <wire x1="126.6025" y1="13.6025" x2="126.6" y2="13.6" width="0.15" layer="1"/>
-<wire x1="60.2" y1="13.6" x2="60.2" y2="14.2725" width="0.25" layer="1"/>
+<wire x1="60.2" y1="13.6" x2="60.2" y2="14.2725" width="0.15" layer="1"/>
 <wire x1="60.2" y1="14.2725" x2="60.2025" y2="14.275" width="0.25" layer="1"/>
-<wire x1="59" y1="13.6" x2="59" y2="14.2725" width="0.25" layer="1"/>
+<wire x1="59" y1="13.6" x2="59" y2="14.2725" width="0.15" layer="1"/>
 <wire x1="59" y1="14.2725" x2="58.9975" y2="14.275" width="0.25" layer="1"/>
 <wire x1="51.6" y1="13.6" x2="51.6" y2="14.2725" width="0.25" layer="1"/>
 <wire x1="51.6" y1="14.2725" x2="51.6025" y2="14.275" width="0.25" layer="1"/>
@@ -6167,7 +6193,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="79.95" y="47.85" extent="1-16" drill="0.254"/>
 <via x="80.75" y="47.85" extent="1-16" drill="0.254"/>
 <via x="81.55" y="47.85" extent="1-16" drill="0.254"/>
-<via x="76.45" y="57.95" extent="1-16" drill="0.254"/>
+<via x="76.3" y="57.95" extent="1-16" drill="0.254"/>
 <via x="77.55" y="57.15" extent="1-16" drill="0.254"/>
 <via x="68.55" y="76.35" extent="1-16" drill="0.254"/>
 <via x="115.05" y="89.45" extent="1-16" drill="0.254"/>
@@ -6177,11 +6203,11 @@ Please make sure your boards conform to these design rules.</description>
 <via x="47.75" y="89.75" extent="1-16" drill="0.254"/>
 <via x="48.45" y="90.75" extent="1-16" drill="0.254"/>
 <via x="49.55" y="90.75" extent="1-16" drill="0.254"/>
-<via x="31.45" y="84.85" extent="1-16" drill="0.254"/>
-<via x="30.35" y="84.85" extent="1-16" drill="0.254"/>
-<via x="29.45" y="84.85" extent="1-16" drill="0.254"/>
-<via x="28.25" y="84.85" extent="1-16" drill="0.254"/>
-<via x="27.05" y="86.15" extent="1-16" drill="0.254"/>
+<via x="30.65" y="86.15" extent="1-16" drill="0.254"/>
+<via x="29.75" y="84.9" extent="1-16" drill="0.254"/>
+<via x="28.85" y="84.9" extent="1-16" drill="0.254"/>
+<via x="27.6" y="84.9" extent="1-16" drill="0.254"/>
+<via x="25.65" y="86.1" extent="1-16" drill="0.254"/>
 <via x="22.65" y="86.35" extent="1-16" drill="0.254"/>
 <via x="34.5" y="78.55" extent="1-16" drill="0.254"/>
 <via x="35.1" y="80.2" extent="1-16" drill="0.254"/>
@@ -6191,7 +6217,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="27.25" y="79.15" extent="1-16" drill="0.254"/>
 <via x="26.25" y="80.05" extent="1-16" drill="0.254"/>
 <via x="25.95" y="82.25" extent="1-16" drill="0.254"/>
-<via x="27.25" y="84.55" extent="1-16" drill="0.254"/>
+<via x="26.6" y="84.85" extent="1-16" drill="0.254"/>
 <via x="21.65" y="86.35" extent="1-16" drill="0.254"/>
 <via x="21.75" y="82.65" extent="1-16" drill="0.254"/>
 <via x="12.25" y="84.15" extent="1-16" drill="0.254"/>
@@ -6375,7 +6401,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="117.6025" y1="12.6475" x2="118" y2="12.25" width="0.15" layer="1"/>
 <wire x1="118" y1="12.25" x2="118" y2="11.7" width="0.15" layer="1"/>
 <wire x1="118" y1="11.7" x2="118.25" y2="11.45" width="0.15" layer="1"/>
-<wire x1="125.3975" y1="14.275" x2="125.3975" y2="11.4025" width="0.15" layer="1"/>
+<wire x1="125.3975" y1="13.6025" x2="125.3975" y2="11.4025" width="0.15" layer="1"/>
 <wire x1="125.3975" y1="11.4025" x2="125.45" y2="11.35" width="0.15" layer="1"/>
 <wire x1="126.6025" y1="13.6025" x2="126.6025" y2="12.0975" width="0.15" layer="1"/>
 <wire x1="126.6025" y1="12.0975" x2="126.65" y2="12.05" width="0.15" layer="1"/>
@@ -6648,7 +6674,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R25" pad="2"/>
 <contactref element="Q4" pad="2"/>
 <contactref element="TP74" pad="TP"/>
-<via x="110" y="72.5" extent="1-16" drill="0.25" diameter="0.25"/>
+<via x="109.9" y="72.15" extent="1-16" drill="0.25" diameter="0.25"/>
 <via x="114.1" y="73.5" extent="1-16" drill="0.25" diameter="0.25"/>
 <via x="112.2" y="70" extent="1-16" drill="0.25" diameter="0.25"/>
 <via x="119" y="71.9" extent="1-16" drill="0.25" diameter="0.25"/>
@@ -6695,6 +6721,39 @@ Please make sure your boards conform to these design rules.</description>
 <via x="78.2" y="69.55" extent="1-16" drill="0.254"/>
 <via x="78.7" y="68.65" extent="1-16" drill="0.254"/>
 <via x="79.35" y="68.65" extent="1-16" drill="0.254"/>
+<contactref element="TP62" pad="TP"/>
+<wire x1="14.275" y1="57.805" x2="14.2725" y2="57.805" width="0.15" layer="1"/>
+<wire x1="14.2725" y1="57.805" x2="14.2725" y2="57.8" width="0.15" layer="1"/>
+<wire x1="29.3" y1="14.2725" x2="29.3025" y2="14.2725" width="0.35" layer="1"/>
+<wire x1="29.3025" y1="14.2725" x2="29.305" y2="14.275" width="0.35" layer="1"/>
+<wire x1="30.5" y1="14.2725" x2="30.4975" y2="14.2725" width="0.35" layer="1"/>
+<wire x1="30.4975" y1="14.2725" x2="30.495" y2="14.275" width="0.35" layer="1"/>
+<wire x1="36.4" y1="14.2725" x2="36.4025" y2="14.2725" width="0.35" layer="1"/>
+<wire x1="36.4025" y1="14.2725" x2="36.405" y2="14.275" width="0.35" layer="1"/>
+<wire x1="37.6" y1="14.2725" x2="37.5975" y2="14.2725" width="0.35" layer="1"/>
+<wire x1="37.5975" y1="14.2725" x2="37.595" y2="14.275" width="0.35" layer="1"/>
+<wire x1="43.705" y1="14.275" x2="43.6975" y2="14.275" width="0.35" layer="1"/>
+<wire x1="44.9" y1="14.2725" x2="44.8975" y2="14.2725" width="0.35" layer="1"/>
+<wire x1="44.8975" y1="14.2725" x2="44.895" y2="14.275" width="0.35" layer="1"/>
+<wire x1="50.3975" y1="14.275" x2="50.405" y2="14.275" width="0.35" layer="1"/>
+<wire x1="51.6" y1="14.2725" x2="51.5975" y2="14.2725" width="0.35" layer="1"/>
+<wire x1="51.5975" y1="14.2725" x2="51.595" y2="14.275" width="0.35" layer="1"/>
+<wire x1="60.2" y1="14.2725" x2="60.1975" y2="14.2725" width="0.35" layer="1"/>
+<wire x1="60.1975" y1="14.2725" x2="60.195" y2="14.275" width="0.35" layer="1"/>
+<wire x1="91.805" y1="14.275" x2="91.805" y2="14.2075" width="0.15" layer="1"/>
+<wire x1="91.805" y1="14.2075" x2="91.7975" y2="14.2" width="0.15" layer="1"/>
+<wire x1="93.0025" y1="14.275" x2="92.995" y2="14.275" width="0.15" layer="1"/>
+<wire x1="101.1" y1="14.2725" x2="101.0975" y2="14.2725" width="0.15" layer="1"/>
+<wire x1="101.0975" y1="14.2725" x2="101.095" y2="14.275" width="0.15" layer="1"/>
+<wire x1="99.9" y1="14.2725" x2="99.9025" y2="14.2725" width="0.15" layer="1"/>
+<wire x1="99.9025" y1="14.2725" x2="99.905" y2="14.275" width="0.15" layer="1"/>
+<wire x1="108.205" y1="14.275" x2="108.1975" y2="14.275" width="0.15" layer="1"/>
+<wire x1="109.4025" y1="14.275" x2="109.395" y2="14.275" width="0.15" layer="1"/>
+<wire x1="116.405" y1="14.275" x2="116.3975" y2="14.275" width="0.15" layer="1"/>
+<wire x1="126.595" y1="14.275" x2="126.6025" y2="14.275" width="0.15" layer="1"/>
+<wire x1="125.405" y1="14.275" x2="125.3975" y2="14.275" width="0.15" layer="1"/>
+<via x="64.15" y="66.65" extent="1-16" drill="0.254"/>
+<via x="77.05" y="57.95" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="SDIO_CK-SPI3_MOSI">
 <contactref element="U13" pad="P5"/>
@@ -7388,11 +7447,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="37.282484375" y1="56.31370625" x2="37.23629375" y2="56.31370625" width="0.15" layer="1"/>
 <wire x1="37.23629375" y1="56.31370625" x2="36.65" y2="56.9" width="0.15" layer="1"/>
 <wire x1="36.65" y1="56.9" x2="36.35" y2="56.9" width="0.15" layer="1"/>
-<wire x1="36.35" y1="56.9" x2="34.9" y2="58.35" width="0.15" layer="1"/>
-<wire x1="34.9" y1="58.35" x2="34.9" y2="58.4" width="0.15" layer="1"/>
-<via x="34.9" y="58.4" extent="1-16" drill="0.254"/>
-<wire x1="34.9" y1="58.4" x2="34.9" y2="59.4" width="0.15" layer="16"/>
-<wire x1="34.9" y1="59.4" x2="34.95" y2="59.5" width="0.15" layer="16"/>
+<wire x1="36.35" y1="56.9" x2="35.15" y2="58.1" width="0.15" layer="1"/>
+<wire x1="35.15" y1="58.1" x2="35.1" y2="58.2" width="0.15" layer="1"/>
+<via x="35.1" y="58.2" extent="1-16" drill="0.254"/>
+<wire x1="35.1" y1="58.2" x2="35.1" y2="59.35" width="0.15" layer="16"/>
+<wire x1="35.1" y1="59.35" x2="34.95" y2="59.5" width="0.15" layer="16"/>
 <wire x1="34.95" y1="59.5" x2="34.95" y2="63.65" width="0.15" layer="16"/>
 <wire x1="34.95" y1="63.65" x2="35.35" y2="64.05" width="0.15" layer="16"/>
 <wire x1="35.35" y1="64.05" x2="35.35" y2="64.85" width="0.15" layer="16"/>
@@ -7799,8 +7858,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C43" pad="1"/>
 <contactref element="C96" pad="1"/>
 <contactref element="C146" pad="1"/>
-<wire x1="31.1" y1="87.8" x2="30.9" y2="87.8" width="0.25" layer="1"/>
-<wire x1="30.9" y1="87.8" x2="30.8" y2="87.9" width="0.25" layer="1"/>
 <polygon width="0.25" layer="1" isolate="0.25" rank="3">
 <vertex x="18" y="83.2"/>
 <vertex x="20.1" y="83.2"/>
@@ -8506,7 +8563,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="57.9" y1="17.45" x2="57.8" y2="17.35" width="0.15" layer="16"/>
 <wire x1="57.8" y1="17.35" x2="57.9" y2="17.25" width="0.15" layer="16"/>
 <wire x1="57.9" y1="17.25" x2="57.9" y2="15.75" width="0.15" layer="16"/>
-<wire x1="56.45" y1="14.3" x2="57.9" y2="15.75" width="0" layer="19" extent="1-16"/>
 <contactref element="D10" pad="7"/>
 <contactref element="J8" pad="23"/>
 <wire x1="45.3" y1="13.6" x2="45.3" y2="12.55" width="0.15" layer="1"/>
@@ -8567,9 +8623,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="36.05" y1="23.4" x2="37.3" y2="24.65" width="0.15" layer="16"/>
 <wire x1="37.3" y1="24.65" x2="37.3" y2="26.65" width="0.15" layer="16"/>
 <wire x1="37.3" y1="26.65" x2="36.55" y2="27.4" width="0.15" layer="16"/>
-<wire x1="36.55" y1="27.4" x2="36.55" y2="29.15" width="0.15" layer="16"/>
-<wire x1="36.55" y1="29.15" x2="37.05" y2="29.65" width="0.15" layer="16"/>
-<wire x1="37.05" y1="29.65" x2="37.05" y2="35.8" width="0.15" layer="16"/>
+<wire x1="36.55" y1="27.4" x2="36.55" y2="30.1" width="0.15" layer="16"/>
+<wire x1="36.55" y1="30.1" x2="37.05" y2="30.6" width="0.15" layer="16"/>
+<wire x1="37.05" y1="30.6" x2="37.05" y2="35.8" width="0.15" layer="16"/>
 <wire x1="37.05" y1="35.8" x2="37.75" y2="36.5" width="0.15" layer="16"/>
 <wire x1="37.75" y1="36.5" x2="37.75" y2="37.25" width="0.15" layer="16"/>
 <wire x1="37.75" y1="37.25" x2="37.55" y2="37.45" width="0.15" layer="16"/>
@@ -10373,9 +10429,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="37.3" y1="19.35" x2="37.6" y2="19.65" width="0.15" layer="16"/>
 <wire x1="37.6" y1="19.65" x2="37.6" y2="26.8" width="0.15" layer="16"/>
 <wire x1="37.6" y1="26.8" x2="36.85" y2="27.55" width="0.15" layer="16"/>
-<wire x1="36.85" y1="27.55" x2="36.85" y2="28.7" width="0.15" layer="16"/>
-<wire x1="36.85" y1="28.7" x2="37.55" y2="29.4" width="0.15" layer="16"/>
-<wire x1="37.55" y1="29.4" x2="37.55" y2="30.95" width="0.15" layer="16"/>
+<wire x1="36.85" y1="27.55" x2="36.85" y2="29.95" width="0.15" layer="16"/>
+<wire x1="36.85" y1="29.95" x2="37.55" y2="30.65" width="0.15" layer="16"/>
+<wire x1="37.55" y1="30.65" x2="37.55" y2="30.95" width="0.15" layer="16"/>
 <wire x1="37.55" y1="30.95" x2="38.1" y2="31.5" width="0.15" layer="16"/>
 <wire x1="38.1" y1="31.5" x2="39.05" y2="31.5" width="0.15" layer="16"/>
 <wire x1="39.05" y1="31.5" x2="39.15" y2="31.6" width="0.15" layer="16"/>
@@ -10545,11 +10601,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="38.4" y1="22.35" x2="38.55" y2="22.5" width="0.15" layer="16"/>
 <wire x1="38.55" y1="22.5" x2="38.55" y2="27.65" width="0.15" layer="16"/>
 <wire x1="38.55" y1="27.65" x2="38.05" y2="28.2" width="0.15" layer="16"/>
-<wire x1="38.05" y1="28.2" x2="38.05" y2="28.25" width="0.15" layer="16"/>
-<wire x1="38.05" y1="28.25" x2="37.9" y2="28.4" width="0.15" layer="16"/>
-<via x="37.9" y="28.4" extent="1-16" drill="0.254"/>
-<wire x1="37.9" y1="28.4" x2="38.36015625" y2="28.4" width="0.15" layer="1"/>
-<wire x1="38.36015625" y1="28.4" x2="40.464465625" y2="30.504309375" width="0.15" layer="1"/>
+<wire x1="38.05" y1="28.2" x2="38.05" y2="29.25" width="0.15" layer="16"/>
+<wire x1="38.05" y1="29.25" x2="37.8" y2="29.5" width="0.15" layer="16"/>
+<via x="37.8" y="29.5" extent="1-16" drill="0.254"/>
+<wire x1="37.8" y1="29.5" x2="39.46015625" y2="29.5" width="0.15" layer="1"/>
+<wire x1="39.46015625" y1="29.5" x2="40.464465625" y2="30.504309375" width="0.15" layer="1"/>
 <via x="42.85" y="16.75" extent="1-16" drill="0.254"/>
 <wire x1="42.85" y1="16.75" x2="42.85" y2="15.1" width="0.15" layer="16"/>
 <wire x1="42.85" y1="15.1" x2="42.95" y2="14.9" width="0.15" layer="16"/>
@@ -10661,8 +10717,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="49.4" y1="27.65" x2="49.4" y2="23.75" width="0.15" layer="16"/>
 <wire x1="49.4" y1="23.75" x2="49.3" y2="23.65" width="0.15" layer="16"/>
 <wire x1="49.3" y1="23.65" x2="48.75" y2="23.65" width="0.15" layer="16"/>
-<wire x1="48.75" y1="23.65" x2="48.65" y2="23.45" width="0.15" layer="16"/>
-<wire x1="48.65" y1="23.45" x2="48.65" y2="21.8" width="0.15" layer="16"/>
+<wire x1="48.75" y1="23.65" x2="48.65" y2="23.55" width="0.15" layer="16"/>
+<wire x1="48.65" y1="23.55" x2="48.65" y2="21.8" width="0.15" layer="16"/>
 <wire x1="48.65" y1="21.8" x2="48.55" y2="21.7" width="0.15" layer="16"/>
 <wire x1="48.55" y1="21.7" x2="48.55" y2="19.15" width="0.15" layer="16"/>
 <wire x1="48.55" y1="19.15" x2="49.05" y2="18.65" width="0.15" layer="16"/>
@@ -10698,9 +10754,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="47.55" y="29" extent="1-16" drill="0.254"/>
 <wire x1="47.55" y1="29" x2="47.4" y2="28.9" width="0.15" layer="16"/>
 <wire x1="47.4" y1="28.9" x2="47.4" y2="28.05" width="0.15" layer="16"/>
-<wire x1="48.25" y1="23.6" x2="48.25" y2="23.45" width="0.15" layer="16"/>
-<wire x1="48.25" y1="23.45" x2="48.3" y2="23.4" width="0.15" layer="16"/>
-<wire x1="48.3" y1="23.4" x2="48.3" y2="22.05" width="0.15" layer="16"/>
+<wire x1="48.3" y1="23.65" x2="48.3" y2="22.05" width="0.15" layer="16"/>
 <wire x1="48.3" y1="22.05" x2="48.25" y2="22" width="0.15" layer="16"/>
 <wire x1="48.25" y1="22" x2="48.25" y2="18.85" width="0.15" layer="16"/>
 <wire x1="48.25" y1="18.85" x2="48.45" y2="18.65" width="0.15" layer="16"/>
@@ -10723,7 +10777,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="54.7" y1="12.7" x2="55.7" y2="11.7" width="0.2" layer="1"/>
 <wire x1="55.7" y1="11.7" x2="55.7" y2="7" width="0.2" layer="1"/>
 <wire x1="55.7" y1="7" x2="56.97" y2="5.73" width="0.2" layer="1"/>
-<wire x1="48.25" y1="23.6" x2="48.6" y2="23.95" width="0.15" layer="16"/>
+<wire x1="48.3" y1="23.65" x2="48.6" y2="23.95" width="0.15" layer="16"/>
 <wire x1="48.6" y1="23.95" x2="49.05" y2="23.95" width="0.15" layer="16"/>
 <wire x1="49.05" y1="23.95" x2="49.1" y2="24" width="0.15" layer="16"/>
 <wire x1="49.1" y1="24" x2="49.1" y2="27.3" width="0.15" layer="16"/>
@@ -11407,11 +11461,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="34.2" y1="47.15" x2="34.45" y2="47.4" width="0.15" layer="16"/>
 <wire x1="34.45" y1="47.4" x2="34.45" y2="53.25" width="0.15" layer="16"/>
 <wire x1="34.45" y1="53.25" x2="33.15" y2="54.55" width="0.15" layer="16"/>
-<wire x1="33.15" y1="54.55" x2="33.15" y2="56.1" width="0.15" layer="16"/>
-<wire x1="33.15" y1="56.1" x2="33.3" y2="56.25" width="0.15" layer="16"/>
-<wire x1="33.3" y1="56.25" x2="34" y2="56.25" width="0.15" layer="16"/>
-<via x="34" y="56.25" extent="1-16" drill="0.254"/>
-<wire x1="34" y1="56.25" x2="35.224871875" y2="56.25" width="0.15" layer="1"/>
+<wire x1="33.15" y1="54.55" x2="33.15" y2="55.8" width="0.15" layer="16"/>
+<wire x1="33.15" y1="55.8" x2="33.3" y2="55.95" width="0.15" layer="16"/>
+<wire x1="33.3" y1="55.95" x2="33.95" y2="55.95" width="0.15" layer="16"/>
+<via x="33.95" y="55.95" extent="1-16" drill="0.254"/>
+<wire x1="33.95" y1="55.95" x2="34.4" y2="55.95" width="0.15" layer="1"/>
+<wire x1="34.4" y1="55.95" x2="34.7" y2="56.25" width="0.15" layer="1"/>
+<wire x1="34.7" y1="56.25" x2="35.224871875" y2="56.25" width="0.15" layer="1"/>
 <wire x1="35.224871875" y1="56.25" x2="36.221825" y2="55.253046875" width="0.15" layer="1"/>
 </signal>
 <signal name="PG4">
@@ -12247,9 +12303,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="37.9" y="19.05" extent="1-16" drill="0.254"/>
 <wire x1="37.9" y1="19.05" x2="37.9" y2="26.95" width="0.15" layer="16"/>
 <wire x1="37.9" y1="26.95" x2="37.15" y2="27.7" width="0.15" layer="16"/>
-<wire x1="37.15" y1="27.7" x2="37.15" y2="28.55" width="0.15" layer="16"/>
-<wire x1="37.15" y1="28.55" x2="37.85" y2="29.25" width="0.15" layer="16"/>
-<wire x1="37.85" y1="29.25" x2="37.85" y2="30.75" width="0.15" layer="16"/>
+<wire x1="37.15" y1="27.7" x2="37.15" y2="29.75" width="0.15" layer="16"/>
+<wire x1="37.15" y1="29.75" x2="37.85" y2="30.45" width="0.15" layer="16"/>
+<wire x1="37.85" y1="30.45" x2="37.85" y2="30.75" width="0.15" layer="16"/>
 <wire x1="37.85" y1="30.75" x2="38.25" y2="31.15" width="0.15" layer="16"/>
 <wire x1="38.25" y1="31.15" x2="39.3" y2="31.15" width="0.15" layer="16"/>
 <wire x1="39.3" y1="31.15" x2="39.45" y2="31.3" width="0.15" layer="16"/>
@@ -14203,8 +14259,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="32.7" y="53.9"/>
 <vertex x="31.5" y="55.1"/>
 <vertex x="31.5" y="55.5"/>
-<vertex x="31.8" y="55.8"/>
-<vertex x="34.6" y="55.8"/>
+<vertex x="31.65" y="55.65"/>
+<vertex x="34.45" y="55.65"/>
 <vertex x="36.8" y="58"/>
 <vertex x="35.5" y="59.3"/>
 <vertex x="35.5" y="59.7"/>
@@ -14483,6 +14539,10 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="56.25" y="34.75"/>
 <vertex x="52.9" y="31.4"/>
 <vertex x="52.9" y="25"/>
+<vertex x="34.3" y="25"/>
+<vertex x="31.75" y="22.45"/>
+<vertex x="28" y="22.45"/>
+<vertex x="25.45" y="25"/>
 <vertex x="16" y="25"/>
 <vertex x="16" y="38"/>
 <vertex x="17" y="39"/>
@@ -14723,43 +14783,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="104" y1="79" x2="104" y2="78.05" width="0.2" layer="1"/>
 <wire x1="101" y1="85.475" x2="99.95" y2="85.475" width="0.2" layer="1"/>
 <wire x1="101" y1="85.475" x2="102.05" y2="85.475" width="0.2" layer="1"/>
-<wire x1="71.7" y1="51.9" x2="73.4" y2="52.2" width="0" layer="19" extent="1-1"/>
-<wire x1="71.5" y1="53.7" x2="71.7" y2="51.9" width="0" layer="19" extent="1-16"/>
-<wire x1="69.6" y1="51.9" x2="69.3" y2="53.7" width="0" layer="19" extent="1-1"/>
-<wire x1="67.1" y1="53.35" x2="69.2" y2="53.8" width="0" layer="19" extent="1-1"/>
-<wire x1="66.4" y1="49.05" x2="69.6" y2="51.9" width="0" layer="19" extent="1-1"/>
-<wire x1="62.5" y1="50" x2="66.4" y2="49.05" width="0" layer="19" extent="1-1"/>
-<wire x1="55.05" y1="34.6" x2="59.1" y2="37.85" width="0" layer="19" extent="1-1"/>
-<wire x1="50.363959375" y1="33.3327375" x2="53.1923875" y2="36.1611625" width="0" layer="19" extent="1-1"/>
-<wire x1="52" y1="26.9" x2="52.05" y2="31" width="0" layer="19" extent="1-1"/>
-<wire x1="54.6066" y1="52.42461875" x2="56.05" y2="47" width="0" layer="19" extent="1-16"/>
-<wire x1="56.9" y1="55.2" x2="56.37144375" y2="54.353553125" width="0" layer="19" extent="1-1"/>
-<wire x1="51.8" y1="56.7" x2="55.5" y2="53.482109375" width="0" layer="19" extent="1-1"/>
-<wire x1="47.53553125" y1="59.4956875" x2="51.8" y2="57.132109375" width="0" layer="19" extent="1-1"/>
-<wire x1="48.753553125" y1="61.09644375" x2="47.53553125" y2="59.4956875" width="0" layer="19" extent="1-1"/>
-<wire x1="41.878678125" y1="60.9099" x2="47.53553125" y2="59.4956875" width="0" layer="19" extent="1-1"/>
-<wire x1="36.05" y1="63.7" x2="40.34644375" y2="62.14644375" width="0" layer="19" extent="1-16"/>
-<wire x1="36.04644375" y1="58.12144375" x2="34.6" y2="62.1" width="0" layer="19" extent="1-1"/>
-<wire x1="33.07" y1="53.46" x2="36.6" y2="57.45" width="0" layer="19" extent="1-1"/>
-<wire x1="28.59" y1="48.74" x2="32.5828875" y2="53.46" width="0" layer="19" extent="1-1"/>
-<wire x1="22.3" y1="46.15" x2="23.35" y2="49.05" width="0" layer="19" extent="1-1"/>
-<wire x1="21.85" y1="45.4" x2="22.3" y2="46.15" width="0" layer="19" extent="1-1"/>
-<wire x1="21.1" y1="45.4" x2="21.85" y2="45.4" width="0" layer="19" extent="1-1"/>
-<wire x1="20.4" y1="45.4" x2="21.1" y2="45.4" width="0" layer="19" extent="1-1"/>
-<wire x1="20.4" y1="46.15" x2="20.4" y2="45.4" width="0" layer="19" extent="1-1"/>
-<wire x1="21.35" y1="46.2" x2="21.1" y2="45.4" width="0" layer="19" extent="1-1"/>
-<wire x1="28.44365" y1="42.525125" x2="29.15075625" y2="48.181978125" width="0" layer="19" extent="1-1"/>
-<wire x1="32.3" y1="37.19" x2="27.7" y2="41.5" width="0" layer="19" extent="1-1"/>
-<wire x1="35.94" y1="33.76" x2="32.3" y2="36.892890625" width="0" layer="19" extent="1-1"/>
-<wire x1="40.1" y1="30.3" x2="35.94" y2="33.257890625" width="0" layer="19" extent="1-16"/>
-<wire x1="41.171571875" y1="29.797203125" x2="40.81801875" y2="30.11801875" width="0" layer="19" extent="1-1"/>
-<wire x1="39.6" y1="28.5" x2="40" y2="29" width="0" layer="19" extent="1-1"/>
-<wire x1="39.5" y1="27.6" x2="39.6" y2="28.5" width="0" layer="19" extent="1-1"/>
-<wire x1="39.5" y1="25.875" x2="39.5" y2="27.6" width="0" layer="19" extent="1-1"/>
-<wire x1="62" y1="61.5" x2="48.753553125" y2="61.09644375" width="0" layer="19" extent="1-1"/>
-<wire x1="30" y1="23.5" x2="39.5" y2="25.875" width="0" layer="19" extent="1-1"/>
-<wire x1="34.6" y1="62.1" x2="35.75" y2="62.1" width="0" layer="19" extent="1-16"/>
 <wire x1="35.75" y1="62.1" x2="35.75" y2="62.45" width="0.25" layer="1"/>
+<wire x1="30" y1="23.5" x2="31.35" y2="23.5" width="0.35" layer="1"/>
+<via x="31.35" y="23.5" extent="1-16" drill="0.25"/>
 </signal>
 <signal name="J9_35">
 <contactref element="D7" pad="5"/>
@@ -15155,18 +15181,10 @@ Please make sure your boards conform to these design rules.</description>
 <via x="36.95" y="36.8" extent="1-16" drill="0.254"/>
 <wire x1="36.95" y1="36.8" x2="36.85" y2="36.8" width="0.15" layer="16"/>
 <wire x1="36.85" y1="36.8" x2="36.6" y2="36.55" width="0.15" layer="16"/>
-<wire x1="36.6" y1="36.55" x2="36.6" y2="30.05" width="0.15" layer="16"/>
-<wire x1="36.6" y1="30.05" x2="36.25" y2="29.65" width="0.15" layer="16"/>
-<wire x1="36.25" y1="29.65" x2="36.05" y2="29.45" width="0.15" layer="16"/>
-<wire x1="36.05" y1="29.45" x2="36.05" y2="27.55" width="0.15" layer="16"/>
+<wire x1="36.6" y1="36.55" x2="36.6" y2="30.6" width="0.15" layer="16"/>
+<wire x1="36.6" y1="30.6" x2="36.05" y2="30.05" width="0.15" layer="16"/>
+<wire x1="36.05" y1="30.05" x2="36.05" y2="27.55" width="0.15" layer="16"/>
 <wire x1="36.05" y1="27.55" x2="35.8" y2="27.3" width="0.15" layer="16"/>
-<wire x1="35.8" y1="27.3" x2="35.8" y2="27.3" width="0" layer="19" extent="1-16"/>
-<wire x1="35.8" y1="27.3" x2="26.6" y2="27.3" width="0" layer="19" extent="1-16"/>
-<wire x1="26.6" y1="27.3" x2="26.45" y2="27.45" width="0" layer="19" extent="1-16"/>
-<wire x1="26.45" y1="27.45" x2="26.45" y2="27.45" width="0" layer="19" extent="1-16"/>
-<wire x1="26.45" y1="27.45" x2="26.45" y2="29.7" width="0" layer="19" extent="1-16"/>
-<wire x1="26.45" y1="29.7" x2="26.4" y2="29.8" width="0" layer="19" extent="1-16"/>
-<wire x1="26.4" y1="29.8" x2="26.4" y2="29.8" width="0" layer="19" extent="1-16"/>
 <wire x1="35.6" y1="13.65" x2="34.9" y2="13.65" width="0.15" layer="1"/>
 <via x="34.9" y="13.65" extent="1-16" drill="0.25"/>
 <wire x1="34.9" y1="13.65" x2="34.9" y2="24.55" width="0.15" layer="16"/>
@@ -15783,14 +15801,16 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,18d88e2e8b9f1d69"/>
 <approved hash="19,1,1ddc8b2a8a5b1cad"/>
 <approved hash="5,1,ebe8102e4cd11de6"/>
-<approved hash="19,1,dbbfd41f7427c97e"/>
 <approved hash="19,1,a93c879cd30d5f51"/>
-<approved hash="19,1,a38853e844ca0653"/>
 <approved hash="19,1,a18eeaa298ce325a"/>
+<approved hash="19,1,dbbfd41f7427c97e"/>
+<approved hash="19,1,a38853e844ca0653"/>
 <approved hash="19,1,9758970e60976cbf"/>
 <approved hash="19,1,2f2ba2570efe7c24"/>
 <approved hash="19,1,2c44a14f518e247b"/>
 <approved hash="19,1,2d96b9b049a9254d"/>
+<approved hash="5,1,03b8db27e560e384"/>
+<approved hash="5,1,7abb758ac694e5f4"/>
 <approved hash="19,1,5033361f78f7e619"/>
 <approved hash="19,1,36eba300e3858a8c"/>
 <approved hash="5,1,371e532e92e10a21"/>
@@ -15798,28 +15818,26 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,51152eea6024e725"/>
 <approved hash="19,1,352bb85bfbf28924"/>
 <approved hash="5,1,2fe953d09363120a"/>
-<approved hash="5,1,03b8db27e560e384"/>
-<approved hash="5,1,7abb758ac694e5f4"/>
 <approved hash="5,1,323e3980f7c1742c"/>
 <approved hash="19,1,8ec56f7cd71bf3d0"/>
 <approved hash="19,1,18108bbb70c3d348"/>
+<approved hash="19,1,7efb214253b95252"/>
 <approved hash="19,1,56dc1baf4cb1c9d3"/>
 <approved hash="19,1,e451cd6df0710a9e"/>
-<approved hash="19,1,7efb214253b95252"/>
-<approved hash="5,1,6ba38b7532b013b9"/>
+<approved hash="5,1,96a56ad1497b837c"/>
 <approved hash="5,1,d2491987ede9d8b4"/>
 <approved hash="5,1,56370ebeb229c8df"/>
-<approved hash="5,1,96a56ad1497b837c"/>
+<approved hash="5,1,6ba38b7532b013b9"/>
 <approved hash="19,1,3b48776d96833f6a"/>
-<approved hash="5,1,f147bde775002ae8"/>
-<approved hash="5,1,49aa32774871be04"/>
 <approved hash="5,1,abf0fde4a2c86b87"/>
+<approved hash="5,1,49aa32774871be04"/>
+<approved hash="5,1,f147bde775002ae8"/>
 <approved hash="19,1,f047318d988f7e44"/>
 <approved hash="5,1,6d9d2c8a49402750"/>
 <approved hash="19,1,22c3932684eba8b2"/>
+<approved hash="19,1,a9080398c31f1148"/>
 <approved hash="19,1,dc10619dfb12fb32"/>
 <approved hash="19,1,49c47fb3964285ce"/>
-<approved hash="19,1,a9080398c31f1148"/>
 <approved hash="19,1,33bd37b649e87c6f"/>
 <approved hash="19,1,f6601adda7063b1b"/>
 <approved hash="19,1,ef70ba806d54006a"/>
@@ -15837,62 +15855,62 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,01a27dd11f90b4d8"/>
 <approved hash="5,1,0095e9558b4edfa7"/>
 <approved hash="19,1,c0b9509e89a2e501"/>
-<approved hash="5,1,0587250e946cdda0"/>
 <approved hash="19,1,22ffd083b572e979"/>
+<approved hash="5,1,0587250e946cdda0"/>
+<approved hash="19,1,e9a97104d022dba7"/>
 <approved hash="19,1,c55ef806336e928b"/>
 <approved hash="19,1,608f3727aec4c585"/>
-<approved hash="19,1,e9a97104d022dba7"/>
 <approved hash="19,1,cbd9bfe1812845db"/>
-<approved hash="5,1,0c20847ac5c4f813"/>
 <approved hash="19,1,2fce01118dd108df"/>
 <approved hash="19,1,d0c704add768de93"/>
-<approved hash="19,1,9d39ce9e995e92f5"/>
+<approved hash="5,1,0c20847ac5c4f813"/>
 <approved hash="19,1,69216d8eb64eeaed"/>
-<approved hash="19,1,09bbfb53fa4a08a2"/>
+<approved hash="19,1,9d39ce9e995e92f5"/>
 <approved hash="19,1,0abbf853f9560bbe"/>
-<approved hash="19,1,b53f2990aa4ceeef"/>
+<approved hash="19,1,09bbfb53fa4a08a2"/>
 <approved hash="19,1,9927d280dd5c4ef7"/>
+<approved hash="19,1,b53f2990aa4ceeef"/>
 <approved hash="19,1,1241bba9b997107f"/>
 <approved hash="19,1,813d2592fe5232f1"/>
 <approved hash="19,1,45258682d1427ae9"/>
-<approved hash="19,1,59bd9b559a4c58a4"/>
 <approved hash="19,1,5abd985599505bb8"/>
-<approved hash="19,1,6d3b0194d25016f4"/>
+<approved hash="19,1,59bd9b559a4c58a4"/>
 <approved hash="19,1,6123aa84f54796eb"/>
+<approved hash="19,1,6d3b0194d25016f4"/>
 <approved hash="19,1,ae572479770a4c24"/>
 <approved hash="19,1,4d1064afa8926be0"/>
 <approved hash="19,1,c1240fcbdb030335"/>
-<approved hash="19,1,460dc14878ce0877"/>
 <approved hash="19,1,1cf3e8e325c7262b"/>
-<approved hash="19,1,b988ebfae8a9badb"/>
+<approved hash="19,1,460dc14878ce0877"/>
 <approved hash="19,1,7951a564b51294f5"/>
-<approved hash="19,1,f00b955f3c0186a2"/>
-<approved hash="19,1,4bac60a4a87c5c83"/>
-<approved hash="19,1,a707be1c098bb1cc"/>
+<approved hash="19,1,b988ebfae8a9badb"/>
 <approved hash="19,1,3c91627472ed3d01"/>
 <approved hash="19,1,f4d1aea33889bd0c"/>
+<approved hash="19,1,4bac60a4a87c5c83"/>
+<approved hash="19,1,a707be1c098bb1cc"/>
+<approved hash="19,1,f00b955f3c0186a2"/>
 <approved hash="19,1,e55fd202545d7adf"/>
-<approved hash="19,1,9125e357dd23af51"/>
 <approved hash="19,1,95ffe78de68d94ff"/>
-<approved hash="19,1,e820f1328435aad5"/>
+<approved hash="19,1,9125e357dd23af51"/>
 <approved hash="19,1,2b0444f880a9d8a7"/>
-<approved hash="19,1,d256f62684f19773"/>
+<approved hash="19,1,e820f1328435aad5"/>
 <approved hash="19,1,151e7fc4bad5e7fd"/>
-<approved hash="19,1,4404567656404432"/>
-<approved hash="19,1,7e726c006be67994"/>
+<approved hash="19,1,d256f62684f19773"/>
 <approved hash="19,1,4128535a55fc478e"/>
-<approved hash="19,1,5ddb34f6947d52ac"/>
-<approved hash="19,1,9a1cbd4630c3b865"/>
-<approved hash="19,1,60e134ee95c96e3a"/>
+<approved hash="19,1,7e726c006be67994"/>
+<approved hash="19,1,4404567656404432"/>
 <approved hash="19,1,a532868a09cb858f"/>
-<approved hash="19,1,9d100f620d9e9fec"/>
-<approved hash="19,1,a18633f430a4a2d6"/>
+<approved hash="19,1,60e134ee95c96e3a"/>
+<approved hash="19,1,9a1cbd4630c3b865"/>
+<approved hash="19,1,5ddb34f6947d52ac"/>
 <approved hash="19,1,9ea80cda0d4e9f3c"/>
+<approved hash="19,1,a18633f430a4a2d6"/>
+<approved hash="19,1,9d100f620d9e9fec"/>
 <approved hash="19,1,1762797fafd0323e"/>
 <approved hash="19,1,fc0e5e7c59fcfb8e"/>
+<approved hash="19,1,c163acffcadd19e3"/>
 <approved hash="19,1,58424a49eb040afc"/>
 <approved hash="19,1,a666771f847953a8"/>
-<approved hash="19,1,c163acffcadd19e3"/>
 <approved hash="5,16,40c3719771c24ef6"/>
 <approved hash="5,16,ad58fabb828d5e1c"/>
 <approved hash="5,16,75c7b2c3edc8a410"/>
