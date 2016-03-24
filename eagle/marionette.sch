@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -6452,6 +6452,13 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.1" width="0.15" layer="21" curve="-180"/>
+<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="-1.8" width="0.15" layer="21"/>
+<wire x1="-2.6" y1="-1.3" x2="-2.6" y2="-1.8" width="0.15" layer="21"/>
+<wire x1="-2.7" y1="-1.4" x2="-2.7" y2="-1.6" width="0.15" layer="21"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="-1.9" width="0.15" layer="21"/>
+<wire x1="-2.6" y1="1.2" x2="-2.6" y2="-1.1" width="0.15" layer="21"/>
+<wire x1="2.6" y1="1.2" x2="2.6" y2="-1.1" width="0.15" layer="21"/>
 </package>
 <package name="SOT-23-8">
 <description>&lt;b&gt;Can Bus Transceiver&lt;/b&gt;</description>
@@ -6493,6 +6500,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <devicesets>
 <deviceset name="MAX3051ESA" prefix="U">
 <description>&lt;b&gt;Can bus transciever&lt;/b&gt;&lt;br&gt;
+Mfg.: Maxim, Pkg.: SO-8, Mfg. Part No.: MAX3051ESA+T, Digikey Part No.: MAX3051ESA+CT-ND
 Datasheet:&lt;br&gt;
 http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf</description>
 <gates>
@@ -9443,8 +9451,8 @@ Source part as a 100mil 2 x 3 header, then snip off the unneeded pins with side 
 <smd name="7" x="-0.325" y="1.53" dx="0.42" dy="0.46" layer="1" stop="no"/>
 <smd name="8" x="-0.975" y="1.53" dx="0.42" dy="0.46" layer="1" stop="no"/>
 <smd name="EP" x="0" y="0.45" dx="2.37" dy="1.7" layer="1" cream="no"/>
-<text x="2" y="3" size="0.8" layer="104" font="vector" ratio="20">&gt;name</text>
-<text x="2" y="2" size="0.8" layer="27" font="vector" ratio="20">&gt;value</text>
+<text x="2" y="3" size="0.85" layer="25" font="vector" ratio="15">&gt;name</text>
+<text x="2" y="2" size="0.85" layer="27" font="vector" ratio="15">&gt;value</text>
 <text x="0" y="0" size="0.5" layer="33" align="center">&gt;NAME</text>
 </package>
 <package name="TO252">
@@ -10579,7 +10587,7 @@ Cuttable Jumper &lt;b&gt;e0201&lt;/b&gt; footprint with &lt;b&gt;5 mil&lt;/b&gt;
 <text x="0" y="0" size="0.2" layer="33" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="UDFN-8-3.3X1.0_6MIL">
-<description>Package for ESD8006 device with layout squeezed to fit 6mil trace/space.</description>
+<description>Package for ESD8006 device with layout squeezed to fit 6mil trace/space.  This means that the width of the two big ground pads is 0.44mm which is .06mm smaller than recommended footprint, but probably still ok.</description>
 <circle x="-1.8" y="-0.65" radius="0.05" width="0.1" layer="21"/>
 <wire x1="-0.945" y1="-0.15" x2="-0.9" y2="-0.195" width="0.1" layer="29"/>
 <wire x1="-0.21" y1="-0.15" x2="-0.28" y2="-0.22" width="0.1" layer="29"/>
@@ -10637,8 +10645,8 @@ Cuttable Jumper &lt;b&gt;e0201&lt;/b&gt; footprint with &lt;b&gt;5 mil&lt;/b&gt;
 <smd name="6" x="0.6" y="-0.4" dx="0.25" dy="0.4" layer="1" rot="R180" stop="no"/>
 <smd name="7" x="1" y="-0.4" dx="0.25" dy="0.4" layer="1" rot="R180" stop="no"/>
 <smd name="8" x="1.4" y="-0.4" dx="0.25" dy="0.4" layer="1" stop="no"/>
-<smd name="9" x="0.6025" y="0.275" dx="0.455" dy="0.65" layer="1" rot="R180" stop="no"/>
-<smd name="10" x="-0.6025" y="0.275" dx="0.455" dy="0.65" layer="1" stop="no"/>
+<smd name="9" x="0.595" y="0.275" dx="0.44" dy="0.65" layer="1" rot="R180" stop="no"/>
+<smd name="10" x="-0.595" y="0.275" dx="0.44" dy="0.65" layer="1" stop="no"/>
 <text x="-1" y="-0.25" size="0.5" layer="33" ratio="15">&gt;NAME</text>
 <text x="-1" y="-0.25" size="0.5" layer="33" ratio="15">&gt;NAME</text>
 <text x="2" y="1" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
@@ -11769,16 +11777,17 @@ Clip NC1 and NC2 pins after soldering.</description>
 </devices>
 </deviceset>
 <deviceset name="FR014H5JZ" prefix="U">
-<description>-30V RP, 34V TVS protection, High Side topology, MLP_3mmx3mm package, Fairchild</description>
+<description>&lt;b&gt; Reverse Polarity Protection Chip &lt;/b&gt;&lt;br&gt;
+-30V RP, 34V TVS protection, High Side topology, MLP_3mmx3mm package, Fairchild, Mfg. Part NO.: FR014H5JZ, Digikey Part No.: FR014H5JZCT-ND</description>
 <gates>
-<gate name="G$1" symbol="FR014H5JZ" x="-2.54" y="5.08"/>
+<gate name="G1" symbol="FR014H5JZ" x="-2.54" y="5.08"/>
 </gates>
 <devices>
 <device name="" package="MLP-3X3">
 <connects>
-<connect gate="G$1" pin="CTL" pad="4"/>
-<connect gate="G$1" pin="NEG" pad="1 2 3"/>
-<connect gate="G$1" pin="POS" pad="5 6 7 8 EP"/>
+<connect gate="G1" pin="CTL" pad="4"/>
+<connect gate="G1" pin="NEG" pad="1 2 3"/>
+<connect gate="G1" pin="POS" pad="5 6 7 8 EP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14998,8 +15007,6 @@ USB connector.  Supply power to system
 with USB Micro B connector (5V).
 </text>
 <text x="1026.16" y="24.13" size="7.62" layer="94">POWER</text>
-<text x="830.58" y="320.04" size="7.62" layer="112">MIC5305 fixed regulators are non-stocked at Mouser and Digikey.  Also their accuracy is only 1%, so this was stupid choice.  Should use adjustable regulators for BOM reduction in future.</text>
-<text x="829.31" y="304.8" size="7.62" layer="112">Temporary fix for V2.0 is using the ADP121 1% LDO from Analog.</text>
 <text x="518.16" y="505.46" size="1.778" layer="97">(absolute max rating for TPS63060 VIN is 17V)</text>
 <text x="213.36" y="398.78" size="1.778" layer="97">Widlar and Peaking Mirror Current Source,
 so that indicator LED current is reasonably
@@ -15136,7 +15143,7 @@ LED</text>
 <attribute name="VALUE" x="654.304" y="314.071" size="1.778" layer="96"/>
 </instance>
 <instance part="GND64" gate="G1" x="640.08" y="309.88"/>
-<instance part="U2" gate="G$1" x="220.98" y="477.52"/>
+<instance part="U2" gate="G1" x="220.98" y="477.52"/>
 <instance part="GND71" gate="1" x="220.98" y="441.96"/>
 <instance part="C120" gate="CE" x="546.1" y="320.04" smashed="yes">
 <attribute name="V_RATING" x="547.37" y="314.96" size="1.778" layer="96"/>
@@ -15777,7 +15784,7 @@ LED</text>
 </segment>
 <segment>
 <pinref part="GND71" gate="1" pin="GND"/>
-<pinref part="U2" gate="G$1" pin="CTL"/>
+<pinref part="U2" gate="G1" pin="CTL"/>
 <wire x1="220.98" y1="444.5" x2="220.98" y2="452.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -16008,7 +16015,7 @@ LED</text>
 <wire x1="379.73" y1="468.63" x2="379.73" y2="472.44" width="0.1524" layer="91"/>
 <wire x1="379.73" y1="472.44" x2="379.73" y2="474.98" width="0.1524" layer="91"/>
 <junction x="379.73" y="472.44"/>
-<pinref part="U2" gate="G$1" pin="NEG"/>
+<pinref part="U2" gate="G1" pin="NEG"/>
 <wire x1="251.46" y1="472.44" x2="271.78" y2="472.44" width="0.3048" layer="91"/>
 <wire x1="271.78" y1="472.44" x2="351.79" y2="472.44" width="0.3048" layer="91"/>
 <wire x1="351.79" y1="472.44" x2="361.95" y2="472.44" width="0.3048" layer="91"/>
@@ -16227,7 +16234,7 @@ LED</text>
 </net>
 <net name="VIN_FUSED" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="POS"/>
+<pinref part="U2" gate="G1" pin="POS"/>
 <pinref part="F1" gate="F" pin="2"/>
 <wire x1="193.04" y1="472.44" x2="195.58" y2="472.44" width="0.3048" layer="91"/>
 </segment>
@@ -16776,15 +16783,11 @@ will power down quickly.</text>
  capacitance of 12.5pF
 The trace capacitance is about 1pF. 
  Therefore choose parallel caps of 11pF.</text>
-<text x="960.12" y="662.94" size="5.08" layer="112">Add some package details to MAX3051 SO-8 package:
-tplace layer
-demarcation of pin 1
-Digikey part no. in the device info.</text>
 <text x="279.4" y="345.44" size="1.778" layer="97">The CTX951CT-ND capacitor has a
  10pF load capacitance which is an
  18pF cap on each side + some trace
 capacitance in series = 10pF.</text>
-<text x="347.98" y="416.56" size="2.54" layer="112">IMPORTANT:
+<text x="347.98" y="416.56" size="2.54" layer="112">
 versions of STM32F427 bootloader before version 9 (v9) will not boot if given an external clock signal 
 (i.e. TCXO).  Need chips made after 30th week of 2014 (datecode 430), with silicon revision 3.  See
  STM32F40x Errata sheet v6 p35 (DM00037591.pdf) for an outline of how to read date codes
@@ -16792,6 +16795,7 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
  (which is driven by the STM OSC_OUT)</text>
 <text x="497.84" y="289.56" size="1.778" layer="97">Active High (high closes switch)</text>
 <text x="1099.82" y="5.08" size="5.08" layer="94">&gt;VERSION</text>
+<text x="347.98" y="436.88" size="10.16" layer="112">IMPORTANT:</text>
 </plain>
 <instances>
 <instance part="R201" gate="R" x="523.24" y="736.6" rot="R270"/>

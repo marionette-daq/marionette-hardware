@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1824,7 +1824,7 @@ Gold Plated off-mom, 150gf, Mfg:  Omron, Part No.:  B3F-1002,  Digikey No.:  SW4
 <text x="-1.8" y="0" size="0.85" layer="33" ratio="15">&gt;NAME</text>
 </package>
 <package name="UDFN-8-3.3X1.0_6MIL">
-<description>Package for ESD8006 device with layout squeezed to fit 6mil trace/space.</description>
+<description>Package for ESD8006 device with layout squeezed to fit 6mil trace/space.  This means that the width of the two big ground pads is 0.44mm which is .06mm smaller than recommended footprint, but probably still ok.</description>
 <circle x="-1.8" y="-0.65" radius="0.05" width="0.1" layer="21"/>
 <wire x1="-0.945" y1="-0.15" x2="-0.9" y2="-0.195" width="0.1" layer="29"/>
 <wire x1="-0.21" y1="-0.15" x2="-0.28" y2="-0.22" width="0.1" layer="29"/>
@@ -1882,8 +1882,8 @@ Gold Plated off-mom, 150gf, Mfg:  Omron, Part No.:  B3F-1002,  Digikey No.:  SW4
 <smd name="6" x="0.6" y="-0.4" dx="0.25" dy="0.4" layer="1" rot="R180" stop="no"/>
 <smd name="7" x="1" y="-0.4" dx="0.25" dy="0.4" layer="1" rot="R180" stop="no"/>
 <smd name="8" x="1.4" y="-0.4" dx="0.25" dy="0.4" layer="1" stop="no"/>
-<smd name="9" x="0.6025" y="0.275" dx="0.455" dy="0.65" layer="1" rot="R180" stop="no"/>
-<smd name="10" x="-0.6025" y="0.275" dx="0.455" dy="0.65" layer="1" stop="no"/>
+<smd name="9" x="0.595" y="0.275" dx="0.44" dy="0.65" layer="1" rot="R180" stop="no"/>
+<smd name="10" x="-0.595" y="0.275" dx="0.44" dy="0.65" layer="1" stop="no"/>
 <text x="-1" y="-0.25" size="0.5" layer="33" ratio="15">&gt;NAME</text>
 <text x="-1" y="-0.25" size="0.5" layer="33" ratio="15">&gt;NAME</text>
 <text x="2" y="1" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
@@ -2634,8 +2634,8 @@ This package is identical to 0402-C, but has its tPlace silkscreen layer removed
 <smd name="7" x="-0.325" y="1.53" dx="0.42" dy="0.46" layer="1" stop="no"/>
 <smd name="8" x="-0.975" y="1.53" dx="0.42" dy="0.46" layer="1" stop="no"/>
 <smd name="EP" x="0" y="0.45" dx="2.37" dy="1.7" layer="1" cream="no"/>
-<text x="2" y="3" size="0.8" layer="104" font="vector" ratio="20">&gt;name</text>
-<text x="2" y="2" size="0.8" layer="27" font="vector" ratio="20">&gt;value</text>
+<text x="2" y="3" size="0.85" layer="25" font="vector" ratio="15">&gt;name</text>
+<text x="2" y="2" size="0.85" layer="27" font="vector" ratio="15">&gt;value</text>
 <text x="0" y="0" size="0.5" layer="33" align="center">&gt;NAME</text>
 </package>
 <package name="PAD+GND_VIA_0.6MM">
@@ -10653,16 +10653,17 @@ Approx 12x12 mm</description>
 </devices>
 </deviceset>
 <deviceset name="FR014H5JZ" prefix="U">
-<description>-30V RP, 34V TVS protection, High Side topology, MLP_3mmx3mm package, Fairchild</description>
+<description>&lt;b&gt; Reverse Polarity Protection Chip &lt;/b&gt;&lt;br&gt;
+-30V RP, 34V TVS protection, High Side topology, MLP_3mmx3mm package, Fairchild, Mfg. Part NO.: FR014H5JZ, Digikey Part No.: FR014H5JZCT-ND</description>
 <gates>
-<gate name="G$1" symbol="FR014H5JZ" x="-2.54" y="5.08"/>
+<gate name="G1" symbol="FR014H5JZ" x="-2.54" y="5.08"/>
 </gates>
 <devices>
 <device name="" package="MLP-3X3">
 <connects>
-<connect gate="G$1" pin="CTL" pad="4"/>
-<connect gate="G$1" pin="NEG" pad="1 2 3"/>
-<connect gate="G$1" pin="POS" pad="5 6 7 8 EP"/>
+<connect gate="G1" pin="CTL" pad="4"/>
+<connect gate="G1" pin="NEG" pad="1 2 3"/>
+<connect gate="G1" pin="POS" pad="5 6 7 8 EP"/>
 </connects>
 <technologies>
 <technology name=""/>
