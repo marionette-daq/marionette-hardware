@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -13370,7 +13370,7 @@ additional component.
 </deviceset>
 <deviceset name="TPS63060" prefix="U">
 <description>&lt;b&gt; buck boost converter &lt;/b&gt;&lt;br&gt;
-Vin = (2.5V, 12V) Vabs_max = 17V, Vout = (2.5V, 8.0V), Fsync = 2.4MHz, Pkg.: WSON-10, Digikey Part No.:</description>
+Vin = (2.5V, 12V) Vabs_max = 17V, Vout = (2.5V, 8.0V), Fsync = 2.4MHz, Pkg.: WSON-10, Mfg. Part No.: TPS63060DSCT, Digikey Part No.:  296-30178-1-ND</description>
 <gates>
 <gate name="G1" symbol="TPS63060" x="0" y="0"/>
 </gates>

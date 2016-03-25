@@ -196,14 +196,13 @@ package type OT</description>
 <pin name="VIN" x="-12.7" y="7.62" length="middle"/>
 <text x="-5.08" y="11.43" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="13.97" size="1.778" layer="104">&gt;NAME</text>
+<text x="-2.54" y="2.54" size="1.778" layer="94">&gt;VOUT</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="LM3671" prefix="U">
-<description>&lt;b&gt;LM3671&lt;\b&gt; - 2MHz 600mA Step Down DC-DC converter&lt;br&gt;&lt;br&gt;
-
-Data sheet:&lt;br&gt;
-http://www.ti.com/lit/ds/symlink/lm3671.pdf</description>
+<description>&lt;b&gt;LM3671, Fixed output buck converter&lt;/b&gt;&lt;br&gt;
+Vout = 3.3V, Mfg.: TI, Pkg.: SOT23-5, Freq = 2MHz, Imax = 600mA, Mfg part no.: LM3671MF-3.3/NOPB, Digikey Part No.: LM3671MF-3.3/NOPBCT-ND</description>
 <gates>
 <gate name="G1" symbol="LM3671" x="-2.54" y="-7.62"/>
 </gates>
