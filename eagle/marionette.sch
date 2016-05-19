@@ -13994,83 +13994,102 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1X02">
+<package name="1X03">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.8862" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 </package>
-<package name="1X02/90">
+<package name="1X03/90">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
-<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
-<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
-<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
-<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
-<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="6.985" x2="-2.54" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="6.985" x2="0" y2="1.27" width="0.762" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="6.985" x2="2.54" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-4.445" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.921" y1="0.635" x2="-2.159" y2="1.143" layer="21"/>
+<rectangle x1="-0.381" y1="0.635" x2="0.381" y2="1.143" layer="21"/>
+<rectangle x1="2.159" y1="0.635" x2="2.921" y2="1.143" layer="21"/>
+<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-1.905" layer="21"/>
+<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
+<rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<symbol name="PINHD3">
+<wire x1="-6.35" y1="-5.08" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-5.08" width="0.4064" layer="94"/>
 <text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-6.35" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<deviceset name="PINHD-1X3" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+<gate name="A" symbol="PINHD3" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X02">
+<device name="" package="1X03">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="/90" package="1X02/90">
+<device name="/90" package="1X03/90">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14462,7 +14481,6 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="V30" library="supply" deviceset="V3.3A" device=""/>
 <part name="TP46" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP47" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
-<part name="TP48" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP21" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP64" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
 <part name="TP72" library="marionette" deviceset="PAD+X" device="-0.7-NO_CREAM+SILK"/>
@@ -14995,13 +15013,13 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="R68" library="rcl_custom" deviceset="R-US_" device="0402-B" value="100"/>
 <part name="R27" library="rcl_custom" deviceset="R-US_" device="0402-B" value="100"/>
 <part name="TP62" library="marionette" deviceset="PAD+VIA_GND_0.6MM" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND108" library="GROUND" deviceset="GND" device=""/>
 <part name="R6" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
 <part name="R7" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.7k"/>
 <part name="FRAME3" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="FRAME5" library="frames" deviceset="FRAME_C_L" device=""/>
 <part name="D4" library="marionette" deviceset="ESD8006" device="-ESD8006"/>
+<part name="JP3" library="pinhead" deviceset="PINHD-1X3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16734,10 +16752,10 @@ LED</text>
 <wire x1="412.75" y1="852.17" x2="701.04" y2="852.17" width="0.254" layer="97" style="shortdash"/>
 <wire x1="701.04" y1="852.17" x2="701.04" y2="713.74" width="0.254" layer="97" style="shortdash"/>
 <text x="563.88" y="816.61" size="5.08" layer="97">USB HS PHY</text>
-<wire x1="411.48" y1="514.35" x2="273.05" y2="514.35" width="0.254" layer="97" style="shortdash"/>
-<wire x1="273.05" y1="514.35" x2="273.05" y2="624.84" width="0.254" layer="97" style="shortdash"/>
+<wire x1="411.48" y1="499.11" x2="273.05" y2="499.11" width="0.254" layer="97" style="shortdash"/>
+<wire x1="273.05" y1="499.11" x2="273.05" y2="624.84" width="0.254" layer="97" style="shortdash"/>
 <wire x1="273.05" y1="624.84" x2="411.48" y2="624.84" width="0.254" layer="97" style="shortdash"/>
-<wire x1="411.48" y1="624.84" x2="411.48" y2="514.35" width="0.254" layer="97" style="shortdash"/>
+<wire x1="411.48" y1="624.84" x2="411.48" y2="499.11" width="0.254" layer="97" style="shortdash"/>
 <text x="313.69" y="617.22" size="5.08" layer="97">SD Card Interface</text>
 <text x="563.88" y="811.53" size="1.778" layer="97">*See Figure 8-1 USB3320 
 data sheet for application diagram</text>
@@ -16887,7 +16905,7 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <instance part="J22" gate="G$1" x="676.91" y="759.46" rot="MR0"/>
 <instance part="GND11" gate="1" x="382.27" y="537.21"/>
 <instance part="U13" gate="$" x="391.16" y="568.96"/>
-<instance part="U13" gate="CD" x="391.16" y="585.47"/>
+<instance part="U13" gate="CD" x="387.35" y="510.54"/>
 <instance part="U13" gate="_SHIELD1" x="392.43" y="553.72" rot="R180"/>
 <instance part="U13" gate="_SHIELD2" x="392.43" y="551.18" rot="R180"/>
 <instance part="U13" gate="_SHIELD3" x="392.43" y="548.64" rot="R180"/>
@@ -16924,7 +16942,7 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <attribute name="V_RATING" x="654.05" y="739.14" size="1.778" layer="96"/>
 </instance>
 <instance part="GND15" gate="1" x="651.51" y="782.32"/>
-<instance part="GND16" gate="1" x="398.78" y="580.39"/>
+<instance part="GND16" gate="1" x="394.97" y="505.46"/>
 <instance part="C42" gate="CE" x="334.01" y="537.21" smashed="yes">
 <attribute name="V_RATING" x="337.82" y="534.67" size="1.778" layer="96"/>
 <attribute name="NAME" x="335.534" y="537.591" size="1.778" layer="95"/>
@@ -17014,7 +17032,6 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <instance part="V22" gate="G1" x="894.08" y="797.56"/>
 <instance part="V23" gate="G1" x="913.13" y="762"/>
 <instance part="V24" gate="G1" x="928.37" y="773.43"/>
-<instance part="TP48" gate="TP" x="382.27" y="612.14"/>
 <instance part="TP21" gate="TP" x="520.7" y="742.95" rot="R180"/>
 <instance part="TP64" gate="TP" x="200.66" y="734.06" rot="R90"/>
 <instance part="TP109" gate="TP" x="525.78" y="810.26" smashed="yes" rot="R90">
@@ -17411,10 +17428,10 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 </instance>
 <instance part="LED5" gate="G" x="210.82" y="482.6" smashed="yes" rot="R270"/>
 <instance part="LED5" gate="B" x="210.82" y="477.52" smashed="yes" rot="R270"/>
-<instance part="JP2" gate="G$1" x="187.96" y="627.38"/>
-<instance part="GND108" gate="1" x="175.26" y="622.3"/>
+<instance part="GND108" gate="1" x="177.8" y="619.76"/>
 <instance part="R6" gate="R" x="393.7" y="330.2" rot="R180"/>
 <instance part="R7" gate="R" x="406.4" y="327.66" rot="R180"/>
+<instance part="JP3" gate="A" x="187.96" y="627.38"/>
 </instances>
 <busses>
 <bus name="ULPI_BUS:ULPI_D0,ULPI_D1,ULPI_D2,ULPI_D3,ULPI_D4,ULPI_D5,ULPI_D6,ULPI_D7,ULPI_CK,ULPI_STP,ULPI_DIR,ULPI_NXT">
@@ -17789,8 +17806,8 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 </segment>
 <segment>
 <pinref part="U13" gate="CD" pin="1"/>
-<wire x1="393.7" y1="585.47" x2="398.78" y2="585.47" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="585.47" x2="398.78" y2="582.93" width="0.1524" layer="91"/>
+<wire x1="389.89" y1="510.54" x2="394.97" y2="510.54" width="0.1524" layer="91"/>
+<wire x1="394.97" y1="510.54" x2="394.97" y2="508" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -18141,6 +18158,12 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <pinref part="C152" gate="CE" pin="2"/>
 <wire x1="220.98" y1="789.94" x2="220.98" y2="795.02" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND108" gate="1" pin="GND"/>
+<pinref part="JP3" gate="A" pin="3"/>
+<wire x1="177.8" y1="622.3" x2="177.8" y2="624.84" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="624.84" x2="185.42" y2="624.84" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PC12_SDIO_CK" class="0">
 <segment>
@@ -18300,7 +18323,7 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <junction x="195.58" y="731.52"/>
 </segment>
 </net>
-<net name="PA15_TIM2_ETR" class="0">
+<net name="PA15_TIM2_CH1_ETR" class="0">
 <segment>
 <wire x1="170.18" y1="762" x2="167.64" y2="759.46" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="759.46" x2="104.14" y2="759.46" width="0.1524" layer="91"/>
@@ -18325,9 +18348,8 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 </segment>
 <segment>
 <pinref part="R20" gate="R" pin="2"/>
-<wire x1="293.37" y1="524.51" x2="311.15" y2="524.51" width="0.1524" layer="91"/>
-<label x="298.958" y="524.764" size="1.778" layer="95"/>
-<label x="293.37" y="524.51" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="307.34" y1="524.51" x2="311.15" y2="524.51" width="0.1524" layer="91"/>
+<label x="307.34" y="524.51" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PD0" class="0">
@@ -18370,12 +18392,14 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <pinref part="U11" gate="G4" pin="PD9"/>
 </segment>
 </net>
-<net name="PD10" class="0">
+<net name="PD10_SD_DETECT" class="0">
 <segment>
-<wire x1="170.18" y1="505.46" x2="167.64" y2="502.92" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="502.92" x2="104.14" y2="502.92" width="0.1524" layer="91"/>
+<wire x1="184.15" y1="502.92" x2="104.14" y2="502.92" width="0.1524" layer="91"/>
 <label x="125.73" y="502.92" size="1.778" layer="95" font="vector"/>
 <pinref part="U11" gate="G4" pin="PD10"/>
+<pinref part="U13" gate="CD" pin="0"/>
+<wire x1="382.27" y1="510.54" x2="184.15" y2="510.54" width="0.1524" layer="91"/>
+<wire x1="184.15" y1="510.54" x2="184.15" y2="502.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PD11_USART3_CTS" class="0">
@@ -18556,19 +18580,6 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <wire x1="194.31" y1="845.82" x2="518.16" y2="845.82" width="0.1524" layer="91"/>
 <label x="509.27" y="845.82" size="1.778" layer="95"/>
 <label x="176.53" y="795.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PC7_SD_DETECT" class="0">
-<segment>
-<wire x1="379.73" y1="612.14" x2="104.14" y2="612.14" width="0.1524" layer="91"/>
-<label x="125.73" y="612.14" size="1.778" layer="95"/>
-<wire x1="379.73" y1="612.14" x2="379.73" y2="585.47" width="0.1524" layer="91"/>
-<wire x1="379.73" y1="585.47" x2="386.08" y2="585.47" width="0.1524" layer="91"/>
-<pinref part="U13" gate="CD" pin="0"/>
-<label x="125.73" y="612.14" size="1.778" layer="95"/>
-<pinref part="U11" gate="G3" pin="PC7"/>
-<pinref part="TP48" gate="TP" pin="P"/>
-<junction x="379.73" y="612.14"/>
 </segment>
 </net>
 <net name="PB15" class="0">
@@ -19118,7 +19129,7 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <pinref part="U11" gate="G6" pin="PF15"/>
 </segment>
 </net>
-<net name="PE0" class="0">
+<net name="PE0_TIM4_ETR" class="0">
 <segment>
 <wire x1="170.18" y1="198.12" x2="167.64" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="195.58" x2="104.14" y2="195.58" width="0.1524" layer="91"/>
@@ -19174,7 +19185,7 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <pinref part="U11" gate="G5" pin="PE6"/>
 </segment>
 </net>
-<net name="PE7" class="0">
+<net name="PE7_TIM1_ETR" class="0">
 <segment>
 <wire x1="170.18" y1="162.56" x2="167.64" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="160.02" x2="104.14" y2="160.02" width="0.1524" layer="91"/>
@@ -19642,8 +19653,8 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <label x="125.73" y="617.22" size="1.778" layer="95"/>
 <pinref part="U11" gate="G3" pin="PC6"/>
 <wire x1="165.1" y1="617.22" x2="165.1" y2="629.92" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="629.92" x2="185.42" y2="629.92" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="TCXO_OUT" class="0">
@@ -20093,12 +20104,6 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <label x="842.01" y="664.21" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="627.38" x2="175.26" y2="627.38" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PH7_ADC3_CH4" class="0">
 <segment>
 <pinref part="U11" gate="G8" pin="PH7"/>
@@ -20115,6 +20120,16 @@ and revisions.  Basically you want a "3" to indicate version 3.  Otherwise just 
 <wire x1="401.32" y1="327.66" x2="162.56" y2="327.66" width="0.1524" layer="91"/>
 <pinref part="R7" gate="R" pin="2"/>
 <label x="129.54" y="325.12" size="1.778" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="PC7_DEBUG_USART6_RX" class="0">
+<segment>
+<pinref part="U11" gate="G3" pin="PC7"/>
+<wire x1="104.14" y1="612.14" x2="167.64" y2="612.14" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="612.14" x2="167.64" y2="627.38" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="627.38" x2="167.64" y2="627.38" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="2"/>
+<label x="125.73" y="612.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -22930,13 +22945,6 @@ protection to DAC output if necessary.</text>
 <junction x="109.22" y="132.08"/>
 </segment>
 </net>
-<net name="PE15" class="0">
-<segment>
-<wire x1="87.63" y1="224.79" x2="114.3" y2="224.79" width="0.1524" layer="91"/>
-<label x="87.63" y="224.79" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J3" gate="G1" pin="17"/>
-</segment>
-</net>
 <net name="PF11" class="0">
 <segment>
 <wire x1="153.67" y1="224.79" x2="129.54" y2="224.79" width="0.1524" layer="91"/>
@@ -23240,13 +23248,6 @@ protection to DAC output if necessary.</text>
 <junction x="109.22" y="142.24"/>
 </segment>
 </net>
-<net name="PG11" class="0">
-<segment>
-<wire x1="87.63" y1="227.33" x2="114.3" y2="227.33" width="0.1524" layer="91"/>
-<label x="87.63" y="227.33" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J3" gate="G1" pin="15"/>
-</segment>
-</net>
 <net name="PF0_I2C2_SDA" class="0">
 <segment>
 <label x="76.2" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -23265,13 +23266,6 @@ protection to DAC output if necessary.</text>
 <pinref part="D8" gate="G6" pin="CATHODE"/>
 <wire x1="134.62" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
 <junction x="134.62" y="137.16"/>
-</segment>
-</net>
-<net name="PG15" class="0">
-<segment>
-<wire x1="153.67" y1="227.33" x2="129.54" y2="227.33" width="0.1524" layer="91"/>
-<label x="153.67" y="227.584" size="1.27" layer="95" xref="yes"/>
-<pinref part="J3" gate="G1" pin="16"/>
 </segment>
 </net>
 <net name="PD5_USART2_TX" class="0">
@@ -23375,7 +23369,7 @@ protection to DAC output if necessary.</text>
 <label x="93.98" y="204.47" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PA15_TIM2_ETR" class="0">
+<net name="PA15_TIM2_CH1_ETR" class="0">
 <segment>
 <pinref part="J3" gate="G1" pin="38"/>
 <wire x1="129.54" y1="199.39" x2="147.32" y2="199.39" width="0.1524" layer="91"/>
@@ -23493,7 +23487,28 @@ protection to DAC output if necessary.</text>
 <junction x="294.64" y="114.3"/>
 </segment>
 </net>
-<net name="PE7" class="0">
+<net name="PE7_TIM1_ETR" class="0">
+<segment>
+<pinref part="J3" gate="G1" pin="16"/>
+<wire x1="129.54" y1="227.33" x2="153.67" y2="227.33" width="0.1524" layer="91"/>
+<label x="153.67" y="227.33" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PH14" class="0">
+<segment>
+<pinref part="J3" gate="G1" pin="28"/>
+<wire x1="129.54" y1="212.09" x2="153.67" y2="212.09" width="0.1524" layer="91"/>
+<label x="153.67" y="212.09" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PE0_TIM4_ETR" class="0">
+<segment>
+<pinref part="J3" gate="G1" pin="15"/>
+<wire x1="114.3" y1="227.33" x2="87.63" y2="227.33" width="0.1524" layer="91"/>
+<label x="87.63" y="227.33" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PI10" class="0">
 <segment>
 <pinref part="J9" gate="G1" pin="37"/>
 <wire x1="274.32" y1="114.3" x2="269.24" y2="114.3" width="0.1524" layer="91"/>
@@ -23503,11 +23518,11 @@ protection to DAC output if necessary.</text>
 <junction x="269.24" y="114.3"/>
 </segment>
 </net>
-<net name="PH14" class="0">
+<net name="PE8" class="0">
 <segment>
-<pinref part="J3" gate="G1" pin="28"/>
-<wire x1="129.54" y1="212.09" x2="153.67" y2="212.09" width="0.1524" layer="91"/>
-<label x="153.67" y="212.09" size="1.27" layer="95" xref="yes"/>
+<label x="87.63" y="224.79" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J3" gate="G1" pin="17"/>
+<wire x1="87.63" y1="224.79" x2="114.3" y2="224.79" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
