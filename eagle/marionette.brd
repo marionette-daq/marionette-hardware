@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9,8 +9,8 @@
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="11" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="13" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -23,21 +23,21 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="14" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="62" fill="9" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="62" fill="9" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -46,20 +46,20 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -2233,26 +2233,26 @@ Gold Plated off-mom, 150gf, Mfg:  Omron, Part No.:  B3F-1002,  Digikey No.:  SW4
 <wire x1="-16.6" y1="4.7" x2="16.6" y2="4.7" width="0.1" layer="39"/>
 <wire x1="16.6" y1="4.7" x2="16.6" y2="-4.7" width="0.1" layer="39"/>
 <wire x1="16.6" y1="-4.7" x2="-16.6" y2="-4.7" width="0.1" layer="39"/>
-<pad name="1" x="-11.43" y="-1.27" drill="0.8" shape="square"/>
-<pad name="2" x="-11.43" y="1.27" drill="0.8"/>
-<pad name="3" x="-8.89" y="-1.27" drill="0.8"/>
-<pad name="4" x="-8.89" y="1.27" drill="0.8"/>
-<pad name="5" x="-6.35" y="-1.27" drill="0.8"/>
-<pad name="6" x="-6.35" y="1.27" drill="0.8"/>
-<pad name="7" x="-3.81" y="-1.27" drill="0.8"/>
-<pad name="8" x="-3.81" y="1.27" drill="0.8"/>
-<pad name="9" x="-1.27" y="-1.27" drill="0.8"/>
-<pad name="10" x="-1.27" y="1.27" drill="0.8"/>
-<pad name="11" x="1.27" y="-1.27" drill="0.8"/>
-<pad name="12" x="1.27" y="1.27" drill="0.8"/>
-<pad name="13" x="3.81" y="-1.27" drill="0.8"/>
-<pad name="14" x="3.81" y="1.27" drill="0.8"/>
-<pad name="15" x="6.35" y="-1.27" drill="0.8"/>
-<pad name="16" x="6.35" y="1.27" drill="0.8"/>
-<pad name="17" x="8.89" y="-1.27" drill="0.8"/>
-<pad name="18" x="8.89" y="1.27" drill="0.8"/>
-<pad name="19" x="11.43" y="-1.27" drill="0.8"/>
-<pad name="20" x="11.43" y="1.27" drill="0.8"/>
+<pad name="1" x="-11.43" y="-1.27" drill="0.914" shape="square"/>
+<pad name="2" x="-11.43" y="1.27" drill="0.914"/>
+<pad name="3" x="-8.89" y="-1.27" drill="0.914"/>
+<pad name="4" x="-8.89" y="1.27" drill="0.914"/>
+<pad name="5" x="-6.35" y="-1.27" drill="0.914"/>
+<pad name="6" x="-6.35" y="1.27" drill="0.914"/>
+<pad name="7" x="-3.81" y="-1.27" drill="0.914"/>
+<pad name="8" x="-3.81" y="1.27" drill="0.914"/>
+<pad name="9" x="-1.27" y="-1.27" drill="0.914"/>
+<pad name="10" x="-1.27" y="1.27" drill="0.914"/>
+<pad name="11" x="1.27" y="-1.27" drill="0.914"/>
+<pad name="12" x="1.27" y="1.27" drill="0.914"/>
+<pad name="13" x="3.81" y="-1.27" drill="0.914"/>
+<pad name="14" x="3.81" y="1.27" drill="0.914"/>
+<pad name="15" x="6.35" y="-1.27" drill="0.914"/>
+<pad name="16" x="6.35" y="1.27" drill="0.914"/>
+<pad name="17" x="8.89" y="-1.27" drill="0.914"/>
+<pad name="18" x="8.89" y="1.27" drill="0.914"/>
+<pad name="19" x="11.43" y="-1.27" drill="0.914"/>
+<pad name="20" x="11.43" y="1.27" drill="0.914"/>
 <text x="12.3" y="7" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="12.3" y="6" size="0.85" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 <text x="-8" y="-2.9" size="1" layer="51">&gt;ADDR</text>
@@ -2279,49 +2279,88 @@ Gold Plated off-mom, 150gf, Mfg:  Omron, Part No.:  B3F-1002,  Digikey No.:  SW4
 <wire x1="-29.3" y1="4.7" x2="29.3" y2="4.7" width="0.1" layer="39"/>
 <wire x1="29.3" y1="4.7" x2="29.3" y2="-4.7" width="0.1" layer="39"/>
 <wire x1="29.3" y1="-4.7" x2="-29.3" y2="-4.7" width="0.1" layer="39"/>
-<pad name="1" x="-24.13" y="-1.27" drill="0.8" shape="square"/>
-<pad name="2" x="-24.13" y="1.27" drill="0.8"/>
-<pad name="3" x="-21.59" y="-1.27" drill="0.8"/>
-<pad name="4" x="-21.59" y="1.27" drill="0.8"/>
-<pad name="5" x="-19.05" y="-1.27" drill="0.8"/>
-<pad name="6" x="-19.05" y="1.27" drill="0.8"/>
-<pad name="7" x="-16.51" y="-1.27" drill="0.8"/>
-<pad name="8" x="-16.51" y="1.27" drill="0.8"/>
-<pad name="9" x="-13.97" y="-1.27" drill="0.8"/>
-<pad name="10" x="-13.97" y="1.27" drill="0.8"/>
-<pad name="11" x="-11.43" y="-1.27" drill="0.8"/>
-<pad name="12" x="-11.43" y="1.27" drill="0.8"/>
-<pad name="13" x="-8.89" y="-1.27" drill="0.8"/>
-<pad name="14" x="-8.89" y="1.27" drill="0.8"/>
-<pad name="15" x="-6.35" y="-1.27" drill="0.8"/>
-<pad name="16" x="-6.35" y="1.27" drill="0.8"/>
-<pad name="17" x="-3.81" y="-1.27" drill="0.8"/>
-<pad name="18" x="-3.81" y="1.27" drill="0.8"/>
-<pad name="19" x="-1.27" y="-1.27" drill="0.8"/>
-<pad name="20" x="-1.27" y="1.27" drill="0.8"/>
-<pad name="21" x="1.27" y="-1.27" drill="0.8"/>
-<pad name="22" x="1.27" y="1.27" drill="0.8"/>
-<pad name="23" x="3.81" y="-1.27" drill="0.8"/>
-<pad name="24" x="3.81" y="1.27" drill="0.8"/>
-<pad name="25" x="6.35" y="-1.27" drill="0.8"/>
-<pad name="26" x="6.35" y="1.27" drill="0.8"/>
-<pad name="27" x="8.89" y="-1.27" drill="0.8"/>
-<pad name="28" x="8.89" y="1.27" drill="0.8"/>
-<pad name="29" x="11.43" y="-1.27" drill="0.8"/>
-<pad name="30" x="11.43" y="1.27" drill="0.8"/>
-<pad name="31" x="13.97" y="-1.27" drill="0.8"/>
-<pad name="32" x="13.97" y="1.27" drill="0.8"/>
-<pad name="33" x="16.51" y="-1.27" drill="0.8"/>
-<pad name="34" x="16.51" y="1.27" drill="0.8"/>
-<pad name="35" x="19.05" y="-1.27" drill="0.8"/>
-<pad name="36" x="19.05" y="1.27" drill="0.8"/>
-<pad name="37" x="21.59" y="-1.27" drill="0.8"/>
-<pad name="38" x="21.59" y="1.27" drill="0.8"/>
-<pad name="39" x="24.13" y="-1.27" drill="0.8"/>
-<pad name="40" x="24.13" y="1.27" drill="0.8"/>
+<pad name="1" x="-24.13" y="-1.27" drill="0.914" shape="square"/>
+<pad name="2" x="-24.13" y="1.27" drill="0.914"/>
+<pad name="3" x="-21.59" y="-1.27" drill="0.914"/>
+<pad name="4" x="-21.59" y="1.27" drill="0.914"/>
+<pad name="5" x="-19.05" y="-1.27" drill="0.914"/>
+<pad name="6" x="-19.05" y="1.27" drill="0.914"/>
+<pad name="7" x="-16.51" y="-1.27" drill="0.914"/>
+<pad name="8" x="-16.51" y="1.27" drill="0.914"/>
+<pad name="9" x="-13.97" y="-1.27" drill="0.914"/>
+<pad name="10" x="-13.97" y="1.27" drill="0.914"/>
+<pad name="11" x="-11.43" y="-1.27" drill="0.914"/>
+<pad name="12" x="-11.43" y="1.27" drill="0.914"/>
+<pad name="13" x="-8.89" y="-1.27" drill="0.914"/>
+<pad name="14" x="-8.89" y="1.27" drill="0.914"/>
+<pad name="15" x="-6.35" y="-1.27" drill="0.914"/>
+<pad name="16" x="-6.35" y="1.27" drill="0.914"/>
+<pad name="17" x="-3.81" y="-1.27" drill="0.914"/>
+<pad name="18" x="-3.81" y="1.27" drill="0.914"/>
+<pad name="19" x="-1.27" y="-1.27" drill="0.914"/>
+<pad name="20" x="-1.27" y="1.27" drill="0.914"/>
+<pad name="21" x="1.27" y="-1.27" drill="0.914"/>
+<pad name="22" x="1.27" y="1.27" drill="0.914"/>
+<pad name="23" x="3.81" y="-1.27" drill="0.914"/>
+<pad name="24" x="3.81" y="1.27" drill="0.914"/>
+<pad name="25" x="6.35" y="-1.27" drill="0.914"/>
+<pad name="26" x="6.35" y="1.27" drill="0.914"/>
+<pad name="27" x="8.89" y="-1.27" drill="0.914"/>
+<pad name="28" x="8.89" y="1.27" drill="0.914"/>
+<pad name="29" x="11.43" y="-1.27" drill="0.914"/>
+<pad name="30" x="11.43" y="1.27" drill="0.914"/>
+<pad name="31" x="13.97" y="-1.27" drill="0.914"/>
+<pad name="32" x="13.97" y="1.27" drill="0.914"/>
+<pad name="33" x="16.51" y="-1.27" drill="0.914"/>
+<pad name="34" x="16.51" y="1.27" drill="0.914"/>
+<pad name="35" x="19.05" y="-1.27" drill="0.914"/>
+<pad name="36" x="19.05" y="1.27" drill="0.914"/>
+<pad name="37" x="21.59" y="-1.27" drill="0.914"/>
+<pad name="38" x="21.59" y="1.27" drill="0.914"/>
+<pad name="39" x="24.13" y="-1.27" drill="0.914"/>
+<pad name="40" x="24.13" y="1.27" drill="0.914"/>
 <text x="25" y="7" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="25" y="6" size="0.85" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 <text x="-9.4" y="-2.8" size="0.8" layer="51">&gt;ADDR</text>
+<text x="-24.2" y="2.4" size="0.5" layer="51">2</text>
+<text x="-21.7" y="2.4" size="0.5" layer="51">4</text>
+<text x="-19.1" y="2.4" size="0.5" layer="51">6</text>
+<text x="-16.6" y="2.4" size="0.5" layer="51">8</text>
+<text x="-14.3" y="2.3" size="0.5" layer="51">10</text>
+<text x="-11.8" y="2.3" size="0.5" layer="51">12</text>
+<text x="-9.3" y="2.3" size="0.5" layer="51">14</text>
+<text x="-6.7" y="2.3" size="0.5" layer="51">16</text>
+<text x="-4.2" y="2.3" size="0.5" layer="51">18</text>
+<text x="-1.6" y="2.3" size="0.5" layer="51">20</text>
+<text x="0.9" y="2.3" size="0.5" layer="51">22</text>
+<text x="3.4" y="2.3" size="0.5" layer="51">24</text>
+<text x="6" y="2.3" size="0.5" layer="51">26</text>
+<text x="8.5" y="2.3" size="0.5" layer="51">28</text>
+<text x="11.1" y="2.3" size="0.5" layer="51">30</text>
+<text x="13.6" y="2.3" size="0.5" layer="51">32</text>
+<text x="16.1" y="2.3" size="0.5" layer="51">34</text>
+<text x="18.6" y="2.3" size="0.5" layer="51">36</text>
+<text x="21.3" y="2.3" size="0.5" layer="51">38</text>
+<text x="23.9" y="2.3" size="0.5" layer="51">40</text>
+<text x="-21.7" y="-2.8" size="0.5" layer="51">3</text>
+<text x="-19.2" y="-2.8" size="0.5" layer="51">5</text>
+<text x="-16.7" y="-2.8" size="0.5" layer="51">7</text>
+<text x="-14.1" y="-2.8" size="0.5" layer="51">9</text>
+<text x="-11.7" y="-2.8" size="0.5" layer="51">11</text>
+<text x="-9.2" y="-2.8" size="0.5" layer="51">13</text>
+<text x="-6.8" y="-2.8" size="0.5" layer="51">15</text>
+<text x="-4.2" y="-2.8" size="0.5" layer="51">17</text>
+<text x="-1.7" y="-2.8" size="0.5" layer="51">19</text>
+<text x="0.9" y="-2.8" size="0.5" layer="51">21</text>
+<text x="3.4" y="-2.8" size="0.5" layer="51">23</text>
+<text x="6" y="-2.8" size="0.5" layer="51">25</text>
+<text x="8.5" y="-2.8" size="0.5" layer="51">27</text>
+<text x="11" y="-2.8" size="0.5" layer="51">29</text>
+<text x="13.6" y="-2.8" size="0.5" layer="51">31</text>
+<text x="16.1" y="-2.8" size="0.5" layer="51">33</text>
+<text x="18.6" y="-2.8" size="0.5" layer="51">35</text>
+<text x="21.2" y="-2.8" size="0.5" layer="51">37</text>
+<text x="23.7" y="-2.8" size="0.5" layer="51">39</text>
 </package>
 <package name="R1206">
 <description>&lt;b&gt;1206 (metric 3216) normal 'IPC-B'&lt;/b&gt;
@@ -2603,6 +2642,14 @@ Created for TPS63060.</description>
 <wire x1="0" y1="1.19" x2="0" y2="1.77" width="0.23" layer="31"/>
 <wire x1="0" y1="1.19" x2="0" y2="1.78" width="0.4" layer="29"/>
 <rectangle x1="-0.125" y1="1.2" x2="0.125" y2="1.5" layer="33"/>
+<rectangle x1="1.08" y1="0.45" x2="1.8" y2="0.75" layer="29"/>
+<rectangle x1="1.08" y1="0.05" x2="1.8" y2="0.35" layer="29"/>
+<rectangle x1="1.08" y1="-0.35" x2="1.8" y2="-0.05" layer="29"/>
+<rectangle x1="1.08" y1="-0.75" x2="1.8" y2="-0.45" layer="29"/>
+<rectangle x1="-1.8" y1="-0.75" x2="-1.08" y2="-0.45" layer="29" rot="R180"/>
+<rectangle x1="-1.8" y1="-0.35" x2="-1.08" y2="-0.05" layer="29" rot="R180"/>
+<rectangle x1="-1.8" y1="0.05" x2="-1.08" y2="0.35" layer="29" rot="R180"/>
+<rectangle x1="-1.8" y1="0.45" x2="-1.08" y2="0.75" layer="29" rot="R180"/>
 </package>
 </packages>
 </library>
@@ -10362,7 +10409,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="86" y="62.75" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="86.8" y="64.35" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
-<element name="R3" library="rcl_custom" package=".0402-B" value="111k" x="84.7" y="62.8" smashed="yes" rot="R90">
+<element name="R3" library="rcl_custom" package=".0402-B" value="110k" x="84.7" y="62.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="84.55" y="61.75" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="86.3" y="62" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="84.7" y="62.8" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
@@ -19221,16 +19268,6 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,30,4b93437e414849c5"/>
 <approved hash="18,30,5d5f140027ce6e91"/>
 <approved hash="18,30,ef0784d88bc6e019"/>
-<approved hash="3,1,549ef36e9337da50"/>
-<approved hash="3,1,848d78416a36024a"/>
-<approved hash="3,1,259923809dc7f042"/>
-<approved hash="3,1,0bb6244a24340bc8"/>
-<approved hash="3,1,1a450854feb676e7"/>
-<approved hash="3,1,75b8e5e411606359"/>
-<approved hash="3,1,5e5e4191bacdac4d"/>
-<approved hash="3,1,fd3b036200b409c8"/>
-<approved hash="3,1,8a05880d3530a47d"/>
-<approved hash="3,1,6076078a06946168"/>
 <approved hash="18,29,f9d0d30fac22a8f4"/>
 <approved hash="18,29,bafe23d08f0029d7"/>
 <approved hash="18,29,8466880b2702369a"/>
@@ -19449,6 +19486,16 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,30,b99570817a9d2389"/>
 <approved hash="18,30,ff0117de16c4fe1b"/>
 <approved hash="18,30,4b156d306f5248bb"/>
+<approved hash="3,1,549ef36e9337da50"/>
+<approved hash="3,1,848d78416a36024a"/>
+<approved hash="3,1,259923809dc7f042"/>
+<approved hash="3,1,0bb6244a24340bc8"/>
+<approved hash="3,1,1a450854feb676e7"/>
+<approved hash="3,1,75b8e5e411606359"/>
+<approved hash="3,1,5e5e4191bacdac4d"/>
+<approved hash="3,1,fd3b036200b409c8"/>
+<approved hash="3,1,8a05880d3530a47d"/>
+<approved hash="3,1,6076078a06946168"/>
 <approved hash="6,1,3aa9f0a9a1699f42"/>
 <approved hash="19,1,44d7a221a7924164"/>
 <approved hash="19,1,41d3a725a65640a0"/>
@@ -19522,8 +19569,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,1241bba9b997107f"/>
 <approved hash="19,1,813d2592fe5232f1"/>
 <approved hash="19,1,45258682d1427ae9"/>
-<approved hash="19,1,59bd9b559a4c58a4"/>
 <approved hash="19,1,5abd985599505bb8"/>
+<approved hash="19,1,59bd9b559a4c58a4"/>
 <approved hash="19,1,6d3b0194d25016f4"/>
 <approved hash="19,1,6123aa84f54796eb"/>
 <approved hash="19,1,eaff0ee101c7d625"/>

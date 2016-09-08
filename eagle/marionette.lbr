@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1911,49 +1911,88 @@ Gold Plated off-mom, 150gf, Mfg:  Omron, Part No.:  B3F-1002,  Digikey No.:  SW4
 <wire x1="-29.3" y1="4.7" x2="29.3" y2="4.7" width="0.1" layer="39"/>
 <wire x1="29.3" y1="4.7" x2="29.3" y2="-4.7" width="0.1" layer="39"/>
 <wire x1="29.3" y1="-4.7" x2="-29.3" y2="-4.7" width="0.1" layer="39"/>
-<pad name="1" x="-24.13" y="-1.27" drill="0.8" shape="square"/>
-<pad name="2" x="-24.13" y="1.27" drill="0.8"/>
-<pad name="3" x="-21.59" y="-1.27" drill="0.8"/>
-<pad name="4" x="-21.59" y="1.27" drill="0.8"/>
-<pad name="5" x="-19.05" y="-1.27" drill="0.8"/>
-<pad name="6" x="-19.05" y="1.27" drill="0.8"/>
-<pad name="7" x="-16.51" y="-1.27" drill="0.8"/>
-<pad name="8" x="-16.51" y="1.27" drill="0.8"/>
-<pad name="9" x="-13.97" y="-1.27" drill="0.8"/>
-<pad name="10" x="-13.97" y="1.27" drill="0.8"/>
-<pad name="11" x="-11.43" y="-1.27" drill="0.8"/>
-<pad name="12" x="-11.43" y="1.27" drill="0.8"/>
-<pad name="13" x="-8.89" y="-1.27" drill="0.8"/>
-<pad name="14" x="-8.89" y="1.27" drill="0.8"/>
-<pad name="15" x="-6.35" y="-1.27" drill="0.8"/>
-<pad name="16" x="-6.35" y="1.27" drill="0.8"/>
-<pad name="17" x="-3.81" y="-1.27" drill="0.8"/>
-<pad name="18" x="-3.81" y="1.27" drill="0.8"/>
-<pad name="19" x="-1.27" y="-1.27" drill="0.8"/>
-<pad name="20" x="-1.27" y="1.27" drill="0.8"/>
-<pad name="21" x="1.27" y="-1.27" drill="0.8"/>
-<pad name="22" x="1.27" y="1.27" drill="0.8"/>
-<pad name="23" x="3.81" y="-1.27" drill="0.8"/>
-<pad name="24" x="3.81" y="1.27" drill="0.8"/>
-<pad name="25" x="6.35" y="-1.27" drill="0.8"/>
-<pad name="26" x="6.35" y="1.27" drill="0.8"/>
-<pad name="27" x="8.89" y="-1.27" drill="0.8"/>
-<pad name="28" x="8.89" y="1.27" drill="0.8"/>
-<pad name="29" x="11.43" y="-1.27" drill="0.8"/>
-<pad name="30" x="11.43" y="1.27" drill="0.8"/>
-<pad name="31" x="13.97" y="-1.27" drill="0.8"/>
-<pad name="32" x="13.97" y="1.27" drill="0.8"/>
-<pad name="33" x="16.51" y="-1.27" drill="0.8"/>
-<pad name="34" x="16.51" y="1.27" drill="0.8"/>
-<pad name="35" x="19.05" y="-1.27" drill="0.8"/>
-<pad name="36" x="19.05" y="1.27" drill="0.8"/>
-<pad name="37" x="21.59" y="-1.27" drill="0.8"/>
-<pad name="38" x="21.59" y="1.27" drill="0.8"/>
-<pad name="39" x="24.13" y="-1.27" drill="0.8"/>
-<pad name="40" x="24.13" y="1.27" drill="0.8"/>
+<pad name="1" x="-24.13" y="-1.27" drill="0.914" shape="square"/>
+<pad name="2" x="-24.13" y="1.27" drill="0.914"/>
+<pad name="3" x="-21.59" y="-1.27" drill="0.914"/>
+<pad name="4" x="-21.59" y="1.27" drill="0.914"/>
+<pad name="5" x="-19.05" y="-1.27" drill="0.914"/>
+<pad name="6" x="-19.05" y="1.27" drill="0.914"/>
+<pad name="7" x="-16.51" y="-1.27" drill="0.914"/>
+<pad name="8" x="-16.51" y="1.27" drill="0.914"/>
+<pad name="9" x="-13.97" y="-1.27" drill="0.914"/>
+<pad name="10" x="-13.97" y="1.27" drill="0.914"/>
+<pad name="11" x="-11.43" y="-1.27" drill="0.914"/>
+<pad name="12" x="-11.43" y="1.27" drill="0.914"/>
+<pad name="13" x="-8.89" y="-1.27" drill="0.914"/>
+<pad name="14" x="-8.89" y="1.27" drill="0.914"/>
+<pad name="15" x="-6.35" y="-1.27" drill="0.914"/>
+<pad name="16" x="-6.35" y="1.27" drill="0.914"/>
+<pad name="17" x="-3.81" y="-1.27" drill="0.914"/>
+<pad name="18" x="-3.81" y="1.27" drill="0.914"/>
+<pad name="19" x="-1.27" y="-1.27" drill="0.914"/>
+<pad name="20" x="-1.27" y="1.27" drill="0.914"/>
+<pad name="21" x="1.27" y="-1.27" drill="0.914"/>
+<pad name="22" x="1.27" y="1.27" drill="0.914"/>
+<pad name="23" x="3.81" y="-1.27" drill="0.914"/>
+<pad name="24" x="3.81" y="1.27" drill="0.914"/>
+<pad name="25" x="6.35" y="-1.27" drill="0.914"/>
+<pad name="26" x="6.35" y="1.27" drill="0.914"/>
+<pad name="27" x="8.89" y="-1.27" drill="0.914"/>
+<pad name="28" x="8.89" y="1.27" drill="0.914"/>
+<pad name="29" x="11.43" y="-1.27" drill="0.914"/>
+<pad name="30" x="11.43" y="1.27" drill="0.914"/>
+<pad name="31" x="13.97" y="-1.27" drill="0.914"/>
+<pad name="32" x="13.97" y="1.27" drill="0.914"/>
+<pad name="33" x="16.51" y="-1.27" drill="0.914"/>
+<pad name="34" x="16.51" y="1.27" drill="0.914"/>
+<pad name="35" x="19.05" y="-1.27" drill="0.914"/>
+<pad name="36" x="19.05" y="1.27" drill="0.914"/>
+<pad name="37" x="21.59" y="-1.27" drill="0.914"/>
+<pad name="38" x="21.59" y="1.27" drill="0.914"/>
+<pad name="39" x="24.13" y="-1.27" drill="0.914"/>
+<pad name="40" x="24.13" y="1.27" drill="0.914"/>
 <text x="25" y="7" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="25" y="6" size="0.85" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 <text x="-9.4" y="-2.8" size="0.8" layer="51">&gt;ADDR</text>
+<text x="-24.2" y="2.4" size="0.5" layer="51">2</text>
+<text x="-21.7" y="2.4" size="0.5" layer="51">4</text>
+<text x="-19.1" y="2.4" size="0.5" layer="51">6</text>
+<text x="-16.6" y="2.4" size="0.5" layer="51">8</text>
+<text x="-14.3" y="2.3" size="0.5" layer="51">10</text>
+<text x="-11.8" y="2.3" size="0.5" layer="51">12</text>
+<text x="-9.3" y="2.3" size="0.5" layer="51">14</text>
+<text x="-6.7" y="2.3" size="0.5" layer="51">16</text>
+<text x="-4.2" y="2.3" size="0.5" layer="51">18</text>
+<text x="-1.6" y="2.3" size="0.5" layer="51">20</text>
+<text x="0.9" y="2.3" size="0.5" layer="51">22</text>
+<text x="3.4" y="2.3" size="0.5" layer="51">24</text>
+<text x="6" y="2.3" size="0.5" layer="51">26</text>
+<text x="8.5" y="2.3" size="0.5" layer="51">28</text>
+<text x="11.1" y="2.3" size="0.5" layer="51">30</text>
+<text x="13.6" y="2.3" size="0.5" layer="51">32</text>
+<text x="16.1" y="2.3" size="0.5" layer="51">34</text>
+<text x="18.6" y="2.3" size="0.5" layer="51">36</text>
+<text x="21.3" y="2.3" size="0.5" layer="51">38</text>
+<text x="23.9" y="2.3" size="0.5" layer="51">40</text>
+<text x="-21.7" y="-2.8" size="0.5" layer="51">3</text>
+<text x="-19.2" y="-2.8" size="0.5" layer="51">5</text>
+<text x="-16.7" y="-2.8" size="0.5" layer="51">7</text>
+<text x="-14.1" y="-2.8" size="0.5" layer="51">9</text>
+<text x="-11.7" y="-2.8" size="0.5" layer="51">11</text>
+<text x="-9.2" y="-2.8" size="0.5" layer="51">13</text>
+<text x="-6.8" y="-2.8" size="0.5" layer="51">15</text>
+<text x="-4.2" y="-2.8" size="0.5" layer="51">17</text>
+<text x="-1.7" y="-2.8" size="0.5" layer="51">19</text>
+<text x="0.9" y="-2.8" size="0.5" layer="51">21</text>
+<text x="3.4" y="-2.8" size="0.5" layer="51">23</text>
+<text x="6" y="-2.8" size="0.5" layer="51">25</text>
+<text x="8.5" y="-2.8" size="0.5" layer="51">27</text>
+<text x="11" y="-2.8" size="0.5" layer="51">29</text>
+<text x="13.6" y="-2.8" size="0.5" layer="51">31</text>
+<text x="16.1" y="-2.8" size="0.5" layer="51">33</text>
+<text x="18.6" y="-2.8" size="0.5" layer="51">35</text>
+<text x="21.2" y="-2.8" size="0.5" layer="51">37</text>
+<text x="23.7" y="-2.8" size="0.5" layer="51">39</text>
 </package>
 <package name="IDC_RECEPTACLES_20PIN">
 <wire x1="-16.4" y1="4.5" x2="16.4" y2="4.5" width="0.25" layer="21"/>
@@ -1976,26 +2015,26 @@ Gold Plated off-mom, 150gf, Mfg:  Omron, Part No.:  B3F-1002,  Digikey No.:  SW4
 <wire x1="-16.6" y1="4.7" x2="16.6" y2="4.7" width="0.1" layer="39"/>
 <wire x1="16.6" y1="4.7" x2="16.6" y2="-4.7" width="0.1" layer="39"/>
 <wire x1="16.6" y1="-4.7" x2="-16.6" y2="-4.7" width="0.1" layer="39"/>
-<pad name="1" x="-11.43" y="-1.27" drill="0.8" shape="square"/>
-<pad name="2" x="-11.43" y="1.27" drill="0.8"/>
-<pad name="3" x="-8.89" y="-1.27" drill="0.8"/>
-<pad name="4" x="-8.89" y="1.27" drill="0.8"/>
-<pad name="5" x="-6.35" y="-1.27" drill="0.8"/>
-<pad name="6" x="-6.35" y="1.27" drill="0.8"/>
-<pad name="7" x="-3.81" y="-1.27" drill="0.8"/>
-<pad name="8" x="-3.81" y="1.27" drill="0.8"/>
-<pad name="9" x="-1.27" y="-1.27" drill="0.8"/>
-<pad name="10" x="-1.27" y="1.27" drill="0.8"/>
-<pad name="11" x="1.27" y="-1.27" drill="0.8"/>
-<pad name="12" x="1.27" y="1.27" drill="0.8"/>
-<pad name="13" x="3.81" y="-1.27" drill="0.8"/>
-<pad name="14" x="3.81" y="1.27" drill="0.8"/>
-<pad name="15" x="6.35" y="-1.27" drill="0.8"/>
-<pad name="16" x="6.35" y="1.27" drill="0.8"/>
-<pad name="17" x="8.89" y="-1.27" drill="0.8"/>
-<pad name="18" x="8.89" y="1.27" drill="0.8"/>
-<pad name="19" x="11.43" y="-1.27" drill="0.8"/>
-<pad name="20" x="11.43" y="1.27" drill="0.8"/>
+<pad name="1" x="-11.43" y="-1.27" drill="0.914" shape="square"/>
+<pad name="2" x="-11.43" y="1.27" drill="0.914"/>
+<pad name="3" x="-8.89" y="-1.27" drill="0.914"/>
+<pad name="4" x="-8.89" y="1.27" drill="0.914"/>
+<pad name="5" x="-6.35" y="-1.27" drill="0.914"/>
+<pad name="6" x="-6.35" y="1.27" drill="0.914"/>
+<pad name="7" x="-3.81" y="-1.27" drill="0.914"/>
+<pad name="8" x="-3.81" y="1.27" drill="0.914"/>
+<pad name="9" x="-1.27" y="-1.27" drill="0.914"/>
+<pad name="10" x="-1.27" y="1.27" drill="0.914"/>
+<pad name="11" x="1.27" y="-1.27" drill="0.914"/>
+<pad name="12" x="1.27" y="1.27" drill="0.914"/>
+<pad name="13" x="3.81" y="-1.27" drill="0.914"/>
+<pad name="14" x="3.81" y="1.27" drill="0.914"/>
+<pad name="15" x="6.35" y="-1.27" drill="0.914"/>
+<pad name="16" x="6.35" y="1.27" drill="0.914"/>
+<pad name="17" x="8.89" y="-1.27" drill="0.914"/>
+<pad name="18" x="8.89" y="1.27" drill="0.914"/>
+<pad name="19" x="11.43" y="-1.27" drill="0.914"/>
+<pad name="20" x="11.43" y="1.27" drill="0.914"/>
 <text x="12.3" y="7" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="12.3" y="6" size="0.85" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 <text x="-8" y="-2.9" size="1" layer="51">&gt;ADDR</text>
@@ -7568,6 +7607,14 @@ Created for TPS63060.</description>
 <wire x1="0" y1="1.19" x2="0" y2="1.77" width="0.23" layer="31"/>
 <wire x1="0" y1="1.19" x2="0" y2="1.78" width="0.4" layer="29"/>
 <rectangle x1="-0.125" y1="1.2" x2="0.125" y2="1.5" layer="33"/>
+<rectangle x1="1.08" y1="0.45" x2="1.8" y2="0.75" layer="29"/>
+<rectangle x1="1.08" y1="0.05" x2="1.8" y2="0.35" layer="29"/>
+<rectangle x1="1.08" y1="-0.35" x2="1.8" y2="-0.05" layer="29"/>
+<rectangle x1="1.08" y1="-0.75" x2="1.8" y2="-0.45" layer="29"/>
+<rectangle x1="-1.8" y1="-0.75" x2="-1.08" y2="-0.45" layer="29" rot="R180"/>
+<rectangle x1="-1.8" y1="-0.35" x2="-1.08" y2="-0.05" layer="29" rot="R180"/>
+<rectangle x1="-1.8" y1="0.05" x2="-1.08" y2="0.35" layer="29" rot="R180"/>
+<rectangle x1="-1.8" y1="0.45" x2="-1.08" y2="0.75" layer="29" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -9451,6 +9498,7 @@ TDI</text>
 <text x="4.826" y="2.54" size="0.762" layer="94" rot="R270">!RST</text>
 <text x="12.7" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="12.7" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="12.7" y="0" size="1.778" layer="94">Check symbol mirror?</text>
 </symbol>
 <symbol name="TPS63060">
 <description>&lt;b&gt; wide range Buck Boost converter with integrated FETs &lt;/b&gt;</description>
