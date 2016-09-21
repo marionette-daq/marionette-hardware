@@ -1695,10 +1695,10 @@ In use with boards from sunstone. Fit is good.</description>
 <package name="SOT23-3">
 <description>SOT23-3
 &lt;br&gt;Small Outline Transistor, standard 3-pin package</description>
-<wire x1="1.4" y1="0.6" x2="-1.4" y2="0.6" width="0.3" layer="33"/>
-<wire x1="-1.4" y1="0.6" x2="-1.4" y2="-0.6" width="0.3" layer="33"/>
-<wire x1="-1.4" y1="-0.6" x2="1.4" y2="-0.6" width="0.3" layer="33"/>
-<wire x1="1.4" y1="-0.6" x2="1.4" y2="0.6" width="0.3" layer="33"/>
+<wire x1="1.4" y1="0.6" x2="-1.4" y2="0.6" width="0.3" layer="51"/>
+<wire x1="-1.4" y1="0.6" x2="-1.4" y2="-0.6" width="0.3" layer="51"/>
+<wire x1="-1.4" y1="-0.6" x2="1.4" y2="-0.6" width="0.3" layer="51"/>
+<wire x1="1.4" y1="-0.6" x2="1.4" y2="0.6" width="0.3" layer="51"/>
 <wire x1="-1.8" y1="-2" x2="1.8" y2="-2" width="0.05" layer="39"/>
 <wire x1="1.8" y1="-2" x2="1.8" y2="2" width="0.05" layer="39"/>
 <wire x1="1.8" y1="2" x2="-1.8" y2="2" width="0.05" layer="39"/>
@@ -1708,29 +1708,18 @@ In use with boards from sunstone. Fit is good.</description>
 <wire x1="-1.6" y1="0.8" x2="-0.7" y2="0.8" width="0.127" layer="21"/>
 <wire x1="1.6" y1="-0.3" x2="1.6" y2="0.8" width="0.127" layer="21"/>
 <wire x1="1.6" y1="0.8" x2="0.7" y2="0.8" width="0.127" layer="21"/>
-<wire x1="1.4" y1="0.6" x2="-1.4" y2="0.6" width="0.3" layer="51"/>
-<wire x1="-1.4" y1="0.6" x2="-1.4" y2="-0.6" width="0.3" layer="51"/>
-<wire x1="-1.4" y1="-0.6" x2="1.4" y2="-0.6" width="0.3" layer="51"/>
-<wire x1="1.4" y1="-0.6" x2="1.4" y2="0.6" width="0.3" layer="51"/>
-<wire x1="-1.2" y1="-0.4" x2="-0.6" y2="-0.4" width="0.1" layer="33"/>
-<wire x1="-0.6" y1="-0.4" x2="-0.9" y2="0.1" width="0.1" layer="33"/>
-<wire x1="-0.9" y1="0.1" x2="-1.2" y2="-0.4" width="0.1" layer="33"/>
-<rectangle x1="-0.25" y1="0.65" x2="0.25" y2="1.3" layer="33"/>
-<rectangle x1="-1.2" y1="-1.3" x2="-0.7" y2="-0.65" layer="33"/>
-<rectangle x1="0.7" y1="-1.3" x2="1.2" y2="-0.65" layer="33"/>
+<smd name="3" x="0" y="1" dx="0.8" dy="0.9" layer="1" stop="no"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1" stop="no"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1" stop="no"/>
+<text x="-2" y="1.8" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2" y="-3" size="1" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.25" y1="0.65" x2="0.25" y2="1.3" layer="51"/>
+<rectangle x1="-1.2" y1="-1.3" x2="-0.7" y2="-0.65" layer="51"/>
+<rectangle x1="0.7" y1="-1.3" x2="1.2" y2="-0.65" layer="51"/>
 <rectangle x1="-0.5" y1="-0.3" x2="0.5" y2="0.3" layer="35"/>
 <rectangle x1="-1.45" y1="-1.545" x2="-0.455" y2="-0.455" layer="29"/>
 <rectangle x1="0.455" y1="-1.545" x2="1.455" y2="-0.445" layer="29"/>
 <rectangle x1="-0.5" y1="0.455" x2="0.5" y2="1.55" layer="29"/>
-<rectangle x1="-0.25" y1="0.65" x2="0.25" y2="1.3" layer="51"/>
-<rectangle x1="-1.2" y1="-1.3" x2="-0.7" y2="-0.65" layer="51"/>
-<rectangle x1="0.7" y1="-1.3" x2="1.2" y2="-0.65" layer="51"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1" stop="no"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1" stop="no"/>
-<smd name="3" x="0" y="1" dx="0.8" dy="0.9" layer="1" stop="no"/>
-<text x="2" y="1" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="2" y="0" size="0.85" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-<text x="-0.4" y="0" size="0.3" layer="33" ratio="15">&gt;NAME</text>
 </package>
 <package name="SOT23-5">
 <description>SOT23-5
@@ -9940,123 +9929,123 @@ Gain of 20, operating Voltage (-2V,65V), pkg.: SOIC-8, mfg.: Analog Devices, Mfg
 </symbol>
 <symbol name="LTC2312">
 <description>14bit ADC, Linear Technologies, 500ksps</description>
-<wire x1="-12.7" y1="3.81" x2="-12.7" y2="1.524" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="1.524" x2="-12.7" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-1.524" x2="-12.7" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-3.81" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
-<text x="-9.144" y="-0.254" size="0.85" layer="94" ratio="15">s/h</text>
-<wire x1="-10.16" y1="2.54" x2="-12.7" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-11.43" y1="2.286" x2="-11.43" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-12.192" y1="1.524" x2="-10.668" y2="1.524" width="0.254" layer="94"/>
-<wire x1="-12.192" y1="-1.524" x2="-10.668" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<text x="-1.27" y="-0.254" size="0.85" layer="94" ratio="15"> SAR ADC</text>
-<circle x="-8.636" y="-2.54" radius="0.6096" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-7.874" y1="-2.54" x2="-1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-12.7" y1="-1.524" x2="-15.24" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-15.748" y1="-3.81" x2="-14.732" y2="-3.81" width="0.1524" layer="94"/>
-<wire x1="-15.494" y1="-4.064" x2="-14.986" y2="-4.064" width="0.1524" layer="94"/>
-<wire x1="-16.002" y1="-3.556" x2="-15.24" y2="-3.556" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="-3.556" x2="-14.478" y2="-3.556" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="-3.556" x2="-15.24" y2="-1.524" width="0.1524" layer="94"/>
-<text x="3.81" y="7.366" size="0.85" layer="94" ratio="15">2.5V 
+<wire x1="-17.78" y1="5.08" x2="-17.78" y2="2.794" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="2.794" x2="-17.78" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-0.254" x2="-17.78" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-2.54" x2="-10.16" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="1.27" x2="-15.24" y2="3.81" width="0.254" layer="94"/>
+<text x="-14.224" y="1.016" size="0.85" layer="94" ratio="15">s/h</text>
+<wire x1="-15.24" y1="3.81" x2="-17.78" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-16.51" y1="3.556" x2="-16.51" y2="2.032" width="0.254" layer="94"/>
+<wire x1="-17.272" y1="2.794" x2="-15.748" y2="2.794" width="0.254" layer="94"/>
+<wire x1="-17.272" y1="-0.254" x2="-15.748" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="1.27" x2="-6.35" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="3.81" x2="-5.08" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="6.35" x2="0" y2="6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="6.35" x2="5.08" y2="6.35" width="0.254" layer="94"/>
+<wire x1="5.08" y1="6.35" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="-5.08" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-3.81" x2="-6.35" y2="-1.27" width="0.254" layer="94"/>
+<text x="-6.35" y="1.016" size="0.85" layer="94" ratio="15"> SAR ADC</text>
+<circle x="-13.716" y="-1.27" radius="0.6096" width="0.1524" layer="94"/>
+<wire x1="-6.35" y1="-1.27" x2="-7.62" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-12.954" y1="-1.27" x2="-6.35" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-17.78" y1="-0.254" x2="-20.32" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="-20.828" y1="-2.54" x2="-19.812" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-20.574" y1="-2.794" x2="-20.066" y2="-2.794" width="0.1524" layer="94"/>
+<wire x1="-21.082" y1="-2.286" x2="-20.32" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="-20.32" y1="-2.286" x2="-19.558" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="-20.32" y1="-2.286" x2="-20.32" y2="-0.254" width="0.1524" layer="94"/>
+<text x="-1.27" y="8.636" size="0.85" layer="94" ratio="15">2.5V 
 LDO</text>
-<wire x1="2.794" y1="10.16" x2="2.794" y2="6.858" width="0.254" layer="94"/>
-<wire x1="2.794" y1="6.858" x2="5.08" y2="6.858" width="0.254" layer="94"/>
-<wire x1="5.08" y1="6.858" x2="7.112" y2="6.858" width="0.254" layer="94"/>
-<wire x1="7.112" y1="6.858" x2="7.112" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.112" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="10.16" x2="2.794" y2="10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="4.318" x2="20.32" y2="4.318" width="0.254" layer="94"/>
-<wire x1="20.32" y1="4.318" x2="22.86" y2="4.318" width="0.254" layer="94"/>
-<wire x1="22.86" y1="4.318" x2="22.86" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="22.86" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-3.81" x2="15.24" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-3.81" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="4.318" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-7.62" x2="22.86" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-7.62" x2="22.86" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-10.16" x2="22.86" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-15.24" x2="22.86" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-17.78" x2="17.78" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-10.16" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-15.24" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<text x="-10.922" y="-12.954" size="0.85" layer="94" ratio="15">2x/4x</text>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
-<pin name="AIN" x="-25.4" y="2.54" visible="off" length="short" direction="in"/>
-<pin name="REF" x="-25.4" y="-7.62" visible="off" length="short" direction="in"/>
-<pin name="VDD" x="5.08" y="20.32" visible="off" length="short" direction="pwr" rot="R270"/>
-<pin name="DVDD" x="20.32" y="20.32" visible="off" length="short" direction="pwr" rot="R270"/>
-<pin name="SDO" x="33.02" y="0" visible="off" length="short" direction="out" rot="R180"/>
-<pin name="SCK" x="33.02" y="-10.16" visible="off" length="short" rot="R180"/>
-<pin name="CONV" x="33.02" y="-15.24" visible="off" length="short" rot="R180"/>
-<wire x1="-22.86" y1="17.78" x2="5.08" y2="17.78" width="0.508" layer="94"/>
-<wire x1="5.08" y1="17.78" x2="30.48" y2="17.78" width="0.508" layer="94"/>
-<wire x1="30.48" y1="17.78" x2="30.48" y2="0" width="0.508" layer="94"/>
-<wire x1="30.48" y1="0" x2="30.48" y2="-10.16" width="0.508" layer="94"/>
-<wire x1="30.48" y1="-10.16" x2="30.48" y2="-15.24" width="0.508" layer="94"/>
-<wire x1="30.48" y1="-15.24" x2="30.48" y2="-20.32" width="0.508" layer="94"/>
-<wire x1="30.48" y1="-20.32" x2="-22.86" y2="-20.32" width="0.508" layer="94"/>
-<wire x1="-22.86" y1="-20.32" x2="-22.86" y2="-7.62" width="0.508" layer="94"/>
-<text x="15.748" y="-1.27" size="0.85" layer="94" ratio="15">Three State
+<wire x1="-2.286" y1="11.43" x2="-2.286" y2="8.128" width="0.254" layer="94"/>
+<wire x1="-2.286" y1="8.128" x2="0" y2="8.128" width="0.254" layer="94"/>
+<wire x1="0" y1="8.128" x2="2.032" y2="8.128" width="0.254" layer="94"/>
+<wire x1="2.032" y1="8.128" x2="2.032" y2="11.43" width="0.254" layer="94"/>
+<wire x1="2.032" y1="11.43" x2="0" y2="11.43" width="0.254" layer="94"/>
+<wire x1="0" y1="11.43" x2="-2.286" y2="11.43" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.588" x2="15.24" y2="5.588" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.588" x2="17.78" y2="5.588" width="0.254" layer="94"/>
+<wire x1="17.78" y1="5.588" x2="17.78" y2="1.27" width="0.254" layer="94"/>
+<wire x1="17.78" y1="1.27" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="1.27" width="0.254" layer="94"/>
+<wire x1="10.16" y1="1.27" x2="10.16" y2="5.588" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-6.35" x2="17.78" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-6.35" x2="17.78" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-8.89" x2="17.78" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-13.97" x2="17.78" y2="-16.51" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-16.51" x2="12.7" y2="-16.51" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-16.51" x2="12.7" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-8.89" x2="-2.54" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-8.89" x2="-2.54" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-13.97" x2="-10.16" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-13.97" x2="-10.16" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-11.43" x2="-10.16" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-8.89" x2="-12.7" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-11.43" x2="-12.7" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-13.97" x2="-17.78" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-11.43" x2="-12.7" y2="-8.89" width="0.254" layer="94"/>
+<text x="-16.002" y="-11.684" size="0.85" layer="94" ratio="15">2x/4x</text>
+<wire x1="0" y1="-3.81" x2="0" y2="-6.35" width="0.1524" layer="94"/>
+<pin name="AIN" x="-30.48" y="3.81" visible="off" length="short" direction="in"/>
+<pin name="REF" x="-30.48" y="-6.35" visible="off" length="short" direction="in"/>
+<pin name="VDD" x="0" y="21.59" visible="off" length="short" direction="pwr" rot="R270"/>
+<pin name="DVDD" x="15.24" y="21.59" visible="off" length="short" direction="pwr" rot="R270"/>
+<pin name="SDO" x="27.94" y="1.27" visible="off" length="short" direction="out" rot="R180"/>
+<pin name="SCK" x="27.94" y="-8.89" visible="off" length="short" rot="R180"/>
+<pin name="CONV" x="27.94" y="-13.97" visible="off" length="short" rot="R180"/>
+<wire x1="-27.94" y1="19.05" x2="0" y2="19.05" width="0.508" layer="94"/>
+<wire x1="0" y1="19.05" x2="25.4" y2="19.05" width="0.508" layer="94"/>
+<wire x1="25.4" y1="19.05" x2="25.4" y2="1.27" width="0.508" layer="94"/>
+<wire x1="25.4" y1="1.27" x2="25.4" y2="-8.89" width="0.508" layer="94"/>
+<wire x1="25.4" y1="-8.89" x2="25.4" y2="-13.97" width="0.508" layer="94"/>
+<wire x1="25.4" y1="-13.97" x2="25.4" y2="-19.05" width="0.508" layer="94"/>
+<wire x1="25.4" y1="-19.05" x2="-27.94" y2="-19.05" width="0.508" layer="94"/>
+<wire x1="-27.94" y1="-19.05" x2="-27.94" y2="-6.35" width="0.508" layer="94"/>
+<text x="10.668" y="0" size="0.85" layer="94" ratio="15">Three State
 Serial Output
 Port</text>
-<text x="18.796" y="-11.176" size="0.85" layer="94" ratio="15">Timing 
+<text x="13.716" y="-9.906" size="0.85" layer="94" ratio="15">Timing 
 Logic</text>
-<text x="-3.556" y="-13.462" size="0.85" layer="94" ratio="15">1.024V 
+<text x="-8.636" y="-12.192" size="0.85" layer="94" ratio="15">1.024V 
 Bandgap</text>
-<wire x1="-22.86" y1="-7.62" x2="-22.86" y2="17.78" width="0.508" layer="94"/>
-<wire x1="-5.08" y1="-12.7" x2="-7.62" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-15.24" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="-12.7" x2="-15.24" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="-7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="-7.62" x2="-22.86" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-22.606" y1="2.54" x2="-15.24" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="2.54" x2="-15.24" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="1.524" x2="-12.7" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="-10.16" y1="2.54" x2="-1.27" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="6.858" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="17.78" x2="5.08" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="0" x2="15.0368" y2="0" width="0.1524" layer="94"/>
-<wire x1="15.0368" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
-<wire x1="15.24" y1="0" x2="14.732" y2="0.254" width="0.1524" layer="94"/>
-<wire x1="14.732" y1="0.254" x2="14.732" y2="-0.254" width="0.1524" layer="94"/>
-<wire x1="14.732" y1="-0.254" x2="15.24" y2="0" width="0.1524" layer="94"/>
-<wire x1="14.8082" y1="0.127" x2="15.0368" y2="0" width="0.1524" layer="94"/>
-<wire x1="15.0368" y1="0" x2="14.8336" y2="-0.1016" width="0.1524" layer="94"/>
-<wire x1="20.32" y1="17.526" x2="20.32" y2="4.318" width="0.1524" layer="94"/>
-<wire x1="22.86" y1="0" x2="30.48" y2="0" width="0.1524" layer="94"/>
-<pin name="GND" x="5.08" y="-22.86" visible="pin" length="short" direction="pwr" rot="R90"/>
-<text x="-20.574" y="2.794" size="1.524" layer="97">AIN</text>
-<text x="-20.32" y="-7.366" size="1.524" layer="97">REF</text>
-<text x="4.826" y="11.43" size="1.524" layer="97" rot="R90">VDD</text>
-<text x="20.066" y="9.398" size="1.524" layer="97" rot="R90">DVDD</text>
-<text x="23.876" y="0.254" size="1.524" layer="97">SDO</text>
-<wire x1="30.48" y1="-15.24" x2="22.86" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="-10.16" x2="22.86" y2="-10.16" width="0.1524" layer="94"/>
-<text x="24.13" y="-9.906" size="1.524" layer="97">SCK</text>
-<text x="23.622" y="-14.986" size="1.524" layer="97">CONV</text>
-<text x="-15.24" y="12.7" size="1.524" layer="94">LTC2312</text>
-<text x="27.94" y="22.86" size="1.524" layer="95">&gt;NAME</text>
-<text x="27.94" y="20.32" size="1.524" layer="96">&gt;VALUE</text>
+<wire x1="-27.94" y1="-6.35" x2="-27.94" y2="19.05" width="0.508" layer="94"/>
+<wire x1="-10.16" y1="-11.43" x2="-12.7" y2="-11.43" width="0.1524" layer="94"/>
+<wire x1="-17.78" y1="-11.43" x2="-20.32" y2="-11.43" width="0.1524" layer="94"/>
+<wire x1="-20.32" y1="-11.43" x2="-20.32" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="-20.32" y1="-6.35" x2="0" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="-20.32" y1="-6.35" x2="-27.94" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="-27.686" y1="3.81" x2="-20.32" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="-20.32" y1="3.81" x2="-20.32" y2="2.794" width="0.1524" layer="94"/>
+<wire x1="-20.32" y1="2.794" x2="-17.78" y2="2.794" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="3.81" x2="-6.35" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="8.128" x2="0" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="0" y1="19.05" x2="0" y2="11.43" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="9.9568" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="9.9568" y1="1.27" x2="10.16" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="1.27" x2="9.652" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="9.652" y1="1.524" x2="9.652" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="9.652" y1="1.016" x2="10.16" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="9.7282" y1="1.397" x2="9.9568" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="9.9568" y1="1.27" x2="9.7536" y2="1.1684" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="18.796" x2="15.24" y2="5.588" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="1.27" x2="25.4" y2="1.27" width="0.1524" layer="94"/>
+<pin name="GND" x="0" y="-21.59" visible="pin" length="short" direction="pwr" rot="R90"/>
+<text x="-25.654" y="4.064" size="1.524" layer="97">AIN</text>
+<text x="-25.4" y="-6.096" size="1.524" layer="97">REF</text>
+<text x="-0.254" y="12.7" size="1.524" layer="97" rot="R90">VDD</text>
+<text x="14.986" y="10.668" size="1.524" layer="97" rot="R90">DVDD</text>
+<text x="18.796" y="1.524" size="1.524" layer="97">SDO</text>
+<wire x1="25.4" y1="-13.97" x2="17.78" y2="-13.97" width="0.1524" layer="94"/>
+<wire x1="25.4" y1="-8.89" x2="17.78" y2="-8.89" width="0.1524" layer="94"/>
+<text x="19.05" y="-8.636" size="1.524" layer="97">SCK</text>
+<text x="18.542" y="-13.716" size="1.524" layer="97">CONV</text>
+<text x="-20.32" y="13.97" size="1.524" layer="94">LTC2312</text>
+<text x="22.86" y="24.13" size="1.524" layer="95">&gt;NAME</text>
+<text x="22.86" y="21.59" size="1.524" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="BATTERY">
 <description>Battery symbol</description>
@@ -10311,6 +10300,23 @@ Shutdown</text>
 <wire x1="1.27" y1="5.588" x2="1.27" y2="4.572" width="0.1524" layer="94"/>
 <wire x1="0.762" y1="5.08" x2="1.778" y2="5.08" width="0.1524" layer="94"/>
 <wire x1="0.762" y1="-5.08" x2="1.778" y2="-5.08" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="VREF_BANDGAP">
+<description>Band Gap Reference Symbol</description>
+<pin name="VIN" x="-10.16" y="2.54" visible="off" length="short" direction="pwr"/>
+<pin name="VOUT" x="10.16" y="2.54" visible="off" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.112" y="1.778" size="1.524" layer="97" ratio="15">VIN</text>
+<text x="1.016" y="1.778" size="1.524" layer="97" ratio="15">VOUT</text>
+<text x="-2.286" y="-1.778" size="1.524" layer="97" ratio="15">GND</text>
+<text x="1.27" y="5.588" size="1.27" layer="94" ratio="15">&gt;VREF</text>
+<text x="-6.858" y="5.588" size="1.27" layer="94" ratio="15">&gt;CHIP</text>
+<text x="10.16" y="10.16" size="1.27" layer="95" ratio="15">&gt;NAME</text>
+<text x="10.16" y="7.62" size="1.27" layer="96" ratio="15">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14385,6 +14391,25 @@ LTC2312-12, mfg.: Linear, pkg.: TSOT23-8 (TS8), mfg part no.: LTC2312CTS8-12#TRM
 <connect gate="G1" pin="SCK" pad="7"/>
 <connect gate="G1" pin="SDO" pad="6"/>
 <connect gate="G1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF_BANDGAP" prefix="U">
+<description>Bandgap Reference:
+AD1583, 3.0V, SOT-23-3, "B" grade has 0.1% accuracy</description>
+<gates>
+<gate name="G1" symbol="VREF_BANDGAP" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="_AD1583_AD1583BRTZ-REEL7CT-ND" package="SOT23-3">
+<connects>
+<connect gate="G1" pin="GND" pad="2"/>
+<connect gate="G1" pin="VIN" pad="3"/>
+<connect gate="G1" pin="VOUT" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
