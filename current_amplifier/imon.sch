@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8101,10 +8101,10 @@ This prevents polygon flood intrusion into the center region.</description>
 <part name="R8" library="rcl_custom" deviceset="R-US_" device="1206-0402" value="10"/>
 <part name="C3" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="C4" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u"/>
-<part name="R3" library="rcl_custom" deviceset="R-US_" device="0402-B" value="88.7"/>
-<part name="R1" library="rcl_custom" deviceset="R-US_" device="0402-B" value="97.6"/>
+<part name="R3" library="rcl_custom" deviceset="R-US_" device="0402-B" value="301"/>
+<part name="R1" library="rcl_custom" deviceset="R-US_" device="0402-B" value="442"/>
 <part name="C5" library="rcl_custom" deviceset="C-EU" device="0402-B" value="220p"/>
-<part name="C2" library="rcl_custom" deviceset="C-EU" device="0402-B" value="2.7n"/>
+<part name="C2" library="rcl_custom" deviceset="C-EU" device="0402-B" value="750p"/>
 <part name="C80" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="C6" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u"/>
 <part name="U5" library="marionette" deviceset="MCP1501" device="&quot;">
@@ -8128,11 +8128,11 @@ This prevents polygon flood intrusion into the center region.</description>
 <part name="R4" library="rcl_custom" deviceset="R-US_" device="0402-B" value="976"/>
 <part name="GND12" library="supply" deviceset="GND" device=""/>
 <part name="GND18" library="supply" deviceset="GND" device=""/>
-<part name="R30" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
-<part name="R10" library="rcl_custom" deviceset="R-US_" device="0402-B" value="56"/>
+<part name="R30" library="rcl_custom" deviceset="R-US_" device="0402-B" value="178"/>
+<part name="R10" library="rcl_custom" deviceset="R-US_" device="0402-B" value="255"/>
 <part name="C50" library="rcl_custom" deviceset="C-EU" device="0402-B" value="220p"/>
-<part name="C20" library="rcl_custom" deviceset="C-EU" device="0402-B" value="6.2n"/>
-<part name="R40" library="rcl_custom" deviceset="R-US_" device="0402-B" value="560"/>
+<part name="C20" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1.8n"/>
+<part name="R40" library="rcl_custom" deviceset="R-US_" device="0402-B" value="562"/>
 <part name="J32" library="marionette" deviceset="JUMPER-SHORTED-CUTTABLE" device="-E0402-0.3MM"/>
 <part name="C18" library="rcl_custom" deviceset="C-EU" device="0402-B" value="np"/>
 <part name="GND19" library="supply" deviceset="GND" device=""/>
@@ -9049,24 +9049,28 @@ The LTC2312 has 500ksps BW.</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,516.89,179.07,D1G4,CATHODE,,,,"/>
+<approved hash="101,1,528.32,179.07,D1G4,CATHODE,,,,"/>
 <approved hash="104,1,421.64,238.76,U6,VDD,V5D_CUTTABLE,,,"/>
 <approved hash="104,1,436.88,238.76,U6,DVDD,V3.3D_CUTTABLE,,,"/>
-<approved hash="104,1,88.9,271.78,U4G2,V+,V5D,,,"/>
+<approved hash="104,1,88.9,271.78,U4G2,V+,VDD,,,"/>
 <approved hash="104,1,88.9,256.54,U4G3,V-,GND,,,"/>
-<approved hash="104,1,231.14,177.8,U5,VDD,V5D,,,"/>
-<approved hash="104,1,328.93,256.54,U2G3,V+,V5D,,,"/>
+<approved hash="104,1,328.93,256.54,U2G3,V+,VDD,,,"/>
 <approved hash="104,1,328.93,241.3,U2G4,V-,GND,,,"/>
-<approved hash="104,1,524.51,179.07,D1G7,PIN,GND,,,"/>
+<approved hash="104,1,535.94,179.07,D1G7,PIN,GND,,,"/>
 <approved hash="113,1,20.0136,226.191,JP1,,,,,"/>
 <approved hash="113,1,279.296,215.796,FRAME1,,,,,"/>
+<approved hash="113,1,320.04,220.099,J32,,,,,"/>
+<approved hash="113,1,388.62,282.329,J33,,,,,"/>
+<approved hash="113,1,388.62,289.171,J34,,,,,"/>
 <approved hash="113,1,237.49,221.085,TP4,,,,,"/>
 <approved hash="113,1,308.61,218.545,TP5,,,,,"/>
-<approved hash="113,1,457.2,200.765,TP6,,,,,"/>
-<approved hash="113,1,457.2,210.715,TP7,,,,,"/>
-<approved hash="113,1,464.82,220.875,TP8,,,,,"/>
-<approved hash="113,1,114.3,168.521,J1,,,,,"/>
-<approved hash="113,1,511.768,208.411,JP4,,,,,"/>
+<approved hash="113,1,114.3,146.931,J1,,,,,"/>
+<approved hash="113,1,382.27,220.099,J31,,,,,"/>
+<approved hash="113,1,523.198,208.411,JP4,,,,,"/>
+<approved hash="113,1,422.902,247.65,J35,,,,,"/>
+<approved hash="113,1,435.999,247.65,J36,,,,,"/>
+<approved hash="113,1,382.27,209.939,J30,,,,,"/>
+<approved hash="113,1,523.198,289.691,JP2,,,,,"/>
 </errors>
 </schematic>
 </drawing>

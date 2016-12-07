@@ -1086,11 +1086,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="42.35" y="10.2" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="40.75" y="11" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R3" library="rcl_custom" package=".0402-B" value="88.7" x="35.3" y="7" smashed="yes" rot="R90">
+<element name="R3" library="rcl_custom" package=".0402-B" value="301" x="35.3" y="7" smashed="yes" rot="R90">
 <attribute name="VALUE" x="36.9" y="6.2" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="35.3" y="7" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R1" library="rcl_custom" package=".0402-B" value="97.6" x="33.6" y="8.5" smashed="yes" rot="R180">
+<element name="R1" library="rcl_custom" package=".0402-B" value="442" x="33.6" y="8.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="34.4" y="10.1" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="33.6" y="8.5" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
@@ -1099,7 +1099,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="38.1" y="8.2" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="36.5" y="9" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="C2" library="rcl_custom" package=".0402-B" value="2.7n" x="34.1" y="7" smashed="yes" rot="R90">
+<element name="C2" library="rcl_custom" package=".0402-B" value="750p" x="34.1" y="7" smashed="yes" rot="R90">
 <attribute name="VALUE" x="35.7" y="6.2" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="34.1" y="7" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
@@ -1152,11 +1152,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="33.7" y="9.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="35.3" y="9" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="R30" library="rcl_custom" package=".0402-B" value="51" x="46.35" y="8" smashed="yes" rot="R90">
+<element name="R30" library="rcl_custom" package=".0402-B" value="178" x="46.35" y="8" smashed="yes" rot="R90">
 <attribute name="VALUE" x="47.95" y="7.2" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="46.35" y="8" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R10" library="rcl_custom" package=".0402-B" value="56" x="46.35" y="10" smashed="yes" rot="R90">
+<element name="R10" library="rcl_custom" package=".0402-B" value="255" x="46.35" y="10" smashed="yes" rot="R90">
 <attribute name="VALUE" x="47.95" y="9.2" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="46.35" y="10" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
@@ -1164,11 +1164,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="45.8" y="7.2" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="44.2" y="8" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="C20" library="rcl_custom" package=".0402-B" value="6.2n" x="47.55" y="10" smashed="yes" rot="R270">
+<element name="C20" library="rcl_custom" package=".0402-B" value="1.8n" x="47.55" y="10" smashed="yes" rot="R270">
 <attribute name="VALUE" x="45.95" y="10.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="47.55" y="10" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="R40" library="rcl_custom" package=".0402-B" value="560" x="44.7" y="9.7" smashed="yes">
+<element name="R40" library="rcl_custom" package=".0402-B" value="562" x="44.7" y="9.7" smashed="yes">
 <attribute name="VALUE" x="43.9" y="8.1" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="44.7" y="9.7" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
