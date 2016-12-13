@@ -8179,6 +8179,7 @@ This prevents polygon flood intrusion into the center region.</description>
 <part name="H2" library="marionette" deviceset="M2-BARE_MOUNTING_HOLE" device=""/>
 <part name="H3" library="marionette" deviceset="M2-BARE_MOUNTING_HOLE" device=""/>
 <part name="H4" library="marionette" deviceset="M2-BARE_MOUNTING_HOLE" device=""/>
+<part name="R2" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -8268,6 +8269,8 @@ The LTC2312 has 500ksps BW.</text>
 <wire x1="213.36" y1="109.22" x2="213.36" y2="191.77" width="0.508" layer="97"/>
 <text x="218.44" y="182.88" size="5.08" layer="97">Voltage Reference</text>
 <text x="17.78" y="193.04" size="1.778" layer="97">AD8418 common mode input voltage range: (-2V, 70V)</text>
+<text x="17.78" y="185.42" size="1.778" layer="97">The IN+ has significantly more input bias current (150uA, 250uA)
+while the IN- has &lt; 50uA bias current.</text>
 </plain>
 <instances>
 <instance part="U6" gate="G1" x="421.64" y="217.17">
@@ -8424,6 +8427,7 @@ The LTC2312 has 500ksps BW.</text>
 <instance part="H2" gate="G$1" x="60.96" y="15.24"/>
 <instance part="H3" gate="G$1" x="80.01" y="15.24"/>
 <instance part="H4" gate="G$1" x="99.06" y="15.24"/>
+<instance part="R2" gate="R" x="474.98" y="215.9" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8694,8 +8698,9 @@ The LTC2312 has 500ksps BW.</text>
 <pinref part="U6" gate="G1" pin="CONV"/>
 <wire x1="449.58" y1="203.2" x2="467.36" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G3" pin="CATHODE"/>
-<wire x1="467.36" y1="203.2" x2="486.41" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="467.36" y1="203.2" x2="474.98" y2="203.2" width="0.1524" layer="91"/>
 <junction x="467.36" y="203.2"/>
+<wire x1="474.98" y1="203.2" x2="486.41" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="486.41" y1="203.2" x2="494.03" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="494.03" y1="208.28" x2="519.43" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="5"/>
@@ -8704,6 +8709,9 @@ The LTC2312 has 500ksps BW.</text>
 <wire x1="519.43" y1="208.28" x2="527.05" y2="208.28" width="0.1524" layer="91"/>
 <junction x="519.43" y="208.28"/>
 <label x="497.84" y="208.28" size="1.778" layer="95"/>
+<pinref part="R2" gate="R" pin="2"/>
+<wire x1="474.98" y1="210.82" x2="474.98" y2="203.2" width="0.1524" layer="91"/>
+<junction x="474.98" y="203.2"/>
 </segment>
 </net>
 <net name="VSHUNT_FILTERED_P" class="0">
@@ -8954,8 +8962,9 @@ The LTC2312 has 500ksps BW.</text>
 <pinref part="JP4" gate="A" pin="4"/>
 <junction x="527.05" y="210.82"/>
 <wire x1="519.43" y1="210.82" x2="483.87" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="483.87" y1="210.82" x2="483.87" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="483.87" y1="210.82" x2="483.87" y2="223.52" width="0.1524" layer="91"/>
 <junction x="519.43" y="210.82"/>
+<wire x1="483.87" y1="223.52" x2="483.87" y2="261.62" width="0.1524" layer="91"/>
 <wire x1="483.87" y1="261.62" x2="436.88" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="C12" gate="CE" pin="1"/>
 <wire x1="436.88" y1="251.46" x2="436.88" y2="255.27" width="0.1524" layer="91"/>
@@ -8969,6 +8978,10 @@ The LTC2312 has 500ksps BW.</text>
 <label x="440.69" y="261.62" size="1.778" layer="95"/>
 <label x="497.84" y="210.82" size="1.778" layer="95"/>
 <pinref part="V1" gate="G1" pin="VIO"/>
+<pinref part="R2" gate="R" pin="1"/>
+<wire x1="474.98" y1="220.98" x2="474.98" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="474.98" y1="223.52" x2="483.87" y2="223.52" width="0.1524" layer="91"/>
+<junction x="483.87" y="223.52"/>
 </segment>
 </net>
 <net name="VDD" class="0">
