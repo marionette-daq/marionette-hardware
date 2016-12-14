@@ -8064,7 +8064,7 @@ This prevents polygon flood intrusion into the center region.</description>
 </library>
 </libraries>
 <attributes>
-<attribute name="REVISION" value="1.0"/>
+<attribute name="REVISION" value="1.1"/>
 </attributes>
 <variantdefs>
 </variantdefs>
