@@ -8062,9 +8062,54 @@ This prevents polygon flood intrusion into the center region.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="dock_v2">
+<description>Generated from &lt;b&gt;dock.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="PAD+VIA_0.3302MM">
+<description>0.3302mm dia via with round tplace/bplace marking it as a testpad</description>
+<pad name="TP" x="0" y="0" drill="0.3302"/>
+<circle x="0" y="0" radius="0.508" width="0.15" layer="21"/>
+<circle x="0" y="0" radius="0.508" width="0.15" layer="22"/>
+<text x="1" y="1" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="1" y="1" size="0.85" layer="26" font="vector" ratio="15" rot="MR180">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PAD+VIA_0.3302MM">
+<description>square with circle inside and 0.33mm text to denote testpad with via that is 13mil diameter hole for oshpark 2 layer design rules</description>
+<pin name="TP" x="0" y="0" visible="off" length="point" direction="pas"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.762" width="0.127" layer="94"/>
+<text x="1.27" y="2.54" size="1.778" layer="95" ratio="15">&gt;NAME</text>
+<text x="-1.016" y="-1.016" size="0.254" layer="94">0.33mm</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PAD+VIA_0.3302MM" prefix="TP">
+<description>0.3302mm or 13mil diameter testpad with via</description>
+<gates>
+<gate name="G1" symbol="PAD+VIA_0.3302MM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PAD+VIA_0.3302MM">
+<connects>
+<connect gate="G1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
-<attribute name="REVISION" value="1.1"/>
+<attribute name="REVISION" value="1.2"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -8076,7 +8121,6 @@ This prevents polygon flood intrusion into the center region.</description>
 <part name="U6" library="marionette" deviceset="LTC2312-12" device="">
 <attribute name="DPN" value=" LTC2312CTS8-12#TRMPBFCT-ND"/>
 </part>
-<part name="GND1" library="supply" deviceset="GND" device=""/>
 <part name="GND2" library="supply" deviceset="GND" device=""/>
 <part name="GND5" library="supply" deviceset="GND" device=""/>
 <part name="C8" library="rcl_custom" deviceset="C-EU" device="0805-A-NOSILK" value="np"/>
@@ -8097,8 +8141,8 @@ This prevents polygon flood intrusion into the center region.</description>
 <attribute name="DPN" value="AD8418WBRZ-ND"/>
 </part>
 <part name="C67" library="rcl_custom" deviceset="C-EU" device="1206-0402" value="np"/>
-<part name="R7" library="rcl_custom" deviceset="R-US_" device="1206-0402" value="10"/>
-<part name="R8" library="rcl_custom" deviceset="R-US_" device="1206-0402" value="10"/>
+<part name="R7" library="rcl_custom" deviceset="R-US_" device="1206-0402" value="0"/>
+<part name="R8" library="rcl_custom" deviceset="R-US_" device="1206-0402" value="0"/>
 <part name="C3" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="C4" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1u"/>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0402-B" value="301"/>
@@ -8126,7 +8170,6 @@ This prevents polygon flood intrusion into the center region.</description>
 </part>
 <part name="FRAME1" library="frames" deviceset="FRAME_C_L" device=""/>
 <part name="R4" library="rcl_custom" deviceset="R-US_" device="0402-B" value="976"/>
-<part name="GND12" library="supply" deviceset="GND" device=""/>
 <part name="GND18" library="supply" deviceset="GND" device=""/>
 <part name="R30" library="rcl_custom" deviceset="R-US_" device="0402-B" value="178"/>
 <part name="R10" library="rcl_custom" deviceset="R-US_" device="0402-B" value="255"/>
@@ -8180,6 +8223,8 @@ This prevents polygon flood intrusion into the center region.</description>
 <part name="H3" library="marionette" deviceset="M2-BARE_MOUNTING_HOLE" device=""/>
 <part name="H4" library="marionette" deviceset="M2-BARE_MOUNTING_HOLE" device=""/>
 <part name="R2" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
+<part name="R9" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0 "/>
+<part name="TP3" library="dock_v2" deviceset="PAD+VIA_0.3302MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8221,8 +8266,8 @@ This prevents polygon flood intrusion into the center region.</description>
 <wire x1="241.3" y1="351.79" x2="378.46" y2="351.79" width="0.3048" layer="97"/>
 <wire x1="337.82" y1="378.46" x2="337.82" y2="330.2" width="0.3048" layer="97"/>
 <text x="453.39" y="182.88" size="5.08" layer="97">SPI Bus</text>
-<text x="203.2" y="264.16" size="5.08" layer="97">Low Pass 4th or. Bessel Filter</text>
-<text x="227.33" y="114.3" size="1.778" layer="97">Maximum 300pF output cap on mic1501.
+<text x="203.2" y="264.16" size="5.08" layer="97">Low Pass 4th Ord. Bessel Filter</text>
+<text x="227.33" y="87.63" size="1.778" layer="97">Maximum 300pF output cap on mic1501.
 Larger capacitors may be used if there
 is a resistor in series to make a low pass
 filter.  For example a 1kOhm and a 2.2uF.</text>
@@ -8263,20 +8308,28 @@ The LTC2312 has 500ksps BW.</text>
 <wire x1="398.78" y1="355.6" x2="530.86" y2="355.6" width="0.508" layer="97"/>
 <wire x1="530.86" y1="355.6" x2="530.86" y2="378.46" width="0.508" layer="97"/>
 <wire x1="530.86" y1="378.46" x2="398.78" y2="378.46" width="0.508" layer="97"/>
-<wire x1="213.36" y1="191.77" x2="281.94" y2="191.77" width="0.508" layer="97"/>
-<wire x1="281.94" y1="191.77" x2="281.94" y2="109.22" width="0.508" layer="97"/>
-<wire x1="281.94" y1="109.22" x2="213.36" y2="109.22" width="0.508" layer="97"/>
-<wire x1="213.36" y1="109.22" x2="213.36" y2="191.77" width="0.508" layer="97"/>
-<text x="218.44" y="182.88" size="5.08" layer="97">Voltage Reference</text>
+<wire x1="213.36" y1="165.1" x2="281.94" y2="165.1" width="0.508" layer="97"/>
+<wire x1="281.94" y1="165.1" x2="281.94" y2="82.55" width="0.508" layer="97"/>
+<wire x1="281.94" y1="82.55" x2="213.36" y2="82.55" width="0.508" layer="97"/>
+<wire x1="213.36" y1="82.55" x2="213.36" y2="165.1" width="0.508" layer="97"/>
+<text x="218.44" y="156.21" size="5.08" layer="97">Voltage Reference</text>
 <text x="17.78" y="193.04" size="1.778" layer="97">AD8418 common mode input voltage range: (-2V, 70V)</text>
 <text x="17.78" y="185.42" size="1.778" layer="97">The IN+ has significantly more input bias current (150uA, 250uA)
 while the IN- has &lt; 50uA bias current.</text>
+<text x="193.04" y="-31.75" size="5.08" layer="112">Make an intelligent connection of the + input terminals of opamps
+bearing in mind the different configurations of VREF1/VREF2 of the AD8418.  
+The stages are inverting so it is probably necessary for OPAMPIN+ to be either VREF
+or some other voltage that is in the middle of the range.</text>
+<text x="394.97" y="300.99" size="1.778" layer="100">Change order of VSHUNT_20X_OUT and VSHUNT_FILTERED so that the pin closest to the DM/DP raw signal is the least processed.</text>
+<text x="-45.72" y="224.79" size="1.778" layer="100">Add part number for a terminal block</text>
+<text x="393.7" y="307.34" size="5.08" layer="97">Add reverse polarity protection.
+Absolutely necessary because these boards get daisy chained together in big arrays and then one short circuit
+would toast all 8 of our boards.  </text>
 </plain>
 <instances>
 <instance part="U6" gate="G1" x="421.64" y="217.17">
 <attribute name="DPN" x="421.64" y="217.17" size="5.08" layer="96" display="off"/>
 </instance>
-<instance part="GND1" gate="G1" x="209.55" y="214.63"/>
 <instance part="GND2" gate="G1" x="186.69" y="213.36"/>
 <instance part="GND5" gate="G1" x="113.03" y="256.54"/>
 <instance part="C8" gate="CE" x="55.88" y="205.74" smashed="yes" rot="R270">
@@ -8327,21 +8380,21 @@ while the IN- has &lt; 50uA bias current.</text>
 <instance part="C2" gate="CE" x="186.69" y="218.44" rot="R180"/>
 <instance part="C80" gate="CE" x="95.25" y="265.43"/>
 <instance part="C6" gate="CE" x="104.14" y="265.43"/>
-<instance part="U5" gate="G1" x="246.38" y="146.05" smashed="yes" rot="MR0">
-<attribute name="VREF" x="253.746" y="143.51" size="1.524" layer="94" rot="MR0"/>
-<attribute name="DPN" x="246.38" y="146.05" size="5.08" layer="96" rot="MR0" display="off"/>
-<attribute name="NAME" x="260.35" y="154.94" size="1.778" layer="95" rot="MR0"/>
-<attribute name="PPM" x="254" y="140.97" size="1.524" layer="94" rot="MR0" display="both"/>
+<instance part="U5" gate="G1" x="246.38" y="119.38" smashed="yes" rot="MR0">
+<attribute name="VREF" x="253.746" y="116.84" size="1.524" layer="94" rot="MR0"/>
+<attribute name="DPN" x="246.38" y="119.38" size="5.08" layer="96" rot="MR0" display="off"/>
+<attribute name="NAME" x="260.35" y="128.27" size="1.778" layer="95" rot="MR0"/>
+<attribute name="PPM" x="254" y="114.3" size="1.524" layer="94" rot="MR0" display="both"/>
 </instance>
-<instance part="C7" gate="CE" x="168.91" y="140.97" rot="MR180"/>
-<instance part="GND3" gate="G1" x="168.91" y="135.89" rot="MR0"/>
-<instance part="GND16" gate="G1" x="246.38" y="130.81" rot="MR0"/>
-<instance part="R5" gate="R" x="270.51" y="138.43" rot="MR90"/>
-<instance part="R6" gate="R" x="270.51" y="154.94" rot="MR90"/>
-<instance part="C14" gate="CE" x="237.49" y="163.83" rot="MR180"/>
-<instance part="C15" gate="CE" x="229.87" y="163.83" rot="MR180"/>
-<instance part="GND17" gate="G1" x="229.87" y="158.75" rot="MR0"/>
-<instance part="R12" gate="R" x="153.67" y="156.21" rot="R270"/>
+<instance part="C7" gate="CE" x="168.91" y="114.3" rot="MR180"/>
+<instance part="GND3" gate="G1" x="168.91" y="109.22" rot="MR0"/>
+<instance part="GND16" gate="G1" x="246.38" y="104.14" rot="MR0"/>
+<instance part="R5" gate="R" x="270.51" y="111.76" rot="MR90"/>
+<instance part="R6" gate="R" x="270.51" y="128.27" rot="MR90"/>
+<instance part="C14" gate="CE" x="237.49" y="137.16" rot="MR180"/>
+<instance part="C15" gate="CE" x="229.87" y="137.16" rot="MR180"/>
+<instance part="GND17" gate="G1" x="229.87" y="132.08" rot="MR0"/>
+<instance part="R12" gate="R" x="153.67" y="129.54" rot="R270"/>
 <instance part="U2" gate="G1" x="222.25" y="223.52" smashed="yes" rot="MR180">
 <attribute name="PART" x="224.79" y="220.345" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="217.17" y="213.36" size="1.778" layer="96" rot="MR180"/>
@@ -8356,7 +8409,6 @@ while the IN- has &lt; 50uA bias current.</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="452.12" y="0"/>
 <instance part="R4" gate="R" x="186.69" y="236.22" rot="R270"/>
-<instance part="GND12" gate="G1" x="280.67" y="212.09"/>
 <instance part="GND18" gate="G1" x="259.08" y="210.82"/>
 <instance part="R30" gate="R" x="271.78" y="223.52" rot="R180"/>
 <instance part="R10" gate="R" x="248.92" y="223.52" rot="R180"/>
@@ -8381,18 +8433,18 @@ while the IN- has &lt; 50uA bias current.</text>
 </instance>
 <instance part="TP4" gate="TP" x="237.49" y="220.98" rot="R270"/>
 <instance part="TP5" gate="TP" x="308.61" y="218.44" rot="R270"/>
-<instance part="R18" gate="R" x="219.71" y="146.05" rot="MR0"/>
+<instance part="R18" gate="R" x="219.71" y="119.38" rot="MR0"/>
 <instance part="C19" gate="CE" x="458.47" y="252.73"/>
-<instance part="TP9" gate="TP" x="109.22" y="146.05" smashed="yes">
-<attribute name="NAME" x="104.14" y="148.59" size="1.778" layer="95" ratio="15"/>
+<instance part="TP9" gate="TP" x="109.22" y="119.38" smashed="yes">
+<attribute name="NAME" x="104.14" y="121.92" size="1.778" layer="95" ratio="15"/>
 </instance>
-<instance part="J1" gate="J" x="113.03" y="146.05"/>
-<instance part="R19" gate="R" x="109.22" y="138.43" rot="R270"/>
-<instance part="GND21" gate="G1" x="109.22" y="130.81"/>
-<instance part="TP1" gate="TP" x="153.67" y="163.83" smashed="yes">
-<attribute name="NAME" x="154.94" y="166.37" size="1.778" layer="95" ratio="15"/>
+<instance part="J1" gate="J" x="113.03" y="119.38"/>
+<instance part="R19" gate="R" x="109.22" y="111.76" rot="R270"/>
+<instance part="GND21" gate="G1" x="109.22" y="104.14"/>
+<instance part="TP1" gate="TP" x="153.67" y="137.16" smashed="yes">
+<attribute name="NAME" x="154.94" y="139.7" size="1.778" layer="95" ratio="15"/>
 </instance>
-<instance part="C105" gate="CE" x="180.34" y="140.97" rot="MR180"/>
+<instance part="C105" gate="CE" x="180.34" y="114.3" rot="MR180"/>
 <instance part="FIDUCIAL1" gate="FIDUCIAL" x="41.91" y="39.37"/>
 <instance part="FIDUCIAL2" gate="FIDUCIAL" x="62.23" y="39.37"/>
 <instance part="FIDUCIAL3" gate="FIDUCIAL" x="83.82" y="39.37"/>
@@ -8405,7 +8457,7 @@ while the IN- has &lt; 50uA bias current.</text>
 <instance part="TP14" gate="TP" x="358.14" y="220.98"/>
 <instance part="JP4" gate="A" x="521.97" y="208.28"/>
 <instance part="GND14" gate="G1" x="537.21" y="280.67"/>
-<instance part="C1" gate="CE" x="191.77" y="140.97" rot="MR180"/>
+<instance part="C1" gate="CE" x="191.77" y="114.3" rot="MR180"/>
 <instance part="J35" gate="J" x="421.64" y="246.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="425.45" y="245.11" size="1.778" layer="95" rot="MR270" align="bottom-right"/>
 <attribute name="VALUE" x="422.91" y="247.65" size="1.778" layer="96" rot="R90" align="top-center"/>
@@ -8421,13 +8473,15 @@ while the IN- has &lt; 50uA bias current.</text>
 </instance>
 <instance part="GND4" gate="G1" x="375.92" y="198.12"/>
 <instance part="V3" gate="G$1" x="328.93" y="259.08"/>
-<instance part="V4" gate="G$1" x="246.38" y="170.18"/>
+<instance part="V4" gate="G$1" x="246.38" y="143.51"/>
 <instance part="V5" gate="G$1" x="113.03" y="271.78"/>
 <instance part="H1" gate="G$1" x="41.91" y="15.24"/>
 <instance part="H2" gate="G$1" x="60.96" y="15.24"/>
 <instance part="H3" gate="G$1" x="80.01" y="15.24"/>
 <instance part="H4" gate="G$1" x="99.06" y="15.24"/>
 <instance part="R2" gate="R" x="474.98" y="215.9" rot="R270"/>
+<instance part="R9" gate="R" x="168.91" y="198.12" rot="R180"/>
+<instance part="TP3" gate="G1" x="209.55" y="198.12"/>
 </instances>
 <busses>
 </busses>
@@ -8536,51 +8590,39 @@ while the IN- has &lt; 50uA bias current.</text>
 <segment>
 <pinref part="GND3" gate="G1" pin="GND"/>
 <pinref part="C7" gate="CE" pin="1"/>
-<wire x1="168.91" y1="135.89" x2="168.91" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="168.91" y1="109.22" x2="168.91" y2="110.49" width="0.1524" layer="91"/>
 <pinref part="C105" gate="CE" pin="1"/>
-<wire x1="168.91" y1="137.16" x2="168.91" y2="138.43" width="0.1524" layer="91"/>
-<wire x1="168.91" y1="137.16" x2="180.34" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="137.16" x2="180.34" y2="138.43" width="0.1524" layer="91"/>
-<junction x="168.91" y="137.16"/>
+<wire x1="168.91" y1="110.49" x2="168.91" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="168.91" y1="110.49" x2="180.34" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="110.49" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
+<junction x="168.91" y="110.49"/>
 <pinref part="C1" gate="CE" pin="1"/>
-<wire x1="180.34" y1="137.16" x2="191.77" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="191.77" y1="137.16" x2="191.77" y2="138.43" width="0.1524" layer="91"/>
-<junction x="180.34" y="137.16"/>
+<wire x1="180.34" y1="110.49" x2="191.77" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="110.49" x2="191.77" y2="111.76" width="0.1524" layer="91"/>
+<junction x="180.34" y="110.49"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="G1" pin="GND"/>
 <pinref part="U5" gate="G1" pin="GND"/>
-<wire x1="246.38" y1="130.81" x2="246.38" y2="133.35" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="104.14" x2="246.38" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="R5" gate="R" pin="1"/>
-<wire x1="246.38" y1="133.35" x2="246.38" y2="135.89" width="0.1524" layer="91"/>
-<wire x1="270.51" y1="133.35" x2="246.38" y2="133.35" width="0.1524" layer="91"/>
-<junction x="246.38" y="133.35"/>
+<wire x1="246.38" y1="106.68" x2="246.38" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="106.68" x2="246.38" y2="106.68" width="0.1524" layer="91"/>
+<junction x="246.38" y="106.68"/>
 </segment>
 <segment>
 <pinref part="GND17" gate="G1" pin="GND"/>
 <pinref part="C15" gate="CE" pin="1"/>
-<wire x1="229.87" y1="158.75" x2="229.87" y2="161.29" width="0.1524" layer="91"/>
+<wire x1="229.87" y1="132.08" x2="229.87" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="C14" gate="CE" pin="1"/>
-<wire x1="229.87" y1="158.75" x2="237.49" y2="158.75" width="0.1524" layer="91"/>
-<wire x1="237.49" y1="158.75" x2="237.49" y2="161.29" width="0.1524" layer="91"/>
-<junction x="229.87" y="158.75"/>
-</segment>
-<segment>
-<pinref part="GND1" gate="G1" pin="GND"/>
-<wire x1="209.55" y1="214.63" x2="209.55" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G1" pin="+IN"/>
-<wire x1="209.55" y1="220.98" x2="217.17" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="229.87" y1="132.08" x2="237.49" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="237.49" y1="132.08" x2="237.49" y2="134.62" width="0.1524" layer="91"/>
+<junction x="229.87" y="132.08"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="G1" pin="GND"/>
 <wire x1="259.08" y1="210.82" x2="259.08" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="C20" gate="CE" pin="1"/>
-</segment>
-<segment>
-<pinref part="GND12" gate="G1" pin="GND"/>
-<wire x1="280.67" y1="212.09" x2="280.67" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="280.67" y1="218.44" x2="288.29" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G2" pin="+IN"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="G1" pin="GND"/>
@@ -8595,7 +8637,7 @@ while the IN- has &lt; 50uA bias current.</text>
 <segment>
 <pinref part="GND21" gate="G1" pin="GND"/>
 <pinref part="R19" gate="R" pin="2"/>
-<wire x1="109.22" y1="130.81" x2="109.22" y2="133.35" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="104.14" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G3" pin="V-"/>
@@ -8760,11 +8802,11 @@ while the IN- has &lt; 50uA bias current.</text>
 <segment>
 <pinref part="U5" gate="G1" pin="SHDN_N"/>
 <pinref part="R6" gate="R" pin="1"/>
-<wire x1="264.16" y1="146.05" x2="270.51" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="270.51" y1="146.05" x2="270.51" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="119.38" x2="270.51" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="119.38" x2="270.51" y2="123.19" width="0.1524" layer="91"/>
 <pinref part="R5" gate="R" pin="2"/>
-<wire x1="270.51" y1="146.05" x2="270.51" y2="143.51" width="0.1524" layer="91"/>
-<junction x="270.51" y="146.05"/>
+<wire x1="270.51" y1="119.38" x2="270.51" y2="116.84" width="0.1524" layer="91"/>
+<junction x="270.51" y="119.38"/>
 </segment>
 </net>
 <net name="FILTER1-" class="0">
@@ -8867,52 +8909,53 @@ while the IN- has &lt; 50uA bias current.</text>
 <segment>
 <pinref part="R18" gate="R" pin="1"/>
 <pinref part="U5" gate="G1" pin="VOUT"/>
-<wire x1="228.6" y1="146.05" x2="224.79" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="119.38" x2="224.79" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AD8418_REF2" class="0">
 <segment>
 <pinref part="U4" gate="G1" pin="VREF2"/>
 <wire x1="107.95" y1="213.36" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="213.36" x2="109.22" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="213.36" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="TP9" gate="TP" pin="TP"/>
 <pinref part="J1" gate="J" pin="1"/>
-<wire x1="110.49" y1="146.05" x2="109.22" y2="146.05" width="0.1524" layer="91"/>
-<junction x="109.22" y="146.05"/>
+<wire x1="110.49" y1="119.38" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
+<junction x="109.22" y="119.38"/>
 <pinref part="R19" gate="R" pin="1"/>
-<wire x1="109.22" y1="143.51" x2="109.22" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="116.84" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREF_OPTIONAL" class="0">
 <segment>
 <pinref part="R12" gate="R" pin="1"/>
 <pinref part="TP1" gate="TP" pin="TP"/>
-<wire x1="153.67" y1="161.29" x2="153.67" y2="163.83" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="134.62" x2="153.67" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREF_FILTERED" class="0">
 <segment>
 <pinref part="C7" gate="CE" pin="2"/>
-<wire x1="180.34" y1="146.05" x2="168.91" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="119.38" x2="168.91" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C105" gate="CE" pin="2"/>
-<junction x="180.34" y="146.05"/>
-<wire x1="214.63" y1="146.05" x2="191.77" y2="146.05" width="0.1524" layer="91"/>
+<junction x="180.34" y="119.38"/>
+<wire x1="214.63" y1="119.38" x2="191.77" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="R18" gate="R" pin="2"/>
-<junction x="168.91" y="146.05"/>
+<junction x="168.91" y="119.38"/>
 <pinref part="R12" gate="R" pin="2"/>
-<wire x1="191.77" y1="146.05" x2="180.34" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="119.38" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G1" pin="VREF1"/>
-<wire x1="153.67" y1="146.05" x2="153.67" y2="151.13" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="146.05" x2="119.38" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="146.05" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="119.38" x2="153.67" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="119.38" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="198.12" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="218.44" x2="107.95" y2="218.44" width="0.1524" layer="91"/>
-<junction x="153.67" y="146.05"/>
-<junction x="119.38" y="146.05"/>
+<junction x="153.67" y="119.38"/>
+<junction x="119.38" y="119.38"/>
 <pinref part="J1" gate="J" pin="2"/>
-<wire x1="118.11" y1="146.05" x2="119.38" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="168.91" y1="146.05" x2="153.67" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="118.11" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="168.91" y1="119.38" x2="153.67" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C1" gate="CE" pin="2"/>
-<junction x="191.77" y="146.05"/>
+<junction x="191.77" y="119.38"/>
 <wire x1="119.38" y1="218.44" x2="119.38" y2="293.37" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="293.37" x2="467.36" y2="293.37" width="0.1524" layer="91"/>
 <junction x="119.38" y="218.44"/>
@@ -8920,6 +8963,9 @@ while the IN- has &lt; 50uA bias current.</text>
 <wire x1="467.36" y1="290.83" x2="519.43" y2="290.83" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="1"/>
 <label x="487.68" y="290.83" size="1.778" layer="95"/>
+<wire x1="119.38" y1="198.12" x2="163.83" y2="198.12" width="0.1524" layer="91"/>
+<junction x="119.38" y="198.12"/>
+<pinref part="R9" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="ADC_AIN" class="0">
@@ -9030,18 +9076,18 @@ while the IN- has &lt; 50uA bias current.</text>
 </segment>
 <segment>
 <pinref part="U5" gate="G1" pin="VDD"/>
-<wire x1="246.38" y1="170.18" x2="246.38" y2="168.91" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="143.51" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R6" gate="R" pin="2"/>
-<wire x1="246.38" y1="168.91" x2="246.38" y2="156.21" width="0.1524" layer="91"/>
-<wire x1="270.51" y1="160.02" x2="270.51" y2="168.91" width="0.1524" layer="91"/>
-<wire x1="270.51" y1="168.91" x2="246.38" y2="168.91" width="0.1524" layer="91"/>
-<junction x="246.38" y="168.91"/>
+<wire x1="246.38" y1="142.24" x2="246.38" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="133.35" x2="270.51" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="142.24" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
+<junction x="246.38" y="142.24"/>
 <pinref part="C14" gate="CE" pin="2"/>
-<wire x1="237.49" y1="168.91" x2="246.38" y2="168.91" width="0.1524" layer="91"/>
-<junction x="246.38" y="168.91"/>
+<wire x1="237.49" y1="142.24" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
+<junction x="246.38" y="142.24"/>
 <pinref part="C15" gate="CE" pin="2"/>
-<wire x1="237.49" y1="168.91" x2="229.87" y2="168.91" width="0.1524" layer="91"/>
-<junction x="237.49" y="168.91"/>
+<wire x1="237.49" y1="142.24" x2="229.87" y2="142.24" width="0.1524" layer="91"/>
+<junction x="237.49" y="142.24"/>
 <pinref part="V4" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
@@ -9056,6 +9102,21 @@ while the IN- has &lt; 50uA bias current.</text>
 <wire x1="104.14" y1="267.97" x2="104.14" y2="271.78" width="0.1524" layer="91"/>
 <junction x="104.14" y="271.78"/>
 <pinref part="V5" gate="G$1" pin="VDD"/>
+</segment>
+</net>
+<net name="OPAMP_IN+" class="0">
+<segment>
+<pinref part="U2" gate="G2" pin="+IN"/>
+<wire x1="288.29" y1="218.44" x2="280.67" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="280.67" y1="218.44" x2="280.67" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G1" pin="+IN"/>
+<wire x1="217.17" y1="220.98" x2="209.55" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="209.55" y1="198.12" x2="209.55" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="209.55" y1="198.12" x2="280.67" y2="198.12" width="0.1524" layer="91"/>
+<junction x="209.55" y="198.12"/>
+<wire x1="173.99" y1="198.12" x2="209.55" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="R9" gate="R" pin="1"/>
+<pinref part="TP3" gate="G1" pin="TP"/>
 </segment>
 </net>
 </nets>
