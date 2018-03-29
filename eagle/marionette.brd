@@ -8301,6 +8301,102 @@ by R. Vogg  15.March.2002</description>
 </package3d>
 </packages3d>
 </library>
+<library name="Wurth_Elektronik_Electromechanic_Terminal_Blocks_Connectors_rev17a" urn="urn:adsk.eagle:library:492">
+<description>&lt;BR&gt;Wurth Elektronik - Terminal Block Connectors&lt;br&gt;&lt;Hr&gt;
+&lt;BR&gt;&lt;BR&gt; 
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-405&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
+&lt;hr&gt;
+Eagle Version 6, Library Revision 2017a, 2017-06-22&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="691213510002" library_version="1">
+<pad name="1" x="-2.54" y="0" drill="1.3"/>
+<pad name="2" x="2.54" y="0" drill="1.3"/>
+<wire x1="-5.08" y1="-4.05" x2="5.08" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="4.05" x2="5.08" y2="4.05" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="4.05" x2="-5.08" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="5.08" y1="4.05" x2="5.08" y2="-4.05" width="0.127" layer="21"/>
+<text x="-3" y="5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-6" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-5.08" y1="4.05" x2="-5.68" y2="4.05" width="0.127" layer="21"/>
+<wire x1="-5.68" y1="4.05" x2="-5.68" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="-5.68" y1="-4.05" x2="-5.08" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="5.08" y1="4.05" x2="5.68" y2="4.05" width="0.127" layer="21"/>
+<wire x1="5.68" y1="4.05" x2="5.68" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="5.68" y1="-4.05" x2="5.08" y2="-4.05" width="0.127" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-5.93" y="4.3"/>
+<vertex x="5.93" y="4.3"/>
+<vertex x="5.93" y="-4.3"/>
+<vertex x="-5.93" y="-4.3"/>
+</polygon>
+<text x="-3.25" y="-2.75" size="1.27" layer="48">1</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9061,8 +9157,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="132" y="13" size="0.85" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="U11" library="STM32F427" package="LQFP176" value="STM32F427-STM32F427" x="44" y="45" locked="yes" smashed="yes" rot="R135">
-<attribute name="NAME" x="45.838475" y="43.161521875" size="1" layer="33" rot="R135"/>
 <attribute name="NAME" x="42.7245875" y="27.11393125" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="45.838475" y="43.161521875" size="1" layer="33" rot="R135"/>
 <attribute name="NAME" x="45.838475" y="43.161521875" size="1" layer="33" rot="R135"/>
 <attribute name="PA0" value="UART4_TX" x="44" y="45" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="PA1" value="UART4_RX" x="44" y="45" size="1.778" layer="27" rot="R135" display="off"/>
@@ -9373,9 +9469,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="V_RATING" value="10V" x="20.1" y="86.3" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D2" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="89.25" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="90.25" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="90.25" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="91.15" y="0.8" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="90.25" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="90.25" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="87.25" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R5" library="rcl_custom" package=".0402-B" value="47k" x="34.45" y="83.7" locked="yes" smashed="yes" rot="R270">
@@ -9402,7 +9498,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="SG5" library="marionette" package="SPARKGAP_5MIL" value="" x="56" y="83.6" locked="yes" smashed="yes" rot="R270"/>
 <element name="SG1" library="marionette" package="SPARKGAP_5MIL" value="" x="70" y="85.8" locked="yes" smashed="yes" rot="R180"/>
 <element name="SG2" library="marionette" package="SPARKGAP_5MIL" value="" x="46.8" y="89.2" locked="yes" smashed="yes" rot="R180"/>
-<element name="JP4" library="marionette" package="2X02" value="" x="58" y="91" locked="yes" smashed="yes" rot="R180">
+<element name="J2" library="marionette" package="2X02" value="" x="58" y="91" locked="yes" smashed="yes" rot="R180">
 <attribute name="NAME" x="57.44" y="88.225" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="60.54" y="95.445" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -9522,8 +9618,8 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="TCXO1" library="marionette" package="CRYSTAL-3.2X2.5(4_TERMINAL)" value="DNP/TCXO_D32G-026.0M" x="61.9" y="31.2" locked="yes" smashed="yes" rot="R135">
 <attribute name="FREQ" value="26 MHz" x="61.9" y="31.2" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="NAME" x="64.528428125" y="30.720709375" size="0.635" layer="25" font="vector" ratio="20" rot="R225"/>
 <attribute name="NAME" x="61.9" y="31.2" size="0.4" layer="33" ratio="15" rot="R135" align="center"/>
+<attribute name="NAME" x="64.528428125" y="30.720709375" size="0.635" layer="25" font="vector" ratio="20" rot="R225"/>
 <attribute name="PPM" value="0.5 ppm" x="61.9" y="31.2" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="VALUE" x="65.364821875" y="31.765684375" size="0.85" layer="27" font="vector" ratio="15" rot="R135"/>
 </element>
@@ -9849,81 +9945,81 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="V_RATING" value="10V" x="60.7" y="38.9" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
 <element name="D1" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="99.4" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.4" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="100.4" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="101.25" y="0.8" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="100.4" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="100.4" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="97.4" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D5" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="108.25" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="109.25" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="109.25" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="110.1" y="0.75" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="109.25" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="109.25" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="106.25" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D6" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="117.15" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="118.15" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="118.15" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="119" y="0.75" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="118.15" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="118.15" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="115.15" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D7" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="126.05" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="127.05" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="127.05" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="127.9" y="0.8" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="127.05" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="127.05" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="124.05" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D8" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="34.1" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.1" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="35.1" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="35.95" y="0.8" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="35.1" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="35.1" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="32.1" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D9" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="49.35" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="50.35" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="50.35" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="51.2" y="0.8" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="50.35" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="50.35" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="47.35" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D10" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="41.8" y="1.15" smashed="yes" rot="R180">
+<attribute name="NAME" x="42.8" y="1.4" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="42.8" y="1.4" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="43.65" y="0.85" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="42.8" y="1.4" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="42.8" y="1.4" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="39.8" y="1.15" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D13" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="1.1" y="21.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.35" y="20.4" size="0.5" layer="33" ratio="15" rot="R90"/>
+<attribute name="NAME" x="1.35" y="20.4" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="NAME" x="0.35" y="23.25" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="1.35" y="20.4" size="0.5" layer="33" ratio="15" rot="R90"/>
-<attribute name="NAME" x="1.35" y="20.4" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="1.1" y="23.4" size="0.85" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="D14" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="1.1" y="29.05" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.35" y="28.05" size="0.5" layer="33" ratio="15" rot="R90"/>
+<attribute name="NAME" x="1.35" y="28.05" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="NAME" x="0.3" y="30.9" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="1.35" y="28.05" size="0.5" layer="33" ratio="15" rot="R90"/>
-<attribute name="NAME" x="1.35" y="28.05" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="1.1" y="31.05" size="0.85" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="D15" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="1.1" y="36.65" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.35" y="35.65" size="0.5" layer="33" ratio="15" rot="R90"/>
+<attribute name="NAME" x="1.35" y="35.65" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="NAME" x="0.3" y="38.5" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="1.35" y="35.65" size="0.5" layer="33" ratio="15" rot="R90"/>
-<attribute name="NAME" x="1.35" y="35.65" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="1.1" y="38.65" size="0.85" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="D16" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="1.1" y="44.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.35" y="43.3" size="0.5" layer="33" ratio="15" rot="R90"/>
+<attribute name="NAME" x="1.35" y="43.3" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="NAME" x="0.35" y="46.15" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="1.35" y="43.3" size="0.5" layer="33" ratio="15" rot="R90"/>
-<attribute name="NAME" x="1.35" y="43.3" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="1.1" y="46.3" size="0.85" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="D17" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="1.1" y="51.9" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.35" y="50.9" size="0.5" layer="33" ratio="15" rot="R90"/>
+<attribute name="NAME" x="1.35" y="50.9" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="NAME" x="0.35" y="53.75" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="1.35" y="50.9" size="0.5" layer="33" ratio="15" rot="R90"/>
-<attribute name="NAME" x="1.35" y="50.9" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="1.1" y="53.9" size="0.85" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="D18" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="1.1" y="60.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.35" y="59.7" size="0.5" layer="33" ratio="15" rot="R90"/>
+<attribute name="NAME" x="1.35" y="59.7" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="NAME" x="0.3" y="62.55" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="1.35" y="59.7" size="0.5" layer="33" ratio="15" rot="R90"/>
-<attribute name="NAME" x="1.35" y="59.7" size="0.5" layer="33" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="1.1" y="62.7" size="0.85" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="SW1" library="marionette" package="SW-MOM-OMRON-6X6X4.3" value="SW-MOM-TACTILE-B3F-1000" x="143.3" y="81" smashed="yes">
@@ -10232,7 +10328,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="101" y="87" size="0.5" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="103.8" y="85.3" size="0.8" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="R71" library="rcl_custom" package=".0402-B" value="820" x="93.5" y="76" smashed="yes" rot="R270">
+<element name="R71" library="rcl_custom" package=".0402-B" value="TBD" x="93.5" y="76" smashed="yes" rot="R270">
 <attribute name="NAME" x="94.3" y="76.8" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="NAME" x="93.5" y="76" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="91.9" y="76.8" size="0.8" layer="27" font="vector" ratio="15" rot="R270"/>
@@ -10262,9 +10358,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="64.9" y="17.75" size="0.8" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D4" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="25.2" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.2" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="26.2" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="27.05" y="0.75" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="26.2" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="26.2" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="23.2" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="JP3" library="pinhead" package="1X03" value="" x="8.2" y="74.7" smashed="yes" rot="R180">
@@ -10272,15 +10368,15 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="12.01" y="77.875" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="D11" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="56.95" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="57.95" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="57.95" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="58.8" y="0.75" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="57.95" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="57.95" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="54.95" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="D12" library="marionette" package="UDFN-8-3.3X1.0_6MIL" value="ESD8006-ESD8006" x="64.55" y="1.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="65.55" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
+<attribute name="NAME" x="65.55" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="NAME" x="66.4" y="0.8" size="0.635" layer="25" font="vector" ratio="20"/>
-<attribute name="NAME" x="65.55" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
-<attribute name="NAME" x="65.55" y="1.35" size="0.5" layer="33" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="62.55" y="1.1" size="0.85" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="TP18" library="marionette" package="PAD+VIA_0.6MM" value="PAD+VIA_0.6MM" x="99.4" y="33.35" smashed="yes">
@@ -10340,7 +10436,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFR" value="Vishay" x="-6" y="-54.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="VSKY05201006-G4-08" x="-6" y="-54.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CN1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="JST-PH-2-THM" value="" x="-2" y="-59"/>
+<element name="J4" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="JST-PH-2-THM" value="B2B-PH-K-S(LF)(SN)" x="-2" y="-59">
+<attribute name="MFR" value="JST" x="-2" y="-59" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="B2B-PH-K-S(LF)(SN)" x="-2" y="-59" size="1.778" layer="27" display="off"/>
+</element>
 <element name="D22" library="D-Generic-Schottky-DO-214AC(SMA)" package="DO-214AC" value="CDBA140SL-HF" x="-4" y="-66">
 <attribute name="MFR" value="Comchip" x="-4" y="-66" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="CDBA140SL-HF" x="-4" y="-66" size="1.778" layer="27" display="off"/>
@@ -10363,6 +10462,11 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R70" library="rcl_custom" package=".0402-B" value="0" x="-6" y="-121"/>
 <element name="C110" library="rcl_custom" package=".0402-B" value="100n" x="-6" y="-125"/>
 <element name="Q1" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" package="TO92" package3d_urn="urn:adsk.eagle:package:28523/2" value="PMBF4393" x="-4.5" y="-130.5"/>
+<element name="TP5" library="marionette" package="PAD-ROUND-1.0-NOCREAM+SILK" value="" x="-5" y="-134.5"/>
+<element name="J15" library="Wurth_Elektronik_Electromechanic_Terminal_Blocks_Connectors_rev17a" library_urn="urn:adsk.eagle:library:492" package="691213510002" value="0398800302" x="58" y="91" rot="R180">
+<attribute name="MFR" value="Molex" x="58" y="91" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="0398800302" x="58" y="91" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="OSC32_IN">
@@ -11060,8 +11164,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C94" pad="2"/>
 <contactref element="C43" pad="2"/>
 <contactref element="R67" pad="1"/>
-<contactref element="JP4" pad="4"/>
-<contactref element="JP4" pad="3"/>
+<contactref element="J2" pad="4"/>
+<contactref element="J2" pad="3"/>
 <contactref element="SG1" pad="2"/>
 <contactref element="SG5" pad="2"/>
 <contactref element="SG2" pad="2"/>
@@ -11864,7 +11968,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R38" pad="2"/>
 <contactref element="LED8" pad="C"/>
 <contactref element="R71" pad="2"/>
-<contactref element="CN1" pad="1"/>
 <contactref element="U2" pad="5"/>
 <contactref element="C103" pad="2"/>
 <contactref element="U12" pad="4"/>
@@ -11877,6 +11980,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R70" pad="2"/>
 <contactref element="C110" pad="2"/>
 <contactref element="Q1" pad="3"/>
+<contactref element="J4" pad="2"/>
+<contactref element="J15" pad="1"/>
 <wire x1="140.7" y1="94.3" x2="149.3" y2="94.3" width="0" layer="19" extent="1-1"/>
 <wire x1="134.05" y1="87.35" x2="140.7" y2="94.3" width="0" layer="19" extent="1-1"/>
 <wire x1="135.05" y1="84.35" x2="134.05" y2="87.35" width="0" layer="19" extent="1-1"/>
@@ -12555,8 +12660,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="9.3" y1="0.7" x2="0.65" y2="0.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.5" y1="-20.5" x2="0.65" y2="0.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.5" y1="-24.5" x2="-6.5" y2="-20.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-1" y1="-59" x2="-5.5" y2="-24.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-4" y1="-68.1999" x2="-1" y2="-59" width="0" layer="19" extent="1-1"/>
+<wire x1="-3" y1="-59" x2="-5.5" y2="-24.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-4" y1="-68.1999" x2="-3" y2="-59" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.5" y1="-80.5" x2="-4" y2="-68.1999" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.5" y1="-83.45" x2="-5.5" y2="-80.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-5" y1="-85" x2="-4.5" y2="-83.45" width="0" layer="19" extent="1-1"/>
@@ -12568,6 +12673,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="-5.5" y1="-121" x2="-5.5" y2="-117" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.5" y1="-125" x2="-5.5" y2="-121" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.77" y1="-130.5" x2="-5.5" y2="-125" width="0" layer="19" extent="1-1"/>
+<wire x1="60.54" y1="91" x2="-5.77" y2="-130.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PC12_SDIO_CK">
 <contactref element="J14" pad="P5"/>
@@ -19063,8 +19169,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$13" class="3">
 <contactref element="SG5" pad="1"/>
-<contactref element="JP4" pad="2"/>
-<contactref element="JP4" pad="1"/>
+<contactref element="J2" pad="2"/>
+<contactref element="J2" pad="1"/>
 <contactref element="TP11" pad="PAD"/>
 <contactref element="D21" pad="1"/>
 <wire x1="57.3" y1="83.6" x2="57.9" y2="83" width="0.25" layer="1"/>
@@ -19073,20 +19179,24 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="63.28" y1="89.72" x2="63.28" y2="89.57" width="1" layer="16"/>
 <wire x1="63.28" y1="89.57" x2="64.6" y2="89.55" width="1" layer="16"/>
 <wire x1="56.5309" y1="83.6" x2="57.3" y2="83.6" width="0.5" layer="1"/>
+<contactref element="J15" pad="2"/>
 <wire x1="59.27" y1="89.73" x2="59.27" y2="92.27" width="0" layer="19" extent="1-1"/>
 <wire x1="57.3" y1="83.6" x2="59.27" y2="89.73" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.042" y1="-37.5" x2="56.5309" y2="83.6" width="0" layer="19" extent="1-1"/>
+<wire x1="55.46" y1="91" x2="-6.042" y2="-37.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT">
-<contactref element="CN1" pad="2"/>
 <contactref element="D22" pad="1"/>
 <contactref element="U12" pad="8"/>
 <contactref element="U12" pad="9"/>
 <contactref element="C104" pad="1"/>
+<contactref element="TP5" pad="PAD"/>
+<contactref element="J4" pad="1"/>
+<wire x1="-5.9" y1="-100" x2="-5" y2="-134.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.5" y1="-83.45" x2="-5.9" y2="-100" width="0" layer="19" extent="1-1"/>
 <wire x1="-5" y1="-83.45" x2="-5.5" y2="-83.45" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.042" y1="-66" x2="-5.5" y2="-83.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-3" y1="-59" x2="-6.042" y2="-66" width="0" layer="19" extent="1-1"/>
+<wire x1="-1" y1="-59" x2="-6.042" y2="-66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CHG-ENABLE">
 <contactref element="U2" pad="3"/>

@@ -13745,6 +13745,150 @@ by R. Vogg  15.March.2002</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Wurth_Elektronik_Electromechanic_Terminal_Blocks_Connectors_rev17a" urn="urn:adsk.eagle:library:492">
+<description>&lt;BR&gt;Wurth Elektronik - Terminal Block Connectors&lt;br&gt;&lt;Hr&gt;
+&lt;BR&gt;&lt;BR&gt; 
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-405&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
+&lt;hr&gt;
+Eagle Version 6, Library Revision 2017a, 2017-06-22&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="691213510002" library_version="1">
+<pad name="1" x="-2.54" y="0" drill="1.3"/>
+<pad name="2" x="2.54" y="0" drill="1.3"/>
+<wire x1="-5.08" y1="-4.05" x2="5.08" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="4.05" x2="5.08" y2="4.05" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="4.05" x2="-5.08" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="5.08" y1="4.05" x2="5.08" y2="-4.05" width="0.127" layer="21"/>
+<text x="-3" y="5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-6" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-5.08" y1="4.05" x2="-5.68" y2="4.05" width="0.127" layer="21"/>
+<wire x1="-5.68" y1="4.05" x2="-5.68" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="-5.68" y1="-4.05" x2="-5.08" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="5.08" y1="4.05" x2="5.68" y2="4.05" width="0.127" layer="21"/>
+<wire x1="5.68" y1="4.05" x2="5.68" y2="-4.05" width="0.127" layer="21"/>
+<wire x1="5.68" y1="-4.05" x2="5.08" y2="-4.05" width="0.127" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-5.93" y="4.3"/>
+<vertex x="5.93" y="4.3"/>
+<vertex x="5.93" y="-4.3"/>
+<vertex x="-5.93" y="-4.3"/>
+</polygon>
+<text x="-3.25" y="-2.75" size="1.27" layer="48">1</text>
+</package>
+</packages>
+<symbols>
+<symbol name="2" library_version="1">
+<wire x1="-1.651" y1="0.889" x2="-1.651" y2="-0.889" width="0.254" layer="94" curve="180" cap="flat"/>
+<wire x1="-1.651" y1="-1.651" x2="-1.651" y2="-3.429" width="0.254" layer="94" curve="180" cap="flat"/>
+<text x="1.27" y="0.238" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="691213510002" prefix="J" uservalue="yes" library_version="1">
+<description>&lt;b&gt;   
+      Serie 2135- 5.08mm Horizontal Entry Modular w. Rising Cage Clamp WR-TBL &lt;/B&gt;
+
+    &lt;BR&gt;
+    &lt;BR&gt;
+    &lt;BR&gt;
+    &lt;BR&gt;
+  
+
+
+
+
+
+
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_WR-TBL2_Series2135.jpg"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_WR-TBL2_Series2135.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/TBL_5_08_2135_HORIZONTAL_ENTRY_MODULAR_69121351000x"&gt;http://katalog.we-online.de/en/em/TBL_5_08_2135_HORIZONTAL_ENTRY_MODULAR_69121351000x&lt;/a&gt;&lt;p&gt;
+Created on  2015-07-09
+&lt;br&gt;
+2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="691213510002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="VERSION" value="2.1"/>
@@ -14192,7 +14336,7 @@ by R. Vogg  15.March.2002</description>
 <part name="SG2" library="marionette" deviceset="SPARKGAP" device="-5"/>
 <part name="GND25" library="GROUND" deviceset="GND" device=""/>
 <part name="V36" library="supply" deviceset="V3.3D" device=""/>
-<part name="JP4" library="marionette" deviceset="PINHD-2X2" device=""/>
+<part name="J2" library="marionette" deviceset="PINHD-2X2" device=""/>
 <part name="C111" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="V1" library="supply" deviceset="VCC" device=""/>
 <part name="S3" library="supply" deviceset="V5D" device=""/>
@@ -14553,7 +14697,7 @@ by R. Vogg  15.March.2002</description>
 <part name="GND106" library="supply" deviceset="GND" device=""/>
 <part name="TP74" library="marionette" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 <part name="LED5" library="apdm" deviceset="LED-RGB-SEPARATE-*" device="3528" value="SMLV56RGB1W1"/>
-<part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B" value="820"/>
+<part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B" value="TBD"/>
 <part name="GND109" library="supply" deviceset="GND" device=""/>
 <part name="LED6" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
 <part name="LED8" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
@@ -14634,7 +14778,10 @@ by R. Vogg  15.March.2002</description>
 <attribute name="MFR" value="Vishay"/>
 <attribute name="MPN" value="VSKY05201006-G4-08"/>
 </part>
-<part name="CN1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="JST_2PIN" device="-THM"/>
+<part name="J4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="JST_2PIN" device="-THM" value="B2B-PH-K-S(LF)(SN)">
+<attribute name="MFR" value="JST"/>
+<attribute name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
+</part>
 <part name="GND20" library="supply" deviceset="GND" device=""/>
 <part name="D22" library="D-Generic-Schottky-DO-214AC(SMA)" deviceset="DIODE-SCHOTTKY-(DO-214AC)" device="" value="CDBA140SL-HF">
 <attribute name="MFR" value="Comchip"/>
@@ -14670,6 +14817,11 @@ by R. Vogg  15.March.2002</description>
 <part name="C110" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="GND120" library="supply" deviceset="GND" device=""/>
 <part name="Q1" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="2N3819" device="" package3d_urn="urn:adsk.eagle:package:28523/2" value="PMBF4393"/>
+<part name="TP5" library="marionette" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="J15" library="Wurth_Elektronik_Electromechanic_Terminal_Blocks_Connectors_rev17a" library_urn="urn:adsk.eagle:library:492" deviceset="691213510002" device="" value="0398800302">
+<attribute name="MFR" value="Molex"/>
+<attribute name="MPN" value="0398800302"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -14695,9 +14847,10 @@ by R. Vogg  15.March.2002</description>
 <wire x1="227.33" y1="168.91" x2="227.33" y2="86.36" width="0.254" layer="97" style="shortdash"/>
 <wire x1="227.33" y1="86.36" x2="34.29" y2="86.36" width="0.254" layer="97" style="shortdash"/>
 <text x="76.2" y="160.02" size="5.08" layer="97"> V3.3D (3.3V @ 600mA)</text>
-<text x="20.32" y="368.3" size="2.54" layer="97">Coax power in (3.3,,40)V</text>
-<text x="20.32" y="328.93" size="2.54" layer="97">Euroterminal in(3.0,,40)V</text>
-<text x="21.59" y="283.21" size="2.54" layer="97">USB Power In (4.5,5.0,5.5) V</text>
+<text x="13.97" y="368.3" size="2.54" layer="97">Coax power in (3.3,,40)V</text>
+<text x="13.97" y="325.12" size="2.54" layer="97">Euroterminal and 
+Pinheader (3.0,,40)V</text>
+<text x="15.24" y="283.21" size="2.54" layer="97">USB Power In (4.5,5.0,5.5) V</text>
 <text x="416.56" y="161.29" size="5.08" layer="97">V3.3DAC (3.3V @ 150mA)</text>
 <wire x1="382.27" y1="168.91" x2="382.27" y2="86.36" width="0.254" layer="97" style="shortdash"/>
 <wire x1="382.27" y1="86.36" x2="530.86" y2="86.36" width="0.254" layer="97" style="shortdash"/>
@@ -14733,8 +14886,8 @@ then DNP R74, C1 and set R73 to 0 ohm.</text>
 <wire x1="292.1" y1="6.35" x2="292.1" y2="73.66" width="0.254" layer="97" style="shortdash"/>
 <wire x1="292.1" y1="73.66" x2="214.63" y2="73.66" width="0.254" layer="97" style="shortdash"/>
 <text x="219.71" y="66.04" size="5.08" layer="97">STM Supply Balancer</text>
-<text x="25.4" y="236.22" size="2.54" layer="97">LiPo cell (3.0,3.6,4.2) V</text>
-<text x="68.58" y="227.33" size="1.778" layer="101" rot="R90">CHECK POLARITY</text>
+<text x="22.86" y="234.95" size="2.54" layer="97">LiPo cell (3.0,3.6,4.2)V
+("JST" connector)</text>
 <text x="220.98" y="205.74" size="1.778" layer="97">Voltage detector</text>
 <text x="209.55" y="219.71" size="1.778" layer="97">LOW if 
 Vsense 
@@ -14748,6 +14901,8 @@ Tie low for Vfl= 4.1V</text>
 current source</text>
 <text x="411.48" y="92.71" size="1.778" layer="97">The STM32 NRST signal should reset the DAC, 
 so NRST disables the DAC power supply.</text>
+<text x="191.77" y="299.72" size="2.54" layer="101">TODO: SOT23</text>
+<text x="359.41" y="360.68" size="2.54" layer="101">TODO: INDUCTOR CHOICE</text>
 </plain>
 <instances>
 <instance part="H1" gate="MT" x="21.59" y="50.8"/>
@@ -14767,9 +14922,9 @@ so NRST disables the DAC power supply.</text>
 <instance part="GND5006" gate="G1" x="306.07" y="312.42"/>
 <instance part="F1" gate="F" x="167.64" y="328.93"/>
 <instance part="SG5" gate="SG" x="87.63" y="323.85"/>
-<instance part="SG1" gate="SG" x="99.06" y="367.03"/>
-<instance part="SG2" gate="SG" x="78.74" y="276.86"/>
-<instance part="JP4" gate="A" x="77.47" y="326.39"/>
+<instance part="SG1" gate="SG" x="92.71" y="367.03"/>
+<instance part="SG2" gate="SG" x="72.39" y="276.86"/>
+<instance part="J2" gate="A" x="77.47" y="326.39"/>
 <instance part="C111" gate="CE" x="435.61" y="322.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="438.15" y="325.12" size="1.778" layer="95"/>
 <attribute name="VALUE" x="438.15" y="322.58" size="1.778" layer="96"/>
@@ -14850,7 +15005,7 @@ so NRST disables the DAC power supply.</text>
 </instance>
 <instance part="GND73" gate="G1" x="251.46" y="119.38"/>
 <instance part="TP11" gate="TP" x="95.25" y="331.47" rot="R90"/>
-<instance part="TP12" gate="TP" x="90.17" y="285.75" rot="R90"/>
+<instance part="TP12" gate="TP" x="83.82" y="285.75" rot="R90"/>
 <instance part="TP17" gate="TP" x="135.89" y="331.47" rot="R90"/>
 <instance part="TP200" gate="G1" x="74.93" y="121.92" smashed="yes">
 <attribute name="NAME" x="71.12" y="118.11" size="1.778" layer="95"/>
@@ -14942,9 +15097,9 @@ so NRST disables the DAC power supply.</text>
 <attribute name="NAME" x="421.64" y="118.11" size="1.778" layer="95"/>
 </instance>
 <instance part="V25" gate="G1" x="474.98" y="133.35"/>
-<instance part="J5" gate="G1" x="76.2" y="368.3" smashed="yes">
-<attribute name="NAME" x="60.96" y="382.27" size="1.524" layer="95" ratio="20"/>
-<attribute name="VALUE" x="60.96" y="379.73" size="1.524" layer="96" ratio="20"/>
+<instance part="J5" gate="G1" x="69.85" y="368.3" smashed="yes">
+<attribute name="NAME" x="54.61" y="382.27" size="1.524" layer="95" ratio="20"/>
+<attribute name="VALUE" x="54.61" y="379.73" size="1.524" layer="96" ratio="20"/>
 </instance>
 <instance part="C145" gate="CE" x="52.07" y="133.35" smashed="yes">
 <attribute name="V_RATING" x="53.34" y="129.54" size="1.778" layer="96"/>
@@ -15152,11 +15307,11 @@ so NRST disables the DAC power supply.</text>
 <instance part="GND103" gate="G1" x="485.14" y="297.18"/>
 <instance part="V13" gate="G1" x="118.11" y="375.92"/>
 <instance part="GND71" gate="G1" x="140.97" y="314.96"/>
-<instance part="GND112" gate="G1" x="99.06" y="360.68"/>
-<instance part="GND113" gate="G1" x="95.25" y="355.6"/>
+<instance part="GND112" gate="G1" x="92.71" y="360.68"/>
+<instance part="GND113" gate="G1" x="88.9" y="355.6"/>
 <instance part="GND114" gate="G1" x="87.63" y="318.77"/>
 <instance part="GND115" gate="G1" x="82.55" y="318.77"/>
-<instance part="GND21" gate="G1" x="78.74" y="270.51"/>
+<instance part="GND21" gate="G1" x="72.39" y="270.51"/>
 <instance part="D20" gate="G$1" x="118.11" y="342.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="114.3" y="341.63" size="1.27" layer="95" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="121.92" y="336.55" size="1.27" layer="96" ratio="10" rot="R90"/>
@@ -15175,7 +15330,7 @@ so NRST disables the DAC power supply.</text>
 <attribute name="MFR" x="118.11" y="316.23" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="118.11" y="316.23" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="73.66" y="287.02"/>
+<instance part="SUPPLY1" gate="G$1" x="67.31" y="287.02"/>
 <instance part="GND30" gate="G1" x="147.32" y="31.75"/>
 <instance part="TP2" gate="G1" x="124.46" y="328.93" smashed="yes">
 <attribute name="NAME" x="121.92" y="325.12" size="1.778" layer="95" ratio="15"/>
@@ -15195,8 +15350,13 @@ so NRST disables the DAC power supply.</text>
 <attribute name="MFR" x="256.54" y="33.02" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="256.54" y="33.02" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="CN1" gate="G$1" x="71.12" y="236.22" rot="MR0"/>
-<instance part="GND20" gate="G1" x="82.55" y="233.68"/>
+<instance part="J4" gate="G$1" x="68.58" y="238.76" smashed="yes" rot="R180">
+<attribute name="MFR" x="68.58" y="238.76" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="68.58" y="238.76" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="68.58" y="232.41" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="62.23" y="227.33" size="1.778" layer="96"/>
+</instance>
+<instance part="GND20" gate="G1" x="78.74" y="233.68"/>
 <instance part="D22" gate="G$1" x="130.81" y="289.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="127" y="288.29" size="1.27" layer="95" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="134.62" y="283.21" size="1.27" layer="96" ratio="10" rot="R90"/>
@@ -15274,22 +15434,29 @@ so NRST disables the DAC power supply.</text>
 <attribute name="NAME" x="217.17" y="302.133" size="1.778" layer="95"/>
 <attribute name="VALUE" x="217.17" y="299.72" size="1.778" layer="96"/>
 </instance>
+<instance part="TP5" gate="TP" x="86.36" y="241.3" rot="R90"/>
+<instance part="J15" gate="G$1" x="57.15" y="326.39" smashed="yes" rot="R180">
+<attribute name="MFR" x="57.15" y="326.39" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="57.15" y="326.39" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="55.88" y="331.708" size="1.778" layer="95"/>
+<attribute name="VALUE" x="50.8" y="322.58" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="95.25" y1="368.3" x2="95.25" y2="365.76" width="0.1524" layer="91"/>
-<wire x1="95.25" y1="365.76" x2="95.25" y2="355.6" width="0.1524" layer="91"/>
-<wire x1="95.25" y1="368.3" x2="91.44" y2="368.3" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="368.3" x2="88.9" y2="365.76" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="365.76" x2="88.9" y2="355.6" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="368.3" x2="85.09" y2="368.3" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G1" pin="RING"/>
-<wire x1="91.44" y1="365.76" x2="95.25" y2="365.76" width="0.1524" layer="91"/>
-<junction x="95.25" y="365.76"/>
+<wire x1="85.09" y1="365.76" x2="88.9" y2="365.76" width="0.1524" layer="91"/>
+<junction x="88.9" y="365.76"/>
 <pinref part="J5" gate="G1" pin="CHASSIS_GND"/>
-<wire x1="66.04" y1="358.14" x2="66.04" y2="355.6" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="355.6" x2="95.25" y2="355.6" width="0.1524" layer="91"/>
-<junction x="95.25" y="355.6"/>
+<wire x1="59.69" y1="358.14" x2="59.69" y2="355.6" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="355.6" x2="88.9" y2="355.6" width="0.1524" layer="91"/>
+<junction x="88.9" y="355.6"/>
 <pinref part="J5" gate="G1" pin="SW"/>
 <pinref part="GND113" gate="G1" pin="GND"/>
 </segment>
@@ -15342,12 +15509,15 @@ so NRST disables the DAC power supply.</text>
 </segment>
 <segment>
 <wire x1="82.55" y1="318.77" x2="82.55" y2="326.39" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="4"/>
+<pinref part="J2" gate="A" pin="4"/>
 <wire x1="80.01" y1="326.39" x2="82.55" y2="326.39" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="3"/>
+<pinref part="J2" gate="A" pin="3"/>
 <wire x1="80.01" y1="326.39" x2="72.39" y2="326.39" width="0.1524" layer="91"/>
 <junction x="80.01" y="326.39"/>
 <pinref part="GND115" gate="G1" pin="GND"/>
+<pinref part="J15" gate="G$1" pin="1"/>
+<wire x1="62.23" y1="326.39" x2="72.39" y2="326.39" width="0.1524" layer="91"/>
+<junction x="72.39" y="326.39"/>
 </segment>
 <segment>
 <pinref part="C111" gate="CE" pin="1"/>
@@ -15364,7 +15534,7 @@ so NRST disables the DAC power supply.</text>
 </segment>
 <segment>
 <pinref part="SG1" gate="SG" pin="2"/>
-<wire x1="99.06" y1="360.68" x2="99.06" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="360.68" x2="92.71" y2="363.22" width="0.1524" layer="91"/>
 <pinref part="GND112" gate="G1" pin="GND"/>
 </segment>
 <segment>
@@ -15373,7 +15543,7 @@ so NRST disables the DAC power supply.</text>
 <pinref part="GND114" gate="G1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="270.51" x2="78.74" y2="273.05" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="270.51" x2="72.39" y2="273.05" width="0.1524" layer="91"/>
 <pinref part="SG2" gate="SG" pin="2"/>
 <pinref part="GND21" gate="G1" pin="GND"/>
 </segment>
@@ -15578,10 +15748,10 @@ so NRST disables the DAC power supply.</text>
 <junction x="236.22" y="283.21"/>
 </segment>
 <segment>
-<pinref part="CN1" gate="G$1" pin="2"/>
 <pinref part="GND20" gate="G1" pin="GND"/>
-<wire x1="73.66" y1="236.22" x2="82.55" y2="236.22" width="0.3048" layer="91"/>
-<wire x1="82.55" y1="236.22" x2="82.55" y2="233.68" width="0.3048" layer="91"/>
+<wire x1="78.74" y1="236.22" x2="78.74" y2="233.68" width="0.3048" layer="91"/>
+<pinref part="J4" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="236.22" x2="71.12" y2="236.22" width="0.3048" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VSS"/>
@@ -15661,16 +15831,16 @@ so NRST disables the DAC power supply.</text>
 </net>
 <net name="V_EXT" class="3">
 <segment>
-<wire x1="91.44" y1="373.38" x2="99.06" y2="373.38" width="0.3048" layer="91"/>
+<wire x1="85.09" y1="373.38" x2="92.71" y2="373.38" width="0.3048" layer="91"/>
 <pinref part="SG1" gate="SG" pin="1"/>
-<wire x1="99.06" y1="370.84" x2="99.06" y2="373.38" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="370.84" x2="92.71" y2="373.38" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G1" pin="TIP"/>
 <junction x="107.95" y="373.38"/>
-<wire x1="99.06" y1="373.38" x2="107.95" y2="373.38" width="0.3048" layer="91"/>
+<wire x1="92.71" y1="373.38" x2="107.95" y2="373.38" width="0.3048" layer="91"/>
 <wire x1="107.95" y1="373.38" x2="118.11" y2="373.38" width="0.3048" layer="91"/>
 <pinref part="TP16" gate="TP" pin="P"/>
 <wire x1="118.11" y1="373.38" x2="118.11" y2="375.92" width="0.3048" layer="91"/>
-<junction x="99.06" y="373.38"/>
+<junction x="92.71" y="373.38"/>
 <pinref part="V13" gate="G1" pin="V_EXT"/>
 <junction x="118.11" y="373.38"/>
 <wire x1="118.11" y1="345.44" x2="118.11" y2="373.38" width="0.3048" layer="91"/>
@@ -15937,18 +16107,18 @@ so NRST disables the DAC power supply.</text>
 </net>
 <net name="V_USB" class="3">
 <segment>
-<wire x1="118.11" y1="283.21" x2="90.17" y2="283.21" width="0.3048" layer="91"/>
+<wire x1="118.11" y1="283.21" x2="83.82" y2="283.21" width="0.3048" layer="91"/>
 <pinref part="SG2" gate="SG" pin="1"/>
-<wire x1="90.17" y1="283.21" x2="78.74" y2="283.21" width="0.3048" layer="91"/>
-<wire x1="78.74" y1="283.21" x2="73.66" y2="283.21" width="0.3048" layer="91"/>
+<wire x1="83.82" y1="283.21" x2="72.39" y2="283.21" width="0.3048" layer="91"/>
+<wire x1="72.39" y1="283.21" x2="67.31" y2="283.21" width="0.3048" layer="91"/>
 <wire x1="118.11" y1="283.21" x2="118.11" y2="313.69" width="0.3048" layer="91"/>
 <pinref part="TP12" gate="TP" pin="P"/>
-<junction x="90.17" y="283.21"/>
+<junction x="83.82" y="283.21"/>
 <pinref part="D24" gate="G$1" pin="+"/>
-<wire x1="78.74" y1="280.67" x2="78.74" y2="283.21" width="0.1524" layer="91"/>
-<junction x="78.74" y="283.21"/>
+<wire x1="72.39" y1="280.67" x2="72.39" y2="283.21" width="0.1524" layer="91"/>
+<junction x="72.39" y="283.21"/>
 <pinref part="SUPPLY1" gate="G$1" pin="V_USB"/>
-<wire x1="73.66" y1="283.21" x2="73.66" y2="287.02" width="0.3048" layer="91"/>
+<wire x1="67.31" y1="283.21" x2="67.31" y2="287.02" width="0.3048" layer="91"/>
 </segment>
 </net>
 <net name="V3.3DAC" class="0">
@@ -16153,25 +16323,31 @@ so NRST disables the DAC power supply.</text>
 <wire x1="87.63" y1="328.93" x2="95.25" y2="328.93" width="0.3048" layer="91"/>
 <junction x="87.63" y="328.93"/>
 <wire x1="80.01" y1="328.93" x2="87.63" y2="328.93" width="0.3048" layer="91"/>
-<pinref part="JP4" gate="A" pin="2"/>
+<pinref part="J2" gate="A" pin="2"/>
 <junction x="80.01" y="328.93"/>
 <wire x1="72.39" y1="328.93" x2="80.01" y2="328.93" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="1"/>
+<pinref part="J2" gate="A" pin="1"/>
+<pinref part="J15" gate="G$1" pin="2"/>
+<wire x1="72.39" y1="328.93" x2="62.23" y2="328.93" width="0.1524" layer="91"/>
+<junction x="72.39" y="328.93"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="1"/>
 <pinref part="D22" gate="G$1" pin="+"/>
 <wire x1="130.81" y1="238.76" x2="130.81" y2="287.02" width="0.3048" layer="91"/>
-<wire x1="73.66" y1="238.76" x2="130.81" y2="238.76" width="0.3048" layer="91"/>
 <pinref part="U12" gate="G$1" pin="VBAT"/>
+<wire x1="86.36" y1="238.76" x2="130.81" y2="238.76" width="0.3048" layer="91"/>
 <wire x1="151.13" y1="238.76" x2="135.89" y2="238.76" width="0.3048" layer="91"/>
 <junction x="130.81" y="238.76"/>
 <pinref part="C104" gate="CE" pin="1"/>
 <wire x1="135.89" y1="238.76" x2="130.81" y2="238.76" width="0.3048" layer="91"/>
 <wire x1="135.89" y1="236.22" x2="135.89" y2="238.76" width="0.3048" layer="91"/>
 <junction x="135.89" y="238.76"/>
+<pinref part="TP5" gate="TP" pin="P"/>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="238.76" x2="86.36" y2="238.76" width="0.3048" layer="91"/>
+<junction x="86.36" y="238.76"/>
 </segment>
 </net>
 <net name="CHG-ENABLE" class="0">
@@ -23377,6 +23553,7 @@ protection to DAC output if necessary.</text>
 <approved hash="113,1,279.296,215.796,FRAME5,,,,,"/>
 <approved hash="113,2,212.327,628.876,JP3,,,,,"/>
 <approved hash="113,3,215.796,139.596,FRAME2,,,,,"/>
+<approved hash="113,1,90.17,241.2,TP5,,,,,"/>
 </errors>
 </schematic>
 </drawing>
