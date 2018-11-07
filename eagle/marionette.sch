@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="15" fill="1" visible="no" active="no"/>
@@ -119,6 +119,7 @@
 <layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
 <layer number="136" name="silktop" color="7" fill="1" visible="no" active="yes"/>
 <layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="140" name="Testjig_Mill" color="26" fill="1" visible="no" active="yes"/>
 <layer number="144" name="DrillLegend" color="7" fill="1" visible="no" active="no"/>
 <layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="yes"/>
 <layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="yes"/>
@@ -12269,6 +12270,33 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <wire x1="4" y1="3.75" x2="4" y2="-9.5" width="0.02" layer="39"/>
 <wire x1="4" y1="-9.5" x2="3.75" y2="-9.5" width="0.02" layer="39"/>
 </package>
+<package name="SPARKGAP_0.125MM">
+<description>5mil (0.125 mm ) sparkgap</description>
+<smd name="1" x="0" y="0.35" dx="0.4" dy="0.4" layer="1" rot="R45" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="0" y="-0.35" dx="0.4" dy="0.4" layer="1" rot="R45" stop="no" thermals="no" cream="no"/>
+<wire x1="-0.3" y1="0.3" x2="0.3" y2="0.3" width="0.02" layer="41"/>
+<wire x1="0.3" y1="0.3" x2="0.3" y2="-0.3" width="0.02" layer="41"/>
+<wire x1="0.3" y1="-0.3" x2="-0.3" y2="-0.3" width="0.02" layer="41"/>
+<wire x1="-0.3" y1="-0.3" x2="-0.3" y2="0.3" width="0.02" layer="41"/>
+<rectangle x1="-0.3" y1="-0.3" x2="0.3" y2="0.3" layer="29"/>
+<text x="0.5" y="0.6" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<wire x1="-0.5" y1="0.75" x2="0.5" y2="0.75" width="0.05" layer="39"/>
+<wire x1="0.5" y1="0.75" x2="0.5" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="0.5" y1="-0.75" x2="-0.5" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="-0.5" y1="-0.75" x2="-0.5" y2="0.75" width="0.05" layer="39"/>
+</package>
+<package name="SPARKGAP_0.15MM">
+<smd name="1" x="0" y="0.3625" dx="0.4" dy="0.4" layer="1" rot="R45" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="0" y="-0.3625" dx="0.4" dy="0.4" layer="1" rot="R45" stop="no" thermals="no" cream="no"/>
+<wire x1="0.2" y1="0.05" x2="0.2" y2="-0.05" width="0.02" layer="41"/>
+<wire x1="-0.2" y1="-0.05" x2="-0.2" y2="0.05" width="0.02" layer="41"/>
+<rectangle x1="-0.3" y1="-0.3" x2="0.3" y2="0.3" layer="29"/>
+<text x="0.5" y="0.6" size="0.85" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<wire x1="-0.5" y1="-0.75" x2="0.5" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="0.5" y1="-0.75" x2="0.5" y2="0.75" width="0.05" layer="39"/>
+<wire x1="0.5" y1="0.75" x2="-0.5" y2="0.75" width="0.05" layer="39"/>
+<wire x1="-0.5" y1="0.75" x2="-0.5" y2="-0.75" width="0.05" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PFET">
@@ -12289,6 +12317,50 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <vertex x="1.27" y="0.762"/>
 <vertex x="1.27" y="-0.762"/>
 </polygon>
+</symbol>
+<symbol name="SPARKGAP-1">
+<description>Sparkgap</description>
+<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas"/>
+<wire x1="0" y1="0.1524" x2="0.7874" y2="0.9398" width="0.0508" layer="94"/>
+<wire x1="0.7874" y1="0.9398" x2="-0.7874" y2="0.9398" width="0.0508" layer="94"/>
+<wire x1="0" y1="0.1524" x2="-0.7874" y2="0.9398" width="0.0508" layer="94"/>
+<wire x1="-0.6858" y1="0.889" x2="0.7112" y2="0.9144" width="0.1016" layer="94"/>
+<wire x1="0.7112" y1="0.9144" x2="0.0254" y2="0.2286" width="0.1016" layer="94"/>
+<wire x1="0.0254" y1="0.2286" x2="-0.6604" y2="0.8636" width="0.1016" layer="94"/>
+<wire x1="-0.6604" y1="0.8636" x2="0.5842" y2="0.8636" width="0.1016" layer="94"/>
+<wire x1="0.5842" y1="0.8636" x2="0.0254" y2="0.3302" width="0.1016" layer="94"/>
+<wire x1="0.0254" y1="0.3302" x2="-0.5334" y2="0.7874" width="0.1016" layer="94"/>
+<wire x1="-0.5334" y1="0.7874" x2="0.4572" y2="0.7874" width="0.1016" layer="94"/>
+<wire x1="0.4572" y1="0.7874" x2="-0.0254" y2="0.381" width="0.1016" layer="94"/>
+<wire x1="-0.0254" y1="0.381" x2="-0.4064" y2="0.762" width="0.1016" layer="94"/>
+<wire x1="-0.4064" y1="0.762" x2="0.2794" y2="0.7112" width="0.1016" layer="94"/>
+<wire x1="0.2794" y1="0.7112" x2="-0.0508" y2="0.4572" width="0.1016" layer="94"/>
+<wire x1="-0.0508" y1="0.4572" x2="-0.254" y2="0.6604" width="0.1016" layer="94"/>
+<wire x1="-0.254" y1="0.6604" x2="0.127" y2="0.6604" width="0.1016" layer="94"/>
+<wire x1="0.127" y1="0.6604" x2="-0.0508" y2="0.5588" width="0.1016" layer="94"/>
+<wire x1="-0.0508" y1="0.5588" x2="-0.127" y2="0.6096" width="0.1016" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="0" y1="-0.1524" x2="-0.7874" y2="-0.9398" width="0.0508" layer="94"/>
+<wire x1="-0.7874" y1="-0.9398" x2="0.7874" y2="-0.9398" width="0.0508" layer="94"/>
+<wire x1="0" y1="-0.1524" x2="0.7874" y2="-0.9398" width="0.0508" layer="94"/>
+<wire x1="0.6858" y1="-0.889" x2="-0.7112" y2="-0.9144" width="0.1016" layer="94"/>
+<wire x1="-0.7112" y1="-0.9144" x2="-0.0254" y2="-0.2286" width="0.1016" layer="94"/>
+<wire x1="-0.0254" y1="-0.2286" x2="0.6604" y2="-0.8636" width="0.1016" layer="94"/>
+<wire x1="0.6604" y1="-0.8636" x2="-0.5842" y2="-0.8636" width="0.1016" layer="94"/>
+<wire x1="-0.5842" y1="-0.8636" x2="-0.0254" y2="-0.3302" width="0.1016" layer="94"/>
+<wire x1="-0.0254" y1="-0.3302" x2="0.5334" y2="-0.7874" width="0.1016" layer="94"/>
+<wire x1="0.5334" y1="-0.7874" x2="-0.4572" y2="-0.7874" width="0.1016" layer="94"/>
+<wire x1="-0.4572" y1="-0.7874" x2="0.0254" y2="-0.381" width="0.1016" layer="94"/>
+<wire x1="0.0254" y1="-0.381" x2="0.4064" y2="-0.762" width="0.1016" layer="94"/>
+<wire x1="0.4064" y1="-0.762" x2="-0.2794" y2="-0.7112" width="0.1016" layer="94"/>
+<wire x1="-0.2794" y1="-0.7112" x2="0.0508" y2="-0.4572" width="0.1016" layer="94"/>
+<wire x1="0.0508" y1="-0.4572" x2="0.254" y2="-0.6604" width="0.1016" layer="94"/>
+<wire x1="0.254" y1="-0.6604" x2="-0.127" y2="-0.6604" width="0.1016" layer="94"/>
+<wire x1="-0.127" y1="-0.6604" x2="0.0508" y2="-0.5588" width="0.1016" layer="94"/>
+<wire x1="0.0508" y1="-0.5588" x2="0.127" y2="-0.6096" width="0.1016" layer="94"/>
+<wire x1="0" y1="-0.762" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<text x="3.81" y="-2.54" size="1.778" layer="95" ratio="15" rot="R90">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -12356,6 +12428,32 @@ TODO: Break this up into smaller more specific libraries, e.g. connector.lbr.</d
 <connect gate="Q" pin="D" pad="3"/>
 <connect gate="Q" pin="G" pad="1"/>
 <connect gate="Q" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPARKGAP_RECT" prefix="SG">
+<description>Sparkgap</description>
+<gates>
+<gate name="G1" symbol="SPARKGAP-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_0.125MM" package="SPARKGAP_0.125MM">
+<connects>
+<connect gate="G1" pin="1" pad="1"/>
+<connect gate="G1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0.15MM" package="SPARKGAP_0.15MM">
+<connects>
+<connect gate="G1" pin="1" pad="1"/>
+<connect gate="G1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13945,9 +14043,7 @@ Created on  2015-07-09
 <part name="R10" library="rcl_custom" deviceset="R-US_" device="0402-B" value="47k"/>
 <part name="R11" library="rcl_custom" deviceset="R-US_" device="0402-B" value="47k"/>
 <part name="GND12" library="GROUND" deviceset="GND" device=""/>
-<part name="C31" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n">
-<attribute name="V_RATING" value="25V"/>
-</part>
+<part name="C31" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="GND9" library="GROUND" deviceset="GND" device=""/>
 <part name="R12" library="rcl_custom" deviceset="R-US_" device="0402-B" value="620"/>
 <part name="R13" library="rcl_custom" deviceset="R-US_" device="0402-B" value="510"/>
@@ -14331,9 +14427,9 @@ Created on  2015-07-09
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="F1" library="marionette" deviceset="FUSE-" device="C1Q2" value="2A"/>
-<part name="SG5" library="marionette" deviceset="SPARKGAP" device="-5"/>
-<part name="SG1" library="marionette" deviceset="SPARKGAP" device="-5"/>
-<part name="SG2" library="marionette" deviceset="SPARKGAP" device="-5"/>
+<part name="SG5" library="apdm_alt" deviceset="SPARKGAP_RECT" device="_0.15MM" value="SPARKGAP_RECT_0.15MM"/>
+<part name="SG1" library="apdm_alt" deviceset="SPARKGAP_RECT" device="_0.15MM" value="SPARKGAP_RECT_0.15MM"/>
+<part name="SG2" library="apdm_alt" deviceset="SPARKGAP_RECT" device="_0.15MM" value="SPARKGAP_RECT_0.15MM"/>
 <part name="GND25" library="GROUND" deviceset="GND" device=""/>
 <part name="V36" library="supply" deviceset="V3.3D" device=""/>
 <part name="J2" library="marionette" deviceset="PINHD-2X2" device=""/>
@@ -14822,6 +14918,8 @@ Created on  2015-07-09
 <attribute name="MFR" value="Molex"/>
 <attribute name="MPN" value="0398800302"/>
 </part>
+<part name="SG4" library="apdm_alt" deviceset="SPARKGAP_RECT" device="_0.15MM" value="SPARKGAP_RECT_0.15MM"/>
+<part name="GND29" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14921,9 +15019,9 @@ so NRST disables the DAC power supply.</text>
 <instance part="GND5015" gate="G1" x="435.61" y="316.23"/>
 <instance part="GND5006" gate="G1" x="306.07" y="312.42"/>
 <instance part="F1" gate="F" x="167.64" y="328.93"/>
-<instance part="SG5" gate="SG" x="87.63" y="323.85"/>
-<instance part="SG1" gate="SG" x="92.71" y="367.03"/>
-<instance part="SG2" gate="SG" x="72.39" y="276.86"/>
+<instance part="SG5" gate="G1" x="87.63" y="323.85"/>
+<instance part="SG1" gate="G1" x="92.71" y="367.03"/>
+<instance part="SG2" gate="G1" x="72.39" y="276.86"/>
 <instance part="J2" gate="A" x="77.47" y="326.39"/>
 <instance part="C111" gate="CE" x="435.61" y="322.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="438.15" y="325.12" size="1.778" layer="95"/>
@@ -15441,6 +15539,8 @@ so NRST disables the DAC power supply.</text>
 <attribute name="NAME" x="55.88" y="331.708" size="1.778" layer="95"/>
 <attribute name="VALUE" x="50.8" y="322.58" size="1.778" layer="96"/>
 </instance>
+<instance part="SG4" gate="G1" x="86.36" y="234.95"/>
+<instance part="GND29" gate="G1" x="86.36" y="231.14"/>
 </instances>
 <busses>
 </busses>
@@ -15533,18 +15633,18 @@ so NRST disables the DAC power supply.</text>
 <pinref part="C100" gate="CE" pin="2"/>
 </segment>
 <segment>
-<pinref part="SG1" gate="SG" pin="2"/>
-<wire x1="92.71" y1="360.68" x2="92.71" y2="363.22" width="0.1524" layer="91"/>
+<pinref part="SG1" gate="G1" pin="2"/>
+<wire x1="92.71" y1="360.68" x2="92.71" y2="364.49" width="0.1524" layer="91"/>
 <pinref part="GND112" gate="G1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SG5" gate="SG" pin="2"/>
-<wire x1="87.63" y1="318.77" x2="87.63" y2="320.04" width="0.1524" layer="91"/>
+<pinref part="SG5" gate="G1" pin="2"/>
+<wire x1="87.63" y1="318.77" x2="87.63" y2="321.31" width="0.1524" layer="91"/>
 <pinref part="GND114" gate="G1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="72.39" y1="270.51" x2="72.39" y2="273.05" width="0.1524" layer="91"/>
-<pinref part="SG2" gate="SG" pin="2"/>
+<wire x1="72.39" y1="270.51" x2="72.39" y2="274.32" width="0.1524" layer="91"/>
+<pinref part="SG2" gate="G1" pin="2"/>
 <pinref part="GND21" gate="G1" pin="GND"/>
 </segment>
 <segment>
@@ -15797,6 +15897,11 @@ so NRST disables the DAC power supply.</text>
 <pinref part="GND120" gate="G1" pin="GND"/>
 <wire x1="189.23" y1="213.36" x2="189.23" y2="215.9" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SG4" gate="G1" pin="2"/>
+<pinref part="GND29" gate="G1" pin="GND"/>
+<wire x1="86.36" y1="232.41" x2="86.36" y2="231.14" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="V3.3A" class="0">
 <segment>
@@ -15832,8 +15937,8 @@ so NRST disables the DAC power supply.</text>
 <net name="V_EXT" class="3">
 <segment>
 <wire x1="85.09" y1="373.38" x2="92.71" y2="373.38" width="0.3048" layer="91"/>
-<pinref part="SG1" gate="SG" pin="1"/>
-<wire x1="92.71" y1="370.84" x2="92.71" y2="373.38" width="0.1524" layer="91"/>
+<pinref part="SG1" gate="G1" pin="1"/>
+<wire x1="92.71" y1="369.57" x2="92.71" y2="373.38" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G1" pin="TIP"/>
 <junction x="107.95" y="373.38"/>
 <wire x1="92.71" y1="373.38" x2="107.95" y2="373.38" width="0.3048" layer="91"/>
@@ -16108,14 +16213,14 @@ so NRST disables the DAC power supply.</text>
 <net name="V_USB" class="3">
 <segment>
 <wire x1="118.11" y1="283.21" x2="83.82" y2="283.21" width="0.3048" layer="91"/>
-<pinref part="SG2" gate="SG" pin="1"/>
+<pinref part="SG2" gate="G1" pin="1"/>
 <wire x1="83.82" y1="283.21" x2="72.39" y2="283.21" width="0.3048" layer="91"/>
 <wire x1="72.39" y1="283.21" x2="67.31" y2="283.21" width="0.3048" layer="91"/>
 <wire x1="118.11" y1="283.21" x2="118.11" y2="313.69" width="0.3048" layer="91"/>
 <pinref part="TP12" gate="TP" pin="P"/>
 <junction x="83.82" y="283.21"/>
 <pinref part="D24" gate="G$1" pin="+"/>
-<wire x1="72.39" y1="280.67" x2="72.39" y2="283.21" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="279.4" x2="72.39" y2="283.21" width="0.1524" layer="91"/>
 <junction x="72.39" y="283.21"/>
 <pinref part="SUPPLY1" gate="G$1" pin="V_USB"/>
 <wire x1="67.31" y1="283.21" x2="67.31" y2="287.02" width="0.3048" layer="91"/>
@@ -16318,8 +16423,8 @@ so NRST disables the DAC power supply.</text>
 <wire x1="95.25" y1="328.93" x2="104.14" y2="328.93" width="0.3048" layer="91"/>
 <pinref part="TP11" gate="TP" pin="P"/>
 <junction x="95.25" y="328.93"/>
-<pinref part="SG5" gate="SG" pin="1"/>
-<wire x1="87.63" y1="327.66" x2="87.63" y2="328.93" width="0.1524" layer="91"/>
+<pinref part="SG5" gate="G1" pin="1"/>
+<wire x1="87.63" y1="326.39" x2="87.63" y2="328.93" width="0.1524" layer="91"/>
 <wire x1="87.63" y1="328.93" x2="95.25" y2="328.93" width="0.3048" layer="91"/>
 <junction x="87.63" y="328.93"/>
 <wire x1="80.01" y1="328.93" x2="87.63" y2="328.93" width="0.3048" layer="91"/>
@@ -16348,6 +16453,8 @@ so NRST disables the DAC power supply.</text>
 <pinref part="J4" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="238.76" x2="86.36" y2="238.76" width="0.3048" layer="91"/>
 <junction x="86.36" y="238.76"/>
+<pinref part="SG4" gate="G1" pin="1"/>
+<wire x1="86.36" y1="237.49" x2="86.36" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CHG-ENABLE" class="0">
@@ -16468,11 +16575,11 @@ data sheet for application diagram</text>
 <text x="652.78" y="788.67" size="1.778" layer="97">*Verify Rvbus value
 table 5-7 of USB3320
 data sheet</text>
-<wire x1="850.9" y1="543.56" x2="993.14" y2="543.56" width="0.254" layer="97" style="shortdash"/>
-<wire x1="993.14" y1="543.56" x2="993.14" y2="629.92" width="0.254" layer="97" style="shortdash"/>
-<wire x1="993.14" y1="629.92" x2="850.9" y2="629.92" width="0.254" layer="97" style="shortdash"/>
-<wire x1="850.9" y1="629.92" x2="850.9" y2="543.56" width="0.254" layer="97" style="shortdash"/>
-<text x="897.89" y="621.03" size="5.08" layer="97">STM CONTROL</text>
+<wire x1="833.12" y1="528.32" x2="1003.3" y2="528.32" width="0.254" layer="97" style="shortdash"/>
+<wire x1="1003.3" y1="528.32" x2="1003.3" y2="619.76" width="0.254" layer="97" style="shortdash"/>
+<wire x1="1003.3" y1="619.76" x2="833.12" y2="619.76" width="0.254" layer="97" style="shortdash"/>
+<wire x1="833.12" y1="619.76" x2="833.12" y2="528.32" width="0.254" layer="97" style="shortdash"/>
+<text x="880.11" y="610.87" size="5.08" layer="97">STM CONTROL</text>
 <text x="295.91" y="739.14" size="1.778" layer="97">KEY</text>
 <text x="276.86" y="739.14" size="1.778" layer="97" rot="MR0">NC</text>
 <wire x1="312.42" y1="772.16" x2="312.42" y2="716.28" width="0.254" layer="97" style="shortdash"/>
@@ -16591,8 +16698,11 @@ STM32F40x Errata sheet v6 p35
 <text x="93.98" y="144.78" size="1.778" layer="97">UNUSED</text>
 <text x="93.98" y="119.38" size="1.778" layer="97">UNUSED</text>
 <text x="93.98" y="429.26" size="1.778" layer="97">UNUSED</text>
-<text x="937.26" y="601.98" size="1.778" layer="97">NRST also disables the V3.3DAC supply
+<text x="930.91" y="591.82" size="1.778" layer="97">NRST also disables the V3.3DAC supply
 So that on reset, the DAC resets, too.</text>
+<text x="956.31" y="561.34" size="1.778" layer="97">Hold during reset for
+DFU bootloader</text>
+<text x="914.4" y="577.85" size="1.778" layer="97">Press for reset</text>
 </plain>
 <instances>
 <instance part="R201" gate="R" x="622.3" y="736.6" rot="R270"/>
@@ -16705,17 +16815,16 @@ So that on reset, the DAC resets, too.</text>
 <instance part="U11" gate="G2" x="50.8" y="706.12" rot="MR0"/>
 <instance part="U11" gate="G3" x="55.88" y="612.14" rot="MR0"/>
 <instance part="U11" gate="G4" x="55.88" y="518.16" rot="MR0"/>
-<instance part="U11" gate="CTRL" x="896.62" y="566.42" rot="MR0"/>
-<instance part="GND54" gate="1" x="951.23" y="548.64" rot="MR0"/>
-<instance part="R37" gate="R" x="951.23" y="557.53" rot="MR90"/>
-<instance part="GND19" gate="1" x="908.05" y="551.18" rot="MR0"/>
-<instance part="C31" gate="CE" x="916.94" y="586.74" smashed="yes" rot="MR0">
-<attribute name="NAME" x="915.416" y="587.121" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="915.416" y="579.501" size="1.778" layer="96" rot="MR0"/>
-<attribute name="V_RATING" x="915.67" y="581.66" size="1.778" layer="96" rot="MR0"/>
+<instance part="U11" gate="CTRL" x="882.65" y="556.26" rot="MR0"/>
+<instance part="GND54" gate="1" x="951.23" y="538.48" rot="MR0"/>
+<instance part="R37" gate="R" x="951.23" y="547.37" rot="MR90"/>
+<instance part="GND19" gate="1" x="894.08" y="541.02" rot="MR0"/>
+<instance part="C31" gate="CE" x="902.97" y="576.58" smashed="yes" rot="MR0">
+<attribute name="NAME" x="898.144" y="576.961" size="1.778" layer="95"/>
+<attribute name="VALUE" x="896.874" y="571.881" size="1.778" layer="96"/>
 </instance>
-<instance part="GND9" gate="1" x="919.48" y="574.04" rot="MR0"/>
-<instance part="R16" gate="R" x="916.94" y="605.79" rot="MR90"/>
+<instance part="GND9" gate="1" x="905.51" y="563.88" rot="MR0"/>
+<instance part="R16" gate="R" x="902.97" y="595.63" rot="MR90"/>
 <instance part="TP19" gate="TP" x="750.57" y="791.21" rot="R90"/>
 <instance part="TP20" gate="TP" x="539.75" y="787.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="538.353" y="789.3558" size="1.778" layer="95" rot="R180"/>
@@ -16726,9 +16835,9 @@ So that on reset, the DAC resets, too.</text>
 <attribute name="VALUE" x="658.622" y="760.603" size="0.762" layer="96" rot="R90"/>
 </instance>
 <instance part="TP23" gate="TP" x="656.59" y="754.38" rot="R270"/>
-<instance part="TP24" gate="TP" x="908.05" y="601.98" rot="R90"/>
-<instance part="TP25" gate="TP" x="938.53" y="568.96"/>
-<instance part="TP26" gate="TP" x="935.99" y="561.34" rot="R270"/>
+<instance part="TP24" gate="TP" x="894.08" y="591.82" rot="R90"/>
+<instance part="TP25" gate="TP" x="938.53" y="558.8"/>
+<instance part="TP26" gate="TP" x="935.99" y="551.18" rot="R270"/>
 <instance part="TP15" gate="TP" x="457.2" y="561.34" rot="R180"/>
 <instance part="TP28" gate="TP" x="447.04" y="584.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="457.073" y="584.8858" size="1.778" layer="95" rot="R180"/>
@@ -16742,9 +16851,9 @@ So that on reset, the DAC resets, too.</text>
 <instance part="V19" gate="G1" x="449.58" y="605.79"/>
 <instance part="V20" gate="G1" x="440.69" y="547.37"/>
 <instance part="V21" gate="G1" x="335.28" y="490.22"/>
-<instance part="V22" gate="G1" x="916.94" y="614.68"/>
-<instance part="V23" gate="G1" x="935.99" y="579.12"/>
-<instance part="V24" gate="G1" x="951.23" y="590.55"/>
+<instance part="V22" gate="G1" x="902.97" y="604.52"/>
+<instance part="V23" gate="G1" x="935.99" y="565.15"/>
+<instance part="V24" gate="G1" x="951.23" y="576.58"/>
 <instance part="TP21" gate="TP" x="619.76" y="742.95" rot="R180"/>
 <instance part="TP109" gate="TP" x="624.84" y="810.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="622.9858" y="805.307" size="1.778" layer="95" rot="R90"/>
@@ -16915,13 +17024,13 @@ So that on reset, the DAC resets, too.</text>
 <attribute name="VALUE" x="317.5" y="354.33" size="1.27" layer="96"/>
 </instance>
 <instance part="XTAL1" gate="XTAL_GND" x="349.25" y="358.14" rot="R90"/>
-<instance part="SW1" gate="G1" x="951.23" y="574.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="955.04" y="579.12" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="953.77" y="581.66" size="1.778" layer="96" font="vector"/>
+<instance part="SW1" gate="G1" x="951.23" y="563.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="956.31" y="571.5" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="956.31" y="568.96" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="SW2" gate="G1" x="922.02" y="589.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="927.1" y="593.09" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="924.56" y="595.63" size="1.778" layer="96" font="vector"/>
+<instance part="SW2" gate="G1" x="908.05" y="579.12" smashed="yes" rot="R270">
+<attribute name="NAME" x="913.13" y="585.47" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="913.13" y="582.93" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="C146" gate="CE" x="488.95" y="558.8" smashed="yes">
 <attribute name="V_RATING" x="490.22" y="554.99" size="1.778" layer="96"/>
@@ -17124,9 +17233,9 @@ So that on reset, the DAC resets, too.</text>
 </instance>
 <instance part="GND99" gate="1" x="220.98" y="787.4"/>
 <instance part="R108" gate="R" x="469.9" y="556.26" rot="R270"/>
-<instance part="R111" gate="R" x="908.05" y="589.28" smashed="yes" rot="MR90">
-<attribute name="NAME" x="909.5486" y="590.55" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="904.748" y="585.47" size="1.778" layer="96" rot="MR90"/>
+<instance part="R111" gate="R" x="894.08" y="579.12" smashed="yes" rot="MR90">
+<attribute name="NAME" x="892.5814" y="574.04" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="892.302" y="581.66" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="J13" gate="G1" x="287.02" y="741.68" smashed="yes" rot="MR270">
 <attribute name="NAME" x="294.64" y="728.98" size="1.778" layer="95" rot="MR0"/>
@@ -17549,25 +17658,25 @@ So that on reset, the DAC resets, too.</text>
 <pinref part="GND63" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="951.23" y1="552.45" x2="951.23" y2="551.18" width="0.1524" layer="91"/>
+<wire x1="951.23" y1="542.29" x2="951.23" y2="541.02" width="0.1524" layer="91"/>
 <pinref part="GND54" gate="1" pin="GND"/>
 <pinref part="R37" gate="R" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
 <pinref part="U11" gate="CTRL" pin="BYPASS_REG"/>
-<wire x1="908.05" y1="553.72" x2="908.05" y2="558.8" width="0.1524" layer="91"/>
-<wire x1="908.05" y1="558.8" x2="904.24" y2="558.8" width="0.1524" layer="91"/>
+<wire x1="894.08" y1="543.56" x2="894.08" y2="548.64" width="0.1524" layer="91"/>
+<wire x1="894.08" y1="548.64" x2="890.27" y2="548.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="919.48" y1="579.12" x2="919.48" y2="576.58" width="0.1524" layer="91"/>
+<wire x1="905.51" y1="568.96" x2="905.51" y2="566.42" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="922.02" y1="581.66" x2="922.02" y2="579.12" width="0.1524" layer="91"/>
+<wire x1="908.05" y1="571.5" x2="908.05" y2="568.96" width="0.1524" layer="91"/>
 <pinref part="C31" gate="CE" pin="2"/>
-<wire x1="916.94" y1="581.66" x2="916.94" y2="579.12" width="0.1524" layer="91"/>
-<wire x1="916.94" y1="579.12" x2="919.48" y2="579.12" width="0.1524" layer="91"/>
-<junction x="919.48" y="579.12"/>
-<wire x1="919.48" y1="579.12" x2="922.02" y2="579.12" width="0.1524" layer="91"/>
+<wire x1="902.97" y1="571.5" x2="902.97" y2="568.96" width="0.1524" layer="91"/>
+<wire x1="902.97" y1="568.96" x2="905.51" y2="568.96" width="0.1524" layer="91"/>
+<junction x="905.51" y="568.96"/>
+<wire x1="905.51" y1="568.96" x2="908.05" y2="568.96" width="0.1524" layer="91"/>
 <pinref part="SW2" gate="G1" pin="2"/>
 </segment>
 <segment>
@@ -18233,20 +18342,20 @@ So that on reset, the DAC resets, too.</text>
 <net name="NRST" class="0">
 <segment>
 <pinref part="C31" gate="CE" pin="1"/>
-<wire x1="922.02" y1="599.44" x2="922.02" y2="596.9" width="0.1524" layer="91"/>
-<wire x1="916.94" y1="599.44" x2="908.05" y2="599.44" width="0.1524" layer="91"/>
-<junction x="916.94" y="599.44"/>
-<wire x1="916.94" y1="599.44" x2="922.02" y2="599.44" width="0.1524" layer="91"/>
-<wire x1="916.94" y1="599.44" x2="916.94" y2="589.28" width="0.1524" layer="91"/>
-<junction x="916.94" y="599.44"/>
-<wire x1="916.94" y1="599.44" x2="916.94" y2="600.71" width="0.1524" layer="91"/>
+<wire x1="908.05" y1="589.28" x2="908.05" y2="586.74" width="0.1524" layer="91"/>
+<wire x1="902.97" y1="589.28" x2="894.08" y2="589.28" width="0.1524" layer="91"/>
+<junction x="902.97" y="589.28"/>
+<wire x1="902.97" y1="589.28" x2="908.05" y2="589.28" width="0.1524" layer="91"/>
+<wire x1="902.97" y1="589.28" x2="902.97" y2="579.12" width="0.1524" layer="91"/>
+<junction x="902.97" y="589.28"/>
+<wire x1="902.97" y1="589.28" x2="902.97" y2="590.55" width="0.1524" layer="91"/>
 <pinref part="R16" gate="R" pin="1"/>
-<wire x1="908.05" y1="599.44" x2="908.05" y2="594.36" width="0.1524" layer="91"/>
+<wire x1="894.08" y1="589.28" x2="894.08" y2="584.2" width="0.1524" layer="91"/>
 <pinref part="TP24" gate="TP" pin="P"/>
-<junction x="908.05" y="599.44"/>
-<label x="927.1" y="604.52" size="1.778" layer="95" xref="yes"/>
-<wire x1="927.1" y1="604.52" x2="922.02" y2="599.44" width="0.1524" layer="91"/>
-<junction x="922.02" y="599.44"/>
+<junction x="894.08" y="589.28"/>
+<label x="913.13" y="594.36" size="1.778" layer="95" xref="yes"/>
+<wire x1="913.13" y1="594.36" x2="908.05" y2="589.28" width="0.1524" layer="91"/>
+<junction x="908.05" y="589.28"/>
 <pinref part="SW2" gate="G1" pin="1"/>
 <pinref part="R111" gate="R" pin="2"/>
 </segment>
@@ -18441,15 +18550,15 @@ So that on reset, the DAC resets, too.</text>
 <net name="BOOT0" class="0">
 <segment>
 <pinref part="R37" gate="R" pin="2"/>
-<wire x1="951.23" y1="563.88" x2="951.23" y2="566.42" width="0.1524" layer="91"/>
-<junction x="951.23" y="563.88"/>
-<wire x1="951.23" y1="563.88" x2="951.23" y2="562.61" width="0.1524" layer="91"/>
-<wire x1="951.23" y1="563.88" x2="935.99" y2="563.88" width="0.1524" layer="91"/>
-<label x="928.37" y="563.88" size="1.778" layer="95" rot="MR0"/>
+<wire x1="951.23" y1="553.72" x2="951.23" y2="556.26" width="0.1524" layer="91"/>
+<junction x="951.23" y="553.72"/>
+<wire x1="951.23" y1="553.72" x2="951.23" y2="552.45" width="0.1524" layer="91"/>
+<wire x1="951.23" y1="553.72" x2="935.99" y2="553.72" width="0.1524" layer="91"/>
+<label x="939.8" y="553.72" size="1.778" layer="95"/>
 <pinref part="U11" gate="CTRL" pin="BOOT0"/>
 <pinref part="TP26" gate="TP" pin="P"/>
-<wire x1="935.99" y1="563.88" x2="904.24" y2="563.88" width="0.1524" layer="91"/>
-<junction x="935.99" y="563.88"/>
+<wire x1="935.99" y1="553.72" x2="890.27" y2="553.72" width="0.1524" layer="91"/>
+<junction x="935.99" y="553.72"/>
 <pinref part="SW1" gate="G1" pin="2"/>
 </segment>
 </net>
@@ -19469,19 +19578,19 @@ So that on reset, the DAC resets, too.</text>
 </segment>
 <segment>
 <pinref part="R16" gate="R" pin="2"/>
-<wire x1="916.94" y1="610.87" x2="916.94" y2="612.14" width="0.1524" layer="91"/>
+<wire x1="902.97" y1="600.71" x2="902.97" y2="601.98" width="0.1524" layer="91"/>
 <pinref part="V22" gate="G1" pin="V3.3D"/>
 </segment>
 <segment>
 <pinref part="U11" gate="CTRL" pin="PDR_ON"/>
-<wire x1="904.24" y1="568.96" x2="935.99" y2="568.96" width="0.1524" layer="91"/>
-<wire x1="935.99" y1="568.96" x2="935.99" y2="576.58" width="0.1524" layer="91"/>
+<wire x1="890.27" y1="558.8" x2="935.99" y2="558.8" width="0.1524" layer="91"/>
+<wire x1="935.99" y1="558.8" x2="935.99" y2="562.61" width="0.1524" layer="91"/>
 <pinref part="TP25" gate="TP" pin="P"/>
-<junction x="935.99" y="568.96"/>
+<junction x="935.99" y="558.8"/>
 <pinref part="V23" gate="G1" pin="V3.3D"/>
 </segment>
 <segment>
-<wire x1="951.23" y1="581.66" x2="951.23" y2="588.01" width="0.1524" layer="91"/>
+<wire x1="951.23" y1="571.5" x2="951.23" y2="574.04" width="0.1524" layer="91"/>
 <pinref part="V24" gate="G1" pin="V3.3D"/>
 <pinref part="SW1" gate="G1" pin="1"/>
 </segment>
@@ -19729,8 +19838,8 @@ So that on reset, the DAC resets, too.</text>
 <segment>
 <pinref part="U11" gate="CTRL" pin="NRST"/>
 <pinref part="R111" gate="R" pin="1"/>
-<wire x1="908.05" y1="584.2" x2="908.05" y2="574.04" width="0.1524" layer="91"/>
-<wire x1="908.05" y1="574.04" x2="904.24" y2="574.04" width="0.1524" layer="91"/>
+<wire x1="894.08" y1="574.04" x2="894.08" y2="563.88" width="0.1524" layer="91"/>
+<wire x1="894.08" y1="563.88" x2="890.27" y2="563.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBAT_ANODE" class="0">
@@ -23503,9 +23612,9 @@ protection to DAC output if necessary.</text>
 <approved hash="113,2,536.656,785.245,TP20,,,,,"/>
 <approved hash="113,2,654.766,760.48,TP22,,,,,"/>
 <approved hash="113,2,656.59,753.775,TP23,,,,,"/>
-<approved hash="113,2,908.05,602.585,TP24,,,,,"/>
-<approved hash="113,2,939.135,568.96,TP25,,,,,"/>
-<approved hash="113,2,935.99,560.735,TP26,,,,,"/>
+<approved hash="113,2,894.08,592.425,TP24,,,,,"/>
+<approved hash="113,2,939.135,558.8,TP25,,,,,"/>
+<approved hash="113,2,935.99,550.575,TP26,,,,,"/>
 <approved hash="113,2,915.67,483.205,TP14,,,,,"/>
 <approved hash="113,2,456.595,561.34,TP15,,,,,"/>
 <approved hash="113,2,451.184,584.2,TP28,,,,,"/>
@@ -23536,10 +23645,11 @@ protection to DAC output if necessary.</text>
 <approved hash="113,2,646.475,784.86,TP108,,,,,"/>
 <approved hash="113,2,558.8,431.8,FRAME1,,,,,"/>
 <approved hash="113,1,88.8915,323.85,SG5,,,,,"/>
-<approved hash="113,1,100.322,367.03,SG1,,,,,"/>
-<approved hash="113,1,80.0015,276.86,SG2,,,,,"/>
+<approved hash="113,1,93.9715,367.03,SG1,,,,,"/>
+<approved hash="113,1,73.6515,276.86,SG2,,,,,"/>
+<approved hash="113,1,76.1577,329.156,J2,,,,,"/>
 <approved hash="113,1,95.25,331.981,TP11,,,,,"/>
-<approved hash="113,1,90.17,286.355,TP12,,,,,"/>
+<approved hash="113,1,83.82,286.355,TP12,,,,,"/>
 <approved hash="113,1,135.89,332.075,TP17,,,,,"/>
 <approved hash="113,2,304.8,357.535,TP30,,,,,"/>
 <approved hash="113,1,110.49,122.585,TP82,,,,,"/>
@@ -23553,7 +23663,7 @@ protection to DAC output if necessary.</text>
 <approved hash="113,1,279.296,215.796,FRAME5,,,,,"/>
 <approved hash="113,2,212.327,628.876,JP3,,,,,"/>
 <approved hash="113,3,215.796,139.596,FRAME2,,,,,"/>
-<approved hash="113,1,90.17,241.2,TP5,,,,,"/>
+<approved hash="113,1,86.36,241.2,TP5,,,,,"/>
 </errors>
 </schematic>
 </drawing>
