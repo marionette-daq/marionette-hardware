@@ -12567,6 +12567,11 @@ Cuttable Jumper &lt;b&gt;e0201&lt;/b&gt; footprint with &lt;b&gt;5 mil&lt;/b&gt;
 </polygon>
 <rectangle x1="-0.55" y1="-0.4" x2="0.55" y2="0.4" layer="1"/>
 </package>
+<package name="SCOPE_CLIP">
+<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="29"/>
+<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="29"/>
+<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="30"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONN_JTAG_10PIN">
@@ -13134,6 +13139,13 @@ additional component</description>
 <text x="1.27" y="2.54" size="1.778" layer="95" ratio="15">&gt;NAME</text>
 <text x="-0.715" y="-1.115" size="0.254" layer="94" ratio="15">0.25mm</text>
 <text x="-0.5842" y="-0.2032" size="0.381" layer="94">GND</text>
+</symbol>
+<symbol name="SCOPE_CLIP">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="-0.762" size="1.778" layer="94">Scope Clip</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14116,6 +14128,19 @@ additional component.
 </device>
 </devices>
 </deviceset>
+<deviceset name="SCOPE_CLIP" prefix="J">
+<description>Scope Ground Clip 2mm x 4mm</description>
+<gates>
+<gate name="G1" symbol="SCOPE_CLIP" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="SCOPE_CLIP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="apdm_alt">
@@ -14730,6 +14755,35 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <wire x1="1.75" y1="-0.7" x2="1.5" y2="-0.7" width="0.05" layer="33"/>
 <wire x1="1.5" y1="-1.2" x2="1.75" y2="-1.2" width="0.05" layer="33"/>
 </package>
+<package name="SOT23-3">
+<description>SOT23-3
+&lt;br&gt;Small Outline Transistor, standard 3-pin package</description>
+<wire x1="1.4" y1="0.6" x2="-1.4" y2="0.6" width="0.3" layer="51"/>
+<wire x1="-1.4" y1="0.6" x2="-1.4" y2="-0.6" width="0.3" layer="51"/>
+<wire x1="-1.4" y1="-0.6" x2="1.4" y2="-0.6" width="0.3" layer="51"/>
+<wire x1="1.4" y1="-0.6" x2="1.4" y2="0.6" width="0.3" layer="51"/>
+<wire x1="-1.795" y1="-1.995" x2="1.795" y2="-1.995" width="0.01" layer="39"/>
+<wire x1="1.795" y1="-1.995" x2="1.795" y2="1.995" width="0.01" layer="39"/>
+<wire x1="1.795" y1="1.995" x2="-1.795" y2="1.995" width="0.01" layer="39"/>
+<wire x1="-1.795" y1="1.995" x2="-1.795" y2="-1.995" width="0.01" layer="39"/>
+<wire x1="-0.3" y1="-0.79" x2="0.3" y2="-0.79" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.3" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="0.8" x2="-0.7" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.3" x2="1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="0.7" y2="0.8" width="0.127" layer="21"/>
+<smd name="3" x="0" y="1" dx="0.8" dy="0.9" layer="1" stop="no"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1" stop="no"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1" stop="no"/>
+<text x="-1.5" y="1.6" size="0.8" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.5" y="-2.4" size="0.8" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<rectangle x1="-0.25" y1="0.65" x2="0.25" y2="1.3" layer="51"/>
+<rectangle x1="-1.2" y1="-1.3" x2="-0.7" y2="-0.65" layer="51"/>
+<rectangle x1="0.7" y1="-1.3" x2="1.2" y2="-0.65" layer="51"/>
+<rectangle x1="-0.5" y1="-0.3" x2="0.5" y2="0.3" layer="35"/>
+<rectangle x1="-1.45" y1="-1.545" x2="-0.455" y2="-0.455" layer="29"/>
+<rectangle x1="0.455" y1="-1.545" x2="1.455" y2="-0.445" layer="29"/>
+<rectangle x1="-0.5" y1="0.455" x2="0.5" y2="1.55" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED-R">
@@ -14786,6 +14840,19 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <text x="-2.54" y="2.54" size="1.778" layer="95" rot="R180">&gt;PART</text>
 <text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="NJFET">
+<wire x1="0" y1="3.683" x2="0" y2="-1.143" width="0.254" layer="94"/>
+<text x="-1.27" y="3.81" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
+<text x="-1.27" y="6.35" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<pin name="S" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="G" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.254" y="0"/>
+<vertex x="-1.27" y="-0.762"/>
+<vertex x="-1.27" y="0.762"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LED-RGB-SEPARATE-*" prefix="LED" uservalue="yes">
@@ -14830,6 +14897,24 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <connect gate="G" pin="K" pad="4"/>
 <connect gate="R" pin="A" pad="2"/>
 <connect gate="R" pin="K" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NJFET" prefix="Q" uservalue="yes">
+<description>Generic N-channel JFet</description>
+<gates>
+<gate name="Q" symbol="NJFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SOT23" package="SOT23-3">
+<connects>
+<connect gate="Q" pin="D" pad="1"/>
+<connect gate="Q" pin="G" pad="3"/>
+<connect gate="Q" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14940,38 +15025,6 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <connect gate="A" pin="2" pad="2"/>
 <connect gate="A" pin="3" pad="3"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="oresat-misc">
-<packages>
-<package name="SCOPE_CLIP">
-<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="29"/>
-<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="30"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SCOPE-CLIP">
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<text x="2.54" y="-1.27" size="2.54" layer="94">Scope clip</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SCOPE_CLIP">
-<description>Ground clip pad for scope</description>
-<gates>
-<gate name="G$1" symbol="SCOPE-CLIP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SCOPE_CLIP">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -15571,83 +15624,6 @@ JST PH 2-pin thru-home side entry</description>
 <connect gate="G$1" pin="VDD" pad="3"/>
 <connect gate="G$1" pin="VSET" pad="2"/>
 <connect gate="G$1" pin="VSS" pad="4 7 EP"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="transistor-fet">
-<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
-&lt;p&gt;
-Symbols changed according to IEC617&lt;p&gt; 
-All types, packages and assignment to symbols and pins checked&lt;p&gt;
-Package outlines partly checked&lt;p&gt;
-&lt;p&gt;
-JFET = junction FET&lt;p&gt;
-IGBT-x = insulated gate bipolar transistor&lt;p&gt;
-x=N: NPN; x=P: PNP&lt;p&gt;
-IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
-m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
-m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
-c: N=N-channel; P=P-Channel&lt;p&gt;
-GDSB: gate, drain, source, bulk&lt;p&gt;
-&lt;p&gt;
-by R. Vogg  15.March.2002</description>
-<packages>
-<package name="TO92">
-<description>&lt;b&gt;TO 92&lt;/b&gt;</description>
-<wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.781"/>
-<wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.3185"/>
-<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.1"/>
-<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="-2.2537" y1="-0.254" x2="-0.2863" y2="-0.254" width="0.127" layer="51"/>
-<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.127" layer="21"/>
-<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.127" layer="21"/>
-<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.127" layer="21"/>
-<wire x1="0.2863" y1="-0.254" x2="2.2537" y2="-0.254" width="0.127" layer="51"/>
-<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.2936"/>
-<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
-<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
-<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
-</package>
-</packages>
-<symbols>
-<symbol name="JFET-N">
-<wire x1="0" y1="-3.81" x2="0" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.905" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-3.175" width="0.254" layer="94"/>
-<text x="-10.16" y="2.413" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<text x="2.54" y="0.635" size="1.524" layer="95">D</text>
-<text x="2.54" y="-4.445" size="1.524" layer="95">S</text>
-<text x="-4.445" y="-4.445" size="1.524" layer="95">G</text>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="middle" direction="pas"/>
-<pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="2N3819" prefix="Q">
-<description>&lt;b&gt;N-Channel Junction FET&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="JFET-N" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO92">
-<connects>
-<connect gate="G$1" pin="D" pad="1"/>
-<connect gate="G$1" pin="G" pad="2"/>
-<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16606,7 +16582,7 @@ Created on  2015-07-09
 <part name="GND106" library="supply" deviceset="GND" device=""/>
 <part name="TP74" library="marionette" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 <part name="LED5" library="apdm" deviceset="LED-RGB-SEPARATE-*" device="3528" value="SMLV56RGB1W1"/>
-<part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B" value="TBD"/>
+<part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="GND109" library="supply" deviceset="GND" device=""/>
 <part name="LED6" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
 <part name="LED8" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
@@ -16628,14 +16604,6 @@ Created on  2015-07-09
 <part name="V5" library="supply" deviceset="V3.3D" device=""/>
 <part name="TP3" library="marionette" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="V6" library="supply" deviceset="V3.3D" device=""/>
-<part name="U$2" library="oresat-misc" deviceset="SCOPE_CLIP" device=""/>
-<part name="U$3" library="oresat-misc" deviceset="SCOPE_CLIP" device=""/>
-<part name="U$4" library="oresat-misc" deviceset="SCOPE_CLIP" device=""/>
-<part name="U$5" library="oresat-misc" deviceset="SCOPE_CLIP" device=""/>
-<part name="U$6" library="oresat-misc" deviceset="SCOPE_CLIP" device=""/>
-<part name="U$7" library="oresat-misc" deviceset="SCOPE_CLIP" device=""/>
-<part name="U$8" library="oresat-misc" deviceset="SCOPE_CLIP" device=""/>
-<part name="U$9" library="oresat-misc" deviceset="SCOPE_CLIP" device=""/>
 <part name="U6" library="U-Linear-LTC3114" deviceset="LTC3114" device="FE"/>
 <part name="C41" library="rcl_custom" deviceset="C-EU" device="0402-B" value="68n">
 <attribute name="V_RATING" value="50V"/>
@@ -16725,7 +16693,6 @@ Created on  2015-07-09
 <part name="GND119" library="supply" deviceset="GND" device=""/>
 <part name="C110" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="GND120" library="supply" deviceset="GND" device=""/>
-<part name="Q1" library="transistor-fet" deviceset="2N3819" device="" value="PMBF4393"/>
 <part name="TP5" library="marionette" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 <part name="J15" library="Wurth_Elektronik_Electromechanic_Terminal_Blocks_Connectors_rev17a" deviceset="691213510002" device="" value="0398800302">
 <attribute name="MFR" value="Molex"/>
@@ -16745,6 +16712,17 @@ Created on  2015-07-09
 <part name="D27" library="marionette" deviceset="DIODE_SCHOTTKY-*" device="SMB" value="NP">
 <attribute name="DPN" value="MBRS260T3GOSCT-ND"/>
 </part>
+<part name="Q1" library="apdm" deviceset="NJFET" device="-SOT23" value="MMBFJ202">
+<attribute name="DPN" value="MMBFJ202CT-ND"/>
+</part>
+<part name="J17" library="marionette" deviceset="SCOPE_CLIP" device=""/>
+<part name="J18" library="marionette" deviceset="SCOPE_CLIP" device=""/>
+<part name="J19" library="marionette" deviceset="SCOPE_CLIP" device=""/>
+<part name="J20" library="marionette" deviceset="SCOPE_CLIP" device=""/>
+<part name="J21" library="marionette" deviceset="SCOPE_CLIP" device=""/>
+<part name="J23" library="marionette" deviceset="SCOPE_CLIP" device=""/>
+<part name="J24" library="marionette" deviceset="SCOPE_CLIP" device=""/>
+<part name="J25" library="marionette" deviceset="SCOPE_CLIP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16824,7 +16802,6 @@ Tie low for Vfl= 4.1V</text>
 current source</text>
 <text x="411.48" y="92.71" size="1.778" layer="97">The STM32 NRST signal should reset the DAC, 
 so NRST disables the DAC power supply.</text>
-<text x="191.77" y="299.72" size="2.54" layer="101">TODO: SOT23</text>
 <text x="369.57" y="321.31" size="1.27" layer="97">(1.2V UVLO)</text>
 <text x="339.09" y="293.37" size="1.778" layer="97">Programmable Current Limit:
 Iout = 25000/R69</text>
@@ -17226,9 +17203,9 @@ dVin/dt is high.</text>
 <instance part="TP74" gate="G1" x="151.13" y="36.83" smashed="yes">
 <attribute name="NAME" x="148.59" y="39.37" size="1.778" layer="95"/>
 </instance>
-<instance part="R71" gate="R" x="226.06" y="289.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="224.79" y="293.1414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="224.79" y="290.322" size="1.778" layer="96" rot="R180"/>
+<instance part="R71" gate="R" x="236.22" y="290.83" smashed="yes" rot="R270">
+<attribute name="NAME" x="234.95" y="294.4114" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="234.95" y="291.592" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND109" gate="G1" x="236.22" y="280.67" smashed="yes"/>
 <instance part="LED6" gate="G1" x="236.22" y="318.77" smashed="yes" rot="MR270">
@@ -17258,14 +17235,6 @@ dVin/dt is high.</text>
 <instance part="V6" gate="G1" x="238.76" y="38.1" smashed="yes">
 <attribute name="VALUE" x="240.03" y="40.64" size="1.524" layer="96" ratio="20"/>
 </instance>
-<instance part="U$2" gate="G$1" x="81.28" y="35.56" smashed="yes"/>
-<instance part="U$3" gate="G$1" x="81.28" y="33.02" smashed="yes"/>
-<instance part="U$4" gate="G$1" x="81.28" y="30.48" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="81.28" y="27.94" smashed="yes"/>
-<instance part="U$6" gate="G$1" x="81.28" y="38.1" smashed="yes"/>
-<instance part="U$7" gate="G$1" x="81.28" y="40.64" smashed="yes"/>
-<instance part="U$8" gate="G$1" x="81.28" y="43.18" smashed="yes"/>
-<instance part="U$9" gate="G$1" x="81.28" y="45.72" smashed="yes"/>
 <instance part="U6" gate="G$1" x="381" y="328.93" smashed="yes">
 <attribute name="NAME" x="384.81" y="306.07" size="1.778" layer="95" ratio="20"/>
 <attribute name="VALUE" x="384.81" y="303.53" size="1.778" layer="96" ratio="20"/>
@@ -17281,11 +17250,11 @@ dVin/dt is high.</text>
 <attribute name="VALUE" x="401.32" y="341.63" size="1.778" layer="96"/>
 </instance>
 <instance part="GND92" gate="G1" x="431.8" y="304.8" smashed="yes"/>
-<instance part="R28" gate="R" x="402.59" y="300.99" smashed="yes" rot="R90">
-<attribute name="NAME" x="405.13" y="302.26" size="1.778" layer="95"/>
-<attribute name="VALUE" x="405.13" y="299.72" size="1.778" layer="96"/>
+<instance part="R28" gate="R" x="402.59" y="298.45" smashed="yes" rot="R90">
+<attribute name="NAME" x="405.13" y="299.72" size="1.778" layer="95"/>
+<attribute name="VALUE" x="405.13" y="297.18" size="1.778" layer="96"/>
 </instance>
-<instance part="GND93" gate="G1" x="402.59" y="295.91" smashed="yes"/>
+<instance part="GND93" gate="G1" x="402.59" y="293.37" smashed="yes"/>
 <instance part="GND94" gate="G1" x="361.95" y="302.26" smashed="yes"/>
 <instance part="R69" gate="R" x="353.06" y="311.15" smashed="yes" rot="R270">
 <attribute name="NAME" x="354.33" y="311.15" size="1.778" layer="95"/>
@@ -17427,10 +17396,6 @@ dVin/dt is high.</text>
 <attribute name="VALUE" x="190.754" y="216.281" size="1.778" layer="96"/>
 </instance>
 <instance part="GND120" gate="G1" x="189.23" y="213.36" smashed="yes"/>
-<instance part="Q1" gate="G$1" x="231.14" y="299.72" smashed="yes">
-<attribute name="NAME" x="217.17" y="302.133" size="1.778" layer="95"/>
-<attribute name="VALUE" x="217.17" y="299.72" size="1.778" layer="96"/>
-</instance>
 <instance part="TP5" gate="TP" x="86.36" y="241.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="87.0458" y="242.697" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="89.662" y="240.157" size="1.778" layer="96" rot="R90"/>
@@ -17462,6 +17427,17 @@ dVin/dt is high.</text>
 <instance part="D27" gate="D" x="347.98" y="345.44" rot="R270">
 <attribute name="DPN" x="347.98" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
+<instance part="Q1" gate="Q" x="233.68" y="298.45">
+<attribute name="DPN" x="233.68" y="298.45" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="J17" gate="G1" x="83.82" y="43.18"/>
+<instance part="J18" gate="G1" x="83.82" y="40.64"/>
+<instance part="J19" gate="G1" x="83.82" y="38.1"/>
+<instance part="J20" gate="G1" x="83.82" y="35.56"/>
+<instance part="J21" gate="G1" x="83.82" y="33.02"/>
+<instance part="J23" gate="G1" x="83.82" y="30.48"/>
+<instance part="J24" gate="G1" x="83.82" y="27.94"/>
+<instance part="J25" gate="G1" x="83.82" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -17742,9 +17718,9 @@ dVin/dt is high.</text>
 <pinref part="R28" gate="R" pin="1"/>
 <pinref part="GND93" gate="G1" pin="GND"/>
 <pinref part="C114" gate="CE" pin="1"/>
-<wire x1="416.56" y1="300.99" x2="416.56" y2="295.91" width="0.1524" layer="91"/>
-<wire x1="416.56" y1="295.91" x2="402.59" y2="295.91" width="0.1524" layer="91"/>
-<junction x="402.59" y="295.91"/>
+<wire x1="416.56" y1="300.99" x2="416.56" y2="293.37" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="293.37" x2="402.59" y2="293.37" width="0.1524" layer="91"/>
+<junction x="402.59" y="293.37"/>
 </segment>
 <segment>
 <pinref part="GND94" gate="G1" pin="GND"/>
@@ -17767,14 +17743,15 @@ dVin/dt is high.</text>
 <pinref part="GND103" gate="G1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R71" gate="R" pin="2"/>
-<pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="GND109" gate="G1" pin="GND"/>
-<wire x1="226.06" y1="283.21" x2="226.06" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="297.18" x2="236.22" y2="283.21" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="283.21" x2="236.22" y2="280.67" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="283.21" x2="236.22" y2="283.21" width="0.1524" layer="91"/>
+<pinref part="R71" gate="R" pin="2"/>
+<wire x1="236.22" y1="285.75" x2="236.22" y2="283.21" width="0.1524" layer="91"/>
 <junction x="236.22" y="283.21"/>
+<pinref part="Q1" gate="Q" pin="G"/>
+<wire x1="226.06" y1="298.45" x2="231.14" y2="298.45" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="283.21" x2="226.06" y2="298.45" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="G1" pin="GND"/>
@@ -17919,8 +17896,8 @@ dVin/dt is high.</text>
 <wire x1="172.72" y1="328.93" x2="236.22" y2="328.93" width="0.3048" layer="91"/>
 <pinref part="U2" gate="G$1" pin="SENSE"/>
 <wire x1="236.22" y1="328.93" x2="274.32" y2="328.93" width="0.3048" layer="91"/>
-<wire x1="241.3" y1="228.6" x2="275.59" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="228.6" x2="274.32" y2="328.93" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="228.6" x2="274.32" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="228.6" x2="274.32" y2="328.93" width="0.1524" layer="91"/>
 <junction x="274.32" y="328.93"/>
 <pinref part="LED6" gate="G1" pin="A"/>
 <wire x1="236.22" y1="323.85" x2="236.22" y2="328.93" width="0.1524" layer="91"/>
@@ -18221,7 +18198,7 @@ dVin/dt is high.</text>
 <junction x="176.53" y="135.89"/>
 </segment>
 </net>
-<net name="TPS63060_FB" class="0">
+<net name="LTC3114_FB" class="0">
 <segment>
 <pinref part="R2" gate="R" pin="1"/>
 <pinref part="R3" gate="R" pin="2"/>
@@ -18251,7 +18228,7 @@ dVin/dt is high.</text>
 <wire x1="488.95" y1="120.65" x2="488.95" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="BST1" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="BST1"/>
 <pinref part="C41" gate="CE" pin="1"/>
@@ -18259,7 +18236,7 @@ dVin/dt is high.</text>
 <wire x1="363.22" y1="334.01" x2="363.22" y2="340.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="BST2" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="BST2"/>
 <wire x1="396.24" y1="334.01" x2="398.78" y2="334.01" width="0.1524" layer="91"/>
@@ -18267,7 +18244,7 @@ dVin/dt is high.</text>
 <wire x1="398.78" y1="334.01" x2="398.78" y2="340.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="SW2" class="0">
 <segment>
 <pinref part="C45" gate="CE" pin="2"/>
 <wire x1="398.78" y1="347.98" x2="398.78" y2="351.79" width="0.1524" layer="91"/>
@@ -18279,7 +18256,7 @@ dVin/dt is high.</text>
 <junction x="388.62" y="351.79"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="SW1" class="0">
 <segment>
 <pinref part="C41" gate="CE" pin="2"/>
 <wire x1="373.38" y1="351.79" x2="363.22" y2="351.79" width="0.1524" layer="91"/>
@@ -18295,7 +18272,7 @@ dVin/dt is high.</text>
 <pinref part="D27" gate="D" pin="CATHODE"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="LTC3114_LDO" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="LDO"/>
 <pinref part="U6" gate="G$1" pin="PLDO"/>
@@ -18309,13 +18286,14 @@ dVin/dt is high.</text>
 <pinref part="D25" gate="G$1" pin="-"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="LTC3114_VC1" class="0">
 <segment>
 <pinref part="C101" gate="CE" pin="1"/>
 <pinref part="R28" gate="R" pin="2"/>
+<wire x1="402.59" y1="303.53" x2="402.59" y2="306.07" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="LTC3114_VC" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="VC"/>
 <pinref part="C101" gate="CE" pin="2"/>
@@ -18326,7 +18304,7 @@ dVin/dt is high.</text>
 <junction x="402.59" y="313.69"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="LTC3114_RUN" class="0">
 <segment>
 <pinref part="TP29" gate="TP" pin="TP"/>
 <pinref part="U6" gate="G$1" pin="RUN"/>
@@ -18343,7 +18321,7 @@ dVin/dt is high.</text>
 <wire x1="326.39" y1="318.77" x2="335.28" y2="318.77" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="LTC3114_PROG" class="0">
 <segment>
 <pinref part="R69" gate="R" pin="1"/>
 <pinref part="U6" gate="G$1" pin="PROG"/>
@@ -18357,14 +18335,14 @@ dVin/dt is high.</text>
 <junction x="353.06" y="316.23"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="V5D_ANODE" class="0">
 <segment>
 <pinref part="R27" gate="R" pin="2"/>
 <pinref part="LED8" gate="G1" pin="A"/>
 <wire x1="505.46" y1="317.5" x2="505.46" y2="312.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="3">
+<net name="VIN_EUROTERMINAL" class="3">
 <segment>
 <pinref part="D21" gate="G$1" pin="+"/>
 <wire x1="95.25" y1="328.93" x2="104.14" y2="328.93" width="0.3048" layer="91"/>
@@ -18415,21 +18393,21 @@ dVin/dt is high.</text>
 <wire x1="213.36" y1="228.6" x2="181.61" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="CN" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="CN"/>
 <pinref part="TP4" gate="G1" pin="TP"/>
 <wire x1="241.3" y1="223.52" x2="257.81" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="CP" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="CP"/>
 <pinref part="C103" gate="CE" pin="1"/>
 <wire x1="241.3" y1="220.98" x2="243.84" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="MCP73855_STAT1" class="0">
 <segment>
 <wire x1="147.32" y1="248.92" x2="157.48" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="LED4" gate="G1" pin="C"/>
@@ -18438,14 +18416,14 @@ dVin/dt is high.</text>
 <wire x1="147.32" y1="228.6" x2="151.13" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="STAT1_ANODE" class="0">
 <segment>
 <pinref part="LED4" gate="G1" pin="A"/>
 <pinref part="R25" gate="R" pin="2"/>
 <wire x1="170.18" y1="248.92" x2="165.1" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="MCP73855_VSET" class="0">
 <segment>
 <pinref part="R26" gate="R" pin="2"/>
 <pinref part="R68" gate="R" pin="1"/>
@@ -18456,7 +18434,7 @@ dVin/dt is high.</text>
 <junction x="177.8" y="191.77"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="MCP73855_PROG" class="0">
 <segment>
 <pinref part="R70" gate="R" pin="1"/>
 <pinref part="U12" gate="G$1" pin="PROG"/>
@@ -18470,18 +18448,11 @@ dVin/dt is high.</text>
 <wire x1="181.61" y1="223.52" x2="189.23" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="VCC_DRAIN" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="D"/>
 <pinref part="LED6" gate="G1" pin="C"/>
-<wire x1="236.22" y1="302.26" x2="236.22" y2="316.23" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="G"/>
-<pinref part="R71" gate="R" pin="1"/>
-<wire x1="226.06" y1="297.18" x2="226.06" y2="294.64" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="300.99" x2="236.22" y2="316.23" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="Q" pin="D"/>
 </segment>
 </net>
 <net name="NRST" class="0">
@@ -18502,6 +18473,13 @@ dVin/dt is high.</text>
 <wire x1="365.76" y1="313.69" x2="361.95" y2="313.69" width="0.1524" layer="91"/>
 <wire x1="361.95" y1="313.69" x2="361.95" y2="312.42" width="0.1524" layer="91"/>
 <pinref part="J16" gate="J" pin="2"/>
+</segment>
+</net>
+<net name="VCC_SOURCE" class="0">
+<segment>
+<pinref part="R71" gate="R" pin="1"/>
+<pinref part="Q1" gate="Q" pin="S"/>
+<wire x1="236.22" y1="295.91" x2="236.22" y2="298.45" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
