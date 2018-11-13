@@ -18441,7 +18441,7 @@ dVin/dt is high.</text>
 <wire x1="147.32" y1="223.52" x2="151.13" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="TIMER" class="0">
 <segment>
 <pinref part="U12" gate="G$1" pin="TIMER"/>
 <pinref part="C110" gate="CE" pin="1"/>
@@ -18595,7 +18595,7 @@ turning on the pull-up resistors.
 <text x="173.99" y="312.42" size="3.048" layer="97" rot="R90">/4.5J</text>
 <text x="173.99" y="110.49" size="3.048" layer="97" rot="R90">/4.5J</text>
 <text x="262.89" y="134.62" size="3.048" layer="97" rot="R90">/4.5M</text>
-<text x="262.89" y="274.32" size="3.048" layer="97" rot="R90">/4.5M</text>
+<text x="262.89" y="265.43" size="3.048" layer="97" rot="R90">/4.5M</text>
 <text x="405.13" y="471.17" size="3.048" layer="97" rot="R90">/4.5M</text>
 <text x="473.71" y="525.78" size="1.778" layer="97">100k Pulldown resistor ensures SD card
 will power down quickly.</text>
@@ -19502,7 +19502,7 @@ DFU bootloader</text>
 <wire x1="114.3" y1="408.94" x2="114.3" y2="624.84" width="0.762" layer="92"/>
 </segment>
 </bus>
-<bus name="SDIO_BUS:SDIO_CMD,SDIO_CK-SPI3_MOSI,SDIO_D3,SDIO_D2-SPI3_SCK,SDIO_D1,SDIO_D0">
+<bus name="SDIO_BUS:PD2_SDIO_CMD,PC12_SDIO_CK,PC11_SDIO_D3,PC10_SDIO_D2,PC9_SDIO_D1,PC8_SDIO_D0">
 <segment>
 <wire x1="441.96" y1="562.61" x2="441.96" y2="609.6" width="0.762" layer="92"/>
 <wire x1="195.58" y1="609.6" x2="195.58" y2="543.56" width="0.762" layer="92"/>
@@ -19510,31 +19510,19 @@ DFU bootloader</text>
 <label x="318.77" y="612.14" size="3.048" layer="95"/>
 </segment>
 </bus>
-<bus name="SPI_BUS:SPI2_NSS,SPI2_SCK,SPI2_MISO,SPI2_MOSI,SPI4_NSS,SPI4_SCK,SPI4_MISO,SPI4_MOSI">
-<segment>
-<wire x1="259.08" y1="255.27" x2="259.08" y2="273.05" width="0.762" layer="92"/>
-<label x="262.89" y="255.27" size="3.048" layer="95" rot="R90"/>
-</segment>
-</bus>
-<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PC13,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PC13,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE11,PE12,PE13,PE14,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG8,PH2,PH3,PH5,PH6,PH9,PH10_TIM5_CH1,PH11_TIM5_CH2,PH12_TIM5_CH3,PH14,PH15,PI4,PI8,PI10,PI11">
 <segment>
 <wire x1="170.18" y1="377.19" x2="170.18" y2="214.63" width="0.762" layer="92"/>
 <label x="173.99" y="290.83" size="3.048" layer="95" font="vector" rot="R90"/>
 </segment>
 </bus>
-<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE13,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG9,PG10,PG11,PG15,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0_TIM4_ETR,PE1,PE2,PE3,PE4,PE5_TIM9_CH1,PE6_TIM9_CH2,PE7_TIM1_ETR,PE8,PE9_TIM1_CH1,PE10,PE13_TIM1_CH3,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG9,PG10,PG11,PG15,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <wire x1="170.18" y1="22.86" x2="170.18" y2="214.63" width="0.762" layer="92"/>
 <label x="173.99" y="88.9" size="3.048" layer="95" font="vector" rot="R90"/>
 </segment>
 </bus>
-<bus name="SPI_BUS:SPI2_NSS,SPI2_SCK,SPI2_MISO,SPI2_MOSI,SPI4_NSS,SPI4_SCK,SPI4_MOSI,SPI6_NSS,SPI6_SCK,SPI6_MISO,SPI6_MOSI">
-<segment>
-<wire x1="259.08" y1="27.94" x2="259.08" y2="255.27" width="0.762" layer="92"/>
-<label x="262.89" y="115.57" size="3.048" layer="95" rot="R90"/>
-</segment>
-</bus>
-<bus name="GPIO_BUS:PA15,PB8,PB9,PB14,PB15,PC6,PC13,PD0,PD1,PD3,PD4,PD5,PD6,PD7,PD8,PD9,PD10,PD11,PD12,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE13,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG9,PG10,PG11,PG15,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
+<bus name="GPIO_BUS:PA15_TIM2_CH1_ETR,PB8_TIM4_CH3,PB9_TIM4_CH4,PB14,PB15,PC6,PC13,PD0,PD1,PD3_USART2_CTS,PD4_USART2_RTS,PD5_USART2_TX,PD6_USART2_RX,PD7,PD8_USART3_TX,PD9_USART3_RX,PD10,PD11_USART3_CTS,PD12_USART3_RTS,PE0,PE1,PE2,PE3,PE4,PE5,PE6,PE7,PE8,PE9,PE10,PE13,PE15,PF2,PF11,PF12,PF13,PF14,PF15,PG0,PG1,PG2,PG3,PG4,PG5,PG6,PG7,PG9,PG10,PG11,PG15,PH2,PH3,PH5,PH6,PH9,PH10,PH11,PH12,PH14,PH15,PI4,PI5,PI6,PI7,PI8,PI10,PI11">
 <segment>
 <label x="175.26" y="396.24" size="3.048" layer="95" font="vector" rot="R90"/>
 <wire x1="170.18" y1="762" x2="170.18" y2="377.19" width="0.762" layer="92"/>
@@ -19545,6 +19533,13 @@ DFU bootloader</text>
 <segment>
 <wire x1="114.3" y1="624.84" x2="114.3" y2="840.74" width="0.762" layer="92"/>
 <label x="92.71" y="843.28" size="6.35" layer="95"/>
+</segment>
+</bus>
+<bus name="SPI_BUS:PI0_SPI2_NSS,PI1_SPI2_SCK,PI2_SPI2_MISO,PI3_SPI2_MOSI,PE11_DAC_SPI4_NSS,PE12_DAC_SPI4_SCK,PE14_DAC_SPI4_MOSI,PG8_SPI6_NSS,PG13_SPI6_SCK,PG12_SPI6_MISO,PG14_SPI6_MOSI">
+<segment>
+<wire x1="259.08" y1="275.59" x2="259.08" y2="25.4" width="0.762" layer="92"/>
+<label x="262.89" y="246.38" size="3.048" layer="95" rot="R90"/>
+<label x="262.89" y="115.57" size="3.048" layer="95" rot="R90"/>
 </segment>
 </bus>
 </busses>
@@ -25887,9 +25882,9 @@ protection to DAC output if necessary.</text>
 <approved hash="104,4,294.64,25.4,D11G7,PIN,GND,,,"/>
 <approved hash="104,4,292.1,25.4,D12G7,PIN,GND,,,"/>
 <approved hash="104,1,396.24,328.93,U6,PVOUT,V5D,,,"/>
-<approved hash="104,1,396.24,323.85,U6,LDO,N$6,,,"/>
+<approved hash="104,1,396.24,323.85,U6,LDO,LTC3114_LDO,,,"/>
 <approved hash="104,1,365.76,326.39,U6,VIN,VCC,,,"/>
-<approved hash="104,1,396.24,321.31,U6,PLDO,N$6,,,"/>
+<approved hash="104,1,396.24,321.31,U6,PLDO,LTC3114_LDO,,,"/>
 <approved hash="104,1,365.76,328.93,U6,PVIN,VCC,,,"/>
 <approved hash="104,1,383.54,306.07,U6,PGND,GND,,,"/>
 <approved hash="104,1,228.6,241.3,U2,VDD,V5D,,,"/>
@@ -25900,63 +25895,61 @@ protection to DAC output if necessary.</text>
 <approved hash="106,2,60.96,144.78,PE10,,,,,"/>
 <approved hash="106,2,60.96,119.38,PE15,,,,,"/>
 <approved hash="106,2,60.96,429.26,PF6,,,,,"/>
-<approved hash="113,1,107.95,376.525,TP16,,,,,"/>
-<approved hash="113,2,750.57,791.815,TP19,,,,,"/>
-<approved hash="113,2,536.656,785.245,TP20,,,,,"/>
-<approved hash="113,2,654.766,760.48,TP22,,,,,"/>
-<approved hash="113,2,656.59,753.775,TP23,,,,,"/>
-<approved hash="113,2,894.08,592.425,TP24,,,,,"/>
-<approved hash="113,2,939.135,558.8,TP25,,,,,"/>
-<approved hash="113,2,935.99,550.575,TP26,,,,,"/>
-<approved hash="113,2,915.67,483.205,TP14,,,,,"/>
-<approved hash="113,2,456.595,561.34,TP15,,,,,"/>
+<approved hash="113,1,107.95,376.521,TP16,,,,,"/>
+<approved hash="113,2,750.57,791.811,TP19,,,,,"/>
+<approved hash="113,2,536.66,785.245,TP20,,,,,"/>
+<approved hash="113,2,654.77,760.48,TP22,,,,,"/>
+<approved hash="113,2,656.59,753.779,TP23,,,,,"/>
+<approved hash="113,2,894.08,592.421,TP24,,,,,"/>
+<approved hash="113,2,939.131,558.8,TP25,,,,,"/>
+<approved hash="113,2,935.99,550.579,TP26,,,,,"/>
+<approved hash="113,2,915.67,483.201,TP14,,,,,"/>
+<approved hash="113,2,456.599,561.34,TP15,,,,,"/>
 <approved hash="113,2,451.184,584.2,TP28,,,,,"/>
-<approved hash="113,2,451.455,529.59,TP27,,,,,"/>
-<approved hash="113,2,337.82,565.815,TP37,,,,,"/>
-<approved hash="113,2,337.82,582.265,TP38,,,,,"/>
-<approved hash="113,2,386.634,454.381,TP46,,,,,"/>
-<approved hash="113,2,386.634,460.019,TP47,,,,,"/>
-<approved hash="113,2,619.155,742.95,TP21,,,,,"/>
-<approved hash="113,2,322.58,276.255,TP72,,,,,"/>
-<approved hash="113,3,62.23,267.305,TP77,,,,,"/>
-<approved hash="113,3,62.23,234.285,TP79,,,,,"/>
-<approved hash="113,3,62.23,201.265,TP81,,,,,"/>
-<approved hash="113,3,62.23,168.245,TP83,,,,,"/>
-<approved hash="113,3,62.23,135.225,TP85,,,,,"/>
-<approved hash="113,3,62.23,102.205,TP86,,,,,"/>
-<approved hash="113,3,62.23,69.1851,TP89,,,,,"/>
-<approved hash="113,3,191.77,267.305,TP90,,,,,"/>
-<approved hash="113,3,191.77,231.745,TP93,,,,,"/>
-<approved hash="113,3,191.77,198.725,TP94,,,,,"/>
-<approved hash="113,3,191.77,165.705,TP97,,,,,"/>
-<approved hash="113,3,191.77,132.685,TP98,,,,,"/>
-<approved hash="113,3,191.77,100.375,TP101,,,,,"/>
-<approved hash="113,3,191.77,67.3547,TP102,,,,,"/>
-<approved hash="113,3,64.77,29.2547,TP105,,,,,"/>
-<approved hash="113,3,331.47,212.135,TP106,,,,,"/>
-<approved hash="113,2,623.573,808.4,TP109,,,,,"/>
-<approved hash="113,2,646.475,784.86,TP108,,,,,"/>
+<approved hash="113,2,451.451,529.59,TP27,,,,,"/>
+<approved hash="113,2,337.82,565.819,TP37,,,,,"/>
+<approved hash="113,2,337.82,582.261,TP38,,,,,"/>
+<approved hash="113,2,386.63,454.381,TP46,,,,,"/>
+<approved hash="113,2,386.63,460.019,TP47,,,,,"/>
+<approved hash="113,2,619.159,742.95,TP21,,,,,"/>
+<approved hash="113,2,322.58,276.259,TP72,,,,,"/>
+<approved hash="113,3,62.23,267.301,TP77,,,,,"/>
+<approved hash="113,3,62.23,234.281,TP79,,,,,"/>
+<approved hash="113,3,62.23,201.261,TP81,,,,,"/>
+<approved hash="113,3,62.23,168.241,TP83,,,,,"/>
+<approved hash="113,3,62.23,135.221,TP85,,,,,"/>
+<approved hash="113,3,62.23,102.201,TP86,,,,,"/>
+<approved hash="113,3,62.23,69.1806,TP89,,,,,"/>
+<approved hash="113,3,191.77,267.301,TP90,,,,,"/>
+<approved hash="113,3,191.77,231.741,TP93,,,,,"/>
+<approved hash="113,3,191.77,198.721,TP94,,,,,"/>
+<approved hash="113,3,191.77,165.701,TP97,,,,,"/>
+<approved hash="113,3,191.77,132.681,TP98,,,,,"/>
+<approved hash="113,3,191.77,100.366,TP101,,,,,"/>
+<approved hash="113,3,191.77,67.3458,TP102,,,,,"/>
+<approved hash="113,3,64.77,29.2458,TP105,,,,,"/>
+<approved hash="113,3,331.47,212.126,TP106,,,,,"/>
+<approved hash="113,2,623.667,808.391,TP109,,,,,"/>
+<approved hash="113,2,646.466,784.86,TP108,,,,,"/>
 <approved hash="113,2,558.8,431.8,FRAME1,,,,,"/>
-<approved hash="113,1,88.8915,323.85,SG5,,,,,"/>
-<approved hash="113,1,93.9715,367.03,SG1,,,,,"/>
-<approved hash="113,1,73.6515,276.86,SG2,,,,,"/>
-<approved hash="113,1,76.1577,329.156,J2,,,,,"/>
-<approved hash="113,1,95.25,331.981,TP11,,,,,"/>
-<approved hash="113,1,83.82,286.355,TP12,,,,,"/>
-<approved hash="113,1,135.89,332.075,TP17,,,,,"/>
-<approved hash="113,2,304.8,357.535,TP30,,,,,"/>
-<approved hash="113,1,110.49,122.585,TP82,,,,,"/>
+<approved hash="113,1,76.1577,329.061,J2,,,,,"/>
+<approved hash="113,1,95.25,332.071,TP11,,,,,"/>
+<approved hash="113,1,83.82,286.351,TP12,,,,,"/>
+<approved hash="113,1,135.89,332.071,TP17,,,,,"/>
+<approved hash="113,2,304.8,357.539,TP30,,,,,"/>
+<approved hash="113,1,110.49,122.589,TP82,,,,,"/>
 <approved hash="113,2,763.262,742.95,SG3,,,,,"/>
-<approved hash="113,3,365.76,206.715,J1,,,,,"/>
-<approved hash="113,3,381,116.545,J6,,,,,"/>
-<approved hash="113,3,381,111.465,J7,,,,,"/>
-<approved hash="113,3,381,106.385,J10,,,,,"/>
-<approved hash="113,3,381,101.305,J11,,,,,"/>
+<approved hash="113,3,365.76,206.621,J1,,,,,"/>
+<approved hash="113,3,381,116.451,J6,,,,,"/>
+<approved hash="113,3,381,111.371,J7,,,,,"/>
+<approved hash="113,3,381,106.291,J10,,,,,"/>
+<approved hash="113,3,381,101.211,J11,,,,,"/>
 <approved hash="113,4,215.796,139.596,FRAME3,,,,,"/>
 <approved hash="113,1,279.296,215.796,FRAME5,,,,,"/>
-<approved hash="113,2,212.327,628.876,JP3,,,,,"/>
+<approved hash="113,2,212.327,628.781,JP3,,,,,"/>
 <approved hash="113,3,215.796,139.596,FRAME2,,,,,"/>
-<approved hash="113,1,86.36,241.2,TP5,,,,,"/>
+<approved hash="113,1,86.36,241.195,TP5,,,,,"/>
+<approved hash="113,1,361.069,308.61,J16,,,,,"/>
 </errors>
 </schematic>
 </drawing>
