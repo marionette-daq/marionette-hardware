@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7569,6 +7569,10 @@ Created for TPS63060.</description>
 <wire x1="0" y1="1.19" x2="0" y2="1.78" width="0.4" layer="29"/>
 <rectangle x1="-0.125" y1="1.2" x2="0.125" y2="1.5" layer="33"/>
 </package>
+<package name="SCOPE_CLIP_5MM_10MM">
+<rectangle x1="0" y1="0" x2="10" y2="5" layer="29"/>
+<rectangle x1="0" y1="0" x2="10" y2="5" layer="30"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CLK">
@@ -9511,6 +9515,10 @@ TDI</text>
 <text x="10.16" y="15.24" size="1.778" layer="95" ratio="15">&gt;NAME</text>
 <text x="10.16" y="12.7" size="1.778" layer="96" ratio="15">&gt;VALUE</text>
 <text x="0" y="10.668" size="1.778" layer="94">&gt;VOUT</text>
+</symbol>
+<symbol name="SCOPE_CLIP_5MM_10MM">
+<rectangle x1="0" y1="-2.54" x2="5.08" y2="2.54" layer="94"/>
+<text x="6.35" y="-1.27" size="1.778" layer="94">Scope Clip</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -13441,6 +13449,18 @@ Vout = 3.3V, Mfg Part No.: ADP160AUJZ-3.3-R7, Digikey Part No.: ADP160AUJZ-3.3-R
 <connect gate="G1" pin="VIN" pad="1"/>
 <connect gate="G1" pin="VOUT" pad="5"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCOPE_CLIP_5MM_10MM" prefix="J">
+<gates>
+<gate name="G$1" symbol="SCOPE_CLIP_5MM_10MM" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SCOPE_CLIP_5MM_10MM">
 <technologies>
 <technology name=""/>
 </technologies>
