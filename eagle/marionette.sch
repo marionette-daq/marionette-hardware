@@ -16543,7 +16543,6 @@ Created on  2015-07-09
 <part name="GND93" library="supply" deviceset="GND" device=""/>
 <part name="GND94" library="supply" deviceset="GND" device=""/>
 <part name="R69" library="rcl_custom" deviceset="R-US_" device="0402-B" value="20k"/>
-<part name="TP1" library="dock_v2" deviceset="PAD+VIA_0.25MM" device=""/>
 <part name="GND110" library="supply" deviceset="GND" device=""/>
 <part name="GND103" library="supply" deviceset="GND" device=""/>
 <part name="V13" library="supply" deviceset="V_EXT" device=""/>
@@ -16651,6 +16650,7 @@ Created on  2015-07-09
 <part name="J24" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
 <part name="J25" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
 <part name="U6" library="U-Linear-LTC3114-buck-boost-sps" deviceset="LTC3114" device="FE"/>
+<part name="TP6" library="marionette" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -17184,9 +17184,6 @@ dVin/dt is high.</text>
 <attribute name="NAME" x="354.33" y="311.15" size="1.778" layer="95"/>
 <attribute name="VALUE" x="354.33" y="308.61" size="1.778" layer="96"/>
 </instance>
-<instance part="TP1" gate="TP" x="359.41" y="316.23" smashed="yes">
-<attribute name="NAME" x="360.68" y="317.5" size="1.778" layer="95" ratio="15"/>
-</instance>
 <instance part="GND110" gate="G1" x="335.28" y="302.26" smashed="yes"/>
 <instance part="GND103" gate="G1" x="505.46" y="297.18" smashed="yes"/>
 <instance part="V13" gate="G1" x="118.11" y="375.92" smashed="yes">
@@ -17363,6 +17360,10 @@ dVin/dt is high.</text>
 <instance part="J24" gate="G$1" x="100.33" y="19.05"/>
 <instance part="J25" gate="G$1" x="100.33" y="12.7"/>
 <instance part="U6" gate="G$1" x="381" y="328.93"/>
+<instance part="TP6" gate="TP" x="96.52" y="241.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="97.2058" y="242.697" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="99.822" y="240.157" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18249,10 +18250,7 @@ dVin/dt is high.</text>
 <net name="LTC3114_PROG" class="0">
 <segment>
 <pinref part="R69" gate="R" pin="1"/>
-<wire x1="365.76" y1="316.23" x2="359.41" y2="316.23" width="0.1524" layer="91"/>
-<pinref part="TP1" gate="TP" pin="TP"/>
-<wire x1="359.41" y1="316.23" x2="353.06" y2="316.23" width="0.1524" layer="91"/>
-<junction x="359.41" y="316.23"/>
+<wire x1="365.76" y1="316.23" x2="353.06" y2="316.23" width="0.1524" layer="91"/>
 <pinref part="C99" gate="CE" pin="2"/>
 <wire x1="345.44" y1="314.96" x2="345.44" y2="316.23" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="316.23" x2="353.06" y2="316.23" width="0.1524" layer="91"/>
@@ -18285,7 +18283,8 @@ dVin/dt is high.</text>
 <pinref part="D22" gate="G$1" pin="+"/>
 <wire x1="130.81" y1="238.76" x2="130.81" y2="287.02" width="0.3048" layer="91"/>
 <pinref part="U12" gate="G$1" pin="VBAT"/>
-<wire x1="86.36" y1="238.76" x2="130.81" y2="238.76" width="0.3048" layer="91"/>
+<wire x1="86.36" y1="238.76" x2="96.52" y2="238.76" width="0.3048" layer="91"/>
+<wire x1="96.52" y1="238.76" x2="130.81" y2="238.76" width="0.3048" layer="91"/>
 <wire x1="151.13" y1="238.76" x2="135.89" y2="238.76" width="0.3048" layer="91"/>
 <junction x="130.81" y="238.76"/>
 <pinref part="C104" gate="CE" pin="1"/>
@@ -18298,6 +18297,8 @@ dVin/dt is high.</text>
 <junction x="86.36" y="238.76"/>
 <pinref part="SG4" gate="G1" pin="1"/>
 <wire x1="86.36" y1="237.49" x2="86.36" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="TP6" gate="TP" pin="P"/>
+<junction x="96.52" y="238.76"/>
 </segment>
 </net>
 <net name="CHG-ENABLE" class="0">
