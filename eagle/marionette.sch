@@ -16722,7 +16722,7 @@ then DNP R74, C1 and set R73 to 0 ohm.</text>
 Vsense 
 &lt; 4.2 V</text>
 <text x="144.78" y="259.08" size="3.048" layer="97">Charge Indicator</text>
-<circle x="161.29" y="248.92" radius="6.35" width="0.1524" layer="97"/>
+<circle x="172.72" y="248.92" radius="6.35" width="0.1524" layer="97"/>
 <text x="185.42" y="189.23" size="1.778" layer="97">Tie high for Vfl = 4.2V
 Tie low for Vfl= 4.1V</text>
 <text x="135.89" y="207.01" size="1.778" layer="97">Set Ichrg = 400 mA</text>
@@ -17273,13 +17273,13 @@ dVin/dt is high.</text>
 </instance>
 <instance part="S8" gate="G1" x="184.15" y="255.27" smashed="yes"/>
 <instance part="GND51" gate="G1" x="166.37" y="213.36" smashed="yes"/>
-<instance part="LED4" gate="G1" x="160.02" y="248.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="144.78" y="255.27" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="144.78" y="252.73" size="1.778" layer="96" font="vector"/>
+<instance part="LED4" gate="G1" x="171.45" y="248.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="162.56" y="254" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="163.83" y="256.54" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R25" gate="R" x="175.26" y="248.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="178.8414" y="250.19" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="176.022" y="250.19" size="1.778" layer="96" rot="R90"/>
+<instance part="R25" gate="R" x="157.48" y="248.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.0614" y="250.19" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="158.242" y="250.19" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C104" gate="CE" x="135.89" y="233.68" smashed="yes">
 <attribute name="NAME" x="138.43" y="233.68" size="1.778" layer="95"/>
@@ -17941,12 +17941,12 @@ dVin/dt is high.</text>
 <wire x1="181.61" y1="238.76" x2="184.15" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="S8" gate="G1" pin="V5D"/>
 <wire x1="184.15" y1="238.76" x2="184.15" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="R25" gate="R" pin="1"/>
 <wire x1="184.15" y1="248.92" x2="184.15" y2="255.27" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="248.92" x2="184.15" y2="248.92" width="0.1524" layer="91"/>
 <junction x="184.15" y="248.92"/>
 <pinref part="C105" gate="CE" pin="1"/>
 <wire x1="184.15" y1="248.92" x2="189.23" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="LED4" gate="G1" pin="A"/>
+<wire x1="176.53" y1="248.92" x2="184.15" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R26" gate="R" pin="1"/>
@@ -18328,18 +18328,11 @@ dVin/dt is high.</text>
 </net>
 <net name="MCP73855_STAT1" class="0">
 <segment>
-<wire x1="147.32" y1="248.92" x2="157.48" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G1" pin="C"/>
 <pinref part="U12" gate="G$1" pin="STAT1"/>
 <wire x1="147.32" y1="248.92" x2="147.32" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="228.6" x2="151.13" y2="228.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="STAT1_ANODE" class="0">
-<segment>
-<pinref part="LED4" gate="G1" pin="A"/>
 <pinref part="R25" gate="R" pin="2"/>
-<wire x1="170.18" y1="248.92" x2="165.1" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="248.92" x2="147.32" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCP73855_VSET" class="0">
@@ -18406,6 +18399,13 @@ dVin/dt is high.</text>
 <pinref part="R27" gate="R" pin="1"/>
 <pinref part="LED8" gate="G1" pin="C"/>
 <wire x1="505.46" y1="311.15" x2="505.46" y2="316.23" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CHRG_IND_CATHODE" class="0">
+<segment>
+<pinref part="R25" gate="R" pin="1"/>
+<pinref part="LED4" gate="G1" pin="C"/>
+<wire x1="162.56" y1="248.92" x2="168.91" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -25807,16 +25807,16 @@ protection to DAC output if necessary.</text>
 <approved hash="104,4,312.42,25.4,D4G7,PIN,GND,,,"/>
 <approved hash="104,4,294.64,25.4,D11G7,PIN,GND,,,"/>
 <approved hash="104,4,292.1,25.4,D12G7,PIN,GND,,,"/>
+<approved hash="104,1,228.6,241.3,U2,VDD,V5D,,,"/>
+<approved hash="104,1,228.6,213.36,U2,VSS,GND,,,"/>
+<approved hash="104,1,181.61,238.76,U12,VDD,V5D,,,"/>
+<approved hash="104,1,166.37,218.44,U12,VSS,GND,,,"/>
 <approved hash="104,1,396.24,328.93,U6,PVOUT,V5D,,,"/>
 <approved hash="104,1,396.24,323.85,U6,LDO,LTC3114_LDO,,,"/>
 <approved hash="104,1,365.76,326.39,U6,VIN,VCC,,,"/>
 <approved hash="104,1,396.24,321.31,U6,PLDO,LTC3114_LDO,,,"/>
 <approved hash="104,1,365.76,328.93,U6,PVIN,VCC,,,"/>
 <approved hash="104,1,383.54,306.07,U6,PGND,GND,,,"/>
-<approved hash="104,1,228.6,241.3,U2,VDD,V5D,,,"/>
-<approved hash="104,1,228.6,213.36,U2,VSS,GND,,,"/>
-<approved hash="104,1,181.61,238.76,U12,VDD,V5D,,,"/>
-<approved hash="104,1,166.37,218.44,U12,VSS,GND,,,"/>
 <approved hash="106,2,60.96,175.26,PE4,,,,,"/>
 <approved hash="106,2,60.96,144.78,PE10,,,,,"/>
 <approved hash="106,2,60.96,119.38,PE15,,,,,"/>
@@ -25876,6 +25876,7 @@ protection to DAC output if necessary.</text>
 <approved hash="113,3,215.796,139.596,FRAME2,,,,,"/>
 <approved hash="113,1,86.36,241.195,TP5,,,,,"/>
 <approved hash="113,1,361.069,308.61,J16,,,,,"/>
+<approved hash="113,1,96.52,241.195,TP6,,,,,"/>
 </errors>
 </schematic>
 </drawing>
