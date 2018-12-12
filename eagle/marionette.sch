@@ -16638,8 +16638,6 @@ Created on  2015-07-09
 <part name="J18" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
 <part name="J19" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
 <part name="J20" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
-<part name="J21" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
-<part name="J23" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
 <part name="J24" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
 <part name="J25" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
 <part name="U6" library="U-Linear-LTC3114-buck-boost-sps" deviceset="LTC3114" device="FE"/>
@@ -17346,8 +17344,6 @@ dVin/dt is high.</text>
 <instance part="J18" gate="G$1" x="80.01" y="25.4"/>
 <instance part="J19" gate="G$1" x="80.01" y="19.05"/>
 <instance part="J20" gate="G$1" x="80.01" y="12.7"/>
-<instance part="J21" gate="G$1" x="100.33" y="31.75"/>
-<instance part="J23" gate="G$1" x="100.33" y="25.4"/>
 <instance part="J24" gate="G$1" x="100.33" y="19.05"/>
 <instance part="J25" gate="G$1" x="100.33" y="12.7"/>
 <instance part="U6" gate="G$1" x="381" y="328.93"/>
