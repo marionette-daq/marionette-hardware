@@ -8325,6 +8325,30 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
 <text x="-0.635" y="-1.27" size="0.85" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
 <text x="1.905" y="-1.27" size="0.85" layer="27" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
+<wire x1="-0.15" y1="-0.1" x2="0.15" y2="-0.1" width="0.12" layer="21"/>
+<wire x1="0.15" y1="-0.1" x2="0" y2="0.15" width="0.12" layer="21"/>
+<wire x1="0" y1="0.15" x2="-0.15" y2="-0.1" width="0.12" layer="21"/>
+<wire x1="-0.05" y1="0" x2="0.05" y2="0" width="0.12" layer="21"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="33"/>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="33" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="33" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="33"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="33"/>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="33"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="33"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="33"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="33"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="33"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="33"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="33"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="33"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="33"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="33"/>
+<wire x1="-0.35" y1="0.7" x2="-0.35" y2="0.6" width="0.1" layer="33"/>
+<text x="-0.12" y="-0.28" size="0.1" layer="33" rot="R90">&gt;NAME</text>
+<wire x1="-0.01" y1="0.3" x2="-0.08" y2="0.18" width="0.05" layer="33"/>
+<wire x1="-0.08" y1="0.18" x2="0.05" y2="0.18" width="0.05" layer="33"/>
+<wire x1="0.05" y1="0.18" x2="-0.01" y2="0.3" width="0.05" layer="33"/>
 </package>
 </packages>
 <symbols>
@@ -8355,7 +8379,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <description>LS_Q976 LED &lt;br&gt;
 Mfg: Osram, Package: 0603, Digikey Part No.: 475-2512-1-ND, Mfg_part_no.: LS Q976, If = 20mA, wavelength = 633nm (red) &lt;br&gt;
 Red LED - &lt;br&gt;
-http://www.osram-os.com/Graphics/XPic9/00128792_0.pdf</description>
+http://www.osram-os.com/Graphics/XPic9/00128792_0.pdf &lt;br&gt;
+Mfg.: Wurth, Package: 0603, DPN: 732-4980-1-ND, MPN: 150060VS75000, If = 20mA, wavelength = 571nm (green)&lt;br&gt;</description>
 <gates>
 <gate name="G1" symbol="RED_LED" x="0" y="0"/>
 </gates>
@@ -16493,21 +16518,36 @@ Created on  2015-07-09
 </part>
 <part name="C112" library="rcl_custom" deviceset="C-EU" device="0805-B" value="4.7u"/>
 <part name="C100" library="rcl_custom" deviceset="C-EU" device="0805-B" value="4.7u"/>
-<part name="LED1" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED1" library="LS_Q976_NR_1" deviceset="LS_Q976" device="" value="150060VS75000">
+<attribute name="COLOR" value="GREEN"/>
+<attribute name="DPN" value="732-4980-1-ND"/>
+</part>
 <part name="R22" library="rcl_custom" deviceset="R-US_" device="0402-B" value="330"/>
 <part name="GND104" library="supply" deviceset="GND" device=""/>
-<part name="LED2" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED2" library="LS_Q976_NR_1" deviceset="LS_Q976" device="" value="150060VS75000">
+<attribute name="COLOR" value="GREEN"/>
+<attribute name="DPN" value="732-4980-1-ND"/>
+</part>
 <part name="R23" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="GND105" library="supply" deviceset="GND" device=""/>
-<part name="LED3" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED3" library="LS_Q976_NR_1" deviceset="LS_Q976" device="" value="150060VS75000">
+<attribute name="COLOR" value="GREEN"/>
+<attribute name="DPN" value="732-4980-1-ND"/>
+</part>
 <part name="R24" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="GND106" library="supply" deviceset="GND" device=""/>
 <part name="TP74" library="marionette" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 <part name="LED5" library="apdm" deviceset="LED-RGB-SEPARATE-*" device="3528" value="SMLV56RGB1W1"/>
 <part name="R71" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="GND109" library="supply" deviceset="GND" device=""/>
-<part name="LED6" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
-<part name="LED8" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED6" library="LS_Q976_NR_1" deviceset="LS_Q976" device="" value="150060VS75000">
+<attribute name="COLOR" value="GREEN"/>
+<attribute name="DPN" value="732-4980-1-ND"/>
+</part>
+<part name="LED8" library="LS_Q976_NR_1" deviceset="LS_Q976" device="" value="150060VS75000">
+<attribute name="COLOR" value="GREEN"/>
+<attribute name="DPN" value="732-4980-1-ND"/>
+</part>
 <part name="R27" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="TP62" library="marionette" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 <part name="GND108" library="GROUND" deviceset="GND" device=""/>
@@ -16596,7 +16636,10 @@ Created on  2015-07-09
 <part name="U12" library="U-Microchip-MCP73855-lipo-charger" deviceset="MCP73855" device=""/>
 <part name="S8" library="supply" deviceset="V5D" device=""/>
 <part name="GND51" library="supply" deviceset="GND" device=""/>
-<part name="LED4" library="LS_Q976_NR_1" deviceset="LS_Q976" device=""/>
+<part name="LED4" library="LS_Q976_NR_1" deviceset="LS_Q976" device="" value="150060VS75000">
+<attribute name="COLOR" value="GREEN"/>
+<attribute name="DPN" value="150060VS75000"/>
+</part>
 <part name="R25" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="C104" library="rcl_custom" deviceset="C-EU" device="0805-B" value="4.7u"/>
 <part name="C105" library="rcl_custom" deviceset="C-EU" device="0805-B" value="4.7u"/>
@@ -17092,6 +17135,8 @@ dVin/dt is high.</text>
 <instance part="LED1" gate="G1" x="190.5" y="125.73" smashed="yes" rot="MR270">
 <attribute name="NAME" x="195.58" y="134.62" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="195.58" y="132.715" size="1.778" layer="96" font="vector"/>
+<attribute name="COLOR" x="190.5" y="128.016" size="0.254" layer="94" rot="MR270"/>
+<attribute name="DPN" x="190.5" y="125.73" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
 <instance part="R22" gate="R" x="190.5" y="114.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="191.77" y="115.7986" size="1.778" layer="95"/>
@@ -17101,6 +17146,8 @@ dVin/dt is high.</text>
 <instance part="LED2" gate="G1" x="334.01" y="125.73" smashed="yes" rot="MR270">
 <attribute name="NAME" x="339.09" y="133.985" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="339.09" y="131.445" size="1.778" layer="96" font="vector"/>
+<attribute name="DPN" x="334.01" y="125.73" size="1.778" layer="96" rot="MR270" display="off"/>
+<attribute name="COLOR" x="334.01" y="128.016" size="0.254" layer="94" rot="MR270"/>
 </instance>
 <instance part="R23" gate="R" x="334.01" y="116.84" smashed="yes" rot="R270">
 <attribute name="NAME" x="335.28" y="118.3386" size="1.778" layer="95"/>
@@ -17110,6 +17157,8 @@ dVin/dt is high.</text>
 <instance part="LED3" gate="G1" x="488.95" y="124.46" smashed="yes" rot="MR270">
 <attribute name="NAME" x="495.3" y="132.715" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="495.3" y="130.175" size="1.778" layer="96" font="vector"/>
+<attribute name="DPN" x="488.95" y="124.46" size="1.778" layer="96" rot="MR270" display="off"/>
+<attribute name="COLOR" x="488.95" y="126.746" size="0.254" layer="94" rot="MR270"/>
 </instance>
 <instance part="R24" gate="R" x="488.95" y="115.57" smashed="yes" rot="R270">
 <attribute name="NAME" x="490.22" y="117.0686" size="1.778" layer="95"/>
@@ -17127,10 +17176,14 @@ dVin/dt is high.</text>
 <instance part="LED6" gate="G1" x="236.22" y="318.77" smashed="yes" rot="MR270">
 <attribute name="NAME" x="243.84" y="323.85" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="243.84" y="321.31" size="1.778" layer="96" font="vector"/>
+<attribute name="DPN" x="236.22" y="318.77" size="1.778" layer="96" rot="MR270" display="off"/>
+<attribute name="COLOR" x="236.22" y="321.056" size="0.254" layer="94" rot="MR270"/>
 </instance>
 <instance part="LED8" gate="G1" x="505.46" y="318.77" smashed="yes" rot="MR270">
 <attribute name="NAME" x="508" y="328.93" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="508" y="326.39" size="1.778" layer="96" font="vector"/>
+<attribute name="COLOR" x="505.46" y="321.056" size="0.254" layer="94" rot="MR270"/>
+<attribute name="DPN" x="505.46" y="318.77" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
 <instance part="R27" gate="R" x="505.46" y="306.07" smashed="yes" rot="R270">
 <attribute name="NAME" x="504.19" y="309.6514" size="1.778" layer="95" rot="R180"/>
@@ -17264,6 +17317,8 @@ dVin/dt is high.</text>
 <instance part="LED4" gate="G1" x="171.45" y="248.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="162.56" y="254" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="163.83" y="256.54" size="1.778" layer="96" font="vector"/>
+<attribute name="DPN" x="171.45" y="248.92" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="COLOR" x="173.736" y="248.92" size="0.254" layer="94" rot="R180"/>
 </instance>
 <instance part="R25" gate="R" x="157.48" y="248.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="161.0614" y="250.19" size="1.778" layer="95" rot="R90"/>
