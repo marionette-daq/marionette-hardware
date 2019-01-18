@@ -16687,6 +16687,9 @@ Created on  2015-07-09
 <attribute name="V_RATING" value="50V"/>
 </part>
 <part name="U140" library="marionette" deviceset="LM317" device=""/>
+<part name="TP1" library="marionette" deviceset="PAD+X" device="-1.0-NO_CREAM+SILK"/>
+<part name="TP7" library="marionette" deviceset="PAD+VIA_GND_0.6MM" device=""/>
+<part name="TP8" library="marionette" deviceset="PAD+VIA_GND_0.6MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17316,7 +17319,7 @@ dVin/dt is high.</text>
 <instance part="GND51" gate="G1" x="166.37" y="213.36" smashed="yes"/>
 <instance part="LED4" gate="G1" x="171.45" y="248.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="162.56" y="254" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="163.83" y="256.54" size="1.778" layer="96" font="vector"/>
+<attribute name="VALUE" x="161.29" y="256.54" size="1.778" layer="96" font="vector"/>
 <attribute name="DPN" x="171.45" y="248.92" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="COLOR" x="173.736" y="248.92" size="0.254" layer="94" rot="R180"/>
 </instance>
@@ -17408,6 +17411,16 @@ dVin/dt is high.</text>
 <attribute name="V_RATING" x="149.86" y="321.31" size="1.778" layer="96"/>
 </instance>
 <instance part="U140" gate="G1" x="236.22" y="300.99" rot="R270"/>
+<instance part="TP1" gate="TP" x="199.39" y="231.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="200.0758" y="232.537" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="202.692" y="229.997" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="TP7" gate="G1" x="105.41" y="36.83" smashed="yes">
+<attribute name="NAME" x="102.87" y="39.37" size="1.778" layer="95"/>
+</instance>
+<instance part="TP8" gate="G1" x="97.79" y="36.83" smashed="yes">
+<attribute name="NAME" x="95.25" y="39.37" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17473,6 +17486,12 @@ dVin/dt is high.</text>
 <pinref part="GND30" gate="G1" pin="GND"/>
 <wire x1="147.32" y1="31.75" x2="147.32" y2="36.83" width="0.1524" layer="91"/>
 <junction x="147.32" y="36.83"/>
+<pinref part="TP7" gate="G1" pin="TP"/>
+<wire x1="113.03" y1="36.83" x2="105.41" y2="36.83" width="0.1524" layer="91"/>
+<junction x="113.03" y="36.83"/>
+<pinref part="TP8" gate="G1" pin="TP"/>
+<wire x1="105.41" y1="36.83" x2="97.79" y2="36.83" width="0.1524" layer="91"/>
+<junction x="105.41" y="36.83"/>
 </segment>
 <segment>
 <wire x1="82.55" y1="318.77" x2="82.55" y2="326.39" width="0.1524" layer="91"/>
@@ -18353,7 +18372,10 @@ dVin/dt is high.</text>
 <wire x1="213.36" y1="231.14" x2="213.36" y2="228.6" width="0.1524" layer="91"/>
 <junction x="213.36" y="228.6"/>
 <pinref part="U12" gate="G$1" pin="EN"/>
-<wire x1="213.36" y1="228.6" x2="181.61" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="228.6" x2="199.39" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="TP1" gate="TP" pin="P"/>
+<wire x1="199.39" y1="228.6" x2="181.61" y2="228.6" width="0.1524" layer="91"/>
+<junction x="199.39" y="228.6"/>
 </segment>
 </net>
 <net name="CN" class="0">
@@ -25921,6 +25943,7 @@ protection to DAC output if necessary.</text>
 <approved hash="113,1,86.36,241.195,TP5,,,,,"/>
 <approved hash="113,1,361.069,308.61,J16,,,,,"/>
 <approved hash="113,1,96.52,241.195,TP6,,,,,"/>
+<approved hash="113,1,199.39,231.035,TP1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
