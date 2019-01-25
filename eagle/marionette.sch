@@ -8106,7 +8106,7 @@ Approx 12x12 mm</description>
 <rectangle x1="-2.682" y1="-0.915" x2="-0.182" y2="1.085" layer="41" rot="R180"/>
 <rectangle x1="-6.345" y1="-0.725" x2="-4.915" y2="0.975" layer="29"/>
 <smd name="G1" x="-7.782" y="10.035" dx="1.5" dy="1.5" layer="1" rot="R180"/>
-<smd name="G2" x="3.5934" y="10.035" dx="1.3" dy="1.5" layer="1" rot="R180" stop="no"/>
+<smd name="G2" x="3.65" y="10.035" dx="1.23" dy="1.5" layer="1" rot="R180" stop="no"/>
 <smd name="G3" x="3.818" y="2.435" dx="0.8" dy="1.5" layer="1" rot="R180"/>
 <smd name="G4" x="-8.132" y="1.785" dx="0.8" dy="1.4" layer="1" rot="R180"/>
 <smd name="P1" x="-5.332" y="10.16" dx="0.7" dy="1.75" layer="1" rot="R180"/>
@@ -8121,6 +8121,7 @@ Approx 12x12 mm</description>
 <smd name="S1" x="-7.732" y="-0.64" dx="1" dy="1.5" layer="1" rot="R180"/>
 <text x="0.968" y="12.66" size="0.85" layer="25" font="vector" ratio="15" rot="R180">&gt;NAME</text>
 <text x="0.968" y="7.16" size="1" layer="27" font="vector" rot="R180">&gt;VALUE</text>
+<rectangle x1="2.94" y1="9.18" x2="4.39" y2="10.91" layer="29"/>
 </package>
 </packages>
 <symbols>
