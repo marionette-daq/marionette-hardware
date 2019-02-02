@@ -16859,6 +16859,8 @@ Vin = (40V, 2.2V), Iout = 1A, MPN: LTC3114IFE-1#PBF, Pkg: TSSOP-16, DPN: LTC3114
 <part name="V2" library="supply" deviceset="V3.3D" device=""/>
 <part name="GND122" library="GROUND" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-2X4" device=""/>
+<part name="H5" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="H6" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
 </parts>
 <sheets>
 <sheet>
@@ -16949,21 +16951,21 @@ dVin/dt is high.</text>
 <text x="539.75" y="5.08" size="5.08" layer="94">&gt;VERSION</text>
 </plain>
 <instances>
-<instance part="H1" gate="MT" x="21.59" y="50.8" smashed="yes">
+<instance part="H1" gate="MT" x="21.59" y="58.42" smashed="yes">
+<attribute name="NAME" x="22.86" y="60.96" size="1.27" layer="95"/>
+<attribute name="VALUE" x="24.13" y="55.88" size="1.27" layer="96"/>
+</instance>
+<instance part="H2" gate="MT" x="21.59" y="50.8" smashed="yes">
 <attribute name="NAME" x="22.86" y="53.34" size="1.27" layer="95"/>
 <attribute name="VALUE" x="24.13" y="48.26" size="1.27" layer="96"/>
 </instance>
-<instance part="H2" gate="MT" x="21.59" y="43.18" smashed="yes">
-<attribute name="NAME" x="22.86" y="45.72" size="1.27" layer="95"/>
-<attribute name="VALUE" x="24.13" y="40.64" size="1.27" layer="96"/>
+<instance part="H3" gate="MT" x="21.59" y="41.91" smashed="yes">
+<attribute name="NAME" x="22.86" y="44.45" size="1.27" layer="95"/>
+<attribute name="VALUE" x="24.13" y="39.37" size="1.27" layer="96"/>
 </instance>
-<instance part="H3" gate="MT" x="21.59" y="34.29" smashed="yes">
-<attribute name="NAME" x="22.86" y="36.83" size="1.27" layer="95"/>
-<attribute name="VALUE" x="24.13" y="31.75" size="1.27" layer="96"/>
-</instance>
-<instance part="H4" gate="MT" x="21.59" y="25.4" smashed="yes">
-<attribute name="NAME" x="22.86" y="27.94" size="1.27" layer="95"/>
-<attribute name="VALUE" x="24.13" y="22.86" size="1.27" layer="96"/>
+<instance part="H4" gate="MT" x="21.59" y="33.02" smashed="yes">
+<attribute name="NAME" x="22.86" y="35.56" size="1.27" layer="95"/>
+<attribute name="VALUE" x="24.13" y="30.48" size="1.27" layer="96"/>
 </instance>
 <instance part="TP16" gate="TP" x="107.95" y="375.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="108.6358" y="377.317" size="1.778" layer="95" rot="R90"/>
@@ -17615,6 +17617,14 @@ dVin/dt is high.</text>
 <instance part="R96" gate="R" x="476.25" y="322.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="477.52" y="323.85" size="1.778" layer="95"/>
 <attribute name="VALUE" x="478.79" y="321.31" size="1.778" layer="96"/>
+</instance>
+<instance part="H5" gate="MT" x="21.59" y="24.13" smashed="yes">
+<attribute name="NAME" x="22.86" y="26.67" size="1.27" layer="95"/>
+<attribute name="VALUE" x="24.13" y="21.59" size="1.27" layer="96"/>
+</instance>
+<instance part="H6" gate="MT" x="21.59" y="15.24" smashed="yes">
+<attribute name="NAME" x="22.86" y="17.78" size="1.27" layer="95"/>
+<attribute name="VALUE" x="24.13" y="12.7" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
