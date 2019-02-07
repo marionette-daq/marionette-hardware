@@ -15941,9 +15941,11 @@ Vin = (40V, 2.2V), Iout = 1A, MPN: LTC3114IFE-1#PBF, Pkg: TSSOP-16, DPN: LTC3114
 <part name="D3" library="marionette" deviceset="DIODE_SCHOTTKY-*" device="-BAS40-00_SOT23-3" value="BAS40-00"/>
 <part name="R19" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="C34" library="rcl_custom" deviceset="C-EU" device="0402-B" value="18p/DNP">
+<attribute name="NO_MNT" value="NP"/>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="C35" library="rcl_custom" deviceset="C-EU" device="0402-B" value="18p/DNP">
+<attribute name="NO_MNT" value="NP"/>
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND13" library="GROUND" deviceset="GND" device=""/>
@@ -16422,7 +16424,9 @@ Vin = (40V, 2.2V), Iout = 1A, MPN: LTC3114IFE-1#PBF, Pkg: TSSOP-16, DPN: LTC3114
 <part name="V3" library="supply" deviceset="V1.8A" device=""/>
 <part name="V12" library="supply" deviceset="V1.8A" device=""/>
 <part name="V17" library="supply" deviceset="V3.3A" device=""/>
-<part name="JP1" library="marionette" deviceset="PINHD-1X2" device="" value="DNP"/>
+<part name="JP1" library="marionette" deviceset="PINHD-1X2" device="" value="DNP">
+<attribute name="NO_MNT" value="NP"/>
+</part>
 <part name="TP140" library="marionette" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="TP141" library="marionette" deviceset="PAD+VIA_0.6MM" device=""/>
 <part name="S6" library="supply" deviceset="V5D" device=""/>
@@ -16433,7 +16437,9 @@ Vin = (40V, 2.2V), Iout = 1A, MPN: LTC3114IFE-1#PBF, Pkg: TSSOP-16, DPN: LTC3114
 <attribute name="V_RATING" value="10V"/>
 </part>
 <part name="GND57" library="GROUND" deviceset="GND" device=""/>
-<part name="XTAL1" library="marionette" deviceset="XTAL_SHIELDED" device="_403C11A26M00000" value="403C11A26M00000/DNP"/>
+<part name="XTAL1" library="marionette" deviceset="XTAL_SHIELDED" device="_403C11A26M00000" value="403C11A26M00000/DNP">
+<attribute name="NO_MNT" value="NP"/>
+</part>
 <part name="R79" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="C84" library="rcl_custom" deviceset="C-EU" device="0402-B" value="DNP">
 <attribute name="V_RATING" value="10V"/>
@@ -16822,6 +16828,7 @@ Vin = (40V, 2.2V), Iout = 1A, MPN: LTC3114IFE-1#PBF, Pkg: TSSOP-16, DPN: LTC3114
 <part name="GND121" library="supply" deviceset="GND" device=""/>
 <part name="D27" library="marionette" deviceset="DIODE_SCHOTTKY-*" device="_B130LB" value="NP">
 <attribute name="DPN" value="MBRS260T3GOSCT-ND"/>
+<attribute name="NO_MNT" value="NP"/>
 </part>
 <part name="J17" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
 <part name="J18" library="marionette" deviceset="SCOPE_CLIP_5MM_10MM" device=""/>
@@ -17567,6 +17574,7 @@ dVin/dt is high.</text>
 <instance part="GND121" gate="G1" x="370.84" y="340.36" smashed="yes"/>
 <instance part="D27" gate="D" x="370.84" y="345.44" rot="R270">
 <attribute name="DPN" x="370.84" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NO_MNT" x="370.84" y="345.44" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="J17" gate="G$1" x="80.01" y="31.75"/>
 <instance part="J18" gate="G$1" x="80.01" y="25.4"/>
@@ -18724,9 +18732,9 @@ dVin/dt is high.</text>
 <wire x1="375.92" y1="543.56" x2="375.92" y2="596.9" width="0.254" layer="97" style="shortdash"/>
 <wire x1="375.92" y1="596.9" x2="322.58" y2="596.9" width="0.254" layer="97" style="shortdash"/>
 <text x="323.85" y="590.55" size="5.08" layer="97">32.768kHz CLK</text>
-<wire x1="800.1" y1="713.74" x2="511.81" y2="713.74" width="0.254" layer="97" style="shortdash"/>
-<wire x1="511.81" y1="713.74" x2="511.81" y2="852.17" width="0.254" layer="97" style="shortdash"/>
-<wire x1="511.81" y1="852.17" x2="800.1" y2="852.17" width="0.254" layer="97" style="shortdash"/>
+<wire x1="800.1" y1="713.74" x2="504.19" y2="713.74" width="0.254" layer="97" style="shortdash"/>
+<wire x1="504.19" y1="713.74" x2="504.19" y2="852.17" width="0.254" layer="97" style="shortdash"/>
+<wire x1="504.19" y1="852.17" x2="800.1" y2="852.17" width="0.254" layer="97" style="shortdash"/>
 <wire x1="800.1" y1="852.17" x2="800.1" y2="713.74" width="0.254" layer="97" style="shortdash"/>
 <text x="662.94" y="816.61" size="5.08" layer="97">USB HS PHY</text>
 <wire x1="537.21" y1="499.11" x2="398.78" y2="499.11" width="0.254" layer="97" style="shortdash"/>
@@ -19201,11 +19209,13 @@ Breakout</text>
 <attribute name="V_RATING" x="354.33" y="341.63" size="1.778" layer="96"/>
 <attribute name="NAME" x="354.33" y="346.71" size="1.778" layer="95"/>
 <attribute name="VALUE" x="354.584" y="344.551" size="1.778" layer="96"/>
+<attribute name="NO_MNT" x="350.52" y="350.52" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C35" gate="CE" x="350.52" y="365.76" smashed="yes" rot="R90">
 <attribute name="V_RATING" x="350.52" y="368.3" size="1.778" layer="96"/>
 <attribute name="NAME" x="350.52" y="373.38" size="1.778" layer="95"/>
 <attribute name="VALUE" x="350.52" y="370.84" size="1.778" layer="96"/>
+<attribute name="NO_MNT" x="350.52" y="365.76" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND13" gate="1" x="368.3" y="353.06" smashed="yes">
 <attribute name="VALUE" x="365.76" y="350.52" size="1.778" layer="96"/>
@@ -19404,6 +19414,7 @@ Breakout</text>
 <instance part="XTAL1" gate="XTAL" x="337.82" y="359.41" smashed="yes" rot="R90">
 <attribute name="PART" x="317.5" y="355.6" size="1.27" layer="95"/>
 <attribute name="VALUE" x="317.5" y="354.33" size="1.27" layer="96"/>
+<attribute name="NO_MNT" x="337.82" y="359.41" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="XTAL1" gate="XTAL_GND" x="349.25" y="358.14" smashed="yes" rot="R90"/>
 <instance part="C146" gate="CE" x="488.95" y="558.8" smashed="yes">
@@ -19609,6 +19620,7 @@ Breakout</text>
 <instance part="JP1" gate="G$1" x="863.6" y="477.52" smashed="yes">
 <attribute name="NAME" x="857.25" y="483.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="857.25" y="472.44" size="1.778" layer="96"/>
+<attribute name="NO_MNT" x="863.6" y="477.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C142" gate="CE" x="932.18" y="427.99" smashed="yes">
 <attribute name="V_RATING" x="933.45" y="422.91" size="1.778" layer="96"/>
@@ -20726,7 +20738,6 @@ Breakout</text>
 <segment>
 <pinref part="U14" gate="U" pin="SPK_L"/>
 <wire x1="660.4" y1="756.92" x2="656.59" y2="756.92" width="0.1524" layer="91"/>
-<label x="645.16" y="756.92" size="1.778" layer="95"/>
 <pinref part="TP23" gate="TP" pin="P"/>
 <wire x1="656.59" y1="756.92" x2="640.08" y2="756.92" width="0.1524" layer="91"/>
 <junction x="656.59" y="756.92"/>
@@ -20749,7 +20760,6 @@ Breakout</text>
 <wire x1="515.62" y1="777.24" x2="515.62" y2="716.28" width="0.1524" layer="91"/>
 <pinref part="U14" gate="U" pin="SPK_R"/>
 <wire x1="662.94" y1="759.46" x2="656.59" y2="759.46" width="0.1524" layer="91"/>
-<label x="645.16" y="759.46" size="1.778" layer="95"/>
 <pinref part="TP22" gate="TP" pin="P"/>
 <wire x1="656.59" y1="759.46" x2="640.08" y2="759.46" width="0.1524" layer="91"/>
 <junction x="656.59" y="759.46"/>

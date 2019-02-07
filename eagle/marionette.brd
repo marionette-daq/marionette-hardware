@@ -6,11 +6,11 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="20" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="inch" unit="inch" style="lines" multiple="4" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="11" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="13" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -22,34 +22,34 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="14" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="62" fill="9" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="62" fill="9" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
@@ -8891,10 +8891,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="61.1261875" y="35.003028125" size="0.635" layer="25" font="vector" ratio="20" rot="R315"/>
 <attribute name="NAME" x="60.6" y="35.9" size="0.3" layer="33" ratio="15" rot="R135" align="center"/>
 <attribute name="V_RATING" value="10V" x="60.6" y="35.9" size="1.778" layer="27" rot="R135" display="off"/>
+<attribute name="NO_MNT" value="NP" x="60.6" y="35.9" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
 <element name="C35" library="rcl_custom" package=".0402-B" value="18p/DNP" x="56.4" y="33.5" locked="yes" smashed="yes" rot="R315">
 <attribute name="NAME" x="56.4" y="33.5" size="0.3" layer="33" ratio="15" rot="R315" align="center"/>
 <attribute name="V_RATING" value="10V" x="56.4" y="33.5" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NO_MNT" value="NP" x="56.4" y="33.5" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
 <element name="C36" library="rcl_custom" package=".0402-B" value="100n" x="49.6" y="92.2" locked="yes" smashed="yes" rot="R270">
 <attribute name="NAME" x="49.6" y="92.2" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
@@ -9945,6 +9947,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="JP1" library="marionette" package="1X02" value="DNP" x="69" y="36.9" locked="yes" smashed="yes">
 <attribute name="NAME" x="71.7338" y="36.5788" size="0.635" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="66.46" y="33.725" size="1.27" layer="27"/>
+<attribute name="NO_MNT" value="NP" x="69" y="36.9" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP140" library="marionette" package="PAD+VIA_0.6MM" value="PAD+VIA_0.6MM" x="78.85" y="48.65" locked="yes" smashed="yes" rot="MR0"/>
 <element name="TP141" library="marionette" package="PAD+VIA_0.6MM" value="PAD+VIA_0.6MM" x="28.4" y="76.05" locked="yes" smashed="yes"/>
@@ -9972,6 +9975,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="57.628428125" y="37.770709375" size="0.635" layer="25" font="vector" ratio="20" rot="R225"/>
 <attribute name="NAME" x="58.5" y="34.6" size="0.4" layer="33" ratio="15" rot="R135" align="center"/>
 <attribute name="VALUE" x="61.964821875" y="35.165684375" size="0.85" layer="27" font="vector" ratio="15" rot="R135"/>
+<attribute name="NO_MNT" value="NP" x="58.5" y="34.6" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
 <element name="R79" library="rcl_custom" package=".0402-B" value="0" x="131.7" y="33.3" locked="yes" smashed="yes">
 <attribute name="NAME" x="131.7" y="33.3" size="0.2" layer="33" ratio="15" align="center"/>
@@ -10765,6 +10769,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="80.9" y="59" size="0.4" layer="33" font="vector" ratio="15"/>
 <attribute name="NAME" x="74.2" y="58.85" size="0.85" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="78.7" y="55.1" size="0.85" layer="27" font="vector" ratio="15"/>
+<attribute name="NO_MNT" value="NP" x="80.9" y="58.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J17" library="marionette" package="SCOPE_CLIP_5MM_10MM" value="SCOPE_CLIP_5MM_10MM" x="115" y="95" rot="MR270"/>
 <element name="J18" library="marionette" package="SCOPE_CLIP_5MM_10MM" value="SCOPE_CLIP_5MM_10MM" x="115" y="85" rot="R90"/>
